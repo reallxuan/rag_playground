@@ -1,0 +1,13 @@
+prefix=/Users/palden78/Desktop/LangChainTest/env
+exec_prefix=/Users/palden78/Desktop/LangChainTest/env
+libdir=/Users/palden78/Desktop/LangChainTest/env/lib
+sharedlibdir=/Users/palden78/Desktop/LangChainTest/env/lib
+includedir=/Users/palden78/Desktop/LangChainTest/env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
