@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">InteChar: A Unified Oracle Bone Character List for Ancient Chinese Language Modeling</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-08-12">12 Aug 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Xiaolei</forename><surname>Diao</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Queen Mary University of London</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Jilin University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zhihan</forename><surname>Zhou</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Jilin University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lida</forename><surname>Shi</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Jilin University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ting</forename><surname>Wang</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">Tongji University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ruihua</forename><surname>Qi</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Jilin University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hao</forename><surname>Xu</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Jilin University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Daqian</forename><surname>Shi</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Queen Mary University of London</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">InteChar: A Unified Oracle Bone Character List for Ancient Chinese Language Modeling</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-08-12">12 Aug 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">5A5BC4E0998875EB9564E9FC8E0390AE</idno>
+					<idno type="arXiv">arXiv:2508.15791v1[cs.CL]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:30+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Constructing historical language models (LMs) plays a crucial role in aiding archaeological provenance studies and understanding ancient cultures. However, existing resources present major challenges for training effective LMs on historical texts. First, the scarcity of historical language samples renders unsupervised learning approaches based on large text corpora highly inefficient, hindering effective pre-training. Moreover, due to the considerable temporal gap and complex evolution of ancient scripts, the absence of comprehensive character encoding schemes limits the digitization and computational processing of ancient texts, particularly in early Chinese writing. To address these challenges, we introduce InteChar, a unified and extensible character list that integrates unencoded oracle bone characters with traditional and modern Chinese. InteChar enables consistent digitization and representation of historical texts, providing a foundation for robust modeling of ancient scripts. To evaluate the effectiveness of InteChar, we construct the Oracle Corpus Set (OracleCS), an ancient Chinese corpus that combines expert-annotated samples with LLM-assisted data augmentation, centered on Chinese oracle bone inscriptions. Extensive experiments show that models trained with InteChar on Or-acleCS achieve substantial improvements across various historical language understanding tasks, confirming the effectiveness of our approach and establishing a solid foundation for future research in ancient Chinese NLP.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Ancient script research has long served as a cornerstone for cultural heritage preservation and the advancement of historical linguistics, enabling scholars to decode lost histories and gain insight into ancient cultures through the inscriptions found on archaeological artifacts. Traditional approaches to this research are largely influenced by human cognitive and learning limitations, which restrict the efficiency of data processing and significantly hinder the decipherment of unknown characters <ref type="bibr">(Diao et al. 2023b)</ref>. In contrast, recent advances in natural language understanding have demonstrated significant advantages in processing vast and complex corpora, motivating researchers to apply these techniques to large-scale ancient text processing tasks <ref type="bibr" target="#b32">(Tian et al. 2021;</ref><ref type="bibr" target="#b30">Stopponi et al. 2024)</ref>. One of the key research directions in this field is the development of histor- ical language models specifically designed to comprehend ancient textual materials, thereby facilitating tasks such as archaeological inference, historical reconstruction, and cultural analysis <ref type="bibr" target="#b25">(Ross 2023;</ref><ref type="bibr" target="#b17">Koc 2025)</ref>.</p><p>Collecting and constructing appropriate corpora is fundamental to the development of effective historical language models. However, due to the great antiquity of ancient scripts and their complex evolution over time, excavated documents represented by Oracle Bone Inscriptions (OBI) frequently contain a large number of unencoded characters, which poses substantial challenges for digitization. As illustrated in Figure <ref type="figure" target="#fig_0">1</ref>, the common approach currently involves storing these characters as images <ref type="bibr">(Shi et al. 2022b;</ref><ref type="bibr" target="#b13">Guan et al. 2024;</ref><ref type="bibr" target="#b36">Wang et al. 2024;</ref><ref type="bibr" target="#b11">Gao et al. 2024)</ref>, which are often in handwritten or rubbing form, rather than as machine-encoded text. Furthermore, the limited number and preservation issues of excavated artifacts result in relatively scarce corpus samples for these ancient languages <ref type="bibr" target="#b4">(Chi et al. 2022;</ref><ref type="bibr">Diao et al. 2023a)</ref>. For example, only about 5,000 complete oracle bone pieces have been unearthed, yielding merely 15,000 sentences that contain more than five characters. Consequently, the combination of vast numbers of unencoded characters and the scarcity of sentence-level samples poses a significant challenge to the construction of an effective and usable corpus for ancient texts.</p><p>Research on ancient language models remains at an early stage. Some studies <ref type="bibr" target="#b14">(Guo et al. 2023;</ref><ref type="bibr" target="#b34">Wang et al. 2023;</ref><ref type="bibr" target="#b21">Liu et al. 2024</ref>) have attempted to repurpose modern character encoding schemes to represent ancient scripts, training word embeddings and constructing corpora based on these representations. However, such approaches typically cover only a subset of high-frequency ancient characters, while excluding a large number of low-frequency or unencoded characters. This exclusion is not trivial: in the context of ancient texts, where language resources are extremely limited and the writing system often highly contextual, even a single low-frequency character may carry unique semantic, historical, or cultural significance <ref type="bibr">(Diao et al. 2023b)</ref>. Each character, regardless of its frequency, can be crucial for accurately reconstructing meaning, understanding rare expressions, or tracing cultural and linguistic developments. Therefore, models that omit these characters suffer from incomplete representations and risk significant information loss during training <ref type="bibr" target="#b41">(Zhang and Li 2023)</ref>. Other efforts have explored directly training language models on limited transcriptions from excavated artifacts <ref type="bibr" target="#b4">(Chi et al. 2022)</ref>, but these are similarly constrained by the scarcity of annotated data, which makes unsupervised pre-training inefficient and affects effective semantic learning. The extremely low frequency of many ancient characters further complicates this challenge, as their meanings cannot be reliably inferred from the surrounding context alone.</p><p>To address the above challenges, we propose a novel corpus to support historical language modeling. A key component of our approach is InteChar, a unified and extensible character set that incorporates oracle bone characters not covered by existing encoding standards. We introduce a standardized digitization pipeline that converts scanned images containing OBIs into machine-readable text, encoded in a format compatible with modern character standards. In-teChar enables a consistent and comprehensive digital representation of ancient scripts, providing a solid foundation for subsequent corpus construction and model training. Furthermore, although many ancient characters appear infrequently, their latent mappings to modern Chinese can be reinforced using data distillation techniques within a pretraining paradigm. By augmenting the corpus with enhanced samples and integrating specialized pre-training strategies, models can acquire semantic representations of these rare characters more rapidly. Following this strategy, we construct OracleCS, a corpus of excavated transcriptions of oracle bone inscriptions designed to support the training of historical Chinese language models in low-resource settings. In addition, we construct a multi-task benchmark to quantitatively evaluate the performance of language models on understanding ancient scripts. To our knowledge, this work is the first to systematically incorporate excavated oracle characters, including undeciphered ones, into LM's evaluation pipelines. The main contributions include:</p><p>• We construct InteChar, a unified and extensible Unicodecompatible character list that integrates previously unencoded oracle bone characters alongside traditional and modern Chinese characters, enabling consistent and comprehensive digitization of ancient texts.</p><p>• Based on InteChar, we build OracleCS, a corpus that prominently features oracle bone transcriptions, and develop a benchmark to systematically evaluate language models on ancient Chinese language understanding. • Extensive experiments demonstrate that models trained on OracleCS with InteChar significantly outperform baselines across both embedding-based evaluations and downstream fine-tuning tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Related Work</head><p>Ancient Character Tasks </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ancient Chinese Corpus Collection</head><p>A key challenge in using NLP for ancient languages is the lack of annotated data. Ancient Chinese texts, e.g., oracle bones and bronze inscriptions, are typically available only as noisy, fragmented images with limited annotations <ref type="bibr">(Shi et al. 2022b;</ref><ref type="bibr" target="#b7">Diao et al. 2025)</ref>. This low-resource scenario necessitates innovative data collection and augmentation strategies. Recent work on word segmentation has explored using language models to create synthetic training data. For example, <ref type="bibr" target="#b27">(Shen et al. 2022</ref>) used an LSTM model <ref type="bibr" target="#b15">(Hochreiter and Schmidhuber 1997)</ref> to generate labeled samples, and <ref type="bibr" target="#b10">(Feng and Li 2023</ref>) applied distant supervision with parallel texts to build augmented datasets. Expert-annotated corpora are also essential. For instance, the CHisIEC dataset <ref type="bibr" target="#b31">(Tang et al. 2024</ref>) combines expert knowledge with text analysis to extract relations from historical texts.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Benchmarks of Ancient Language Models</head><p>Evaluating the performance of language models trained on ancient scripts poses unique challenges. Recent research has focused on building benchmark datasets to assess model capabilities on ancient Chinese texts. For example, FSPC <ref type="bibr" target="#b26">(Shao et al. 2021)</ref> and CCMP <ref type="bibr" target="#b19">(Li et al. 2021</ref>) provide corpora for classical poetry comprehension tasks, while CUGE<ref type="foot" target="#foot_0">1</ref>  <ref type="bibr" target="#b38">(Yao et al. 2021)</ref> extends CCMP by adding a poetry matching subtask. Zinin and Xu (Zinin and Xu 2020) compiled historical travel texts and other ancient corpora to enrich data diversity for downstream tasks. Other studies have introduced tasks such as syntactic analysis, topic mining, and sentiment classification <ref type="bibr" target="#b24">(Pan et al. 2022;</ref><ref type="bibr" target="#b35">Wang and Ren 2022;</ref><ref type="bibr" target="#b22">Liu et al. 2022)</ref>. AC-EVAL <ref type="bibr" target="#b37">(Wei et al. 2024)</ref> integrates multiple datasets and tasks into a unified evaluation suite for ancient Chinese understanding. WenMind <ref type="bibr">(Cao et al. 2024a)</ref> focuses on Chinese classical literature and language arts, containing 4,875 question-answer pairs across 42 finegrained tasks, offering a comprehensive benchmark for evaluating LLMs in this domain. Fùxì <ref type="bibr" target="#b42">(Zhao et al. 2025</ref>) introduces a benchmark covering 21 tasks aimed at both understanding and generation, including novel tasks such as poetry composition and couplet completion, making it particularly suited for generation-oriented ancient Chinese tasks. In summary, although significant progress has been made in developing models for the recognition and interpretation of ancient Chinese characters, key challenges remain. The most crucial problem is that all existing benchmarks and corpora only cover encoded texts, ignoring characters from unearthed artifacts that have not been standardized. This greatly limits the ability of language models to learn from ancient texts and manuscripts that contain rich historical and cultural information.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>The Proposed Method</head><p>This section introduces the construction of two key resources: the InteChar Unicode character list and the Ora-cleCS corpus. InteChar provides a unified encoding for ancient characters, while OracleCS offers a pretraining dataset for oracle bone script. Both of them form the foundation for downstream modeling and evaluation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>InteChar Character list Construction</head><p>Research on ancient scripts underscores the importance of building a comprehensive Unicode character list to support the development of historical language models. In this work, we construct a unified and structured character set named Integrated Characters (InteChar), which includes oracle bone characters, traditional Chinese characters, and modern simplified characters. InteChar is specifically designed to meet the needs of training models on ancient Chinese texts. We integrate multiple data sources, including modern Unicode character sets, scanned images of oracle bone inscriptions, and specialized font libraries, to produce a complete and standardized character list.</p><p>The construction of InteChar follows a four-stage workflow aimed at building a unified and extensible character inventory for ancient Chinese scripts. First, we initialize the character list by loading the official Unicode charac-ter set<ref type="foot" target="#foot_1">2</ref> , which serves as the foundational layer for compatibility with modern natural language processing systems. Second, we enrich the list by incorporating encoded characters from widely adopted machine-readable ancient Chinese resources, selecting only those characters that also appear in our curated corpus to ensure relevance and avoid redundancy. Third, we construct entirely new characters for glyphs present in the corpus but absent from existing standards. Finally, we conduct expert-guided proofreading and de-duplication to ensure the integrity, accuracy, and uniqueness of each character entry. The resulting InteChar character set contains both standardized and newly encoded characters, offering robust support for historical language modeling and digital processing of ancient texts. Initial Character List Construction. The initial character list is constructed by loading the official Unicode character set, which defines standardized code points for characters from virtually all major writing systems worldwide. Among them, Unicode includes more than 90,000 encoded CJK characters<ref type="foot" target="#foot_2">3</ref> . This serves as the foundational encoding standard for modern natural language processing, ensuring consistency across platforms and compatibility with mainstream language models. Integration of Existing Encoded Characters. To fully leverage existing resources and reduce manual overhead, we integrate previously encoded ancient characters from widely adopted machine-readable libraries. A primary source is the Zhongjian Library collection published by Zhonghua Book Company<ref type="foot" target="#foot_3">4</ref> , a commonly used resource among paleographers that includes 16 historical font sets initially. These fonts include well-attested glyphs from oracle bones, bronze inscriptions, bamboo manuscripts, and other early Chinese scripts. Our focus is on the oracle bone subset of the Zhongjian Library. To ensure relevance and avoid redundancy, we apply a strict filtering strategy: only characters that appear both in the Zhongjian Library and in our curated corpus are retained. This ensures that all included characters are not only well-formed but also actively used in authentic historical contexts. When a character appears in multiple font sets, we preserve only one representative form to avoid duplication. For each retained glyph, we extract its graphical representation and record the associated metadata in InteChar, including font source and an internally assigned code point within Zhongjian Library. This integration stage enables the reuse of trusted typographic resources and provides a cost-effective foundation for character set expansion. Construction of New Characters. While the integration of existing resources significantly reduces manual effort, a large number of characters in our corpus remain unencoded in both Unicode and historical font libraries, especially from excavated oracle inscriptions. These characters often correspond to undeciphered or low-frequency glyphs that nonetheless carry important contextual and linguistic value. To address this gap, we construct entirely new characters using a semi-automated pipeline that combines com- puter vision techniques with expert validation. Following previous studies, we rely on three key sources to identify candidate characters for construction: oracle bone images, domain-specific corpora, and existing font resources. Characters that appear in our training corpus but lack a corresponding encoding in Unicode or the Zhongjian Library are flagged as candidates for reconstruction.</p><p>We observe that while many oracle glyphs are complex and unique, a large number of their subcomponents, namely radicals, have been extensively studied and can be linked to known components in traditional Chinese characters. Instead of requiring experts to manually trace entire glyphs stroke by stroke, we adopt a radical-based recognition method that detects familiar structural units to enable compositional reconstruction. This approach significantly improves both the efficiency and scalability of new character creation. To efficiently construct new character entries without requiring experts to manually trace every stroke, we apply a radical recognition method that automatically identifies radicals within complex glyphs. By detecting known radicals, we can reconstruct new characters radical by radical, rather than stroke by stroke, significantly accelerating the expansion of the character list. In our implementation, we adopt the radical recognition method proposed by <ref type="bibr">(Diao et al. 2023a)</ref>  This pipeline allows us to systematically digitize and encode characters that were previously inaccessible to computational models. As a result, oracle bone characters with no prior encoding can now be consistently represented, searched, and used in downstream language modeling tasks. Figure <ref type="figure" target="#fig_1">2</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>OracleCS Corpus Construction</head><p>To support embedding-level representation learning and downstream fine-tuning for ancient Chinese language understanding, we construct the Oracle Corpus Set (OracleCS), a linguistically curated corpus specifically focused on oracle bone inscriptions and ancient Chinese texts. It serves as a foundational resource for evaluating and adapting modern language models to low-resource historical scripts.</p><p>OracleCS is constructed under a standardized pipeline that integrates expert curation with automated data enrichment. The process begins with domain experts in paleography and historical Chinese linguistics manually selecting and annotating high-quality samples from archaeological literature and oracle bone rubbings<ref type="foot" target="#foot_4">5</ref> . These samples include both deciphered and undeciphered oracle characters encoded in InteChar, and form the core of the corpus. In addition to the main textual data, OracleCS includes glyph-level and semantic annotations for individual characters. These include radical decompositions and definitions extracted from classical lexicons such as Shuowenjiezi<ref type="foot" target="#foot_5">6</ref> and The Great Chinese Dictionary<ref type="foot" target="#foot_6">7</ref> . For characters not yet deciphered, semantic annotations are left blank. The corpus also incorporates a selection of pre-Qin classics<ref type="foot" target="#foot_7">8</ref> , including Analects, Spring and Autumn Annals, Mencius, Xunzi, etc.</p><p>To address the scarcity of annotated ancient texts, we adopt data augmentation strategies to further enrich Ora-cleCS. Specifically, we introduce instruction-tuning samples that combine task descriptions with input-output demonstrations. These instruction-following examples simulate realistic usage scenarios and cover a wide range of sentencelevel and character-level tasks, including sentence translation, synonym substitution, glyph structure analysis, character decomposition, and semantic prediction. By integrating explicit instructions with concrete demonstrations, the corpus is expanded in scale and enhanced in task diversity and linguistic granularity. This enables the model to more effectively learn both high-level semantic mappings and lowlevel structural associations, improving its ability to evaluate the complexities of ancient text processing.</p><p>Based on these datasets, we construct a benchmark for evaluating historical language understanding. Our framework supports two complementary modes of evaluation, including embedding evaluation tasks and downstream finetuning tasks. Notably, this work is the first to incorporate excavated oracle characters into systematic evaluation pipelines for large language models, including oracle bone characters that remain undeciphered.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experiments and Discussions</head><p>This section presents the experimental evaluation of In-teChar and OracleCS. We detail the datasets used, the experimental setup, baseline comparisons, and downstream task evaluations to demonstrate the effectiveness of our methodology. In this section, we present a comprehensive evaluation of our proposed OracleCS through two sets of experiments. The first set assesses the embedding capability of language models pre-trained with the extended oracle vocabulary, while the second set evaluates downstream performance on several fine-tuning tasks. In all experiments, we trained each baseline model both with and without the addition of the InteChar character list, and compared their performance on the same tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental Setup</head><p>Datasets. Our experiments are conducted based on the proposed OracleCS dataset, which comprises both excavated texts and classical Chinese literature. The dataset contains approximately 11,288 unique Chinese characters and a total of 173,459 annotated samples. Each sample includes radical decomposition information, and, where applicable, a mapping to its corresponding modern Chinese word is also provided. This structured annotation enables more accurate learning of character semantics and facilitates model understanding of the intricate relationship between ancient and modern language forms. Baselines. All evaluations are conducted on ten models. We select three classic baselines, including BERT <ref type="bibr" target="#b6">(Devlin et al. 2019)</ref>, Llama-3-8B <ref type="bibr" target="#b33">(Touvron et al. 2023)</ref>, and GPT-2 <ref type="bibr" target="#b1">(Brown et al. 2020)</ref>, three language models designed for Chinese, including MiniRBT <ref type="bibr" target="#b5">(Cui et al. 2021)</ref>, guwenBERTbase<ref type="foot" target="#foot_8">9</ref>  <ref type="bibr" target="#b34">(Wang et al. 2023)</ref>, and sikuBERT <ref type="bibr" target="#b21">(Liu et al. 2024)</ref>, two state-of-the-art LLMs, including Qwen-7B-Chat <ref type="bibr">(Bai et al. 2023) and</ref><ref type="bibr">GLM-4-9B (GLM et al. 2024)</ref>, and two state-of-the-art LLMs designed for ancient Chinese, including XunziALLM<ref type="foot" target="#foot_9">10</ref> and TongGu-LLM <ref type="bibr">(Cao et al. 2024b</ref>). Implementation details. The experiments are run on a highperformance server equipped with eight HUAWEI Ascend-D910b NPU under an Ubuntu-based environment. We implement our models with PyTorch and set unified hyperparameters for every models. For embedding evaluation, models are trained for 10 epochs with a batch size of 32 and an initial learning rate of 3e-5. Optimization is performed using AdamW, and early stopping is applied based on NDCG@10 on the development set. For fine-tuning evaluation, we set the batch size to 32 and the learning rate to 1e-5. It is performed for 10 epochs using the AdamW optimizer and CrossEntropy loss. The model checkpoint with the highest validation score is selected for final evaluation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Embedding Evaluation</head><p>To assess the semantic representation capabilities of pretrained models under different character list settings, we design two embedding-based evaluation tasks: (1) Cloze Completion on Oracle Bone Inscriptions, and (2) Commentaryto-Text Retrieval on Canonical Texts. These tasks evaluate how well the character-level embeddings capture contextual and semantic information in a zero-shot setting, without task-specific fine-tuning. For each model, we replace the original character embedding layer with a newly initialized embedding matrix based on either the original character list or the proposed InteChar, while keeping the pretrained model backbone frozen. These embeddings are trained on the OracleCS corpus to adapt to ancient character representations. During evaluation, we extract final-layer embeddings and compute similarity scores between masked inputs and candidates or between paired sentence-level inputs. Performance is reported using standard ranking metrics: Nor-NDCG@10 MRR@10 NDCG@20 MRR@20 Models</p><p>Origin  <ref type="table" target="#tab_2">1</ref> presents the performance of 10 representative models across four ranking metrics: NDCG@10, MRR@10, NDCG@20, and MRR@20. Across all metrics, models using InteChar consistently outperform their original counterparts. For example, the MRR@10 of GPT improves from 0.168 to 0.534, and BERT from 0.134 to 0.375, demonstrating better top-ranked prediction accuracy. Larger mod-els show even greater gains: Qwen2.5-Omni-7B improves from 0.302 to 0.842 in NDCG@10, and from 0.254 to 0.736 in MRR@10. These results validate the effectiveness of In-teChar in enhancing representation learning, particularly for low-resource ancient scripts. The enriched character semantics help models capture context more effectively. Commentary-to-Text Retrieval on Canonical Texts. This task evaluates sentence-level semantic alignment between modern commentaries and classical Chinese texts, aiming to assess sentence-level semantic understanding and retrieval capacity. Given a modern commentary, the model retrieves the corresponding original sentence from a large candidate pool based on sentence embedding similarity. The test set contains 896 commentary queries and 12,141 classical text candidates. Each model computes sentence-level embeddings for both, ranked by similarity, and evaluated using standard retrieval metrics such as NDCG@k and MRR@k.</p><p>As shown in Table <ref type="table" target="#tab_3">2</ref>, InteChar-enhanced models again yield notable improvements. For instance, when k = 500, GLM-4-9B improves its MRR@500 from 0.176 to 0.285, and Qwen2.5-Omni-7B increases its NDCG@500 from Overall, these two tasks evaluate both fine-grained (character-level) and coarse-grained (sentence-level) semantic capabilities. The consistent performance improvements demonstrate that InteChar facilitates more robust and discriminative character embeddings, enabling better semantic matching in low-resource, zero-shot scenarios.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fine-tuning Evaluation</head><p>In addition to embedding-based evaluation, we further validate the effectiveness of our proposed InteChar character list under fine-tuning settings. Specifically, we consider three downstream tasks: Ancient Chinese Translation, Polysemous Word Matching, and Word Parsing. Details include:</p><p>• Ancient Chinese Translation is a sentence-level task that requires the model to align ancient Chinese texts with their modern Chinese counterparts. These tasks cover different levels of linguistic granularity, from sentence-level translation to character-level parsing, and together form a comprehensive benchmark for evaluating historical language understanding.</p><p>We adopt parameter-efficient fine-tuning using LoRA <ref type="bibr" target="#b16">(Hu et al. 2022</ref>) to adapt each model to downstream tasks. In all cases, we freeze the pretrained model backbone and update only the low-rank adaptation layers and task-specific output heads. As shown in Table <ref type="table" target="#tab_4">3</ref>, the results demonstrate that training with InteChar consistently improves performance across all tasks and models. Compared to the original character list, models with InteChar achieve better generalization and semantic alignment. For example, TongGu-LLM reaches 94.84 on translation and 92.65 on parsing, yielding an overall accuracy of 92.92. The average accuracy across all tasks also improves for every model. For instance, Qwen2.5-Omni-7B rises from 92.32 to 93.06. These improvements suggest that InteChar enhances both shallow and deep linguistic modeling. Compared to embeddingbased evaluations, the fine-tuning experiments provide complementary evidence. While embedding evaluation focuses on the quality of newly trained character embeddings under a frozen backbone, fine-tuning further adapts models through parameter-efficient tuning for specific tasks. The consistent gains across both settings confirm that InteChar significantly improves language modeling for ancient texts.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>This paper focuses on addressing key challenges in training language models for historical Chinese texts, including the poor performance of conventional language models on sparse ancient data and the lack of unified digital representations for ancient characters. One of our contributions is the construction of InteChar, a unified and extensible character set that incorporates unencoded oracle characters alongside traditional and modern Chinese, enabling consistent representation across scanned images, font libraries, and annotated corpora. We further integrate expert-curated samples with LLM-assisted data augmentation to construct a high-quality training corpus, OracleCS, and evaluate models on both cloze-style completion for excavated texts and commentary-to-text retrieval on classical literature. Experimental results show that models equipped with InteChar significantly outperform those using the original character list in both embedding-based and fine-tuning tasks, particularly in handling rare or unencoded characters.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Examples of various types of OBI images. (a) An entire piece of oracle bone. (b) An entire piece of oracle bone rubbing. (c) Oracle character rubbing images. (d) Handwritten oracle character images.</figDesc><graphic coords="1,319.50,216.00,238.49,137.95" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Examples of Unicode character lists. (a). Oracle bone Character images with their corresponding standardized glyphs and Unicode in InteChar. (b). Examples of TrueType Font in InteChar.</figDesc><graphic coords="4,54.00,54.00,504.01,127.59" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>to output candidate radicals, which is based on an object detection model trained to identify oracle radicals within noisy, real-world character images. The overall pipeline for new character construction consists of the following seven steps: • Image Collection and Preprocessing: Oracle bone inscription images are collected from archaeological publications and processed via resizing, contrast normalization, and geometric alignment (e.g., vertical flipping). • Radical Recognition: The preprocessed images are passed through the radical recognition model to predict the categories of radicals within each glyph. • Standardization of Components: Mapping predicted radicals to modern Chinese equivalents where applicable, forming an intermediate compositional glyphs. • Expert Verification: Paleographers manually verify the radical composition, correct misclassifications, and make final glyph adjustments based on domain knowledge. • Vectorization: Validated glyphs are redrawn as scalable vector graphics, conforming to a consistent visual style aligned with InteChar's typographic standard. • Code Point Assignment: Each reconstructed glyph is assigned a new internal code point using a Unicode-style format that supports future interoperability and systematic expansion. • Character Integration: The finalized character is incorporated into InteChar.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 1 :</head><label>1</label><figDesc>Embedding-based evaluation results on the Cloze task using excavated oracle texts. Models use frozen backbones and are equipped with newly trained embedding layers based on either the original character list or the InteChar character list. Performance is measured by NDCG@k and MRR@k, where k = 10 or 20.</figDesc><table><row><cell>InteChar Origin InteChar Origin InteChar Origin InteChar</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 2 :</head><label>2</label><figDesc>Embedding-based evaluation results on the Commentary-to-Text Retrieval task. Models use frozen backbones and are equipped with newly trained embedding layers based on either the original character list or the InteChar character list. Performance is evaluated with NDCG@k and MRR@k, where k = 400 or 500.</figDesc><table><row><cell>malized Discounted Cumulative Gain (NDCG) and Mean</cell></row><row><cell>Reciprocal Rank (MRR).</cell></row><row><cell>Cloze Completion on Oracle Bone Inscriptions. This task</cell></row><row><cell>focuses exclusively on oracle bone inscriptions from exca-</cell></row><row><cell>vated sources, aiming to test the word embedding ability of</cell></row><row><cell>models to semantically distinguish oracle characters in con-</cell></row><row><cell>text. Given a sentence with one character masked, the model</cell></row><row><cell>is asked to select the correct character from a limited set</cell></row><row><cell>of candidates based on embedding similarity. Each candi-</cell></row><row><cell>date set is predefined (e.g., @k indicates k options per in-</cell></row><row><cell>stance). This test set consists of 15,416 cloze instances, with</cell></row><row><cell>12,416 instances for training and 3,000 for evaluation. Each</cell></row><row><cell>instance includes a masked sentence and a set of candidate</cell></row><row><cell>characters (including one ground truth).</cell></row><row><cell>Table</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 3 :</head><label>3</label><figDesc>Fine-tuning results (%) on three downstream tasks, including Ancient Chinese Translation, Polysemous Word Matching, and Word Parsing. Each model is adapted on the OracleCS using either the original character list or our proposed InteChar character list. The Average column represents the average accuracy across all three tasks. 0.418 to 0.579. These gains reflect the enhanced capacity of InteChar to bridge semantic gaps between classical and modern Chinese expressions.</figDesc><table><row><cell></cell><cell cols="2">Translation</cell><cell cols="2">Polysemous Matching</cell><cell cols="2">Word Parsing</cell><cell cols="2">Average</cell></row><row><cell>Models</cell><cell cols="3">origin InteChar origin</cell><cell>InteChar</cell><cell cols="4">origin InteChar origin InteChar</cell></row><row><cell>BERT (Devlin et al. 2019)</cell><cell>92.75</cell><cell>93.01</cell><cell>86.69</cell><cell>87.07</cell><cell>90.54</cell><cell>91.59</cell><cell>89.99</cell><cell>90.56</cell></row><row><cell>Llama-3-8B (Touvron et al. 2023)</cell><cell>83.52</cell><cell>83.43</cell><cell>80.28</cell><cell>80.51</cell><cell>80.43</cell><cell>80.89</cell><cell>81.41</cell><cell>81.61</cell></row><row><cell>GPT-2 (Brown et al. 2020)</cell><cell>90.27</cell><cell>90.84</cell><cell>86.86</cell><cell>87.23</cell><cell>88.67</cell><cell>89.27</cell><cell>88.60</cell><cell>89.11</cell></row><row><cell>MiniRBT (Cui et al. 2021)</cell><cell>91.34</cell><cell>91.69</cell><cell>86.65</cell><cell>87.12</cell><cell>89.32</cell><cell>89.86</cell><cell>89.10</cell><cell>89.56</cell></row><row><cell cols="2">guwenBERT-base 9 (Wang et al. 2023) 92.86</cell><cell>93.50</cell><cell>87.73</cell><cell>88.48</cell><cell>91.26</cell><cell>91.88</cell><cell>90.62</cell><cell>91.29</cell></row><row><cell>sikuBERT (Liu et al. 2024)</cell><cell>93.21</cell><cell>93.88</cell><cell>86.48</cell><cell>87.52</cell><cell>90.84</cell><cell>91.32</cell><cell>90.18</cell><cell>90.91</cell></row><row><cell>Qwen-7B-Chat (Bai et al. 2023)</cell><cell>94.37</cell><cell>95.06</cell><cell>89.23</cell><cell>90.16</cell><cell>93.36</cell><cell>93.96</cell><cell>92.32</cell><cell>93.06</cell></row><row><cell>GLM-4-9B (GLM et al. 2024)</cell><cell>92.98</cell><cell>93.35</cell><cell>87.72</cell><cell>88.34</cell><cell>94.27</cell><cell>94.79</cell><cell>91.66</cell><cell>92.16</cell></row><row><cell>XunziALLM 10</cell><cell>93.53</cell><cell>94.31</cell><cell>91.51</cell><cell>92.23</cell><cell>92.78</cell><cell>93.28</cell><cell>92.61</cell><cell>93.27</cell></row><row><cell>TongGu-LLM (Cao et al. 2024b)</cell><cell>94.12</cell><cell>94.84</cell><cell>90.45</cell><cell>91.27</cell><cell>92.06</cell><cell>92.65</cell><cell>92.21</cell><cell>92.92</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head></head><label></label><figDesc>• Polysemous Word Matching is a binary classification task where the model is given a sentence and asked to determine whether a specified character in context matches a given semantic interpretation. • Word Parsing is a character-level task where the model selects the appropriate interpretation of an ancient character based on learned semantics. All experiments are conducted on annotated subsets of the OracleCS dataset, using either the original character list or InteChar, with separate training and test sets for each task. The Ancient Chinese Translation task includes 15,868 training and 10,578 test samples; Polysemous Word Matching has 33,380 training and 22,253 test samples; and Word Parsing consists of 81,929 training and 54,619 test samples.</figDesc><table /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>https://cuge.baai.ac.cn.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>https://en.wikipedia.org/wiki/Unicode</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>https://en.wikipedia.org/wiki/CJK_Unified_Ideographs</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_3"><p>https://www.ancientbooks.cn/helpcore?font</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_4"><p>https://jgw.aynu.edu.cn/home/index.html</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_5"><p>https://www.shuowen.cn/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_6"><p>https://www.hanyudacidian.cn/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_7"><p>https://ctext.org/pre-qin-and-han/zhs</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="9" xml:id="foot_8"><p>https://github.com/ethan-yt/guwenbert.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="10" xml:id="foot_9"><p>https://github.com/Xunzi-LLM-of-Chinese-classics/ XunziALLM.</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Dang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Men</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Zhou</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2309.16609</idno>
+		<imprint/>
+	</monogr>
+	<note>and Zhu, T. 2023. Qwen Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Language models are few-shot learners. Advances in neural information processing systems</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ryder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Subbiah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dhariwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Neelakantan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Shyam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Sastry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Askell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="1877" to="1901" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">2024a. Wen-Mind: A comprehensive benchmark for evaluating large language models in Chinese classical literature and language arts</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="51358" to="51410" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">TongGu: Mastering Classical Chinese Understanding with Knowledge-Grounded Large Language Models</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics: EMNLP 2024</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="4196" to="4210" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">ZiNet: Linking Chinese Characters Spanning Three Thousand Years</title>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fausto</forename><surname>Giunchiglia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daqian</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolei</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuntao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2022.findings-acl.242</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics: ACL 2022</title>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="3061" to="3070" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Pre-Training With Whole Word Masking for Chinese BERT</title>
+		<author>
+			<persName><forename type="first">Yiming</forename><surname>Cui</surname></persName>
+			<idno type="ORCID">0000-0002-2452-375X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wanxiang</forename><surname>Che</surname></persName>
+			<idno type="ORCID">0000-0002-3907-0335</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ting</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bing</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziqing</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0003-0666-4409</idno>
+		</author>
+		<idno type="DOI">10.1109/taslp.2021.3124365</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE/ACM Transactions on Audio, Speech, and Language Processing</title>
+		<title level="j" type="abbrev">IEEE/ACM Trans. Audio Speech Lang. Process.</title>
+		<idno type="ISSN">2329-9290</idno>
+		<idno type="ISSNe">2329-9304</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="3504" to="3514" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Bert: Pre-training of deep bidirectional transformers for language understanding</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Devlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-W</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Toutanova</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 conference of the North American chapter of the association for computational linguistics: human language technologies</title>
+		<meeting>the 2019 conference of the North American chapter of the association for computational linguistics: human language technologies</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="4171" to="4186" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Oracle bone inscription image restoration via glyph extraction</title>
+		<author>
+			<persName><forename type="first">Xiaolei</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daqian</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ting</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruihua</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuntao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s40494-025-01795-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">npj Heritage Science</title>
+		<title level="j" type="abbrev">npj Herit. Sci.</title>
+		<idno type="ISSNe">3059-3220</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">321</biblScope>
+			<date type="published" when="2025-07-05">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Toward Zero-shot Character Recognition: A Gold Standard Dataset with Radical-level Annotations</title>
+		<author>
+			<persName><forename type="first">Xiaolei</forename><surname>Diao</surname></persName>
+			<idno type="ORCID">0000-0002-3269-8103</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daqian</forename><surname>Shi</surname></persName>
+			<idno type="ORCID">0000-0003-2183-1957</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-0065-4333</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lida</forename><surname>Shi</surname></persName>
+			<idno type="ORCID">0000-0001-5011-6931</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mingzhe</forename><surname>Yue</surname></persName>
+			<idno type="ORCID">0009-0008-9982-2026</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ruihua</forename><surname>Qi</surname></persName>
+			<idno type="ORCID">0000-0002-0554-6040</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chuntao</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0001-9836-1493</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xu</surname></persName>
+			<idno type="ORCID">0000-0001-8474-0767</idno>
+		</author>
+		<idno type="DOI">10.1145/3581783.3612201</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 31st ACM International Conference on Multimedia</title>
+		<meeting>the 31st ACM International Conference on Multimedia</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2023-10-26">2023</date>
+			<biblScope unit="page" from="6869" to="6877" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">RZCR: Zero-shot Character Recognition via Radical-based Reasoning</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 32nd International Joint Conference on Artificial Intelligence (IJCAI)</title>
+		<meeting>the 32nd International Joint Conference on Artificial Intelligence (IJCAI)</meeting>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Ancient Chinese Word Segmentation and Part-of-Speech Tagging Using Distant Supervision</title>
+		<author>
+			<persName><forename type="first">Shuo</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piji</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icassp49357.2023.10097080</idno>
+	</analytic>
+	<monogr>
+		<title level="m">ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-06-04">2023</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Linking unknown characters via oracle bone inscriptions retrieval</title>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Runhua</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yahong</forename><surname>Han</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00530-024-01327-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Multimedia Systems</title>
+		<title level="j" type="abbrev">Multimedia Systems</title>
+		<idno type="ISSN">0942-4962</idno>
+		<idno type="ISSNe">1432-1882</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">125</biblScope>
+			<date type="published" when="2024-04-15">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><surname>Glm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rojas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2406.12793</idno>
+		<title level="m">Chatglm: A family of large language models from glm-130b to glm-4 all tools</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Deciphering Oracle Bone Language with Diffusion Models</title>
+		<author>
+			<persName><forename type="first">Haisu</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huanxin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shengwei</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliang</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.acl-long.831</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
+		<meeting>the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="15554" to="15567" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Towards Effective Ancient Chinese Translation: Dataset, Model, and Evaluation</title>
+		<author>
+			<persName><forename type="first">Geyang</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiarong</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fengyuan</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaxin</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyi</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wayne</forename><forename type="middle">Xin</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-44696-2_33</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="416" to="427" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Long short-term memory</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hochreiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Schmidhuber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neural computation</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1735" to="1780" />
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Lora: Low-rank adaptation of large language models</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wallis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Allen-Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICLR</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">3</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Exploring the Role of Language Models in Deciphering and Preserving Ancient Languages</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Koc</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Asian American Research Letters Journal</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="75" to="82" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Towards better long-tailed oracle character recognition with adversarial data augmentation</title>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiu-Feng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaizhu</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-4644-3037</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">Y</forename><surname>Goulermas</surname></persName>
+			<idno type="ORCID">0000-0003-0381-124X</idno>
+		</author>
+		<idno type="DOI">10.1016/j.patcog.2023.109534</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition</title>
+		<title level="j" type="abbrev">Pattern Recognition</title>
+		<idno type="ISSN">0031-3203</idno>
+		<imprint>
+			<biblScope unit="volume">140</biblScope>
+			<biblScope unit="page">109534</biblScope>
+			<date type="published" when="2023-08">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<author>
+			<persName><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2106.01979</idno>
+		<title level="m">Ccpm: A chinese classical poetry matching dataset</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Radical-based extract and recognition networks for Oracle character recognition</title>
+		<author>
+			<persName><forename type="first">Xiaoyu</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shanxiong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fujia</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaogang</forename><surname>Qiu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10032-021-00392-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal on Document Analysis and Recognition (IJDAR)</title>
+		<title level="j" type="abbrev">IJDAR</title>
+		<idno type="ISSN">1433-2833</idno>
+		<idno type="ISSNe">1433-2825</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="219" to="235" />
+			<date type="published" when="2022-04-13">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">SikuGPT: A Generative Pre-trained Model for Intelligent Information Processing of Ancient Texts from the Perspective of Digital Humanities</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Journal on Computing and Cultural Heritage</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1" to="17" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Contrastive Learning between Classical and Modern Chinese for Classical Chinese Machine Reading Comprehension</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Trans. Asian Low-Resour. Lang. Inf. Process</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Siamese network features for image matching</title>
+		<author>
+			<persName><forename type="first">Iaroslav</forename><surname>Melekhov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juho</forename><surname>Kannala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Esa</forename><surname>Rahtu</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icpr.2016.7899663</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 23rd International Conference on Pattern Recognition (ICPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-12">2016</date>
+			<biblScope unit="page" from="378" to="383" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Zuo Zhuan Ancient Chinese Dataset for Word Sense Disambiguation</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Oka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Komachi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ippolito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Pacheco</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Student Research Workshop</title>
+		<editor>
+			<persName><forename type="first">N</forename><surname>Xue</surname></persName>
+		</editor>
+		<meeting>the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Student Research Workshop</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="129" to="135" />
+		</imprint>
+	</monogr>
+	<note>Hybrid: Seattle, Washington + Online</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A New Frontier: AI and Ancient Language Pedagogy</title>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">A</forename><surname>Ross</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s2058631023000430</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Classics Teaching</title>
+		<title level="j" type="abbrev">J. of Class. Teach.</title>
+		<idno type="ISSNe">2058-6310</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">48</biblScope>
+			<biblScope unit="page" from="143" to="161" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">A Sentiment and Style Controllable Approach for Chinese Poetry Generation</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 30th ACM International Conference on Information &amp; Knowledge Management, CIKM &apos;21</title>
+		<meeting>the 30th ACM International Conference on Information &amp; Knowledge Management, CIKM &apos;21<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computing Machinery</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="4784" to="4788" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Data augmentation for low-resource word segmentation and pos tagging of ancient chinese texts</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Second Workshop on Language Technologies for Historical and Ancient Languages</title>
+		<meeting>the Second Workshop on Language Technologies for Historical and Ancient Languages</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="169" to="173" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">CharFormer: A Glyph Fusion based Attentive Framework for High-precision Character Image Denoising</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 30th ACM International Conference on Multimedia</title>
+		<meeting>the 30th ACM International Conference on Multimedia</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">RCRN: Real-world Character Image Restoration Network via Skeleton Extraction</title>
+		<author>
+			<persName><forename type="first">Daqian</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolei</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaomin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3503161.3548344</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 30th ACM International Conference on Multimedia</title>
+		<meeting>the 30th ACM International Conference on Multimedia</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2022-10-10">2022</date>
+			<biblScope unit="page" from="1177" to="1185" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Natural Language Processing for Ancient Greek</title>
+		<author>
+			<persName><forename type="first">Silvia</forename><surname>Stopponi</surname></persName>
+			<idno type="ORCID">0000-0002-3041-3477</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nilo</forename><surname>Pedrazzini</surname></persName>
+			<idno type="ORCID">0000-0003-3757-2961</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saskia</forename><surname>Peels-Matthey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Mcgillivray</surname></persName>
+			<idno type="ORCID">0000-0003-3426-8200</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Malvina</forename><surname>Nissim</surname></persName>
+		</author>
+		<idno type="DOI">10.1075/dia.23013.sto</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Diachronica</title>
+		<title level="j" type="abbrev">DIA</title>
+		<idno type="ISSN">0176-4225</idno>
+		<idno type="ISSNe">1569-9714</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="414" to="435" />
+			<date type="published" when="2024-07-02">2024</date>
+			<publisher>John Benjamins Publishing Company</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">CHisIEC: An Information Extraction Corpus for Ancient Chinese History</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Calzolari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-Y</forename><surname>Kan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Hoste</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lenci</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Sakti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024</title>
+		<editor>
+			<persName><forename type="first">N</forename><surname>Xue</surname></persName>
+		</editor>
+		<meeting>the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024<address><addrLine>Torino, Italia</addrLine></address></meeting>
+		<imprint>
+			<publisher>ELRA and ICCL</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="3192" to="3202" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">AnchiBERT: A Pre-Trained Model for Ancient Chinese Language Understanding and Generation</title>
+		<author>
+			<persName><forename type="first">Huishuang</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kexin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dayiheng</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiancheng</forename><surname>Lv</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ijcnn52387.2021.9534342</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 International Joint Conference on Neural Networks (IJCNN)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-07-18">2021</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Touvron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lavril</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Izacard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Martinet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-A</forename><surname>Lachaux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lacroix</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Rozière</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Goyal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Hambro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Azhar</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2302.13971</idno>
+		<title level="m">Llama: Open and efficient foundation language models</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2307.05354</idno>
+		<title level="m">Gujibert and gujigpt: Construction of intelligent information processing foundation language models for ancient texts</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The Uncertainty-based Retrieval Framework for Ancient Chinese CWS and POS</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ren</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Second Workshop on Language Technologies for Historical and Ancient Languages</title>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Sprugnoli</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Passarotti</surname></persName>
+		</editor>
+		<meeting>the Second Workshop on Language Technologies for Historical and Ancient Languages<address><addrLine>Marseille, France</addrLine></address></meeting>
+		<imprint>
+			<publisher>European Language Resources Association</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="164" to="168" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">An open dataset for oracle bone character recognition and decipherment</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Kuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Bai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">976</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">AC-EVAL: Evaluating Ancient Chinese Language Understanding in Large Language Models</title>
+		<author>
+			<persName><forename type="first">Yuting</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanxing</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinru</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yangsimin</forename><surname>Yangsimin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yangfu</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuqing</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Wu</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.findings-emnlp.87</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics: EMNLP 2024</title>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="1600" to="1617" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Cuge: A chinese language understanding and generation evaluation benchmark</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Nie</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2112.13610</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Ancient character detection based on fine-grained density map</title>
+		<author>
+			<persName><forename type="first">Mingzhe</forename><surname>Yue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daqian</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolei</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuzhen</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuntao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s40494-025-01791-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">npj Heritage Science</title>
+		<title level="j" type="abbrev">npj Herit. Sci.</title>
+		<idno type="ISSNe">3059-3220</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">280</biblScope>
+			<date type="published" when="2025-06-18">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">AIpowered oracle bone inscriptions recognition and fragments rejoining</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Men</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twenty-Ninth International Conference on International Joint Conferences on Artificial Intelligence</title>
+		<meeting>the Twenty-Ninth International Conference on International Joint Conferences on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="5309" to="5311" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Proceedings of the Conference Recent Advances in Natural Language Processing - Large Language Models for Natural Language Processings</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.26615/978-954-452-092-2_xxx</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Recent Advances in Natural Language Precessing: RANLP 2023</title>
+		<meeting>the Recent Advances in Natural Language Precessing: RANLP 2023</meeting>
+		<imprint>
+			<publisher>INCOMA Ltd., Shoumen, BULGARIA</publisher>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Zhe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lan</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2503.15837</idno>
+		<title level="m">F\ux\i: A Benchmark for Evaluating Language Models on Ancient Chinese Text Understanding and Generation</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Corpus of Chinese Dynastic Histories: Gender Analysis over Two Millennia</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zinin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Calzolari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Béchet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Blache</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Choukri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cieri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Declerck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Goggi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Isahara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Maegaard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mariani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Mazo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Odijk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twelfth Language Resources and Evaluation Conference</title>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Piperidis</surname></persName>
+		</editor>
+		<meeting>the Twelfth Language Resources and Evaluation Conference<address><addrLine>Marseille, France</addrLine></address></meeting>
+		<imprint>
+			<publisher>European Language Resources Association</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="785" to="793" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

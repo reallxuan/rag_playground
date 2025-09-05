@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Archiverse: an Approach for Immersive Cultural Heritage</title>
+				<funder ref="#_g7JaW2r">
+					<orgName type="full">European Union -NextGenerationEU</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">National Recovery Plan</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-07-25">25 Jul 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">XR Center, Polish-Japanese Academy of Information Technology</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Detroit Mercy</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">Volterra-Detroit Foundation</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="institution">Kobo Association</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Archiverse: an Approach for Immersive Cultural Heritage</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-07-25">25 Jul 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">D420907CDD7675F61794EC14ED040668</idno>
+					<idno type="arXiv">arXiv:2507.19376v1[cs.HC]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:31+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Cultural Heritage Visualization</term>
+					<term>Virtual Reality</term>
+					<term>eXtended Reality</term>
+					<term>Immersive Systems</term>
+					<term>Architecture</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Digital technologies and tools have transformed the way we can study cultural heritage and the way we can recreate it digitally. Techniques such as laser scanning, photogrammetry, and a variety of Mixed Reality solutions have enabled researchers to examine cultural objects and artifacts more precisely and from new perspectives. In this part of the panel, we explore how Virtual Reality (VR) and eXtended Reality (XR) can serve as tools to recreate and visualize the remains of historical cultural heritage and experience it in simulations of its original complexity, which means immersive and interactive. Visualization of material culture exemplified by archaeological sites and architecture can be particularly useful when only ruins or archaeological remains survive. However, these advancements also bring significant challenges, especially in the area of transdisciplinary cooperation between specialists from many, often distant, fields, and the dissemination of virtual immersive environments among both professionals and the general public.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Rationale</head><p>Digital recreation or reconstruction and immersive visualization of lost cultural heritage architectural objects poses significant challenges that require the collaboration of specialists from a wide range of disciplines. This part of the discussion panel is based on recent research advancements in creating high-quality VR environments using data from architectural BIM (Building Information Modeling) systems as a way of presenting digital reconstructions of cultural heritage conducted as part of the Archiverse framework project. This project stems from the previous experience in virtual and immersive environments by the HASE (Human Aspects in Science and Engineering) research group <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b7">8,</ref><ref type="bibr" target="#b8">9,</ref><ref type="bibr" target="#b9">10,</ref><ref type="bibr" target="#b11">12]</ref> by the Living Lab Kobo and benefits from research and activities of Wladyslaw Fuchs <ref type="bibr" target="#b1">[2,</ref><ref type="bibr" target="#b2">3,</ref><ref type="bibr" target="#b3">4]</ref> and Volterra-Detroit Foundation, in particular based on the roman theater in Volterra use-case.</p><p>The Roman theater in Volterra was discovered relatively late, in the mid-20th century, thanks to the efforts of Enrico Fiumi, who initiated archaeological excavations. Excavations under his direction were conducted between 1950 and 1953. <ref type="bibr" target="#b0">[1]</ref> Subsequently, the work was taken over by the state archaeological services. At the turn of the 1960s and 1970s, anastylosis was carried out, i.e., the reassembly of columns and other architectural elements from the ruined building, supplemented by the partial reconstruction of a fragment of one of the walls. The theater in Volterra has survived in relatively good condition. Compared to other similar structures, the stage building of the theater is exceptionally well-preserved. <ref type="bibr" target="#b4">[5]</ref> Fig. <ref type="figure" target="#fig_1">1</ref>: Roman theater in Volterra (source: own elaboration)</p><p>In October 2016, during a workshop organized by the Volterra-Detroit Foundation with the participation of Case Technologies and Autodesk, data acquisition of the remains of the Roman theater was carried out. Using modern methods involving laser scanning, photogrammetry, and drone imagery, very precise data was obtained. Detailed analyzes were conducted by W ladys law Fuchs, a professor at the University of Detroit Mercy (School of Architecture and Community Development) and head of the Volterra-Detroit Foundation, who has been researching methods of designing and constructing buildings in ancient Rome for years. Fuchs' research revealed certain features of the theater in Volterra (see Figure <ref type="figure" target="#fig_1">1</ref>) that had previously been overlooked or underestimated. <ref type="bibr" target="#b3">[4]</ref> To continue research on spatial composition, Fuchs also prepared a threedimensional model of the theater. The goal of the model was not to create a digital replica of the original structure -some architectural details were simplified. Fuchs discovered that the building is characterized by a very regular and clear composition. Its architect skillfully used complex and unusual geometric arrangements. The auditorium is based on a heptagon geometry and its multiplication in the form of a regular polygon with an odd number of 21 sides. When designing the stage space, the architect departed from the concept of a continuous facade. Three independent buildings, separated by narrow streets, create the illusion of an urban landscape. In order to conduct further experiments in an environment that allows interaction with the space of ancient architecture in a way that is similar to reality and to test the principles of the framework within the project's use case, a virtual, immersive reconstruction of the theater in Volterra was developed based on Fuchs' BIM models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Focus</head><p>During the panel, we explore how rapidly developing technologies, including Virtual Reality (VR) and eXtended Reality (XR), can serve as tools to recreate and visualize the remains of historical cultural heritage for a better experience of lost architectural heritage in the multidisciplinary research context. Researchers with expertise and practice in a wide range of specializations, from architecture and design, to immersive real time environment development, shared their experiences with a roman theater in Voltera use-case. Moreover, the participants of the conference also had an opportunity to visit the exhibition taking place in the PJAIT gallery -an interactive presentation of an immersive reconstruction of the roman theater in Volterra in VR headsets. The virtual environment was accompanied by a special multimedia presentation of the cultural context of the project and the main principles of the Archiverse Framework. Wiktor Stawski Head of the XR Students' Club and a researcher at the XR Center's laboratory. Passionate about 3D printing, Virtual Reality (VR), and eXtended Reality (XR). With a background in Interior Architecture, he has a keen interest in architecture and exhibitions. He presented a proposal for the reconstruction of an ancient Roman theater in Volterra using real-time engines at the MIDI 2024 conference. Additionally, he participated in an analog space mission at a simulation facility in collaboration with an ESA engineer. His work bridges the gap between traditional architecture and modern digital tools, showcasing innovative approaches to architectural implementation.</p><p>Wies law Kopeć Computer scientist, research and innovation team leader, associate professor at the Computer Science Faculty of Polish-Japanese Academy of Information Technology (PJAIT). Head of the XR Center PJAIT and the XR Department. He is also a seasoned project manager with a long-term collaboration track with many universities and academic centers, including the University of Warsaw, the SWPS University, National Information Processing Institute, and the institutes of Polish Academy of Sciences. He co-founded the transdisciplinary HASE research group (Human Aspects in Science and Engineering) and distributed LivingLab Kobo.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Researchers network</head><p>We would like to thank the many people and institutions gathered by the Kobo Living Lab and the HASE Research Group to allow for this collaboration and research. First, we thank all the members of HASE research group (Human Aspects in Science and Engineering) and the Living Lab Kobo for their support. In particular, the members of XR Center Polish-Japanese Academy of Information Technology (PJAIT) as well as its students' club, supporting Volterra preservation efforts. We would also like to thank the members of the Volterra-Detroit Foundation, in particular Giulia Munday, Marco Bruchi, Brey Tucker, Paul F. Aubin, and Mark E. Dietrick.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion and Conclusions</head><p>Archaeological documentation has long been supplemented by various forms of visual materials. Initially, these took the form of drawings depicting plans, sections, and preserved architectural details. The introduction of photography into archaeology seemingly increased the level of realism and provided a direct link between the materials analyzed during excavations and their visualization. However, the trap of the illusion of objectivity in photography can also be noticeable in this case. Many variables depend on the subjective decisions of the documentary photographer, who makes decisions about, among other things, the choice of frame, lighting, and time of day for taking the photo, as well as the equipment and processing of the finished image. In the case of the theater in Volterra, researchers analyzing the anastylosis carried out at the turn of the 1960s and 1970s mention problems with the readability of the preserved photographic documentation, despite the fact that it was conducted in modern times, under the supervision of state archaeological services. The implementation of state-of-the-art technologies such as 3D laser scanning (see Figure <ref type="figure">2</ref>), drone imaging, and photogrammetry in archaeological research is revolutionizing data collection. These methods allow for the acquisition of highly detailed and objective data, enabling a more comprehensive understanding of archaeological sites. They are being applied to both re-examine existing sites, like the Roman theater in Volterra, and to document ongoing excavations, such as the amphitheater in Volterra, which was unearthed in 2015 and has been studied intermittently since 2019.</p><p>Despite the above-mentioned technological advancements, digital representations of architecture are mainly reliant on static two-dimensional depictions, such as 3D models presented on flat screen or in printed form. This approach fails to capture the complex dynamic of reality, which influences human perception of architecture and provides an incomplete and potentially misleading understanding of spatial relationships between individuals and their surroundings. Key factors like construction techniques, spatial configuration and scale, lighting and decorative details are inherently complex and cannot be adequately studied or understood in two dimensions. To gain a more accurate understanding of how buildings were constructed, what their purpose was, and how they were used by real people, researchers should prioritize the creation and interactive exploration of 3D simulations that recreate the original complexity of these structures. <ref type="bibr" target="#b10">[11]</ref> Developing an immersive virtual experience that accurately represents lost architectural heritage requires a five-step process: data acquisition and modeling (see Figure <ref type="figure">2</ref>), conversion for real-time environments (see Figure <ref type="figure" target="#fig_2">3</ref>), development of immersive environment (see Figure <ref type="figure" target="#fig_3">4</ref>), and composition of narrative interactive experience. The process of capturing source data for these environments involves utilizing 3D scanners, photogrammetry, and drone-based data acquisition. The acquired data should be analyzed and processed in a cross-disciplinary research context based on sources, literature reviews, and research hypotheses. Such a comparative, cross-disciplinary research process is necessary for proper interpretation of the data gathered and provides the foundation for reconstruction concepts and actual architectural modeling using various BIM methods and tools. Such models are the basis for further real-time immersive visualizations and need to be converted for real-time immersive purposes. The level of automation of this process varies depending on the chosen real-time graphics engine for the immersive environment. Additionally, depending on the selected engine, AI-powered tools can assist in various aspects of VR environment preparation. Despite the progress in automation, real time graphics constrains and limitations are still one of the main challenge in the process of creation of immersive virtual visualizations. Ultimately, to create a compelling VR presentation, a narrative part must be prepared. The high level of immersion may require not only technical conversion of the reconstructed architectural elements, but also elements of the hypothetical scene, including avatars and interactive elements incorporated to enhance the viewer's immersive experience. It should be noted that this process necessitates interdisciplinary collaboration between experts from a wide range of fields. This is a complex undertaking that often requires the guidance of experienced facilitators with a crossdisciplinary background. Knowledge transfer must occur not only between technologists and humanities scholars, but also among specialists at different stages of the project, such as data acquisition experts, BIM modelers, real-time environment developers, and researchers from various disciplines, including archaeology, architecture, history, art history, and cultural studies. <ref type="bibr" target="#b6">[7]</ref> </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>[ 4 ]Fig. 2 :</head><label>42</label><figDesc>Fig. 2: Roman theater in Volterra -point cloud based on laser scan (source: own elaboration)</figDesc><graphic coords="3,169.35,257.99,276.66,166.43" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>2. 1</head><label>1</label><figDesc>Discussion Points Aspect 1: How are new technologies advancing research methods in cultural heritage studies? What are the advantages of VR technologies in visualizing lost architectural heritage? Aspect 2: What challenges are faced when using VR to visualize lost architectural heritage? Aspect 3: What are the challenges faced by teams composed of members from various disciplines, backgrounds, and expertise? 3 Organizers 3.1 Panelists W ladys law Fuchs Received his Master of Architecture degree in 1987 from the Warsaw Institute of Technology. In 1994, he completed and defended his Ph.D. dissertation at the same institution. He has been awarded the Warsaw Institute of Technology President's Award. From 1987 until 1991 he worked full-time in the Free-hand Drawing Department of the School of Architecture in Warsaw. Since 1991 he has been working continuously at the School of Architecture, University of Detroit Mercy.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 :</head><label>3</label><figDesc>Fig. 3: Roman theater in Volterra -graybox prototype (source: own elaboration)</figDesc><graphic coords="6,169.35,389.08,276.66,159.90" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4 :</head><label>4</label><figDesc>Fig. 4: Roman theater in Volterra -immersive visualisation (source: own elaboration)</figDesc><graphic coords="7,169.35,247.07,276.65,143.95" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="2,169.35,294.10,276.66,207.49" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>The project Creating high-quality VR environments using data from architectural BIM systems as a way of presenting digital reconstructions of cultural heritage, which made <rs type="person">Archiverse Framework</rs> and <rs type="person">Volterra VR Use Case</rs> research possible, received funding from the <rs type="funder">National Recovery Plan</rs>. It was funded by the <rs type="funder">European Union -NextGenerationEU</rs> (grant number <rs type="grantNumber">1475/KPO. GRANTY/NIMiT/2024</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_g7JaW2r">
+					<idno type="grant-number">1475/KPO. GRANTY/NIMiT/2024</idno>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Volterra.-scavi nell&apos;area del teatro romano degli anni 1950-1953</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Fiumi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>De Agostino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Notizie degli Scavi di Antichità (s VIII)</title>
+		<imprint>
+			<date type="published" when="1955">1955</date>
+			<biblScope unit="page" from="114" to="150" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The Geometric Language of Roman Theater Design, Part 1</title>
+		<author>
+			<persName><forename type="first">Wladek</forename><surname>Fuchs</surname></persName>
+			<idno type="ORCID">0000-0002-9069-6181</idno>
+		</author>
+		<idno type="DOI">10.1007/s00004-019-00434-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nexus Network Journal</title>
+		<title level="j" type="abbrev">Nexus Netw J</title>
+		<idno type="ISSN">1590-5896</idno>
+		<idno type="ISSNe">1522-4600</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="547" to="569" />
+			<date type="published" when="2019-03-14">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The Geometric Language of Roman Theater Design, Part 2</title>
+		<author>
+			<persName><forename type="first">Wladek</forename><surname>Fuchs</surname></persName>
+			<idno type="ORCID">0000-0002-9069-6181</idno>
+		</author>
+		<idno type="DOI">10.1007/s00004-019-00436-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nexus Network Journal</title>
+		<title level="j" type="abbrev">Nexus Netw J</title>
+		<idno type="ISSN">1590-5896</idno>
+		<idno type="ISSNe">1522-4600</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="571" to="590" />
+			<date type="published" when="2019-03-27">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">A study of the geometric and architectural composition of the Roman theater in Volterra</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Fuchs</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<pubPlace>Giorgio Bretschneider Rome, Italy</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Il teatro romano di volterra. rilevazioni, caratteristiche architettoniche e problemi di sistemazione</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Inghirami</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1977">1977</date>
+			<publisher>Rassegna Volterrana</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Intergenerational Interaction with Avatars in VR: An Exploratory Study Towards an XR Research Framework</title>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Karpowicz</surname></persName>
+			<idno type="ORCID">0000-0002-7478-7374</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rafał</forename><surname>Masłyk</surname></persName>
+			<idno type="ORCID">0000-0003-1180-2159</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kinga</forename><surname>Skorupska</surname></persName>
+			<idno type="ORCID">0000-0002-9005-0348</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Jabłoński</surname></persName>
+			<idno type="ORCID">0000-0002-3551-0970</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Krzysztof</forename><surname>Kalinowski</surname></persName>
+			<idno type="ORCID">0000-0001-8766-1984</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paweł</forename><surname>Kobyliński</surname></persName>
+			<idno type="ORCID">0000-0001-5598-3292</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Grzegorz</forename><surname>Pochwatko</surname></persName>
+			<idno type="ORCID">0000-0001-8548-6916</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Monika</forename><surname>Kornacka</surname></persName>
+			<idno type="ORCID">0000-0003-2737-9236</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wiesław</forename><surname>Kopeć</surname></persName>
+			<idno type="ORCID">0000-0001-9132-4171</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-11432-8_23</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Networks and Systems</title>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="229" to="238" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Co-designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research</title>
+		<author>
+			<persName><forename type="first">Wiesław</forename><surname>Kopeć</surname></persName>
+			<idno type="ORCID">0000-0001-9132-4171</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Monika</forename><surname>Kornacka</surname></persName>
+			<idno type="ORCID">0000-0003-2737-9236</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Grzegorz</forename><surname>Pochwatko</surname></persName>
+			<idno type="ORCID">0000-0001-8548-6916</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cezary</forename><surname>Biele</surname></persName>
+			<idno type="ORCID">0000-0003-4658-5510</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Jaskulska</surname></persName>
+			<idno type="ORCID">0000-0002-2539-3934</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kinga</forename><surname>Skorupska</surname></persName>
+			<idno type="ORCID">0000-0002-9005-0348</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Barnes</surname></persName>
+			<idno type="ORCID">0000-0002-5114-2178</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maciej</forename><surname>Grzeszczuk</surname></persName>
+			<idno type="ORCID">0000-0002-9840-3398</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tommy</forename><surname>Nilsson</surname></persName>
+			<idno type="ORCID">0000-0002-8568-0062</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wladyslaw</forename><surname>Fuchs</surname></persName>
+			<idno type="ORCID">0000-0002-9069-6181</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jagoda</forename><surname>Lazarek</surname></persName>
+			<idno type="ORCID">0009-0006-8747-2116</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Krzysztof</forename><surname>Pijarski</surname></persName>
+			<idno type="ORCID">0000-0002-7121-3607</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><forename type="middle">G</forename><surname>De La Torre</surname></persName>
+			<idno type="ORCID">0000-0001-8636-5956</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-42293-5_81</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="610" to="615" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Human Factors in Space Exploration: Opportunities for International and Interdisciplinary Collaboration</title>
+		<author>
+			<persName><forename type="first">Wiesław</forename><surname>Kopeć</surname></persName>
+			<idno type="ORCID">0000-0001-9132-4171</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Grzegorz</forename><surname>Pochwatko</surname></persName>
+			<idno type="ORCID">0000-0001-8548-6916</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Monika</forename><surname>Kornacka</surname></persName>
+			<idno type="ORCID">0000-0003-2737-9236</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wiktor</forename><surname>Stawski</surname></persName>
+			<idno type="ORCID">0000-0001-8950-195X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maciej</forename><surname>Grzeszczuk</surname></persName>
+			<idno type="ORCID">0000-0002-9840-3398</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kinga</forename><surname>Skorupska</surname></persName>
+			<idno type="ORCID">0000-0002-9005-0348</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Karpowicz</surname></persName>
+			<idno type="ORCID">0000-0002-7478-7374</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rafał</forename><surname>Masłyk</surname></persName>
+			<idno type="ORCID">0000-0003-1180-2159</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pavlo</forename><surname>Zinevych</surname></persName>
+			<idno type="ORCID">0009-0008-9250-8712</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stanisław</forename><surname>Knapiński</surname></persName>
+			<idno type="ORCID">0009-0006-0524-2545</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Barnes</surname></persName>
+			<idno type="ORCID">0000-0002-5114-2178</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cezary</forename><surname>Biele</surname></persName>
+			<idno type="ORCID">0000-0003-4658-5510</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-66594-3_35</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Networks and Systems</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="339" to="350" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The Invisible – Experienced: Developing and Verifying a VR Application for Understanding Air Pollution Perception and Attitudes</title>
+		<author>
+			<persName><forename type="first">Grzegorz</forename><surname>Pochwatko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wieslaw</forename><surname>Kopec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zbigniew</forename><surname>Jędrzejewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Jaskulska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kinga</forename><forename type="middle">H</forename><surname>Skorupska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Karpowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rafał</forename><surname>Masłyk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maciej</forename><surname>Grzeszczuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jagoda</forename><surname>Lazarek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justyna</forename><surname>Swidrak</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ismar-adjunct60411.2023.00114</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-16">2023</date>
+			<biblScope unit="page" from="531" to="536" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Well-being in Isolation: Exploring Artistic Immersive Virtual Environments in a Simulated Lunar Habitat to Alleviate Asthenia Symptoms</title>
+		<author>
+			<persName><forename type="first">Grzegorz</forename><surname>Pochwatko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wieslaw</forename><surname>Kopec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Justyna</forename><surname>Swidrak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Jaskulska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kinga</forename><forename type="middle">H</forename><surname>Skorupska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Karpowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rafał</forename><surname>Masłyk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maciej</forename><surname>Grzeszczuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paulina</forename><surname>Borkiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paweł</forename><surname>Kobyliński</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michał</forename><surname>Pabiś-Orzeszyna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Balas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jagoda</forename><surname>Lazarek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Dufresne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leonie</forename><surname>Bensch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tommy</forename><surname>Nilsson</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ismar59233.2023.00033</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-16">2023</date>
+			<biblScope unit="page" from="185" to="194" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Persuade or perish: moving virtual heritage beyond pretty pictures of the past</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Sanders</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/vsmm.2001.969676</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings Seventh International Conference on Virtual Systems and Multimedia</title>
+		<meeting>Seventh International Conference on Virtual Systems and Multimedia</meeting>
+		<imprint>
+			<publisher>IEEE Comput. Soc</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="236" to="245" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">A Revised and Extended Paradigm for Social and Non-social Stress Elicitation in Psychological Research - A Feasibility Study in Virtual Reality</title>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Schudy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Grzegorz</forename><surname>Pochwatko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wiesław</forename><surname>Kopeć</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Karpowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kinga</forename><surname>Skorupska</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maciej</forename><surname>Grzeszczuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Łukasz</forename><surname>Okruszek</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ismar-adjunct60411.2023.00098</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-16">2023</date>
+			<biblScope unit="page" from="452" to="457" />
+		</imprint>
+		<respStmt>
+			<orgName>ISMAR-Adjunct</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

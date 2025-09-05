@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">A human-centered evaluation of using a vision language model for image cataloguing</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Line</forename><surname>Abele</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Psychology</orgName>
+								<orgName type="institution">University of Tübingen</orgName>
+								<address>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Gerrit</forename><surname>Anders</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Leibniz-Institut für Wissensmedien</orgName>
+								<address>
+									<settlement>Tübingen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tolgahan</forename><surname>Aydın</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Leibniz-Institut für Wissensmedien</orgName>
+								<address>
+									<settlement>Tübingen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jürgen</forename><surname>Buder</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Leibniz-Institut für Wissensmedien</orgName>
+								<address>
+									<settlement>Tübingen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Helen</forename><surname>Fischer</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Leibniz-Institut für Wissensmedien</orgName>
+								<address>
+									<settlement>Tübingen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Dominik</forename><surname>Kimmel</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">Leibniz-Zentrum für Archäologie</orgName>
+								<address>
+									<settlement>Mainz</settlement>
+									<country>Germany ArchiveGPT</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Markus</forename><surname>Huff</surname></persName>
+							<email>m.huff@iwm-tuebingen.de</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Psychology</orgName>
+								<orgName type="institution">University of Tübingen</orgName>
+								<address>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Leibniz-Institut für Wissensmedien</orgName>
+								<address>
+									<settlement>Tübingen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">A human-centered evaluation of using a vision language model for image cataloguing</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">77C20870669BB4ACA8C0F5DB454A1620</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:31+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>artificial intelligence</term>
+					<term>vision language model</term>
+					<term>cataloguing</term>
+					<term>archiving</term>
+					<term>archives</term>
+					<term>collections</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The accelerating growth of photographic collections has outpaced manual cataloguing, motivating the use of vision language models (VLMs) to automate metadata generation. This study examines whether AI-generated catalogue descriptions can approximate human-written quality and how generative AI might integrate into cataloguing workflows in archival and museum collections. A VLM (InternVL2) generated catalogue descriptions for photographic prints on labelled cardboard mounts with archaeological content, evaluated by archive and archaeology experts and non-experts in a humancentered, experimental framework. Participants classified descriptions as AI-generated or expert-written, rated quality, and reported willingness to use and trust in AI tools. Classification performance was above chance level, with both groups underestimating their ability to detect AI-generated descriptions. OCR errors and hallucinations limited perceived quality, yet descriptions rated higher in accuracy and usefulness were harder to classify, suggesting that human review is necessary to ensure the accuracy and quality of catalogue descriptions generated by the out-of-the-box model, particularly in specialized domains like archaeological cataloguing. Experts showed lower willingness to adopt AI tools, emphasizing concerns on preservation responsibility over technical performance. These findings advocate for a collaborative approach where AI supports draft generation but remains subordinate to human verification, ensuring alignment with curatorial values (e.g., provenance, transparency). The successful integration of this approach depends not only on technical advancements, such as domain-specific finetuning, but even more on establishing trust among professionals, which could both be fostered through a transparent and explainable AI pipeline.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="27" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="28" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="29" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="30" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="31" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="32" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="33" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="34" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="35" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="36" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="37" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="38" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="39" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="40" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="41" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="42" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="43" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="44" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="45" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="46" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="47" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="48" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="49" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="50" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="51" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="52" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="53" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="54" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="55" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="56" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Photographic archives and collections preserve vast stores of visual historical, art historical, and archaeological evidence, yet their accelerating growth has outpaced the manual cataloguing on which scholarly access still depends. Vision language models (VLMs) promise to automate description and metadata generation, but whether their output satisfies professional expectations of accuracy, provenance, and contextual richness is unclear. Using the photographic holdings of the Leibniz-Zentrum für Archäologie (LEIZA) as a use case, we explored whether a VLM can draft catalogue entries that experts will trust, use, and perhaps even mistake for human work. This article speaks to both the technical and sociocultural stakes of bringing generative AI into practice in gallery, library, archive, and museum (GLAM) institutions.</p><p>A primary challenge lies in the transformation of archives into data-driven infrastructures. Millions of digitized photographs circulate as research assets whose value remains dormant behind incomplete metadata; human curators must now collaborate with computational agents to manage records across the archival continuum <ref type="bibr" target="#b5">(Colavizza et al., 2021)</ref>. Recent progress in VLMs has produced single architectures that analyze images and generate coherent descriptive prose <ref type="bibr" target="#b27">(Muehlberger et al., 2019)</ref>. Federated approaches even combine several models to improve consistency and reliability, outperforming singlemodel solutions in large-scale tests <ref type="bibr" target="#b14">(Groppe et al., 2025)</ref>. Complementary work in digital libraries shows that computational pipelines can cut error rates in automatic metadata generation to near-negligible levels <ref type="bibr" target="#b20">(Karnani et al., 2022)</ref>.</p><p>Technical promise alone is insufficient. Archivists scrutinize descriptions through the prisms of authenticity, provenance, and ethical stewardship, and recent work warns that AI will not be taken up unless those values remain visible and negotiable <ref type="bibr" target="#b17">(Jaillant &amp; Rees, 2023)</ref>. Behavioral evidence reinforces the point: across two experiments with representative German samples, the balance of perceived risks and opportunities was the strongest predictor of people's willingness to use an AI system, overruling demographics and even domain expertise <ref type="bibr" target="#b31">(Schwesig et al., 2023)</ref>. Follow-up analyses show that when the context evokes higher perceived risk (e.g., transport over medicine), adoption drops, even where technical performance is unchanged, highlighting how contextualised trust thresholds govern uptake <ref type="bibr" target="#b31">(Schwesig et al., 2023)</ref>. Crucially, archival professionals often regard the insertion of inaccurate or misleading metadata as a high-impact risk. Even minor factual errors can propagate through scholarly networks and undermine the evidential value of entire collections <ref type="bibr" target="#b3">(Bunn, 2020;</ref><ref type="bibr" target="#b12">Gilliland, 2012)</ref>.</p><p>Cognitive factors deepen this trust equation. Large-scale studies demonstrate that greater topic knowledge can induce "risk blindness", leading users to underestimate hazards, whereas high metacognitive confidence amplifies perceived benefits; both distortions sway acceptance of AI outputs unless counterbalanced by transparent explanation and critical literacy. These findings echo large-scale reviews showing public trust in AI hinges on clear explanation and professional literacy <ref type="bibr" target="#b0">(Arias Hernández &amp; Rockembach, 2025;</ref><ref type="bibr" target="#b22">Kleizen et al., 2023)</ref>. Consequently, archival debates have expanded, discussing not only the question "can the system perform?" but also the more pressing "will professionals and publics accept its results, and on what terms?" <ref type="bibr" target="#b6">(Davet et al., 2023)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research questions and hypotheses</head><p>Building on the challenges outlined above, this study examines how generative AI, specifically a VLM, can be meaningfully integrated into cataloguing photographic materials in archives and collections.</p><p>Central to this investigation is the question of whether AI-generated catalogue descriptions can match or approximate the quality, usefulness, and perceived trustworthiness of those written by human experts like professional archivists and collection managers. In contrast to prior studies that focus primarily on technical performance or metadata extraction <ref type="bibr">(e.g., Fischer et al., submitted;</ref><ref type="bibr" target="#b27">Muehlberger et al., 2019)</ref>, this study adopts a human-centered experimental framework, assessing users' perceptions of AIgenerated content and their reactions regarding trust and acceptance. The psychological experiment involved both experts (in archiving and/or archaeology and lay people, as both groups bring unique perspectives -experts providing insights into their fields of knowledge, in this case, the subject of archaeology as well as standards of photographic cataloguing and lay people representing the broader user community that archives and collections aim to serve. By considering both perspectives, this study aims to provide a more nuanced understanding of the potential for generative AI to support practices in archives and collections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Question 1: Can AI-generated catalogue descriptions be differentiated from human-written descriptions?</head><p>The question of whether machines can generate text that is indistinguishable from human-written text has been a topic of interest since the proposal of the imitation game, often called Turing test <ref type="bibr" target="#b33">(Turing, 1950)</ref>. The test, which assesses a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human, has been a benchmark for measuring the performance of artificial intelligence systems in generating human-like texts (e.g. <ref type="bibr" target="#b18">Jakesch et al., 2023;</ref><ref type="bibr" target="#b23">Köbis &amp; Mossink, 2021)</ref> and images (e.g. <ref type="bibr" target="#b28">Nightingale &amp; Farid, 2022)</ref>. In the context of cataloguing, this question takes on a new significance, as the quality of catalogue descriptions are crucial for preserving and providing access to cultural heritage materials.</p><p>We thus pose a similar research question whether AI-generated catalogue descriptions can be differentiated from human-written descriptions. If human evaluators cannot distinguish between the two, it suggests that the AI-generated descriptions are similar in quality and usefulness to those written by humans. A distinction between expert and non-expert evaluators is crucial in answering this question.</p><p>Experts possess a broader knowledge of the images shown and the technical terms used, and a deeper understanding of standards and conventions in cataloguing. This probably allows them to provide a more informed assessment of the AI-generated descriptions. In contrast, non-experts may rely more on general impressions or surface-level features rather than a nuanced understanding of the cataloguing standards.</p><p>Therefore, we formulated the following hypothesis.</p><p>Hypothesis H1. <ref type="bibr">Experts (vs. non-experts)</ref> are better at distinguishing between expert-written and AI-generated descriptions of archival photo material. This holds true irrespective of whether the description was generated by AI or experts.</p><p>Additionally, we measured participants' self-assessed ability to distinguish AI-generated from human-written descriptions as an index of metacognitive calibration, a factor that can sway both trust and willingness to adopt new tools. If participants over-or underestimate this ability, their perception of the model's performance, and thus their readiness to integrate it into cataloguing workflows, may be distorted. Because people often misjudge their own skills and the capabilities of unfamiliar AI systems, we anticipated that self-rated discernment would diverge from actual detection accuracy. Hypothesis H2a. Self-assessed ability to distinguish the type of descriptions (self-assessed discernment) measured before the experiment will be significantly different from the actual detection performance (actual discernment) measured at the end of the experiment.</p><p>Further, we hypothesized that experts are worse in their self-assessment because they may be more susceptible to overconfidence due to their extensive knowledge and experience in the field. We tested this assumption in two hypotheses, one regarding the objective classification in expert and nonexpert groups and another regarding not only the participants' self-assessed archive expertise, but also their self-assessed expertise in the field of artificial intelligence.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypothesis H2b. The difference between self-assessed discernment vs. actual discernment is</head><p>expected to be larger for the archive expert group than for the non-expert group. Hypothesis H2c. The difference between self-assessed discernment vs. actual discernment is expected to increase with self-assessed expertise in archives and in AI.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Question 2: How accurate and useful are the catalogue descriptions perceived to be?</head><p>Second, we assessed the perceived accuracy and usefulness of the AI-generated catalogue descriptions. By comparing the ratings of AI-generated and human-written descriptions, particularly among experts, we can determine whether the AI-generated descriptions are considered accurate and useful. Rating differences between experts and non-experts are important because they reveal how different user groups evaluate the descriptions. Experts with their extensive experience in the field are likely able to differentiate better between useful and accurate information, leading to a less direct correlation between accuracy and usefulness.</p><p>Hypothesis H3. For expert participants, perceived accuracy of the AI-generated descriptions correlates less to perceived usefulness of the AI-generated descriptions compared to non-experts.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Research Question 3: How do trust and willingness to use AI tools in general change after seeing the catalogue descriptions?</head><p>Third, we examined the general trust in AI tools and the willingness to use them, which goes beyond the immediate evaluation of the model's performance. Even if the AI-generated descriptions are deemed useful, experts may still be hesitant to adopt the technology due to concerns about trust in AI.</p><p>We hypothesized that willingness and trust will change because experiencing the AI model's performance firsthand will either alleviate or reinforce existing concerns, leading to an adjustment in participants' attitudes towards AI.</p><p>Hypothesis H4. Participants are expected to adjust their willingness to use AI and trust in AI after distinguishing the descriptions. Pre-and post-measurement of willingness to use AI and trust in AI will be significantly different.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head><p>This section describes our work in two parts (overview in Figure <ref type="figure">1</ref>): Creating the catalogue descriptions as experimental material from LEIZA's image archive materials (Section Materials) and conducting the psychological experiment with these catalogue descriptions (Section Experiment).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 1: Materials and experiment</head><p>Note. Creation procedure of the experimental material and how it was integrated in the experiment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials</head><p>This subsection describes the creation of experimental materials for which photographic prints mounted on labelled cardboards from LEIZA's image archive functioned as a database. Using a customdesigned catalogue template, human experts and a VLM generated catalogue descriptions from it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Labelled photocards as data base for the experimental material</head><p>For the experiment, 40 photographic prints mounted on labelled cardboards (in the following called labelled photo cards) were selected from the LEIZA image archive <ref type="bibr" target="#b21">(Klatt, 2021)</ref>. Each cardboard has one or more photos (of archaeological objects, persons, architecture, landscapes) mounted on it and a hand-or type-written information about the photo (see Figure <ref type="figure" target="#fig_0">2</ref> for an example). Despite the cardboard mounts having different layouts and typing, the semantic structure of the written information on them is comparable. They were designed to make the photos findable to researchers in a twentieth century scientific comparative collection <ref type="bibr" target="#b2">(Bärnighausen et al., 2020)</ref>. Further, the unique combination of photo and (human-generated) text is particularly beneficial for our study as it allows us to analyze how the vision language model processes visual and linguistic information and combines object recognition and text production tasks.</p><p>To be able to generalize as much as possible, we selected labelled photo cards with different dating, layout types, as well as different motive classifications and motive types. To ensure a diverse selection, we included a range of subjects such as archaeological objects, architecture, landscapes, people, and representations from LEIZA's primary main research periods, including Roman times, prehistory, and early medieval times. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Designing the catalogue template</head><p>To get as close as possible to a realistic recent archiving scenario, we designed a catalogue template to contribute to the aim of creating FAIR digital (meta-)data. In the context of research data management, the "FAIR principles" (https://www.go-fair.org/fair-principles/) enable computational findability, accessibility, interoperability, and reusability <ref type="bibr" target="#b35">(Wilkinson et al., 2016)</ref>. This meant that the human experts and the VLM were expected to produce comparable descriptions. For this, we developed a catalogue template with data fields (e.g., object title, image number) using the existing historic description categories and the minimum record recommendation for museums and collections (Minimaldatensatz-Empfehlung für Museen und Sammlungen (v1.0.1); <ref type="bibr" target="#b26">Minimum Record Working Group et al., 2024)</ref> as a basis, a broadly supported framework in German GLAM institutions. The minimum dataset is mainly based on the Lightweight Information Describing Objects (LIDO) Scheme for Metadata of collection objects by the ICOM International Committee for Documentation (https://cidoc.mini.icom.museum/working-groups/lido/lido-overview/about-lido/what-is-lido/). To fulfill the experiment's possibilities and reduce complexity, we adapted and reduced the metadata scheme template to ten data fields. For classifying data fields, a selection of terms from accepted controlled vocabularies to classify the objects was suggested in the template. Still, the human experts and the VLM could also use free text. We used controlled vocabulary, for example in the fields "Object type" (Black and white photography / colour photography / graphic or drawing) and "Technique or material of the photo" (Photographic print / print or copy / drawings (original) / paintings (original)). Categories and vocabulary were iteratively tested with the VLM to ensure they were both useful for archival cataloguing and feasible for AI generation. Instructions for the template (Figure <ref type="figure">3</ref>) were refined through prompt engineering <ref type="bibr" target="#b30">(Sahoo et al, 2024</ref>; Supplement A1.2) and parameter adjustments (Supplement A2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Figure 3: Catalogue template</head><p>Note. This template served as input for both the human experts and the VLM InternVL2, to produce comparable catalogue descriptions for each labelled photo card.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Generating catalogue descriptions</head><p>Expert-written descriptions. Expert-written descriptions were created by archive, archaeology, and collections experts from the LEIZA and collaboration partners. The experts specialize in a range of fields relevant to describing or classifying the selected images. This should ensure the necessary competence and a certain level of generalization rather than using just one expert. The experts filled in the template for each labelled photo card following detailed instructions (Supplement A1.1). In plausible cases, they used the existing historic descriptions on the labelled photo cards as a basis, adapted these, and transformed classifications into modern controlled vocabulary. Descriptions were double-checked for typos by an expert and a non-expert but were not edited to create fully homogeneous descriptions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>AI-generated descriptions.</head><p>The open-source VLM InternVL2-Llama3-76B <ref type="bibr" target="#b34">(Wang et al., 2024;</ref><ref type="bibr"></ref> https://huggingface.co/OpenGVLab/InternVL2-Llama3-76B), processing combined text and image inputs, was selected for its top performance on the OpenCompass multimodal leaderboard (as of August 2024; https://rank.opencompass.org.cn/leaderboard-multimodal), a benchmarking platform that evaluates the performance of multimodal models on image-text tasks by averaging their performance over 8 multimodal benchmarks. The model was not fine-tuned on archival data but instead used with few-shot prompting-instructions that included task explanations and example solutions to guide description generation <ref type="bibr" target="#b30">(Sahoo et al, 2024)</ref>. The InternVL2 model received the labelled photo card (image and text) and a detailed prompt (Supplement A1.2) specifying how to fill in the catalogue template. As the main aim of this study is not to evaluate the text extraction capabilities of the model, a human loop was integrated: The model generated three descriptions per labelled photo card with varying parameter values (Supplement A2) from which the non-expert selected the best-fitting description per labelled photo card, ensuring it was free of typos or non-expert detectable errors. It was then translated into German, verified by an expert, and integrated into the experiment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Final Materials</head><p>The generation process yielded two descriptions (one expert-and one AI-generated) for each of the 40 labelled photo cards, totaling 80 descriptions (40 expert-written, 40 AI-generated); see Figure <ref type="figure" target="#fig_1">4</ref> for an example pair of descriptions). A combination of a photo (omitting the original labels) with one description constituted an item used in the psychological experiment. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experiment</head><p>The experiment was preregistered on the Open Science Framework (https://osf.io/cy4hg/?view_only=fe01f024ce6340ee94f91f528c0002be). All presented question items can be found in Supplement A3.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental setup and procedure</head><p>The experiment was programmed in PsychoPy <ref type="bibr" target="#b29">(Peirce et al., 2019)</ref> and translated into JavaScript code to make it accessible as an online experiment via Pavlovia (https://pavlovia.org/). It consisted of three phases. In the first phase, participants were asked about their willingness to use AI and their trust in AI (on a seven-point Likert scale). An example trial showed the photo from the labelled photo card with one of the corresponding descriptions and asked about the description's accuracy, usefulness, and whether an AI created it. Participants then estimated their classification performance for the following trials, that is, they estimated how many of the following 80 items they would classify correctly as AI-generated or not.</p><p>The second phase presented the 80 items (40 photo-text combinations with expert-written descriptions, 40 photo-text combinations with AI-generated descriptions) to the participants, distributed over two blocks with 40 trials each, ensuring that all participants were confronted with all items during the experiment. We counterbalanced whether participants saw the AI-generated or the expert-written description along with the corresponding picture in the first or the second block. Inside each block, the items were presented in a random order.</p><p>In each trial, participants responded to four questions for the presented item: They first had to rate the accuracy and usefulness of the description. Then, they were asked whether the description was generated by an AI model or not. Finally, participants had the opportunity to add comments on the description in a free text field before the following trial started with a new image and a corresponding description. After 40 trials, a break screen was presented before participants continued in the second block with the remaining 40 descriptions. After the second block, participants were provided with their actual detection performance.</p><p>Phase 3 repeated the questions on willingness to use AI and trust in AI. Participants were also asked to rate their expertise in the field of archival sciences, archaeology, and AI (all on a seven-point Likert scale). Furthermore, we assessed different fields of expertise as a categorical variable by asking whether participants work or study in the field of archival sciences and/or AI. At the end of the experiment, participants had the opportunity to withdraw their consent to use their data for research purposes before they were led to a separate page where their data for compensation (payment or course credits) was collected.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental design</head><p>We manipulated the factors description type (AI-generated and expert-written descriptions; within-subjects) and expertise (expert and non-expert; between-subjects) in a 2x2 mixed design. The factor expertise was measured in two ways: We asked for participants' jobs and study programs (expert vs. non-expert group, categorical with several options to choose which were aggregated into an expert and a non-expert group) and for a self-assessment of their expertise in archives, archaeology as well as in AI (seven-point Likert scale, used in H2c). For a better understanding of our experimental data's composition and exploratory analyses, we additionally assessed AI expertise as a categorical variable (expert and non-expert).</p><p>Dependent variables were the classification performance for AI-generated and expert-written descriptions measured in binary responses per trial and later transformed into measures of Signal Detection Theory <ref type="bibr" target="#b13">(Green &amp; Swets, 1966)</ref>, the difference between self-assessed and actual classification performance (in %), perceived accuracy of the description from 0 to 100%, perceived usefulness of the description from 0 to 100%, willingness to use AI (two items), and trust in AI (one item), both used as pretest scores (measured in Phase 1), post-test scores (measured in Phase 3), and differences in pre-and post-test scores.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data collection</head><p>Data collection went from the beginning of December 2024 to the end of January 2025. We recruited participants via newsletters at the University of Tübingen, personal e-mails to archivists, printed flyers distributed at the University of Tübingen, and announcements at the archival conference "Artificial Intelligence in Archives and Collections" in December 2024 in Marburg, Germany.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental evaluation</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Employed analyses</head><p>We pre-processed the experimental data and analyzed it with the pre-registered frequentist method and additional Bayesian statistics for a deeper understanding of the results. All data and analysis scripts can be downloaded from zenodo i .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data pre-processing</head><p>The raw experimental data was pre-processed in several steps. Categorical expertise responses were aggregated into expert (including all archaeology and archive experts, see Supplement A3) and nonexpert groups. For H1 on classification performance, we calculated measures from Signal Detection Theory (SDT; <ref type="bibr" target="#b13">Green &amp; Swets, 1966)</ref> using the psycho package <ref type="bibr">(Mackowski, 2018)</ref>. This mathematical framework measures the ability to differentiate between two stimuli, called signal (bearing information)</p><p>and noise (distracting from the signal). In our study, we treat AI-generated descriptions as the "signal", whereas the expert-written descriptions are the background "noise". For each participant, we calculated d′, the SDT measure of sensitivity, telling us how accurately they can differentiate an AI-generated description from an expert-written one (a d′ of 0 means they are guessing, i.e., chance-level performance).</p><p>To see whether participants tend to prefer one response over the other, we also computed SDT's c</p><p>(response bias): a positive c indicates a general inclination to label descriptions as expert-written, whereas a negative c indicates an inclination to label them as AI-generated.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Frequentist analysis</head><p>Frequentist analysis is a statistical approach that focuses on the frequency of events, allowing us to determine whether our results are due to chance or reflect a real pattern in the data. For the preregistered analysis, we checked the normal distribution of the data and used t-tests (with significance level α = .05) with Holm correction <ref type="bibr" target="#b16">(Holm, 1979)</ref> when doing multiple comparisons, and comparisons of correlation tests (cocor package; <ref type="bibr" target="#b8">Diedenhofen &amp; Musch, 2015)</ref> for all four hypotheses to examine whether the analyzed data provides strong enough evidence to suggest that the null hypothesis (describing no effect) is unlikely to be true. Additionally, we fitted generalized linear mixed-effect models (GLMMs) to predict one measured response variable from other variables, called fixed and random factors. We used GLMMs of the logit-family (lme4-package; <ref type="bibr" target="#b1">Bates et al., 2015)</ref> to predict participants' binary classification performance (correct/incorrect) from description type and expertise to investigate H1 further. To doublecheck our main findings, we extend the models with the factors self-assessed classification performance, trial number, accuracy ratings, and usefulness ratings in exploratory analyses to analyze their influence on classification performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Bayesian analysis</head><p>To complement the frequentist analyses, we used Bayesian statistics, which enables explicit testing of the null hypothesis. We computed Bayesian t-tests that provide a Bayesian alternative to traditional frequentist t-tests, estimating the probability of a difference between two hypotheses and quantifying the magnitude of this difference as a Bayes factor (BF). Following <ref type="bibr" target="#b19">Jeffreys (1961)</ref>, BFs above 1 provide evidence in favor of the alternative hypothesis (1-3 anecdotal, 3-10 substantial, 10-30 strong, 30-100 very strong, and &gt; 100 extreme evidence), while BFs below 1 represent evidence for the null hypothesis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Participants</head><p>After excluding participants who did not consent to data usage (N = 1) or who did not complete the online experiment (N = 60), the final sample consisted of N = 139 participants, including 110 nonexperts and 29 archive and archaeology experts, aged between 18 and 67 years (M = 25.20, SD = 8.14),</p><p>with one non-binary, 43 male and 95 female participants.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypotheses Hypothesis 1: Classification performance by expertise</head><p>To test for an expert advantage in the classification of expert-written and AI-generated descriptions (H1), we began with a signal-detection analysis. Treating AI-generated descriptions as the "signal" and expert-written descriptions as the "noise," we calculated sensitivity (d′) for each participant.</p><p>Mean d′ was reliably above zero (M = 0.67, SD = 0.62), t(138) = 12.67, p &lt; .001, indicating that, overall, people could tell machine-from human-written text. Contrary to our prediction, experts (M = 0.83, SD = 0.76) did not outperform non-experts (M = 0.62, SD = 0.57), t(36.91) = 1.37, p = .180.</p><p>A Bayesian check confirmed these conclusions. The Bayes factor for the overall d′ (BF = 5.6 × 10²¹) provided extreme evidence for genuine discriminability, whereas the factor contrasting experts and nonexperts (BF = 0.68) offered only moderate evidence for the null, again suggesting no expertise advantage.</p><p>Because every trial required the same binary decision ("Was this description produced by AI?") the d′ metric already captures the distinction between description types, making the preregistered ANOVA superfluous. Instead, we modelled trial-by-trial accuracy with a generalized linear mixed model (GLMM). The model included description type and expertise as fixed effects and allowed the effect of description type to vary by participant to absorb individual response biases (i.e., random slopes). A type ArchiveGPT 20 II ANOVA on this fitted model revealed a main effect of description type, χ²(1) = 31.58, p &lt; .001:</p><p>participants more often classified expert-written descriptions correctly than AI-generated ones. Neither the main effect of expertise, χ²(1) = 2.70, p = .101, nor the interaction, χ²(1) = 1.13, p = .290, reached significance. Accuracy therefore ranged from 54.9 % (non-experts on AI texts) to 67.8 % (experts on expert texts; see Figure <ref type="figure" target="#fig_2">5</ref> and Supplementary Table <ref type="table">B1</ref>.1).</p><p>Taken together, participants could distinguish AI-generated from human-written catalogue entries at a moderate level, and this ability did not depend on archival or archaeological expertise;</p><p>nonetheless, human texts seem to be identifiable more easily than machine texts, although response biases towards the human texts may have contributed to this effect (see exploratory analysis of response bias). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypotheses 2: Self-assessment of classification performance</head><p>To evaluate metacognitive calibration (H2a-H2c), we compared participants' self-rated ability to spot AI descriptions with their actual detection accuracy. Mean self-estimates (M = 49.23 %, SD = 15.33) fell well below true performance (M = 61.99 %, SD = 10.72), t(246.88) = 8.04, p &lt; .001, confirming the difference expected in H2a: participants' initial expectations about their performance were more pessimistic than their actual performance warranted. The size of this gap did not differ by professional status-experts (M = -15.44 %, SD = 18.52) were no less calibrated than non-experts (M = -12.06 %, SD = 18.44), t(43.79) = -0.88, p = .386; the corresponding Bayes factor (BF = 0.31) offered no substantive evidence for or against an expertise effect. Nor did the discrepancy correlate with participants' selfreported expertise in archives, archaeology, or AI (Supplementary Table <ref type="table">B1</ref>.2), countering H2c. Finally, adding self-assessment scores as a predictor in the GLMM left classification accuracy unchanged, χ²(1) = 0.21, p = .646. In short, participants generally low-balled their own detection ability, and this miscalibration was unrelated to domain expertise.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hypothesis 3: Perceived accuracy and usefulness of the descriptions</head><p>To probe H3, we asked whether accuracy and usefulness are weighted differently by experts and laypersons when they judge the AI output. For AI-generated descriptions, experts' ratings of the two dimensions were almost perfectly aligned, r(27) =.87, p &lt;.001, whereas non-experts showed a weaker association, r(108) =.69, p &lt; .001 (see Figure <ref type="figure" target="#fig_3">6</ref>). A Fisher z-test confirmed that the expert correlation was significantly stronger, z = 2.20, p = .014 (an effect that replicated for expert-written texts, see Supplementary Table <ref type="table">B1</ref>.3). Thus, contrary to H3, experts treated factual accuracy and practical usefulness as more, not less, intertwined than non-experts did.</p><p>Mean ratings told a parallel story: across the full sample, human descriptions were judged both more accurate, t(275.36) = -5.62, p &lt; .001, and more useful, t(275.77) = -6.88, p &lt; .001, than their AI ArchiveGPT 22 counterparts (see Supplementary Table <ref type="table">B1</ref>.4 and Figure <ref type="figure" target="#fig_3">6</ref>). Together, these results show that AIgenerated catalogue entries still lag behind human prose on core quality metrics and that experts integrate those metrics more tightly when forming their evaluations.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Exploratory analyses</head><p>To probe the boundary conditions of our preregistered results, that is, to test how far the main effects hold once we vary task dynamics and individual attitudes, we ran four supplementary analyses.</p><p>Specifically, we examined (1) whether classification accuracy changed as participants gained experience across trials, (2) whether systematic response biases emerged, (3) how perceived accuracy and usefulness</p><p>of AI text affected detectability, and (4) whether expertise shaped post-task willingness to adopt and trust AI tools. Together, these probes reveal how learning, decision heuristics, content quality, and professional identity modulate the headline effects.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Classification performance over time</head><p>To check whether participants familiarized themselves with the task, we assessed whether their classification performance evolved over time by fitting an exploratory GLMM including trial number as a fixed effect. This analysis confirmed a significant improvement in performance as participants progressed through the task, with the proportion of correct responses increasing significantly with trial number, χ²(1) = 4.83, p = .028. This learning effect suggests that participants became more adept at distinguishing expert-written and AI-generated descriptions over time.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Response bias</head><p>To observe any response classification tendencies participants might have for certain response categories and to double-check our main finding of participants' higher classification performance of expert-written descriptions, we additionally computed SDT's response bias c of the participants. Results revealed a positive mean bias (c = 0.18), significantly different from zero, t(138) = 5.39, p &lt; .001, indicating a systematic tendency to favor "expert-written" classifications-a finding consistent with and probably contributing to the GLMM's main effect, which showed higher performance in classifying expert-written descriptions. Notably, no significant differences emerged in response bias between experts (M = 0.11, SD = 0.32) and non-experts (M = 0.20, SD = 0.41), t(55.34) = 1.24, p = .219, suggesting both groups applied similar decision criteria despite differences in expertise.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Influence of accuracy and usefulness ratings on classification performance</head><p>For validating our Turing test approach in research question 1 (indistinguishable AI and human texts suggest that AI texts are similar in quality), we reverted the approach and examined how participants' perceived accuracy and usefulness of the AI-generated descriptions might influence classification performance. For that, we fitted two GLMMs with accuracy ratings and usefulness ratings as an additional fixed factor. Both analyses revealed significant main effects: Higher perceived accuracy of AI-generated descriptions was associated with reduced classification performance, χ²(1) = 50.75, p &lt; .001, and higher perceived usefulness similarly predicted lower classification performance, χ²(1) = 64.40, p &lt; .001. This can be explained by AI-generated descriptions appearing more similar to expert-written descriptions with increasing accuracy and usefulness, and thus becoming harder to classify as AIgenerated. These results provide evidence that classification performance is sensitive to the perceived quality of AI-generated content, thereby validating our approach in research question 1 to operationalize classification performance as a proxy for the human-likeness of AI-generated descriptions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Expert-specific willingness to use AI and trust in AI</head><p>To assess how expertise influences the adoption of AI tools in archival practices, we conducted an exploratory multivariate ANOVA (all four pre-and post-measures of willingness and trust ~ expertise) followed by four separate univariate ANOVAs with Holm correction <ref type="bibr" target="#b16">(Holm, 1979)</ref>. Reported willingness to use AI was lower for experts than for non-experts (exact values in Supplementary Table <ref type="table">B1</ref>.5), both for measures before, Fpre(1, 137) = 8.75, pHolm = .015, and after the test, Fpost(1, 137) = 6.43, pHolm = .037.</p><p>Regarding trust, there was no difference in pre-trust scores, Fpre(1, 137) = 3.41, pHolm = .134, and no difference in post-trust scores between experts and non-experts, Fpost(1, 137) = 1.16, pHolm = .284.</p><p>Together, these exploratory analyses show that participants learn quickly, carry a modest "expertwritten" bias, find high-quality AI descriptions hardest to detect, and become more cautious about adopting AI tools after hands-on evaluation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>This study examined the potential of generative AI, specifically a VLM, to be meaningfully integrated into the cataloguing of photographic materials in archives and collections. Central to our human-centered investigation was the question of whether AI-generated catalogue descriptions can match or approximate the accuracy, usefulness, and perceived trustworthiness of those written by professional collection managers or archivists. To answer this question, three research questions were posed and evaluated using an experimental framework in which archive and archaeology experts, as well as non-experts, classified and rated AI-generated and expert-written catalogue descriptions and reported willingness to use and trust in AI tools. Both, experts and non-experts, were able to classify them as AIand human-generated. They perceived expert-written descriptions as more accurate and useful than AIgenerated descriptions and showed lower willingness to use and trust in AI tools after the classification task.</p><p>Research Question 1: Can AI-generated catalogue descriptions be differentiated from human-written descriptions?</p><p>Our idea, inspired by the Turing test, was that if human evaluators could not distinguish between the two descriptions, it suggests that AI-generated descriptions are similar in quality to those written by humans. This is supported by our result that AI-generated descriptions rated higher in perceived accuracy and usefulness became harder to classify. Our key finding shows that participants were able to differentiate between AI-generated and expert-written descriptions, even the non-experts. This means that the out-of-the-box VLM, which was not trained on domain-specific datasets like the labelled photo cards, failed to pass the Turing test. As a result, it may not yet be suitable for generating high-quality texts on image-text sources according to cataloguing standards fully on its own, highlighting the need for human oversight and review.</p><p>Further, participants reported lower self-assessed classification performance before the task than their actual performance warranted. This discrepancy could be due to high expectations towards the AI texts before the classification task (and thus a low estimation of one's own discernment ability), which were then not met by the actual experience. While expertise in different fields (archive, archaeology, AI)</p><p>did not influence this self-assessment, it may also reflect a general unfamiliarity with AI models and their current capabilities, which could pose a barrier to meaningful integration in cataloguing processes.</p><p>Research Question 2: How accurate and useful are the catalogue descriptions perceived to be?</p><p>Expert-written descriptions were rated as more accurate and useful than AI-generated ones.</p><p>Further, accuracy and usefulness ratings were more strongly correlated among experts than non-experts, suggesting that experts' perceptions of accuracy were more tightly linked to their perceptions of usefulness. This finding contrasts with our initial hypothesis, which assumed that experts, due to their domain-specific knowledge, would exhibit a clearer distinction between these dimensions. However, the found pattern may reflect the practical integration of accuracy and usefulness as complementary criteria in cataloguing: For professionals, ensuring factual precision (accuracy) and functional applicability (usefulness) could often be inseparable priorities in creating descriptions.</p><p>Research Question 3: How do trust and willingness to use AI tools in general change after seeing the catalogue descriptions?</p><p>Our findings reveal a post-exposure decline in trust and willingness to use AI tools, consistent with prior work showing that technical performance alone is insufficient for AI adoption in archival contexts <ref type="bibr" target="#b17">(Jaillant &amp; Rees, 2023)</ref>. This decline may stem from concerns about the AI's lack of transparency, as participants, particularly professionals attuned to metadata risks <ref type="bibr" target="#b3">(Bunn, 2020;</ref><ref type="bibr" target="#b12">Gilliland, 2012)</ref>, may perceive unclear decision-making as amplifying errors. A more transparent setup, such as presenting alignment with applied standards during material creation to participants, could mitigate skepticism <ref type="bibr" target="#b36">(Yu &amp; Li, 2022)</ref>. Notably, while willingness to use AI remained slightly higher than trust scores, this discrepancy suggests a tension between curiosity and caution: participants expressed interest in exploring AI's potential but remained wary of its risks. Together with experts' consistently lower willingness scores, this underscores the need to systematically evaluate professionals' acceptance and perceived risks of AI tools and to actively engage their concerns, particularly their demand for transparency and alignment with ethical stewardship, to advance the archival debate from "can the system perform?" to "on what terms will professionals accept its results?" <ref type="bibr" target="#b6">(Davet et al., 2023)</ref>.</p><p>Taken together, our results show that performance metrics alone cannot secure adoption:</p><p>Participants, especially experts, preferred human authorship, and their willingness to use AI fell after hands-on experience. Archivists' and collection managers' orientation toward provenance and evidential integrity magnifies even minor hallucinations; when outputs gain fluency without exposing their decision trail, uncertainty deepens. This echoes algorithm-aversion studies in which users avoid relying on algorithms after seeing none of them err <ref type="bibr" target="#b9">(Dietvorst et al., 2015)</ref>. Human-centered human-computer interaction research demonstrates that participatory methods-scenario co-creation, think-aloud walkthroughs, question-driven explainability-surface such biases and calibrate trust <ref type="bibr" target="#b24">(Liao et al., 2021;</ref><ref type="bibr" target="#b15">Hashmati et al., 2024)</ref>. GLAM case work confirms that co-design with curators improves acceptance by embedding AI within existing governance routines <ref type="bibr" target="#b4">(Co et al., 2023;</ref><ref type="bibr">Digital Scholarship Group, 2020)</ref>. These strands converge with the "participatory turn" in AI design, which argues that domain stakeholders must shape requirements from the outset <ref type="bibr" target="#b7">(Delgado et al., 2023)</ref>.</p><p>Accordingly, a cataloguing AI pipeline should encode provenance and accountability as first-order constraints, involve archivists and collection managers throughout development, and make every machine recommendation transparent, auditable, and reversible <ref type="bibr" target="#b17">(Jaillant &amp; Rees, 2023;</ref><ref type="bibr" target="#b32">Shneiderman, 2022)</ref>. Aligning system affordances with professional cognition and ethics is therefore not an optional add-on but the decisive factor in turning generative models from promising prototypes into trusted collaborators <ref type="bibr" target="#b6">(Davet et al., 2023)</ref>. To achieve this, future implementations must address two key aspects:</p><p>technical advancements and trust-building measures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Future directions</head><p>These two aspects are intertwined, as improving model performance through domain-specific fine-tuning on archival data can reduce hallucinations and OCR inaccuracies, while building trust requires training archivists and collection managers to critically engage with AI and balance efficiency gains with curatorial responsibility for preservation. By combining these approaches, we sketch the idea of an explainable AI pipeline that provides transparency into the output generation process, ultimately leading to more reliable and trustworthy AI systems.</p><p>Technical advancements. Despite prompt engineering and model parameter adjustments, small OCR errors and hallucinations in AI-generated descriptions persisted. This highlights the current limitations of off-the-shelf models in cataloguing contexts, at least in multimodal applications, and underscores the need for domain-specific fine-tuning to achieve human-like quality. Fine-tuning involves adjusting the parameters of a pre-trained AI model to fit the specific characteristics and nuances of a particular domain, in this case, archaeological material. This process involves training the model on a large dataset that is representative of the specific domain, such as the labelled photo cards used in this study.</p><p>By doing so, the model can learn to recognize and replicate the specific types of objects, people, and events depicted in the images, and can combine this with the unique linguistic and stylistic features of written text. This can reduce the occurrence of hallucinations and OCR inaccuracies, leading to more reliable and accurate descriptions.</p><p>Trust-building measures. The successful integration of AI models into cataloguing depends on more than just technical improvements. It requires a collaborative approach that balances the benefits of AI with the need for human oversight and expertise. Our findings advocate for a collaborative model where AI serves as a drafting tool for initial description generation, while archive and archaeology experts retain stewardship roles in verification, oversight, and contextual refinement. This hybrid approach aligns with risk-opportunity perception research <ref type="bibr" target="#b31">(Schwesig et al., 2023)</ref> as well as ethics frameworks emphasizing that AI integration must not compromise transparency, provenance, or negotiable criteria <ref type="bibr" target="#b17">(Jaillant &amp; Rees, 2023)</ref>. Future implementations should thus focus on building trust. This could, for example, be achieved by the provision of targeted training and education for archaeology and archive experts to critically engage with AI tools and to balance efficiency gains with curatorial responsibility for preservation. For example, a training program might include hands-on exercises where experts work with AI tools to generate descriptions of sample images or texts, and then evaluate and refine the outputs based on their own expertise and knowledge. This would help experts to develop the skills and confidence they need to work effectively with AI tools, while also ensuring that the outputs are accurate, reliable, and consistent with standards in GLAM institutions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Combining technical advancements and trust-building measures. A concrete vision combining</head><p>both model improvements and trust-building measures is the development of an explainable AI pipeline that provides transparent, auditable, interpretable, and reversible outputs, allowing users to understand how the AI model arrived at its conclusions. For example, an explainable AI pipeline for image description generation might provide a visualization of the image features that were most relevant to the generation of the description, such as specific objects, colors, or textures. This would allow researchers and the public alike to understand how the AI model interpreted the image and to verify that the description is accurate and relevant, leading to more reliance on the model and the human-AI collaboration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>Our study demonstrates that catalogue descriptions generated by a not fine-tuned model can approach, but not yet fully match, the quality of human-written descriptions. However, with domainspecific fine-tuning and ongoing advancements in VLMs, models can or will shortly be able to produce catalogue descriptions that appear human-like to lay and professional evaluators. Further, our results</p><p>show that performance metrics alone cannot secure successful adoption, but that establishing trust is essential. We therefore advocate for an explainable AI pipeline providing transparent, auditable, interpretable, and reversible outputs which, in turn, enables GLAM institutions to harness the benefits of AI models while ensuring that the integrity and accuracy of their collections are maintained.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Kommentare zum Ausfüllen für Experten und Prompts:</head><p>Beschreibungen/Angaben sollten so gemacht werden, wie sie üblicherweise als Experte/ Archäologe beim ausführlichen katalogisieren gemacht werden und dürfen wahlweise kurz, knapp, stichwortartig sein oder aber in Sätzen. Idealerweise sollten sie etwas länger sein als die Wenn erkennbar, dass es sich um ein Reprophoto aus anderer Quelle handelt, kann das gerne beschrieben werden.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Zu Feld Details:</head><p>Das Feld ist eine Zusammenfassung der wichtigsten Infos zum Motiv (arch Objekt, Person etc.) sowie zum Fotoobjekt. Es soll prägnant beschrieben werden, so dass es auch für eine allfällige Übergabe an digitale Bibliotheken (z.B. DDB) geeignet ist.</p><p>• Soweit möglich bei Orten (Fundorten, Verwahrorten (Museen), Fundstätten, etc. Stadt und Staat dazu schreiben in moderner heutiger Schreibweise (&lt;&lt; als Vokabular wird dann GDN verwendet). </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Photographic print on labelled cardboard mount from the LEIZA image archive</figDesc><graphic coords="10,72.00,103.14,468.00,354.75" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Example AI-generated and expert-written description</figDesc><graphic coords="14,72.00,103.14,468.00,160.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Classification performance by expertise and description type</figDesc><graphic coords="20,72.00,398.55,211.50,253.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Accuracy and usefulness ratings of expert-written and AI-generated descriptions by expertise</figDesc><graphic coords="22,72.00,210.56,468.00,327.75" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Willingness to use and trust in AI models</figDesc><graphic coords="23,72.00,344.84,276.75,276.75" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head></head><label></label><figDesc>unten genannten Beispiele und über den vorliegenden Text auf der Bildkartei hinausgehen. Wenn möglich auch noch eine kurze Beschreibung wichtiger Merkmale ergänzen, auch wenn diese nicht auf dem Text der Bildkarte vermerkt sind. Für dieses Experiment bitte auch -wenn sinnvoll -auch kurze Beschreibungen zum Sichtbaren ergänzen (&lt; das kann eine künftige Volltextsuche /bzw. Erschließung nach Keyword erleichtern oder z.B. Blinden das Nutzen ermöglichen). Für das Experiment soll/kann zusätzliches Expertenwissen in die Beschreibungen einfließen aber eher keine längeren zusätzlichen Infos aus der Literatur etc.. Verweise auf Literatur sind möglich aber nicht nötig. (Wir testen an dieser Stelle nicht in erster Linie die Fähigkeit von ChatGPT Datenbanken zu durchsuchen). Kleinere Präzisierungen und Erläuterungen, die für das Verständnis sinnvoll sind, sind ok.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="8,72.00,237.42,468.00,263.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="12,72.00,103.14,468.00,206.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>•</head><label></label><figDesc>In der Beschreibung i.R. immer die Infos zum Motiv direkt als erstes zusammenfassen soweit möglich nach dem Vorbild; stichwortartig oder kurze Sätze; ebenso zusammenfassen Details zum Fotoobjekt (zb. Material, Provenienz und Urheberschaft. (&lt;&lt; siehe auch Beispiele) • im Feld "zeitliche Einordnung" nach DAI Chrontology ChronOntology (dainst.org) (s. auch Liste: &lt;&lt; die zeitliche Einordnung spiel im Test aber keine wichtige Rolle, da ChatGPT hier wohl nur das erkennt was es im Text lesen kann &gt;&gt; daher hier nur grob einordnen (römisch, römische Kaiserzeit, Hallstattzeitlich, …) Hier können alle Infos zum Fotoobjekt erfasst werden. Museum o.ae bei der Bildnummer (Neg. Nr) dabei steht, dann ist das I.R. ein Foto, das nicht vom LEIZA stammt. • Wenn in Neg. eine Nummer ohne weitere Ortsangabe steht, dann i.R. ein LEIZA • wenn Feld auf Karton leer: "nicht bekannt" Schwarz-Weiß-Fotografie eines Fragments einer Großbronzeplastik; linke Hand mit Unterarmansatz; Die Hand greift einen unbekannten Gegenstand; hier darf noch etwas Text , XXXXX XXXXXXXXX; Material: Bronze, vergoldet; Fundort: Bregenz, Österreich; zeitliche Einordnung: römisch; Verwahrort d. Objekts: Schwarz-Weiß-Fotografie einer Ansicht des Theseion und der Akropolis, Athen, Griechenland. Links im Bild ist das Theseion (auch Hephaisteion genannt) zu sehen, im Hintergrund die Akropolis; hier darf noch etwas Text ,</figDesc><table><row><cell cols="2">Kurze Version, ohne viel Beschreibung;</cell><cell></cell><cell></cell></row><row><cell>Feld</cell><cell cols="3">Beispielbezeichnungen, Auswahlkategorien,</cell><cell>Zuordnung</cell></row><row><cell>BK_R28_00002 Feld</cell><cell></cell><cell cols="2">Beispielbezeichnungen, Auswahlkategorien,</cell><cell>Zuordnung</cell></row><row><cell>Objekttitel: BK_MM110_klasik_104300029</cell><cell cols="3">Fragment (Hand) einer Bronzeplastik aus Bregenz</cell><cell>Motiv</cell></row><row><cell>Objekttyp: Objekttitel:</cell><cell cols="3">Schwarz-Weiß-Fotografie Athen, Theseion und Akropolis</cell><cell>Foto Motiv</cell></row><row><cell>Technik/Material Objekttyp:</cell><cell></cell><cell cols="2">Schwarz-Weiß-Fotografie</cell><cell>Foto</cell></row><row><cell></cell><cell>•</cell><cell cols="2">Fotografischer Abzug (Silbergelatineabzug</cell><cell>Foto</cell></row><row><cell>(Bildobjekt)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Technik/Material (Bildobjekt)</cell><cell></cell><cell>•</cell><cell>Fotografischer Abzug (Albumin)</cell><cell>Foto</cell></row><row><cell></cell><cell>Objekt</cell><cell></cell><cell></cell></row><row><cell>Klassifikation Motiv:</cell><cell></cell><cell></cell><cell></cell><cell>Motiv</cell></row><row><cell>Klassifikation Motiv:</cell><cell></cell><cell cols="2">Architektur (architecture)</cell><cell>Motiv</cell></row><row><cell>Detailklassifikation Motiv Detailklassifikation Motiv</cell><cell>Plastik</cell><cell>Tempel</cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>Verbindung aus</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>Foto u Motiv</cell></row><row><cell>Detailbeschreibung:</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>Verbindung aus (Datierung aus</cell></row><row><cell>Detailbeschreibung:</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">… ; zeitliche Einordnung: klassisches Griechenland;</cell><cell>Foto u Motiv anderer Quelle)</cell></row><row><cell></cell><cell cols="3">Vorarlberger Landesmuseum, Bregenz, Österreich; Foto: LEIZA;</cell></row><row><cell>Details Foto:</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Details Foto: Anzahl Foto:</cell><cell cols="3">1 Foto) auf Bildkarte montiert; Karte mit Schreibmaschine beschriftet; 1</cell><cell>Foto</cell></row><row><cell>Anzahl Foto: Bildnummer</cell><cell>1</cell><cell>-</cell><cell></cell><cell>Foto</cell></row><row><cell>Bildnummer:</cell><cell cols="3">LEIZA Neg.: T 80/2248</cell></row><row><cell>Feld</cell><cell cols="3">Beispielbezeichnungen, Auswahlkategorien,</cell><cell>Zuordnung</cell></row><row><cell>Objekt O.41088</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Objekttitel:</cell><cell cols="3">Frühmittelalterlicher Schnallenbeschlag aus Südspanien</cell><cell>Motiv</cell></row><row><cell>Zum Feld Details Fotoobjekt:</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Objekttyp:</cell><cell cols="2">Farb-Fotografie</cell><cell></cell><cell>Foto</cell></row><row><cell cols="4">• Technik/Material Bedingungen / Erklärungen zum Fotourheber • Fotografischer Abzug</cell></row><row><cell>• (Bildobjekt) Klassifikation Motiv: wenn ein Beispiele: Detailklassifikation Motiv</cell><cell cols="3">• (falls bekannt ergänze jeweils Detailbegriff. &gt;&gt; Liste) Druck / Kopie Objekt Bekleidung</cell><cell>Foto Motiv</cell></row></table><note><p>Foto: Fotograf und Herkunft des Fotos unbekannt; 1 Foto auf Bildkarte montiert; Karte handschriftlich beschriftet; Foto gelblich verfärbt;</p></note></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>We want to thank all of Dominik Kimmel's colleagues for creating the descriptions.</p></div>
+			</div>
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>All materials, code, and datasets generated and analyzed during the study are available in a zenodo record ii .</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary information</head><p>Supplementary materials contain information on material creation and additional results in tables.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethics declarations</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ethics Approval</head><p>This study was performed in line with the principles of the Declaration of Helsinki. Approval was granted by the local ethics committee of the Leibniz-Institut für Wissensmedien (Date: October 2, 2024;</p><p>No: LEK 2024/036).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Informed consent</head><p>Experimenters obtained written consent from the participants at the beginning (on participation and data use) and at the end of the online experiment (data use and consent to publish).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>AI disclosure</head><p>A VLM was used for material creation as explained in the Methods section. Large language models (ChatGPT, LLaMA, Qwen) were used for language polishing in manuscript preparation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Authors and Affiliations</head><p>This can be found on the title page.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Contributions</head><p>All authors contributed to this research and manuscript. Design of material: first, second, second to last and last author. Research questions and hypotheses: all authors. Experiment set-up: first and third authors. Data analysis: first author, third author, last author. Manuscript writing: First author, second to last, last author. Critical feedback and editing of manuscript: All authors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary information</head><p>This file includes supporting information for the manuscript "ArchiveGPT: A human-centered evaluation of using a vision language model for image cataloguing", structured as follows:  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Information A1.2: Engineered text prompt used for InternVL2</head><p>To test the model's output quality without further fine-tuning of the model, the prompt had to be reformulated several times before the final descriptions could be generated by the model. The final prompt included detailed instructions on each category in the catalogue template and an example catalogue description was provided in the prompt. In addition, to avoid hallucinations, the prompt stressed to only use information given in the caption. Furthermore, the model was prompted in English since it was mostly pre-trained on English texts and hence performs best in English. The one English description selected from the three generated ones was translated into German and double-checked by a non-expert and an expert on typing errors and correct translations of archival terms.</p><p>Here is the engineered prompt which was entered with each labelled photo card:</p><p>Pretend to be an archivist who wants to catalogue this photo card digitally. Write a description including different fields which are provided below. Also use the text on the photo card.</p><p>The given image shows a photo card from the archive of the Leibniz Institute for Archaeology (LEIZA). It consists of a photo showing a motif and, if applicable, a German text. This text can often be found below the photo, sometimes as a structured template text listing fields like "FO."</p><p>(Fundort, find spot), "Fdst." (Fundstelle, specific find spot), Kreis (county), Land (country), Museum (museum), "Neg." (Fotonegativ, photo negative), "Ggst." (Gegenstand, object name), "Zeit" (chronological classification) and "Lit." (relevant literature).</p><p>Task: Fill out the following fields with information directly extracted from the photo and the text. Only include information that is explicitly stated in the text.</p><p>Object title: What can be seen in the photo? If there is a structured template text on the photo card, use the main information from the field "Ggst" (object name) and "FO" (find spot).</p><p>Object type: Black and white photography / colour photography / graphic or drawing Technique or material of the photo: Photographic print / print or copy / drawings (original) / paintings (original). Only add information in brackets if you are sure.</p><p>Here you can find the definition of the above techniques so you can distinguish them (especially photographic prints without a printing screen and prints with a printing screen):</p><p>Photographic prints are opaque photographs, usually positive (i.e., reproducing appearances without tonal reversal, otherwise use "negative prints"), usually on paper, and generally, but not always, printed from a negative). Photo prints do not have a printing screen, there are no visible dots. The photo paper is exposed to light, usually laser light, without a visible screen. The colours red, green and blue (RGB) are used.</p><p>Prints are pictorial works produced by transferring images by means of a matrix such as a plate, block, or screen, using any of various printing processes. Prints consist of small dots of ink, using the colours cyan, magenta, yellow and black (CMYK). By applying fine drops of ink in close proximity to the paper, all colours are mixed in the printed photo. On closer inspection, for example with a magnifying glass, these individual dots of colour are visible. This pattern is known as a print screen. So look closely at the photo and check if you can find a printing screen.</p><p>Drawings are visual works produced by drawing, which is the application of lines on a surface, often paper, by using a pencil, pen, chalk, or some other tracing instrument to focus on the delineation of form rather than the application of colour.</p><p>Paintings are unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of colour, onto a generally two-dimensional surface.</p><p>Motif classification: Which of the following categories can be seen in the photo Only if the photo shows an object: find spot ("FO." (Fundort), "Fdst." (Fundstelle, specific find spot), Kreis (county), Land (country)), chronological classification ("Zeit", e.g. Roman, Late Antique), dating (specific date), place of storage of the object ("Mus.", museum) and "Lit." (relevant literature).</p><p>Only if the photo shows settlements and landscapes: chronological classification ("Zeit"), location reference: Where was the photo taken?</p><p>Only if the photo shows people: Biographical information about the person: Does the text on the photo card give any information on the persons in the photo?</p><p>Only if the photo shows architecture: chronological classification ("Zeit"), location reference: Where was the photo taken?</p><p>Write only information that you can find in the image or in the text! If a sub-item is not described on the photo card, do not list the sub-item.</p><p>Only use the information in the text on the photo card, if available. For locations, also include the city and state. Photo (author and rights holder): If the author is not described on the photo card, do not list the sub-item.; Image carrier: X photo(s) mounted on photo card; Text: photo card is not labelled / labelled with typewriter / labelled by hand; photo is / is not discoloured (yellow). Look only at the photo when giving information on discolourings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Number of photos: X</head><p>Image number:</p><p>If "Neg." (Fotonegativ, photo negative) appears in the text template of the photo card, enter the number after "Neg." here. Otherwise write "not known / specified". If there is a location indicated after "Neg.", write it in front of the number. Otherwise write "LEIZA" in front of the number.</p><p>Here is an example description written by an archivist: </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Information A2. Model parameters</head><p>In addition to the prompt engineering <ref type="bibr" target="#b30">(Sahoo et al., 2024)</ref>, several model parameters and sampling methods were tested on the InternVL2 model, but only the temperature parameter showed clear and useful alternations in the output descriptions. The temperature parameter helps to determine how likely the model is to come up with different options for the next word. A temperature of zero means that the model is more deterministic and will always select the most probable next word. A temperature greater than zero involves a degree of randomness in the selection of the next word which makes the model's outputs less deterministic. In this work, a more deterministic model was favored since the information on the labelled photo card should not be altered but copied correctly into the corresponding data field of the catalogue description. However, a slightly higher temperature value could also reduce OCR errors since it lets the model generate words that are similar to the one that was falsely recognized on the labelled photo card. The InternVL2 model thus generated three catalogue descriptions with different values of the temperature parameter (0.1, 0.5, 0.75) from which the best-fitting description was chosen by a human.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Information A3. Items presented in the experiment</head><p>All texts in the experiment were presented in German. Their English translations can be found here.</p><p>For the independent variables:</p><p>- o as an ordinal variable -"How do you rate your expertise in archive practices and archival science?" (ranging from 1 = "very low" to 7 = "very high").</p><p>-Archaeological expertise was only measured on an ordinal scale -"How do you rate your expertise in the field of archaeology?" (ranging from 1 = "very low" to 7 = "very high").</p><p>-AI expertise was measured o as a categorical variable:</p><p>"I have been working in the field of artificial intelligence, data science, computer science or similar for at least ten years (including my studies o as an ordinal variable -"How do you rate your expertise in the field of artificial intelligence?" (ranging from 1 = "very low" to 7 = "very high").</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Information B. Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Tables B1</head><p>Supplementary Table <ref type="table">B1</ref> </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Building trustworthy AI solutions: integrating artificial intelligence literacy into records management and archival systems</title>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Arias Hernández</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Moisés</forename><surname>Rockembach</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00146-025-02194-0</idno>
+		<ptr target="https://doi.org/10.1007/s00146-025-02194-0" />
+	</analytic>
+	<monogr>
+		<title level="j">AI &amp; SOCIETY</title>
+		<title level="j" type="abbrev">AI &amp; Soc</title>
+		<idno type="ISSN">0951-5666</idno>
+		<idno type="ISSNe">1435-5655</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="4265" to="4282" />
+			<date type="published" when="2025-02-05">2025</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Fitting Linear Mixed-Effects Models Using&lt;b&gt;lme4&lt;/b&gt;</title>
+		<author>
+			<persName><forename type="first">Douglas</forename><surname>Bates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Mächler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Bolker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steve</forename><surname>Walker</surname></persName>
+		</author>
+		<idno type="DOI">10.18637/jss.v067.i01</idno>
+		<ptr target="https://doi.org/10.18637/jss.v067.i01" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Statistical Software</title>
+		<title level="j" type="abbrev">J. Stat. Soft.</title>
+		<idno type="ISSNe">1548-7660</idno>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="48" />
+			<date type="published" when="2015">2015</date>
+			<publisher>Foundation for Open Access Statistic</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Photographs on the Move: Formats, Formations, and Transformations in Four Photo Archives</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bärnighausen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Klamm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wodtke</surname></persName>
+		</author>
+		<ptr target="https://www.mprl-series.mpg.de/media/studies/12/studies12.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Photo-Objects: On the Materiality of Photographs and Photo Archives in the Humanities and Sciences</title>
+		<editor>
+			<persName><forename type="first">Julia</forename><surname>Bärnighausen</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Costanza</forename><surname>Caraffa</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Stefanie</forename><surname>Klamm</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Franka</forename><surname>Schneider Und</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Petra</forename><surname>Wodtke</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="33" to="66" />
+		</imprint>
+		<respStmt>
+			<orgName>Max Planck Research Library for the History and Development of Knowledge</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Working in contexts for which transparency is important: A record-keeping view of explainable artificial intelligence (XAI)</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bunn</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/RMJ-08-2019-0038</idno>
+		<ptr target="https://doi.org/10.1108/RMJ-08-2019-0038" />
+	</analytic>
+	<monogr>
+		<title level="j">Records Management Journal</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="143" to="153" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Reimagining access: Improving access to digital archives through participatory design</title>
+		<author>
+			<persName><forename type="first">Elise</forename><surname>Co</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Dirig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joshua</forename><surname>Halstead</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maggie</forename><surname>Hendrie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Todd</forename><surname>Masilko</surname></persName>
+		</author>
+		<idno type="DOI">10.69554/iagk5522</idno>
+		<ptr target="https://doi.org/10.69554/IAGK5522" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Digital Media Management</title>
+		<title level="j" type="abbrev">JDMM</title>
+		<idno type="ISSNe">2047-1319</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">324</biblScope>
+			<date type="published" when="2023-06-01">2023</date>
+			<publisher>Henry Stewart Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Archives and AI: An Overview of Current Debates and Future Perspectives</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Colavizza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Blanke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jeurgens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Noordegraaf</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3479010</idno>
+		<ptr target="https://doi.org/10.1145/3479010" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Journal on Computing and Cultural Heritage</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="4" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Archivist in the machine: paradata for AI-based automation in the archives</title>
+		<author>
+			<persName><forename type="first">Jeremy</forename><surname>Davet</surname></persName>
+			<idno type="ORCID">0000-0003-3746-8822</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Babak</forename><surname>Hamidzadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patricia</forename><surname>Franks</surname></persName>
+			<idno type="ORCID">0000-0002-9917-6924</idno>
+		</author>
+		<idno type="DOI">10.1007/s10502-023-09408-8</idno>
+		<idno>10502- 023-09408-8</idno>
+		<ptr target="https://doi.org/10.1007/s" />
+	</analytic>
+	<monogr>
+		<title level="j">Archival Science</title>
+		<title level="j" type="abbrev">Arch Sci</title>
+		<idno type="ISSN">1389-0166</idno>
+		<idno type="ISSNe">1573-7500</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="275" to="295" />
+			<date type="published" when="2023-01-20">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The Participatory Turn in AI Design: Theoretical Foundations and the Current State of Practice</title>
+		<author>
+			<persName><forename type="first">Fernando</forename><surname>Delgado</surname></persName>
+			<idno type="ORCID">0000-0001-6131-4124</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0003-0486-5485</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Madaio</surname></persName>
+			<idno type="ORCID">0000-0001-5772-0488</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0002-3548-2535</idno>
+		</author>
+		<idno type="DOI">10.1145/3617694.3623261</idno>
+		<idno>arXiv 2310.00907</idno>
+		<ptr target="https://arxiv.org/abs/2310.00907" />
+	</analytic>
+	<monogr>
+		<title level="m">Equity and Access in Algorithms, Mechanisms, and Optimization</title>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2023-10-30">2023</date>
+			<biblScope unit="page" from="1" to="23" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">cocor: A Comprehensive Solution for the Statistical Comparison of Correlations</title>
+		<author>
+			<persName><forename type="first">Birk</forename><surname>Diedenhofen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jochen</forename><surname>Musch</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0121945</idno>
+		<ptr target="https://doi.org/10.1371/journal.pone.0121945" />
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">e0121945</biblScope>
+			<date type="published" when="2015-04-02">2015</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Algorithm aversion: People erroneously avoid algorithms after seeing them err</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Dietvorst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Simmons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Massey</surname></persName>
+		</author>
+		<idno type="DOI">10.1037/xge0000033</idno>
+		<ptr target="https://doi.org/10.1037/xge0000033" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Experimental Psychology: General</title>
+		<imprint>
+			<biblScope unit="volume">144</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="114" to="126" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Participatory and co-design in libraries, archives, and museums</title>
+		<ptr target="https://dsg.northeastern.edu/participatory-and-co-design-in-libraries-archives-and-museums/" />
+		<imprint>
+			<date type="published" when="2020-04-28">2020. April 28</date>
+		</imprint>
+		<respStmt>
+			<orgName>Digital Scholarship Group ; Northeastern University</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">SECHSTER TEIL. Erschließung</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kimmel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Puppe</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/9783111398730-010</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Bundesbaugesetz</title>
+		<imprint>
+			<publisher>De Gruyter</publisher>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note>Manuscript submitted for publication</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Contemplating Co-creator Rights in Archival Description</title>
+		<author>
+			<persName><forename type="first">Anne</forename><forename type="middle">J</forename><surname>Gilliland</surname></persName>
+		</author>
+		<idno type="DOI">10.5771/0943-7444-2012-5-340</idno>
+		<ptr target="https://doi.org/10.5771/0943-7444-2012-5-340" />
+	</analytic>
+	<monogr>
+		<title level="j">KNOWLEDGE ORGANIZATION</title>
+		<title level="j" type="abbrev">KO</title>
+		<idno type="ISSN">0943-7444</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="340" to="346" />
+			<date type="published" when="2012">2012</date>
+			<publisher>IMR Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename><surname>Green</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Swets</surname></persName>
+		</author>
+		<title level="m">Signal detection theory and psychophysics</title>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Wiley</publisher>
+			<date type="published" when="1966">1966</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1969" to="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Automated Archival Descriptions with Federated Intelligence of LLMs</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Groppe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Marquet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Walz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Groppe</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2504.05711</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.2504.05711" />
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note>No. arXiv 2504.05711</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">eXplainable AI interfaces with (and for) expert operators: A participatory design approach</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hashmati</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wärnberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Brorsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Obaid</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/xxxxxxx.xxxxxxx</idno>
+		<ptr target="https://doi.org/10.1145/xxxxxxx.xxxxxxx" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 36th Australian Conference on Human-Computer Interaction (OzCHI &apos;24)</title>
+		<meeting>the 36th Australian Conference on Human-Computer Interaction (OzCHI &apos;24)</meeting>
+		<imprint>
+			<publisher>Association for Computing Machinery</publisher>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Correction: An Improved Sequentially Rejective Bonferroni Test Procedure</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Holm</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/2532027</idno>
+		<ptr target="http://www.jstor.org/stable/4615733" />
+	</analytic>
+	<monogr>
+		<title level="j">Biometrics</title>
+		<title level="j" type="abbrev">Biometrics</title>
+		<idno type="ISSN">0006-341X</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">737</biblScope>
+			<date type="published" when="1979">1979</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Applying AI to digital archives: trust, collaboration and shared professional ethics</title>
+		<author>
+			<persName><forename type="first">Lise</forename><surname>Jaillant</surname></persName>
+			<idno type="ORCID">0000-0002-2680-4571</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arran</forename><surname>Rees</surname></persName>
+			<idno type="ORCID">0000-0001-7155-5335</idno>
+		</author>
+		<idno type="DOI">10.1093/llc/fqac073</idno>
+		<ptr target="https://doi.org/10.1093/llc/fqac073" />
+	</analytic>
+	<monogr>
+		<title level="j">Digital Scholarship in the Humanities</title>
+		<idno type="ISSN">2055-7671</idno>
+		<idno type="ISSNe">2055-768X</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="571" to="585" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Human heuristics for AI-generated language are flawed</title>
+		<author>
+			<persName><forename type="first">Maurice</forename><surname>Jakesch</surname></persName>
+			<idno type="ORCID">0000-0002-2642-3322</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">T</forename><surname>Hancock</surname></persName>
+			<idno type="ORCID">0000-0001-5367-2677</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mor</forename><surname>Naaman</surname></persName>
+			<idno type="ORCID">0000-0002-6436-3877</idno>
+		</author>
+		<idno type="DOI">10.1073/pnas.2208839120</idno>
+		<ptr target="https://doi.org/10.1073/pnas.2208839120" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">2208839120</biblScope>
+			<date type="published" when="2023-03-07">2023</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Jeffreys</surname></persName>
+		</author>
+		<title level="m">The theory of probability</title>
+		<imprint>
+			<publisher>Clarendon Press</publisher>
+			<date type="published" when="1961">1961</date>
+		</imprint>
+	</monogr>
+	<note>rd ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Computational metadata generation methods for biological specimen image collections</title>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Karnani</surname></persName>
+			<idno type="ORCID">0000-0002-3108-7941</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><surname>Pepper</surname></persName>
+			<idno type="ORCID">0000-0002-1601-8729</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yasin</forename><surname>Bakiş</surname></persName>
+			<idno type="ORCID">0000-0001-6144-9440</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaojun</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-2995-9050</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Bart</surname></persName>
+			<idno type="ORCID">0000-0002-5662-9444</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">E</forename><surname>Breen</surname></persName>
+			<idno type="ORCID">0000-0002-1376-5008</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jane</forename><surname>Greenberg</surname></persName>
+			<idno type="ORCID">0000-0001-7819-5360</idno>
+		</author>
+		<idno type="DOI">10.1007/s00799-022-00342-1</idno>
+		<ptr target="https://doi.org/10.1007/s00799-022-00342-1" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal on Digital Libraries</title>
+		<title level="j" type="abbrev">Int J Digit Libr</title>
+		<idno type="ISSN">1432-5012</idno>
+		<idno type="ISSNe">1432-1300</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="157" to="174" />
+			<date type="published" when="2022-11-23">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Von der archäologischen Theorie zur Logik des Sammlungsaufbaus im Bildarchiv des Römisch-Germanischen Zentralmuseums Mainz</title>
+		<author>
+			<persName><forename type="first">U</forename><surname>Klatt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Logik und Lücke. Die Konstruktion des Authentischen in Archiven und Sammlungen</title>
+		<editor>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename></persName>
+		</editor>
+		<imprint>
+			<publisher>Wallstein</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="77" to="97" />
+		</imprint>
+	</monogr>
+	<note>st ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Do citizens trust trustworthy artificial intelligence? Experimental evidence on the limits of ethical AI measures in government</title>
+		<author>
+			<persName><forename type="first">Bjorn</forename><surname>Kleizen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wouter</forename><surname>Van Dooren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Koen</forename><surname>Verhoest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Evrim</forename><surname>Tan</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.giq.2023.101834</idno>
+		<ptr target="https://doi.org/10.1016/J.GIQ.2023.101834" />
+	</analytic>
+	<monogr>
+		<title level="j">Government Information Quarterly</title>
+		<title level="j" type="abbrev">Government Information Quarterly</title>
+		<idno type="ISSN">0740-624X</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">101834</biblScope>
+			<date type="published" when="2023-10">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Artificial intelligence versus Maya Angelou: Experimental evidence that people cannot differentiate AI-generated from human-written poetry</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Köbis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">D</forename><surname>Mossink</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.chb.2020.106553</idno>
+		<ptr target="https://doi.org/10.1016/j.chb.2020.106553" />
+	</analytic>
+	<monogr>
+		<title level="j">Computers in human behavior</title>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="page">106553</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Question-driven design process for explainable AI user experiences</title>
+		<author>
+			<persName><forename type="first">Q</forename><forename type="middle">V</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pribić</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sow</surname></persName>
+		</author>
+		<idno>arXiv 2104.03483</idno>
+		<ptr target="https://arxiv.org/abs/2104.03483" />
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science</title>
+		<author>
+			<persName><surname>Makowski</surname></persName>
+		</author>
+		<idno type="DOI">10.21105/joss.00470</idno>
+		<ptr target="https://doi.org/10.21105/joss.00470" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Open Source Software</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">22</biblScope>
+			<biblScope unit="page">470</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<author>
+			<persName><forename type="first">Minimum</forename><surname>Record</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Working</forename><surname>Group</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Marchini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Städtler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Greisinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Böhm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A.-M</forename><surname>Bernhard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Götsch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gerber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Grotrian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hagel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kailus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A.-M</forename><surname>Koch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Kudlinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A.-L</forename><surname>Nowicki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Puschwitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Quade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rohde-Enslin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rölle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Städing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wassermann</surname></persName>
+		</author>
+		<idno type="DOI">10.5281/zenodo.14007413</idno>
+		<ptr target="https://doi.org/10.5281/zenodo.14007413" />
+		<title level="m">Minimum Record Recommendation for Museums and Collections</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Transforming scholarship in the archives through handwritten text recognition</title>
+		<author>
+			<persName><forename type="first">Guenter</forename><surname>Muehlberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Louise</forename><surname>Seaward</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><surname>Terras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sofia</forename><surname>Ares Oliveira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vicente</forename><surname>Bosch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maximilian</forename><surname>Bryan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Colutto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hervé</forename><surname>Déjean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><surname>Diem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Fiel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Basilis</forename><surname>Gatos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><surname>Greinoecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Grüning</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guenter</forename><surname>Hackl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vili</forename><surname>Haukkovaara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerhard</forename><surname>Heyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lauri</forename><surname>Hirvonen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Hodel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matti</forename><surname>Jokinen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>Kahle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mario</forename><surname>Kallio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frederic</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Kleber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Labahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eva</forename><forename type="middle">Maria</forename><surname>Lang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sören</forename><surname>Laube</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gundram</forename><surname>Leifert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georgios</forename><surname>Louloudis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rory</forename><surname>Mcnicholl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Luc</forename><surname>Meunier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Michael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><surname>Mühlbauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathanael</forename><surname>Philipp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Pratikakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joan</forename><surname>Puigcerver Pérez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannelore</forename><surname>Putz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Retsinas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Verónica</forename><surname>Romero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Sablatnig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joan</forename><forename type="middle">Andreu</forename><surname>Sánchez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>Schofield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giorgos</forename><surname>Sfikas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Sieber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolaos</forename><surname>Stamatopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Strauß</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tamara</forename><surname>Terbul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alejandro</forename><forename type="middle">Héctor</forename><surname>Toselli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Berthold</forename><surname>Ulreich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Villegas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enrique</forename><surname>Vidal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johanna</forename><surname>Walcher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Weidemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herbert</forename><surname>Wurster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konstantinos</forename><surname>Zagoris</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/jd-07-2018-0114</idno>
+		<ptr target="https://doi.org/10.1108/JD-07-2018-0114" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Documentation</title>
+		<title level="j" type="abbrev">JD</title>
+		<idno type="ISSN">0022-0418</idno>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="954" to="976" />
+			<date type="published" when="2019-09-09">2019</date>
+			<publisher>Emerald</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">AI-synthesized faces are indistinguishable from real faces and more trustworthy</title>
+		<author>
+			<persName><forename type="first">Sophie</forename><forename type="middle">J</forename><surname>Nightingale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hany</forename><surname>Farid</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.2120481119</idno>
+		<ptr target="https://doi.org/10.1073/pnas.2120481119" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">2120481119</biblScope>
+			<date type="published" when="2022-02-14">2022</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">PsychoPy2: Experiments in behavior made easy</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Peirce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Simpson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Macaskill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Höchenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Sogo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">.</forename><forename type="middle">.</forename><surname>Lindeløv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename></persName>
+		</author>
+		<idno type="DOI">10.3758/s13428-018-01193-yArchiveGPT37</idno>
+		<ptr target="https://doi.org/10.3758/s13428-018-01193-yArchiveGPT37" />
+	</analytic>
+	<monogr>
+		<title level="j">Behavior research methods</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="195" to="203" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sahoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Saha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mondal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chadha</surname></persName>
+		</author>
+		<idno>arXiv 2402.07927</idno>
+		<ptr target="https://arxiv.org/abs/2402.07927" />
+		<title level="m">A systematic survey of prompt engineering in large language models: Techniques and applications</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Using artificial intelligence (AI)? Risk and opportunity perception of AI predict people’s willingness to use AI</title>
+		<author>
+			<persName><forename type="first">Rebekka</forename><surname>Schwesig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irina</forename><surname>Brich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Buder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><surname>Huff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nadia</forename><surname>Said</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/13669877.2023.2249927</idno>
+		<ptr target="https://doi.org/10.1080/13669877.2023.2249927" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Risk Research</title>
+		<title level="j" type="abbrev">Journal of Risk Research</title>
+		<idno type="ISSN">1366-9877</idno>
+		<idno type="ISSNe">1466-4461</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="1053" to="1084" />
+			<date type="published" when="2023-10-03">2023</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Human-centered AI</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Shneiderman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">I.—COMPUTING MACHINERY AND INTELLIGENCE</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Turing</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mind/lix.236.433</idno>
+		<ptr target="https://doi.org/10.1093/mind/LIX.236.433" />
+	</analytic>
+	<monogr>
+		<title level="j">Mind</title>
+		<idno type="ISSN">0026-4423</idno>
+		<idno type="ISSNe">1460-2113</idno>
+		<imprint>
+			<biblScope unit="volume">LIX</biblScope>
+			<biblScope unit="issue">236</biblScope>
+			<biblScope unit="page" from="433" to="460" />
+			<date type="published" when="1950-10-01">1950</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Enhancing the reasoning ability of multimodal large language models via mixed preference optimization</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">.</forename><forename type="middle">.</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2411.10442</idno>
+		<idno>arXiv 2411.10442</idno>
+		<ptr target="https://doi.org/10.48550/arXiv.2411.10442" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The FAIR Guiding Principles for scientific data management and stewardship</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Wilkinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dumontier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">J</forename><surname>Aalbersberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Appleton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Axton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Baak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">.</forename><forename type="middle">.</forename><surname>Mons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename></persName>
+		</author>
+		<idno type="DOI">10.1038/sdata.2016.18</idno>
+		<ptr target="https://doi.org/10.1038/sdata.2016.18" />
+	</analytic>
+	<monogr>
+		<title level="j">Scientific data</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Artificial Intelligence Decision-Making Transparency and Employees’ Trust: The Parallel Multiple Mediating Effect of Effectiveness and Discomfort</title>
+		<author>
+			<persName><forename type="first">Liangru</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-3410-3273</idno>
+		</author>
+		<idno type="DOI">10.3390/bs12050127</idno>
+		<ptr target="https://doi.org/10.3390/bs12050127" />
+	</analytic>
+	<monogr>
+		<title level="j">Behavioral Sciences</title>
+		<title level="j" type="abbrev">Behavioral Sciences</title>
+		<idno type="ISSNe">2076-328X</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">127</biblScope>
+			<date type="published" when="2022-04-27">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">LLM-Generated Class Descriptions for Semantically Meaningful Image Classification</title>
+		<author>
+			<persName><forename type="first">Simone</forename><surname>Bertolotto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">André</forename><surname>Panisson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Perotti</surname></persName>
+		</author>
+		<idno type="DOI">10.5220/0013060800003886</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 1st International Conference on Explainable AI for Neural and Symbolic Methods</title>
+		<meeting>the 1st International Conference on Explainable AI for Neural and Symbolic Methods</meeting>
+		<imprint>
+			<publisher>SCITEPRESS - Science and Technology Publications</publisher>
+			<date type="published" when="2024" />
+			<biblScope unit="page" from="50" to="61" />
+		</imprint>
+	</monogr>
+	<note>For the dependent variables: a) Classification performance for AI-generated and expert-written descriptions</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">How Many Fingers Do You See? How Many Fingers Do You See?</title>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">L</forename><surname>Kibler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jessica</forename><surname>Biren</surname></persName>
+		</author>
+		<idno type="DOI">10.1037/a0002653</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PsycCRITIQUES</title>
+		<idno type="ISSN">1554-0138</idno>
+		<imprint>
+			<biblScope unit="volume">5151</biblScope>
+			<biblScope unit="issue">2121</biblScope>
+			<date type="published" when="2006" />
+			<publisher>Portico</publisher>
+		</imprint>
+	</monogr>
+	<note>Self-assessed classification performance</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">It is Difficult to Predict, with Accuracy, How Many Therapy Sessions a Client will Attend</title>
+		<author>
+			<persName><forename type="first">Windy</forename><surname>Dryden</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9781003386353-8</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Single-Session Therapy (SST)</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2023-07-07" />
+			<biblScope unit="page" from="27" to="27" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">How Scientists Can Discover Useful Knowledge</title>
+		<idno type="DOI">10.1017/9781009092265.010</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The Scientific Method</title>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2022-06-30" />
+			<biblScope unit="page" from="100" to="120" />
+		</imprint>
+	</monogr>
+	<note>Perceived usefulness -</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Prospecting for Lunar Polar Ice from Very Low Lunar Orbit: How Low Can You Go?</title>
+		<idno type="DOI">10.2514/6.2022-4348.vid</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Willingness to use AI</title>
+		<imprint>
+			<publisher>American Institute of Aeronautics and Astronautics (AIAA)</publisher>
+			<date type="published" when="2022-10-24" />
+		</imprint>
+	</monogr>
+	<note>How frequently do you currently use artificial intelligence for you work and studies?. to 7 = &quot;very likely. measured pre-and post-test</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">Trust in AI -&quot;I trust artificial intelligence in my work or studies</title>
+		<imprint/>
+	</monogr>
+	<note>ranging from 1 = &quot;I completely disagree&quot; to 7 = &quot;I completely agree&quot;</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m">VkODY4MzU5N2I0YSJ9.KOoC9URvTnu2Zk1Q4TTSKf5_9twIwSSlP46xB4xksrXZeTMnlf3Zf5gNsRhe2AvajRNkdlKX1hgJ k6rsNDyuUw</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

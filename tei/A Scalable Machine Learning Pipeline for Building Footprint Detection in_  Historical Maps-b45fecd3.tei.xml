@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">A Scalable Machine Learning Pipeline for Building Footprint Detection in Historical Maps</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Annemarie</forename><surname>Mccarthy</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Munster Technological University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">A Scalable Machine Learning Pipeline for Building Footprint Detection in Historical Maps</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">1463BB6DF1BE86F75B84095BCC6AEAE7</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Historical maps offer a valuable lens through which to study past landscapes and settlement patterns. While prior research has leveraged machine learning based techniques to extract building footprints from historical maps, such approaches have largely focused on urban areas and tend to be computationally intensive. This presents a challenge for research questions requiring analysis across extensive rural regions, such as verifying historical census data or locating abandoned settlements. In this paper, this limitation is addressed by proposing a scalable and efficient pipeline tailored to rural maps with sparse building distributions. The method described employs a hierarchical machine learning based approach: convolutional neural network (CNN) classifiers are first used to progressively filter out map sections unlikely to contain buildings, significantly reducing the area requiring detailed analysis. The remaining high probability sections are then processed using CNN segmentation algorithms to extract building features. The pipeline is validated using test sections from the Ordnance Survey Ireland historical 25 inch map series and 6 inch map series, demonstrating both high performance and improved efficiency compared to conventional segmentationonly approaches. Application of the technique to both map series, covering the same geographic region, highlights its potential for historical and archaeological discovery. Notably, the pipeline identified a settlement of approximately 22 buildings in Tully, Co. Galway, present in the 6 inch map, produced in 1839, but absent from the 25 inch map, produced in 1899, suggesting it may have been abandoned during the Great Famine period.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.32" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Historical maps are a valuable resource, offering detailed information on land use (such as woodland and wetland), transportation networks (including railways and roads), geographical features (like rivers and mountains), and patterns of human settlement, including building footprints. Numerous past studies have focused on the automated extraction of information from historical maps. The extraction of building footprints is of particular interest to many researchers, as it allows for the reconstruction of historical landscapes, and the identification of sites of historical and archaeological interest. <ref type="bibr" target="#b0">[1]</ref><ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref> In this work, historical Irish maps are examined and used to develop a tailored pipeline which can detect building footprints efficiently, in rural areas with low building density. A classifierguided, progressively focused segmentation pipeline for building detection in historical maps, is proposed. The method first divides the input map into large tiles, then filters tiles using a lightweight classifier trained to identify "interesting" regions -that is, tiles likely to contain buildings. Tiles identified as featureless or irrelevant are discarded early. This process is repeated recursively, shrinking tile size. A segmentation model is finally applied to the reduced size tiles, to extract building footprints. This strategy reduces unnecessary computation in empty or low-information areas, enhancing overall processing efficiency while maintaining good accuracy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Background and Related Research</head><p>Automated methods have been used in previous work to extract a wide range of features from historical and topographic maps, including trees <ref type="bibr" target="#b6">[7]</ref>, wetlands <ref type="bibr" target="#b7">[8]</ref>, and buildings <ref type="bibr">[1 -6]</ref>. Traditional approaches include the use of edge detection, texture/colour analysis, geometric approaches and pattern recognition <ref type="bibr">[9 -11]</ref>. These methods still find uses in more modern studies <ref type="bibr" target="#b3">[4,</ref><ref type="bibr" target="#b11">12]</ref>, but have increasingly been combined with or replaced by machine learning based approaches, which offer improved generalization and robustness to stylistic variation on maps and aging artifacts such as degraded ink and paper marks, among other advantages. CNN techniques have been used in a diverse range of historical map applications. Smith et al. <ref type="bibr" target="#b6">[7]</ref> employed instance segmentation techniques using CNNs to accurately detect, separate and count individual tree symbols on urban historical maps, while O Hara et al. <ref type="bibr" target="#b7">[8]</ref> used CNNs to detect wetland symbols on the map series studied in this paper.</p><p>Recent studies have addressed the specific problem of detecting building footprints in historical maps using deep learning and in particular, semantic segmentation. Goderle et al. <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b4">5]</ref> used a CNN based on a resnet101 backbone with DeepLabv3 head to locate building footprints on historical maps from the Franciscan Cadastre. Heitzler et al. <ref type="bibr" target="#b1">[2]</ref> employed a similar approach, but utilised an ensemble of 10 FCNNs (fully convolutional neural networks) with unet architecture, to perform precise segmentation of tiled map sheets from the Swiss Siegfried map.</p><p>While these approaches demonstrate effective segmentation performance, they rely on uniform tiling and/or full-sheet processing, applying segmentation to every part of the image regardless of relevance. While segmentation has been shown to function well in identifying buildings on historical maps, it is fundamentally a computationally expensive pixel by pixel process <ref type="bibr" target="#b12">[13]</ref>, with inference times of up to 0.26 seconds per 256 × 256 pixel patch reported or estimated for models such as GMEDN and ARC-Net. <ref type="bibr" target="#b13">[14]</ref> While full map segmentation is required when processing urban maps (as the studies described above primarily address), this approach is poorly suited to maps where structures are sparsely distributed, and analysis of large areas is required. Historical maps of Ireland, for example, would comprise approximately 28 million such tiles, required approximately 2000 hours of processing time, excluding the time required for pre and post processing tasks, and model training. This is likely to present a significant practical barrier to many historians and geographers wishing to utilise information from historical maps.</p><p>Various techniques which address the accuracy and efficiency of building footprint detection have been proposed. Zhao et al. <ref type="bibr" target="#b14">[15]</ref> addressed the issue of the cost of manual labelling for training purposes, training a deep object attention network to extract building footprints, with only limited training samples. Uhl et al. <ref type="bibr" target="#b15">[16]</ref> acknowledged the difficulties posed in processing large map collections, proposing some preliminary analysis techniques which could be applied to assist with processing. In a later study <ref type="bibr" target="#b5">[6]</ref>, the same authors developed an efficient weakly supervised model, utilizing contemporary geospatial data to generate weak labels for training samples extracted from historical topographic maps, and applying a CNN-based patch classifier in a sliding window manner to perform pixel-level segmentation. This allowed for automated estimation of historical settlement patterns, without manually labelled training data. Despite the inherent uncertainty in the segmentation, recall scores as high as 0.97, and F scores of 0.79 were recorded on some individual test maps. Chen et al. <ref type="bibr" target="#b16">[17]</ref> proposed an alternative approach to segmentation for building footprint detection, training a bi-directional cascade network to perform edge detection and processing the results using mathematical morphology techniques. Gobbi et al. <ref type="bibr" target="#b11">[12]</ref> combined machine learning and other techniques, presenting a pipeline which first segments the entire map into regions using traditional methods of region-growing and connected component analysis and then classifies land use (e.g. forest, building) using a machine learning model. Despite significant advances in the automated extraction of features from historical maps, the accurate and efficient large-scale analysis of predominantly rural landscapes remains an underexplored area. Existing approaches, while effective in urban or densely featured regions, become computationally burdensome and inefficient when applied uniformly across sparsely populated rural areas. To address this gap, in this work, a novel classifier-guided, progressively focused segmentation pipeline specifically tailored for historical maps with low building density, is introduced. By filtering out non-informative regions early and applying segmentation only where relevant, this approach significantly reduces computational overhead while preserving detection accuracy. This method offers a scalable solution for the detailed reconstruction of rural built environments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data</head><p>Map sheets have been obtained from the Ordnance Survey Ireland (OSI) historical maps, 6 inch series <ref type="bibr" target="#b17">[18]</ref> and 25 inch series <ref type="bibr" target="#b18">[19]</ref>. The 6 inch series was compiled between 1829 and 1841 and has a scale of 6 inches to 1 mile. The 25 inch series was compiled between 1897 and 1913 and has a scale of 25 inches to 1 mile. Both are available for viewing through the Irish Townland and Historical Map Viewer <ref type="bibr" target="#b19">[20]</ref>. Each map was assembled by individual cartographers, referencing a common set of symbols <ref type="bibr" target="#b20">[21]</ref>, although individual styles are still evident throughout the map series, especially in the representation of features such as woodland and marsh.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fastai Library</head><p>The fastai library <ref type="bibr" target="#b21">[22,</ref><ref type="bibr">23]</ref> was developed in 2018 by Jeremy Howard and Sylvain Gugger, with the goal of making deep learning more accessible and easier to use for practitioners and researchers. It runs on a PyTorch [23] backbone. As many of the applications of historical map analysis are found in the humanities (e.g. geography and history), in developing this pipeline, it was desirable that the methods described should be accessible to people with limited or no training in the field of machine learning. While the development of new models in fastai necessarily requires knowledge of the field, the application of an existing model requires only basic Python skills, with models deployable using only a .pkl file and any associated classes and functions custom written for the specific model. The use of fastai tools should also make the training of comparable models on historical maps from other sources, more accessible to non-specialists.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Classification Models</head><p>In aiming to detect building footprints across large areas of historical map sheets, twin primary goals exist, those of accuracy and efficiency. To reduce the map areas subjected to computationally expensive segmentation models, the area for analysis is iteratively processed through a series of n classifier models, beginning first with a tile size of a x b pixels. The general process is depicted in Fig. <ref type="figure" target="#fig_0">1</ref>. The goal is to progressively remove areas of map which contain no features of interest i.e. buildings in the case of this work. For this method to succeed in improving the overall efficiency of map processing, it is a prerequisite that the proportion of areas classified as containing buildings must lie below some limit, 𝑅. This limit is related to the difference between computational times required for segmentation and classification of images. Estimating the exact gain in computational gain is highly model and platform dependent due to issues such as GPU choice, fixed computational overheads, memory limitations, model architecture, choices regarding image batching. Hence, it is difficult to establish this limit absolutely, for all scenarios. However, a sense of how it behaves can be obtained by considering the computational time required in the following simplified case.</p><p>Let 𝑡 𝑠 equal the time required, per pixel, for a segmentation operation, and 𝑡 𝑐 represent the time required, per pixel, for a classification operation. For the 𝑛 = 0 case, the image is segmented in its entirety, with no regions omitted. The time required per pixel (for map processing) then is simply 𝑡 𝑠 . For the 𝑛 = 1 case, a single classifier is first run on the tiled image and this is followed It follows, that for any 𝑛, the computational time required per pixel, 𝑇, can be expressed as the sum of a geometric series plus a scaled term.</p><formula xml:id="formula_0">𝑇 = ∑ 𝑅 𝑖 𝑡 𝑐 𝑛-1 𝑖=0 + 𝑅 𝑛 𝑡 𝑠</formula><p>Assuming 𝑡 𝑠 and 𝑡 𝑐 can be related by the equation. 𝑡 𝑠 = 𝐴𝑡 𝑐 , then for a computational gain to be made by using classifiers, the following condition must be satisfied.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>𝑅 &lt; 1 -1 𝐴</head><p>In the work presented here, the values of 𝑅 and 𝐴 are approximately 0.4 and 5, hence satisfying this limit. In maps with a greater density of buildings (e.g. urban areas) this would not be the case. In the Results section, the accuracy achieved by models with varying values of 𝑛 is considered, with a clear trade-off between efficiency and accuracy evident.</p><p>The determination of appropriate starting dimensions a x b, is a choice individual to each particular map series. It must be chosen to ensure a sufficiently low 𝑅 value i.e. a high probability that some a x b areas will contain no features of interest. In the case of the maps examined here, the size was chosen as approximately 16 acres. This was chosen after manual examination of the maps and reflects the general nature of landholdings and settlement patterns in the periods concerned. Fig. <ref type="figure" target="#fig_3">2</ref> shows a tiling from one map sheet (approx.. 1531 m x 665 m = 252 acres) into sixteen approx. 16 acre plots, each measuring 1792 x 768 pixels. The rectangular nature of the tile shape was chosen for convenience, as map sections were obtained from a browser window, accessing the Irish Townland and Historical Map Viewer <ref type="bibr" target="#b19">[20]</ref>.</p><p>While the CNN architectures employed were originally trained on square images (e.g., 224×224), the classifiers still performed well when applied to the fixed-size rectangular inputs used in this study, with fine tuning operations allowing the network to adjust its filters and weights to the new spatial pattern.</p><p>Alternative tiling, with larger dimensions can be envisaged by combining a number of the red tiles in  classifying many times (large n) will remove more of the featureless map area, reducing the work required by the segmentation model and improving the efficiency of the pipeline. A factor also contributing to this, is that segmentation models trained on smaller areas will be faster to train and make predictions. However, making n too large will result in very small image portions for the segmentation model to address, which may lack sufficient context and features to be accurately segmented, leading to less accurate predictions. Hence, in choosing n, there is a tradeoff between model accuracy and speed. In this case, it was decided that n = 2 provided the optimal strategy, with each 1792 x 768 pixel tile further subdivided into 21 tiles measuring 256 x 256 pixels. This choice is discussed further in the 'Results' section.</p><p>A new classifier was trained on a selection of 256 x 256 tiles. Training an accurate model for these smaller tiles proved more complex than the training of the 1792 x 768 classifier, with the smaller tile size allowing less contextual information for the model. In choosing the training data and parameters, high consideration was given to the desirability of a low number of false negatives, as the pipeline should ideally never discard useful map sections. Some examples of difficult to classify tiles are shown in Fig. <ref type="figure" target="#fig_7">6</ref> and Fig. <ref type="figure" target="#fig_10">9</ref> (see 'Results'). A deliberate class imbalance was maintained in the training data to bias the model towards classifying tiles as containing buildings. The training dataset consisted of 180 'no building' images and 360 'building' images (created by augmenting 60 'building' images using six rotation/flipping operations). A convolutional neural network was again trained using the fastai vision_learner function with a ResNet18 backbone.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Segmentation Model</head><p>The segmentation model was trained on a selection of 50 images, each 256 x 256 pixels in size. These were selected from the same set used to train the n = 2 classification model, and were selected to ensure as much variety as possible in the size and shape of buildings sampled. Segmentation masks were created using the Roboflow <ref type="bibr" target="#b22">[24]</ref> annotation tools, with smart polygon utilized where possible. This led to slight deviations from straight edges in the mask (see Fig. <ref type="figure" target="#fig_4">3</ref>), but the results were sufficient for the purposes of this study. Masks and images were augmented by flipping horizontally and vertically to generate a training set of 150 images. A U-Net model with a ResNet-34 backbone was trained using the fastai unet_learner for binary semantic segmentation. The model was trained using the BCEWithLogitsLossFlat loss function, to effectively handle the inherent class imbalance between 'building' and 'no building' pixels. A custom Dice metric was implemented for evaluation, as the built-in fastai Dice metric does not support raw logits as output by the model. The model was trained for 12 epochs, with validation performed on 30 images. A Dice score of 0.94 was achieved. Fig. <ref type="figure" target="#fig_5">4</ref> shows the model segmentation prediction on two of the validation images. For the purposes of testing the pipeline accuracy (see 'Results'), building centroids were computed as the centre of mass of each connected region of pixels labelled in the binary segmentation mask. To deal with cases where buildings were split across multiple tiles, any tile containing a positive mask section was stitched together with the 8 adjacent tiles. This process was repeated for any tiles in the additional 8 tiles, which had building sections in them. In this way, a perimeter of featureless tiles was built up around the building or building cluster, before applying the centroid determining algorithm. (Fig. <ref type="figure" target="#fig_6">5</ref>)  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pipeline Accuracy</head><p>To assess the ability of the pipeline in detecting buildings, three test map areas were selected from the 25 inch map series. As different cartographers of the era used slightly idiosyncratic styles, the areas were selected from three distinct geographic regions in Ireland, one from Co. Cork in the South, one from Co. Galway, in the West, and one from Co. Donegal, in the North. Each map section measured approx. 1531 x 665 m (equivalent to 12 x (1792 x 768 pixel areas)). Each of the three maps was processed through the pipeline as described (using n = 2), the location of buildings found was overlaid on the map, and the map was cross-checked manually to evaluate the accuracy of the method. A total of 36 tiles were examined, within which 54 buildings were manually identified. Of these, 53 were correctly detected by the pipeline, with 1 missed and no false positives recorded, resulting in an F1 score of 0.99. Fig. <ref type="figure" target="#fig_7">6a</ref> illustrates a map section where all buildings were accurately identified. Although the n = 1 level classifier achieved an F1 score of 1, inference on some tiles containing single buildings was made with low confidence. An example of such a tile is shown in Fig. <ref type="figure" target="#fig_7">6b</ref>. The reduced confidence is presumed to be due to the low resolution of the input image, which degraded the visibility of the cross-hatch pattern, coupled with the small size of the building on the tile. The 'missed' building occurred on tiles mis-classified by the n = 2 classifier (Fig. <ref type="figure" target="#fig_7">6c</ref>), and was split across multiple tiles, occurring in the extreme corner or edge of these tiles. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pipeline Efficiency</head><p>As outlined in the methodology section, the gain in computational efficiency of the pipeline depends primarily on the value of n (the number of subdivisions or 'tilings' completed). In general, as more classifiers are applied, the area requiring segmentation reduces, and the processing time per acre reduces. However, as classifiers are introduced, the accuracy of the pipeline also reduces. The nature of this trade-off between accuracy and efficiency was investigated by developing pipelines using different values of 𝑛.</p><p>Computational efficiency was estimated using the method outlined in the Methodology section, with values of 𝑅 = 0.4 and 𝐴 = 5 assumed. These were derived from manual observation of map sections in the case of 𝐴, and timing of classifier and segmentation models applied to large map sections, in the case of 𝑅. Model accuracy was assessed as outlined in the Pipeline Accuracy section. The results are listed in Table <ref type="table">1</ref> and plotted in Fig. <ref type="figure" target="#fig_8">7</ref>.</p><formula xml:id="formula_1">n</formula><p>Tile sizes classified Inference Time Required (normalized) F1 score 0 None 1 1 1 1792 x 768 0.6 1 2 1792 x 768 256 x 256 0.44 0.99 3 1792 x 768 256 x 256 128 x 128 0.376 0.82 4 1792 x 768 256 x 256 128 x 128 64 x 64 0.3504 0.40 Table 1: Investigation of inference time required for one map area measuring 1531 x 665 m. Inference times have been normalized to 1, to allow for easy comparison. It is clear that the trade-off between accuracy and efficiency declines above 𝑛 = 2 (normalized time &lt; 0.4). The reason for this can be understood by examining some of the tiles mis-classified</p><p>0 0.2 0.4 0.6 0.8 1 1.2 0 0.2 0.4 0.6 0.8 1 1.2 F1 score Time Required (normalised)</p><p>by the 𝑛 = 2 classifier (Fig. <ref type="figure" target="#fig_7">6c</ref>) and n = 3 classifier (Fig. <ref type="figure" target="#fig_9">8</ref>) . As the classifier is now processing very small tiles, it frequently processes tiles with only small portions of buildings appearing at the very edges of the tile, and frequently mis-classifies these as containing no buildings. This issue can be considered as a 'lack of context' issue, which is common in classifiers used on images which are too small. The optimum pipeline parameter was set to n=2n = 2n=2. At this stage, most inaccuracies and inefficiencies occur during the final classifier step, which processes 256×256256 \times 256256×256 tiles. This level suffers from a lack of contextual information. Two false negative tiles that reduced the pipeline's accuracy have already been discussed in the 'Pipeline Accuracy' section (Fig. <ref type="figure" target="#fig_7">6c</ref>). Additionally, two false positive tiles are illustrated in Fig. <ref type="figure" target="#fig_10">9</ref>, where tiles containing no buildings were mistakenly classified as containing buildings. Although the segmentation of these tiles did not result in any false building detections, the misclassification of these tiles as positives introduces inefficiencies in the overall process. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Application of Pipeline: Comparison of 6 inch and 25 inch maps</head><p>The same principles described in this paper can clearly be applied to any map series. In addition to the 25 inch map series, Tailte Eireann have also published a 6 inch series map, which is from an earlier time period. The map resolution is comparatively reduced, making the processing of the 6 inch map more difficult than that of the 25 inch map. In addition, although the same notation of cross-hatching is used to identify buildings, individual styles of cartographers was less consistent in the 6 inch series (see Fig. <ref type="figure" target="#fig_11">10</ref>) than in the 25 inch series.</p><p>To determine if the trained models and pipeline is robust enough to deal with a different map series, the pipeline was applied to the same test areas as described in the 'Pipeline Accuracy' section, using the 6 inch map series. The pipeline was found to be significantly less accurate, yielding an F1 score of 81 %. The errors occurred predominantly in the final segmentation layer. Fig. <ref type="figure" target="#fig_11">10</ref> shows some 6 inch map series 256 x 256 tiles and the associated predicted segmentation masks. A number of false positives are identified. In addition, the generated building shapes are less accurate. It is to be expected that more expansive training of the models for this series, including more varied and extensive training data, and perhaps more high powered models, would improve the overall results. However, even with this reduced level of accuracy, important findings can be made.  <ref type="figure" target="#fig_5">4</ref>). This is largely due to the lower resolution of the older map series.</p><p>While processing the Co. Galway map test area, which comes from the area of Tully (ITM coordinates: 500703, 722113), a comparison of the 6 inch and 25 inch map series identified a settlement (approx. 22 buildings in total) whose buildings had fallen into disrepair in the years between the two surveys. As the two surveys were conducted in 1839 and 1899, these two time points bracket the Great Irish Famine. The pipeline described in this paper is a method of determining areas which lost settlements in that period, and may contain buildings of archaeological interest. Fig. <ref type="figure" target="#fig_12">11</ref> shows the area of Tully on the historical maps and a modern day satellite view on which ruins of the settlement appear to be visible. To my knowledge, this settlement has not previously been identified as a potential 'Famine village', settlements so called because they were largely abandoned due to the effects of the famine. Interestingly, it does not appear on the 1841 census report <ref type="bibr" target="#b23">[25]</ref> listed as a town (defined as an 'agglomeration' which contained 20 or more houses), and consequently does not appear on the list of 'towns' which disappeared between the 1841 and 1851 censuses assembled by Crowley et al. <ref type="bibr" target="#b24">[26]</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>A novel pipeline for building footprint detection in historical rural maps has been developed, offering improved efficiency over traditional full-map segmentation methods. It uses an iterative classification process to exclude non-building areas early in the workflow, significantly optimizing processing.</p><p>Tested on Irish historical maps, the pipeline demonstrated high accuracy, though precision was somewhat reduced on the older, lower-resolution 6-inch map series due to occasional mislabelling.</p><p>The method also shows promise for identifying 'lost' or 'vanished' settlements, which may of historical and/or archaeological interest. Application of the pipeline to two map series from different time periods revealed a settlement consisting of 22 buildings in Tully, Co. Galway, visible in the 1839 6-inch pre-Famine map, but absent from the 1899 25-inch post-Famine map.</p><p>Future work will aim to further improve the performance of the pipeline. This may be achieved by enhancing and diversifying the training dataset, or by incorporating an additional border around smaller tiles-an approach used by <ref type="bibr" target="#b1">[2]</ref> -to improve classifier accuracy. However, this method comes with the drawback of increased computational cost. To mitigate this, the integration of a more efficient building footprint extraction algorithm, such as the one proposed by <ref type="bibr" target="#b3">[4]</ref>, will be considered. Another key objective will be the development of a user-friendly interface for accessing and applying the method, with the goal of making it more accessible to non-specialist users, including historians and researchers in the humanities.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Workflow model: Map area is iteratively tiled, tiles are classified as 'buildings' or 'no buildings' and filtered on this basis. In this manner, map areas with no buildings present are successively removed from the map. Segmentation is performed only on those areas with buildings present, hence reducing the overall inference time required.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><figDesc>operation on the tiles of interest. In this case, the time required per pixel is 𝑡 𝑐 + 𝑅𝑡 𝑠 .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><figDesc>Fig 2. e.g. combine four delineated tiles to produce a 3584 x 1536 pixel tile. Using larger alternative initial tile sizes, very few or no areas containing zero features of interest would be identified by the model i.e. high 𝑅. The initial choice of a x b = 1792 x 786 pixels was guided by this observation.A dataset comprising 40 original training images (1792 x 786 pixels; 20 containing buildings and 20 without buildings) was assembled. Images were taken from geographically different map sections to incorporate as much diversity in training data as possible. Data augmentation was applied to each image using horizontal flipping, vertical flipping, 180° rotation, 180° rotation with a horizontal flip, and 180° rotation with a vertical flip, resulting in a total of 240 training images (120 with buildings, 120 without). These transformations all preserved the aspect ratio of the images. A convolutional neural network was trained using the fastai vision_learner function with a ResNet18 backbone.After the initial classification (n = 1 stage of the pipeline) of the a x b sized (1792 x 768 pixel) tiles, further subdivision and re-classification can be conducted iteratively. Subdividing and</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Tiling of large map area (~262 acres) into a x b (1792 x 768) pixel areas.</figDesc><graphic coords="6,72.00,72.00,455.50,198.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Segmentation model: (left) Training image and (right) training mask produced using Roboflow [24] annotation tools.</figDesc><graphic coords="7,155.15,132.97,141.70,141.70" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Predicted segmentation of two images from validation set. Pixels identified as 'building' are colored in orange. The mask is overlaid on the original map tile. The difference in quality/resolution of the two map sections is attributable to the fact that they come from different geographical regions.</figDesc><graphic coords="7,155.15,570.96,141.70,141.70" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Determining building locations: (left) segmentation superimposed on map tile (right) raw segmentation mask with overlaid building centroids (red dots). Note that this tile was processed with 8 adjacent tiles. Only the central portion is shown.</figDesc><graphic coords="8,155.15,113.21,141.70,141.70" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: (a) (top) Building centroid (red dots) overlaid on map tiles. These were manually checked to determine model precision. (b) (middle) Tile which was correctly labelled but with a low confidence value (0.5268), by the n = 1 classifier. (c) (bottom) Tiles mislabeled by the n = 2 classifier as 'no building'. The building was small, split across two tiles, and occurred in the extreme edges of those tiles. The mislabeling occurred due to the otherwise largely featureless nature of the tile, and lack of context regarding surroundings.</figDesc><graphic coords="9,175.38,427.63,104.85,104.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Plot of F1 score versus computational time required (normalized to 1).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: n = 3 classifier level; 168 x 168 tiles, from the validation set, mislabeled as 'no buildings'. The tiles only containing small portions of buildings were frequently mis-classified.</figDesc><graphic coords="11,160.40,154.08,130.35,130.35" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Figure 9 :</head><label>9</label><figDesc>Figure 9: Tiles mislabeled as containing buildings by the n = 2 level classifier. (left) the vertical cross-hatching lines which represent wetland are misinterpreted as buildings (right) a feature with dense short line patterns is misinterpreted as a building.</figDesc><graphic coords="11,142.40,497.26,130.35,130.35" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Figure 10 :</head><label>10</label><figDesc>Figure 10: Segmentation of 256 x 256 tiles (left: original map tiles; right: segmentation masks) from the 6 inch historical series maps. (left) A shaded area which is approximately square shaped on top left of tile is mistaken for a building by the segmentation model (b) Shapes of detected buildings are less clear than in the segmentation model operating on the 25 inch historical map series (see Fig.4). This is largely due to the lower resolution of the older map series.</figDesc><graphic coords="12,102.65,366.33,85.00,85.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Figure 11 :</head><label>11</label><figDesc>Figure 11: Tully, Co. Galway (ITM co-ordinates: 500703, 722113). (top left) 6 inch map series (1839; approx. 6 years before the Great Famine) 14 buildings are visible. (top right) 25 inch map series (1899; approx. 50 years after the Great Famine), where buildings from 1839 map no longer appear. (bottom) Modern day image. Possible sites of archaeological interest highlighted in red.</figDesc><graphic coords="13,188.90,214.56,217.27,132.90" type="bitmap" /></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Deep Learning for Historical Cadastral Maps and Satellite Imagery Analysis: Insights from Styria&apos;s Franciscan Cadastre</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Goderle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Pimas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Digital Humanities Quarterly, pp</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Cartographic reconstruction of building footprints from historical maps: A study on the Swiss Siegfried Map</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Heitzler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hurni</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transactions in GIS</title>
+		<imprint>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="442" to="461" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Buildings Extraction from Historical Topographic Maps via a Deep Convolution Neural Network</title>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Xydas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anastasios</forename><surname>Kesidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kleomenis</forename><surname>Kalogeropoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Tsatsaris</surname></persName>
+		</author>
+		<idno type="DOI">10.5220/0010839700003124</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 17th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications</title>
+		<meeting>the 17th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications</meeting>
+		<imprint>
+			<publisher>SCITEPRESS - Science and Technology Publications</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="485" to="492" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">A New Gabor Filter-Based Method for Automatic Recognition of Hatched Residential Areas</title>
+		<author>
+			<persName><forename type="first">Jianhua</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0002-2600-6916</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pengjie</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaofang</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhigang</forename><surname>Shu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yao-Yi</forename><surname>Chiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongliang</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Deng</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/access.2019.2907114</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="40649" to="40662" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">AI-driven Structure Detection and Information Extraction from Historical Cadastral Maps (Early 19th Century Franciscean Cadastre in the Province of Styria) and Current High-resolution Satellite and Aerial Imagery for Remote Sensing</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Goderle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Macher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Mauthner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Pimas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Rampetsreiter</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2312.07560</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Automated Extraction of Human Settlement Patterns From Historical Topographic Map Series Using Weakly Supervised Convolutional Neural Networks</title>
+		<author>
+			<persName><forename type="first">Johannes</forename><forename type="middle">H</forename><surname>Uhl</surname></persName>
+			<idno type="ORCID">0000-0002-4861-5915</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Leyk</surname></persName>
+			<idno type="ORCID">0000-0001-9180-4853</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yao-Yi</forename><surname>Chiang</surname></persName>
+			<idno type="ORCID">0000-0002-8923-0130</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weiwei</forename><surname>Duan</surname></persName>
+			<idno type="ORCID">0000-0002-7162-5310</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Craig</forename><forename type="middle">A</forename><surname>Knoblock</surname></persName>
+			<idno type="ORCID">0000-0002-6371-4807</idno>
+		</author>
+		<idno type="DOI">10.1109/access.2019.2963213</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="6978" to="6996" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Estimating the density of urban trees in 1890s Leeds and Edinburgh using object detection on historical maps</title>
+		<author>
+			<persName><forename type="first">Eleanor</forename><forename type="middle">S</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Fleet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Mackaness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannah</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catherine</forename><forename type="middle">E</forename><surname>Scott</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.compenvurbsys.2024.102219</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computers, Environment and Urban Systems</title>
+		<title level="j" type="abbrev">Computers, Environment and Urban Systems</title>
+		<idno type="ISSN">0198-9715</idno>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page">102219</biblScope>
+			<date type="published" when="2025-01">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Unleashing the power of old maps: Extracting symbology from nineteenth century maps using convolutional neural networks to quantify modern land use on historic wetlands</title>
+		<author>
+			<persName><forename type="first">Rob</forename><surname>O'hara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richa</forename><surname>Marwaha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jesko</forename><surname>Zimmermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Saunders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><surname>Green</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ecolind.2023.111363</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ecological Indicators</title>
+		<title level="j" type="abbrev">Ecological Indicators</title>
+		<idno type="ISSN">1470-160X</idno>
+		<imprint>
+			<biblScope unit="volume">158</biblScope>
+			<biblScope unit="page">111363</biblScope>
+			<date type="published" when="2024-01">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">An interpretation system for land register maps</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Boatto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Consorti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Del Buono</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Di Zenzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Eramo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Esposito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Melcarne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Meucci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Morelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mosciatti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Scarci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tucci</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/2.144437</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer</title>
+		<title level="j" type="abbrev">Computer</title>
+		<idno type="ISSN">0018-9162</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="25" to="33" />
+			<date type="published" when="1992-07">1992</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A review of recent advances in scanned topographic map processing</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Tiange</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">.</forename><forename type="middle">S</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<imprint>
+			<biblScope unit="volume">328</biblScope>
+			<biblScope unit="page" from="75" to="87" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Colors of the past: color image segmentation in historical topographic maps based on homogeneity</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Leyk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Boesch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">GeoInformatica</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="21" />
+			<date type="published" when="2010">2010. 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">New Tools for the Classification and Filtering of Historical Maps</title>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Gobbi</surname></persName>
+			<idno type="ORCID">0000-0001-9267-1108</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Ciolli</surname></persName>
+			<idno type="ORCID">0000-0001-8370-9039</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicola</forename><surname>La Porta</surname></persName>
+			<idno type="ORCID">0000-0002-7080-3349</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Duccio</forename><surname>Rocchini</surname></persName>
+			<idno type="ORCID">0000-0003-0087-0594</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Clara</forename><surname>Tattoni</surname></persName>
+			<idno type="ORCID">0000-0003-1555-5669</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Zatelli</surname></persName>
+			<idno type="ORCID">0000-0003-3095-0472</idno>
+		</author>
+		<idno type="DOI">10.3390/ijgi8100455</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ISPRS International Journal of Geo-Information</title>
+		<title level="j" type="abbrev">IJGI</title>
+		<idno type="ISSNe">2220-9964</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">455</biblScope>
+			<date type="published" when="2019-10-14">2019</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Enet: A deep neural network architecture for real-time semantic segmentation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Paszke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">.</forename><forename type="middle">A</forename><surname>Chaurasia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Culurciello</surname></persName>
+		</author>
+		<idno>1606.02147</idno>
+	</analytic>
+	<monogr>
+		<title level="j">arXiv</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Deep Learning-Based Building Extraction from Remote Sensing Images: A Comprehensive Review</title>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Luo</surname></persName>
+			<idno type="ORCID">0000-0002-2547-3715</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pengpeng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuesong</forename><surname>Yan</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/en14237982</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Energies</title>
+		<title level="j" type="abbrev">Energies</title>
+		<idno type="ISSNe">1996-1073</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page">7982</biblScope>
+			<date type="published" when="2021-11-29">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Building Block Extraction from Historical Maps Using Deep Object Attention Networks</title>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Zhao</surname></persName>
+			<idno type="ORCID">0000-0001-5402-8533</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guangxia</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0003-2373-8799</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lantian</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaofei</forename><surname>Qi</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ijgi11110572</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ISPRS International Journal of Geo-Information</title>
+		<title level="j" type="abbrev">IJGI</title>
+		<idno type="ISSNe">2220-9964</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">572</biblScope>
+			<date type="published" when="2022-11-16">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Map Archive Mining: Visual-Analytical Approaches to Explore Large Historical Map Collections</title>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Uhl</surname></persName>
+			<idno type="ORCID">0000-0002-4861-5915</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Leyk</surname></persName>
+			<idno type="ORCID">0000-0001-9180-4853</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yao-Yi</forename><surname>Chiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiwei</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Craig</forename><surname>Knoblock</surname></persName>
+			<idno type="ORCID">0000-0002-6371-4807</idno>
+		</author>
+		<idno type="DOI">10.3390/ijgi7040148</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ISPRS International Journal of Geo-Information</title>
+		<title level="j" type="abbrev">IJGI</title>
+		<idno type="ISSNe">2220-9964</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">148</biblScope>
+			<date type="published" when="2018-04-13">2018</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Automatic vectorization of historical maps: A benchmark</title>
+		<author>
+			<persName><forename type="first">Yizi</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-1637-0092</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Chazalon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edwin</forename><surname>Carlinet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minh</forename><surname>Ôn Vũ Ngoc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clément</forename><surname>Mallet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Perret</surname></persName>
+			<idno type="ORCID">0000-0002-0685-0730</idno>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0298217</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">e0298217</biblScope>
+			<date type="published" when="2024-02-15">2024</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A NEW ONE-INCH ORDNANCE SURVEY MAP SERIES OF NORTHERN IRELAND</title>
+		<author>
+			<persName><forename type="first">Tailte</forename><surname>Eireann</surname></persName>
+		</author>
+		<idno type="DOI">10.1179/003962661792002944</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Survey Review</title>
+		<title level="j" type="abbrev">Survey Review</title>
+		<idno type="ISSN">0039-6265</idno>
+		<idno type="ISSNe">1752-2706</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">120</biblScope>
+			<biblScope unit="page" from="95" to="96" />
+			<date type="published" when="2005">2005</date>
+			<publisher>Maney Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A NEW ONE-INCH ORDNANCE SURVEY MAP SERIES OF NORTHERN IRELAND</title>
+		<author>
+			<persName><forename type="first">Tailte</forename><surname>Eireann</surname></persName>
+		</author>
+		<idno type="DOI">10.1179/003962661792002944</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Survey Review</title>
+		<title level="j" type="abbrev">Survey Review</title>
+		<idno type="ISSN">0039-6265</idno>
+		<idno type="ISSNe">1752-2706</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">120</biblScope>
+			<biblScope unit="page" from="95" to="96" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Maney Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Supplementary file 1. Retinotopic mapping example analysis.</title>
+		<author>
+			<persName><forename type="first">Tailte</forename><surname>Eireann</surname></persName>
+		</author>
+		<idno type="DOI">10.7554/elife.18372.027</idno>
+		<ptr target="https://osi.maps.arcgis.com/apps/webappviewer/index.html?" />
+	</analytic>
+	<monogr>
+		<title level="m">Irish Townland and Historical Map Viewer</title>
+		<imprint>
+			<publisher>eLife Sciences Publications, Ltd</publisher>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note>id=bc56a1cf08844a2aa26 09aa92e89497e</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">ORDNANCE SURVEY OF NORTHERN IRELAND 1 : 50,000 MAP SERIES OF IRELAND</title>
+		<author>
+			<persName><forename type="first">Survey</forename><surname>Ordnance</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ireland</surname></persName>
+		</author>
+		<idno type="DOI">10.1179/003962679791477625</idno>
+		<ptr target="https://libguides.ucd.ie/findingmaps/mapscalesandsymbols" />
+	</analytic>
+	<monogr>
+		<title level="j">Survey Review</title>
+		<title level="j" type="abbrev">Survey Review</title>
+		<idno type="ISSN">0039-6265</idno>
+		<idno type="ISSNe">1752-2706</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">193</biblScope>
+			<biblScope unit="page" from="99" to="100" />
+			<date type="published" when="1979-07-01" />
+			<publisher>Maney Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Fastai: A Layered API for Deep Learning</title>
+		<author>
+			<persName><forename type="first">Jeremy</forename><surname>Howard</surname></persName>
+			<idno type="ORCID">0000-0002-3102-9282</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sylvain</forename><surname>Gugger</surname></persName>
+			<idno type="ORCID">0000-0001-8056-2713</idno>
+		</author>
+		<idno type="DOI">10.3390/info11020108</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information</title>
+		<title level="j" type="abbrev">Information</title>
+		<idno type="ISSNe">2078-2489</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">108</biblScope>
+			<date type="published" when="2020-02-16">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Roboflow</surname></persName>
+		</author>
+		<ptr target="https://www.roboflow.com" />
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Kabul city population survey / Islamic Emirate of Afghanistan, Central Statistics Office, (CSO).</title>
+		<idno type="DOI">10.2458/azu_acku_pamphlet_ha4570_6_a63_k338_2000</idno>
+		<ptr target="https://www.cso.ie/en/statistics/historicalreports/census1841/" />
+		<imprint>
+			<date type="published" when="2025">2025</date>
+			<publisher>University of Arizona Libraries</publisher>
+		</imprint>
+	</monogr>
+	<note>Central Statistics Office</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<author>
+			<persName><forename type="first">Carla</forename><forename type="middle">;</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Crowley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">J</forename><surname>Smyth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mike</forename><surname>Murphy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Atlas of the Great Irish Famine</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page">237</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

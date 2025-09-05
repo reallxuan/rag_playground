@@ -1,0 +1,1784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Causal Discovery of Latent Variables in Galactic Archaeology</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-06-30">30 Jun 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Zehao</forename><surname>Jin</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Equal contribution</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Center for Astrophysics and Space Sci- ence (CASS)</orgName>
+								<orgName type="institution">New York University</orgName>
+								<address>
+									<addrLine>Abu Dhabi Abu Dhabi</addrLine>
+									<postBox>PO Box 129188</postBox>
+									<country key="AE">UAE</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Center for Astronomy and Astrophysics and Department of Physics</orgName>
+								<orgName type="institution">Fudan University</orgName>
+								<address>
+									<postCode>200438</postCode>
+									<settlement>Shanghai</settlement>
+									<country>Peo- ple&apos;s Republic of China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Lucy</forename><surname>Lu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Equal contribution</orgName>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Center for Cosmology and Astroparticle Physics (CCAPP)</orgName>
+								<orgName type="institution">The Ohio State University</orgName>
+								<address>
+									<addrLine>191 W. Woodruff Ave.</addrLine>
+									<postCode>43210</postCode>
+									<settlement>Columbus</settlement>
+									<region>OH</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yuan-Sen</forename><surname>Ting</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Center for Cosmology and Astroparticle Physics (CCAPP)</orgName>
+								<orgName type="institution">The Ohio State University</orgName>
+								<address>
+									<addrLine>191 W. Woodruff Ave.</addrLine>
+									<postCode>43210</postCode>
+									<settlement>Columbus</settlement>
+									<region>OH</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yujia</forename><surname>Zheng</surname></persName>
+							<affiliation key="aff4">
+								<orgName type="institution">Carnegie Mellon Univer- sity</orgName>
+								<address>
+									<settlement>Pittsburgh</settlement>
+									<region>PA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+							<affiliation key="aff5">
+								<orgName type="institution" key="instit1">Universität Heidelberg</orgName>
+								<orgName type="institution" key="instit2">Interdiszi- plinäres Zentrum für Wissenschaftliches Rechnen</orgName>
+								<address>
+									<addrLine>Im Neuen- heimer Feld 205</addrLine>
+									<settlement>Heidelberg</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Causal Discovery of Latent Variables in Galactic Archaeology</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-06-30">30 Jun 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8BC6EAADD597ECBF6D2440C45F0FD10E</idno>
+					<idno type="arXiv">arXiv:2507.00134v1[astro-ph.GA]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:49+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Galactic archaeology-the study of stellar migration histories-provides insights into galaxy formation and evolution. However, establishing causal relationships between observable stellar properties and their birth conditions remains challenging, as key properties like birth radius are not directly observable. We employ Rank-based Latent Causal Discovery (RLCD) to uncover the causal structure governing the chemodynamics of a simulated Milky Way galaxy. Using only five observable properties (metallicity, age, and orbital parameters), we recover in a purely data-driven manner a causal graph containing two latent nodes that correspond to real physical properties: the birth radius and guiding radius of stars. Our study demonstrates the potential of causal discovery models in astrophysics.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The advent of large astronomical surveys has propelled much of the current interest in applying deep learning to astronomy. However, the observational nature of astronomy-where controlled experiments are impossible-often requires us to develop a deep understanding of the mechanistic causal relations governing astrophysical systems, beyond merely identifying correlations within observed variables.</p><p>Much of the advancement in astrophysics has relied on human intervention through forward modeling to match observations, and the statistical validation of physical models to decipher causal structures between fundamental This raises the question: would it be possible to discover the underlying causal structure through automated causal graphical inference? Recent advances in causal discovery (e.g., <ref type="bibr" target="#b33">Spirtes et al., 2001;</ref><ref type="bibr" target="#b24">Pearl, 2009;</ref><ref type="bibr" target="#b25">Pearl et al., 2016)</ref>which infers causal relationships from purely observational data-suggest this may indeed be feasible. In principle, latent variable models and directed acyclic graphs provide the statistical framework to distinguish between competing causal structures, potentially revealing relationships that human-guided analysis might overlook.</p><p>Causal discovery through probabilistic graphical models has a long history <ref type="bibr" target="#b10">(Geiger &amp; Heckerman, 1994;</ref><ref type="bibr" target="#b32">Spirtes et al., 1995;</ref><ref type="bibr" target="#b33">2001;</ref><ref type="bibr">Chickering, 2002;</ref><ref type="bibr" target="#b31">Shimizu et al., 2006;</ref><ref type="bibr" target="#b41">Zhang, 2008;</ref><ref type="bibr" target="#b13">Huang et al., 2018;</ref><ref type="bibr" target="#b7">Deleu et al., 2022)</ref>, and recently, physical sciences have begun to recognize its potential. <ref type="bibr" target="#b26">(Runge et al., 2019;</ref><ref type="bibr" target="#b15">Li et al., 2020;</ref><ref type="bibr" target="#b27">Schölkopf et al., 2021;</ref><ref type="bibr" target="#b42">Zhang et al., 2024;</ref><ref type="bibr" target="#b40">Yao et al., 2024)</ref>. These successes demonstrate that causal discovery can reveal non-obvious relationships in complex systems where traditional approaches may struggle.</p><p>While astrophysical studies have been relatively late to adopt these methods, efforts to directly infer causal structures from astronomical data are beginning to emerge, including a preliminary pilot study by <ref type="bibr" target="#b23">Pasquato et al. (2023)</ref> and Bayesian analyses of causal structures underlying galaxy-supermassive black hole coevolution <ref type="bibr" target="#b14">(Jin et al., 2025)</ref>. However, due to the complexity of these astronomical systems and the indirect nature of observations, many inferred causal graph structures remain tentative and difficult to connect directly to known physical mechanisms.</p><p>To bridge this gap between causal discovery and physical understanding, we focus our investigation on galactic archaeology-the study of chemodynamic histories that shape the galaxies today. This field offers an ideal testbed for causal discovery methods because while the underlying physics is relatively well-understood, properties that govern stellar evolution-such as birth radius and historical orbital parameters-are not directly observable. These "missing" latent variables create a suitable scenario for causal discovery: we need methods that can both identify these hidden factors and establish their causal relationships with observable quantities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Methodology</head><p>To test whether causal discovery can recover physically meaningful latent variables in galactic archaeology, we require data where both observable properties and groundtruth birth conditions are available. Simulated galaxies provide this unique opportunity, allowing us to validate the causal structures discovered by our method against known physical quantities.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Simulation Data</head><p>The simulated galaxy studied in this work is taken from the NIHAO-UHD project <ref type="bibr" target="#b2">(Buck et al., 2018;</ref><ref type="bibr">2020)</ref>, a set of high-resolution cosmological zoomed-in hydrodynamical simulations of Milky Way-mass galaxies. NIHAO (Numerical Investigation of a Hundred Astronomical Objects) comprises 100 simulated galaxies with halo masses ranging from ∼ 10 9 -10 12 M ⊙ . The dark matter halos were selected from a large-scale dark matter simulation based on an isolation criterion (no similar mass companion within three virial radii at redshift z = 0, <ref type="bibr" target="#b38">Wang et al., 2015)</ref>.</p><p>The NIHAO-UHD simulations employ a modified version of the smoothed particle hydrodynamics (SPH) solver GASO-LINE2 <ref type="bibr" target="#b36">(Wadsley et al., 2017)</ref>, with star formation and feedback modeled following <ref type="bibr" target="#b34">(Stinson et al., 2006;</ref><ref type="bibr">2013)</ref>. These galaxies show agreement with observed Milky Way properties and local disk galaxies <ref type="bibr" target="#b21">(Obreja et al., 2019;</ref><ref type="bibr" target="#b1">Buck, 2019)</ref>, making them suitable analogs for our analysis. The simulations have been extensively validated in studies of MW-mass galaxies (e.g., <ref type="bibr" target="#b2">Buck et al., 2018;</ref><ref type="bibr" target="#b1">2019;</ref><ref type="bibr" target="#b12">Hilmi et al., 2020;</ref><ref type="bibr" target="#b29">Sestito et al., 2021;</ref><ref type="bibr" target="#b22">Obreja et al., 2022;</ref><ref type="bibr">Lu et al., 2022a;</ref><ref type="bibr">b;</ref><ref type="bibr" target="#b37">Wang et al., 2023)</ref>.</p><p>We focus on the g2.79e12 simulation. We select disk stars with [Fe/H] &gt; -1 located between 7-10 kpc at present day, a range chosen to ensure adequate sampling while matching typical observational surveys. To incorporate realistic observational uncertainties, we add uncertainties to age (10%), [Fe/H] (0.02 dex), and [O/Fe] (0.06 dex).</p><p>Given the distinct formation histories of the high-and low-α disk populations in the Milky Way <ref type="bibr" target="#b0">(Bensby et al., 2014;</ref><ref type="bibr" target="#b11">Hayden et al., 2015)</ref>, we separate stars using the criterion [O/Fe] = -0.13[Fe/H] + 0.17. The high-α disk formed rapidly in a turbulent, gas-rich environment, while the low-α disk formed through gradual secular evolution <ref type="bibr" target="#b6">(Conroy et al., 2022;</ref><ref type="bibr" target="#b39">Xiang &amp; Rix, 2022)</ref>. This pilot study focuses on the low-α disk, where secular processes dominate and causal relationships may be clearer to identify.</p><p>For our causal discovery analysis, we use five observable variables that trace stellar migration: metallicity [Fe/H], age, and three orbital parameters-vertical action J z , angular momentum L z , and eccentricity e. These quantities are routinely measured in spectroscopic surveys and encode information about both stellar birth conditions and subsequent dynamical evolution.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Discovery of Causal Structures</head><p>Having established our dataset, we now turn to the causal discovery analysis. Inferring causal relationships in astrophysical systems is complicated by unobserved (latent) variables-quantities that influence our observations but cannot be directly measured. These latent variables can confound relationships between observables or mediate their interactions, making causal inference challenging.</p><p>To address this challenge, we employ the Rank-based Latent Causal Discovery (RLCD) algorithm <ref type="bibr" target="#b8">(Dong et al., 2024)</ref>, which can uncover causal structures involving latent factors within linear systems. The key insight behind RLCD is that latent variables leave statistical signatures in the relationships between observed variables-specifically, they create rank deficiencies in the covariance matrix that can be detected and interpreted.</p><p>In our framework, we model the causal relationships using a Structural Causal Model (SCM). Consider a simple example: if birth radius (latent) influences both current metallicity and angular momentum (observed), then metallicity and angular momentum will be correlated through their shared latent cause. The SCM captures such relationships mathematically through a directed acyclic graph G := (V G , E G ), where arrows represent causal influences. Each variable V i in this graph is generated according to a linear equation:</p><formula xml:id="formula_0">V i = Vj ∈Pa G (Vi) a ij V j + ε Vi ,<label>(1)</label></formula><p>where Pa G (V i ) denotes the variables that directly cause V i (its "parents" in the graph), a ij quantifies the strength of the causal effect from V j to V i , and ε Vi represents random noise. The complete set of variables V G includes both observed variables X G (our five measured quantities) and latent variables L G (the hidden factors we aim to discover).</p><p>RLCD works by analyzing patterns in how observed variables covary. When latent variables are present, they constrain these covariation patterns in detectable ways. The algorithm identifies how many latent variables exist, which observed variables they influence, and whether latent variables influence each other. This enables reconstruction of a complete causal graph including both observed and hidden factors. The method has been validated on synthetic and real-world datasets <ref type="bibr" target="#b8">(Dong et al., 2024;</ref><ref type="bibr">2025)</ref>.</p><p>After discovering the causal structure, we quantify the strength of each causal relationship by estimating the coef- ficients a ij . As latent variables have no inherent scale, we fix the variance of each latent variable to unity-a standard convention that allows unique parameter estimation <ref type="bibr" target="#b9">(Dong et al., 2025)</ref>. We use maximum likelihood estimation to find the parameters that best explain our observed data given the discovered causal structure.</p><p>Finally, with the causal structure and parameters determined, we estimate the latent variable values for each individual star. This involves finding the latent values that best reconstruct the observed properties according to our linear model, minimizing the prediction error.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results</head><p>Applying RLCD to our five observable stellar properties yields the causal structure shown in Figure <ref type="figure" target="#fig_0">1</ref>. The algorithm identifies two latent variables, L 1 and L 2 , whose connections to the observed variables provide insights into the underlying physics of stellar migration <ref type="bibr" target="#b28">(Sellwood &amp; Binney, 2002)</ref>.</p><p>The discovered causal structure aligns well with our understanding of galactic chemical evolution. The latent variable L 1 influences both metallicity ([Fe/H]) and vertical action (J z ), while age shows similar causal connections. This pattern suggests that L 1 encodes information about stellar birth conditions-stars born at different galactic radii have distinct metallicities due to radial abundance gradients, and their vertical motions retain memory of their birth environments through the differential gravitational potential. Meanwhile, L 2 directly influences angular momentum (L z ) and eccentricity (e), the two quantities that together define a star's guiding radius. Stars can develop eccentric orbits through gravitational scattering with giant molecular clouds-a process known as "blurring" that preserves angular momentum while increasing eccentricity.</p><p>Based on these causal relationships, we hypothesize that L 1 corresponds to birth radius (R b ) and L 2 to guiding radius (R g ). Both quantities play fundamental roles in galactic dynamics: radial migration displaces stars from their birth radii over time <ref type="bibr" target="#b19">(Minchev et al., 2013;</ref><ref type="bibr" target="#b30">Sharma et al., 2021;</ref><ref type="bibr" target="#b18">Lu et al., 2024)</ref>, while orbital heating increases random motions around the guiding radius <ref type="bibr" target="#b28">(Sellwood &amp; Binney, 2002)</ref>. Birth radius serves as the primary indicator of radial migration because it represents the initial condition from which stars have migrated, while guiding radius tracks the secular evolution of orbital eccentricity. Traditional methods estimate birth radii from age and metallicity under the assumption that the metallicity gradient is linear <ref type="bibr" target="#b20">(Minchev et al., 2018;</ref><ref type="bibr" target="#b18">Lu et al., 2024)</ref>, while guiding radii can be calculated directly from angular momentum. The causal structure discovered by RLCD independently recovers these known relationships.</p><p>To test our hypothesis, we leverage the simulation's complete stellar histories. After estimating individual stellar values for L 1 and L 2 using the identified parameters, we map these dimensionless quantities to physical units via polynomial transformations, accounting for the centering and standardization in our analysis. For L 1 , we compare against birth radii inferred using the established method of <ref type="bibr" target="#b18">Lu et al. (2024)</ref>, which estimates birth radii from [Fe/H] and age based on assumptions from <ref type="bibr">(Lu et al., 2022a)</ref>. For L 2 , we can directly compare against the true guiding radius from the simulation.</p><p>Figure <ref type="figure" target="#fig_1">2</ref> presents the validation results. For guiding radius (right panel), the agreement between L 2 and the ground truth is notable, with minimal scatter about the one-to-one relation. This tight correlation confirms that L 2 captures guiding radius-unsurprising given that guiding radius is directly encoded in the angular momentum that L 2 influences. For birth radius (left panel), we compare L 1 against the Lu et al. method. This consistency between two independent approaches-one theory-driven, one data-driven-suggests both methods capture similar physical information about stellar birth conditions.</p><p>Figure <ref type="figure" target="#fig_2">3</ref> provides further validation by examining birth radius distributions across chemical abundance space. All three approaches-ground truth, Lu et al. inference, and discovered L 1 -show consistent patterns. In the age-[Fe/H] plane (top row), younger, metal-rich stars consistently appear at smaller birth radii, while older, metal-poor stars occupy larger radii, reflecting the inside-out growth of the galactic disk. The [O/Fe]-[Fe/H] plane (bottom row) reveals how radial abundance gradients at different epochs imprint on stellar chemistry. The discovered L 1 reproduces these chemical evolution patterns without incorporating any prior knowledge, demonstrating that RLCD extracts physically meaningful information from the data.</p><p>These results demonstrate that causal discovery can recover physically meaningful latent variables from observational data alone. The method not only identifies the correct number of hidden factors but also determines their proper causal relationships with observables. For guiding radius, the nearperfect recovery validates our approach. For birth radius, the agreement with established methods and consistency across chemical spaces confirms that causal discovery captures the same underlying physics that astronomers have uncovered through theoretical work. While we have assumed linear relationships for this proof-of-concept, future work with nonlinear causal discovery methods may further improve the reconstruction of stellar birth properties.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Broader Impact</head><p>This work demonstrates that causal discovery can uncover physically meaningful relationships in astrophysical systems from observational data alone. By successfully identifying birth radius and guiding radius as the latent variables governing stellar migration-without incorporating prior astrophysical knowledge-we validate the potential of automated causal inference in astronomy. The discovered structure not only aligns with decades of theoretical understanding but achieves predictive performance comparable to traditional domain-specific methods. This suggests that causal discovery can complement human-guided theoretical approaches, potentially revealing relationships that intuition might overlook in increasingly complex astronomical datasets.</p><p>Looking forward, our results establish a foundation for applying causal discovery across astronomy, where many phenomena involve unobservable latent variables-from dark matter shaping galaxy dynamics to stellar interiors driving evolution. As astronomical surveys grow in scale and dimensionality, such data-driven methods become essential for extracting physical insights. Future work extending to broader stellar populations and real observations will face additional challenges from selection effects and measurement uncertainties. The combination of causal discovery with flexible machine learning architectures promises interpretable AI systems that both predict and explain, guided by discovered causal structures rather than opaque correlations-moving toward a new paradigm where data-driven methods and physical understanding mutually reinforce our exploration of the physical processes that engender the universe.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Causal structure discovered by RLCD from five observable stellar properties. Blue ellipses represent observed variables, while red ellipses show the two latent variables identified by the algorithm. The analysis reveals that L1 corresponds to birth radius and L2 to guiding radius, as validated by comparison with ground truth. Numbers on arrows indicate the strength of causal relationships (edge coefficients aij) in the linear SCM.</figDesc><graphic coords="3,55.44,67.06,234.00,154.20" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Validation of discovered latent variables. Left: Comparison between renormalized L1 and birth radius inferred using the Lu et al. (2024) method. Right: True guiding radius from simulation versus renormalized L2. The discovered L1 achieves comparable performance to<ref type="bibr" target="#b18">(Lu et al., 2024)</ref> for birth radius inference, while L2 directly recovers the true guiding radius.</figDesc><graphic coords="3,307.44,67.06,234.00,104.76" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Distribution of birth radii in chemical abundance space. Left: True birth radius from simulation. Middle: Birth radius inferred using the Lu et al. (2024) method. Right: Renormalized L1 from causal discovery. Top row shows the age-metallicity plane, bottom row shows the alpha-abundance plane. All three methods exhibit consistent patterns: younger, metal-rich stars originate from smaller galactic radii (yellow) while older, metal-poor stars come from larger radii (blue), reflecting inside-out galaxy formation. The similarity across columns validates that the discovered latent variable L1 captures birth radius information despite using no prior knowledge.</figDesc><graphic coords="4,114.95,67.06,364.49,201.93" type="bitmap" /></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Exploring the Milky Way stellar disk</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Bensby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Feltzing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Oey</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201322631</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">562</biblScope>
+			<biblScope unit="page">A71</biblScope>
+			<date type="published" when="2014-02">February 2014</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">On the origin of the chemical bimodality of disc stars: a tale of merger and migration</title>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+			<idno type="ORCID">0000-0003-2027-399X</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stz3289</idno>
+		<ptr target="https://doi.org/10.1093/mnras/stz3289" />
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">491</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="5435" to="5446" />
+			<date type="published" when="2019-11-26">2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Stars Behind Bars. I. The Milky Way&apos;s Central Stellar Populations</title>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+			<idno type="ORCID">0000-0003-2027-399X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><forename type="middle">K</forename><surname>Ness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aura</forename><surname>Obreja</surname></persName>
+			<idno type="ORCID">0000-0003-4196-8555</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><forename type="middle">A</forename><surname>Dutton</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/aac890</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<title level="j" type="abbrev">ApJ</title>
+		<idno type="ISSN">0004-637X</idno>
+		<idno type="ISSNe">1538-4357</idno>
+		<imprint>
+			<biblScope unit="volume">861</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">88</biblScope>
+			<date type="published" when="2018-07-09">July 2018</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Stars behind Bars II: A Cosmological Formation Scenario for the Milky Way&apos;s Central Stellar Structure</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Buck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Obreja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Dutton</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/aaffd0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astrophysical Journal</title>
+		<imprint>
+			<biblScope unit="volume">874</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">67</biblScope>
+			<date type="published" when="2019-03">March 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">NIHAO-UHD: The properties of MW-like stellar disks in high resolution cosmological simulations</title>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aura</forename><surname>Obreja</surname></persName>
+			<idno type="ORCID">0000-0003-4196-8555</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Minchev</surname></persName>
+			<idno type="ORCID">0000-0002-5627-0355</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><forename type="middle">A</forename><surname>Dutton</surname></persName>
+			<idno type="ORCID">0000-0002-2122-0403</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jeremiah</forename><forename type="middle">P</forename><surname>Ostriker</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stz3241</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">491</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="3461" to="3478" />
+			<date type="published" when="2020-01">January 2020</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">10.1162/153244303321897717</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chickering</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/153244303321897717</idno>
+	</analytic>
+	<monogr>
+		<title level="j">CrossRef Listing of Deleted DOIs</title>
+		<title level="j" type="abbrev">CrossRef Listing of Deleted DOIs</title>
+		<idno type="ISSN">0003-6951</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">2002</biblScope>
+			<date type="published" when="2000" />
+			<publisher>Unmaintained records</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Conroy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Weinberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Naidu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Buck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cargile</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bonaca</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Caldwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Chandra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">D</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Speagle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-S</forename><surname>Ting</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Woody</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zaritsky</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2204.02989</idno>
+		<idno type="arXiv">arXiv:2204.02989</idno>
+		<title level="m">Birth of the Galactic Disk Revealed by the H3 Survey. arXiv e-prints, art</title>
+		<imprint>
+			<date type="published" when="2022-04">April 2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Bayesian structure learning with generative flow networks</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Deleu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Góis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">C</forename><surname>Emezue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rankawat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lacoste-Julien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<ptr target="https://openreview.net/forum" />
+	</analytic>
+	<monogr>
+		<title level="m">The 38th Conference on Uncertainty in Artificial Intelligence</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note>id=HElfed8j9g9</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A versatile causal discovery framework to allow causally-related hidden variables</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Legaspi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Spirtes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Twelfth International Conference on Learning Representations</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">On the parameter identifiability of partially observed linear causal models</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Legaspi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Spirtes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="30740" to="30771" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Learning gaussian networks</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Geiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Heckerman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Tenth International Conference on Uncertainty in Artificial Intelligence, UAI&apos;94</title>
+		<meeting>the Tenth International Conference on Uncertainty in Artificial Intelligence, UAI&apos;94<address><addrLine>San Francisco, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Morgan Kaufmann Publishers Inc</publisher>
+			<date type="published" when="1994">1994</date>
+			<biblScope unit="page" from="235" to="243" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">CHEMICAL CARTOGRAPHY WITH APOGEE: METALLICITY DISTRIBUTION FUNCTIONS AND THE CHEMICAL STRUCTURE OF THE MILKY WAY DISK</title>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">R</forename><surname>Hayden</surname></persName>
+			<idno type="ORCID">0000-0001-7294-9766</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jo</forename><surname>Bovy</surname></persName>
+			<idno type="ORCID">0000-0001-6855-442X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jon</forename><forename type="middle">A</forename><surname>Holtzman</surname></persName>
+			<idno type="ORCID">0000-0002-9771-9622</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Nidever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">C</forename><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">H</forename><surname>Weinberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brett</forename><forename type="middle">H</forename><surname>Andrews</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+			<idno type="ORCID">0000-0003-2025-3147</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">Allende</forename><surname>Prieto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Friedrich</forename><surname>Anders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">C</forename><surname>Beers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitry</forename><surname>Bizyaev</surname></persName>
+			<idno type="ORCID">0000-0002-3601-133X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cristina</forename><surname>Chiappini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katia</forename><surname>Cunha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Frinchaboy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>García-Herńandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ana</forename><forename type="middle">E</forename><surname>García Pérez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Léo</forename><surname>Girardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Harding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fred</forename><forename type="middle">R</forename><surname>Hearty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szabolcs</forename><surname>Mészáros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Minchev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>O’connell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaike</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annie</forename><forename type="middle">C</forename><surname>Robin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">P</forename><surname>Schiavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Donald</forename><forename type="middle">P</forename><surname>Schneider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mathias</forename><surname>Schultheis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Shetrone</surname></persName>
+			<idno type="ORCID">0000-0003-0509-2656</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Skrutskie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Steinmetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Verne</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">C</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olga</forename><surname>Zamora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gail</forename><surname>Zasowski</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0004-637x/808/2/132</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<title level="j" type="abbrev">ApJ</title>
+		<idno type="ISSNe">1538-4357</idno>
+		<imprint>
+			<biblScope unit="volume">808</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">132</biblScope>
+			<date type="published" when="2015-08">August 2015</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Fluctuations in galactic bar parameters due to bar–spiral interaction</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hilmi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Minchev</surname></persName>
+			<idno type="ORCID">0000-0002-5627-0355</idno>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Buck</surname></persName>
+			<idno type="ORCID">0000-0003-2027-399X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Martig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Quillen</surname></persName>
+			<idno type="ORCID">0000-0003-1280-2054</idno>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Monari</surname></persName>
+			<idno type="ORCID">0000-0002-6863-0661</idno>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Famaey</surname></persName>
+			<idno type="ORCID">0000-0003-3180-9825</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>De jong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">F P</forename><surname>Laporte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Read</surname></persName>
+			<idno type="ORCID">0000-0002-1164-9302</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Sanders</surname></persName>
+			<idno type="ORCID">0000-0003-4593-6788</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Steinmetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wegg</surname></persName>
+			<idno type="ORCID">0000-0001-6240-8771</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/staa1934</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">497</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="933" to="955" />
+			<date type="published" when="2020-09">September 2020</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Generalized Score Functions for Causal Discovery</title>
+		<author>
+			<persName><forename type="first">Biwei</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yizhu</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernhard</forename><surname>Schölkopf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clark</forename><surname>Glymour</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3219819.3220104</idno>
+		<ptr target="https://doi.org/10.1145/3219819.3220104" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</title>
+		<meeting>the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2018-07-19">2018</date>
+			<biblScope unit="volume">9781450355520</biblScope>
+			<biblScope unit="page" from="1551" to="1560" />
+		</imprint>
+	</monogr>
+	<note>Association for Computing Machinery</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Causal discovery in astrophysics: Unraveling supermassive black hole and galaxy coevolution</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pasquato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">L</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Deleu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lemos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Perreault-Levasseur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hezaveh</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/ad9ded</idno>
+		<ptr target="https://dx.doi.org/10.3847/1538-4357/ad9ded" />
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<imprint>
+			<biblScope unit="volume">979</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">212</biblScope>
+			<date type="published" when="2025-01">jan 2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Causal discovery in physical systems from videos</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Torralba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Anandkumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Fox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Garg</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="9180" to="9192" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Reliability and limitations of inferring birth radii in the Milky Way disc</title>
+		<author>
+			<persName><forename type="first">Yuxi(lucy)</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-4769-3273</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+			<idno type="ORCID">0000-0003-2027-399X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Minchev</surname></persName>
+			<idno type="ORCID">0000-0002-5627-0355</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><forename type="middle">K</forename><surname>Ness</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnrasl/slac065</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society: Letters</title>
+		<idno type="ISSN">1745-3925</idno>
+		<idno type="ISSNe">1745-3933</idno>
+		<imprint>
+			<biblScope unit="volume">515</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="L34" to="L38" />
+			<date type="published" when="2022-09">September 2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Turning points in the age–metallicity relations – created by late satellite infall and enhanced by radial migration</title>
+		<author>
+			<persName><forename type="first">Yuxi</forename><forename type="middle">(lucy)</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-4769-3273</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><forename type="middle">K</forename><surname>Ness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+			<idno type="ORCID">0000-0003-2027-399X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Carr</surname></persName>
+			<idno type="ORCID">0000-0002-5840-0424</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stac780</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">512</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="4697" to="4714" />
+			<date type="published" when="2022-06">June 2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">There is no place like home – finding birth radii of stars in the Milky Way</title>
+		<author>
+			<persName><forename type="first">Yuxi</forename><forename type="middle">(lucy)</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-4769-3273</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Minchev</surname></persName>
+			<idno type="ORCID">0000-0002-5627-0355</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+			<idno type="ORCID">0000-0003-2027-399X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sergey</forename><surname>Khoperskov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Steinmetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Libeskind</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriele</forename><surname>Cescutti</surname></persName>
+			<idno type="ORCID">0000-0002-3184-9918</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ken</forename><forename type="middle">C</forename><surname>Freeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bridget</forename><surname>Ratcliffe</surname></persName>
+			<idno type="ORCID">0000-0003-1124-7378</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stae2364</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">535</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="392" to="405" />
+			<date type="published" when="2024-11">November 2024</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Chemodynamical evolution of the Milky Way disk</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Minchev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chiappini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Martig</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201220189</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">558</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">A9</biblScope>
+			<date type="published" when="2013-10">October 2013</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Estimating stellar birth radii and the time evolution of Milky Way’s ISM metallicity gradient</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Minchev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Anders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Recio-Blanco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chiappini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>De laverny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Queiroz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Steinmetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Adibekyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Carrillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Cescutti</surname></persName>
+			<idno type="ORCID">0000-0002-3184-9918</idno>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Guiglion</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hayden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">S</forename><surname>De jong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kordopatis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Martig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">X</forename><surname>Santiago</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/sty2033</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">481</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1645" to="1657" />
+			<date type="published" when="2018-12">December 2018</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">NIHAO XVI: the properties and evolution of kinematically selected discs, bulges, and stellar haloes</title>
+		<author>
+			<persName><forename type="first">Aura</forename><surname>Obreja</surname></persName>
+			<idno type="ORCID">0000-0003-4196-8555</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><forename type="middle">A</forename><surname>Dutton</surname></persName>
+			<idno type="ORCID">0000-0002-2122-0403</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+			<idno type="ORCID">0000-0002-8171-6507</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Moster</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+			<idno type="ORCID">0000-0003-2027-399X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Glenn</forename><surname>Van den ven</surname></persName>
+			<idno type="ORCID">0000-0003-4546-7731</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Liang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">S</forename><surname>Stinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>Zhu</surname></persName>
+			<idno type="ORCID">0000-0002-8005-0870</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stz1563</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">487</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="4424" to="4456" />
+			<date type="published" when="2019-08">August 2019</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A first estimate of the Milky Way dark matter halo spin</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Obreja</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Buck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202140983</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<imprint>
+			<biblScope unit="volume">657</biblScope>
+			<date type="published" when="2022-01">January 2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pasquato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lemos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">L</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2311.15160</idno>
+		<idno type="arXiv">arXiv:2311.15160</idno>
+		<title level="m">Causa prima: cosmology meets causal discovery for the first time</title>
+		<imprint>
+			<date type="published" when="2023-11">November 2023</date>
+		</imprint>
+	</monogr>
+	<note>arXiv e-prints, art</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pearl</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Causality</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<publisher>Cambridge university press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Causal inference in statistics : a primer</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Pearl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Glymour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">P</forename><surname>Jewell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Wiley</publisher>
+			<pubPlace>Chichester, West Sussex</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Inferring causation from time series in Earth system sciences</title>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Runge</surname></persName>
+			<idno type="ORCID">0000-0002-0629-1772</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Bathiany</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Bollt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gustau</forename><surname>Camps-Valls</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dim</forename><surname>Coumou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ethan</forename><surname>Deyle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clark</forename><surname>Glymour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marlene</forename><surname>Kretschmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miguel</forename><forename type="middle">D</forename><surname>Mahecha</surname></persName>
+			<idno type="ORCID">0000-0003-3031-613X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jordi</forename><surname>Muñoz-Marí</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Egbert</forename><forename type="middle">H</forename><surname>Van Nes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonas</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rick</forename><surname>Quax</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><surname>Reichstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marten</forename><surname>Scheffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernhard</forename><surname>Schölkopf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Spirtes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Sugihara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Sun</surname></persName>
+			<idno type="ORCID">0000-0003-2553-1804</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Zscheischler</surname></persName>
+			<idno type="ORCID">0000-0001-6045-1629</idno>
+		</author>
+		<idno type="DOI">10.1038/s41467-019-10105-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2553</biblScope>
+			<date type="published" when="2019-06-14">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Toward Causal Representation Learning</title>
+		<author>
+			<persName><forename type="first">Bernhard</forename><surname>Scholkopf</surname></persName>
+			<idno type="ORCID">0000-0002-8177-0925</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francesco</forename><surname>Locatello</surname></persName>
+			<idno type="ORCID">0000-0002-4850-0683</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Bauer</surname></persName>
+			<idno type="ORCID">0000-0003-1712-060X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nan</forename><forename type="middle">Rosemary</forename><surname>Ke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nal</forename><surname>Kalchbrenner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anirudh</forename><surname>Goyal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+			<idno type="ORCID">0000-0002-9322-3515</idno>
+		</author>
+		<idno type="DOI">10.1109/jproc.2021.3058954</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the IEEE</title>
+		<title level="j" type="abbrev">Proc. IEEE</title>
+		<idno type="ISSN">0018-9219</idno>
+		<idno type="ISSNe">1558-2256</idno>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="612" to="634" />
+			<date type="published" when="2021-05">2021</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Radial mixing in galactic discs</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Sellwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Binney</surname></persName>
+		</author>
+		<idno type="DOI">10.1046/j.1365-8711.2002.05806.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<title level="j" type="abbrev">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">336</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="785" to="796" />
+			<date type="published" when="2002-11-01">November 2002</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Exploring the origin of low-metallicity stars in Milky-Way-like galaxies with the NIHAO-UHD simulations</title>
+		<author>
+			<persName><forename type="first">Federico</forename><surname>Sestito</surname></persName>
+			<idno type="ORCID">0000-0002-3182-3574</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+			<idno type="ORCID">0000-0003-2027-399X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Else</forename><surname>Starkenburg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><forename type="middle">F</forename><surname>Martin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julio</forename><forename type="middle">F</forename><surname>Navarro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kim</forename><forename type="middle">A</forename><surname>Venn</surname></persName>
+			<idno type="ORCID">0000-0003-4134-2042</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aura</forename><surname>Obreja</surname></persName>
+			<idno type="ORCID">0000-0003-4196-8555</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pascale</forename><surname>Jablonka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+			<idno type="ORCID">0000-0002-8171-6507</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/staa3479</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">500</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="3750" to="3762" />
+			<date type="published" when="2021-01">January 2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Chemical enrichment and radial migration in the Galactic disc – the origin of the [αFe] double sequence</title>
+		<author>
+			<persName><forename type="first">Sanjib</forename><surname>Sharma</surname></persName>
+			<idno type="ORCID">0000-0002-0920-809X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">R</forename><surname>Hayden</surname></persName>
+			<idno type="ORCID">0000-0001-7294-9766</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joss</forename><surname>Bland-Hawthorn</surname></persName>
+			<idno type="ORCID">0000-0001-7516-4016</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stab2015</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">507</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="5882" to="5901" />
+			<date type="published" when="2021-11">November 2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">A linear non-gaussian acyclic model for causal discovery</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Shimizu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">O</forename><surname>Hoyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hyvrinen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Kerminen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2003">2003-2030, 2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">An Algorithm for Causal Inference in the Presence of Latent Variables and Selection Bias</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Spirtes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Meek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Richardson</surname></persName>
+		</author>
+		<idno type="DOI">10.7551/mitpress/2006.003.0009</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Computation, Causation, and Discovery</title>
+		<imprint>
+			<publisher>AAAI Press</publisher>
+			<date type="published" when="1995-08">August 1995</date>
+			<biblScope unit="page" from="211" to="252" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Causation, Prediction, and Search</title>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Spirtes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clark</forename><surname>Glymour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Scheines</surname></persName>
+		</author>
+		<idno type="DOI">10.7551/mitpress/1754.001.0001</idno>
+		<ptr target="https://doi.org/10.7551/mitpress/1754.001.0001" />
+		<imprint>
+			<date type="published" when="2001-01-29">2001</date>
+			<publisher>The MIT Press</publisher>
+			<biblScope unit="page">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Star formation and feedback in smoothed particle hydrodynamic simulations – I. Isolated galaxies</title>
+		<author>
+			<persName><forename type="first">Greg</forename><surname>Stinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anil</forename><surname>Seth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neal</forename><surname>Katz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Wadsley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Governato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Quinn</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2966.2006.11097.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">373</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1074" to="1090" />
+			<date type="published" when="2006-12">December 2006</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">MaGICC thick disc – I. Comparing a simulated disc formed with stellar feedback to the Milky Way</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">S</forename><surname>Stinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bovy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H-W</forename><surname>Rix</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Brook</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Roškar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Dalcanton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wadsley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">M P</forename><surname>Couchman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Quinn</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stt1600</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">436</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="625" to="634" />
+			<date type="published" when="2013-11">November 2013</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Gasoline2: a modern smoothed particle hydrodynamics code</title>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">W</forename><surname>Wadsley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">W</forename><surname>Keller</surname></persName>
+			<idno type="ORCID">0000-0002-9642-7193</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">R</forename><surname>Quinn</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stx1643</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">471</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="2357" to="2369" />
+			<date type="published" when="2017-10">October 2017</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Carrillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Ness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Buck</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2307.04724</idno>
+		<idno type="arXiv">arXiv:2307.04724</idno>
+		<title level="m">The individual abundance distributions of disc stars across birth radii in GALAH. arXiv e-prints, art</title>
+		<imprint>
+			<date type="published" when="2023-07">July 2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">NIHAO project – I. Reproducing the inefficiency of galaxy formation across cosmic time with a large sample of cosmological hydrodynamical simulations</title>
+		<author>
+			<persName><forename type="first">Liang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><forename type="middle">A</forename><surname>Dutton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">S</forename><surname>Stinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><forename type="middle">V</forename><surname>Macciò</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Camilla</forename><surname>Penzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><forename type="middle">W</forename><surname>Keller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Wadsley</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stv1937</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<title level="j" type="abbrev">Mon. Not. R. Astron. Soc.</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">454</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="83" to="94" />
+			<date type="published" when="2015-09-17">2015</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">A time-resolved picture of our Milky Way’s early formation history</title>
+		<author>
+			<persName><forename type="first">Maosheng</forename><surname>Xiang</surname></persName>
+			<idno type="ORCID">0000-0002-5818-8769</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hans-Walter</forename><surname>Rix</surname></persName>
+			<idno type="ORCID">0000-0003-4996-9069</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-022-04496-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">603</biblScope>
+			<biblScope unit="issue">7902</biblScope>
+			<biblScope unit="page" from="599" to="603" />
+			<date type="published" when="2022-03-23">March 2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Marrying causal representation learning with dynamical systems for science</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Muller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Locatello</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Thirty-eighth Annual Conference on Neural Information Processing Systems</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">On the completeness of orientation rules for causal discovery in the presence of latent confounders and selection bias</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Artificial Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">172</biblScope>
+			<biblScope unit="issue">16-17</biblScope>
+			<biblScope unit="page" from="1873" to="1896" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Causal representation learning from multiple distributions: A general setting</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zheng</surname></persName>
+		</author>
+		<idno>PMLR</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="60057" to="60075" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

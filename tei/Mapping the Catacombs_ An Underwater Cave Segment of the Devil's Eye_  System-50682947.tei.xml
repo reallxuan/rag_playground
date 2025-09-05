@@ -1,0 +1,1468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Mapping the Catacombs: An Underwater Cave Segment of the Devil&apos;s Eye System</title>
+				<funder>
+					<orgName type="full">El Centro Investigador del Sistema Acuífero de Quintana Roo A.C. (CINDAQ)</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Global Underwater Explorers</orgName>
+					<orgName type="abbreviated">GUE</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Woodville Karst Plain Project</orgName>
+					<orgName type="abbreviated">WKPP</orgName>
+				</funder>
+				<funder ref="#_7jQuEvV #_Cz3cGen #_7tdJFNu #_bm8XZ6F">
+					<orgName type="full">National Science Foundation</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-07-08">8 Jul 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Michalis</forename><surname>Chatzispyrou</surname></persName>
+							<email>michalis@udel.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Delaware</orgName>
+								<address>
+									<settlement>Newark</settlement>
+									<region>DE</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Luke</forename><surname>Horgan</surname></persName>
+							<email>lhorgan@stevens.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Stevens Institute of Technology</orgName>
+								<address>
+									<settlement>Hoboken</settlement>
+									<region>NJ</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hyunkil</forename><surname>Hwang</surname></persName>
+							<email>hkhwang@udel.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Delaware</orgName>
+								<address>
+									<settlement>Newark</settlement>
+									<region>DE</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Harish</forename><surname>Sathishchandra</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Stevens Institute of Technology</orgName>
+								<address>
+									<settlement>Hoboken</settlement>
+									<region>NJ</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Monika</forename><surname>Roznere</surname></persName>
+							<email>mrozner1@binghamton.edu</email>
+							<affiliation key="aff2">
+								<orgName type="institution">Binghamton University</orgName>
+								<address>
+									<settlement>Binghamton</settlement>
+									<region>NY</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Alberto</forename><forename type="middle">Quattrini</forename><surname>Li</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Dartmouth College</orgName>
+								<address>
+									<settlement>Hanover</settlement>
+									<region>NH</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Philippos</forename><surname>Mordohai</surname></persName>
+							<email>pmordoha@stevens.edu</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Stevens Institute of Technology</orgName>
+								<address>
+									<settlement>Hoboken</settlement>
+									<region>NJ</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ioannis</forename><surname>Rekleitis</surname></persName>
+							<email>yiannisr@udel.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Delaware</orgName>
+								<address>
+									<settlement>Newark</settlement>
+									<region>DE</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Mapping the Catacombs: An Underwater Cave Segment of the Devil&apos;s Eye System</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-07-08">8 Jul 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">A02F46FAE21DEDCB4E06447F5574B060</idno>
+					<idno type="arXiv">arXiv:2507.06397v1[cs.RO]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:30+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>This paper presents a framework for mapping underwater caves. Underwater caves are crucial for fresh water resource management, underwater archaeology, and hydrogeology. Mapping the cave's outline and dimensions, as well as creating photorealistic 3D maps, is critical for enabling a better understanding of this underwater domain.</p><p>In this paper, we present the mapping of an underwater cave segment (the catacombs) of the Devil's Eye cave system at Ginnie Springs, FL. We utilized a set of inexpensive action cameras in conjunction with a dive computer to estimate the trajectories of the cameras together with a sparse point cloud. The resulting reconstructions are utilized to produce a onedimensional retract of the cave passages in the form of the average trajectory together with the boundaries (top, bottom, left, and right). The use of the dive computer enables the observability of the z-dimension in addition to the roll and pitch in a visual/inertial framework (SVIn2). In addition, the keyframes generated by SVIn2 together with the estimated camera poses for select areas are used as input to a global optimization (bundle adjustment) framework -COLMAP -in order to produce a dense reconstruction of those areas. The same cave segment is manually surveyed using the MNemo V2 instrument, providing an additional set of measurements validating the proposed approach. It is worth noting that with the use of action cameras, the primary components of a cave map can be constructed. Furthermore, with the utilization of a global optimization framework guided by the results of VI-SLAM package SVIn2, photorealistic dense 3D representations of selected areas can be reconstructed.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>Underwater caves are crucial for groundwater flow in karst topographies, supplying freshwater to almost 25% of the world's population <ref type="bibr" target="#b0">[1]</ref>. In the US, 23% of freshwater withdrawals in 2000 came from bedrock aquifers, with Florida's Fig. <ref type="figure">1</ref>: GoPro setup deployed inside a cave, Ginnie Springs, FL. A fiducial tag can be seen, used for estimating ground truth.</p><p>aquifer having the highest withdrawal rate <ref type="bibr" target="#b1">[2]</ref>. Given its importance, a project started in 1987 in the Woodville Karst Plain (WKPP), which resulted in the exploration of over 34 miles of cave systems in Florida <ref type="bibr" target="#b2">[3]</ref>, <ref type="bibr" target="#b3">[4]</ref>, proving the cave system to be the longest in USA <ref type="bibr" target="#b4">[5]</ref>. Furthermore, caves provide a unique preservation environment for archaeological secrets <ref type="bibr" target="#b5">[6]</ref>, <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b7">[8]</ref>, yielding to major historical finds across the globe, such as Mexico <ref type="bibr" target="#b8">[9]</ref>, <ref type="bibr" target="#b9">[10]</ref>, <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b11">[12]</ref>, Florida <ref type="bibr" target="#b12">[13]</ref>, Greece <ref type="bibr" target="#b13">[14]</ref>, and Philippines <ref type="bibr" target="#b14">[15]</ref>. Thus, mapping underwater caves is important <ref type="bibr" target="#b15">[16]</ref>. Currently, cave divers dive in these extreme environments and map caves with basic tools, such as knotted lines and compass, to obtain the topology of a cave <ref type="bibr" target="#b16">[17]</ref>. It is very dangerous even for highly skilled people <ref type="bibr" target="#b17">[18]</ref>, with more than 350 deaths since 1969 in the USA alone. These environments are still quite challenging for an underwater robot to explore given the absence of any localization or communication infrastructure. Hence, the community would benefit from progress in automated technology tools that can accurately map such environments, but are also easy to use to reduce the cognitive load and preserve the safety of divers.</p><p>Mapping underwater caves presents several challenges. LiDAR and RGB-D sensors that provide dense point cloud cannot be used underwater because of the light absorption. The most common mapping sensor used underwater is sonar <ref type="bibr" target="#b18">[19]</ref>, however, measurements can be inaccurate due to comparatively large beam width and multipath effects. Cameras are promising due to their low cost and amount of scene information it can capture, but to use them effectively, it is fundamental to overcome limited visibility, color absorption, hazing, absence of natural light, etc. <ref type="bibr" target="#b19">[20]</ref>.</p><p>Some work produced good mapping results with cameras, e.g., using light to infer the surrounding structures <ref type="bibr" target="#b20">[21]</ref>; integrating camera, sonar, and IMU to leverage their complementarity <ref type="bibr" target="#b21">[22]</ref>. Still, a large dense map of an underwater cave has not been fully demonstrated yet, especially using only tools available to cave divers.</p><p>This paper presents a framework for mapping underwater caves using inexpensive action cameras and a dive computer, carried by the divers. We integrate a visual-inertial SLAM framework, which provides a reduced set of images that are informative from the state estimation perspective, together with a structure-from-motion global bundle adjustment to improve geometric consistency and achieve a denser reconstruction. We use datasets collected by cave divers -see, e.g., Fig. <ref type="figure">1</ref> -over multiple passes to verify the quality of the reconstruction of the proposed framework and compare it with the manual survey that cave divers perform. The dataset has a long duration of 81 minutes and a covered distance of more than 1km.</p><p>Besides presenting this framework, this paper contribution is twofold. First, we provide a unique dataset on a cave system that contains several branches and loops and that we will make public. Second, we discuss open problems from the lessons learned in reconstructing a segment of that cave system, towards advancing technology for divers and developing robust underwater robots.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. RELATED WORK</head><p>While the literature is vast on 3D mapping, ranging from photogrammetry <ref type="bibr" target="#b22">[23]</ref> to simultaneous localization and mapping <ref type="bibr" target="#b23">[24]</ref> and more recently Neural Radiance Field/Gaussian Splatting <ref type="bibr" target="#b24">[25]</ref>, we discuss here work specifically related to underwater cave mapping, highlighting the current state of the art and main challenges and gaps.</p><p>Traditionally, scuba divers performed the topological mapping of underwater caves using knotted lines or measuring tape for distance, a compass for orientation, and a (water) depth sensor/dive computer for recording the depth. Cartographers would then use the survey information to create depictions of the caves. This process is valuable, as it provides an understanding of how caves expand, but is prone to error. The cave diving community looks forward to technological progress making these surveys easier <ref type="bibr" target="#b16">[17]</ref>. In this paper, we integrate surveying methods used by the cave diving community with 3D reconstruction pipelines.</p><p>There has long been robot technology that can support cave surveying, even if they are expensive and require expertise in processing the collected data. In 2007, Stone Aerospace presented DEPTHX (DEep Phreatic THermal eXplorer) <ref type="bibr" target="#b25">[26]</ref>, a teleoperated robot, equipped with an IMU, two depth sensors, a DVL, and 54 narrow single-beam echosounders. DEPTHX was used to map a vertical shaft filled with water <ref type="bibr" target="#b26">[27]</ref>. Later, the same company developed Sunfish <ref type="bibr" target="#b27">[28]</ref>, an autonomous underwater vehicle with a multibeam sonar, an underwater dead-reckoning system based on a fiber-optic gyroscope (FOG) IMU, DVL, and pressure-depth sensors. Sunfish was deployed inside some caves in Florida. However, sonar-based reconstruction can be inaccurate in caves due to wide beam width and multipath effects <ref type="bibr" target="#b28">[29]</ref>.</p><p>The advancements in camera technology and their miniaturization resulted in a broadening of their use during cave exploration by divers. However, full 3D reconstruction of underwater caves remains an open problem. Some attempts that specifically considered ease of use for divers included a solution that used the boundary between the scuba dive light and shadow to enhance feature matching, tracking, and 3D reconstruction <ref type="bibr" target="#b20">[21]</ref>. A visual-inertial SLAM system, called SVIn2 <ref type="bibr" target="#b29">[30]</ref>, <ref type="bibr" target="#b30">[31]</ref>, <ref type="bibr" target="#b21">[22]</ref>, integrated stereo cameras, an IMU, a depth sensor, and a profiling sonar in a tightly-coupled optimization framework to improve the state estimation reliability in underwater scenarios. Experiments were carried out using a custom stereo rig with such sensors <ref type="bibr" target="#b31">[32]</ref>, as well as GoPro cameras that have an IMU <ref type="bibr" target="#b32">[33]</ref>. The integration of the two systems, light and visual-inertial SLAM, system resulted in a denser and accurate contour-based reconstruction <ref type="bibr" target="#b33">[34]</ref>. SVIn2 is the base of our reconstruction pipeline, given its robustness.</p><p>Photogrammetry can help in recording marine cave assemblages <ref type="bibr" target="#b34">[35]</ref> and achieving high-resolution 3D models <ref type="bibr" target="#b35">[36]</ref>, but it presents several challenges in achieving highly accurate results due to low visibility, light degradation, and absence of well-defined landmarks. Recently, an approach that combines VIO and a structure-from-motion pipeline demonstrated abilities to reconstruct sections of a cave <ref type="bibr" target="#b36">[37]</ref>. Similarly, we integrate the visual SLAM pipeline with a global bundle adjustment system, though we also feed reliable keyframes to achieve more accurate reconstructions.</p><p>Generally, compared to other domains, there is a lack of underwater cave datasets. Only one is currently available for general use <ref type="bibr" target="#b37">[38]</ref>, though there is another for benchmarking VIO/SLAM systems <ref type="bibr" target="#b38">[39]</ref>. A dataset for cave visual segmentation has also been recently released <ref type="bibr" target="#b39">[40]</ref>. We will contribute a new cave dataset that comprises a large system with several branches and loops.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. PROPOSED FRAMEWORK A. Experimental setup</head><p>Three GoPro TM Hero9 black action cameras were used. The cameras were rigidly mounted on an aluminum frame with handles; see Fig. <ref type="figure">1</ref>, and they were carefully positioned to produce a wide, partially overlapping field of view. In particular, the left and right cameras were aligned horizontally but facing approximately thirty degrees off center in opposing directions, while the center camera was pointed approximately 30 degrees upward. Two Keldan TM video lights were connected to the handles to generate the required illumination, as there is no natural light inside the cave. One Shearwater TM Perdix2 AI dive computer (carried often by divers) was utilized to record the depth of the water at the position of the diver, who operated the camera rig.</p><p>The video clips from the camera are converted into a ROS1 bagfile using the approach proposed by Joshi et al. <ref type="bibr" target="#b32">[33]</ref>, <ref type="bibr" target="#b40">[41]</ref>. This framework encodes the video (at 30 fps) and the IMU (100 Hz) datastream as ROS1 messages with synchronized timestamps. The resulting bagfile can be played back and used as input to a number of VIO/VI-SLAM packages; in our case SVIn2 <ref type="bibr" target="#b21">[22]</ref> is used.</p><p>In a separate deployment, the MNemo survey data acquisition system <ref type="bibr" target="#b41">[42]</ref> (see Fig. <ref type="figure" target="#fig_0">2 left</ref>) is used to record data pertaining to the deployed caveline. MNemo records depth and azimuth at each endpoint of a segment and also the length of the segment. The right image in Fig. <ref type="figure" target="#fig_0">2</ref> presents the raw data as recorded from MNemo. Please note that, during deployment, the data acquisition was interrupted due to operator error (blue line) and re-started (red line). The software Ariane <ref type="bibr" target="#b42">[43]</ref> was used to calculate loops (light grey dashed lines) and then produce a stick map of the caveline; see Fig. <ref type="figure">4</ref> for the processed map. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Visual-Inertial SLAM -SVIn2</head><p>We utilize the Visual Inertial SLAM framework SVIn2 <ref type="bibr" target="#b21">[22]</ref> for extracting the camera trajectory and a sparse point cloud. Although the detailed description is beyond the scope of this paper, the main points of this framework are described next.</p><p>SVIn2 is a tightly-coupled optimization framework that integrates IMU, camera, water pressure sensor, and sonar, by jointly minimizing error terms for each sensor. SVIn2 operates with a frontend, which provides a trajectory based on the optimization in a local map, and with a backend that supports loop closure for global trajectory optimization of keyframes. A new keyframe is one that maintains a certain overlap with a previous keyframe. A subsequent extension <ref type="bibr" target="#b32">[33]</ref> uses the optimized camera poses from the backend to update, in the frontend, the point clouds visible from each camera pose.</p><p>At the end, our proposed pipeline extracts the camera trajectory composed of keyframes and corresponding point clouds used in the next steps of the pipeline.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Absolute Water Depth Correction</head><p>The dive computer (Perdix) provides precise depth measurements throughout the entire dive. In contrast, the SVIn2 trajectory starts from a random location and provides relative positioning based on the starting point, with absolute positions remaining unknown <ref type="bibr" target="#b43">[44]</ref>, <ref type="bibr" target="#b44">[45]</ref>. In addition, the two signals are sometimes acquired in different time zones, resulting in significant time drift. Therefore, we adjusted the SVIn2 start time to match the Perdix start time to reduce the time drift to some extent; see Fig. <ref type="figure" target="#fig_1">3</ref>(a) for the asynchronous data in the Catacombs-Left dataset. Moreover, the dive computer saves depth data every 10 seconds at a frequency of 0.1 Hz, which is much slower than the frequency of SVIn2 based on the selected keyframes; in our case 2.8 Hz (Catacombs-Left), 3.8 Hz (Catacombs-Right), and 4 Hz (Catacombs-Center).</p><p>For every dataset, we already aligned the SVIn2 and Perdix data, thus they have the same start time. In the first step, the depth data is interpolated to 100 Hz to match the same frequency. These interpolated signals were used to determine the time shift values between them by calculating the cross-correlation of the two datasets; see Fig. <ref type="figure" target="#fig_2">3(b</ref>) where the Catacombs-Left time sequence is shifted to align with Fig. <ref type="figure">4</ref>: From the left: The un-aligned trajectories produced from SVIn2 for the left (green), center (blue), and right (red) GoPro. The aligned trajectories. Segment of the cave map with the main line overlayed and the start of the deployment marked. The results from the manual survey using MNemo2 <ref type="bibr" target="#b41">[42]</ref> survey tool and Ariane <ref type="bibr" target="#b42">[43]</ref> software. Last on the right, the average camera trajectory from SVIn2.</p><p>the Perdix time sequence, whereas they still have different scales (Perdix in blue and SVIn2 in red). The following step is to calculate the depth shift values between the two data using linear regression; see Fig. <ref type="figure" target="#fig_2">3(c</ref>), which indicates the input data (blue) and the regression result (red). Finally, the SVIn2 depth data are shifted to the real depth based on the values calculated by regression; see Fig. <ref type="figure" target="#fig_2">3(d)</ref> where the SVIn2 and Perdix data are aligned to the same depth scale and time in the Catacombs-Left dataset. The same approach is implemented for the Catacombs-Right (see Fig.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Trajectory Alignment</head><p>For transforming the three trajectories to the same coordinate frame, we utilize a calibration target that was placed at the begining of the deployment; see the first image of Fig. <ref type="figure">8</ref> for a reconstruction of the target inside the cave passage. The aprilgrid package <ref type="bibr" target="#b45">[46]</ref> is employed to detect the target in each of the datasets and the relative pose T Ci m between the camera at time i (C i ) and the target (m). Consequently, by employing the pose of the camera (P W Ci ) in world coordinates, we can estimate the pose of the target in world coordinates as Ci P W m = P W Ci • T Ci m . First we estimate the average pose for the target as P = i=1...N</p><formula xml:id="formula_0">C i P W m N</formula><p>. Then, the distance (D i ) is calculated between the target Ci P W m for each camera i that viewed the target and the average pose of the target (P ) as D i = ∥ Ci P W m -P j ∥. We calculate the standard deviation σ D of all the distances and then remove all targets with distances more than one σ D from the mean. Then, we filter outliers based on the orientation estimates, which are more noisy. From the rotation matrix of the pose of the target in the global coordinate system we extract the angles around the principal axes (roll, pitch, yaw) then we remove all the targets with at least one angle (roll, pitch, or yaw) that falls outside one standard deviation. From the remaining (inlier) targets we </p><formula xml:id="formula_1">T W B W A = P W A m • (P W B m ) -1</formula><p>and brings trajectory B in the coordinate frame of trajectory A.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Dense Reconstruction -COLMAP</head><p>Our pipeline includes a stucture-from-motion system, COLMAP <ref type="bibr" target="#b46">[47]</ref>, run on the keyframes using as prior corresponding poses, identified by SVIn2. This step refines the geometric consistency of the camera poses given that all collections of images are used. The output will be a sparse point cloud. We then densify that point cloud with a depth map estimation using patch-match stereo with per-pixel view selection and fusion.</p><p>To obtain the mesh reconstruction, we use a screened Poisson reconstruction, where an implicit function indicator is computed to determine whether a point is inside or outside the model <ref type="bibr" target="#b47">[48]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. EXPERIMENTAL RESULTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Dataset</head><p>The catacombs section of the Devil's Eye cave system is a narrow passage to the left of the main line as we are entering the cave. The area is characterized by several interconnected narrow tunnels, some of which are accessible only in side-mount configuration<ref type="foot" target="#foot_1">1</ref> ; see Fig. <ref type="figure">4</ref> center for a depiction of the area. Please note that the cave map presented in the center of Fig. <ref type="figure">4</ref> is not metrically accurate but provides a generic outline of the area. The catacombs are not marked with a permanent line, however, for the experiments presented here, one was temporarily installed. During a single deployment of one hour, forty-six minutes at an average depth of seventeen meters, the area was mapped using the three cameras described in the experimental setup section. Multiple loops were performed as can be seen in Fig. <ref type="figure">4</ref>, covering all accessible parts of the catacombs. At the entrance of the passage a calibration target was placed and at the start of the deployment a short calibration motion sequence was performed. In total, data collection lasted for 81 minutes and the total estimated trajectory was more than 1km.</p><p>A second dive was performed for manually surveying the caveline deployed inside the catacombs. We started at the mainline (see Fig. <ref type="figure">4</ref> center) and followed the line into the catacombs; see the second from right of Fig. <ref type="figure">4</ref> where the MNemo start is marked and also, where the VI-SLAM process started. The data collection process was hampered by the current (flow) that is ever-present in the Devil's Eye cave system. Small orientation errors resulted in deviation of the line segments; see Fig. <ref type="figure" target="#fig_0">2</ref>, however, the Ariane <ref type="bibr" target="#b42">[43]</ref> software optimized the marked loop closures resulting in the map presented in Fig. <ref type="figure">4</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Sparse reconstruction, Camera Trajectory Generation, Cave Mapping</head><p>The SVIn2 <ref type="bibr" target="#b21">[22]</ref>, <ref type="bibr" target="#b32">[33]</ref> package was utilized to extract the camera pose trajectories and sparse point clouds for each of the three cameras (left, center, and right). The un-aligned trajectories can be seen in Fig. <ref type="figure">4</ref> on the left. By utilizing the calibration target placed at the beginning of the catacombs section, the three trajectories are aligned in a common frame of reference and adjusted to the correct depth (z-dimension); see Fig. <ref type="figure">4</ref>. The resulting sparse point cloud representations can be seen in Fig. <ref type="figure" target="#fig_5">5</ref> for the left, center, and right GoPro respectively, while the combined dataset, aligned in the same coordinate frame can be seen in the right image of Fig. <ref type="figure" target="#fig_5">5</ref>. Please note that the center camera covers more of the ceiling, while the left and right capture more of the walls. The segment of the main passage near the main line (see Fig. <ref type="figure">4</ref> center) is characterized by a high ceiling and wide passage, which was reflected in the lack of detected points in all three cameras.</p><p>The three trajectories are used as a guideline for the center of the passage. A pose of the center trajectory is selected and every pose in all three trajectories is flagged. The flagged poses are used to calculate an average pose, and then the next pose of the center camera that has not been flagged is selected. The average trajectory produced can in seen in Fig. <ref type="figure">4</ref>. The Minimum Spanning Tree (MST) algorithm is used to connect these average poses and from each one the closest point on the left and right of the average pose (at the same depth -z-coordinate) is selected. Fig. <ref type="figure" target="#fig_6">6</ref> presents the average trajectory in green, the left wall in red and the right wall in blue. As can be seen, this naive method is sensitive in the order of traversal for designating left and right boundaries, and the MST does not capture the full connectivity of the passages. We cleaned up manually the data -see the center image of Fig. <ref type="figure" target="#fig_6">6</ref> -and the variability in the passage width is captured. Inside the catacombs, the passages are narrower, while at the main line the passage is wide. In addition, the point above and below the average pose (green) are selected, marking the ceiling (red) and the floor (blue) of the passage; see Fig. <ref type="figure" target="#fig_6">6</ref>, where the floor is mapped at an approximately constant distance from the average camera pose while the ceiling displayed greater variability. Over the years, materials brought by the water accumulate on the floor, smoothing it and filling any holes, while the ceiling erodes over time, generating a lot more 3D structure.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Dense reconstruction</head><p>From the three cameras, more than forty thousand keyframes were generated. In this paper, we selected six representative areas; see Fig. <ref type="figure" target="#fig_7">7</ref>, for dense reconstruction. For each area, we picked one central pose, taken as the pose for a particular image from the center camera. We then found all keyframes, from all three cameras, with poses inside a radius of 2.5 meters, as measured from the central pose, except area 5 where a radius of 5 meters was used. Reconstruction was performed using the global optimization package COLMAP <ref type="bibr" target="#b46">[47]</ref>, where the camera poses from SVIn2 were used as constraints, as described in the previous section. From the resulting dense Poisson mesh, representative views are displayed in Fig. <ref type="figure">8</ref>. More specifically, the calibration target is clearly visible at the right side of the passage, while the entry to the catacombs is visible to the left. Areas 2-4 and 6 are inside the catacombs and are characterized by narrow passages. It is worth noting that the floor is relatively flat, while the ceiling presents a more detailed structure; see Area 4 and 6. Area 5 was selected outside the catacombs, in the main passage of the cave. In this relatively open area, distant points are visible in our keyframes. A limited number of pixels cover an extended area, resulting in a very noisy reconstruction. The dense point cloud captures the rocks that exist in the middle of the main passage, as can be seen in Fig. <ref type="figure">8</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>V. CONCLUSIONS AND FUTURE WORK</head><p>We presented a framework for mapping underwater caves, utilizing inexpensive action cameras and a dive computer, available to scuba divers. The proposed pipeline based on VI SLAM and SfM allows for sparse and dense reconstruction of parts of the caves on a cave dataset (which will be publicly released) with several branches and loops extending for more than 1km.</p><p>The results showed the ability of the proposed framework to reliably estimate the camera trajectory and achieve dense reconstructions in sections of the cave.</p><p>We plan several research directions in the immediate short term based on some of the lessons learned from this paper. While the trajectory looks accurate, achieving a dense map of the whole cave system was unattainable, because there were many outliers preventing a good reconstruction. In addition, the occupied memory raised significantly, making it challenging to manage even on a powerful workstation with 256GB. We plan to investigate strategies to iteratively perform dense reconstruction in a window. We also plan to add to the dataset a 3D sonar released by WaterLinked that has a narrow beam and provides a 3D point cloud.   The aligned trajectories were used as a guideline to select interesting areas for dense reconstruction. On the left, the six areas selected. In the middle, the parts of the trajectories used for the dense reconstruction. On the right, the Poisson reconstruction of the six areas.</p><p>In the longer term, we plan to integrate the pipeline for real-time 3D reconstruction for eventual robot navigation, towards autonomous mapping of underwater caves.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 2 :</head><label>2</label><figDesc>Fig.2: MNemo<ref type="bibr" target="#b41">[42]</ref>: underwater cave survey data acquisition device. Raw data collected by MNemo with loops manually selected for least square loop closure in the Ariane software<ref type="bibr" target="#b42">[43]</ref>.</figDesc><graphic coords="3,68.12,283.11,110.06,102.18" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 3 :</head><label>3</label><figDesc>Fig. 3: (a) The SVIn2 z-coordinates (red) and the dive computer depth (blue) before synchronization for the left GoPro dataset. (b) The two time series shifted to a common time but at different scales. (c) Linear regression between the SVIn2 and the Perdix data. (d) The depth estimates time-shifted and with adjusted depth; in red, the SVIn2 produced trajectory; in blue, the data from the dive computer, for the left GoPro dataset. (e),(f) The depth estimates time-shifted and with adjusted depth; in red, the SVIn2 produced trajectory; in blue, the data from the dive computer, for the right and center GoPro datasets respectively.</figDesc><graphic coords="3,316.50,253.49,118.92,89.19" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>3</head><label>3</label><figDesc></figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>(e)) and Catacombs-Center (see Fig. 3(f)) datasets. For all three datasets, the GoPro (SVIn2) time was shifted by 9.64 min relative to the initial Perdix time. The depth offsets were 19.39 m (Catacombs-Left), 19.4 m (Catacombs-Right), and 19.36 m (Catacombs-Center), respectively. These results reflect the experimental setup, as the three GoPro cameras were aligned in the rig, had similar depths and were set to the same time zone.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head></head><label></label><figDesc>estimate an average pose. If there are two trajectories (A and B) the result is two poses P W A m and P W B m for the same target in two different coordinate systems. The coordinate transformation from World frame B to world frame A is</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 5 :</head><label>5</label><figDesc>Fig. 5: The left, center, and right GoPro cameras, sparse point cloud produced by SVIn2. On the right, the combined point cloud from all three cameras.</figDesc><graphic coords="6,115.64,193.70,107.17,122.66" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 6 :</head><label>6</label><figDesc>Fig. 6: Left: the average trajectory (in green) connected using the minimum spanning tree (MST) together with the two walls, left (blue) and right (red) extracted from the combined sparse point cloud. Center: the left and right walls (adjusted manually) showing the width of the cave.</figDesc><graphic coords="6,345.07,362.56,150.75,120.36" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 7 :</head><label>7</label><figDesc>Fig.7: The aligned trajectories were used as a guideline to select interesting areas for dense reconstruction. On the left, the six areas selected. In the middle, the parts of the trajectories used for the dense reconstruction. On the right, the Poisson reconstruction of the six areas.</figDesc><graphic coords="6,228.04,363.08,119.52,120.14" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Presented at the 2025 IEEE ICRA Workshop on Field Robotics</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_1"><p>In cave diving the passages are characterized as back-mount, where the diver carries double scuba tanks on their back; side-mount, where the tanks are slunk on the diver's side, thus creating a narrower vertical profile; and nomount, where the diver pushes their tanks in front of them, while breathing from them.</p></note>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><p>This research has been supported in part by the <rs type="funder">National Science Foundation</rs> under grants <rs type="grantNumber">1943205</rs>, <rs type="grantNumber">2024541</rs>, <rs type="grantNumber">2024653</rs>, and <rs type="grantNumber">2024741</rs>. The authors are grateful for the assistance of <rs type="person">Greg St Amand</rs>, <rs type="person">Per Normark</rs>, and <rs type="person">Evelyn Unti</rs> during the data collection. Furthermore, the authors would like to acknowledge the help from <rs type="funder">Woodville Karst Plain Project (WKPP)</rs>, <rs type="funder">El Centro Investigador del Sistema Acuífero de Quintana Roo A.C. (CINDAQ)</rs>, <rs type="funder">Global Underwater Explorers (GUE)</rs>, <rs type="person">Ricardo Constantino</rs>, and <rs type="person">Project Baseline</rs> over the years in providing access to challenging underwater caves and mentoring us in underwater cave mapping. The authors are also grateful for equipment support by <rs type="person">Halcyon Dive Systems</rs>, <rs type="person">Teledyne FLIR LLC</rs>, and KELDAN GmbH lights.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_7jQuEvV">
+					<idno type="grant-number">1943205</idno>
+				</org>
+				<org type="funding" xml:id="_Cz3cGen">
+					<idno type="grant-number">2024541</idno>
+				</org>
+				<org type="funding" xml:id="_7tdJFNu">
+					<idno type="grant-number">2024653</idno>
+				</org>
+				<org type="funding" xml:id="_bm8XZ6F">
+					<idno type="grant-number">2024741</idno>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Williams</surname></persName>
+		</author>
+		<title level="m">Introduction to Karst</title>
+		<imprint>
+			<publisher>Ltd</publisher>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Precipitation Analysis for Hydrologic Modeling</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Covington</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Doctor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>King</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Wicks</surname></persName>
+		</author>
+		<idno type="DOI">10.1029/sp004</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Research in Karst: A Model for Future Directions in Hydrologic Science</title>
+		<imprint>
+			<publisher>American Geophysical Union</publisher>
+			<date type="published" when="2011-07">July 2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mckinlay</surname></persName>
+		</author>
+		<ptr target="http://www.wkpp.org" />
+		<title level="m">Woodville Karst Plain Project (WKPP)</title>
+		<imprint>
+			<date type="published" when="2015-04">Apr. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Global Underwater Explorers</title>
+		<ptr target="https://www.globalunderwaterexplorers.org/Projects/WKPP" />
+	</analytic>
+	<monogr>
+		<title level="m">Woodville Karst Plain Project (WKPP)</title>
+		<imprint>
+			<date type="published" when="2015-04">Apr. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">World longest underwater caves</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gulden</surname></persName>
+		</author>
+		<ptr target="http://www.caverbob.com/uwcaves.htm" />
+		<imprint>
+			<date type="published" when="2015-04">Apr. 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">The Archaeology of Underwater Caves</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Campbell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ed</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017-11">Nov. 2017</date>
+			<publisher>The Highfield Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">An introduction to archaeology in underwater caves</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Campbell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The archaeology of underwater caves</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="5" to="25" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The arrival of humans on the Yucatan Peninsula: Evidence from submerged caves in the state of Quintana Roo, Mexico</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H G</forename><surname>González</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Sandoval</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">T</forename><surname>Mata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Sanvicente</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Acevez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Current Research in the Pleistocene</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="1" to="24" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Underwater archaeology and prehistory: the case of the cenotes in mexico</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Arroyo-Cabrales</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Luna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Chatters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rissolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Arce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N</forename><surname>Blank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Barba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">WORLD HERITAGE HEADS</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">54</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Novel application of 3d documentation techniques at a submerged late pleistocene cave site in quintana roo, mexico</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rissolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N</forename><surname>Blank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Petrovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Arce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Jaskolski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">L</forename><surname>Erreguerena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Chatters</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Digital Heritage</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="181" to="182" />
+			<date type="published" when="2015">2015. 2015</date>
+			<publisher>IEEE</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Ancient remains and the first peopling of the americas: Reassessing the hoyo negro skull</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>De Azevedo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">C</forename><surname>Bortolini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Bonatto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Hünemeier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">R</forename><surname>Santos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>González-José</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Physical Anthropology</title>
+		<imprint>
+			<biblScope unit="volume">158</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="514" to="521" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Dense (Poisson) reconstructions from the six areas depicted in Fig. 7. Area 1: the start of the recordings, the calibration target is clearly visible. Area 2: inside the catacombs, see the boundaries of the tunnel. Area 3: as the images for the dense reconstruction are limited, the tunnel is interrupted. Area 4: the floor and walls of the passage are clearly visible of special interest are the formations from the ceiling. Area 5: this was an open area with the walls and ceiling of the tunnel too far to be illuminated. Dense reconstruction point cloud of the floor and some rock formations. Area 6: another narrow passage, with a flat floor</title>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">L</forename><surname>Macdonald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Chatters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">G</forename><surname>Reinhardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Devos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Meacham</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rissolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Rock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Le Maillot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Stalla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Marino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science advances</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">27</biblScope>
+			<biblScope unit="page">1219</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note>Paleoindian ochre mines in the submerged caves of the yucatán peninsula, quintana roo, mexico</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The Underwater Archaeology of Paleolandscapes, Apalachee Bay, Florida</title>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">K</forename><surname>Faught</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/4128420</idno>
+	</analytic>
+	<monogr>
+		<title level="j">American Antiquity</title>
+		<title level="j" type="abbrev">Am. antiq.</title>
+		<idno type="ISSN">0002-7316</idno>
+		<idno type="ISSNe">2325-5064</idno>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="275" to="289" />
+			<date type="published" when="2004-04">2004</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Greece: Unstable Landscapes and Underwater Archaeology</title>
+		<author>
+			<persName><forename type="first">Nena</forename><surname>Galanidou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katerina</forename><surname>Dellaporta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitris</forename><surname>Sakellariou</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-37367-2_19</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Coastal Research Library</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="371" to="392" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">An archaeological survey of an underwater cave in marigondon, philippines</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Peterson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jalandoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rocha</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The archaeology of underwater caves</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The importance of cave exploration to scientific research</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kambesis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of cave and karst studies</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="46" to="58" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Exploration of caves: Underwater exploration</title>
+		<author>
+			<persName><forename type="first">Jill</forename><surname>Heinerth</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-814124-3.00048-0</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Encyclopedia of Caves</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="414" to="419" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Basic Cave Diving: A Blueprint for Survival</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Exley</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1977">1977</date>
+			<publisher>National Speleological Society Cave Diving Section</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Perception for Underwater Robots</title>
+		<author>
+			<persName><forename type="first">John</forename><surname>Mcconnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivana</forename><surname>Collado-Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Englot</surname></persName>
+			<idno type="ORCID">0000-0002-7966-2917</idno>
+		</author>
+		<idno type="DOI">10.1007/s43154-022-00096-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Current Robotics Reports</title>
+		<title level="j" type="abbrev">Curr Robot Rep</title>
+		<idno type="ISSNe">2662-4087</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="177" to="186" />
+			<date type="published" when="2022-10-24">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Computer vision applications in underwater robotics and oceanography</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Quattrini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">A</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Girdhar</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Rekleitis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Vision: Challenges, Trends, and Opportunities</title>
+		<editor>
+			<persName><forename type="first">M</forename><forename type="middle">A R</forename><surname>Ahad</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">U</forename><surname>Mahbub</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Turk</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Hartley</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>CRC Press</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="173" to="204" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Underwater cave mapping using stereo vision</title>
+		<author>
+			<persName><forename type="first">Nick</forename><surname>Weidner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sharmin</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alberto</forename><forename type="middle">Quattrini</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Rekleitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icra.2017.7989672</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE International Conference on Robotics and Automation (ICRA)</title>
+		<meeting><address><addrLine>Singapore</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-05">May 2017</date>
+			<biblScope unit="page" from="5709" to="5715" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">SVIn2: A multi-sensor fusion-based underwater SLAM system</title>
+		<author>
+			<persName><forename type="first">Sharmin</forename><surname>Rahman</surname></persName>
+			<idno type="ORCID">0000-0002-4343-9561</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alberto</forename><surname>Quattrini Li</surname></persName>
+			<idno type="ORCID">0000-0002-4094-9793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Rekleitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/02783649221110259</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The International Journal of Robotics Research</title>
+		<title level="j" type="abbrev">The International Journal of Robotics Research</title>
+		<idno type="ISSN">0278-3649</idno>
+		<idno type="ISSNe">1741-3176</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">11-12</biblScope>
+			<biblScope unit="page" from="1022" to="1042" />
+			<date type="published" when="2022-07-13">July 2022</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Recent trends in cultural heritage 3D survey: The photogrammetric computer vision approach</title>
+		<author>
+			<persName><forename type="first">Irene</forename><surname>Aicardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Filiberto</forename><surname>Chiabrando</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Maria Lingua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francesca</forename><surname>Noardo</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.culher.2017.11.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cultural Heritage</title>
+		<title level="j" type="abbrev">Journal of Cultural Heritage</title>
+		<idno type="ISSN">1296-2074</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page" from="257" to="266" />
+			<date type="published" when="2018-07">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">A Survey on Active Simultaneous Localization and Mapping: State of the Art and New Frontiers</title>
+		<author>
+			<persName><forename type="first">Julio</forename><forename type="middle">A</forename><surname>Placed</surname></persName>
+			<idno type="ORCID">0000-0002-1361-9529</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jared</forename><surname>Strader</surname></persName>
+			<idno type="ORCID">0000-0002-3978-9542</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Carrillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolay</forename><surname>Atanasov</surname></persName>
+			<idno type="ORCID">0000-0003-0272-7580</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vadim</forename><surname>Indelman</surname></persName>
+			<idno type="ORCID">0000-0002-1863-3442</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Carlone</surname></persName>
+			<idno type="ORCID">0000-0003-1884-5397</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">A</forename><surname>Castellanos</surname></persName>
+			<idno type="ORCID">0000-0001-5977-8720</idno>
+		</author>
+		<idno type="DOI">10.1109/tro.2023.3248510</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Robotics</title>
+		<title level="j" type="abbrev">IEEE Trans. Robot.</title>
+		<idno type="ISSN">1552-3098</idno>
+		<idno type="ISSNe">1941-0468</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1686" to="1705" />
+			<date type="published" when="2023-06">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Gaussian splashing: Direct volumetric rendering underwater</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Mualem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Amoyal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Freifeld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Akkaynak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">arXiv</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Design and Deployment of a 3-D Autonomous Subterranean Submarine Exploration Vehicle</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Stone</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Symposium on Unmanned Untethered Submersible Technologies (UUST)</title>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">3D mapping and characterization of sistema Zacatón from DEPTHX (DEep Phreatic THermal eXplorer)</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fairfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">C</forename><surname>Stone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wettergreen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kantor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Sharp</surname><genName>Jr</genName></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. of KARST: Sinkhole Conference ASCE</title>
+		<meeting>of KARST: Sinkhole Conference ASCE</meeting>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">SUNFISH&lt;sup&gt;®&lt;/sup&gt;: A human-portable exploration AUV for complex 3D environments</title>
+		<author>
+			<persName><forename type="first">Kristof</forename><surname>Richmond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Flesher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Lindzey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neal</forename><surname>Tanner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">C</forename><surname>Stone</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/oceans.2018.8604899</idno>
+	</analytic>
+	<monogr>
+		<title level="m">OCEANS 2018 MTS/IEEE Charleston</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-10">2018</date>
+			<biblScope unit="page" from="1" to="9" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Three‐dimensional reconstruction of underwater objects using wide‐aperture imaging SONAR</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Guerneve</surname></persName>
+			<idno type="ORCID">0000-0003-2557-1275</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kartic</forename><surname>Subr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yvan</forename><surname>Petillot</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/rob.21783</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Field Robotics</title>
+		<title level="j" type="abbrev">Journal of Field Robotics</title>
+		<idno type="ISSN">1556-4959</idno>
+		<idno type="ISSNe">1556-4967</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="890" to="905" />
+			<date type="published" when="2018-03-31">2018</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Sonar Visual Inertial SLAM of Underwater Structures</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Quattrini</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Rekleitis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Robotics and Automation</title>
+		<meeting><address><addrLine>Brisbane, Australia</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2018-05">May 2018</date>
+			<biblScope unit="page" from="5190" to="5196" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">SVIn2: An Underwater SLAM System using Sonar, Visual, Inertial, and Depth Sensor</title>
+		<author>
+			<persName><forename type="first">Sharmin</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alberto</forename><forename type="middle">Quattrini</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Rekleitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iros40897.2019.8967703</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</title>
+		<title level="s">IROS ICROS Best Application Paper Award. Finalist)</title>
+		<meeting><address><addrLine>Macau</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-11">Nov. 2019</date>
+			<biblScope unit="page" from="1861" to="1868" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">A modular sensor suite for underwater reconstruction</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Karapetyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Quattrini</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Rekleitis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">MTS/IEEE OCEANS -Charleston</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">High Definition, Inexpensive, Underwater Mapping</title>
+		<author>
+			<persName><forename type="first">Bharat</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marios</forename><surname>Xanthidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sharmin</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Rekleitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icra46639.2022.9811695</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 International Conference on Robotics and Automation (ICRA)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-05-23">2022</date>
+			<biblScope unit="page" from="1113" to="1121" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Contour based Reconstruction of Underwater Structures Using Sonar, Visual, Inertial, and Depth Sensor</title>
+		<author>
+			<persName><forename type="first">Sharmin</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alberto</forename><forename type="middle">Quattrini</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Rekleitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iros40897.2019.8967697</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</title>
+		<meeting><address><addrLine>Macau</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-11">Nov. 2019</date>
+			<biblScope unit="page" from="8054" to="8059" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Photogrammetry as a promising tool to unveil marine caves’ benthic assemblages</title>
+		<author>
+			<persName><forename type="first">Torcuato</forename><surname>Pulido Mantas</surname></persName>
+			<idno type="ORCID">0000-0002-0260-8373</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Camilla</forename><surname>Roveta</surname></persName>
+			<idno type="ORCID">0000-0001-8629-7113</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Barbara</forename><surname>Calcinai</surname></persName>
+			<idno type="ORCID">0000-0002-9004-0051</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martina</forename><surname>Coppari</surname></persName>
+			<idno type="ORCID">0000-0002-3178-9409</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cristina</forename><forename type="middle">Gioia</forename><surname>Di Camillo</surname></persName>
+			<idno type="ORCID">0000-0002-4031-8158</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Veronica</forename><surname>Marchesi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Teo</forename><surname>Marrocco</surname></persName>
+			<idno type="ORCID">0000-0002-3851-9858</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefania</forename><surname>Puce</surname></persName>
+			<idno type="ORCID">0000-0002-8163-1554</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlo</forename><surname>Cerrano</surname></persName>
+			<idno type="ORCID">0000-0001-9580-5546</idno>
+		</author>
+		<idno type="DOI">10.1038/s41598-023-34706-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">7587</biblScope>
+			<date type="published" when="2023-05-10">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Underwater Cultural Heritage Documentation Using Photogrammetry</title>
+		<author>
+			<persName><forename type="first">Alessio</forename><surname>Calantropio</surname></persName>
+			<idno type="ORCID">0000-0002-4524-3693</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Filiberto</forename><surname>Chiabrando</surname></persName>
+			<idno type="ORCID">0000-0002-4982-5236</idno>
+		</author>
+		<idno type="DOI">10.3390/jmse12030413</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marine Science and Engineering</title>
+		<title level="j" type="abbrev">JMSE</title>
+		<idno type="ISSNe">2077-1312</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">413</biblScope>
+			<date type="published" when="2024-02-26">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Visual-Inertial Odometry for Metric-Scale Mapping of Underwater Caves</title>
+		<author>
+			<persName><forename type="first">Arthur</forename><surname>Lago</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nuno</forename><surname>Neves</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rodrigo</forename><surname>Ventura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><surname>Gaspar</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icarsc61747.2024.10535924</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE International Conference on Autonomous Robot Systems and Competitions (ICARSC)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-05-02">2024</date>
+			<biblScope unit="page" from="183" to="188" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Underwater caves sonar data set</title>
+		<author>
+			<persName><forename type="first">Angelos</forename><surname>Mallios</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eduard</forename><surname>Vidal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricard</forename><surname>Campos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Carreras</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0278364917732838</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The International Journal of Robotics Research</title>
+		<title level="j" type="abbrev">The International Journal of Robotics Research</title>
+		<idno type="ISSN">0278-3649</idno>
+		<idno type="ISSNe">1741-3176</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1247" to="1251" />
+			<date type="published" when="2017-10">2017</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Experimental Comparison of Open Source Visual-Inertial-Based State Estimation Algorithms in the Underwater Domain</title>
+		<author>
+			<persName><forename type="first">Bharat</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sharmin</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michail</forename><surname>Kalaitzakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brennan</forename><surname>Cain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marios</forename><surname>Xanthidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nare</forename><surname>Karapetyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Hernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alberto</forename><forename type="middle">Quattrini</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolaos</forename><surname>Vitzilaios</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Rekleitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iros40897.2019.8968049</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-11">2019</date>
+			<biblScope unit="page" from="7227" to="7233" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">CaveSeg: Deep Semantic Segmentation and Scene Parsing for Autonomous Underwater Cave Exploration</title>
+		<author>
+			<persName><forename type="first">Adnan</forename><surname>Abdullah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Titon</forename><surname>Barua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reagan</forename><surname>Tibbetts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zijie</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Jahidul</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Rekleitis</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icra57147.2024.10611543</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE International Conference on Robotics and Automation (ICRA)</title>
+		<meeting><address><addrLine>Yokohama, Japan</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-05-13">May 2024</date>
+			<biblScope unit="page" from="3781" to="3788" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<title level="m" type="main">gopro ros: Software for converting a GoPro video into a ROS 1 bagfile</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Joshi</surname></persName>
+		</author>
+		<ptr target="https:\/\/github.com\/AutonomousFieldRoboticsLab\/goproros" />
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">MNemo: Cave Survey Data Acquisition</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kister</surname></persName>
+		</author>
+		<ptr target="https:\/\/www.arianesline.com\/mnemo\/" />
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">LAS VEGAS SANDS CORP., a Nevada corporation, Plaintiff, v. UKNOWN REGISTRANTS OF www.wn0000.com, www.wn1111.com, www.wn2222.com, www.wn3333.com, www.wn4444.com, www.wn5555.com, www.wn6666.com, www.wn7777.com, www.wn8888.com, www.wn9999.com, www.112211.com, www.4456888.com, www.4489888.com, www.001148.com, and www.2289888.com, Defendants.</title>
+		<idno type="DOI">10.1089/glre.2016.201011</idno>
+		<ptr target="https:\/\/www.arianesline.com\/mnemo\/" />
+	</analytic>
+	<monogr>
+		<title level="j">Gaming Law Review and Economics</title>
+		<title level="j" type="abbrev">Gaming Law Review and Economics</title>
+		<idno type="ISSN">1097-5349</idno>
+		<idno type="ISSNe">1941-5494</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="859" to="868" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Mary Ann Liebert Inc</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Camera-IMU-based localization: Observability analysis and consistency improvement</title>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">A</forename><surname>Hesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitrios</forename><forename type="middle">G</forename><surname>Kottas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><forename type="middle">L</forename><surname>Bowman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stergios</forename><forename type="middle">I</forename><surname>Roumeliotis</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0278364913509675</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The International Journal of Robotics Research</title>
+		<title level="j" type="abbrev">The International Journal of Robotics Research</title>
+		<idno type="ISSN">0278-3649</idno>
+		<idno type="ISSNe">1741-3176</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="182" to="201" />
+			<date type="published" when="2014">2014</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Observability analysis of aided ins with heterogeneous features of points, lines, and planes</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Robotics</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1399" to="1418" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Pure python version of aprilgrid</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lin</surname></persName>
+		</author>
+		<ptr target="https:\/\/github.com\/powei-lin\/aprilgrid" />
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Structure-from-Motion Revisited</title>
+		<author>
+			<persName><forename type="first">Johannes</forename><forename type="middle">L</forename><surname>Schonberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan-Michael</forename><surname>Frahm</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2016.445</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-06">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Screened poisson surface reconstruction</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Kazhdan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugues</forename><surname>Hoppe</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2487228.2487237</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Graphics</title>
+		<title level="j" type="abbrev">ACM Trans. Graph.</title>
+		<idno type="ISSN">0730-0301</idno>
+		<idno type="ISSNe">1557-7368</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2013-06">2013</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

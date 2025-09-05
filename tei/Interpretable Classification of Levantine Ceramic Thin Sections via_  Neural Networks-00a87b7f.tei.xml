@@ -1,0 +1,1982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Interpretable Classification of Levantine Ceramic Thin Sections via Neural Networks</title>
+				<funder>
+					<orgName type="full">Sapienza University of Rome</orgName>
+				</funder>
+				<funder ref="#_26aNBMC">
+					<orgName type="full">Sapienza</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-06-13">13 Jun 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Sara</forename><surname>Capriotti</surname></persName>
+							<email>sara.capriotti@uniroma1.it</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Earth Sciences</orgName>
+								<orgName type="institution">Sapienza University of Rome</orgName>
+								<address>
+									<addrLine>P.le Aldo Moro 5</addrLine>
+									<postCode>00185</postCode>
+									<settlement>Rome</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Alessio</forename><surname>Devoto</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Computer, Control and Management Engineering</orgName>
+								<orgName type="institution">Sapienza University of Rome</orgName>
+								<address>
+									<addrLine>Via Ariosto 25</addrLine>
+									<postCode>00185</postCode>
+									<settlement>Rome</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Simone</forename><surname>Scardapane</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Department of Information Engineering, Electronics and Telecommunications</orgName>
+								<orgName type="institution">Sapienza University of Rome</orgName>
+								<address>
+									<addrLine>Via Eudossiana 18</addrLine>
+									<postCode>00184</postCode>
+									<settlement>Rome</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Silvano</forename><surname>Mignardi</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Earth Sciences</orgName>
+								<orgName type="institution">Sapienza University of Rome</orgName>
+								<address>
+									<addrLine>P.le Aldo Moro 5</addrLine>
+									<postCode>00185</postCode>
+									<settlement>Rome</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Laura</forename><surname>Medeghini</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Earth Sciences</orgName>
+								<orgName type="institution">Sapienza University of Rome</orgName>
+								<address>
+									<addrLine>P.le Aldo Moro 5</addrLine>
+									<postCode>00185</postCode>
+									<settlement>Rome</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Interpretable Classification of Levantine Ceramic Thin Sections via Neural Networks</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-06-13">13 Jun 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">D05987D514D393F32AA0B585B77833B9</idno>
+					<idno type="arXiv">arXiv:2506.12250v1[cs.CE]</idno>
+					<note type="submission">Submitted to: Machine Learning: Science and Technology</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:26+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Levantine ceramics</term>
+					<term>Materials Science</term>
+					<term>Deep Learning</term>
+					<term>Explainable AI</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Classification of ceramic thin sections is fundamental for understanding ancient pottery production techniques, provenance, and trade networks. Although effective, traditional petrographic analysis is time-consuming. This study explores the application of deep learning models, specifically Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs), as complementary tools to support the classification of Levantine ceramics based on their petrographic fabrics. A dataset of 1,424 thin section images from 178 ceramic samples belonging to several archaeological sites across the Levantine area, mostly from the Bronze Age, with few samples dating to the Iron Age, was used to train and evaluate these models. The results demonstrate that transfer learning significantly improves classification performance, with a ResNet18 model achieving 92.11% accuracy and a ViT reaching 88.34%. Explainability techniques, including Guided Grad-CAM and attention maps, were applied to interpret and visualize the models' decisions, revealing that both CNNs and ViTs successfully focus on key mineralogical features for the classification of the samples into their respective petrographic fabrics. These findings highlight the potential of explainable AI in archaeometric studies, providing a reproducible and efficient methodology for ceramic analysis while maintaining transparency in model decision-making.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The archaeological context of the Levantine region is both particularly significant and complex, as numerous archaeological sites emerged during the Early Bronze Age, a period characterized by urbanization, trade networks, and political complexity <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>. During this phase, the first urban societies in the region took shape. The process of urbanization was marked by the aggregation of local settlements, the formation of regional centers, and the fortification of villages, reflecting a shift toward more centralized form of organization. These transformations included the simplification of material culture and the reorganization of craft production <ref type="bibr" target="#b2">[3]</ref>. One example of this process is Tell el-Far'ah (North), with strong fortifications and standardized ceramic production suggesting the presence of large workshops and inter-community exchange. While urbanization began earlier in the southern areas of the Levantine region, northern parts followed this path a bit later with key sites like Ebla showing signs of complex administration and organized settlement planning <ref type="bibr" target="#b3">[4,</ref><ref type="bibr" target="#b4">5]</ref>.Therefore, over the past decades, there has been a growing interest in studying this region to understand and reconstruct the changes and developments that have been observed in various archaeological sites. The study of ancient ceramics plays a central role in understanding the social and cultural identity of the region from the Bronze Age, as it provides information on social, cultural, and technological development as well as the evolution of ancient civilizations. Indeed, an archaeometric characterization of ancient ceramic materials can define the nature and provenance of raw materials used in production that help to define trade routes and interaction among past societies <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b6">7,</ref><ref type="bibr" target="#b7">8]</ref>.</p><p>Currently, petrographic analysis of ceramic thin sections is one of the most effective and widely used methods for archaeometric characterization and reconstruction of the technological and material features of ceramics. The petrographic analysis also includes the identification of fabrics, groups of thin sections sharing similar characteristics, and representative of the chaîne opératoire, i.e. the actions and technological choices that led to the formation of the final product <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b9">10]</ref>. Therefore, the grouping of thin sections in fabrics has been widely applied to define the different "recipes" used in ceramic production and to distinguish between local or imported wares <ref type="bibr" target="#b10">[11]</ref>. Specifically, petrographic analyses can help in the recognition of specific ware types as locals and in identifying patterns of exchange of pottery within the region <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b12">13,</ref><ref type="bibr" target="#b13">14,</ref><ref type="bibr" target="#b14">15]</ref>. In other cases, they have contributed to the identification of relationships between ancient production centers and their surrounding geological settings <ref type="bibr" target="#b15">[16,</ref><ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b17">18]</ref>. However, reconstructing ancient exchanges and defining trade profiles remain challenging due to the still limited petrographic studies on large ceramic assemblages, resulting in a lack of comparative data useful for identifying potential relationships and interactions. Moreover, although minero-petrographic characterization is a well-established and effective method for studying pottery assemblages, it is time-consuming and challenging to compare results across different archaeological contexts. This is partly due to the dispersion of petrographic data across various sources such as specialist journals, monographs, conference proceedings, and excavation reports.</p><p>In recent decades, there has been a growing interest in applying Machine Learning (ML) and/or Deep Learning (DL) techniques to archaeology in a variety of ways, including the identification of archaeological sites and structures <ref type="bibr" target="#b18">[19,</ref><ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b20">21]</ref>, and the classification or recognition of archaeological artifacts. Recent applications have involved the use of neural networks for the prediction of morphological features of lithic artifacts even when these are fragmented or incomplete <ref type="bibr" target="#b21">[22,</ref><ref type="bibr" target="#b22">23]</ref>. Other applications include the use of Laser-Induced Breakdown Spectroscopy (LIBS) combined with neural networks to attribute archaeological bone remains to specific individuals <ref type="bibr" target="#b23">[24]</ref>. Additionally, Lithic Use-Wear Analysis (LUWA) using microscopic images has been employed to study the working traces on lithic artifacts <ref type="bibr" target="#b24">[25]</ref>. Concerning the study of ceramics, automated methodologies have become powerful tools for resolving classification tasks, significantly contributing to the recognition of specific compositional, technological, or stylistic patterns <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b26">27]</ref>. Today, several algorithms have been tested for the classification of pottery based on the study of their typology, decoration, and shape <ref type="bibr" target="#b27">[28,</ref><ref type="bibr" target="#b28">29]</ref>. ML models have also been applied in provenance analysis, where ceramic samples have been classified through the elaboration of geochemical data <ref type="bibr" target="#b29">[30,</ref><ref type="bibr" target="#b30">31,</ref><ref type="bibr" target="#b31">32]</ref>. Among these approaches, Artificial Neural Networks (ANNs) have been employed to determine ceramic provenance using LIBS spectra <ref type="bibr" target="#b32">[33]</ref>. ANNs have further been used for the analysis of ceramic thin sections with the aim of facilitating the fabric classification, in combination with image analysis to identify inclusions and pores in thin sections by working with parameters such as color, shape, size, percentage of inclusions and porosity <ref type="bibr" target="#b33">[34]</ref>. Recent studies focused on the development of a DL model based on Convolutional Neural Networks (CNNs) to classify ceramic thin sections into their respective petrographic fabrics <ref type="bibr" target="#b34">[35,</ref><ref type="bibr" target="#b35">36]</ref>.</p><p>CNNs are specifically designed for image pattern recognition. They consist of a series of layers among which the convolutional ones play a fundamental role, allowing the detection of characteristic patterns meaningful for accurate classification <ref type="bibr" target="#b36">[37]</ref>.</p><p>Recently, Transformers-based models have emerged as a significant alternative to CNNs. Vision Transformers <ref type="bibr" target="#b37">[38]</ref> (ViTs) operate using multi-head self-attention instead of convolution and process input images by dividing them into patches. This approach captures both local and global dependencies, facilitating the identification of relationships across the entire image <ref type="bibr" target="#b38">[39]</ref>. Yang et al. have explored the combination of channel and self-attention mechanisms within CNN architectures to improve their discriminative power in the classification of Ming-Qing ceramics <ref type="bibr" target="#b39">[40]</ref>.</p><p>Despite being extremely accurate, modern DL methods are highly complex, often consisting of hundreds of layers and parameters, making it difficult to determine which features the model relies on for classification. As a consequence, predictions are usually difficult to explain. For this reason, such models are often considered 'black boxes', as they do not provide any direct explanation or insights about their predictions <ref type="bibr" target="#b40">[41]</ref>. In order to tackle this limitation, Explainable Artificial Intelligence (XAI) emerged as a field aimed at studying the interpretability of ML models <ref type="bibr" target="#b41">[42,</ref><ref type="bibr" target="#b42">43]</ref>. Understanding what the model has learned allows for further validation of its accuracy, also ensuring that it is based on the correct variables during the training phase, allowing the identification of potential limitations and building trust in the model's performance <ref type="bibr" target="#b43">[44,</ref><ref type="bibr" target="#b44">45]</ref>. In the context of XAI, saliency maps and attention maps are visual tools that help to understand a model's decision <ref type="bibr" target="#b45">[46]</ref>. To the best of our knowledge, neither ViTs nor explainability techniques have been applied to the ceramic petrographic fabric classification. The only similar study applied Grad-CAM (Gradient-based Class Activation Maps) to visualize the key features used by a CNN model for petrographic classification, although explainability was not its main focus <ref type="bibr" target="#b35">[36]</ref>. Other related works have employed Grad-CAM to interpret CNN predictions for the typological and/or chronological classification of ceramic sherds and vessels <ref type="bibr" target="#b26">[27,</ref><ref type="bibr" target="#b46">47,</ref><ref type="bibr" target="#b39">40]</ref>. The present research focuses on the application of automated methodologies for the classification of Levantine ceramics into their petrographic fabrics using deep learning models, specifically Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs). The aim is to investigate the potential of these models in the field of petrographic studies of pottery. The performance of these models is compared to evaluate their effectiveness in classification tasks. Furthermore, the research provides a partial interpretation of CNNs and ViTs using several forms of visual explanations. The objective is a deeper understanding of the classification process by visualizing the distinctive features that most influenced the models' predictions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Materials and Methods</head><p>The starting point for the implementation of the DL models consisted of a phase of selection and acquisition of a large number of ceramic thin section images, which have been used as training and testing datasets. A total of 178 ceramic samples were selected, primarly dating to the Bronze Age, with a smaller number from the Iron Age. These samples come from six different archaeological sites across the Levantine region: Bethlehem (West Bank), Tell el-Far'ah North (West Bank), Khirbat Iskandar (Jordan), Khirbat al-Batrawy (Jordan), Ebla (Syria) and Jericho (West Bank) as shown in Fig. <ref type="figure" target="#fig_0">1</ref> (see Table <ref type="table" target="#tab_0">1</ref> for more detailed information on the samples). While most of the sites are located in the southern part of the region, the inclusion of Elba provides important comparative data from the north. All samples have already been described and classified in terms of their respective petrographic fabrics, as well as their archaeological context in previous papers <ref type="bibr" target="#b47">[48,</ref><ref type="bibr" target="#b48">49,</ref><ref type="bibr" target="#b49">50,</ref><ref type="bibr" target="#b50">51,</ref><ref type="bibr" target="#b51">52,</ref><ref type="bibr" target="#b52">53,</ref><ref type="bibr" target="#b53">54,</ref><ref type="bibr" target="#b54">55]</ref>. The selection aimed to create a dataset representative of the Levantine pottery production profile, according to manufacturing practices, technological choices, and regional variability. Acquisition of thin section images was performed using the Axiocam 208 ZEISS camera connected to a ZEISS D-7082 Oberkochen petrographic microscope. For each ceramic section, we took multiple images under plane-polarized light (PPL) and crosspolarized light (XPL) at magnifications of 2.5X and 10X, resulting in a total of eight images per section to ensure the capture of important microstructural and mineralogical features. All images were compared and grouped into ten petrographic fabrics, taking into account the results of the previous works. Samples from the different fabrics are presented in Fig. <ref type="figure" target="#fig_1">2</ref>. The final dataset, consisting of 1,424 images grouped in 10 classes, is randomly split into training and testing sets with a ratio of 80:20. The larger portion was used for the training phase, while the smaller one was used to test the models on new data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Implementation of CNN and ViT models</head><p>We select two types of deep learning models for this study: A CNN using the ResNet18 <ref type="bibr" target="#b55">[56]</ref> architecture, and the more recent Vision Transformer <ref type="bibr" target="#b37">[38]</ref>. CNNs are neural networks that process images through multiple convolutional layers, each detecting increasingly complex features. ResNet18 consists of 18 layers organized in 5 stages: an initial 7×7 convolutional layer followed by 8 blocks, each containing two 3×3 convolutional layers with batch normalization and ReLU activation. Each block includes a skip connection that adds the input to the block's output, helping to prevent vanishing gradients. The network concludes with an average pooling layer and a fully connected layer for classification.</p><p>Vision Transformers represent a fundamentally different approach: they first divide input images into fixed-size patches (16×16 pixels in our case), linearly embed each patch, add positional embeddings, and process them through a series of transformer encoder blocks. Each encoder block contains a multi-head self-attention layer followed by a multi-layer perceptron (MLP). Our ViT implementation uses 12 transformer encoder blocks, each with 12 attention heads and a hidden dimension of 384.</p><p>We train our models to predict the class of a given image, minimizing a cross entropy loss function. To evaluate classification performance, we train the models and subsequently compare their performance on the held-out test dataset.</p><p>For both models, we use a transfer learning approach, fine-tuning pre-trained versions on the large ImageNet dataset <ref type="bibr" target="#b56">[57]</ref>. This approach leverages the pre-training on ImageNet, a large dataset of 1.2 million images across 1,000 classes. We retain the pre-trained weights of the backbone layers, that have already learned to extract general visual features like edges, textures, and shapes, and only retrain the final classification layers to adapt to our specific classes. This transfer learning strategy allows the model to build upon previously learned features, making it more effective when working with limited data.</p><p>As part of our ablation study, we also evaluate a from-scratch approach, where all model parameters are randomly initialized and trained exclusively on our dataset.</p><p>We trained the ResNet-18 models for 60 epochs (from scratch) and 25 epochs (pre-trained) respectively. Both implementations used the AdamW optimizer <ref type="bibr" target="#b57">[58]</ref> with learning rates and weight decay values of 3e-4. An adaptive learning rate scheduler was incorporated to dynamically adjust the learning rate throughout the training process. For the ViT models, training extended across 125 epochs (from scratch) and 60 epochs (pre-trained) using AdamW with a learning rate of 1e-4 and 1e-5 respectively, and a weight decay of 1e-4. To enhance model generalization and effectively expand our training dataset, we implemented various data augmentation techniques <ref type="bibr" target="#b58">[59]</ref> including random axis flipping, color jittering, and random cropping. These augmentations were applied consistently during the training phase for both models to mitigate overfitting. We provide further details concerning the training hyper-parameters in Appendix A.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results</head><p>The mean and standard deviation of the metrics for CNNs and ViTs are summarized in Table <ref type="table" target="#tab_1">2</ref>. The reported values correspond to the average performance of the models initialized three times with different random seeds. For reference, we also show the results of the models trained from scratch without a pre-trained ImageNet checkpoint.</p><p>As expected, the transfer learning approach led to a significantly higher performance. The ResNet18 model trained from scratch achieved an accuracy of 76.33 ± 0.58% after 60 epochs with a precision of 78.10 ± 0.73%, a result consistent with the small size of the dataset. In contrast, the pre-trained ResNet18, initialized with ImageNet weights, reached an accuracy of 92.11 ± 0.44% and a precision of 92.05 ± 1.35% in 25 epochs. ViTs are generally more effective for large datasets; as expected, the model trained from scratch underperformed, with an accuracy of 61.01 ± 0.33% and a precision of 58.74 ± 1.21% after 125 epochs. However, the pre-trained implementation performed well despite the small dataset, achieving an accuracy of 88.34 ± 0.29% and a precision of 88.44 ± 0.50% in 60 epochs, highlighting the effectiveness of transfer learning even with limited data. Fig. <ref type="figure" target="#fig_2">3a</ref> presents the confusion matrix from the best run of the pre-trained ResNet18 model, showing the correlation between predicted and actual values and highlighting the number of correctly classified samples. The adjacent plot illustrates the evolution of training and testing accuracy over the epochs, allowing us to evaluate the learning progress of the model and identify potential overfitting or underfitting issues. Similarly Fig. <ref type="figure" target="#fig_2">3b</ref> visualizes the best run results of the ViT model, presenting its confusion matrix along with the training and testing accuracy trends over a total of 60 epochs. It is important to note that the accuracy on the test set was monitored for visualization purposes only. The final evaluation of each model was based on its performance on the test set after training was completed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Analysis of misclassified samples</head><p>In this section we perform an in-depth analysis of the confusion matrix of the models to verify whether the most difficult samples to assign to specific petrographic fabrics correspond to those misclassified by the models and also whether these samples are consistently misclassified, identifying potential biases or problematic samples. From the analysis of the confusion matrix of both the models (Fig. <ref type="figure" target="#fig_2">3</ref>), it emerges that class 2 has the highest number of misclassifications with class 3. Class 2 represents the carbonate A fabric, characterized by the presence of microfossils in the matrix, while the main inclusions are carbonate rock fragments, making it very similar to the carbonate B fabric (class 3). The main difference between them is that carbonate B fabric contains an abundant presence of quartz instead of microfossils <ref type="bibr" target="#b47">[48]</ref>. Observing the misclassifications of the ResNet18 and ViT models (Fig. <ref type="figure" target="#fig_3">4a</ref> and<ref type="figure">b</ref>), we note that the first three images of sample J3 are misclassified in both models, mainly being confused with class 3. It is interesting to highlight that this sample was particularly difficult to classify, as its matrix contains both microfossils and dispersed quartz. This combination of characteristics places it in an intermediate zone between carbonate A and carbonate B fabrics, making its classification more complex. These observations suggest that both the models can struggle with classes that share similar mineralogical characteristics, particularly when a sample exhibits features of multiple petrographic fabrics. This kind of ambiguity also makes classification difficult for human experts, suggesting that some misclassifications may reflect the complexity of the samples more than limitations in model performance. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Explainability analysis</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Explainability Techniques</head><p>Given that our study involves two distinct neural network architectures, ResNet18 and ViT, we employ different explainability techniques suited to their respective structures.</p><p>For ResNet18, we apply the Guided Gradient-weighted Class Activation Mapping (Guided Grad-CAM) <ref type="bibr" target="#b59">[60]</ref>, a widely used interpretability technique for convolutional neural networks. Grad-CAM generates a coarse localization map by computing the gradient of the output with respect to the feature maps in the last convolutional layer, highlighting the most influential regions in the input image for the network's decision.</p><p>For the Vision Transformer, we employ attention map visualization to interpret model decisions. Unlike CNNs, which rely on local receptive fields, ViTs use selfattention mechanisms to establish long-range dependencies between tokens <ref type="bibr" target="#b60">[61]</ref>. Each ViT layer consists of multiple attention heads, each learning distinct patterns of feature dependencies across the input sequence. By visualizing attention maps across these heads, we gain insights into how the model distributes its focus over the image. Attention maps are particularly informative for ViTs because they directly represent the learned relationships between different image patches. In early layers, attention heads often capture local structures, while deeper layers aggregate global contextual information. By analyzing these attention distributions, we can interpret whether the model attends to semantically meaningful regions, such as object boundaries or discriminative features, aligning with human intuition for visual reasoning.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Explainability of the models in classifying ceramic thin-section</head><p>Guided Grad-CAM was used to visually explain the predictions of the pre-trained CNN model, highlighting the important features considered for classification. This technique allows us to observe how the model effectively identified the minerals characteristic of the fabrics as representative for classification. The regions indicated by the Guided Grad-CAM as important correspond to the predominant minerals that lead to the discrimination and grouping of the ceramic samples according to their petrographic fabrics. Fig. <ref type="figure" target="#fig_4">5</ref> provides several significant examples, where the heatmaps allow for an immediate and clear visualization of the areas that positively contributed to the correct classification of the images. To analyze potential differences, we applied this method to both PPL and XPL images of the same samples. Identifying key features in PPL images is more challenging, as they appear less distinct compared to XPL images, making mineral discrimination more difficult. However, the results suggest that inclusions can still be distinguished from the matrix based on their shape and color. In XPL images, interference colors further help in distinguishing the main inclusions. Particularly interesting are the results for class 8. The images in Fig. <ref type="figure" target="#fig_4">5d</ref> show how the heatmaps exclusively highlight the basalt fragments, distinguishing them from the other inclusions present in the thin section in both the PPL and XPL images. This demonstrates the neural network's ability to identify and learn specific characteristics of the corresponding petrographic fabrics. See Fig. <ref type="figure" target="#fig_8">B1</ref> in Appendix B to visualize the Guided Grad-CAM results for the other classes.</p><p>To deeper investigate these results, we applied Guided Grad-CAM to a sequence of images of the same sample at different rotations to determinate which parameters most influenced the classification and whether rotation and birefringence effects had any impact on the results. This analysis was conducted on calcite and quartz fabric samples. Fig. <ref type="figure" target="#fig_5">6</ref> shows the rotation sequence of a calcite fabric sample, showing its progressive rotation until some crystals reached extinction. Calcite, characterized by high birefringence, is particularly distinctive in optical analyses and is a perfect case study to determine which features are considered important for classification. The resulting heatmaps indicate that rotation does not affect the recognition of specific patterns for classification. On the contrary, they highlight how the interference colors of the calcite crystals, their shape and edges, and also those in extinction are key elements considered by the model for classification. Regarding the analysis conducted on the representative quartz fabric sample in Fig. <ref type="figure" target="#fig_6">7</ref>, the heatmaps highlight quartz minerals independent of their size and/or brightness. Color appears to play a role in identification; in fact, the extincted quartz is not well evidenced, probably because the model is not able to discriminate it from the matrix as it is quite dark as well. Additionally, it is interesting to note that there are few carbonate rock fragments present in the sample that are not highlighted by the heatmaps. This result suggests that the model selectively recognizes quartz minerals without considering other inclusions, thus confirming the consistency of the classification process.   in attention maps under different polarization conditions, we visualized the samples in both PPL and XPL. The results indicate that the attention maps remain consistent across both images, suggesting that the model's ability to focus on relevant mineralogical features is not significantly affected by polarization. Furthermore, the evolution of attention maps throughout the layers of the ViT appears consistent for each respective attention head. In the first layers, attention is more broadly distributed, while in deeper layers, it starts to focus on specific regions corresponding to the characteristic minerals of the petrographic fabrics.</p><p>The most challenging aspect of visualizing the important areas in this case is that the inclusions are distributed throughout the entire thin section. This makes it more difficult for the model to focus on specific features, especially considering that ViTs operate globally by analyzing patches rather than individual pixels. For this reason, it is particularly interesting to emphasize the results of classes 5 and 7, which contain a high number of inclusions dispersed in the matrix. In both cases, the attention maps show that the model was still able to focus on specific characteristics of the respective fabrics. In class 5, the model mainly highlights some well-defined dolomite crystals that stand out clearly from the matrix, as well as the silicate rock fragment that is characteristic of this class. A similar pattern can be observed for the shell fabric, where the attention maps seem to emphasize the areas corresponding to the elongated shell fragments rather than the more common carbonate fragments. We report the attention maps of representative samples from the other classes in Appendix B, Fig. <ref type="figure" target="#fig_9">B2</ref>.</p><p>Both the saliency and attention maps clearly highlight the characteristic minerals of the petrographic fabrics as key features for classification. This indicates that the models distinguished the ceramic thin sections based on their inclusions, similar to the way traditional petrographic analysis groups ceramics by studying pores, inclusions, and the matrix. Although our models focused mainly on inclusions, it is interesting to note a certain correlation between deep learning-based classification and conventional petrographic methods. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusion</head><p>This study demonstrated the potential of deep learning methodologies for the automated classification of ceramic thin sections based on their petrographic fabrics, expanding on previous research by Lyons et al. <ref type="bibr" target="#b34">[35,</ref><ref type="bibr" target="#b35">36]</ref>. The application of Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) yielded high classification accuracy and enabled the grouping of thin sections with similar petrographic characteristics. Furthermore, explainability techniques, such as Guided Grad-CAM for CNNs and attention maps for ViTs, provided insights into the models' decision-making processes, confirming their ability to recognize key mineralogical features relevant for fabric classification.</p><p>One possible limitation arises from the use of saliency maps, such as Guided Grad-CAM, which, while effective in highlighting important image regions, may not always provide a complete or precise explanation of model decisions. To address these challenges, future research could explore more recent explainability techniques, such as sparse autoencoders <ref type="bibr" target="#b61">[62]</ref>. Furthermore, integrating multimodal data sources, such as geochemical analysis alongside petrographic imaging, could improve classification accuracy and robustness, opening the possibility for more applications in the field of minero-petrographic studies. For instance, this approach could contribute to ceramic provenance research by aiding in the identification of raw material sources in relation to the geological context of surrounding areas.</p><p>A key future step is expanding the dataset of ceramic thin section images to improve model generalization and performance across a broader range of fabrics and archaeological contexts. One current limitation is that models trained on a predefined set of known classes may struggle to generalize to previously unseen samples, particularly given the high degree of ceramic variability in the Levantine region, constraining their robustness in real-world applications. As a future step, it will be essential to evaluate the model on additional sets of thin-section images, distinct from those used during training. This will allow for a more realistic assessment of the generalization capabilities of the model, including its ability to identify samples that do not match any of the known classes (i.e., out-of-distribution detection). Moreover, recent advances in unsupervised learning and few-shot learning offer promising tools to address this challenge, potentially expanding the applicability of deep learning to archaeological scenarios.</p><p>Overall, this study highlights the potential of explainable AI in archaeometric research, providing a reproducible and efficient approach to ceramic analysis. Continued advancements in AI interpretability will be crucial for refining these methodologies, ensuring transparency, and facilitating broader adoption in archaeological and materials science applications.  </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Map of the Levant showing the selected archaeological sites.</figDesc><graphic coords="5,127.59,87.94,333.58,398.27" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Thin section images of representative samples of the ten petrographic fabrics (2.5X, both in PPL and XPL respectively). Class 1 (sample T53): Characterized by the predominance of calcite inclusions; Class 2 (sample TF6): Predominance of fragments of sedimentary calcareous rocks, presence of microfossils in the matrix; Class 3 (sample TFN39): Fragments of sedimentary calcareous rocks, presence of quartz in the matrix; Class 4 (sample B1/14): Predominance of dolomite crystal inclusions; Class 5 (sample K7): Presence of dolomite, calcareous and siliceous rock fragments as dominant inclusions; Class 6 (sample TFMcamp1): Presence of predominant quartz inclusions; Class 7 (sample K12): Predominant presence of elongated bivalve shells and calcareous rock fragments; Class 8 (sample E467/3): Dominant presence of volcanic rock fragments identified as basalt; Class 9 (sample K11): Characterized by the dominant presence of calcareous and siliceous rock fragments; Class 10 (sample KB314/113): Predominance of calcareous fragments and iron oxide nodules. Complete description of these fabrics in [48, 49, 50, 51, 52, 53, 54, 55].</figDesc><graphic coords="6,72.00,87.94,444.78,420.19" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Classification performance of ResNet18 and Vision Transformer (ViT). (a) Confusion matrix and accuracy trends for ResNet18. (b) Confusion matrix and accuracy trends for ViT.</figDesc><graphic coords="9,94.24,87.94,400.27,323.83" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Comparison of ResNet18 and ViT misclassified predictions for class 2, representative of carbonate A fabric. (a) Images of ResNet18 misclassified predictions; (b) Images of ViT misclassified predictions.</figDesc><graphic coords="10,94.24,87.94,400.28,199.02" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Guided Grad-CAM applied to pre-trained ResNet18. The figure shows the original images, the heatmaps overlapped to the thin-section images, and the masked images highlighting only the areas considered important for classification. (a) Class 1 (sample TF4): Calcite fabric; (b) Class 2 (sample TF6): Carbonate A fabric; (c) Class 6 (sample TFMcamp1): Quartz fabric; (d) Class 8 (sample E16/2): Basalt fabric.</figDesc><graphic coords="12,72.00,87.94,444.76,269.47" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Guided Grad-CAM applied to the rotation sequence of sample TF4 from calcite fabric.We use attention maps to visualize the classification predictions of the pre-trained ViT model, illustrating how it correlates different patches during the classification process. Fig.8shows attention maps of representative samples from classes 2, 5, 7, and 8, which correspond to carbonate A, dolomite B, shell, and basalt fabrics, respectively. Specifically, the figure presents attention maps from head 3 for class 2 and 5 and from head 5 for class 7 and 8 across different layers, allowing a better observation of the evolution of the attention over the layers of the ViT. To investigate potential differences</figDesc><graphic coords="12,72.00,455.05,444.74,152.06" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Guided Grad-CAM applied to the rotation sequence of sample TFMcamp1 from quartz fabric.</figDesc><graphic coords="13,72.00,87.94,444.74,152.74" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: Attention maps of representative samples from carbonate A (sample KB146/30), dolomite B (sample K9), shell (sample KI11) and basalt (sample KB5) fabrics both in PPL and XPL. Visualization of head 3 for class 2 and 5, and head 5 for class 7 and 8, across ViT's layers.</figDesc><graphic coords="14,72.00,87.94,444.75,589.83" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure B1 :</head><label>B1</label><figDesc>Figure B1: Guided Grad-CAM applied to pre-trained ResNet18. The figure shows the original images, the heatmaps overlapped to the thin-section images, and the masked images highlighting only the areas considered important for classification. (a) Class 3 (sample 718/25): Carbonate B fabric; (b) Class 4 (sample B1/14): Dolomite A fabric; (c) Class 5 (sample Kcamp15): Dolomite B fabric; (d) Class 7 (sample KIcamp2): Shell fabric; (e) Class 9 (sample K1): Carbonate C fabric; (f) Classe 10 (sample KB383/38): Carbonate D fabric.</figDesc><graphic coords="18,72.00,87.94,444.75,385.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure B2 :</head><label>B2</label><figDesc>Figure B2: Attention maps of representative samples from calcite (sample TFcamp19), carbonate B (sample TFcamp13), dolomite A (sample Asur5), quartz (sample KBC4), carbonate C (sample K16) and carbonate D (sample KB314/113) fabrics both in PPL and XPL. Visualization of head 3 across the ViT's layers.</figDesc><graphic coords="19,134.26,87.94,320.20,554.07" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 :</head><label>1</label><figDesc>Summary of the selected ceramic thin sections.</figDesc><table><row><cell cols="2">Archaeological sites Age</cell><cell>N. of samples</cell></row><row><cell>Tell el-Far'ah (North)</cell><cell>Early Bronze I -II</cell><cell>55</cell></row><row><cell>Khirbat al-Batrawy</cell><cell>Early Bronze III -IV</cell><cell>40</cell></row><row><cell>Khirbat Iskandar</cell><cell>Early Bronze IV</cell><cell>35</cell></row><row><cell>Bethlehem</cell><cell>Early Bronze IV -Iron Age IB-II</cell><cell>23</cell></row><row><cell>Ebla</cell><cell>Early Bronze IV -Middle Bronze I</cell><cell>18</cell></row><row><cell>Jericho</cell><cell>Early Bronze</cell><cell>7</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 :</head><label>2</label><figDesc>Mean and standard deviation of the accuracy, precision, recall (True positive rate) and F1-score (harmonic mean of precision and recall) metrics of the CNN and ViT.</figDesc><table><row><cell>Model Metrics</cell><cell cols="3">ResNet18 (Scratch) Pre-trained ResNet18 ViT (Scratch)</cell><cell>Pre-trained ViT</cell></row><row><cell>Accuracy</cell><cell>76.33 ± 0.58%</cell><cell>92.11 ± 0.44%</cell><cell cols="2">61.01 ± 0.33% 88.34 ± 0.29%</cell></row><row><cell>Precision</cell><cell>78.10 ± 0.73%</cell><cell>92.05 ± 1.35%</cell><cell cols="2">58.74 ± 1.21% 88.44 ± 0.50%</cell></row><row><cell>Recall</cell><cell>72.16 ± 1.08%</cell><cell>90.15 ± 1.58%</cell><cell cols="2">59.93 ± 0.60% 86.60 ± 0.83%</cell></row><row><cell>F1-score</cell><cell>73.67 ± 0.71%</cell><cell>90.68 ± 1.54%</cell><cell cols="2">58.03 ± 0.47% 86.84 ± 0.70%</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>The authors acknowledge the support of <rs type="funder">Sapienza University of Rome</rs>. In particular, <rs type="person">S. Scardapane</rs> and <rs type="person">A. Devoto</rs> are partly funded by the <rs type="funder">Sapienza</rs> grant <rs type="grantNumber">RG123188B3EF6A80</rs> (CENTS).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_26aNBMC">
+					<idno type="grant-number">RG123188B3EF6A80</idno>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A. Details on Model Architectures and Training</head><p>This section presents the architectural details and training configurations for both the ResNet-18 and DeiT-Small models used in our experiments. Hyperparameter selection was carried out based on the results of a 3-fold cross-validation performed on the training portion of the dataset (80% of the full set). The best average validation results guided the final choice of hyperparameters. The explored hyperparameters are reported in tables A3 and A6.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix B. Guided Grad-CAM and Attention Maps of Other Classes</head><p>In this section, we present the results of Guided Grad-CAM and attention maps for the remaining classes that were not shown in the main text of the paper.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">The Oxford Handbook of the Archaeology of the Levant</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Steiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">E</forename><surname>Killebrew</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/oxfordhb/9780199212972.001.0001</idno>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">The Archaeology of the Bronze Age Levant</title>
+		<author>
+			<persName><forename type="first">Raphael</forename><surname>Greenberg</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/9781316275993</idno>
+		<imprint>
+			<date type="published" when="2019-10-21">2019</date>
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Travelling in (World) Time:</title>
+		<author>
+			<persName><forename type="first">Raphael</forename><surname>Greenberg</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/j.ctvh1dr2k.22</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Interweaving Worlds</title>
+		<imprint>
+			<publisher>Oxbow Books</publisher>
+			<date type="published" when="2011-12-31">2011</date>
+			<biblScope unit="page" from="231" to="242" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The northern levant during the intermediate bronze age</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Weiss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Oxford Handbook of the Archaeology of the Levant: c. 8000-332 BCE</title>
+		<editor>
+			<persName><forename type="first">L</forename><surname>Margreet</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Ann</forename><forename type="middle">E</forename><surname>Steiner</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Killebrew</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Oxford</addrLine></address></meeting>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="401" to="412" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Tales of the City?</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Chesson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Philip</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Urbanism&quot; in the Early Bronze Age Levant from Mediterranean and Levantine Perspectives</title>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="26" to="37" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Ceramic Petrography: The Interpretation of Archaeological Pottery &amp; Related Artefacts in Thin Section</title>
+		<author>
+			<persName><forename type="first">Patrick</forename><forename type="middle">S</forename><surname>Quinn</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/j.ctv1jk0jf4</idno>
+		<imprint>
+			<date type="published" when="2013-02-15">2013</date>
+			<publisher>Archaeopress Publishing Ltd</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Pottery in Archaeology</title>
+		<author>
+			<persName><forename type="first">Clive</forename><surname>Orton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Hughes</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/cbo9780511920066</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Pottery in Archaeology</title>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="2013-05-13">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Analyzing the earliest Chinese proto-porcelain: Study on the materials from Liaotianjianshan kiln sites, Dehua County, Fujian Province (China)</title>
+		<author>
+			<persName><forename type="first">Ge</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhengyao</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lifang</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fen</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoran</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaotong</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anchuan</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiongxia</forename><surname>Xia</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ceramint.2018.08.248</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ceramics International</title>
+		<title level="j" type="abbrev">Ceramics International</title>
+		<idno type="ISSN">0272-8842</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="21648" to="21655" />
+			<date type="published" when="2018-12">2018</date>
+			<publisher>Elsevier BV</publisher>
+			<pubPlace>Dehua County, Fujian Province (China</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">THE CHARACTERISATION OF ARGILLACEOUS INCLUSIONS IN CERAMIC THIN SECTIONS</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">K</forename><surname>Whitbrad</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1475-4754.1986.tb00376.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Archaeometry</title>
+		<title level="j" type="abbrev">Archaeometry</title>
+		<idno type="ISSN">0003-813X</idno>
+		<idno type="ISSNe">1475-4754</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="79" to="88" />
+			<date type="published" when="1986-02">1986</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Greek transport amphorae. A petrological and archaeological study</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">K</forename><surname>Whitebread</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">British School of Athens</title>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Fabric description of archaeological ceramics. The Oxford handbook of archaeological ceramic analysis</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">K</forename><surname>Whitbread</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hunt</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The Southern Levant in the Early Bronze Age IV: The Petrographic Perspective</title>
+		<author>
+			<persName><forename type="first">Yuval</forename><surname>Goren</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/1357469</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bulletin of the American Schools of Oriental Research</title>
+		<title level="j" type="abbrev">Bulletin of the American Schools of Oriental Research</title>
+		<idno type="ISSN">0003-097X</idno>
+		<idno type="ISSNe">2161-8062</idno>
+		<imprint>
+			<biblScope unit="volume">303</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="33" to="72" />
+			<date type="published" when="1996-08">1996</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A Third Millennium Levantine Pottery Production Center: Typology, Petrography, and Provenance of the Metallic Ware of Northern Israel and Adjacent Regions</title>
+		<author>
+			<persName><forename type="first">Raphael</forename><surname>Greenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naomi</forename><surname>Porat</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/1357293</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bulletin of the American Schools of Oriental Research</title>
+		<title level="j" type="abbrev">Bulletin of the American Schools of Oriental Research</title>
+		<idno type="ISSN">0003-097X</idno>
+		<idno type="ISSNe">2161-8062</idno>
+		<imprint>
+			<biblScope unit="volume">301</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="5" to="24" />
+			<date type="published" when="1996-02">1996</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Ceramic Technology and Provenance at Khirbat Iskandar</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Goren</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Archaeological Expedition to Khirbat Iskandar and its Environs, Jordan: Khirbat Iskandar Final Report on the Early Bronze IV Area C &apos;Gateway&apos; and Cemeteries</title>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Richard</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Long</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Holdorf</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">G</forename><surname>Peterman</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="133" to="140" />
+		</imprint>
+	</monogr>
+	<note>The American Schools of Oriental Research</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">The Southern Levant in Early Bronze IV: issues and perspectives in the pottery evidence</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sapienza Univ. di Roma</title>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note>Dipt. di Scienze dell&apos;Antichità 20XX</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">THE PROVENANCE AND PRODUCTION TECHNOLOGY OF BRONZE AGE AND IRON AGE POTTERY FROM TELL MISHRIFEH/QATNA (SYRIA)*</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Maritan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mazzoli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Michielin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Morandi</forename><surname>Bonacossi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Luciani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Molin</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1475-4754.2005.00229.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Archaeometry</title>
+		<title level="j" type="abbrev">Archaeometry</title>
+		<idno type="ISSN">0003-813X</idno>
+		<idno type="ISSNe">1475-4754</idno>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="723" to="744" />
+			<date type="published" when="2005-10-21">2005</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">The development of integrated regional economies in the Early Bronze Age Levant: new evidence from ‘Combed Ware’ jars</title>
+		<author>
+			<persName><forename type="first">Kamal</forename><surname>Badreshany</surname></persName>
+			<idno type="ORCID">0000-0001-8799-7234</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Graham</forename><surname>Philip</surname></persName>
+			<idno type="ORCID">0000-0002-6023-3928</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><surname>Kennedy</surname></persName>
+			<idno type="ORCID">0000-0001-8620-938X</idno>
+		</author>
+		<idno type="DOI">10.1080/00758914.2019.1641009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Levant</title>
+		<title level="j" type="abbrev">Levant</title>
+		<idno type="ISSN">0075-8914</idno>
+		<idno type="ISSNe">1756-3801</idno>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="160" to="196" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">The &apos;Combed Ware&apos; storage and transport vessels from Khirbet ez-Zeraqon: a reappraisal of the EB II-III evidence in light of recent studies</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Tumolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Badreshany</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Ancient Egyptian Interconnections</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="301" to="324" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Convolutional neural networks for archaeological site detection-finding &quot;princely&quot; tombs</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Caspari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Crespo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Archaeological Science</title>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Combined Detection and Segmentation of Archeological Structures from LiDAR Data Using a Deep Learning Approach</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Guyot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lennon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lorho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hubert-Moy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer Applications in Archaeology</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2021</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Using deep neural networks on airborne laser scanning data: Results from a case study of semi-automatic mapping of archaeological topography on Arran</title>
+		<author>
+			<persName><forename type="first">Ø</forename><forename type="middle">D</forename><surname>Trier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Cowley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">U</forename><surname>Waldeland</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Scotland. Archaeological Prospection</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="165" to="175" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">A comparative analysis of the bayesian regularization and levenberg-marquardt training algorithms in neural networks for small datasets: A metrics prediction of neolithic laminar artefacts</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Troiano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Nobile</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Mangini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mastrogiuseppe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">Conati</forename><surname>Barbaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Frezza</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Neural network analysis for predicting metrics of fragmented laminar artifacts: a case study from MPPNB sites in the Southern Levant</title>
+		<author>
+			<persName><forename type="first">Eugenio</forename><surname>Nobile</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maurizio</forename><surname>Troiano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Mangini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Mastrogiuseppe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacob</forename><surname>Vardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabrizio</forename><surname>Frezza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cecilia</forename><surname>Conati Barbaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Avi</forename><surname>Gopher</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-024-77184-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024-11-29">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Application of laser-induced breakdown spectroscopy and neural networks on archaeological human bones for the discrimination of distinct individuals</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Siozos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Hausmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Holst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Anglos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Archaeological Science: Reports</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page">102769</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">LUWA Dataset: Learning Lithic Use-Wear Analysis on Microscopic Images</title>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irving</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akshat</forename><surname>Kaushik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alice</forename><surname>Rodriguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanwen</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juexiao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhuo</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Radu</forename><surname>Iovita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Feng</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52733.2024.02129</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-06-16">2024</date>
+			<biblScope unit="page" from="22563" to="22573" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Machine Learning Arrives in Archaeology</title>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">H</forename><surname>Bickler</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/aap.2021.6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Archaeological Practice</title>
+		<title level="j" type="abbrev">Adv. archaeol. pract.</title>
+		<idno type="ISSNe">2326-3768</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="186" to="191" />
+			<date type="published" when="2021-05">2021</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Applications of deep learning to decorated ceramic typology and classification: A case study using Tusayan White Ware from Northeast Arizona</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Pawlowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Downum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Archaeological Science</title>
+		<imprint>
+			<biblScope unit="volume">130</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Machine learning based typology development in archaeology</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Hörr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lindinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Brunnett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal on Computing and Cultural Heritage</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="23" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Learning feature representation of Iberian ceramics with automatic classification models</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Navarro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Cintas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lucena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Fuertes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Delrieux</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Molinos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cultural Heritage</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="65" to="73" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">End-to-end ancient ceramic classification toolkit based on deep learning: A case study of black glazed wares of Jian kilns (Song Dynasty, Fujian province)</title>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Qi</surname></persName>
+			<idno type="ORCID">0000-0002-4930-5978</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Meng-Zhe</forename><surname>Qiu</surname></persName>
+			<idno type="ORCID">0000-0002-5166-4697</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hai-Zhao</forename><surname>Jing</surname></persName>
+			<idno type="ORCID">0000-0002-4147-331X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhi-Qi</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-5032-938X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Long</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian-Feng</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fen</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tian</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ceramint.2022.08.033</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ceramics International</title>
+		<title level="j" type="abbrev">Ceramics International</title>
+		<idno type="ISSN">0272-8842</idno>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page" from="34516" to="34532" />
+			<date type="published" when="2022-12">2022</date>
+			<publisher>Elsevier BV</publisher>
+			<pubPlace>Song Dynasty, Fujian province</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Supervised learning algorithms as a tool for archaeology: Classification of ceramic samples described by chemical element concentrations. ournal of Archaeological Science</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Ruschioni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Malchiodi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Zanaboni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bonizzoni</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="volume">49</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Supervised Machine Learning Algorithms to Predict Provenance of Archaeological Pottery Fragments</title>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Anglisano</surname></persName>
+			<idno type="ORCID">0000-0003-0149-7488</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lluís</forename><surname>Casas</surname></persName>
+			<idno type="ORCID">0000-0003-0948-8658</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ignasi</forename><surname>Queralt</surname></persName>
+			<idno type="ORCID">0000-0002-8790-8382</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roberta</forename><surname>Di Febo</surname></persName>
+			<idno type="ORCID">0000-0002-1102-8231</idno>
+		</author>
+		<idno type="DOI">10.3390/su141811214</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sustainability</title>
+		<title level="j" type="abbrev">Sustainability</title>
+		<idno type="ISSNe">2071-1050</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">18</biblScope>
+			<biblScope unit="page">11214</biblScope>
+			<date type="published" when="2022-09-07">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Application of artificial neural networks for the rapid classification of archaeological ceramics by means of laser induced breakdown spectroscopy (LIBS)</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ramil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>López</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yáñez</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00339-008-4481-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Physics A</title>
+		<title level="j" type="abbrev">Appl. Phys. A</title>
+		<idno type="ISSN">0947-8396</idno>
+		<idno type="ISSNe">1432-0630</idno>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="197" to="202" />
+			<date type="published" when="2008-04-01">2008</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Combining image analysis and modular neural networks for classification of mineral inclusions and pores in archaeological potsherds</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Aprile</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Castellano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Eramo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Archaeological Science</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page" from="262" to="272" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Ceramic Fabric Classification of Petrographic Thin Sections with Deep Learning</title>
+		<author>
+			<persName><forename type="first">Mike</forename><surname>Lyons</surname></persName>
+		</author>
+		<idno type="DOI">10.5334/jcaa.75</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer Applications in Archaeology</title>
+		<idno type="ISSNe">2514-8362</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">188</biblScope>
+			<date type="published" when="2021-09-28">2021</date>
+			<publisher>Ubiquity Press, Ltd.</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">From LiDAR to deep learning: A case study of computer-assisted approaches to the archaeology of Guadalupe and northeast Honduras</title>
+		<author>
+			<persName><forename type="first">Mike</forename><surname>Lyons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Franziska</forename><surname>Fecher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><surname>Reindel</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/itit-2022-0004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">it - Information Technology</title>
+		<idno type="ISSN">1611-2776</idno>
+		<idno type="ISSNe">2196-7032</idno>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="233" to="246" />
+			<date type="published" when="2022-07-28">2022</date>
+			<publisher>Walter de Gruyter GmbH</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Deep learning</title>
+		<author>
+			<persName><forename type="first">Yann</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><surname>Hinton</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature14539</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">521</biblScope>
+			<biblScope unit="issue">7553</biblScope>
+			<biblScope unit="page" from="436" to="444" />
+			<date type="published" when="2015-05-27">2015</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Beyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kolesnikov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Weissenborn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Minderer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Heigold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Houlsby</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2010.11929</idno>
+		<title level="m">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Do Vision Transformers See Like Convolutional Neural Networks?</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Raghu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kornblith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="12116" to="12128" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Chronological classification of ming and qing dynasty ceramics images based on an enhanced resnet50 model</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Lihua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wenbo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wangren</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">STAR: Science &amp; Technology of Archaeological Research</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2498260</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Can we open the black box of AI?</title>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Castelvecchi</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/538020a</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">538</biblScope>
+			<biblScope unit="issue">7623</biblScope>
+			<biblScope unit="page" from="20" to="23" />
+			<date type="published" when="2016-10">2016</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Explainable machine learning in materials science</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gallagher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Kailkhura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hiszpanski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">Y J</forename><surname>Han</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computational Materials</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Arrieta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Díaz-Rodríguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Del</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bennetot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tabik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Barbado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Gil</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lopez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Molina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Benjamins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Chaila</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Herrera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="82" to="115" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Interpretable and Explainable Machine Learning for Materials Science and Chemistry</title>
+		<author>
+			<persName><forename type="first">Felipe</forename><surname>Oviedo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Lavista</forename><surname>Ferres</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tonio</forename><surname>Buonassisi</surname></persName>
+			<idno type="ORCID">0000-0001-8345-4937</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><forename type="middle">T</forename><surname>Butler</surname></persName>
+			<idno type="ORCID">0000-0001-5432-5597</idno>
+		</author>
+		<idno type="DOI">10.1021/accountsmr.1c00244</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Accounts of Materials Research</title>
+		<title level="j" type="abbrev">Acc. Mater. Res.</title>
+		<idno type="ISSN">2643-6728</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="597" to="607" />
+			<date type="published" when="2022-06-03">2022</date>
+			<publisher>American Chemical Society (ACS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Methods for interpreting and understanding deep neural networks</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Samek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Digital Signal Processing</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Mixture-of-Experts Graph Transformers for Interpretable Particle Collision Detection</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Genovese</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sgroi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Devoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Valentine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Sebastiani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Giagu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>D'onofrio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Scardapane</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Explainability and transparency in the realm of digital humanities: toward a historian XAI</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>El-Hajj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Eberle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Merklein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Siebold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Shlomi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Büttner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Martinetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">R</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Montavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Valleriani</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Digital Humanities</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="299" to="331" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">A forgotten centre of ceramic production in Southern Levant: Preliminary analytical study of the Early Bronze Age pottery from Tell el-Far&apos;ah North (West Bank)</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Medeghini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">De</forename><surname>Vito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mignardi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ceramics International</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="11457" to="11467" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">New insights on Early Bronze Age IV pottery production and consumption in the southern Levant: The case of Khirbat Iskandar, Jordan</title>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Medeghini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Silvano</forename><surname>Mignardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>De Vito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natalia</forename><surname>Macro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marta</forename><surname>D’andrea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suzanne</forename><surname>Richard</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ceramint.2016.09.054</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ceramics International</title>
+		<title level="j" type="abbrev">Ceramics International</title>
+		<idno type="ISSN">0272-8842</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">16</biblScope>
+			<biblScope unit="page" from="18991" to="19005" />
+			<date type="published" when="2016-12">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Variability in pottery production at Khalet al-Jam&apos;a necropolis</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Botticelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mignardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>De</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">W</forename><surname>Vito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Montanari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Shakarna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Nigro</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Medeghini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">From the Early-Middle Bronze to the Iron Age</title>
+		<meeting><address><addrLine>Bethlehem (West Bank</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="16405" to="16415" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">The &apos;metallic ware&apos; from Tell el Far&apos;ah North (West Bank): Petrography, technology, and provenance of a hidden ceramic industry</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Botticelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mignardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>De</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Vito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Sala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Da</forename><surname>Mazzotta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Silva Gondim</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Medeghini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ceramics International</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1366" to="1374" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<title level="m" type="main">The EB II &apos;metallic ware&apos; from Tell el-Far &apos;ah North (West Bank): typology, technology and petrography of a ceramic industry of the central hill country</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sala</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page" from="146" to="171" />
+			<pubPlace>Levant</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">The ceramic of the “Palace of the Copper Axes” (Khirbet al-Batrawy, Jordan): A palatial special production</title>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Medeghini</surname></persName>
+			<idno type="ORCID">0000-0001-8568-8614</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lucilla</forename><surname>Fabrizi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>De Vito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Silvano</forename><surname>Mignardi</surname></persName>
+			<idno type="ORCID">0000-0003-1867-214X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Nigro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elisabetta</forename><surname>Gallo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chiara</forename><surname>Fiaccavento</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ceramint.2015.12.143</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ceramics International</title>
+		<title level="j" type="abbrev">Ceramics International</title>
+		<idno type="ISSN">0272-8842</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="5952" to="5962" />
+			<date type="published" when="2016-04">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>Ceramics International</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">A combined use of optical microscopy, X-ray powder diffraction and micro-Raman spectroscopy for the characterization of ancient ceramic from Ebla (Syria)</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ballirano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>De</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Vito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Medeghini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Mignardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ferrini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Matthiae</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bersani</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Lottici</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ceramics International</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="16409" to="16419" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">The ceramic of the “Palace of the Copper Axes” (Khirbet al-Batrawy, Jordan): A palatial special production</title>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Medeghini</surname></persName>
+			<idno type="ORCID">0000-0001-8568-8614</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lucilla</forename><surname>Fabrizi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>De Vito</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Silvano</forename><surname>Mignardi</surname></persName>
+			<idno type="ORCID">0000-0003-1867-214X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Nigro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elisabetta</forename><surname>Gallo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chiara</forename><surname>Fiaccavento</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ceramint.2015.12.143</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ceramics International</title>
+		<title level="j" type="abbrev">Ceramics International</title>
+		<idno type="ISSN">0272-8842</idno>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="5952" to="5962" />
+			<date type="published" when="2017">2017</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Deep Residual Learning for Image Recognition</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2016.90</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-06">2016. 2016</date>
+			<biblScope unit="page" from="770" to="778" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Imagenet: A large-scale hierarchical image database</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fei-Fei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE conference on computer vision and pattern recognition</title>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="248" to="255" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title level="m" type="main">Adam: A Method for Stochastic Optimization</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ba</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<monogr>
+		<title level="m" type="main">Image Data Augmentation for Deep Learning: A Survey</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Shen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Grad-cam: Visual explanations from deep networks via gradient-based localization</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Selvaraju</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cogswell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Vedantam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Parikh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Batra</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computer Vision</title>
+		<imprint>
+			<biblScope unit="volume">128</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="336" to="359" />
+			<date type="published" when="2019-10">October 2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Explainability of Vision Transformers: a Comprehensive Review and New Perspectives</title>
+		<author>
+			<persName><forename type="first">Rojina</forename><surname>Kashefi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leili</forename><surname>Barekatain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Sabokrou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fatemeh</forename><surname>Aghaeipoor</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.5055345</idno>
+		<idno type="arXiv">arXiv:2311.06786</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Explainability of Vision Transformers: A Comprehensive Review and New Perspectives</title>
+		<imprint>
+			<publisher>Elsevier BV</publisher>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+		<author>
+			<persName><forename type="first">L</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">D</forename><surname>Tour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tillman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Goh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Troll</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Radford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">J</forename><surname>Leike</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2406.04093</idno>
+		<title level="m">Scaling and evaluating sparse autoencoders</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

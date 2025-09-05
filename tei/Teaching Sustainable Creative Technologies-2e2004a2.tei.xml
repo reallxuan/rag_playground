@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Teaching Sustainable Creative Technologies Three methods for more carbon aware creative production</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Chelsea</forename><surname>Thompto</surname></persName>
+							<email>cthompto@vt.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Visual</orgName>
+								<address>
+									<addrLine>Art Virginia Tech Blacksburg</addrLine>
+									<region>VA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Teaching Sustainable Creative Technologies Three methods for more carbon aware creative production</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">4A3EFAD3B1335A5CD37DFC495709AD48</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Artists and especially new media artists contribute to public perceptions and adoption of new technologies through their own use of emerging media technologies such as augmented and virtual reality, generative image systems, and high-resolution displays in the production of their work. In this way, art and media production can be understood as part of the larger issue of unsustainable computational consumption. As such, it is critical for artists to develop, share, and promote new and more sustainable methods of engaging with technology, especially within the context of higher education. This paper will explore how artists might implement more sustainable methods by considering the relationship between the technical approaches of compute reuse, sustainable web development, and frugal computing, and the concepts of material specificity 1 , futurity, and media archaeology 2 . Proposing three methods of less carbon-intensive artistic production and a set of guidelines for introducing sustainable methods into arts and technology curriculum, this paper will outline not only the technical viability of these approaches but also the rich conceptual opportunities these approaches might offer to artists and viewers alike. For each method, models for pedagogical implementation will be explored with an emphasis on how local resources and sustainability contexts should play a role.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>INTRODUCTION</head><p>Digital artistic production is closely linked to carbon emissions, and at the same time art is a fundamental part of human experience. We can no more stop making art than we can stop making music, or poetry, or scientific discoveries. Yet as a society, we must all be working to reduce our carbon emissions. So, it is critical that as we train the future generations of creative technologists and digital artists, we do so while centering emissions and our changing climate.</p><p>There is an abundance of examples of low carbon methods within digital art and new media, from solar internet projects like Solar Protocol <ref type="bibr" target="#b0">[1]</ref>, to theories like Permacomputing Aesthetics <ref type="bibr" target="#b1">[2]</ref>, to movements like Web Revival <ref type="bibr" target="#b2">[3]</ref>, events like Small File Media Festival <ref type="bibr" target="#b3">[4]</ref> and more. However, the problem is not that digital artists have yet to engage with computing within limits, but rather that these approaches remain on the very edges of creative technological practice and have not been widely adopted within digital creative production pedagogies at the university level where curriculum often favors "industry standard" and carbon intensive production pipelines <ref type="foot" target="#foot_2">3</ref> .</p><p>Artists, and perhaps especially new media artists, contribute to public perception and adoption of new technologies through their use of emerging media technologies such as augmented and virtual reality, generative image systems, and high-resolution displays in the production of their work. In this way, art and media production are mechanisms within the larger machine of unsustainable computational consumption. As such, it is critical for artists to develop, share, and promote new and more sustainable methods of engaging with technology, especially within the context of higher education. This context can be narrowed to two central questions:</p><p>1. How can we teach the technical and conceptual skills needed for (new media) artists to acknowledge our climate context in their work?</p><p>2. How can digital arts education play a role in resisting the aestheticization and adoption of carbon intensive<ref type="foot" target="#foot_3">foot_3</ref> digital technologies?</p><p>Answering these questions brings us quickly to three main challenges that exist in addressing these issues within the classroom:</p><p>1. Climate change touches all aspects of artistic labor, from ideation to production to dissemination. This ubiquity makes it difficult to address in a classroom setting or really in one's practice at all.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2</head><p>. While examples exist, as stated above and as will be touched on within each method, many approaches to low carbon creative computing are technologically complex. This complexity can make introducing these topics to beginners very challenging, especially when the context is not computer science but digital art/creative technologies.</p><p>3. There is a lack of artworks which engage low carbon methods while not being about low carbon methods. In other words, there is a need for showing how to do creative work sustainably when the work itself isn't necessarily about sustainability.</p><p>To address these challenges, educators must identify actionable areas of improvement within the technologies they are teaching and craft projects and hands-on experiences and weave low carbon thinking into the aesthetic, theoretical, and technical content of the course.</p><p>While the scope of artistic work does not usually come at a scale that would see large gains in overall emissions reductions, it is nonetheless important for artists to engage with technologies with the environment in mind. Doing so allows for:</p><p>• Technological limits to beneficially inform aesthetic choices.</p><p>• Artists to challenge the preconceived notions of technological standards and norms.</p><p>• The technological substrate of the work to be understood as highly material rather than as "in the cloud" or immaterial.</p><p>• Artists to help enfold sustainable practices into their imaginaries.</p><p>Each of the methods that follow link technical and conceptual methods with an existing artwork and outline a range of classroom integrations of varying technical complexity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>METHOD 1 -COMPUTE REUSE AS MEDIA ARCHAEOLOGY</head><p>An exploration of how reusing obsolete or out-moded hardware (ewaste) can simultaneously extend the life of compute equipment 5 The Minitel network was an online service in the 1980s which predated the modern internet.</p><p>while also enabling artists to include the social context for which the equipment was initially made in the conceptual development of their work. This approach can be seen in the work of PAMAL-Art and their work Profound Telematic Time (P.T.T.) <ref type="bibr" target="#b4">[5]</ref>, 2022, which makes use of and explores the culture and history surrounding the Minitel 5 network. Classroom engagement with this method might include a site visit to a local e-waste facility and a project wherein students explore the history of and develop a new work for a specific piece of "old hardware". In a coding intensive or sufficiently advanced undergraduate course, this could either be done via emulation of the hardware or acquisition of the original hardware depending on class scope and prior experience. In a course that does not focus on coding or where students lack the technical capacity for such work, they could instead adopt the limits of their chosen hardware (color palette, resolution, etc.) in the development of a new artwork. One of the most basic examples of this is to have students take photos Teaching Sustainable Creative Technologies This work is licensed under CC BY 4.0 and then convert them using the default dithering and compression algorithms of early home computers such as the Commodore 64<ref type="foot" target="#foot_4">foot_4</ref> .</p><p>The goal of this method is to foster a mindset of reuse as both ecologically conscientious and conceptually rich, while also introducing students to the process of understanding and developing new works within the constraints of older technology.</p><p>METHOD 2 -SUSTAINABLE WEB DEVELOPMENT 7</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>AND MATERIAL SPECIFICITY</head><p>An exploration of how designing websites with a low carbon mindset on the backend can be brought to frontend development in the form of low resolution/dithered images, limited color palettes/animations, etc. to highlight these choices to end users/viewers. The work Solar Protocol <ref type="bibr" target="#b0">[1]</ref> by Tega Brain, Alex Nathanson, and Benedetta Piantella exemplifies this holistic approach to sustainable backend and frontend creative production. The Low-Tech Magazine <ref type="bibr" target="#b5">[6]</ref> website is another excellent example of this ethos<ref type="foot" target="#foot_6">foot_6</ref> . These projects can help introduce students to the (often invisibilized) materiality of our networked experiences.  In the classroom, this could take the form of facilitating hands-on experience with network hardware (creating simple servers using microcomputers or repurposed machines) and challenging students to work within visual and technical limits in the production (coding and deployment) of a website. In the absence of hands-on hardware to engage with, or in the context where such explorations are too complex, students can be guided to website carbon emissions calculators such as Website Carbon <ref type="bibr" target="#b6">[7]</ref> to help them understand the impact of their work and to critically interrogate existing web design.</p><p>For students lacking coding experience, HTML and CSS provide both an excellent introduction to code and access to web publications that can and should be treated as a destination for creative expression rather than mere on-ramp to the more carbon intensive world of JavaScript. In this way, sustainable web development can be used to frame introductions to web development more broadly. I have been using this framing in my web development lessons, within the context of creative coding curriculum, since 2021 9 .</p><p>The goal of this method is to help students understand the materiality of the internet and to reframe HTML and CSS (as well as other lightweight web processes) as complete approaches to web development rather than mere steppingstones to more carbon intensive processes.</p><p>revision process provides critical insights to the work of sustaining a solar powered server over a long period of time. A summary of that work can be found here: <ref type="url" target="https://solar.lowtechmagazine.com/2023/06/rebuilding-a-solar-powered-website/">https://solar.lowtechmagazine.com/2023/06/rebuilding-a-solar-powered-website/</ref> 9 I wrote the following assignment template for my students to get them introduced to sustainability web design with HTML and CSS: <ref type="url" target="https://github.com/cthompto/Sustainable-and-Accessible-Web-Design-with-HTML-and-CSS">https://github.com/cthompto/Sustainable-and-Accessible-Web-Design-with-HTML- and-CSS</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>METHOD 3 -FRUGAL COMPUTING IN ARTIST CONCEPTIONS OF THE FUTURE</head><p>An exploration of how artists can develop work in ways that challenge the "always on" approach in contemporary gallery/museum display settings and the misconception of digital as immaterial to instead imagine projects whose production and display are tied to available resources. The work of Energy Transition Design <ref type="bibr" target="#b7">[8]</ref> to produce solar power systems for art and design contexts offers ways to imagine artworks that respond to the availability of renewable energy. The classroom implementation of this could involve students redesigning an existing exhibition space to be responsive to energy availability and then designing future projects for the redesigned space. In the case of my recent climate class 10 , this method was enacted through the co-development of a renewables powered autonomous display system, inspired by simple solar power displays such as those used for road signs, over the course of the semester. Students had the opportunity to see how the process develops from a proposal to the development of a working prototype and had the opportunity to imagine work for the system as part of the class's culminating experience<ref type="foot" target="#foot_7">foot_7</ref> .</p><p>The goal of this method is to foster sustainable thinking into imaginings of the future and to help students gain the tools and insights needed to challenge conventional wisdom and 10 In Spring 2025 I am teaching a combination graduate and undergraduate course titled "Creative Technologies During Climate Crisis" at Virginia Tech. methodologies around the distribution and display of digital artwork.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>STUDENT PRECEPTIONS</head><p>While the work of building student and institutional capacity to more fully engage with the first outlined method is still in progress, I have had the opportunity to introduce dithering and other methods of image/data compression to students. Though a small sample size (4 students), all students reported finding the process and its results to be aesthetically appealing and technically interesting. The following example shows a student photograph and one of four dithered versions they created. This student stated they were particularly drawn to the color palette and the horizontal line distortions created by the dithering algorithm. Response to method 2 (sustainable web development), which I have taught in a variety of formats over the past 4 years, has been generally positive. Three key pieces of reflection/feedback from these units (compiled using electronic feedback surveys) have been:</p><p>• Surprise at how resource intensive even a seemingly simple website is on the contemporary web.</p><p>• A higher level of interest in HTML and CSS as languages/tools in their own right (and not merely as a steppingstone to more "advanced" tools or languages) compared to prior web development projects which did not emphasize sustainability.</p><p>• Those with a self-reported interest in sustainability appreciated being able to connect that interest to their university coursework.</p><p>Throughout my time teaching this content, I have found that students with a wide range of visual styles and professional goals have been able to connect positively to these methods of working.</p><p>The following example shows a student who wanted to create a minimalist design portfolio. The project challenged students to use only HTML and CSS and to use efficient media formats. The resulting home page manages to come across as professional while maintaining an "A+" rating on the Website Carbon Calculator<ref type="foot" target="#foot_8">foot_8</ref> . Overall, the student response to introducing sustainable methods in creative technology contexts has been very positive. Nearly all students report that they are concerned about climate change and have a desire to learn more about how it might impact their lives and work in the future. While some students struggled with the technical aspects of these assignments, in my own classroom experiences, it has not been at a higher rate compared to other, more conventional, technical approaches to these subjects.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IMLPEMENTATION GUIDELINES</head><p>Returning to the first two questions:</p><p>• How can we teach the technical and conceptual skills needed for (new media) artists to acknowledge our climate context in their work?</p><p>• How can digital arts education play a role in resisting the aestheticization of digital maximalism? And considering the context, examples, and students' experiences outlined, I propose the following guidelines for addressing these issues in the classroom. These guidelines seek to provide a set of considerations that can be applied beyond the three methods given earlier in this paper to any initiative aimed at making art and technology education more sustainable.</p><p>1. Be mindful of your location. In this case, meaning both the specific site in which the project is taking place (the lesson or project) and the sites that it may be exhibited or shared. Taking this context into consideration allows for:</p><p>• The identification of potential local partners (ewaste facilities, renewable energy sites, community groups, etc.).</p><p>• An understanding of how categories such as "renewable" or "sustainable" might mean different things in different contexts.</p><p>• The exhibition of the work to be considered in its overall ecological impact and life span. 3. Consider the learning outcomes of replaced technologies and skills in a class. If a certain technology is being replaced in a course for something more sustainable (perhaps coding with a retro game engine instead of unity) it is important to consider how the more sustainable option can address similar core concepts. Doing so will:</p><p>• Demonstrate (to both students and colleagues) that working sustainability does not mean sacrificing rigor or core learning objectives.</p><p>• Allow the course and project to continue to fulfill its role in the larger context of the workshop, class, or degree.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Provide real world examples and hands-on experiences.</head><p>Sustainable practices often fall prey to the idea that they are new or untested and thereby less suited for the classroom. Providing students with tangible examples can:</p><p>• Demonstrate that sustainable practices are already in use and are often a viable alternative.</p><note type="other">LOCO 2024 C. Thompto</note><p>• Give students a more meaningful and holistic understanding of how these methods look and feel in practice.</p><p>5. And finally, iterate. Art, technology, and sustainability are all shifting and evolving fields. One must be willing to change and continually develop their coursework to meet the moment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CONCLUSION</head><p>Taken together, these methods and guidelines begin to outline new modes of teaching artistic production that are responsive to our shared climate crisis as opposed to complacent in driving digital consumption. It is critical that such methods be enfolded into new media art education across a broad spectrum of technical processes including but not limited to installation art, video and animation production, web development, and interactive media/game development. Further, these methods not only offer low carbon alternatives to traditional media art production, but they also offer new ways of thinking about technology which will be of critical importance for future generations of creative practitioners.</p><p>These methods offer new ways for those of us teaching creative technologies to do so in more sustainable ways and begin to integrate low carbon methods into all aspects of our curriculum. By introducing students to the work of existing practitioners and by drawing connections between technical approaches and conceptual concerns, we can foster a perception of these practices that sees them as an opportunity rather than a burden to the creative process. Again, while the scope of individual artistic works is normally rather limited in a technical sense, artists drive interest in and adoption of technologies at a social and cultural level and must therefore expand their work to help imagine and enact new ways of thinking and making sustainably within the arts and beyond.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Installation view of Profound Telematic Time (P.T.T.)</figDesc><graphic coords="2,318.00,168.96,240.00,320.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: A screenshot of the Solar Protocol website featuring server battery and location information.</figDesc><graphic coords="3,54.00,361.95,240.00,149.75" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: A screenshot of the Low-Tech Magazine website featuring server battery and dithered images.</figDesc><graphic coords="3,318.00,76.77,240.00,160.15" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: A solar cart designed by Energy Transition Design.</figDesc><graphic coords="4,54.00,219.05,240.00,252.01" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: A student photograph (left) and their dithered version (right).</figDesc><graphic coords="4,318.00,280.06,240.00,90.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: A screenshot of a student's sustainably designed website (name blurred in top left and center for student privacy).</figDesc><graphic coords="5,55.50,135.80,240.00,159.95" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>2 .</head><label>2</label><figDesc>Give students multiple ways into the subject and opportunities to give feedback. Students will come to this work with different levels of familiarity about both the broader subject of climate/sustainability and the specific arts-based technical and conceptual knowledge being covered. Allow students to draw on their prior knowledge and lived experience when facing new material. Taking this into consideration empowers students to:• Draw connections between coursework and their lived experiences.• Shape coursework by allowing them to share their concerns and interests. • Move through the paralyzing feeling that climate change is too big of a subject to face by focusing on what they do know and what they can do/learn.</figDesc></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>In art, material specificity refers to the idea that all materials have inherited and culturally situated meanings that artists can use and manipulate in the production of their work.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>Media archaeology is the study of media history through lesser-known devices and processes.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>While a systematic review of programs has not been undertaken, current new media and digital art references, textbooks, and other curriculum materials rarely cover this subject.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_3"><p>Including but not limited to: ever increasing screen resolutions, faster frame and refresh rate displays, "AI" power graphics technologies, always online digital experiences, and more.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_4"><p>In my classes, I use https://doodad.dev/dither-me-this/ as quick and easy tool to get students exploring this concept.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="7" xml:id="foot_5"><p>Web development here refers to both frontend and backend development and is reflective of the need for artists and designers to engage with both sides in the development of truly ecologically conscious work.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="8" xml:id="foot_6"><p>Of particular note with Low Tech Magazine is that fact that the original solar website, designed in and implemented in 2018, was redesigned and redeployed in 2023. This</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="11" xml:id="foot_7"><p>This research is being funded through a Faculty Initiated Research Grant (FIRG) from Virginia Tech's College of Architecture, Arts, and. Design.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="12" xml:id="foot_8"><p>I used the calculator at https://www.websitecarbon.com/ to rate the student's work.</p></note>
+		</body>
+		<back>
+
+			
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>KEYWORDS</head><p>Materiality, new media art, design, media archaeology, e-waste, sustainable web development, frugal computing, carbon awareness.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Anais do(a) https://eventos.galoa.com.br/sedu-2024/page/4618-home</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N A B P</forename><surname>Tega Brain</surname></persName>
+		</author>
+		<idno type="DOI">10.29327/1444890</idno>
+		<ptr target="https://solarprotocol.net/index.html" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<publisher>Even3</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Permacomputing Wiki</title>
+		<author>
+			<persName><surname>Various</surname></persName>
+		</author>
+		<ptr target="https://permacomputing.net/" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Revival and development of classical photography in contemporary perspective</title>
+		<author>
+			<persName><forename type="first">Yanhong</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/shsconf/202317402028</idno>
+		<ptr target="https://wiki.melonland.net/web_revival" />
+	</analytic>
+	<monogr>
+		<title level="j">SHS Web of Conferences</title>
+		<title level="j" type="abbrev">SHS Web of Conf.</title>
+		<idno type="ISSNe">2261-2424</idno>
+		<imprint>
+			<biblScope unit="volume">174</biblScope>
+			<biblScope unit="page">02028</biblScope>
+			<date type="published" when="2023">2023</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">‘Compression makes every movie a melodrama’: A conversation with Laura U. Marks on the Small File Media Festival</title>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">P</forename><surname>Rossouw</surname></persName>
+			<idno type="ORCID">0000-0001-9026-3397</idno>
+		</author>
+		<idno type="DOI">10.1386/sfs_00088_7</idno>
+		<ptr target="https://smallfile.ca/" />
+	</analytic>
+	<monogr>
+		<title level="j">Short Film Studies</title>
+		<idno type="ISSN">2042-7824</idno>
+		<idno type="ISSNe">2042-7832</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="11" to="20" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Intellect</publisher>
+		</imprint>
+	</monogr>
+	<note>Small File Media Festival</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Dictation: A Canadian Perspective on the History of Telematic Art</title>
+		<author>
+			<persName><forename type="first">Hank</forename><surname>Bull</surname></persName>
+		</author>
+		<idno type="DOI">10.7551/mitpress/9780262034654.003.0007</idno>
+		<ptr target="https://pamal.org/profound-telematic-time/" />
+	</analytic>
+	<monogr>
+		<title level="m">Social Media Archeology and Poetics</title>
+		<imprint>
+			<publisher>The MIT Press</publisher>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note>Profound Telematic Time</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">How to Build a Low-tech Website?</title>
+		<author>
+			<persName><forename type="first">Kris</forename><forename type="middle">D</forename><surname>Decker</surname></persName>
+		</author>
+		<idno type="DOI">10.21428/6ffd8432.1a0e1731</idno>
+		<ptr target="https://solar.lowtechmagazine.com/" />
+	</analytic>
+	<monogr>
+		<title level="j">Commonplace</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+			<publisher>PubPub</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">LAS VEGAS SANDS CORP., a Nevada corporation, Plaintiff, v. UKNOWN REGISTRANTS OF www.wn0000.com, www.wn1111.com, www.wn2222.com, www.wn3333.com, www.wn4444.com, www.wn5555.com, www.wn6666.com, www.wn7777.com, www.wn8888.com, www.wn9999.com, www.112211.com, www.4456888.com, www.4489888.com, www.001148.com, and www.2289888.com, Defendants.</title>
+		<idno type="DOI">10.1089/glre.2016.201011</idno>
+		<ptr target="https://www.websitecarbon.com" />
+	</analytic>
+	<monogr>
+		<title level="j">Gaming Law Review and Economics</title>
+		<title level="j" type="abbrev">Gaming Law Review and Economics</title>
+		<idno type="ISSN">1097-5349</idno>
+		<idno type="ISSNe">1941-5494</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="859" to="868" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Mary Ann Liebert Inc</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">ENERGY EQUITY IN INDIA’S RENEWABLE ENERGY TRANSITION: A POLICY DESIGN AGENDA</title>
+		<author>
+			<persName><forename type="first">Aritra</forename><surname>Chakrabarty</surname></persName>
+		</author>
+		<idno type="DOI">10.37099/mtu.dc.etdr/1951</idno>
+		<ptr target="https://energytransitiondesign.com/" />
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<publisher>Michigan Technological University</publisher>
+		</imprint>
+	</monogr>
+	<note>Energy Transition Design</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

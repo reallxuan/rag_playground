@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">ParamBench: A Graduate-Level Benchmark for Evaluating LLM Understanding on Indic Subjects</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Kaushal</forename><surname>Sharma</surname></persName>
+							<email>kaushals@iimidr.ac.in</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Indian Institute of Management Indore</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Vivek</forename><surname>Patel</surname></persName>
+							<email>vivekp@iimidr.ac.in</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Indian Institute of Management Indore</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ayush</forename><surname>Maheshwari</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Indian Institute of Management Indore</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Aditya</forename><surname>Maheshwari</surname></persName>
+							<email>adityam@iimidr.ac.in</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Indian Institute of Management Indore</orgName>
+								<address>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">ParamBench: A Graduate-Level Benchmark for Evaluating LLM Understanding on Indic Subjects</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">6649C4F7340D7CC0B569C6830C45F90D</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:51+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Large language models (LLMs) have been widely evaluated on tasks such as comprehension, question answering, summarization, code generation, etc. However, their performance on graduate-level, culturally grounded questions in the Indian context remains largely unexplored. Existing Indian benchmarks emphasise basic factorientated queries that offer limited assessment of a deeper disciplinary understanding tailored to the Indian setting. In this paper, we present ParamBench, consisting of around 11.5K questions in Hindi language comprising questionnaires from 16 diverse subjects. These questions are primarily derived from nation-wide graduate level entrance examination covering topics such as history, music, instruments, yoga, literature, philosophy, law, etc.</p><p>specifically for the Indian context. Additionally, we assess the ability of LLMs to handle diverse question formats-such as listbased matching, assertion-reason pairs, and sequence ordering-alongside conventional multiple-choice questions. We evaluated the performance of more than 17 open source LLMs on this benchmark, observing that Llama 3.3 70B attains the highest overall accuracy of 48%. Furthermore, subject-wise analysis indicates that even for the best performing LLMs, performance remains weak on topics such as music, classical instruments, politics and archaeology, underscoring persistent challenges in culturally grounded reasoning.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.28" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Large Language Models (LLMs) have demonstrated remarkable capabilities in multilingual reasoning and knowledge-intensive tasks <ref type="bibr">(Liu et al., 2024b)</ref>. Although LLMs perform reasonably well in English and few other languages, their performance in culturally nuanced domains, particularly within the Indian context, remains weak <ref type="bibr" target="#b31">(Verma et al., 2025)</ref>. This is especially significant given India's linguistic and cultural diversity, with a population of over 1.4 billion, more than 120 major languages, and nearly 19,500 dialects across 28 states <ref type="bibr" target="#b8">(Javed et al., 2024)</ref>. Without robust evaluation in these settings, the application of LLMs to education, governance, and knowledge systems in India risks being incomplete and inequitable.</p><p>India has a rich body of traditional knowledge in areas such as history, religion, law, literature, philosophy, music, medicine, etc. Yet state-of-the-art LLMs often perform poorly when questions are related to familiarity with indigenous conceptual frameworks and knowledge <ref type="bibr" target="#b19">(Maji et al., 2025)</ref>. These weaknesses become clear in tasks that require an understanding of Indian ways of thinking, local concepts, and culturally specific knowledge. Existing Indic language benchmarks, while valuable for assessing syntactic and taskoriented competencies <ref type="bibr" target="#b5">(Doddapaneni et al., 2023;</ref><ref type="bibr" target="#b31">Verma et al., 2025)</ref> fail to capture the diverse nuances. Recent resources such as the Sanskriti dataset <ref type="bibr" target="#b19">(Maji et al., 2025)</ref> capture culturally salient attributes across India's geographic diversity. However, their emphasis on breadth leaves a gap for evaluation on indepth graduate level knowledge in culturally aligned subjects.</p><p>To address this gap, we present a new benchmark, ParamBench consisting of roughly 11.5K questions across 16 Indiafocused subject areas-including archaeology, religion, law, culture, music, arts, philoso- 48.0 42.9 42.0 37.9 37.4 34.8 32.1 31.8 28.6 28.5 28.2 28.2 27.7 26.8 20.0 16.6 Model Accuracy Comparison by Size Category Model Size Small (&lt;4B) Medium (4 15B) Large (&gt;15B) MoE phy, and yoga, etc. (c.f. Figure <ref type="figure" target="#fig_2">2</ref>). The questions are drawn from postgraduate-level competitive exams and reflect fields grounded in India's intellectual and cultural traditions. Additionally, the benchmark includes multiple questions types: standard multiple-choice, list-based matching, assertion-reason, sequencing/ordering, incorrect-statement identification, and fill-in-the-blank. The benchmark tasks examines not only language understanding in Indian language but also whether models can understand and use concepts that are specific to Indian history, philosophy, law, literature, arts, etc.</p><p>In ParamBench, we evaluate around 16 large language models of different model families and parameter sizes, including several recently released Indian LLMs. While LLMs often perform well on general-purpose tasks in English and on common topics, our results show a clear drop in performance on Indic topics (c.f. Figure <ref type="figure" target="#fig_1">1</ref>). Among smaller models with fewer than 15 billion parameters, Qwen3-4B achieves the best overall accuracy at 37.9%. In the category of larger models, Llama-3.3-70B attains the highest accuracy of 48%. However, performance on several Indic subjects-including music, dance, philoso-phy, archaeology, political science, and traditional instruments-remains below 41% even for the best-performing model. This highlights the persistent difficulty of culturally grounded subjects, where state-of-the-art open-source LLMs continue to struggle despite scale. Our contributions can be summarised as follows:</p><p>With ParamBench, our aim is to identify and quantify current gaps in LLM performance for the Indian context and guide the development of models that are culturally and linguistically aligned with India. Our goal is to help build AI systems that better represent India's knowledge traditions and language diversity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Related Works</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">LLM Benchmarks</head><p>Several benchmarks have been developed to evaluate the capabilities of large language models (LLMs). For instance, KMMLU and CMMLU <ref type="bibr" target="#b25">(Son et al., 2025;</ref><ref type="bibr" target="#b13">Li et al., 2024)</ref> assess academic knowledge across a broad range of subjects, while BIG-Bench <ref type="bibr" target="#b26">(Srivastava et al., 2023)</ref> focuses on measuring complex reasoning and generalization abilities. Similarly, HELM <ref type="bibr" target="#b14">(Liang et al., 2023)</ref> introduces a comprehensive framework that evalu- ates LLMs across multiple dimensions, including accuracy, robustness, and fairness.</p><p>Although these benchmarks provide extensive coverage of topics, they remain largely centered on English and other high-resource languages. Consequently, they often overlook linguistic and cultural diversity. Recent LLMs demonstrate some capacity for cultural and linguistic knowledge <ref type="bibr">(Johnson et al., 2022;</ref><ref type="bibr" target="#b3">Atari et al., 2023;</ref><ref type="bibr" target="#b20">Masoud et al., 2025)</ref>, yet continue to face significant challenges in adapting to non-Western contexts <ref type="bibr" target="#b0">(Alkhamissi et al., 2024;</ref><ref type="bibr" target="#b6">Durmus et al., 2024)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Indian multilingual benchmarks:</head><p>In recent years, various benchmarks have been introduced to evaluate LLMs in the context of Indian languages and multilingual tasks. The Indic-QA Benchmark <ref type="bibr">(Singh et al., 2025)</ref> provides large-scale question-answering datasets in 11 Indic languages, incorporating both original and translated content. MILU <ref type="bibr" target="#b31">(Verma et al., 2025)</ref> expands this effort by presenting more than 80,000 multiple-choice questions in 11 languages, with a particular emphasis on culturally relevant topics. Similarly, IndicGenBench <ref type="bibr" target="#b24">(Singh et al., 2024)</ref> focuses on generative tasks, such as summarization and translation, spanning 29 Indic lan-guages. BharatBench <ref type="bibr" target="#b12">(Krutrim, 2025)</ref> broadens the scope further by integrating text, vision, and speech modalities across 8 Indian languages.</p><p>More recently, cultural and evaluator alignment have been highlighted through benchmarks such as SANSKRITI <ref type="bibr" target="#b19">(Maji et al., 2025)</ref> and PARIKSHA <ref type="bibr" target="#b32">(Watts et al., 2024)</ref>, which address the need to incorporate socio-cultural context in evaluating LLMs. Beyond taskspecific benchmarks, several benchmarks have been proposed for extremely low-resource Indic languages such as Sanskrit <ref type="bibr">(Maheshwari et al., 2022</ref><ref type="bibr" target="#b17">(Maheshwari et al., , 2024))</ref>.</p><p>In science and technical education, JEEBench <ref type="bibr" target="#b1">(Arora et al., 2023)</ref> evaluates engineering entrance level mathematics, and the Materials Science Graduate Exam Benchmark targets post-graduate level scientific knowledge. In the legal and finance domain, IL-TUR <ref type="bibr" target="#b10">(Joshi et al., 2024)</ref> assesses legal reasoning, while LLMs Acing Chartered Accountancy <ref type="bibr" target="#b7">(Gupta et al., 2025)</ref> evaluates performance on taxation and auditing tasks. For governance and multilingual reasoning, datasets such as the UPSC Civil Services Study dataset <ref type="bibr" target="#b4">(Banerjee et al., 2024)</ref>, MILU <ref type="bibr" target="#b31">(Verma et al., 2025)</ref>, and IndicMMLU-Pro <ref type="bibr" target="#b11">(KJ et al., 2025)</ref> examine general knowl-edge and reasoning across multiple Indic languages. Building on these efforts, our benchmark contributes by specifically evaluating India-centric knowledge through expert-verified multiple-choice questions (MCQs) drawn from the UGC-NET and UPSC examinations in Hindi.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">ParamBench</head><p>In this section, we present data collection, annotation process and analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Data Collection</head><p>ParamBench consists of 11,446 questions in Hindi language covering 16 Indic subjects such as Indian history, literature, archaeology, Indian culture, music, arts, yoga, etc. The subject-wise distribution of questions are present in Figure <ref type="figure" target="#fig_2">2</ref>. The questions are collected from UGC-NET<ref type="foot" target="#foot_0">foot_0</ref> and UPSC Civil services examination<ref type="foot" target="#foot_1">foot_1</ref> . UGC-NET is a nationwide examination administered by a government agency to determine eligibility for Ph.D. admission and for appointment to teaching positions in Indian universities and colleges. The exam is offered in around 80 subjects and conducted twice every year. Each test consists of two papers composed of multiple-choice questions (MCQs). UPSC Civil Services likewise employs rigorous multiple-choice assessments as part of a multi-stage selection process, providing domain-relevant, exam-realistic materials for evaluating graduate-level competence in India-specific subjects.</p><p>We constructed the dataset by downloading official question papers and answer keys from the respective examination websites. For UGC-NET, we curate papers from 2012-2018, selecting questions from 16 subjects that relates to Indian knowledge, including Indian history, law, music, and culture. We did not include other subjects as those are partially covered by other existing benchmarks such as Sanskriti <ref type="bibr" target="#b19">(Maji et al., 2025)</ref>, MILU <ref type="bibr" target="#b31">(Verma et al., 2025)</ref>. For UPSC, we include preliminary examination papers from 2011-2024, focusing on six major subjects that are central to Indian civilizational, literary, cultural, and academic knowledge. To the best of our knowl-edge, this corpus has not appeared in prior LLM benchmarking studies and constitutes a newly curated, human-authored dataset designed explicitly for graduate-level evaluation in Indic contexts.</p><p>Each subject comprises of multiple question papers in PDF in which many of them are machine-readable, while a subset contains non-selectable text. Layouts vary across documents, with some in single-column format and the majority in two-column format. To ensure uniform text accessibility, we processed all PDFs with a proprietary OCR system and obtained text outputs for downstream curation and annotation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Annotation setup</head><p>We process the OCR and extract text by tagging each question with its subject and the exam year of appearance. Following this, human annotators perform post-OCR correction to fix recognition errors and restore missing diacritics or script artifacts. Beyond textual corrections, annotators standardize formatting so that questions and answers are parseable by automated scripts. This pipeline ensures consistent metadata, clean text, and machine-actionable structure across heterogeneous source documents. Each entry was structured with fields for question, question type, options, correct answer, subject, year, and exam name to ensure consistency and traceability.</p><p>Annotation was conducted by subjectmatter experts proficient in Hindi and trained in the relevant domains. Because the source questions and answers are in Hindi, annotators were selected based on demonstrated fluency in reading, writing and speaking of Hindi and grammar knowledge.</p><p>General annotation guidelines were developed and shared with all annotators. These emphasized grammatical correctness, completeness of questions and answers, and standard formatting. Questions with unresolved issues were to be removed or escalated for review. Annotation was primarily carried out using Google Docs, and the finalized dataset was exported in CSV format.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Team structure</head><p>The annotation team consisted of two tiers. First, a team of four annotators corrected questions and answers from OCR outputs, entered answer keys, and corrected grammatical errors. This was followed by a review process by subject expert, who verified the grammar, formatting, and correctness of the answer keys.</p><p>We implemented both manual and automated quality assurance protocols. Initially, only those questions that aligned with the benchmark's focus on Indian-specific knowledge were retained. Manual checks were performed to validate grammatical correctness, answer accuracy, and completeness. Automated scripts were used to ensure each question had exactly four options, one correct answer, and no missing fields. This two-step quality control process helped maintain the reliability of the annotated dataset.</p><p>Prior to full-scale annotation, annotators were given a sample dataset along with worked examples. They were then assigned trial files, which were reviewed and corrected by the reviewers. Feedback was provided iteratively, and only after demonstrating consistent accuracy were annotators assigned larger batches of data. All annotation work was performed using Google Spreadsheets. Annotators were compensated at a rate of $1 per 10 questions. We categorize each item in the table by question type to reflect the range of exam-style reasoning (see Table <ref type="table" target="#tab_1">1</ref>). The benchmark is primarily composed of standard multiple-choice questions, with additional formats such as listbased matching, assertion-reason pairs, sequencing/ordering, incorrect-statement identification, and a small set of fill-in-the-blank items. Overall, MCQs form the majority, while the other types provide complementary coverage of mapping, causal reasoning, temporal ordering, and verification skills.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Question</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Experiments</head><p>We evaluate ParamBench on 16 openly available models spanning diverse sizes and architectures, including parameter ranges of 1B-4B, 4B-15B, and over 15B, as well as two Mixture-of-Experts (MoE) models (Table <ref type="table" target="#tab_2">2</ref>). All models are instruction-tuned variants (see Section 4.1). All experiments follow a zeroshot setup using the prompt in Table <ref type="table">8</ref>, without demonstrations or validation examples. Models are executed locally through using Hugging Face transformers library.</p><p>Evaluation is based on direct answer matching generated responses are compared with the gold key, and accuracy is reported as the proportion of correct outputs. This yields a clear and interpretable measure of task performance in realistic settings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Evaluation setup</head><p>We evaluated a range of open-source large language models (LLMs), spanning smallscale (1B parameters) to 70B parameters models. The selection includes both base and instruction-tuned variants across different architectures and training. The following models were used in our evaluation:</p><p>1. Meta Llama Series: We have used the Llama 3 collection, which offers several mul-tilingual language models <ref type="bibr">(Team, 2024b)</ref>. We used Llama-3.2-1B, Llama-3.2-3B, Llama-3.1-8B, Llama3.3-70B during experiments. 2. Sarvam Models: Sarvam-1 and Sarvam-2b-v0.5 are 2B, 2.5B parameter language models respectively. We also evaluate Sarvam-M which is a 24B parameter model post-trained on Mistral-Small-3.1(SarvamAI). 3. Param-1-2.9B: PARAM-1 a bilingual language model trained from scratch in English and Hindi containing 2.9 billion parameters <ref type="bibr" target="#b21">(Pundalik et al., 2025)</ref>. 4. Qwen3 series: This includes model Qwen3-4B, Qwen3-8B dense model. We also evaluate on MoE Qwen3-30B-A3B containing 30B total parameters and 3B active parameters <ref type="bibr">(Team-Qwen3, 2025)</ref>. 5. Gemma-2-9B: This model is a 9B parameter instruction-tuned language model <ref type="bibr">(Team-Gemma2, 2024)</ref>. 6. Phi-3-medium-4K: This model is a 14B parameter open multilingual model <ref type="bibr">(Team, 2024c)</ref>. 7. Cohere series: Aya 23-8B and Aya-23-35B are instruction fine-tuned model with multilingual capabilities. <ref type="bibr" target="#b2">(Aryabumi et al., 2024)</ref>. 8. DeepSeek-V2-Lite: This model is a lighter version of an original DeepSeek model containing 16B total parameters and 2.4B active parameters <ref type="bibr">(Liu et al., 2024a)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Result</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Model results</head><p>The evaluation results in the Table <ref type="table" target="#tab_2">2</ref> shows that overall accuracies of LLMs models remain comparatevely low across all parameter sizes. In the category of models with fewer than 4B parameters, the highest performance was observed with Llama-3.2-1B (28.6%) <ref type="bibr">(Team, 2024b)</ref>, while most others, including Param-1-2.9B <ref type="bibr" target="#b21">(Pundalik et al., 2025)</ref> and Sarvam-1, stayed around 28 %. Among mid-sized models (4B-15B parameters), performance improved significantly, with Qwen3-4B (Team-Qwen3, 2025) (37.9 %) and Gemma-2-9B (Team-Gemma2, 2024) (37.4 %) performing best. Larger models with more than 15B parameters achieved comparatively higher scores, led by Llama-3.3-70B <ref type="bibr">(Team, 2024b)</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Subject wise results</head><p>Table <ref type="table" target="#tab_5">3</ref> present the zero-shot evaluation performance of models with lower than 4B parameters. Sarvam-1 (SarvamAI) shows good results in Comparative Study of Religions (41.6 %) and Political Science (31.8 %), while Llama-3B <ref type="bibr">(Team, 2024b)</ref> achieves the best accuracy in Defence and Strategic Studies (35.3 %) and Tribal Literature (34.3%). Llama-1B (Team, 2024b) also performs well in Yoga (33.6 %) and Defence (33 %). Param-1 (Pundalik et al., 2025) records competitive scores in subjects such as Comparative Study of Religions (32.9 %) and Tribal Literature (32.4 %).</p><p>Alternatively, Sarvam-2B usually lags behind the others, though it performs relatively better in Yoga (25.5 %). Concluding, Sarvam-1 and Llama-3B <ref type="bibr">(Team, 2024b)</ref> appear as stronger performers across various subjects, whereas Sarvam-2B shows weaker consistency.</p><p>For models in the 4B-15B parameter range, performance is stronger and more balanced across subjects compared to the smaller models, as shown in the with 4B-15B parameters Subject Qwen3-4B Qwen3-8B Llama-3.1-8B Aya-8b Gemma-2 Phi-3 Archaeology 34.4 25 33 28.2 30.9 31 Comparative Study of Religions 48.6 32.2 48.9 45.9 54.9 34.9 Current Affairs 47.6 36.6 40.9 35.5 52 37.8 Defence and Strategic Studies 47.8 30.5 42.2 40.9 49.1 36.5 Drama and theatre 35.6 29 31.7 32.7 29 33 History 35.1 26.3 31.8 29.1 36.2 28.9 Indian Culture 33.2 27.3 31.8 25.1 33.9 30.6 Karnatak Music 32.6 28.4 28.5 28.4 28.7 29.2 Law 35.3 24.5 33.1 29 35.6 28 Music 30.7 27.5 24.7 26.3 24.3 30.3 Percussion Instruments 30.4 29.4 32.1 28.9 34.1 31.4 Philosophy 40.4 25.9 35.4 33.3 37.8 31.7 Political Science 36.8 25.6 32.4 28.6 34.6 31.3 Rabindra Sangeet 33.7 26.3 29.7 25 29.7 34.4 Tribal Literature 46.4 37.8 44.4 40.5 49.2 38.7 Yoga 39.7 29.4 31.8 35.5 35.2 28.8 Table 5: Subject-wise results of models with &gt;15B parameters. Numbers are reported as accuracy in percentage.</p><p>persistently stands out, achieving the highest scores in Comparative Study of Religions (54.9 %), Current Affairs (52 %), and Defence and Strategic Studies (49.1 %). Qwen3-4B <ref type="bibr">(Team-Qwen3, 2025</ref>) also functions well, specifically in Comparative Study of Religions (48.6 %) and Defence (47.8 %). Llama-3.1-8B <ref type="bibr">(Team, 2024b)</ref> shows competitive results in subjects like Comparative Study of Religions (48.9 %) and Tribal Literature (44.4 %), while Aya-8B <ref type="bibr" target="#b2">(Aryabumi et al., 2024)</ref> records strong performance in Comparative Study of Religions (45.9 %) and contributes steady scores across multiple subjects. Phi-3 <ref type="bibr" target="#b2">(Aryabumi et al., 2024)</ref> usually stays in the mid-range but achieves its best in Tribal Literature (38.7) and Rabindra Sangeet (34.4). Overall, Gemma-2 emerges as the strongest performer, with Qwen3-4B <ref type="bibr">(Team-Qwen3, 2025)</ref> and Llama-3.1-8B <ref type="bibr">(Team, 2024b</ref>) also showing robust results, particularly in knowledgeheavy subjects.</p><p>For models with more than 15B parameters and MoE architectures, performance reaches its strongest levels overall as shown in Table <ref type="table">5</ref>. Llama-3.3-70B <ref type="bibr">(Team, 2024b)</ref>, by obtaining highest scores in Current Affairs (69 %), Comparative Study of Religions (67.1 %), Defence and Strategic Studies (66.8), and Tribal Literature (58.7 %), consistently dominates all subjects. Aya-32B <ref type="bibr" target="#b2">(Aryabumi et al., 2024</ref>) also performs competitively, in Comparative Study of Religions (62.9 %) and Defence (56.8 %), while Sarvam-M (SarvamAI) presents strong results in Current Affairs (63.9 %) and Comparative Study of Religions (57.9 %). Alternatively, the MoE models (DeepSeek <ref type="bibr">(Team, 2024a)</ref> and Qwen3-30B-A3B <ref type="bibr">(Team-Qwen3, 2025)</ref>) fall behind, with DeepSeek putting forward weak performance across most domains while Qwen3-30B achieving only slight improvements, by performing its best in Current Affairs (38.1 %). Overall, Llama-3.3-70B clearly emerges as the best performer, with Aya-32B and Sarvam-M showcasing strong choices, but MoE models underperformed in this evaluation.</p><p>Models with fewer than 4B parameters show only scattered and limited results with Sarvam-1 (SarvamAI) and Llama-3B <ref type="bibr">(Team, 2024b)</ref> providing some advantages for a few subjects. While performance improves significantly, with Gemma-2 (Team-Gemma2, 2024), Qwen3-4B <ref type="bibr">(Team-Qwen3, 2025)</ref>, and Llama-3.1-8B <ref type="bibr">(Team, 2024b)</ref> achieving strong and balanced performance in knowledge-intensive subjects such as Comparative Study of Religions, Current Affairs, and Defence Studies. Most interestingly, performance visible for models greater than 15B parameters, whereby Llama-3.3-70B achieves the best performance across almost all subjects, with Aya-32B <ref type="bibr" target="#b2">(Aryabumi et al., 2024)</ref> and Sarvam-M (SarvamAI) being dictated by somewhat lower performance. Also, the Mixture-of-Experts (MoE) models appear to underperform relative to their similar-scale dense model counterparts, revealing current shortcomings of MoE models in this benchmark. Overall, the results imply a strong relationship with the size of parameters to performance, whereby large dense models exhibit the most reliable accuracy across unitary subject areas.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Question type wise results</head><p>The performance varied widely among the models across the question types, with larger models achieving in general a higher accuracy as present in Table <ref type="table" target="#tab_9">6</ref>.</p><p>Llama-3.3-70B <ref type="bibr">(Team, 2024b)</ref> recorded the best results overall, which exceeded 50% in both normal MCQ and assertion-reason questions, and performed strongly across most of the categories. Aya-expanse-32B <ref type="bibr" target="#b2">(Aryabumi et al., 2024)</ref> and Sarvam-M also achieved high scores, specifically in normal MCQ and identifythe-incorrect-statement tasks. The mid-sized models like Qwen3-4B <ref type="bibr">(Team-Qwen3, 2025)</ref> and Gemma-2-9B <ref type="bibr">(Team-Gemma2, 2024)</ref> delivered competitive results, especially in formats which included normal MCQ and assertion-reason type questions, while MOE model such as DeepSeek-V2-Lite <ref type="bibr">(Liu et al., 2024a)</ref> had significantly low accuracies, which were often below 20% in several categories. Tasks like match-the-list and fill-in-the-blank showed a tendency to have lower accuracy overall, which indicated that they posed challenges across most model sizes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Conclusion</head><p>LLMs continue to fall short when evaluated on culturally grounded, India-specific domains despite strong performance on general benchmarks. ParamBench fills this gap by offering a rigorous, graduate-level evaluation across diverse subjects rooted in India's intellectual traditions. Our results reveal clear performance drops across leading models, emphasizing the urgent need for culturally aligned benchmarks. We envision ParamBench as both a diagnostic tool and a stepping stone toward developing LLMs that are more inclusive of India's linguistic and knowledge diversity. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Models</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Examples: Types of questions in ParamBench</head><p>The following table <ref type="table">7</ref> presents examples of six distinct types of questions used in our benchmark dataset. For each type, two representative questions have been selected to illustrate the structure, content, and answer format.</p><p>Type Question Options Ans. Normal MCQ पाषणकालीन उपकरणों क उपयोिगता क अध्ययन िव ध है : (a) स्तर िवज्ञान (b) सू म चह्नीय अध्ययन (c) शु ल्कन प्रयोग (d) प्रारूपक य िवज्ञान (b) Normal MCQ िनम्नां िकत मृ दभां ड परम्पराओं में से कौन महाभारत काल से जु ड़ा हु आ है ? (a) उत्तरी काले चमक ले मृ दभां ड (b) कृ ष्ण-लोिहत मृ दभां ड (c) गै रक मृ दभां ड (d) चित्रत धू सर मृ दभां ड (d) Incorrect Statement Identification उस कू ट को च न्हत करें जसमें सही अ भकथन न हो : (a) एक सं योजक सत्य है यिद इसके सभी सं घटक सत्य हैं अन्यथा यह असत्य है । (b) प्रत्ये क यौिगक अ भकथन एक सत्यता-फलन अ भकथन होता है । (c) िद्वमू ल्या श्रत तकर् शा में प्रत्ये क अ भकथन या तो सत्य होता हैं या असत्य। (d) एक सरल अ भकथन वह अ भकथन है जसका सं घटक इसके भाग के रूप में अन्य कोई अ भकथन नहीं होता। (b) Incorrect Statement Identification िनम्न ल खत में से कौन सा यु ग्म सही सु मे लत नहीं है ?   Table 8: Zero-Shot prompt applied across all models for evaluation</p><formula xml:id="formula_0">a) (iv) (i) (iii) (ii) (b) (i) (ii) (iii) (iv) (c) (ii) (iii) (i) (iv) (d) (iii) (iv) (i) (ii)</formula></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>-3 -m e d iu m -4 k A y a -e x p a n s e -8 B L la m a -3 . 2 -1 B Q w e n 3 -8 B P a r a m -1 -2 . 9 B S a r v a m -1 Q w e n 3 -3 0 B -A 3 B L la m a -3 . 2 -3 B D e e p S e e k -V 2 -L it e S a r v a m -2 b -v 0</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Average performance of evaluated models on ParamBench, categorized by the parameter sizes.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Distribution of the number of questions across different subjects</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><figDesc>I को सू ची-II के साथ सु मे लत करें । सू ची-I: (a) पक्षधमर् ता, (b) िवपक्षस व, (c) बा धत, (d) िवरुद्ध सू ची-II: (i) अिग्न शीतल है , (ii) शब्द शाश्वत है क्योंिक यह उत्पन्न होता है , (iii) पवर् त पर धू म्र है , (iv) जलाशय में अिग्न है</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>(</head></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><figDesc>I और सू ची-II को सु मे लत करें । सू ची-I: (a) वै यिक्तक प्रत्ययवाद, (b) एकत व प्रत्ययवाद, (c) आत्मिनष्ठ प्रत्ययवाद, (d) यथाथर् वादी प्रत्ययवाद सू ची-II: (i) सीिमत आत्मा एक का अं श, प्रकार अथवा अभास है । (ii) मू तर् सत्ता वै यिक्तक आत्मत्व है । (iii) वस्तु ओं के आदशर् रिहत रूपों क यथाथर् ता को स्थािपत करते हैं । (iv) प्रकृ त सीिमत मन का प्रक्षे पण मात्र है ।(a) (iv) (iii) (ii) (i) (b) (ii) (iv) (i) (iii) (c) (ii) (i) (iv) (iii) (d) (i) (ii) (iii) (iv) भकथन (A) और तकर् (R) क परीक्षा आगमनात्मक अनु मान के आलोक में करें और नीचे िदये गये कू ट में से सही का चयन करें । अ भकथन (A) : आगमनात्मक अनु मान में ज्ञात से अज्ञात क ओर जाते हैं । तकर् (R) : आगमनात्मक अनु मान में िकसी जा त िवशे ष के सभी सदस्यों के िनणर् य के द्वारा उस जा त िवशे ष के सभी सदस्यों के बारे में िनणर् य तक पहु ँ चते हैं । कू ट : नीचे एक अ भकथन (A) और एक कारण (R) िदये गये हैं । उन पर िवचार क जये और नीचे िदये गये कू ट से सही िवकल्प का चयन क जये । अ भकथन (A): परमाणु क सत्ता अवश्य स्वीकार क जानी चािहये । तकर् (R): द्वयणु क सावयव है । कू ट : (a) (A) और (R) दोनों सही हैं और (R), (A) का सही आधार है । (b) (A) और (R) दोनों सही हैं और (R), (A) का सही आधार नहीं है । (c) (A) सही है और (question and multiple options, select the correct answer. Keep your response only in English with one of the letters corresponding to the options A, B, C, or D. Do not write anything else.""".</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 :</head><label>1</label><figDesc>Distribution of question types in Param-Bench</figDesc><table><row><cell>Type</cell><cell># Questions</cell></row><row><cell>Normal MCQ</cell><cell>7393</cell></row><row><cell>Find incorrect Statement</cell><cell>1250</cell></row><row><cell>Match the List</cell><cell>1129</cell></row><row><cell>Assertion and Reason</cell><cell>1001</cell></row><row><cell>Sequencing</cell><cell>646</cell></row><row><cell>Fill in the Blank</cell><cell>27</cell></row><row><cell>Total</cell><cell>11446</cell></row><row><cell>3.4 Statistics</cell><cell></cell></row><row><cell cols="2">Figure 2 presents the overall distribution of</cell></row><row><cell cols="2">questions in ParamBench. The corpus com-</cell></row><row><cell cols="2">prises 11,446 Hindi questions spanning 16 sub-</cell></row><row><cell cols="2">jects. History contributes the largest share</cell></row><row><cell cols="2">(1,094 questions), whereas Yoga has the fewest</cell></row><row><cell cols="2">(330 questions). Notably, the benchmark in-</cell></row><row><cell cols="2">cludes substantial coverage of Indic domains</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 :</head><label>2</label><figDesc>ParamBench evaluation results of openly available models for different parameter sizes. The numbers are averaged across all subjects and reported as accuracy in percentage.</figDesc><table><row><cell>at 48.0 %, but</cell></row><row><cell>even this top result falls short of a majority-</cell></row><row><cell>level accuracy.</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 .</head><label>4</label><figDesc>Gemma-2</figDesc><table><row><cell></cell><cell cols="3">Models with &lt; 4B parameters</cell><cell></cell><cell></cell></row><row><cell>Subject</cell><cell cols="5">Param-1 Llama-1B Llama-3B Sarvam-1 Sarvam-2b</cell></row><row><cell>Archaeology</cell><cell>29.3</cell><cell>30.5</cell><cell>23.4</cell><cell>25.4</cell><cell>16.4</cell></row><row><cell>Comparative Study of Religions</cell><cell>32.9</cell><cell>32.1</cell><cell>35.3</cell><cell>41.6</cell><cell>22.4</cell></row><row><cell>Current Affairs</cell><cell>27.8</cell><cell>28.7</cell><cell>28.7</cell><cell>29.2</cell><cell>16</cell></row><row><cell>Defence and Strategic Studies</cell><cell>32.6</cell><cell>33</cell><cell>35.3</cell><cell>34</cell><cell>15.6</cell></row><row><cell>Drama and Theatre</cell><cell>25.1</cell><cell>29.6</cell><cell>21.3</cell><cell>25.3</cell><cell>19.9</cell></row><row><cell>History</cell><cell>27.4</cell><cell>28.1</cell><cell>24</cell><cell>25.6</cell><cell>14.1</cell></row><row><cell>Indian Culture</cell><cell>25.1</cell><cell>24.7</cell><cell>25.4</cell><cell>26.2</cell><cell>14.9</cell></row><row><cell>Karnatak Music</cell><cell>28.9</cell><cell>26.6</cell><cell>27.2</cell><cell>24.2</cell><cell>16.9</cell></row><row><cell>Law</cell><cell>27.6</cell><cell>29</cell><cell>26.1</cell><cell>27.3</cell><cell>15.3</cell></row><row><cell>Music</cell><cell>26.3</cell><cell>23.1</cell><cell>24</cell><cell>24.9</cell><cell>18.9</cell></row><row><cell>Percussion Instruments</cell><cell>25.8</cell><cell>29.2</cell><cell>26.9</cell><cell>24.7</cell><cell>14.6</cell></row><row><cell>Philosophy</cell><cell>23.7</cell><cell>27</cell><cell>23.2</cell><cell>28.4</cell><cell>16.9</cell></row><row><cell>Political Science</cell><cell>27.4</cell><cell>26</cell><cell>23.3</cell><cell>31.8</cell><cell>12.8</cell></row><row><cell>Rabindra Sangeet</cell><cell>31.6</cell><cell>26.5</cell><cell>26.6</cell><cell>23.9</cell><cell>11</cell></row><row><cell>Tribal Literature</cell><cell>32.4</cell><cell>32.4</cell><cell>34.3</cell><cell>29.7</cell><cell>22.1</cell></row><row><cell>Yoga</cell><cell>29.4</cell><cell>33.6</cell><cell>28.8</cell><cell>24.6</cell><cell>25.5</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 3 :</head><label>3</label><figDesc>Subject-wise results of models with &lt;4B parameters. Numbers are reported as accuracy in percentage.</figDesc><table><row><cell>Models</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 4 :</head><label>4</label><figDesc>Subject-wise results of models with 4B-15B parameters. Numbers are reported as accuracy in percentage.</figDesc><table><row><cell></cell><cell cols="3">Models with &gt; 15B parameters and MoE</cell><cell></cell><cell></cell></row><row><cell>Subject</cell><cell cols="5">Sarvam-M Aya-32B Llama-3.3-70B DeepSeek Qwen3-30B-A3B</cell></row><row><cell>Archaeology</cell><cell>39.5</cell><cell>33.5</cell><cell>40.9</cell><cell>17.1</cell><cell>28.2</cell></row><row><cell>Comparative Study of Religions</cell><cell>57.9</cell><cell>62.9</cell><cell>67.1</cell><cell>23.6</cell><cell>32.2</cell></row><row><cell>Current Affairs</cell><cell>63.9</cell><cell>55</cell><cell>69</cell><cell>21.5</cell><cell>38.1</cell></row><row><cell>Defence and Strategic Studies</cell><cell>54.9</cell><cell>56.8</cell><cell>66.8</cell><cell>23</cell><cell>32.1</cell></row><row><cell>Drama and theatre</cell><cell>36.2</cell><cell>37</cell><cell>42.2</cell><cell>24.2</cell><cell>25.3</cell></row><row><cell>History</cell><cell>43</cell><cell>38.5</cell><cell>46.5</cell><cell>19</cell><cell>27.4</cell></row><row><cell>Indian Culture</cell><cell>40.6</cell><cell>39.9</cell><cell>49.3</cell><cell>18.8</cell><cell>25.8</cell></row><row><cell>Karnatak Music</cell><cell>32.6</cell><cell>32.3</cell><cell>33.6</cell><cell>21.9</cell><cell>28</cell></row><row><cell>Law</cell><cell>37.2</cell><cell>36.6</cell><cell>43</cell><cell>21.8</cell><cell>26.5</cell></row><row><cell>Music</cell><cell>33.3</cell><cell>35.6</cell><cell>35.1</cell><cell>18.2</cell><cell>23.8</cell></row><row><cell>Percussion Instruments</cell><cell>29.5</cell><cell>32.2</cell><cell>35.1</cell><cell>22</cell><cell>28.0</cell></row><row><cell>Philosophy</cell><cell>43.8</cell><cell>43.8</cell><cell>49.6</cell><cell>15.4</cell><cell>19.2</cell></row><row><cell>Political Science</cell><cell>42.8</cell><cell>43.8</cell><cell>47.4</cell><cell>17.1</cell><cell>27.3</cell></row><row><cell>Rabindra Sangeet</cell><cell>32.2</cell><cell>33</cell><cell>32.9</cell><cell>19.9</cell><cell>27.1</cell></row><row><cell>Tribal Literature</cell><cell>52.1</cell><cell>52.1</cell><cell>58.7</cell><cell>22.6</cell><cell>30.9</cell></row><row><cell>Yoga</cell><cell>45.8</cell><cell>37</cell><cell>48.2</cell><cell>13.9</cell><cell>25.8</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 6 :</head><label>6</label><figDesc>Average accuracy across all subjects for different question types. In this table, IS represents Find Incorrect Statement, LM represents Match the List, A&amp;R represents Assertion and Reason, BF refers to Fill in the blanks, sequence refers to Correct sequence ordering and MCQ refers to Multiple choice questions.</figDesc><table><row><cell></cell><cell>MCQ</cell><cell>IS</cell><cell cols="4">LM A&amp;R Sequence BF</cell></row><row><cell>Llama-3.2-1B</cell><cell>28.3</cell><cell>21.9</cell><cell>29.8</cell><cell>39.8</cell><cell>26.5</cell><cell>14.8</cell></row><row><cell>Sarvam-1</cell><cell>30.4</cell><cell>28</cell><cell>16.7</cell><cell>28.5</cell><cell>22.1</cell><cell>33.3</cell></row><row><cell>Sarvam-2b-v0.5</cell><cell>16.1</cell><cell>15.9</cell><cell>18.7</cell><cell>18.9</cell><cell>17.4</cell><cell>29.6</cell></row><row><cell>Param-1-2.9B</cell><cell>29.1</cell><cell>20.5</cell><cell>28</cell><cell>32.5</cell><cell>27.3</cell><cell>22.2</cell></row><row><cell>Llama-3.2-3B</cell><cell>28.7</cell><cell>21.9</cell><cell>14.1</cell><cell>33.5</cell><cell>25.2</cell><cell>18.5</cell></row><row><cell>Qwen3-4B</cell><cell>37.8</cell><cell>40.2</cell><cell>34</cell><cell>41.9</cell><cell>35.5</cell><cell>40.7</cell></row><row><cell>Qwen3-8B</cell><cell>30</cell><cell>27.2</cell><cell>7.3</cell><cell>38.6</cell><cell>31.3</cell><cell>25.9</cell></row><row><cell>Llama-3.1-8B</cell><cell>37.7</cell><cell>27.2</cell><cell>28.1</cell><cell>34.3</cell><cell>28.2</cell><cell>37</cell></row><row><cell>Aya-expanse-8B</cell><cell>34.2</cell><cell>25</cell><cell>21.6</cell><cell>37.9</cell><cell>25.7</cell><cell>25.9</cell></row><row><cell>Gemma-2-9B</cell><cell>39.3</cell><cell>33.3</cell><cell>32.3</cell><cell>40.3</cell><cell>29.5</cell><cell>25.9</cell></row><row><cell>Phi-3-medium-4k</cell><cell>33.6</cell><cell>33</cell><cell>25.8</cell><cell>27.8</cell><cell>29.7</cell><cell>33.3</cell></row><row><cell>Sarvam-M</cell><cell>45.9</cell><cell cols="2">39.7 36.6</cell><cell>37.5</cell><cell>35.5</cell><cell>37</cell></row><row><cell>Aya-expanse-32B</cell><cell>46</cell><cell cols="2">42.2 20.4</cell><cell>44.7</cell><cell>28.5</cell><cell>25.9</cell></row><row><cell>Llama-3.3-70B</cell><cell>52</cell><cell>38.6</cell><cell>32.7</cell><cell>53</cell><cell>39.2</cell><cell>40.7</cell></row><row><cell>DeepSeek-V2-Lite</cell><cell>20.3</cell><cell>17.9</cell><cell>22.9</cell><cell>20</cell><cell>15.8</cell><cell>14.8</cell></row><row><cell>Qwen3-30B-A3B</cell><cell>26.4</cell><cell>24.8</cell><cell>28.7</cell><cell>40.9</cell><cell>27</cell><cell>25.9</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>https://ugcnet.nta.ac.in</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>https://upsc.gov.in/examinations</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>We thank the <rs type="institution">BharatGen initiative</rs> for fostering a collective effort toward developing foundation models that reflect India's linguistic and cultural diversity. This work aligns with BharatGen's broader mission of building inclusive and representative AI ecosystems, and we are grateful to be part of this shared endeavour.</p></div>
+			</div>			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Investigating Cultural Alignment of Large Language Models</title>
+		<author>
+			<persName><forename type="first">Badr</forename><surname>Alkhamissi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Elnokrashy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mai</forename><surname>Alkhamissi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mona</forename><surname>Diab</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.acl-long.671</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
+		<meeting>the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="12404" to="12422" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Have LLMs Advanced Enough? A Challenging Problem Solving Benchmark For Large Language Models</title>
+		<author>
+			<persName><forename type="first">Daman</forename><surname>Arora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Himanshu</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Mausam</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2023.emnlp-main.468</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing</title>
+		<meeting>the 2023 Conference on Empirical Methods in Natural Language Processing</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="7527" to="7543" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">Viraat</forename><surname>Aryabumi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Dang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dwarak</forename><surname>Talupuru</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saurabh</forename><surname>Dash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Cairuz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hangyu</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bharat</forename><surname>Venkitesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Madeline</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jon</forename><forename type="middle">Ander</forename><surname>Campos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Chern Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kelly</forename><surname>Marchisio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Bartolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Ruder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Acyr</forename><surname>Locatelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Kreutzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nick</forename><surname>Frosst</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Aya</title>
+		<editor>
+			<persName><forename type="first">Aidan</forename><surname>Gomez</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Phil</forename><surname>Blunsom</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Marzieh</forename><surname>Fadaee</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Ahmet</forename><surname>Üstün</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Sara</forename><surname>Hooker</surname></persName>
+		</editor>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note>weight releases to further multilingual progress</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Morality beyond the WEIRD: How the nomological network of morality varies across cultures.</title>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Atari</surname></persName>
+			<idno type="ORCID">0000-0002-4358-7783</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Haidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jesse</forename><surname>Graham</surname></persName>
+			<idno type="ORCID">0000-0001-8863-7978</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sena</forename><surname>Koleva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><forename type="middle">T</forename><surname>Stevens</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Morteza</forename><surname>Dehghani</surname></persName>
+		</author>
+		<idno type="DOI">10.1037/pspp0000470</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Personality and Social Psychology</title>
+		<title level="j" type="abbrev">Journal of Personality and Social Psychology</title>
+		<idno type="ISSN">0022-3514</idno>
+		<idno type="ISSNe">1939-1315</idno>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1157" to="1188" />
+			<date type="published" when="2023-11">2023</date>
+			<publisher>American Psychological Association (APA)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Gender representation and bias in indian civil service mock interviews</title>
+		<author>
+			<persName><forename type="first">Somonnoy</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sujan</forename><surname>Dutta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soumyajit</forename><surname>Datta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashiqur</forename><forename type="middle">R</forename><surname>Khudabukhsh</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<publisher>CoRR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Towards leaving no indic language behind: Building monolingual corpora, benchmark and models for indic languages</title>
+		<author>
+			<persName><forename type="first">Sumanth</forename><surname>Doddapaneni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rahul</forename><surname>Aralikatte</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gowtham</forename><surname>Ramesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shreya</forename><surname>Goyal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mitesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anoop</forename><surname>Khapra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pratyush</forename><surname>Kunchukuttan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</title>
+		<meeting>the 61st Annual Meeting of the Association for Computational Linguistics</meeting>
+		<imprint>
+			<publisher>Long Papers</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="12402" to="12426" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Towards measuring the representation of subjective global opinions in language models</title>
+		<author>
+			<persName><forename type="first">Esin</forename><surname>Durmus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karina</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Schiefer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><surname>Askell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anton</forename><surname>Bakhtin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carol</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zac</forename><surname>Hatfield-Dodds</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danny</forename><surname>Hernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Joseph</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">First Conference on Language Modeling</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Legal Assist AI-Leveraging Transformer based Model for Effective Legal Assistance</title>
+		<author>
+			<persName><forename type="first">Jatin</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akhil</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saransh</forename><surname>Singhania</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><forename type="middle">Imam</forename><surname>Abidi</surname></persName>
+		</author>
+		<idno type="DOI">10.21203/rs.3.rs-5351879/v1</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Large language models acing chartered accountancy</title>
+		<imprint>
+			<publisher>Springer Science and Business Media LLC</publisher>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">IndicVoices: Towards building an Inclusive Multilingual Speech Dataset for Indian Languages</title>
+		<author>
+			<persName><forename type="first">Tahir</forename><surname>Javed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Janki</forename><surname>Nawale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eldho</forename><surname>George</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sakshi</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaushal</forename><surname>Bhogale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deovrat</forename><surname>Mehendale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ishvinder</forename><surname>Sethi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aparna</forename><surname>Ananthanarayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hafsah</forename><surname>Faquih</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pratiti</forename><surname>Palit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sneha</forename><surname>Ravishankar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saranya</forename><surname>Sukumaran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tripura</forename><surname>Panchagnula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sunjay</forename><surname>Murali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kunal</forename><surname>Gandhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Vaijayanthi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Krishnan</forename><surname>Karunganni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pratyush</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitesh</forename><surname>Khapra</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.findings-acl.639</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics ACL 2024</title>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="10740" to="10782" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<author>
+			<persName><forename type="first">Giada</forename><surname>Rebecca L Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Natalia</forename><surname>Pistilli</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Menédez-González</surname></persName>
+		</author>
+		<title level="m">Leslye Denisse Dias Duran, Enrico Panai, Julija Kalpokiene, and Donald Jay Bertulfo. 2022. The ghost in the machine has an american accent: value conflict in gpt-3</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">IL-TUR: Benchmark for Indian Legal Text Understanding and Reasoning</title>
+		<author>
+			<persName><forename type="first">Abhinav</forename><surname>Joshi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shounak</forename><surname>Paul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akshat</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pawan</forename><surname>Goyal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saptarshi</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashutosh</forename><surname>Modi</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.acl-long.618</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
+		<meeting>the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="11460" to="11499" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Indicmmlu-pro: Benchmarking indic large language models on multi-task language understanding</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Sankalp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashutosh</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laxmaan</forename><surname>Balaji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikunj</forename><surname>Kotecha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vinija</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aman</forename><surname>Chadha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sreyoshi</forename><surname>Bhaduri</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2501.15747</idno>
+		<idno>CoRR, abs/2501.15747</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Bharatbench: Comprehensive multilingual multimodal evaluations of foundation ai models for indian languages</title>
+		<author>
+			<persName><forename type="first">Team</forename><surname>Krutrim</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">CMMLU: Measuring massive multitask language understanding in Chinese</title>
+		<author>
+			<persName><forename type="first">Haonan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixuan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fajri</forename><surname>Koto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yifei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hai</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yeyun</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nan</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><surname>Baldwin</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.findings-acl.671</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics ACL 2024</title>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="11260" to="11285" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Holistic evaluation of language models</title>
+		<author>
+			<persName><forename type="first">Percy</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rishi</forename><surname>Bommasani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tony</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitris</forename><surname>Tsipras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dilara</forename><surname>Soylu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michihiro</forename><surname>Yasunaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yian</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deepak</forename><surname>Narayanan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuhuai</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ananya</forename><surname>Kumar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trans. Mach. Learn. Res</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">2024a. Deepseek-v2: A strong, economical, and efficient mixture-of-experts language model</title>
+		<author>
+			<persName><forename type="first">Aixin</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bei</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bingxuan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenggang</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengqi</forename><surname>Dengr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chong</forename><surname>Ruan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Damai</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daya</forename><surname>Guo</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2405.04434</idno>
+		<imprint/>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Multimodal ArXiv: A Dataset for Improving Scientific Comprehension of Large Vision-Language Models</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuqi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Runxin</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peiyi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiachong</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingpeng</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qi</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.acl-long.775</idno>
+		<idno type="arXiv">arXiv:2402.13524</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
+		<meeting>the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024" />
+			<biblScope unit="page" from="14369" to="14387" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<author>
+			<persName><forename type="first">Ayush</forename><surname>Maheshwari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashim</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amrith</forename><surname>Krishna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atul</forename><forename type="middle">Kumar</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ganesh</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anil</forename><surname>Kumar Gourishetty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jitin</forename><surname>Singla</surname></persName>
+		</author>
+		<title level="m">Samayik: A benchmark and dataset for English-Sanskrit translation</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A Benchmark and Dataset for Post-OCR text correction in Sanskrit</title>
+		<author>
+			<persName><forename type="first">Ayush</forename><surname>Maheshwari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikhil</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amrith</forename><surname>Krishna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ganesh</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2022.findings-emnlp.466</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics: EMNLP 2022</title>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2022" />
+			<biblScope unit="page" from="6258" to="6265" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">SANSKRITI: A Comprehensive Benchmark for Evaluating Language Models’ Knowledge of Indian Culture</title>
+		<author>
+			<persName><forename type="first">Arijit</forename><surname>Maji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raghvendra</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akash</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anushka</forename><surname>Anushka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sriparna</forename><surname>Saha</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2025.findings-acl.228</idno>
+		<idno type="arXiv">arXiv:2506.15355</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics: ACL 2025</title>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="4434" to="4451" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Cultural alignment in large language models: An explanatory analysis based on hofstede&apos;s cultural dimensions</title>
+		<author>
+			<persName><surname>Ri Masoud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ferianc</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Treleaven</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Rodrigues</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings-International Conference on Computational Linguistics, COLING</title>
+		<meeting>-International Conference on Computational Linguistics, COLING</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="8474" to="8503" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Kundeshwar</forename><surname>Pundalik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piyush</forename><surname>Sawarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nihar</forename><surname>Sahoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Shinde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Prateek</forename><surname>Chanda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vedant</forename><surname>Goswami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Nagpal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atul</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Viraj</forename><surname>Thakur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vijay</forename><surname>Dewane</surname></persName>
+		</author>
+		<editor>Aamod Thakur, Bhargav Patel, Smita Gautam, Bhagwan Panditi, Shyam Pawar, Madhav Kotcha, Suraj Racha, Saral Sureka, Pankaj Singh, Rishi Bal, Rohit Saluja, and Ganesh Ramakrishnan</editor>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note>Param-1 bharatgen 2.9b model</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Chapter 1: Introduction to AI: LLMs, GenAI Applications, and the AI Infrastructure</title>
+		<author>
+			<persName><surname>Sarvamai</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/9781501520549-004</idno>
+		<idno>Ac- cessed 20-08-2025</idno>
+		<ptr target="https://www.sarvam.ai/" />
+	</analytic>
+	<monogr>
+		<title level="m">Combating Threats and Attacks Targeting The AI Ecosystem</title>
+		<imprint>
+			<publisher>De Gruyter</publisher>
+			<date type="published" when="2024-10-21" />
+			<biblScope unit="page" from="1" to="42" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Indic qa benchmark: A multilingual benchmark to evaluate question answering capability of llms for indic languages</title>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Kumar Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishwajeet</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rudra</forename><surname>Murthy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaydeep</forename><surname>Sen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashish</forename><surname>Mittal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ganesh</forename><surname>Ramakrishnan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics: NAACL 2025</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="2607" to="2626" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">IndicGenBench: A Multilingual Benchmark to Evaluate Generation Capabilities of LLMs on Indic Languages</title>
+		<author>
+			<persName><forename type="first">Harman</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nitish</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shikhar</forename><surname>Bharadwaj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dinesh</forename><surname>Tewari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Partha</forename><surname>Talukdar</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.acl-long.595</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
+		<meeting>the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="11047" to="11073" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Kmmlu: Measuring massive multitask language understanding in korean</title>
+		<author>
+			<persName><forename type="first">Guijin</forename><surname>Son</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanwool</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sungdong</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seungone</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niklas</forename><surname>Muennighoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Taekyoon</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheonbok</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Min</forename><surname>Kang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stella</forename><surname>Yoo</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Biderman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies</title>
+		<meeting>the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies</meeting>
+		<imprint>
+			<publisher>Long Papers</publisher>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="4076" to="4104" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Beyond the imitation game: quantifying and extrapolating the capabilities of language models</title>
+		<author>
+			<persName><forename type="first">Aarohi</forename><surname>Srivastava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhinav</forename><surname>Rastogi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abu</forename><surname>Awal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md</forename><surname>Shoeb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abubakar</forename><surname>Abid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Fisch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Adam R Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Santoro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrià</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Garriga-Alonso</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transactions on Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">2023</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1" to="95" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Deepseek-v2: A strong, economical, and efficient mixture-ofexperts language model</title>
+		<author>
+			<persName><forename type="first">Deepseek-Ai</forename><surname>Team</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Empowering educators through team-based staffing models</title>
+		<author>
+			<persName><forename type="first">Brent</forename><forename type="middle">W</forename><surname>Maddin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Randy</forename><forename type="middle">L</forename><surname>Mahlerwein</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/00317217221123647</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phi Delta Kappan</title>
+		<title level="j" type="abbrev">Phi Delta Kappan</title>
+		<idno type="ISSN">0031-7217</idno>
+		<idno type="ISSNe">1940-6487</idno>
+		<imprint>
+			<biblScope unit="volume">104</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="33" to="37" />
+			<date type="published" when="2022-08-29" />
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Improving open language models at a practical size</title>
+		<author>
+			<persName><surname>Team-Gemma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Gemma</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<date type="published" when="2024-02">2. 2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Waste Control Specialists Technical Review Team Report</title>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Pierce</surname></persName>
+		</author>
+		<idno type="DOI">10.2172/1906802</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Qwen3 technical report</title>
+		<imprint>
+			<publisher>Office of Scientific and Technical Information (OSTI)</publisher>
+			<date type="published" when="2022-11-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">MILU: A Multi-task Indic Language Understanding Benchmark</title>
+		<author>
+			<persName><forename type="first">Sshubam</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><forename type="middle">Safi Ur Rahman</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishwajeet</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rudra</forename><surname>Murthy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaydeep</forename><surname>Sen</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2025.naacl-long.507</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)</title>
+		<meeting>the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="10076" to="10132" />
+		</imprint>
+	</monogr>
+	<note>Rudra Murthy Venkataramana, and Jaydeep Sen</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">PARIKSHA: A Large-Scale Investigation of Human-LLM Evaluator Agreement on Multilingual and Multi-Cultural Data</title>
+		<author>
+			<persName><forename type="first">Ishaan</forename><surname>Watts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Varun</forename><surname>Gumma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Yadavalli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vivek</forename><surname>Seshadri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manohar</forename><surname>Swaminathan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sunayana</forename><surname>Sitaram</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.emnlp-main.451</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing</title>
+		<meeting>the 2024 Conference on Empirical Methods in Natural Language Processing</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="7900" to="7932" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

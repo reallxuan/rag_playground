@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Reconstructing North Korea&apos;s Plutonium Production History with Bayesian Inference-Based Reprocessing Waste Analysis</title>
+				<funder ref="#_jV3MhTq">
+					<orgName type="full">Freigeist Fellowship</orgName>
+				</funder>
+				<funder ref="#_AUBmWsq">
+					<orgName type="full">German Federal Ministry of Education and Research (BMBF)</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Volkswagen-Stiftung</orgName>
+				</funder>
+				<funder ref="#_8mktpm5">
+					<orgName type="full">Federal Ministry of Education and Research</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-06-17">June 17, 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Benjamin</forename><surname>Jung</surname></persName>
+							<email>benjamin.jung1@rwth-aachen.de</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Technical University of Darmstadt</orgName>
+								<address>
+									<addrLine>Karolinenplatz 5</addrLine>
+									<postCode>64289</postCode>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Nucler Verification and Disarmament</orgName>
+								<orgName type="institution">RWTH Aachen University</orgName>
+								<address>
+									<addrLine>Schinkelstrasse 2</addrLine>
+									<postCode>52062</postCode>
+									<settlement>Aachen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Johannes</forename><surname>Bosse</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Nucler Verification and Disarmament</orgName>
+								<orgName type="institution">RWTH Aachen University</orgName>
+								<address>
+									<addrLine>Schinkelstrasse 2</addrLine>
+									<postCode>52062</postCode>
+									<settlement>Aachen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Malte</forename><surname>Göttsche</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Technical University of Darmstadt</orgName>
+								<address>
+									<addrLine>Karolinenplatz 5</addrLine>
+									<postCode>64289</postCode>
+									<settlement>Darmstadt</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Peace Research Institute</orgName>
+								<address>
+									<addrLine>Baseler Str. 27-31</addrLine>
+									<postCode>60329</postCode>
+									<settlement>Frankfurt Frankfurt am Main</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Reconstructing North Korea&apos;s Plutonium Production History with Bayesian Inference-Based Reprocessing Waste Analysis</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-06-17">June 17, 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">04D87739F6607B96E00C46785A7DA5F7</idno>
+					<idno type="arXiv">arXiv:2506.03865v1[physics.soc-ph]</idno>
+					<note type="submission">Preprint submitted to Elsevier</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Bayesian inference</term>
+					<term>nuclear archaeology</term>
+					<term>isotopic ratios</term>
+					<term>North</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Although North Korea's nuclear program has been the subject of extensive scrutiny, estimates of its fissile material stockpiles remain fraught with uncertainty. In potential future disarmament agreements, inspectors may need to use nuclear archaeology methods to verify or gain confidence in a North Korean fissile material declaration. This study explores the potential utility of a Bayesian inference-based analysis of the isotopic composition of reprocessing waste to reconstruct the operating history of the 5 MWe reactor and estimate its plutonium production history. We simulate several scenarios that reflect different assumptions and varying levels of prior knowledge about the reactor. The results show that correct prior assumptions can be confirmed and incorrect prior information (or a false declaration) can be detected. Model comparison techniques can distinguish between scenarios with different numbers of core discharges, a capability that could provide important insights into the early stages of operation of the 5 MWe reactor. Using these techniques, a weighted plutonium estimate can be calculated, even in cases where the number of core discharges is not known with certainty.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Korea</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Fissile material accounting is one of the cornerstones of the international non-proliferation regime and is likely to be equally instrumental to future nuclear disarmament agreements. Verifying a declared fissile material inventory is difficult, especially if the past operation of nuclear facilities has previously been concealed from the international community. To build confidence in a fissile material declaration, it will be necessary to reconstruct the operating histories of these facilities. To support such confidence-building measures, nuclear archaeology offers a useful set of tools, including forensic measurements of samples from structural reactor components to reconstruct the operational history <ref type="bibr" target="#b0">[1]</ref>.</p><p>In a recent study <ref type="bibr" target="#b1">[2]</ref>, we presented a promising new nuclear archaeology concept that uses a Bayesian inference framework to reconstruct reactor operating parameters from samples of nuclear reprocessing waste. We call this framework the Bayesian Reprocessing Waste Analysis Method (BRAM). The results indicated that it is in principle possible to reconstruct the average fuel burnup (BU) and the cooling time (CT) of the high-level waste (HLW) of two different reactor cycles, even if the waste has been mixed. However, the parameter reconstruction was not always successful if the average fuel burnup was low (≤ 3 MWd/kg).</p><p>This study explores the applicability of this Bayesian inference framework to a hypothetical future scenario in which the Democratic People's Republic of Korea (DPRK) has declared its fissile material inventory and inspectors are tasked with verifying the declaration. North Korea has operated its 5 MWe reactor for at least five cycles, although there are doubts about the number of full-core discharges. The average fuel burnup of each (possibly) discharged core has been estimated to be below 3 MWd/kg <ref type="bibr" target="#b2">[3]</ref>. Therefore, the scenario is useful to test and develop the concepts of the framework and to investigate its potential utility for verifying a future declaration of the fissile material inventory of the DPRK.</p><p>This study pursues several research goals. First, to test BRAM on scenarios where waste from more than two (i.e., five or six) reactor cycles has been mixed. Second, to investigate if the method can be used to assess whether the measured samples are consistent with a declared reactor operation history. Third, to explore the use of model selection techniques to compare two different, plausible reactor histories.</p><p>To this end, we simulate two operating histories of the 5 MWe reactor and use the Bayesian framework to reconstruct the operating parameters in different scenarios.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Background</head><p>It was not until the 1970s that North Korea began to develop a nuclear programme in earnest, although North Korea had been actively pursuing nuclear research programmes since the 1950s. In 1974, North Korea became a member of the International Atomic Energy Agency (IAEA), joined the NPT in 1985 and finished building its 5 MWe experimental reactor in Yongbyon by 1986. It uses natural uranium as fuel, graphite as neutron moderator, and is cooled with CO 2 . This makes it well suited for the production of plutonium for nuclear weapons. Since the 1990s, the United States and North Korea have been in negotiations over North Korea's nuclear program <ref type="bibr">[4]</ref>. In 1992, the IAEA found inconsistencies in North Korea's declaration of its nuclear material with regard to correctness and completeness. This assessment was based on swipe samples at declared nuclear facilities, samples from North Korea's declared plutonium and from waste tanks containing trace amounts of plutonium <ref type="bibr" target="#b3">[5]</ref>.</p><p>Until today, there remains uncertainty about the operational history of the 5 MWe reactor within the time span of 1986-1994. The reactor was shut down for the first time in 1989 for a period of 70 to 100 days. It is possible that the DPRK may have discharged either a partial or full core at that time. In 1994, the reactor was shut down and defueled. Later that year, North Korea and the United States signed the Agreed Framework, leading North Korea to halt its production of fissile material for nine years. In 2003, the reactor was restarted, and North Korea reprocessed the irradiated fuel that had been unloaded in 1994.</p><p>The reactor then operated during two production campaigns: from February 2003 to April 2005, and from June 2005 to July 2007. The fuel irradiated during both campaigns was subsequently reprocessed. In June 2008, as part of the "six-party talks" on the denuclearization of the Korean peninsula, North Korea destroyed the reactor's cooling tower as a gesture of goodwill. However, the reactor resumed operations from August 2013 to October 2015, with the irradiated fuel reprocessed the following year. In early 2016, the reactor was started again and continued running until spring 2018, with the irradiated fuel reprocessed shortly thereafter. There is no evidence that the reactor operated in 2019 and 2020 <ref type="bibr" target="#b2">[3]</ref>. For this paper, we use the two potential reactor histories discussed by de Troullioud de Lanversin and Kütt <ref type="bibr" target="#b2">[3]</ref> and do not consider any potential reactor activities after 2020. They are shown in Table <ref type="table" target="#tab_0">1</ref>. Each operating window corresponds to a full core being irradiated in and subsequently discharged from the reactor.</p><p>The "pre-1994 discharge" scenario assumes that a full core discharge occurred in 1989, whereas the "1994 discharge" scenario assumes that the first core remained in the reactor until 1994. We do not consider any partial discharge scenarios.</p><p>In these scenarios, each core is fully reprocessed at some point in time after its discharge and the waste from this process is added to a single waste tank. We refer to the waste from a single core as a "batch", and thus a hypothetical sample of waste from the waste tank would contain a mixture of five or six batches, depending on the scenario.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Methodology</head><p>Table 2: Design parameters of the 5 MWe reactor. The values are based on Kevin O'Neill [5] and de Troullioud de Lanversin and Kütt [3]. Fuel composition nat. U 0.5 %-at Al Moderator material Graphite Fuel diameter 2.9 cm Moderator density 1.65 g cm -3 Fuel density 18.17 g cm -3 Number of fuel channels ≈ 800 Cladding composition Mg 1 %-at Al Total fuel mass ≈ 50 t Cladding thickness 0.5 cm Thermal power 20-25 MWt Channel diameter 6.5 cm Lattice pitch 20 cm</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Bayesian Inference</head><p>To reconstruct the operating parameters of each reactor cycle in the 5 MWe history, we use the Bayesian inference framework developed in <ref type="bibr" target="#b6">[8]</ref> and <ref type="bibr" target="#b1">[2]</ref>. The purpose of this framework is to reconstruct the posterior distribution of the variables of interest, i.e., the parameters burnup BU and cooling time CT , conditional on observed isotopic ratios ⃗ r obs in the reprocessing waste sample.</p><p>Generally, the posterior distribution p( ⃗ θ|⃗ r obs ) of the parameters ⃗ θ is proportional to the product of the likelihood p(⃗ r obs | ⃗ θ) and the prior p( ⃗ θ):</p><formula xml:id="formula_0">p( ⃗ θ|⃗ r obs ) ∝ p(⃗ r obs | ⃗ θ) • p( ⃗ θ).<label>(1)</label></formula><p>Provided with a computational model for the likelihood, the posterior distribution can be approximated well with Markov chain Mone Carlo (MCMC) methods. We use the PyMC <ref type="bibr" target="#b7">[9]</ref> library to implement the inference models and perform the MCMC sampling.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">The likelihood function</head><p>The likelihood of the observed isotopic ratios ⃗ r obs given values of the inference parameters θ is modelled as a multivariate normal distribution. By approximating the isotopic ratios as independent, the likelihood factorizes:</p><formula xml:id="formula_1">p(⃗ r obs | ⃗ θ) = N i=1 N r obs,i -M i ( ⃗ θ), σ r,i .<label>(2)</label></formula><p>The index i runs over the observed isotopic ratios and the model M i is a function of the inference parameters that computes the corresponding isotopic ratio.</p><p>Each ratio is associated with an uncertainty σ r,i , which is intended to capture both measurement and modelling uncertainties. Since this study uses simulated isotopic ratio values in lieu of experimental mass spectrometry measurements, we approximate σ r,i as 5 % of the value of r obs,i .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Modelling the composition of the 5 MWe reprocessing waste</head><p>To model the isotopic composition of the mixed reprocessing waste sample, we compute the nuclide densities of each isotope in each of the discharged cores, as a function of the cycle parameters θ c = (BU c , CT c ). Using F j (θ c ) to represent the model of the nuclide j after one reactor cycle c, the model M i from Equation (2) can be written as:</p><formula xml:id="formula_2">M i = N cycles c F j (θ c ) N cycles c F k (θ c ) .<label>(3)</label></formula><p>Here, we neglect to model mixing ratios since the fuel volume of each discharged core is the same.</p><p>As in our previous work <ref type="bibr" target="#b1">[2]</ref>, we use Gaussian process-based surrogate models to circumvent the high computational cost of Monte Carlo neutron transport and depletion calculations. The training data for the surrogate models is simulated with infinite lattice calculations of a fuel channel (see Figure <ref type="figure">1</ref> and Table <ref type="table">2</ref>) of the 5 MWe reactor, using OpenMC <ref type="bibr" target="#b4">[6]</ref> to simulate neutron transport and ONIX <ref type="bibr" target="#b5">[7]</ref> to perform the depletion calculation. These simulation tools are used with ENDF/B-VIII cross-section data <ref type="bibr" target="#b8">[10]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Selecting useful isotopic ratios</head><p>Generally, nuclear reprocessing waste contains many different elements and isotopes, providing a basis for a large number of isotopic ratios that can be used to inform the posterior. However, using all of these ratios as observables is not practical, not only due to the effort required to measure them, but also because the Markov chain Monte Carlo sampling algorithm becomes inefficient and struggles to converge. Therefore, it is useful to select a subset of isotopic ratios that is especially informative on the parameters of interest. Such a list of isotopic ratios was derived by Figueroa <ref type="bibr" target="#b6">[8]</ref> with an algorithm that selects isotopic ratios based on their sensitivity to the parameters of interest.</p><p>This list of ratios is not very sensitive in the "low burnup" region (see <ref type="bibr" target="#b1">[2]</ref>), which is, however, precisely the regions of interest in this study. Therefore, we use the same algorithm as Figueroa <ref type="bibr" target="#b6">[8]</ref> to select a new set of isotopic ratios to use in the present scenarios.</p><p>The algorithm proceeds as follows: First, a set of test inputs is sampled from the parameter space, and then test outputs, i.e., isotopic ratios, are computed for each input. Then, the algorithm iterates over all possible pairs of isotopic ratios and approximates the relative standard deviation of the marginal posterior distributions of the inference parameters. This step is repeated for each entry in the test set. For each test point, the isotopic ratio pair with the lowest relative standard deviation is added to the final list of isotopic ratios. The resulting list Table <ref type="table">3</ref>: List of isotopic ratios selected for informing the posterior with the algorithm in <ref type="bibr" target="#b6">[8]</ref>.</p><p>Ba-134/Ba-136 Ba-134/Ba-137 Cd-110/Cd-113 Eu-151/Eu-155 Eu-153/Eu-155 Gd-154/Gd-155 Gd-154/Gd-157 Sm-148/Sm-149 of isotopic ratios is shown in Table <ref type="table">3</ref>.</p><p>It is important to note that in our simulation-based setting, we assume that ICP-MS would typically be used, though we do not assess detailed measurement strategies or associated uncertainties. In principle, domain knowledge could be used to exclude further isotopes from the selection algorithm or to adjust the uncertainty assigned to each ratio. Nevertheless, the ratios selected for this study serve to demonstrate the concept of the framework.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">The prior distributions</head><p>Generally, the prior distributions might be determined from data collected from operating records, data collected via satellite surveillance, expert assessments, or physical constraints. In this study, the priors of BU and CT of each operating cycle are both chosen to be uniform distributions within respective intervals. To understand the utility of BRAM for verification, we analyze several cases with different prior intervals.</p><p>In the first case, the operating windows in Table <ref type="table" target="#tab_0">1</ref> are used to define prior intervals on the cooling time and the estimated burnup intervals define the priors of the burnup parameters. de Troullioud de Lanversin and Kütt <ref type="bibr" target="#b2">[3]</ref> derived these burnup estimates based on the operating windows and some assumptions about the capacity factor of the reactor. We call this case realistic, as it represents hypothetical inspectors using the currently available information to reconstruct the reactor history.</p><p>In a second case, we extend the prior intervals beyond the realistic intervals to further assess the sensitivity of the selected isotopic ratios with respect to the inference parameters. These priors are called wide priors, even though the intervals are still physically reasonable and, in the case of burnup, well below the limit where the reactor loses criticality.</p><p>The third case is called wrong priors and represents a case where inspectors have incorrect information about the reactor. In this case, the prior intervals for burnup are shifted upwards, such that the true value does not lie within them, corresponding to potential errors in estimates of the capacity factor or power.</p><p>The cooling time intervals remain unchanged.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Comparing potential histories</head><p>So far, the Bayesian inference framework has been used to infer reactor operating parameters given a fixed number of waste batches. In the present application scenario, it is unclear whether the reactor core was discharged before 1994 or not, i.e., the number of batches required in the inference model is unknown. To resolve this question, we propose to use leave-one-out crossvalidation (LOO-CV) to compare two inference models that reflect these two possibilities.</p><p>LOO-CV is a method for estimating the out-of-sample prediction accuracy of a Bayesian model and is commonly used to compare different models fitted to the same data <ref type="bibr" target="#b9">[11]</ref>. In this application, a score is assigned to the likelihood of each isotopic ratio of each of the two models conditioned on the simulated observations. Using this score as a weight, the inference models can be ranked to select the model that best explains the observations. We use the LOO-CV algorithm implemented in the Python library ArviZ <ref type="bibr" target="#b10">[12]</ref> to compute the weights and rank the models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Inference Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">The effect of different prior intervals</head><p>The three cases with different priors are investigated with simulated evidence corresponding to the "1994 discharge" scenario in Table <ref type="table" target="#tab_0">1</ref> 0.0 0.5 Batch A 0.0 0.5 Batch B 0.0 0.5 Burnup [MWd/kg] Batch C 0.0 0.5 Batch D 0.0 0.5 Batch E 0.0 2.5 5.0 7.5 10.0 12.5</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Cooling time [years]</head><p>15.017.5 20 25 0.3 0.4 Batch A 0.3 0.4 Batch B 0.3 0.4 Burnup [MWd/kg] Batch C 0.3 0.4 Batch D 0.7 0.8 Batch E 1.5 2.0 4.0 4.5 12.0 12.5 Cooling time [years] 14 15 25.0 25.5 Probability density Figure 4: Inference results of the test case with wrong priors. The posterior samples are illustrated by the blue histogram, the vertical orange line indicates the "true" parameter value and the red line indicates the respective prior interval.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Probability density</head><p>order, starting with the batch from 2016-2018 (Batch A) and ending with the batch from the production campaign from 1986-1994 (Batch E).</p><p>Figure <ref type="figure" target="#fig_1">2</ref> shows the posterior distributions obtained with the realistic priors.</p><p>Only the burnup posterior of batch E somewhat resembles a normal distribution centered around the true parameter value. The burnup posterior of batch A shows a small peak around the true value, while the remaining batches resemble uniform distributions. The cooling time posteriors of each batch appear approximately uniformly distributed.</p><p>In contrast, the posterior distributions obtained with the wide priors (shown in Figure <ref type="figure">3</ref>) have clear peaks in the burnup of all five batches. Furthermore, these peaks are concentrated on the true parameter values, indicating that the method is, in principle, sensitive to burnup, and can discriminate the different values of each batch. The posteriors for cooling time still look like uniform or linear distributions in the given prior interval. This suggests that the selected isotope ratios are not sensitive enough for the cooling times considered here.</p><p>The sensitivity to burnup is also visible in the third case, that is, the wrong priors. The posteriors obtained with these priors are shown in Figure <ref type="figure">4</ref>. The posterior burnup distributions are not uniform anymore. Instead, they are clearly skewed towards the lower limit, indicating where the true value is. This suggests that the reconstruction process is well-suited to reject incorrect priors (i.e., false declarations) and identify the direction of the true value. The reconstruction of the cooling time is not affected by this and resembles the results in the realistic priors case.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Model comparison</head><p>We investigate the potential to distinguish between the two discharge scenarios with two inference models that differ in their number of cycles (N c in Equation ( <ref type="formula" target="#formula_2">3</ref>)). The 1994 model assumes five reactor cycles and the pre-1994 model assumes six cycles. Simulated evidence is generated for both the "1994 discharge" scenario and the "pre-1994 discharge" scenario. Both inference models are applied to to each test scenarios and ranked according to their LOO-CV weights.</p><p>Figure <ref type="figure">5</ref> shows the results of the two model comparison scenarios. In the "1994 discharge" scenario, the 1994 model is ranked highest, while the pre-1994 model is ranked highest in the "pre-1994 discharge" scenario. Thus, in both scenarios, the model matching the number of cycles in the test scenario is preferred.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Discussion</head><p>We have found that BRAM is in general suited to reconstruct the operational history for the 5MWe reactor at Yongbyon. Using all of the available information as prior knowledge, the reconstruction does not directly yield more information, as the posterior distribution in Figure <ref type="figure" target="#fig_1">2</ref> shows uniform distributions for most variables. However, the analysis with wider prior distribution (Figure <ref type="figure">3</ref>) indicates that the method is indeed sensitive to the variables of interest. Therefore, the results in Figure <ref type="figure" target="#fig_1">2</ref> are a powerful indication that the 1994 discharge pre-1994 discharge True scenario 0.0 0.2 0.4 0.6 0.8 1.0 Average "LOO-CV" weight Inference model pre-1994 model 1994 model</p><p>Figure <ref type="figure">5</ref>: Scenario comparison with LOO-CV. The x-axis represents two scenarios with distinct sets of simulated evidence. Based on the LOO-CV, each model is assigned one weight per isotopic ratio. The y-axis shows the average weight assigned to each of the two inference models per scenario. The prior plutonium estimate is computed with equal weights for the priors of both the 1994 discharge and the pre-1994 discharge scenario. The posterior plutonium estimate is computed with the weights from the LOO-CV comparison of the two inference models. The left graph shows the posterior corresponding to a "true" 1994 discharge scenario and the graph on the right shows the posterior corresponding to a "true" pre-1994 discharge scenario. The x-axis show the total amount of plutonium produced over the complete reactor history, which are obtained by scaling the plutonium density in the simulated infinite lattice model with the total fuel volume of the reactor.</p><p>sampled evidence is consistent with the prior information. It is suited to build confidence whether a declaration provided to a hypothetical inspecting entity is credible.</p><p>By modeling a case with incorrect prior limits, we showed that it is possible to detect incorrect assumptions or declarations. Confronted with a potential scenario like this, where the distributions show the behavior displayed in The capability to select between reactor histories with a different number of operating cycles is especially relevant for the present scenario, as there is some doubt in the open literature about whether any fuel was discharged from the reactor before 1994. Although our example merely distinguishes between a full-core discharge and no discharge before 1994, the model could be adapted to consider partial discharge scenarios as well.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.">Implications for plutonium stockpile estimations</head><p>The goal of reconstructing the operating history of a reactor is to verify the amount of plutonium that was produced in it. A simple plutonium estimate can be obtained by inserting the posterior burnup samples into a model that calculates the plutonium mass density in the fuel. To estimate the total amount of plutonium, the mass densities are scaled with the estimated fuel volume of the core and summing over the operating cycles. distributions, although the peaks are slightly shifted. This example demonstrates that the LOO-CV-based model comparison approach can be useful to incorporate the possibility of alterative reactor histories into the plutonium estimates and potentially reduce associated uncertainties.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2.">The integrated approach to nuclear archaeology</head><p>It is clear that the output of any single scientific or technical method will be accompanied by uncertainties. To mitigate related doubts, it can be useful to employ an integrated approach to nuclear archaeology <ref type="bibr" target="#b0">[1]</ref>. With this approach, the results of multiple methods and sources of evidence are compared and evaluated for consistency. For example, the Graphite Isotope Ratio Method (GIRM) <ref type="bibr" target="#b11">[13]</ref> has also been proposed as a useful method to verify North Korea's past plutonium production <ref type="bibr" target="#b2">[3]</ref>. Both GRIM and BRAM could be used independently to estimate the fissile material stockpile. If both results are consistent with the declaration, the declaration becomes more credible.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusion</head><p>In this simulated study, we demonstrate several promising aspects of the Bayesian Reprocessing Waste Analysis Method that underscore its potential to </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>1 Figure 1 :</head><label>11</label><figDesc>Figure 1: Schematic of a fuel channel of the 5 MWe reactor as modelled with OpenMC [6] and ONIX [7].</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Inference results of the test case with realistic priors. The posterior samples are illustrated by the blue histogram, the vertical orange line indicates the "true" parameter value and the red line indicates the respective prior interval.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 :Figure 4 :</head><label>34</label><figDesc>Figure 3: Inference results of the test case with wide priors. The posterior samples are illustrated by the blue histogram, the vertical orange line indicates the "true" parameter value and the red line indicates the respective prior interval.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Plutonium production estimates derived from the prior and posterior distributions.The prior plutonium estimate is computed with equal weights for the priors of both the 1994 discharge and the pre-1994 discharge scenario. The posterior plutonium estimate is computed with the weights from the LOO-CV comparison of the two inference models. The left graph shows the posterior corresponding to a "true" 1994 discharge scenario and the graph on the right shows the posterior corresponding to a "true" pre-1994 discharge scenario. The x-axis show the total amount of plutonium produced over the complete reactor history, which are obtained by scaling the plutonium density in the simulated infinite lattice model with the total fuel volume of the reactor.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><figDesc>Figure 3 and indicate the correct parameter values.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 6</head><label>6</label><figDesc>Figure 6 illustrates such plutonium production estimates for the two model comparison scenarios in Figure 5. Since these scenarios consider two inference models, the plutonium estimates of each model are added together with weights according to the average weight calculated by LOO-CV. The graphs also show the simulated "true" plutonium production for each scenario and a prior plutonium estimate derived from random samples drawn from the prior burnup distributions. The true values lie well within the range covered by the posterior</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><figDesc>support verification efforts of future a North Korean fissile material declaration. The primary utility lies in reconstructing the operating history of the 5 MWe reactor in Yongbyon, North Korea, by inferring the burnup and cooling time of individual batches of spent fuel. Using model comparison methods, the framework can distinguish different reactor histories and potentially provide new information on the early period, where there is a lack of open-source information. The model weights derived with these methods can be used to calculate a weighted plutonium estimate that reflects the probability of two potential reactor histories. Furthermore, the posterior distributions of the parameters of interest can be used to detect inconsistencies in the prior information. If the application were designed to use a baseline declaration to define priors for the inference framework, such inconsistencies could indicate a false declaration. Although these results are purely simulation based, they underscore the potential value of analyzing the reprocessing waste of the 5 MWe reactor with a Bayesian inference framework to verify a future North Korean fissile material declaration. Future research should focus on validating the methodology experimental settings with known reactor histories to better understand how these results translate to real-world scenarios.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 :</head><label>1</label><figDesc>Two potential operating histories of the 5 MWe reactor in Yongbyon. The operating windows and estimated average burnup values are based on<ref type="bibr" target="#b2">[3]</ref>.</figDesc><table><row><cell>Operating window</cell><cell cols="2">Burnup [MWd/kg]</cell></row><row><cell></cell><cell cols="2">Pre-1994 disch. 1994 disch.</cell></row><row><cell>1986-1989</cell><cell>0.185</cell><cell>-</cell></row><row><cell>1989-1994</cell><cell>0.5-0.7</cell><cell>-</cell></row><row><cell>1986-1994</cell><cell>-</cell><cell>0.6-0.7</cell></row><row><cell>Jan. 2003-Apr. 2005</cell><cell>0.23-0.33</cell><cell>0.23-0.33</cell></row><row><cell>Jun. 2005-Jul. 2007</cell><cell>0.22-0.31</cell><cell>0.22-0.31</cell></row><row><cell>Aug. 2013-Oct. 2015</cell><cell>0.22-0.31</cell><cell>0.22-0.31</cell></row><row><cell>Jan. 2016-Mar. 2018</cell><cell>0.23-0.32</cell><cell>0.23-0.32</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>The authors gratefully acknowledge the funding provided by the <rs type="funder">Volkswagen-Stiftung</rs> with the <rs type="funder">Freigeist Fellowship</rs> (grant number <rs type="grantNumber">92 966-2</rs>) and the funding provided by the <rs type="funder">German Federal Ministry of Education and Research (BMBF)</rs> under grant number <rs type="grantNumber">01UG2210A</rs> (VeSPoTec). The authors also gratefully acknowledge the computing time provided to them at the <rs type="institution" subtype="infrastructure">NHR Center NHR4CES</rs> at <rs type="institution">RWTH Aachen University</rs> (project number <rs type="grantNumber">p0020230</rs>). This is funded by the <rs type="funder">Federal Ministry of Education and Research</rs>, and the state governments participating on the basis of the resolutions of the GWK for national high performance computing at universities (<ref type="url" target="www.nhr-verein.de/unsere-partner">www.nhr-verein.de/unsere-partner</ref>).</p></div>
+<div><head>CRediT author statement</head><p>Benjamin Jung: Conceptualization, Methodology, Software, Data Curation, Investigation, Visualization, Writing -Original Draft Johannes Bosse: Methodology, Software, Data Curation, Investigation, Writing -Original Draft Malte Göttsche:: Conceptualization, Writing -Review &amp; Editing, Supervision, Funding acquisition</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_jV3MhTq">
+					<idno type="grant-number">92 966-2</idno>
+				</org>
+				<org type="funding" xml:id="_AUBmWsq">
+					<idno type="grant-number">01UG2210A</idno>
+				</org>
+				<org type="funding" xml:id="_8mktpm5">
+					<idno type="grant-number">p0020230</idno>
+				</org>
+			</listOrg>
+
+			<listOrg type="infrastructure">
+				<org type="infrastructure">					<orgName type="extracted">NHR Center NHR4CES</orgName>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Nuclear archaeology to assess fissile-material inventories for nuclear safety and security, transparency, and disarmament</title>
+		<author>
+			<persName><forename type="first">Malte</forename><surname>Göttsche</surname></persName>
+			<idno type="ORCID">0000-0001-8700-0537</idno>
+		</author>
+		<idno type="DOI">10.1080/10736700.2024.2314371</idno>
+		<ptr target="https://www.tandfonline.com/doi/abs/10.1080/10736700.2024.2314371" />
+	</analytic>
+	<monogr>
+		<title level="j">The Nonproliferation Review</title>
+		<title level="j" type="abbrev">The Nonproliferation Review</title>
+		<idno type="ISSN">1073-6700</idno>
+		<idno type="ISSNe">1746-1766</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="131" to="150" />
+			<date type="published" when="2023-01-02" />
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Towards inferring reactor operations from high-level waste</title>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Jung</surname></persName>
+			<idno type="ORCID">0000-0002-5512-6933</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Figueroa</surname></persName>
+			<idno type="ORCID">0000-0001-9822-3592</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Malte</forename><surname>Göttsche</surname></persName>
+			<idno type="ORCID">0000-0001-8700-0537</idno>
+		</author>
+		<idno type="DOI">10.1016/j.net.2024.02.031</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S1738573324000913" />
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Engineering and Technology</title>
+		<title level="j" type="abbrev">Nuclear Engineering and Technology</title>
+		<idno type="ISSN">1738-5733</idno>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="2704" to="2710" />
+			<date type="published" when="2024-07">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Verifying North Korea’s Plutonium Production with Nuclear Archaeology</title>
+		<author>
+			<persName><forename type="first">Julien</forename><forename type="middle">De Troullioud De</forename><surname>Lanversin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Moritz</forename><surname>Kütt</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/08929882.2021.1999054</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science &amp; Global Security</title>
+		<title level="j" type="abbrev">Science &amp; Global Security</title>
+		<idno type="ISSN">0892-9882</idno>
+		<idno type="ISSNe">1547-7800</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="145" to="166" />
+			<date type="published" when="2021-09-02">2021</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+	<note>Science and Global Security</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Solving the North Korean Nuclear Puzzle</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Albright Kevin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O'</forename><surname>Neill</surname></persName>
+		</author>
+		<ptr target="https://isis-online.org/books/detail/solving-the-north-korean-nuclear-puzzle/10" />
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<publisher>ISIS Press</publisher>
+			<biblScope unit="page" from="83" to="98" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">OpenMC: A state-of-the-art Monte Carlo code for research and development</title>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">E</forename><surname>Paul K Romano</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Horelik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">G</forename><surname>Bryan R Herman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benoit</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kord</forename><surname>Forget</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Smith</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.anucene.2014.07.048</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Nuclear Energy</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="90" to="97" />
+			<date type="published" when="2015-08">August 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">ONIX: An open-source depletion code</title>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>De Troullioud De Lanversin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Moritz</forename><surname>Kütt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Glaser</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.anucene.2020.107903</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Nuclear Energy</title>
+		<title level="j" type="abbrev">Annals of Nuclear Energy</title>
+		<idno type="ISSN">0306-4549</idno>
+		<imprint>
+			<biblScope unit="volume">151</biblScope>
+			<biblScope unit="page">107903</biblScope>
+			<date type="published" when="2021-02">February 2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Computational approach to the experimental determination of diffusion coefficients for oxygen and nitrogen in hydraulic fluids using the pressure-decay method</title>
+		<author>
+			<persName><forename type="first">Andris</forename><surname>Rambaks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Filipp</forename><surname>Kratschun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carsten</forename><surname>Flake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maren</forename><surname>Messirek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katharina</forename><surname>Schmitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hubertus</forename><surname>Murrenhoff</surname></persName>
+		</author>
+		<idno type="DOI">10.25368/2020.36</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Volume 1 - Symposium</title>
+		<imprint>
+			<publisher>Technische Universität Dresden</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="283" to="293" />
+		</imprint>
+		<respStmt>
+			<orgName>RWTH Aachen</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Phd thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Probabilistic programming in Python using PyMC3</title>
+		<author>
+			<persName><forename type="first">John</forename><surname>Salvatier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">V</forename><surname>Wiecki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Fonnesbeck</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj-cs.55</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PeerJ Computer Science</title>
+		<idno type="ISSN">2376-5992</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">e55</biblScope>
+			<date type="published" when="2016-04-06">April 2016</date>
+			<publisher>PeerJ</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">ENDF/B-VIII.0: The 8 th Major Release of the Nuclear Reaction Data Library with CIELO-project Cross Sections, New Standards and Thermal Scattering Data</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Chadwick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Capote</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Kahler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Trkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Herman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Sonzogni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Danon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Carlson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>Hale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Arbanas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Arcilla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Bates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Casperson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Conlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Cullen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M-A</forename><surname>Descalle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Firestone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Gaines</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">H</forename><surname>Guber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Hawari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">D</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kawano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">C</forename><surname>Kiedrowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Koning</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kopecky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Leal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Lestone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lubitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">I</forename><surname>Márquez Damián</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Mattoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">A</forename><surname>Mccutchan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mughabghab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Navratil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Neudecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">P A</forename><surname>Nobre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Noguere</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Paris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">T</forename><surname>Pigni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Plompen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Pritychenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">G</forename><surname>Pronyaev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Roubtsov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rochman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Romano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schillebeeckx</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Simakov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Sin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Sirakov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Sleaford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Sobes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">S</forename><surname>Soukhovitskii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Stetcu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Talou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Van Der Marck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Welser-Sherrill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wiarda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Wormald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">Q</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zerkle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Žerovnik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.nds.2018.02.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Data Sheets</title>
+		<title level="j" type="abbrev">Nuclear Data Sheets</title>
+		<idno type="ISSN">0090-3752</idno>
+		<imprint>
+			<biblScope unit="volume">148</biblScope>
+			<biblScope unit="page" from="1" to="142" />
+			<date type="published" when="2018-02">February 2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>ENDF/B-VIII.0: The 8 th Major Release of the Nuclear Reaction Data Library with CIELO-project Cross Sections, New Standards and Thermal Scattering Data. Nuclear Data Sheets</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC</title>
+		<author>
+			<persName><forename type="first">Aki</forename><surname>Vehtari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Gelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonah</forename><surname>Gabry</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11222-016-9696-4</idno>
+		<ptr target="https://doi.org/10.1007/s11222-016-9696-4" />
+	</analytic>
+	<monogr>
+		<title level="j">Statistics and Computing</title>
+		<title level="j" type="abbrev">Stat Comput</title>
+		<idno type="ISSN">0960-3174</idno>
+		<idno type="ISSNe">1573-1375</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1413" to="1432" />
+			<date type="published" when="2016-08-30" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">ArviZ a unified library for exploratory analysis of Bayesian models in Python</title>
+		<author>
+			<persName><forename type="first">Ravin</forename><surname>Kumar</surname></persName>
+			<idno type="ORCID">0000-0003-0501-6098</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Colin</forename><surname>Carroll</surname></persName>
+			<idno type="ORCID">0000-0001-6977-0861</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ari</forename><surname>Hartikainen</surname></persName>
+			<idno type="ORCID">0000-0002-4569-569X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Osvaldo</forename><surname>Martin</surname></persName>
+			<idno type="ORCID">0000-0001-7419-8978</idno>
+		</author>
+		<idno type="DOI">10.21105/joss.01143</idno>
+		<ptr target="https://doi.org/10.21105/joss.01143" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Open Source Software</title>
+		<title level="j" type="abbrev">JOSS</title>
+		<idno type="ISSNe">2475-9066</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">33</biblScope>
+			<biblScope unit="page">1143</biblScope>
+			<date type="published" when="2019-01-15">2019</date>
+			<publisher>The Open Journal</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">A Graphite Isotope Ratio Method: A Primer on Esti-mating Plutonium Production in Graphite Moderated Reactors</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Christopher</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Gesh</surname></persName>
+		</author>
+		<idno>PNNL-14568</idno>
+		<imprint>
+			<date type="published" when="2004-03">March 2004</date>
+		</imprint>
+		<respStmt>
+			<orgName>Pacific Northwest National Laboratory</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

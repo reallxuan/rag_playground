@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Application of muon absorption tomography in imaging of civil structures</title>
+				<funder>
+					<orgName type="full">Science and Engineering Research Board</orgName>
+				</funder>
+				<funder ref="#_Mu5Tu5G">
+					<orgName type="full">SERB</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-03-30">30 Mar 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Pallav</forename><surname>Piyush</surname></persName>
+						</author>
+						<author role="corresp">
+							<persName><roleName>Purba</roleName><forename type="first">Bhattacharya</forename><surname>𝑎</surname></persName>
+							<email>purba.bhattacharya1985@gmail.com</email>
+						</author>
+						<author>
+							<persName><forename type="first">Supratik</forename><surname>𝑎</surname></persName>
+						</author>
+						<author>
+							<persName><roleName>𝑐</roleName><forename type="first">Nayana</forename><surname>Mukhopadhyay 𝑏</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">𝑏</forename><surname>Majumdar</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">𝑎 Department of Physics</orgName>
+								<orgName type="laboratory">𝑏 Applied Nuclear Physics Division</orgName>
+								<orgName type="institution">Adamas University</orgName>
+								<address>
+									<settlement>Barasat, Kolkata</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="institution">Saha Institute of Nuclear Physics of Homi Bhaba National Institute 𝑐 Research Wing</orgName>
+								<address>
+									<settlement>Kolkata, Naihati Prolife, Naihati</settlement>
+									<region>A CI</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Application of muon absorption tomography in imaging of civil structures</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-03-30">30 Mar 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">22AAA171EC1B47FB9D701C508BD3B887</idno>
+					<idno type="arXiv">arXiv:2503.23558v1[physics.ins-det]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:33+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Particle tracking detectors (Solid-state detectors)</term>
+					<term>Detection of defects</term>
+					<term>Computerized Tomography (CT) and Computed Radiography (CR)</term>
+					<term>Data processing methods</term>
+					<term>Simulation methods and programs</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The research focuses on the non-invasive imaging technique using cosmic muon absorption tomography to monitor the internals of archaeological / civil / industrial structures of intermediate size. It integrates experimental measurements and numerical simulations with Geant4, ascertaining the reliability and precision of muon absorption tomography using easily available components for the stated purpose. The experiment probes muon interactions across a range of materials including those commonly used in building civil and industrial structures. An experiment, fondly named MARS (Muon Absorption in Rigid Structures), was carried out to explore the possibility of using overlapped scintillation paddles for improved mapping of inhomogeneities in structures made of concrete. Good correlation of experimental and simulated results for all tests indicates that this simple approach can be implemented for non-destructive evaluations of structures of civil and industrial interest.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Cosmic ray muon tomography, or muography, is an exciting new technique that uses cosmic rays to give us a view inside objects of archaeological, civil and industrial interest <ref type="bibr" target="#b0">[1]</ref>. Essentially, it works by using muons -tiny, high-energy particles created by cosmic rays-to see through these materials. What makes muons special is that they carry around 10,000 times more energy than regular X-rays, which means they can penetrate deeper <ref type="bibr" target="#b2">[3]</ref>. One of the best things about this method is that it can help us differentiate between materials and spot hidden issues that traditional methods might completely miss. That said, like any emerging technology, there are still some hurdlesresolution issues and data complexity being two of the big ones <ref type="bibr" target="#b1">[2]</ref>.</p><p>Muography is broadly classified into muon absorption tomography (MAT) and muon scattering tomography (MST) [ <ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref>]. Usually MAT is used for large objects due to which significant amount of muon is absorbed within the object, and it is difficult to place detectors on its either side. MST, on the other hand, needs to identify the amount of scattering of muon tracks by putting detectors on both incoming and outgoing sides of the object. For MST, number of muons getting absorbed by the object is negligible, and the absorption information is ignored altogether.</p><p>In this work, we have initiated exploration of the possibility of using a hybrid approach for intermediate-sized structures for which both MAT and MST may be used to improve resulting imaging. By intermediate-sized object we mean objects that are large enough to absorb good number of cosmic muons while they traverse the material, and small enough such that detectors can be placed on either side of it. The absorption data, as well as the scattering data, are obtained from suitably placed detectors around the object. Here, we investigate the possibility of using easily available instruments to implement the muon absorption part of the imaging.</p><p>We have worked with a setup called the Cosmic Hunter <ref type="bibr" target="#b6">[7]</ref>, a commercially available system from CAEN, to carry out the experiments. The idea was to see how well this simple setup, primarily oriented towards educational training, could detect muons and how it could be used to estimate absorption of muons in different materials and imaging of some small structure <ref type="bibr" target="#b9">[10]</ref>. To make sure our experimental results were valid, we compared the measured data with Geant4 <ref type="bibr" target="#b10">[11,</ref><ref type="bibr" target="#b11">12]</ref> simulations at almost all stages. Based on the studies, we proposed an imaging technique in which overlapped detector plates are used to image a given structure. Although it was challenging to identify muon absorption in concrete (due to its low Z and density), it was possible to identify features of the structure by the overlapped scintillator paddles. This part of the experiment has been christened as MARS (Muon Absorption in Rigid Structures) to indicate that the proposed simple approach can be extended to monitor rigid structures of civil and industrial interest.</p><p>In the following sections, we delve deeper into the experimental methodology and findings of our study. The following section 2 describes the experimental setup and methods, focusing on the characterization of the Cosmic Hunter detector, calculations of detector efficiency and muon flux measurements. It also includes details on secondary particle detection. In parallel, the implementation of Geant4 simulation using Cosmic ray shower library (CRY) <ref type="bibr" target="#b7">[8]</ref>, as event generator is also described. Then in further section 2.2 we present the muon absorption study, exploring how muons interact with different materials like aluminum, stainless steel, lead and concrete. In section 3, the MARS (Muon Absorption in Rigorous Structures) experiment is introduced where attempts are made to image internals of a given structure using muon absorption information obtained from the simple experimental setup described and validated earlier. Finally, in section 4 we summarize the findings of the studies carried out in the context of this report and outline the future plans.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Experimental setup and methods</head><p>The CAEN Cosmic Hunter SP5620CH is a highly sophisticated and flexible system for detecting cosmic rays, and it has been central to our experimental efforts. It is a setup that includes three plastic scintillating tiles and a coincidence module, as shown in Fig. <ref type="figure" target="#fig_0">1</ref>. The detection system uses tiles made from Polystyrene-based material (UPS-923A), also called scintillating tiles. This material has all the key properties needed for effective cosmic ray detection: high light output, great transparency, and fast decay time <ref type="bibr" target="#b8">[9]</ref>. Each scintillator is paired with a Silicon Photomultiplier (SiPM), a photodetector based on "P-on-N" silicon technology, with a size of 4 x 4 mm² that operates in the Geiger-Müller mode. The SiPM stands out because of its excellent temporal resolution -it can detect light pulses with a rise time of less than 1 nanosecond and a pulse duration of about 2.5 nanoseconds. To ensure the best possible performance, optical grease has been used to enhance the connection between the scintillator and SiPM, and the entire setup is enclosed in black cardboard to block out any ambient light that might interfere with detection.</p><p>The coincidence module, which acts as the control center and data acquisition unit, plays a crucial role in the Cosmic Hunter system. It is equipped with an ESP32-based micro-controller (DOIT ESP32 DevKit v1), which allows the user to select events for counting. Researchers can decide whether to count signals from individual scintillating tiles or coincidence signals from multiple tiles. The module has a simple interface, including an e-book display and control buttons, as well as LED indicators that show detection events for each scintillating tile. The user can adjust the integration time for data collection anywhere from 10 minutes to 24 hours. Plus, all the data is automatically recorded on a microSD card in .csv format, The data includes experimental parameters, signals from the scintillators, and even environmental conditions like altitude, temperature, humidity and pressure <ref type="bibr" target="#b8">[9]</ref>. To make sure our setup was reliable, we performed various benchmark experiments under controlled conditions. Our results matched those reported by the manufacturer closely, which gave us confidence in the reliability and accuracy of the system for more advanced experiments involving cosmic rays.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Characterization of Cosmic Hunter detector setup</head><p>To assess the performance of the Cosmic Hunter detector setup, a comprehensive characterization was performed. This involved calculating detector efficiency (relative), and measuring the muon flux inside and outside the experimental room and further comparing the muon flux from the results that were predicted by the CRY event generator.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.1">Calculation of detector relative efficiency</head><p>The relative efficiency of each tile in the Cosmic Hunter setup was calculated by determining the likelihood of muons being detected within the sensitive volume of each scintillating tile. The diagram below (1) shows the scintillating tiles and the coincidence module for efficiency measurement. For three tiles 𝐴, 𝐵, and 𝐶, the calculated relative efficiencies were found to be 𝜂 𝐴 = 0.910, 𝜂 𝐵 = 0.892, and 𝜂 𝐶 = 0.926. The gross relative efficiency of the system 𝜂 𝐴𝐵𝐶 can thus be calculated as:</p><formula xml:id="formula_0">𝜂 𝐴𝐵𝐶 = 𝜂 𝐴 • 𝜂 𝐵 • 𝜂 𝐶 = 0.910 × 0.892 × 0.926 = 0.743</formula><p>Table <ref type="table" target="#tab_0">1</ref> presents both the calculated and reference relative efficiency values for each tile. The reference relative efficiencies were obtained from the Cosmic Hunter manual <ref type="bibr" target="#b8">[9]</ref> for comparison, ensuring that relative efficiency of our setup aligns closely with expected values.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.2">Cosmic ray shower library (CRY) simulations</head><p>To estimate muon flux accurately, CRY simulations were conducted using input parameters appropriate for the laboratory location. The simulations were performed at sea level with parameters set </p><formula xml:id="formula_1">Φ CRY = 1000 1646.1 ≈ 0.60 muons/cm 2 /minute</formula><p>This simulation output provides a benchmark for validating experimental measurements obtained from the Cosmic Hunter setup.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.3">Muon flux measurements inside and outside the experimental room</head><p>Muon flux measurements were conducted both outside and inside the experimental room to account for the influence of structural shielding. The experimental setup outside the room used three stacked detector plates in ABC coincidence mode, covering an area of 225 cm². The experimentally determined flux outside was:</p><formula xml:id="formula_2">Φ outside = 136.339 225 ≈ 0.61 muons/cm 2 /minute</formula><p>Measurements inside the room accounted for structural shielding due to concrete layers above the ground floor. The muon flux inside was measured as follows:</p><formula xml:id="formula_3">Φ inside = 111.616 225 ≈ 0.496 muons/cm 2 /minute</formula><p>For ease of subsequent analyses, this value was approximated to 0.5 muons/cm 2 /minute. The close agreement between simulated and measured flux values confirms the accuracy of the Cosmic Hunter setup in detecting muon flux under varying conditions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.4">Detection of Secondary Particles</head><p>In this section, we describe a detector setup modeled in Geant4, optimized to capture secondary particle showers produced when muons interact with a lead absorber. The configuration consists of three detector plates arranged in a triangular layout: two plates (A and B) are placed parallel to each other beneath a lead plate, while a third plate (C) is positioned above the lead. This arrangement facilitates the detection of secondary particles, including electrons and gamma rays, generated as muons traverse the lead layer. The experimental setup, shown in Fig. <ref type="figure" target="#fig_2">2b</ref> used a lead absorber of varying thicknesses (ranging from 1 cm to 6 cm) to analyze the secondary particle yield.</p><p>As discussed in <ref type="bibr" target="#b14">[15]</ref>, the formation of the Rossi curve in such setups arises due to an initial increase in secondary particle production with absorber thickness, followed by a decline as the absorber captures a greater fraction of secondary particles. This expected trend is observed in our experimental data, confirming the effectiveness of the setup in capturing secondary showers with high accuracy.</p><p>A Geant4 simulation was carried out (Fig. <ref type="figure" target="#fig_2">2b</ref>) with a muon flux generated using the CRY library, considering an initial muon energy spectrum corresponding to sea-level conditions.The physics list used for this simulation was FTFP_BERT <ref type="bibr" target="#b10">[11]</ref>.  The results, illustrated in Figure <ref type="figure" target="#fig_2">2a</ref>, demonstrate a good agreement between experimental and simulated data. As the lead thickness increases, the detection rate of secondary particles initially rises due to enhanced secondary shower production. However, beyond a critical thickness, absorption dominates, leading to a reduction in detected secondary particles.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Muon absorption study</head><p>This experiment focuses on measuring muon absorption in stainless steel, aluminum, and concrete using the Cosmic Hunter setup. A corresponding numerical study was also carried out that estimated the amount of muon absorption due to the same materials with varying thicknesses. The experimental setup consisted of three detector plates labeled A, B, and C, arranged vertically, as shown in Fig. <ref type="figure" target="#fig_3">3</ref>. Plates A and B were placed 13 cm apart, while plate C was positioned immediately after plate B, without any gap between them. Muons passing through this setup were detected in coincidence mode.</p><p>Absorption studies were conducted with material plates of stainless steel, aluminum, and concrete. The former two were available in four thicknesses: 1.5 cm, 3 cm, 4.5 cm, and 6 cm, while the last material was available in three thicknesses: 2 cm, 4 cm and 6 cm. The goal was to quantify the attenuation of muons as they traversed different materials of increasing thickness. Before introducing the plates, background muon flux measurements were recorded for calibration. This ensured that subsequent variations in count rates were due to absorption and not fluctuations in environmental conditions. For each material and thickness, data was collected over a full week with hourly recordings. The muon counts were analyzed through ridge plots to determine the mean absorption values. Figures <ref type="figure">4, 5,</ref> and<ref type="figure">6</ref>, display the ridge plots corresponding to stainless steel, aluminum, and concrete respectively.</p><p>A Geant4-based simulation was used to compare with experimental data. The simulation incorporated the measured muon flux inside the room (0.5 muons/cm 2 /min) and recreated the detector stack with identical dimensions and material configurations. The simulated setup is illustrated in Figure <ref type="figure">7</ref>.</p><p>The experimental and simulated results, including muon count distributions and spatial absorption patterns, are shown in Fig. <ref type="figure" target="#fig_6">8</ref>. This agreement between the experimental and simulated data further confirms that the muon detection system can effectively capture variations in muon absorption across different materials.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">MARS (Muon Absorption in Rigid Structures)</head><p>This final part of our study investigates the absorption of muons in rigid structures, focusing on how muons interact with relatively complex systems composed of standard construction materials such as concrete blocks. This study aims to assess the feasibility of using MAT based on the setup described in this work to detect voids or irregularities within materials, enabling structural analysis and imaging.</p><p>The target material for this study was a concrete slab measuring 20 × 20 × 2 cm 3 , featuring a  centrally located void with a 5 cm radius, as shown in 9. The thickness of the concrete structure was varied from 2cm to 6cm. The presence of this void provided a well-defined test scenario for evaluating the detector's capability to identify structural inhomogeneity. For this purpose, the three scintillating tiles, each measuring 15 × 15 × 1 cm 3 , were arranged in an overlapping grid pattern to enhance spatial resolution, as shown in 10. This layout, in which the effective detector layout was divided into a 3 × 3 grid of small square regions (indicated in 9), allowed multiple tiles to detect muons only over the overlapped tile area, thereby enabling improved localization of absorption effects within the target material.</p><p>To validate the experimentally measured data, a Geant4 simulation of the detector and material configuration was performed once again. The simulation involved generating 50,000 cosmic ray muons and the use of FTFP_BERT physics model. Figure <ref type="figure" target="#fig_0">11</ref> presents different views of the simulated detector system, showing close resemblance with the experimental setup. The resulting simulation provided a basis for comparison with experimental data, ensuring that experimentally detected muon absorption variations corresponded to actual material properties rather than random fluctuations.</p><p>The results, shown in Figure <ref type="figure" target="#fig_9">12</ref>, confirm that the overlapped detector configuration successfully    identified a void in the center of the concrete slabs, as indicated by the higher muon coincidence counts in the void region. Similarly, Table <ref type="table" target="#tab_2">2</ref> presents a quantitative comparison of the average muon counts in the central void and the surrounding areas for both experimental and simulated data. The higher muon counts observed in the central region align with the expected reduction in material density. While it is true that there are fluctuations in the percentage of increase in the number of muons through the hole, there is no doubt that the number is always more than that through the concrete in the surroundings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Conclusion and future plans</head><p>In this study, we have investigated the possibility of using MAT for monitoring archaeological, civil and industrial structures. The final goal is to develop a hybrid muography system that uses both MAT and MST to image the internals of an intermediate-sized structure. By intermediate-sized structures, we have meant strucutures of sizes that are small enough to place muon detectors on either side of the object and large enough to cause detectable muon absorption.</p><p>For the present work, we have used a very easily available educational tool procured from CAEN (the cosmic hunter). The tool itself has been validated and calibrated by several basic studies related to cosmic ray muons. It may be noted however that it is not essential to use only this product, or even another commercial one. Through dedicated effort, an equivalent system can also be developed in a laboratory. The major concern related to any such new system will be its efficiency and ability to detect muon absorption which can be established by carrying out basic experiments as done during this project. We have tried to validate experimental measurements as much as possible, using Geant4 simulations using FTFP_BERT physics model. For this purpose, the CRY library has been used as the cosmic ray event generator.</p><p>The efficiency of each scintillation tile of the cosmic hunter has proved to be very close to 90%, which satisfied the requirements of the proposed goal reasonably well. Experiments were also carried out to check the possibility of detecting secondary particles generated due to cosmic rays interacting with intervening materials. This relatively difficult experiment has yielded results that are in good agreement with previously reported values and numerical simulation carried out during the present work. This fact has increased our confidence in the experimental setup.</p><p>Work related to muon absorption has been initiated by carrying out a comparison between the experimental measurements and the simulated values for absorption through three materials, namely, stainless steel, aluminum, and concrete, all three being standard building materials. The experimentally obtained muon absorption values have been found to match closely with the simulated results. Finally, the ability of the setup to detect muon absorption was tested for concrete blocks of varying thickness having a hole in its center. For this purpose, scintillation tiles were used in partially overlapped geometries in order to enhance localization abilities of the system. The resulting setup was found to be quite successful in locating the void within the concrete block, despite unusual modifications in the placement of scintillation tiles.</p><p>The findings of the present investigation indicate that MAT based on simple instrumentation can be profitably used to visualize internal features of structures, having utility in non-destructive testing, structural health monitoring, and archaeological exploration of objects of intermediate size. The process is inherently time-consuming, as achieving a statistically significant muon count requires prolonged data acquisition. The precision of the system is further constrained by detector efficiency, secondary generation, etc. In future, we plan to improve detector sensitivity, and optimize data processing algorithms and flow. We also hope to extend this investigation by adding MST to this setup. It is expected that combination of both absorption and scattering data will significantly improve monitoring abilities of the resulting setup.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Cosmic hunter muon detections system setup for efficiency measurement.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>Geant4 simulation of the triangular detector setup.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Experiment and simulation conducted for secondary particle detection. (a) Comparison of experimental data with simulation, showing agreement in secondary shower behavior. (b) Geant4 model of the triangular configuration, detailing detector and absorber placement.</figDesc><graphic coords="6,301.66,456.58,145.48,101.97" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Diagram of the detector setup geometry with measurements. The labeled plates (A, B, and C) are separated at fixed distances to ensure consistent detection.</figDesc><graphic coords="7,83.34,355.48,428.58,110.61" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 6 :Figure 7 :</head><label>67</label><figDesc>Figure 6: Ridge plot for different concrete plate thicknesses.</figDesc><graphic coords="8,314.84,425.85,185.35,129.92" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: Comparison of experimental and simulation results for muon absorption in (a) stainless steel, (b) aluminum, and (c) concrete. The experimental data (markers) align well with the Geant4 simulation (solid lines), demonstrating the accuracy of the absorption measurements.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 9 :</head><label>9</label><figDesc>Figure 9: Concrete block with a central hole used for muon absorption studies.</figDesc><graphic coords="10,97.76,84.59,179.99,164.53" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 10 :Figure 11 :</head><label>1011</label><figDesc>Figure 10: Overlapped detector plate configuration with labeled measurement regions.</figDesc><graphic coords="10,304.65,84.19,192.87,164.93" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure 12 :</head><label>12</label><figDesc>Figure 12: Comparison of experimental and simulation results for the overlapped detector setup with 2 cm, 4 cm, and 6 cm thick concrete plates. Both experimental and simulated data confirm the presence of a central void due to higher muon counts in that region.</figDesc><graphic coords="11,260.61,447.79,68.71,68.71" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 :</head><label>1</label><figDesc>Calculated and reference relative efficiencies of tiles A, B, and C in the Cosmic Hunter Setup</figDesc><table><row><cell cols="3">Tile Calculated efficiency Reference efficiency</cell></row><row><cell>A</cell><cell>0.910(80)</cell><cell>0.915</cell></row><row><cell>B</cell><cell>0.892(83)</cell><cell>0.895</cell></row><row><cell>C</cell><cell>0.926(88)</cell><cell>0.930</cell></row><row><cell cols="3">to an altitude of 0 meters and a latitude of 22.74 degrees corresponding to the experimental site.</cell></row><row><cell cols="3">The total simulation time for 1000 muons over an area of 225 𝑐𝑚 2 was calculated as follows:</cell></row><row><cell cols="3">Simulation Time = 98769.8 seconds = 1646.1 minutes</cell></row><row><cell cols="3">Based on this simulation time, the muon flux Φ CRY was derived as:</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 :</head><label>2</label><figDesc>Difference in muon counts between the central and surrounding regions for both experimental and simulated data.</figDesc><table><row><cell></cell><cell cols="2">Experimental Data</cell><cell></cell></row><row><cell cols="4">Thickness Avg Surrounding Counts Central Counts % Difference</cell></row><row><cell>2 cm</cell><cell>259.125</cell><cell>288</cell><cell>10.03 %</cell></row><row><cell>4 cm</cell><cell>191.875</cell><cell>231</cell><cell>16.94 %</cell></row><row><cell>6 cm</cell><cell>161.625</cell><cell>187</cell><cell>13.57 %</cell></row><row><cell></cell><cell>Simulation Data</cell><cell></cell><cell></cell></row><row><cell cols="4">Thickness Avg Surrounding Counts Central Counts % Difference</cell></row><row><cell>2 cm</cell><cell>21523</cell><cell>21819</cell><cell>1.3 %</cell></row><row><cell>4 cm</cell><cell>18406</cell><cell>18501</cell><cell>0.5 %</cell></row><row><cell>6 cm</cell><cell>15681</cell><cell>15904</cell><cell>1.4 %</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>The authors acknowledge the help and support from their respective <rs type="institution">Institutes and Universities</rs>. This research was supported in part by the <rs type="funder">SERB</rs> research grant <rs type="grantNumber">SRG/2022/000531</rs>. <rs type="person">Authors Mr. P.Pallav</rs> and <rs type="person">Dr. P. Bhattacharya</rs> acknowledge the <rs type="funder">Science and Engineering Research Board</rs> and SRG scheme for the necessary support.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_Mu5Tu5G">
+					<idno type="grant-number">SRG/2022/000531</idno>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Muon imaging: Principles, technologies and applications</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Procureur</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.nima.2017.08.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<title level="j" type="abbrev">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<idno type="ISSN">0168-9002</idno>
+		<imprint>
+			<biblScope unit="volume">878</biblScope>
+			<biblScope unit="page" from="169" to="179" />
+			<date type="published" when="2018-01">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Muon detection techniques and applications</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Doe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Muon Studies</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">123</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<author>
+			<persName><forename type="first">V</forename><surname>Kudryavtsev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Johnson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Innovations in muon tomography for structural integrity assessment</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">56</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Muography of different structures using muon scattering and absorption algorithms</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Vanini</surname></persName>
+			<idno type="ORCID">0000-0002-9099-1535</idno>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Calvini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Checchia</surname></persName>
+			<idno type="ORCID">0000-0002-8312-1531</idno>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rigoni Garola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Klinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zumerle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Bonomi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Donzella</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Zenoni</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rsta.2018.0051</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<title level="j" type="abbrev">Phil. Trans. R. Soc. A.</title>
+		<idno type="ISSN">1364-503X</idno>
+		<idno type="ISSNe">1471-2962</idno>
+		<imprint>
+			<biblScope unit="volume">377</biblScope>
+			<biblScope unit="issue">2137</biblScope>
+			<biblScope unit="page">20180051</biblScope>
+			<date type="published" when="2018-12-10">2018</date>
+			<publisher>The Royal Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Research on rapid imaging with cosmic ray muon scattering tomography</title>
+		<author>
+			<persName><forename type="first">Qun-Gang</forename><surname>Wen</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-023-47023-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2023-11-12">2023. 19718</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Applications of muon absorption radiography to the fields of archaeology and civil engineering</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Saracino</surname></persName>
+			<idno type="ORCID">0000-0002-0714-5777</idno>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Ambrosino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bonechi</surname></persName>
+			<idno type="ORCID">0000-0001-6097-1181</idno>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cimmino</surname></persName>
+			<idno type="ORCID">0000-0002-8888-8029</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>D'alessandro</surname></persName>
+			<idno type="ORCID">0000-0001-7997-0306</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>D'errico</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Noli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Scognamiglio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Strolin</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rsta.2018.0057</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<title level="j" type="abbrev">Phil. Trans. R. Soc. A.</title>
+		<idno type="ISSN">1364-503X</idno>
+		<idno type="ISSNe">1471-2962</idno>
+		<imprint>
+			<biblScope unit="volume">377</biblScope>
+			<biblScope unit="issue">2137</biblScope>
+			<biblScope unit="page">20180057</biblScope>
+			<date type="published" when="2018-12-10">2018. 20180057</date>
+			<publisher>The Royal Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Nouveau palais de justice / New courthouse</title>
+		<author>
+			<persName><surname>Caen</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/9783034610902.225</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Brunet Saunier Architecture</title>
+		<imprint>
+			<publisher>DE GRUYTER</publisher>
+			<date type="published" when="2012-12-31">2012</date>
+			<biblScope unit="page" from="225" to="234" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Cosmic-ray shower generator (CRY) for Monte Carlo transport codes</title>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Hagmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Lange</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Douglas</forename><surname>Wright</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/nssmic.2007.4437209</idno>
+		<idno>UCRL-TM-229453</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2007 IEEE Nuclear Science Symposium Conference Record</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1143" to="1146" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Cosmic Hunter SP5620CH User Manual</title>
+		<author>
+			<persName><surname>Caen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>CAEN Technologies</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Committees: Advancements in Materials for Civil Engineering Applications</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lagrange</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Carpentier</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/12.0030457</idno>
+	</analytic>
+	<monogr>
+		<title level="m">AIP Conference Proceedings</title>
+		<imprint>
+			<publisher>AIP Publishing</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="volume">3187</biblScope>
+			<biblScope unit="page">010002</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Geant4: A simulation toolkit for high energy physics</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Agostinelli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Instruments and Methods in Physics Research</title>
+		<imprint>
+			<biblScope unit="volume">506</biblScope>
+			<biblScope unit="page">250</biblScope>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Geant4 developments and applications</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Allison</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Nuclear Science</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page">270</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Improving imaging resolution with overlapped detector arrays</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kiisk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hargreaves</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Imaging Science</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">45</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Structural engineering showcase 2020</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.56330/lown5423</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Structural Engineer</title>
+		<title level="j" type="abbrev">STRUCT ENG</title>
+		<idno type="ISSN">1466-5123</idno>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="33" to="41" />
+			<date type="published" when="2020-11-01">2020</date>
+			<publisher>The Institution of Structural Engineers</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Theoretical formula for the cosmic-ray muon attenuation coefficients of Pb, Cu, Zn, and Al</title>
+		<author>
+			<persName><forename type="first">Rasha</forename><forename type="middle">N I</forename><surname>Altameemi</surname></persName>
+			<idno type="ORCID">0000-0002-5461-9576</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nurul</forename><forename type="middle">Shazana</forename><surname>Abdul Hamid</surname></persName>
+			<idno type="ORCID">0000-0002-8674-5921</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wan</forename><forename type="middle">Mohd Aimran</forename><surname>Wan Mohd Kamil</surname></persName>
+			<idno type="ORCID">0000-0001-6875-4288</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saad</forename><forename type="middle">M</forename><surname>Saleh Ahmed</surname></persName>
+			<idno type="ORCID">0000-0003-4871-3731</idno>
+		</author>
+		<idno type="DOI">10.1080/16878507.2020.1830016</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Radiation Research and Applied Sciences</title>
+		<title level="j" type="abbrev">Journal of Radiation Research and Applied Sciences</title>
+		<idno type="ISSN">1687-8507</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="721" to="729" />
+			<date type="published" when="2020-01">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

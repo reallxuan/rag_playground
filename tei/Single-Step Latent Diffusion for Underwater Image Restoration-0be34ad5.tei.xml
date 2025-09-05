@@ -1,0 +1,2026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Single-Step Latent Diffusion for Underwater Image Restoration</title>
+				<funder ref="#_Wk9YTze">
+					<orgName type="full">ONR</orgName>
+				</funder>
+				<funder ref="#_N5skGXU">
+					<orgName type="full">USDA NIFA sustainable agriculture system program</orgName>
+				</funder>
+				<funder ref="#_5TSF3XX #_GmJDfTX">
+					<orgName type="full">National Science Foundation</orgName>
+					<orgName type="abbreviated">NSF</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">UMD AIM Seed Grant Program</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-07-11">11 Jul 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jiayi</forename><surname>Wu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Maryland</orgName>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Tianfu</forename><surname>Wang</surname></persName>
+							<email>tianfuw@umd.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Maryland</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><roleName>Md</roleName><forename type="first">Abu</forename><forename type="middle">Bakr</forename><surname>Siddique</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Florida</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Cornelia</forename><surname>Fermuller</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Maryland</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Florida</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yiannis</forename><surname>Aloimonos</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Maryland</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Christopher</forename><forename type="middle">A</forename><surname>Metzler</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Maryland</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Single-Step Latent Diffusion for Underwater Image Restoration</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-07-11">11 Jul 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">8C3D23B4E4557101A3E1CEB6328E06B0</idno>
+					<idno type="arXiv">arXiv:2507.07878v2[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Computational Imaging</term>
+					<term>Underwater Restoration</term>
+					<term>Denoising Diffusion</term>
+					<term>Foundational Models</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Underwater image restoration algorithms seek to restore the color, contrast, and appearance of a scene that is imaged underwater. They are a critical tool in applications ranging from marine ecology and aquaculture to underwater construction and archaeology. While existing pixel-domain diffusion-based image restoration approaches are effective at restoring simple scenes with limited depth variation, they are computationally intensive and often generate unrealistic artifacts when applied to scenes with complex geometry and significant depth variation. In this work we overcome these limitations by combining a novel network architecture (SLURPP) with an accurate synthetic data generation pipeline. SLURPP combines pretrained latent diffusion models-which encode strong priors on the geometry and depth of scenes-with an explicit scene decomposition-which allows one to model and account for the effects of light attenuation and backscattering. To train SLURPP we design a physics-based underwater image synthesis pipeline that applies varied and realistic underwater degradation effects to existing terrestrial image datasets. This approach enables the generation of diverse training data with dense medium/degradation annotations. We evaluate our method extensively on both synthetic and real-world benchmarks and demonstrate state-of-the-art performance. Notably, SLURPP is over 200× faster than existing diffusion-based methods while offering ∼ 3dB improvement in PSNR on synthetic benchmarks. It also offers compelling qualitative improvements on real-world data. Project website https://tianfwang.github.io/slurpp/.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>U NDERWATER Image Restoration is a critical task due to the widespread degradation of visual quality in submerged environments caused by light absorption, scattering, and color distortion. These degradations significantly hinder visual perception, making it diffcult for computer vision systems to interpret underwater scenes accurately. Restoring underwater images is essential for a variety of applications, including marine biology research, underwater archaeology, environmental monitoring, autonomous underwater vehicle (AUV) navigation, and underwater robotics. However, underwater image restoration is inherently difficult due to the complex optical properties of water <ref type="bibr" target="#b0">[1]</ref>, which differ with depth, turbidity, and lighting conditions. Traditional model-based methods rely on physical priors <ref type="bibr" target="#b1">[2]</ref>, but often struggle with generalization across diverse underwater scenes. Recently, learning-based approaches have shown promising results by leveraging data-driven priors, yet they still face challenges such as a lack of ground truth data, domain shift, and poor interpretability. These limitations highlight the need for more robust and generalizable methods that can adapt to complex degradations of underwater scenes.</p><p>Modern text-to-image latent diffusion models <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b4">[5]</ref>, trained on massive online datasets <ref type="bibr" target="#b5">[6]</ref>, have demonstrated remarkable generative capabilities. Crucially, the rich knowledge encoded within extends significantly beyond image synthesis. Recent works have highlighted this by successfully repurposing pretrained latent diffusion models for challenging computer vision tasks, including dense prediction problems such as monocular depth estimation and image intrinsic decomposition <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b7">[8]</ref>, <ref type="bibr" target="#b8">[9]</ref>, <ref type="bibr" target="#b9">[10]</ref>. Such successes strongly suggest that these models implicitly capture a sophisticated understanding of scene geometry and intrinsic properties <ref type="bibr" target="#b10">[11]</ref>, learned inherently from the structure present in their massive training corpora <ref type="bibr" target="#b11">[12]</ref>.</p><p>To this end, underwater image restoration presents a unique challenge, aiming to recover clear visual scene appearances distorted by wavelength-dependent scattering and absorption effects inherent to the water medium. Fundamentally, it requires a joint estimation of both the clear image and the physical medium parameters governing underwater visual degradation. Insights from underwater imaging <ref type="bibr" target="#b0">[1]</ref>, <ref type="bibr" target="#b12">[13]</ref> suggest that these two components-scene content and water medium-can serve as mutual cues. We propose that the rich generative priors encoded in pretrained diffusion models offer a powerful framework to address both aspects of this problem. Specifically, the target clear images often depict natural scenes, aligning well with the distribution of content that such models are trained on. Moreover, backscattering and attenuation effects exhibit strong correlations with scene depth. Notably, recent advances in monocular depth estimation using pretrained latent diffusion <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b7">[8]</ref>, <ref type="bibr" target="#b13">[14]</ref>, <ref type="bibr" target="#b14">[15]</ref> reveal that these models inherently capture robust depth priors. This suggests a promising opportunity for modeling depth-dependent water medium parameters, offering a unified approach to underwater image restoration that is both data-efficient and physically grounded.</p><p>Building on this insight, we introduce SLURPP: Single-</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Input Underwater Image</head><p>Output Clear Scene Output Backscattering (Left) Transmission (Right) Fig. <ref type="figure">1</ref>. Real-world underwater restoration using our method. We develop a single-step underwater restoration method that leverages pretrained latent diffusion priors. Given an underwater input image (top row), our method jointly predicts the clear image (middle row), and the per-pixel underwater medium parameters, specifically the backscattering (bottom row left) and transmission (bottom row right) parameters. In this figure, we present real-world results using images from the UIEB <ref type="bibr" target="#b2">[3]</ref> underwater dataset. We show that our method can robustly restore underwater images in a variety of different scenes and water conditions.</p><p>step Latent Underwater Restoration with Pretrained Priors. Our method is a latent-diffusion-based restoration framework that offers a simple yet effective single-step solution for underwater image restoration. SLURPP is simple in that it performs direct, physically informed fine-tuning of the underlying latent diffusion model for the task of single-step underwater image restoration, without explicit auxiliary task training, such as dedicated depth prediction. We design a dual-branch architecture to jointly estimate the clear scene and the dense depth-dependent water medium. Crucially, we inject distinct diffusion priors into each branch, tailored to their respective tasks. Our method enables robust and data-efficient restoration across a wide range of underwater conditions (Fig. <ref type="figure">1</ref>), overcoming challenges posed by the scarcity of real-world underwater datasets and the difficulty of obtaining paired ground truth data.</p><p>Our main contributions are summarized as follows: 1) We propose a novel underwater image restoration approach that leverages the foundational visual and geometric priors embedded in pretrained latent diffusion models. Our method jointly estimates the clear scene and water medium properties in a single step. By direct finetuning a dual-branch architecture tailored for disentangling image content from depth-dependent waterbody effects, our SLURPP method achieves efficient and highquality restoration across diverse underwater scenes. 2) We develop a physically grounded and computationally efficient underwater image simulation pipeline, built upon the standard underwater image formation model and informed by real-world optical measurements of underwater environments. This pipeline enables the synthesis of high-quality, realistic paired training data by simulating diverse underwater conditions-including varying water types, depths, and lighting-on top of large-scale, easily accessible terrestrial image datasets. 3) By fine-tuning on our simulated dataset, our method effectively adapts the strong generative priors of pretrained latent diffusion models to the specific task of underwater image restoration. In contrast to prior approaches that rely on pixel-space diffusion, our framework operates in a more compact and expressive latent space, enabling fast single-step inference that is over 200× faster than previous diffusion methods, while also supporting the restoration of higher-resolution images with greater visual fidelity. This efficiency, coupled with improved restoration quality, highlights the practical and technical benefits of leveraging latent generative priors for real-world underwater imaging applications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">RELATED WORK</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Underwater Image Restoration and Enhancement</head><p>Underwater image restoration and enhancement, although closely related, address different aspects of image quality improvement. Enhancement methods improve visual quality by adjusting contrast, color, and brightness without modeling physics <ref type="bibr" target="#b15">[16]</ref>, using techniques such as histogram equalization, Retinex, and local contrast adjustments <ref type="bibr" target="#b16">[17]</ref>.</p><p>While computationally efficient, these enhancement methods often produce visually appealing but physically implausible results. In contrast, restoration methods aim to recover true scene radiance by modeling underwater light propagation <ref type="bibr" target="#b17">[18]</ref>, accounting for absorption, scattering, and wavelength-dependent attenuation <ref type="bibr" target="#b12">[13]</ref>.</p><p>Traditional restoration methods rely on handcrafted priors and physical models to estimate and mitigate degradations <ref type="bibr" target="#b1">[2]</ref>, <ref type="bibr" target="#b2">[3]</ref>, <ref type="bibr" target="#b18">[19]</ref>, <ref type="bibr" target="#b19">[20]</ref>. Deep learning has significantly advanced underwater image restoration and enhancement by offering adaptive solutions to learn complex mappings from data. <ref type="bibr" target="#b2">[3]</ref> established the first CNN-based benchmark. <ref type="bibr" target="#b20">[21]</ref> and <ref type="bibr" target="#b21">[22]</ref> applied adversarial training for color and detail enhancement. <ref type="bibr" target="#b22">[23]</ref> leverages unlabeled data pseudolabeling and contrastive learning. Transformer approaches such as <ref type="bibr" target="#b23">[24]</ref> and <ref type="bibr" target="#b24">[25]</ref> introduced histogram and phase-based self-attention mechanisms. <ref type="bibr" target="#b25">[26]</ref> uses wavelength-aware networks that enhance restoration using adaptive receptive fields and attentive skip connections. Most relevant to our work, <ref type="bibr" target="#b26">[27]</ref> integrates RGBD diffusion priors with a physically-based sampling scheme.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Diffusion Models for Computer Vision Tasks</head><p>Recent large latent diffusion models (LDMs) <ref type="bibr" target="#b3">[4]</ref>, trained on massive online datasets of text-image pairs <ref type="bibr" target="#b5">[6]</ref>, can generate diverse and photorealistic images with a text prompt, inspiring large attention in the computer vision community. The first extensions on LDMs focus on controllable image generation using additional conditions such as depth, inpainting, and segmentation maps <ref type="bibr" target="#b27">[28]</ref>, <ref type="bibr" target="#b28">[29]</ref>, <ref type="bibr" target="#b29">[30]</ref>, <ref type="bibr" target="#b30">[31]</ref>, <ref type="bibr" target="#b31">[32]</ref>, <ref type="bibr" target="#b32">[33]</ref>. Since then, several works have repurposed LDMs for non-generative tasks, such as monocular depth and normal estimation <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b7">[8]</ref>, <ref type="bibr" target="#b14">[15]</ref>, <ref type="bibr" target="#b33">[34]</ref> and image intrinsic decomposition <ref type="bibr" target="#b9">[10]</ref>. LDMs have also been used in the image restoration tasks such as deblurring <ref type="bibr" target="#b34">[35]</ref>, super-resolution <ref type="bibr" target="#b35">[36]</ref>, and flash removal <ref type="bibr" target="#b8">[9]</ref>. On underwater image restoration, we note that Osmosis <ref type="bibr" target="#b26">[27]</ref> is the first work to leverage diffusion priors. However, they only use a pixel space RGBD diffusion model trained from ImageNet <ref type="bibr" target="#b36">[37]</ref>, <ref type="bibr" target="#b37">[38]</ref> with limited generation resolution and much less scale and generative capacity compared to current pretrained latent diffusion models <ref type="bibr" target="#b3">[4]</ref>. Additionally, <ref type="bibr" target="#b26">[27]</ref> uses a DDPM <ref type="bibr" target="#b4">[5]</ref> sampling scheme that requires 1000 inference steps, while our method enables single-step inference.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">PROPOSED METHOD</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Preliminaries</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.1">Underwater Image Formation</head><p>The Jaffe-McGlamery (JM) model <ref type="bibr" target="#b38">[39]</ref> serves as a fundamental framework in underwater imaging, providing a mathematical representation of the complex processes of light absorption and scattering in aquatic environments, which significantly influence the visual appearance of submerged objects. Subsequently, <ref type="bibr" target="#b0">[1]</ref> introduced a revised underwater image formation model that incorporates variations in attenuation coefficients between direct transmission and backscatter to enhance the accuracy of underwater image correction techniques. A widely adopted formulation of the underwater image formation process is expressed by the following equation:</p><formula xml:id="formula_0">I c = J c • e -β D c z + B ∞ c • (1 -e -β B c z ),<label>(1)</label></formula><p>where c ∈ {R, G, B} represents the color channel; I represents the image captured underwater by the camera of a scene at distance z; J denotes the clear scene that would have been captured in the absence of water along the line of sight; and B ∞ refers to the water color at infinity, commonly referred to as the background light. The two parameters β D and β B represent the attenuation and backscatter coefficients, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.2">Latent Diffusion Model and Diffusion Fine-Tuning</head><p>Denoising Diffusion Probabilistic Models (DDPMs) <ref type="bibr" target="#b40">[41]</ref>, <ref type="bibr" target="#b41">[42]</ref> are generative models that learn data distributions by reversing a Markovian process forward process, in which data is gradually corrupted by Gaussian noise over several steps. Early works on diffusion-based image generation are directly trained on RGB pixel space <ref type="bibr" target="#b37">[38]</ref>, <ref type="bibr" target="#b40">[41]</ref>, which imposes large computational and memory requirements for training and inference. Latent Diffusion Models (LDMs) such as Stable Diffusion (SD) <ref type="bibr" target="#b3">[4]</ref> shift the diffusion process in a low dimensional latent space defined by a variational autoencoder (VAE) <ref type="bibr" target="#b42">[43]</ref>. The VAE improves computational efficiency by contracting the image's spatial dimension, while expanding the feature dimension helps encode highlevel features and creates a smoother sampling landscape for effective generation. The computational and modeling</p><note type="other">Underwater Transmission Clear Backscattering Foreground Underwater Transmission Clear Backscattering Background Zoom In</note><p>Fig. <ref type="figure">2</ref>. Our method captures the depth-varying change of water medium properties. In this figure we demonstrate the depth-dependent nature of the underwater medium effects and show that our method can correctly capture this in our medium predictions. We can see in the zoomed-in regions of the input underwater image (right first row), that the water medium effects increase as we move from the foreground to the background. This illustrates that the water medium effects are strongly correlated with scene depth. Our model can recover both the clear image (right second row) while capturing the depth-correlated transmission and backscattering effects (right bottom rows). Our model predicts as the scene depth increases, the backscattering becomes stronger while the transmission becomes weaker. This prediction aligns with the observed medium phenomenon in the input underwater image.</p><p>advantages of the LDMs lead to their wide adoption in image generation. However, LDMs are still slow due to their need for iterative denoising during inference, with work on few-step sampling <ref type="bibr" target="#b40">[41]</ref>, <ref type="bibr" target="#b43">[44]</ref>, <ref type="bibr" target="#b44">[45]</ref>, <ref type="bibr" target="#b45">[46]</ref> trading inference time with generation quality. Recent work repurpose LDMs for computer vision tasks <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b7">[8]</ref>, <ref type="bibr" target="#b8">[9]</ref>, achieving impressive results. However, these works still model the estimation process as conditional generation based on additional image input. As such, they still need iterative denoising during inference. Inspired by recent theoretical and empirical progress in single-step diffusion <ref type="bibr" target="#b14">[15]</ref>, <ref type="bibr" target="#b33">[34]</ref>, <ref type="bibr" target="#b46">[47]</ref>, we hypothesize that the iterative denoising formulation is less crucial for underwater image restoration, where the distribution of the predicted restored image is narrow and peaks at the ground truth, compared to text-to-image generation, where there is a wide distribution of plausible images for a text prompt. As such, we choose a pipeline that removes stochasticity from the training and inference process and directly predicts restored properties in a single step. We show in our experiment that this singlestep formulation does not degrade performance and could even outperform iterative denoising versions of our method, due to the additional advantage of the ability to directly supervise in the image space for single-step training.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Problem Setting</head><p>From the underwater image formation model Eq. ( <ref type="formula" target="#formula_0">1</ref>), two key insights emerge: first, underwater light attenuation and scattering exhibit a strong dependence on both wavelength and propagation distance; second, the occluding backscatter layer, which degrades image clarity, is inherently independent of the scene content. Based on these insights, we formulate our restoration task as the joint estimation of both the restored clear image J, and medium-related parameters, including transmission The input image is first encoded into latent space using the frozen VAE from pretrained Stable Diffusion (SD) <ref type="bibr" target="#b3">[4]</ref>. This latent image is then fed into two UNet <ref type="bibr" target="#b39">[40]</ref> branches: the scene branch to predict the clear scene, and the medium branch to predict the wavelength and depth-dependent medium effects. The two branches use different pretrained diffusion priors <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b6">[7]</ref> that fit their respective prediction modalities while exchanging mutual cues through a cross-attention mechanism. The UNets then predict the scene and medium latent images in a single step. To output the predictions, the attenuation and backscattering latent images are decoded using the standard SD decoder, while the clear image is decoded with a cross-latent decoder fine-tuned by incorporating high-frequency details passed from the input image through skip connection layers of the encoder. specified in Eq. ( <ref type="formula" target="#formula_0">1</ref>), where we now write as our dense scenemedium decomposition formulation:</p><formula xml:id="formula_1">I c = J c • T c + B c<label>(2)</label></formula><p>Compared to the imaging model of Eq. ( <ref type="formula" target="#formula_0">1</ref>), we see that for each channel c, we have the relation</p><formula xml:id="formula_2">T c = e -β D c z and B c = B ∞ c • (1 -e -β B c z ),</formula><p>showing that both medium predictions are highly correlated with the scene depth. We represent medium properties using two three-channel images, T and B, rather than separately estimating depth z and water parameters β D , β B , and B ∞ as in previous methods, for three main reasons.</p><p>First, to incorporate diffusion priors, our pipeline needs to preserve the architecture of pretrained latent diffusion models, which are naturally suited for high-dimensional dense signals such as images. Second, previous methods often assume medium homogeneity (i.e., a spatially uniform β) and even reduce the number of unknown parameters by setting β D = β B . Our approach avoids these simplifying assumptions, enabling more robust estimations. Finally, dense medium parameters are depth-related but represented as bounded image intensities, unlike raw depth values with infinite range. This makes them more robust for reconstructing scenes with large depth variations, as medium images are more robust to depth estimation errors in the distant background. We illustrate the effectiveness of our formulation in Fig. <ref type="figure">2</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Our Core Idea</head><p>The core idea of our method can be broken down into three key points: foundational model prior, single-step task specific fine-tuning, and physically-accurate training data. Effective underwater restoration requires capturing two aspects: a clear image that resembles natural scenes and the water medium properties correlated with scene depth. With this in mind, we leverage current pretrained latent diffusion models to provide foundational natural image priors for clear image prediction and depth priors for medium prediction. We design a dual-branch architecture (Fig. <ref type="figure" target="#fig_0">3</ref>) for joint scene and medium prediction, consisting of a scene branch for content restoration and a medium branch for estimating pixel-level medium parameters. The scene branch is initialized from a pretrained text-to-image diffusion model <ref type="bibr" target="#b3">[4]</ref> containing strong priors on natural images, while the medium branch is initialized from a pretrained affine-invariant monocular depth diffusion model <ref type="bibr" target="#b6">[7]</ref>. At the training level, our framework and fine-tuning strategy are designed to incorporate the prior knowledge of the underwater image formation model while enabling fast, highquality single-step inference. We introduce inter-branch cross-attention to exploit the complementary relationship between the clear image and water medium, allowing them to serve as mutual cues during prediction. Additionally, our training objective includes a reconstruction loss that explicitly encourages the outputs to adhere to the dense scene-medium decomposition described in Eq. <ref type="bibr" target="#b1">(2)</ref>. At the data level, we train our model using physically accurate data, enabling it to learn the underwater image formation process for robust predictions. Addressing the lack of largescale real paired underwater datasets, we synthesize training data by applying a physically accurate formation model to diverse terrestrial images as clean sources. Our physically accurate underwater image synthesis pipeline uses a carefully optimized medium-related parameter generation strategy to synthesize high-quality training data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Physics-based Diverse Underwater Data Synthesis</head><p>Real-world underwater datasets are scarce and typically lack ground truth, hindering the development of generalizable image restoration models. 3D simulators, while an alternative, often suffer from high modeling costs, limited scene diversity, and a large domain gap compared to reality. Consequently, synthesizing physically plausible underwater images by applying imaging models to large-scale terrestrial data has become a standard approach in the field.</p><p>The underwater image formation model Eq. ( <ref type="formula" target="#formula_0">1</ref>) shows that the degradation caused by the scattering medium is mainly governed by the depth z, the attenuation coefficient Large-scale Terrestrial Data Fig. <ref type="figure">4</ref>. Physically accurate underwater image synthetics pipeline for diverse data generation. Our model is trained on realistic underwater images synthesized from large-scale terrestrial data using precise modeling of depth, attenuation, and background light for physically accurate results. We generate accurate metric depth maps using a state-of-theart metric depth estimator <ref type="bibr" target="#b47">[48]</ref>. We sample attenuation values based on real-world water measurements <ref type="bibr" target="#b0">[1]</ref>, <ref type="bibr" target="#b48">[49]</ref> (bottom-right, reproduced from <ref type="bibr" target="#b0">[1]</ref>). We source diverse, realistic background light estimated from real-world underwater images <ref type="bibr" target="#b49">[50]</ref> (top-right). These generation strategies enhance the realism and quality of our synthetic training data.</p><p>β, and the background light B ∞ . Accurately and diversely generating these parameters is crucial for realistic synthetic data. Unlike prior methods that approximate the formation model, we optimize each parameter to achieve fine-grained rendering of light scattering and attenuation (Fig. <ref type="figure">4</ref>).</p><p>Obtaining the depth z is challenging as the underwater image formation model Eq. ( <ref type="formula" target="#formula_0">1</ref>) requires the absolute depth in meters. While RGBD datasets <ref type="bibr" target="#b50">[51]</ref> provide metric depth, they are often sparse, lack scene diversity, and are costly to acquire. As a result, prior works <ref type="bibr" target="#b26">[27]</ref>, <ref type="bibr" target="#b49">[50]</ref> often rely on monocular depth predictions with manual normalization. However, normalization without camera intrinsics introduces scale errors, limiting the reliability of depth and downstream water medium generation. To address this, we leverage Depth Pro <ref type="bibr" target="#b47">[48]</ref>, a recent advancement in metric monocular depth that directly predicts focal length from the input image, enabling accurate metric depth estimation. This allows us to generate dense, reliable, and diverse perpixel metric depth maps from large-scale image collections.</p><p>While the values of the attenuation coefficient β and background light B ∞ are theoretically arbitrary, they are intrinsically constrained on water type. To ensure consistency with real-world aquatic environments, our generation strategy is informed by global-scale underwater optical measurements and extensive real-world data priors. Specifically, we first randomly sample from the 10 Jerlov's water types <ref type="bibr" target="#b48">[49]</ref>, and then using the sample's measured coefficients at 600nm, 525nm, and 475nm to guide the RGB intensities of β respectively. To avoid unrealistic over or under degradation of the image, we bound the attenuation β, and resample when excessive information loss occurs in the generated image. In our first stage, we train our dual-branch UNets with inter-branch cross-attention to directly predict the latent images of the clear scene J, as well as medium transmission T and backscattering B. The latent outputs are decoded and supervised with their respective ground truths using image losses. We also use the reconstruction loss to guide the predicted outputs to respect the underwater image formation model. For stage 2 cross-latent decoding, we fine-tune the decoder and additional zero convolution skip connections to transfer high-frequency details from the input underwater image to the restored image.</p><p>We source diverse, realistic background light B ∞ values by extracting them from real underwater images using ULAP <ref type="bibr" target="#b49">[50]</ref>, where we swap its monocular depth component with DepthPro <ref type="bibr" target="#b47">[48]</ref> for more precise background light estimation. The extracted background lights are then clustered (K=10 K-means in the Lab color space 'ab' channels) into perceptually distinct subsets representing different water types. During synthesis, we first randomly select a light cluster and then randomly sample within it to obtain the background light B ∞ .</p><p>Using our generation strategies for depth z, attenuation β, and background light B ∞ , and applying the underwater image formation model Eq. ( <ref type="formula" target="#formula_0">1</ref>), we can efficiently generate high-quality paired data required to train our model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5">Pipeline Architecture</head><p>Our proposed pipeline (Fig. <ref type="figure" target="#fig_0">3</ref>) addresses underwater image restoration by jointly predicting the clear scene image, free from water effects, along with the transmission and backscattering properties characterizing the water medium. Initially, the input underwater image undergoes encoding into the latent space via the frozen pretrained Stable Diffusion (SD) VAE encoder <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b42">[43]</ref>. This latent representation serves as input to a dual-branch architecture comprising two UNets <ref type="bibr" target="#b39">[40]</ref> connected with inter-branch cross-attention: a scene branch tasked with predicting the clear scene latent, and a medium branch predicting latent images of depthdependent attenuation and backscattering. Both branches predict their respective latent images in a single step. Finally, the decoding process differs based on the output type: the attenuation and backscattering latent variables are decoded using the standard SD decoder. In contrast, the We show extensive comparisons against previous methods <ref type="bibr" target="#b2">[3]</ref>, <ref type="bibr" target="#b21">[22]</ref>, <ref type="bibr" target="#b22">[23]</ref>, <ref type="bibr" target="#b23">[24]</ref>, <ref type="bibr" target="#b24">[25]</ref>, <ref type="bibr" target="#b25">[26]</ref>, <ref type="bibr" target="#b26">[27]</ref>, <ref type="bibr" target="#b52">[53]</ref>, <ref type="bibr" target="#b53">[54]</ref>. As illustrated in the comparison, previous methods often struggle to achieve physically consistent restoration across the entire scene, and may even exhibit unnatural changes in water body color. In contrast, our method (second column to the left) achieves physically-consistent restoration across scenes of varying depth, with notably improved performance in severely degraded distant areas. Furthermore, our method accurately estimates per-pixel medium parameters and enables precise and faithful scene restoration across diverse water types and color profiles.</p><p>clear scene latent is decoded using the cross-latent decoder, which is fine-tuned to incorporate high-frequency details passed from the original input image via skip connections originating from the VAE encoder.</p><p>We now describe the training process illustrated in Fig. <ref type="figure" target="#fig_2">5</ref>. We train the single-step restoration and cross-latent decoder in two stages. We note that during inference the frozen encoder can be trivially modified to introduce cross-latent decoding for unified single-step inference.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.1">Stage 1: Single-step Restoration Fine-Tuning</head><p>Typical conditional diffusion fine-tuning <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b8">[9]</ref> first converts both the input and the output ground truth images to latent space and injects the output latent image with a random proportion of Gaussian noise. The latent diffusion UNet is then fine-tuned to predict the injected noise, given the input latent and noisy output latent as inputs. This training recipe is tailored for iterative denoising inference, but performs poorly for few-step inference. Additionally, the loss is applied to the noisy latent image that is uninterpretable and cannot leverage structural and perceptual image supervision. In our single-step fine-tuning, the diffusion UNet simply takes in the input latent concatenated with the zero image, which is the mean of the pure Gaussian noise distribution, and learns to directly predict the output latent image in one pass. The output latent image can then be decoded into RGB space where we can compare with the ground truth output using the pixel-space image loss:</p><formula xml:id="formula_3">L = L 1 + L SSIM + L LP IP S .<label>(3)</label></formula><p>We use this training strategy to jointly train the two UNet branches (with cross-attention), with the encoder and decoder both frozen to their pretrained weights. We apply the image loss in Eq. ( <ref type="formula" target="#formula_3">3</ref>) to all output modalities compared to  their respective ground truth. Additionally, we combine the predicted images using the dense scene-medium decomposition formulation in Eq. ( <ref type="formula" target="#formula_1">2</ref>), and the apply the image loss in Eq. ( <ref type="formula" target="#formula_3">3</ref>) to the input image as a self-supervised reconstruction loss L U IF M . Our final loss can be written as</p><formula xml:id="formula_4">L total = λ J L J + λ T L T + λ B L B + λ L L U IF M .<label>(4)</label></formula><p>We use λ J = 1, λ T = λ B = 0.5, λ L = 0.4. We note that L U IF M plays a key role in mitigating the domain gap introduced by synthetic training data. While our improved data generation pipeline approximates realworld degradation, it remains limited by the lack of dense optical measurements in real underwater environments, leading to simplifications in light propagation and attenuation modeling. These assumptions introduce discrepancies between synthetic and real images, such as non-uniform media or mismatched scattering and attenuation coefficients. By guiding the model to learn from intrinsic data consistency rather than reply solely on synthetic labels, the reconstruciton loss L U IF M improves robustness against synthetic data biases and enhances generalization to diverse real-world underwater environments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.2">Stage 2: High-frequency Preservation Decoding</head><p>Single-step latent restoration can already effectively restore the clean image. However, due to limitations of the vanilla SD decoder <ref type="bibr" target="#b3">[4]</ref>, we still observe blurriness and hallucinations in high-frequency details such as text. Following previous diffusion-based restoration methods <ref type="bibr" target="#b8">[9]</ref>, we use cross-latent decoding with additional zero convolution skipconnections to transfer high-frequency details from the underwater input to the clear image. Once the dual-branch diffusion is trained, we use pairs of underwater image and the latent image output of the scene branch UNet for the second stage corss-latent deocder training, where we fine-tune only the zero convolution and the decoder. This training is supervised using the same image loss in Eq. ( <ref type="formula" target="#formula_3">3</ref>) between the decoded image and the ground truth image.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TABLE 1</head><p>Quantitative comparison on USOD10K <ref type="bibr" target="#b51">[52]</ref> and UIEB [3] datasets using UIQM <ref type="bibr" target="#b54">[55]</ref> and MUSIQ <ref type="bibr" target="#b55">[56]</ref> reference-free metrics. Due to the lack of ground truth clear images for real-world underwater datasets, we use reference-free metrics that measure the clear image quality as an assessment to restoration effectiveness. For both datasets our method achieves the best reference-free metric performance.  We benchmark the clear scene restoration quality on synthetic underwater images curated by <ref type="bibr" target="#b26">[27]</ref>, which uses ground truth RGBD data from <ref type="bibr" target="#b56">[57]</ref> to simulate underwater images. Our method achieves the best performance across all metrics.</p><p>PSNR ↑ SSIM ↑ LPIPS ↓ WaterNet (TIP 2019) <ref type="bibr" target="#b2">[3]</ref> 18.04 0.75 0.11 FUnIE-GAN (RA-L 2020) <ref type="bibr" target="#b21">[22]</ref> 17.64 0.77 0.21 USUIR (AAAI 2022) <ref type="bibr" target="#b52">[53]</ref> 16.76 0.80 0.18 Semi-UIR (CVPR 2023) <ref type="bibr" target="#b22">[23]</ref> 17.82 0.83 0.12 MMLE (TIP 2022) <ref type="bibr" target="#b53">[54]</ref> 17.00 0.74 0.17 DeepWaveNet (TOMM 2023) <ref type="bibr" target="#b25">[26]</ref> 17.14 0.88 0.18 Histoformer (JOE 2024) <ref type="bibr" target="#b23">[24]</ref> 16.15 0.82 0.28 Osmosis (ECCV 2024) <ref type="bibr" target="#b26">[27]</ref> 22.74 0.89 0.06 Phaseformer (WACV 2025) <ref type="bibr" target="#b23">[24]</ref> 16 </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">EXPERIMENTAL RESULTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Datasets and Experiment Setups</head><p>We use Stable Diffusion V2 (SDV2) <ref type="bibr" target="#b3">[4]</ref> diffusion UNet to initialize the scene branch, and Marigold <ref type="bibr" target="#b6">[7]</ref> monocular depth model to initialize the medium branch. We initialize the VAE weights from SDV2 pretrained weights <ref type="bibr" target="#b3">[4]</ref>. For training data synthesis, we use high quality clean images from various sources, including natural images <ref type="bibr" target="#b57">[58]</ref>, <ref type="bibr" target="#b58">[59]</ref>, outdoor <ref type="bibr" target="#b59">[60]</ref>, indoor <ref type="bibr" target="#b60">[61]</ref>, night <ref type="bibr" target="#b61">[62]</ref> images. We provide more details on training data in the Supplementary. We train the stage 1 single-step fine-tuning and stage 2 crosslatent decoder sequentially on a single NVIDIA A6000 GPU using the same learning rate of 10 -5 and 512 × 512 image resolution. Stage 1 training took approximately 2 days and stage 2 took 1 day.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Real World and Synthetic Comparisons</head><p>We performed evaluations on both real-world and synthetic datasets to compare our method with existing approaches. A primary challenge in real-world data evaluation lies in the absence of ground truth clean images in available  Our single-step fine-tuning approach enables direct end-to-end supervision on images, aligning predicted clear and medium outputs with the dense scene-medium decomposition in Eq. ( <ref type="formula" target="#formula_1">2</ref>). Real-world evaluation on <ref type="bibr" target="#b2">[3]</ref> shows that this reconstruction loss leads to clearer restorations(bottom row), compared to outputs of the model that does not use reconstruction loss (middle row).</p><p>underwater datasets. We evaluated the quality of the restored image in two reference-free metrics following previous works: UIQM <ref type="bibr" target="#b54">[55]</ref> is tailored for underwater image restoration and measures the colorfulness, sharpness, and contrast of the restored image; MUSIQ <ref type="bibr" target="#b55">[56]</ref> is a multi-scale image quality assessment metric with a transformer-based architecture. We evaluated our method on two established real-world datasets in the underwater restoration literature: USOD10K <ref type="bibr" target="#b51">[52]</ref> and UIEB <ref type="bibr" target="#b2">[3]</ref> datasets. For a fair comparison on reference-free image quality metrics, we filtered out ∼ 10% of images with apparent image artifacts unrelated to underwater effect, such as visible compression and pixelation artifacts. Our method achieves state-of-the-art performance across all metrics on both datasets, demonstrating its effectiveness in restoring degraded underwater images to high-quality clear images. Our extensive qualitative comparisons in Fig. <ref type="figure" target="#fig_3">6</ref> also show that our method achieves a more distinct separation between the underlying scene content and the water medium, whereas other methods often fail to completely remove the effects of water medium, such as backscattering, or estimate them incorrectly. We provide further examples and analysis of real-world underwater images in the Supplementary.</p><p>We additionally evaluated our method on synthetic benchmarks with ground truth clear images. In Tab. 2 we compared quantitative image metrics with baseline methods using the simulated underwater dataset in <ref type="bibr" target="#b26">[27]</ref>, achieving the best result across all evaluated metrics. We note that none of the images in this dataset is used in our training data. These results highlight the high color accuracy and structural fidelity our predicted clear images.</p><p>We conducted an in-depth comparison with Osmosis <ref type="bibr" target="#b26">[27]</ref>, the previous state-of-the-art diffusion-based underwater reconstruction method. We show qualitative comparisons on real images in <ref type="bibr" target="#b2">[3]</ref> in Fig. <ref type="figure" target="#fig_4">7</ref>. Osmosis directly predicts depth and during iterative sampling enforces underwater image formation in Eq. ( <ref type="formula" target="#formula_0">1</ref>). However, this method is vulnerable to incorrect depth predictions, which results in spurious color patches and red shifts in the restored images that are unrealistic. We observe that our water-medium predictions correctly capture scene depth relations even more than the direct depth predictions of <ref type="bibr" target="#b26">[27]</ref>, which also leads to more realistic clear image predictions. In terms of runtime, we ran both methods using the same A6000 GPU. Due to its RGBD diffusion prior and sampling scheme, Osmosis can only restore images up to 256 × 256 size, while taking more than 200 seconds to generate one image. In contrast, our method can restore up to 2K × 2K images. Our singlestep inference restores a 512 × 512 image in 0.75 seconds, marking a &gt; 200× improvement over Osmosis. We provide further comparisons with Osmosis in the Supplementary, including an ablation on the training dataset, and quantitative comparison on water medium prediction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Ablation Studies</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Single</head><p>Step Prediction and Training. We tailor our framework to train dual-branch diffusion for single-step latent inference. For comparison, we also train an iterative diffusion model following the fine-tuning protocol of <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b8">[9]</ref> where the diffusion UNets are supervised with a latent noise loss. For this model, we also include cross-latent decoder training. Synthetic results in Tab. 2 show that our singlestep model performs better than the latent loss model with 50 inference steps. This improvement stems from our ability to directly supervise the RGB output in single-step training, rather than on uninterpretable latents. This includes the use of reconstruction loss that enforces the clear scene and medium output to respect the dense scene-medium decomposition formulation in Eq. ( <ref type="formula" target="#formula_1">2</ref>). We show real-world examples in Fig. <ref type="figure" target="#fig_5">8</ref> that our training objective has better scenemedium separation and produces clearer restorations. We believe that this shows that the reconstruction loss improves our model's generalization to real-world underwater effects. Cross-Latent Decoder. Even when guided by an image reconstruction loss during training, the standard SD decoder <ref type="bibr" target="#b3">[4]</ref> can sometimes introduce hallucinations in detailed regions due to the inherent challenges of reconstructing detail from a compressed latent space. As shown in Fig. <ref type="figure" target="#fig_6">9</ref>, the enhanced detail in the diver's eyes illustrates the effectiveness of cross-latent decoder in preserving critical highfrequency information, particularly in regions where the vanilla SD decoder might struggle.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">LIMITATIONS</head><p>While our method effectively restores high-quality images and estimates water parameters from single underwater inputs, it has a few limitations. Although faster and more efficient than prior diffusion-based approaches, it still requires a consumer-grade GPU and does not yet achieve real-time performance. Additionally, as it operates on single images, temporal consistency is not enforced, which we demonstrate on the MKV underwater video dataset <ref type="bibr" target="#b62">[63]</ref> in the Supplementary.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">CONCLUSION</head><p>In conclusion, we propose a novel underwater image restoration framework that leverages the foundational natural image and geometric priors embedded in pretrained latent diffusion models. Our approach introduces a fast, single-step restoration pipeline capable of producing detailed and robust predictions of both the clear scene and the intervening water medium. To train our model, we develop a physically grounded underwater image synthesis pipeline that generates realistic and diverse synthetic training data at scale. Comprehensive experiments on both synthetic and real-world benchmarks demonstrate that our method achieves state-of-the-art restoration performance, significantly advancing the quality and efficiency of diffusionbased underwater image restoration.</p><p>Supplementary Material for: "Single-Step Latent Diffusion for Underwater Image Restoration" Fig. <ref type="figure">10</ref>. More restoration results of our method on real-world datasets [3], <ref type="bibr" target="#b51">[52]</ref>. We showcase more real-world restoration image results of our method that we find visually appealing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TABLE 3</head><p>Comparing our single-step method to iterative latent loss fine-tuning methods. We present quantitative comparisons on the synthetic dataset of <ref type="bibr" target="#b26">[27]</ref> for our single-step diffusion restoration method, and iterative diffusion (50 steps) diffusion method fine-tuned following the latent loss of Marigold <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b8">[9]</ref>. Our results demonstrate that our single-step restoration model outperforms latent-loss-based models using 50 denoising steps, showing that the effectiveness of our training pipeline goes beyond merely accelerating inference speed. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">COMPARISON WITH LATENT LOSS TRAINING METHODS</head><p>Our single-step pipeline not only provides faster inference speeds, but also enables the use of image losses during training. Previous fine tuning methods for multi-step iterative inference, such as Marigold <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b8">[9]</ref>, use a latent space loss, which is less interpretable. To show the advantage of our one-step architecture and training objectice, we present quantitative results for restoration models trained using the standard diffusion latent loss objective with 50 denoising TABLE 4 Quantitative evaluation on water medium prediction. We report PSNR and MAE for predicted transmission (T) and backscattering (B) against the ground truth on the simulated NYU <ref type="bibr" target="#b56">[57]</ref> underwater dataset. Our method achieves higher accuracy for both components compared to Osmosis <ref type="bibr" target="#b26">[27]</ref>, which suffers from unreliable depth estimation. steps used in Marigold <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b8">[9]</ref>, with and without the crosslatent decoder (CLD). Our results in Tab. 3 show that our single-step model outperforms multi-step diffusion finetuned with latent loss. Finally, we highlight several key limitations regarding few-step diffusion distillation methods <ref type="bibr" target="#b43">[44]</ref>, <ref type="bibr" target="#b44">[45]</ref>, <ref type="bibr" target="#b45">[46]</ref>. Distillation requires training an iterative diffusion teacher model before distilling it into a singlestep model, while our method is trained for single-step prediction from the outset. Moreover, previous work <ref type="bibr" target="#b43">[44]</ref>, <ref type="bibr" target="#b44">[45]</ref>, <ref type="bibr" target="#b45">[46]</ref> has consistently shown that the output quality of single-step distilled models is upper bounded by their iterative teacher models. In contrast, our single-step model already outperforms the multi-step diffusion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8">ACCURACY OF MEDIUM PREDICTION</head><p>Due to the lack of ground truth data on transmission and backscattering, we follow Osmosis <ref type="bibr" target="#b26">[27]</ref> and evaluate our method on the unseen simulated NYU dataset <ref type="bibr" target="#b56">[57]</ref>. In Tab. 4, we measure the PSNR and the MAE of the predicted transmission (T) and backscattering (B) compared to the ground truth. We achieve superior medium prediction accuracy for both predictions over Osmosis <ref type="bibr" target="#b26">[27]</ref>, which struggles due to its unreliable depth prediction similar to Fig. <ref type="figure" target="#fig_4">7</ref> in the main paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="9">ADDITIONAL ABLATION QUANTITATIVE COM-</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PARISONS</head><p>We report quantitative results on the simulated dataset from Osmosis <ref type="bibr" target="#b26">[27]</ref>, <ref type="bibr" target="#b56">[57]</ref> for our ablation studies presented in Sec. 4.3 of the main paper in Tab. 5, specifically the use of reconstruction loss enabled by our single-step training, and the cross-latent decoder (CLD). Reconstruction loss improves the PSNR by 0.86 dB and the cross-latent decoder improves the PSNR by 0.67 dB.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>TABLE 6</head><p>Ablation study on the effect of model architecture and data. We decouple our physics-based diverse underwater data synthesis pipeline and our single-step restoration network to further study how each component affects the performance of our method. Specifically, we train our method using the terrestrial dataset from Osmosis <ref type="bibr" target="#b26">[27]</ref> instead of our terrestrial data, and we use randomized water medium parameters instead of our curated values from real-world measurements. We show quantitative results on the simulated underwater dataset using <ref type="bibr" target="#b56">[57]</ref> from <ref type="bibr" target="#b26">[27]</ref>. Our results show that using real-world water medium values during training data synthesis boosts the restoration accuracy of our model. On the other hand, even with randomized water parameters and using the same training data as Osmosis <ref type="bibr" target="#b26">[27]</ref>, our method still outperforms the baseline. To further investigate the effect for each component on our method's final performance, we conduct an additional ablation study that disentangles data and network. Specifically, we train new versions of our network using the same RGBD terrestrial data that Osmosis <ref type="bibr" target="#b26">[27]</ref> used for its RGBD diffusion prior. We also set the water parameters β D , β B , and B ∞ to random RGB values, instead of sampling from real-world water measurements. Our results in Tab. 6 show that using real-world water parameters boosts the performance of the trained restoration model, showing the strength to integrate domain-specific water medium knowledge to training. However, even after training with random water medium parameters, our method still outperforms Osmosis and other baselines (see Tab. 2 of the main paper), demonstrating the effectiveness of our single-step diffusion network and the underlying diffusion priors for underwater image restoration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="11">ROBUSTNESS TO CHALLENGING UNDERWA-TER SCENARIOS</head><p>Our simulation pipeline is based on the underwater image formation model in Eq. ( <ref type="formula" target="#formula_0">1</ref>), which models scattering of light from the object surface without assuming co-location of the illumination source and the sensor. While Eq. ( <ref type="formula" target="#formula_0">1</ref>) does not explicitly account for complex underwater phenomena such as turbidity, our prediction framework extends this formulation by leveraging the more flexible dense scenemedium decomposition in Eq. (2). To evaluate robustness of our formulation and our pipeline, we show real-world examples in Fig. <ref type="figure" target="#fig_7">11</ref> spanning a range of conditions including shallow water under solar illumination, deep water with non co-located light sources, and scenes with noticeable turbidity. Our method demonstrates strong performance across these diverse scenarios, although blurriness may appear in cases of severe turbidity. Incorporating a more explicit modeling of turbidity into our formulation presents a promising avenue for future research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="12">MORE REAL-WORLD RESULTS</head><p>In our qualitative comparisons on real-world underwater datasets <ref type="bibr" target="#b2">[3]</ref>, <ref type="bibr" target="#b51">[52]</ref>, we observed a consistent trend in the color accuracy of our restored images. We show this effect in Fig. <ref type="figure">12</ref> on a wide range of examples. While evaluating samples across a wide range of scenes, our method consistently recovered more faithful color profiles for both foreground and background objects. In contrast, other approaches frequently introduced color distortions, such as unnatural red shifts, overcompensation for underwater effects, or incomplete removal of background light. We attribute this advantage to the strong natural image priors embedded in the pretrained latent diffusion backbone <ref type="bibr" target="#b3">[4]</ref>, our scene-medium decomposition formulation, as well as our physically informed fine-tuning objectives, which together enable more precise modeling of underwater image degradation and restoration. Finally, we show additional realworld scenes in Fig. <ref type="figure">10</ref> and comparison results in Fig. <ref type="figure" target="#fig_8">13</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="13">MORE SYNTHETIC TRAINING DATA EXAMPLES</head><p>In Fig. <ref type="figure">14</ref> we present a diverse set of visualizations illustrating the synthetic underwater training data generated using our physically-accurate data synthesis pipeline detailed in Sec. 3.4 of the main paper. To ensure diversity and realism, we source clean images from a wide range of large-scale terrestrial datasets spanning both indoor and outdoor environments. These include ADE20K <ref type="bibr" target="#b59">[60]</ref>, an outdoor dataset originally designed for semantic segmentation; DIV2K <ref type="bibr" target="#b57">[58]</ref>, a high-resolution dataset containing diverse photographic scenes; and the Flickr dataset <ref type="bibr" target="#b58">[59]</ref>, which comprises a broad collection of crowd-sourced Internet images. We also incorporate Dark Zurich <ref type="bibr" target="#b61">[62]</ref>, which features urban street scenes captured in low-light, nighttime conditions, and In-teriorVerse <ref type="bibr" target="#b60">[61]</ref>, a dataset focused on richly detailed indoor environments. Using our synthesis pipeline, we simulate a variety of underwater conditions by varying medium parameters such as depth, attenuation, and background light, resulting in a rich and diverse training dataset that better captures the complexity of real-world underwater imaging scenarios. The visualizations in Fig. <ref type="figure">14</ref> also highlight the diversity of underwater medium profiles, showcasing that our data synthesis pipeline is able to capture a wide range of water types and lighting conditions to reflect the variability found in natural underwater environments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="14">VIDEO RESULTS</head><p>While our method is designed for single-image restoration and does not explicitly model temporal consistency, we evaluate it on underwater video sequences from the MVK dataset <ref type="bibr" target="#b62">[63]</ref> to assess its performance across frames. We refer readers to the static HTML file provided in the supplementary files (supp video.html) or directly in the "videos" folder to viewing of the video restoration results. The videos demonstrate restoration results in diverse underwater environments, from shallow reefs to deep-sea and wreck scenes. Our method yields stable, view-consistent outputs for foreground objects with minimal flickering, even for moving objects. However, in scenes with large depth variation or low light, flickering artifacts emerge between frames. A notable observation is that the model adapts well to focus changes in deep-sea footage, producing clearer predictions once objects come into focus. The failure case in the wreck video highlights limitations in our current approach, with significant flickering attributed to the absence of temporal modeling, noisy inputs, and ambiguous depth cues from particles in the scene. We believe that the flickering artifacts in our videos are temporal in nature and stems from the fact that our method does not model temporal consistency. Our foreground objects maintain strong view consistency across frames. On a per-frame basis, the restoration quality of the overall image is high with no apparent artifacts. Overall, these videos demonstrate the method's strong performance in restoring underwater visuals from single frames, while also motivating future work to incorporate temporal consistency for video-based applications. Fig. <ref type="figure">12</ref>. Our method restores more accurate colors compared to other methods. When evaluating restored outputs on real-world underwater datasets <ref type="bibr" target="#b2">[3]</ref>, <ref type="bibr" target="#b51">[52]</ref>, we observe that our method more accurately recovers the true color profiles of objects in both the foreground and background. In contrast, other methods often introduce artifacts such as spurious red shifts, overcompensation for medium effects, or incomplete removal of background light. We attribute our improved color fidelity to the strong natural image priors inherent in pretrained latent diffusion models <ref type="bibr" target="#b3">[4]</ref>, combined with our physically informed fine-tuning objectives. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 3 .</head><label>3</label><figDesc>Fig.3. Pipeline overview of our single-step dual-branch underwater restoration method. Our pipeline takes in an underwater image and aims to predict a clear image without water effects, along with the transmission and backscattering properties of the water medium in a single step. The input image is first encoded into latent space using the frozen VAE from pretrained Stable Diffusion (SD)<ref type="bibr" target="#b3">[4]</ref>. This latent image is then fed into two UNet<ref type="bibr" target="#b39">[40]</ref> branches: the scene branch to predict the clear scene, and the medium branch to predict the wavelength and depth-dependent medium effects. The two branches use different pretrained diffusion priors<ref type="bibr" target="#b3">[4]</ref>,<ref type="bibr" target="#b6">[7]</ref> that fit their respective prediction modalities while exchanging mutual cues through a cross-attention mechanism. The UNets then predict the scene and medium latent images in a single step. To output the predictions, the attenuation and backscattering latent images are decoded using the standard SD decoder, while the clear image is decoded with a cross-latent decoder fine-tuned by incorporating high-frequency details passed from the input image through skip connection layers of the encoder.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 5 .</head><label>5</label><figDesc>Fig.5. Two-stage training procedure of our method. In our first stage, we train our dual-branch UNets with inter-branch cross-attention to directly predict the latent images of the clear scene J, as well as medium transmission T and backscattering B. The latent outputs are decoded and supervised with their respective ground truths using image losses. We also use the reconstruction loss to guide the predicted outputs to respect the underwater image formation model. For stage 2 cross-latent decoding, we fine-tune the decoder and additional zero convolution skip connections to transfer high-frequency details from the input underwater image to the restored image.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 6 .</head><label>6</label><figDesc>Fig.6. Qualitative comparisons of restoration results in USOD10K<ref type="bibr" target="#b51">[52]</ref> UIEB<ref type="bibr" target="#b2">[3]</ref>. We show extensive comparisons against previous methods<ref type="bibr" target="#b2">[3]</ref>,<ref type="bibr" target="#b21">[22]</ref>,<ref type="bibr" target="#b22">[23]</ref>,<ref type="bibr" target="#b23">[24]</ref>,<ref type="bibr" target="#b24">[25]</ref>,<ref type="bibr" target="#b25">[26]</ref>,<ref type="bibr" target="#b26">[27]</ref>,<ref type="bibr" target="#b52">[53]</ref>,<ref type="bibr" target="#b53">[54]</ref>. As illustrated in the comparison, previous methods often struggle to achieve physically consistent restoration across the entire scene, and may even exhibit unnatural changes in water body color. In contrast, our method (second column to the left) achieves physically-consistent restoration across scenes of varying depth, with notably improved performance in severely degraded distant areas. Furthermore, our method accurately estimates per-pixel medium parameters and enables precise and faithful scene restoration across diverse water types and color profiles.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 7 .</head><label>7</label><figDesc>Fig. 7. Comparison with Osmosis<ref type="bibr" target="#b26">[27]</ref> on the UIEB dataset<ref type="bibr" target="#b2">[3]</ref>. In this figure we show the predicted clear image and medium-related parameters for our method and Osmosis. In the medium visualization of both methods, objects in the foreground have lower depth/backscattering, while background objects have higher depth/backscattering. Osmosis highly depends on accurate depth estimation, incorrect depth (such as the diver's face region in the right image) leads to unrealistic restoration with spurious color artifacts. Our scene-medium separation formulation leverages depth priors indirectly through water medium prediction, and we obtain much better quality predictions for both clear restoration and depth-dependent medium parameters.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 8 .</head><label>8</label><figDesc>Fig. 8. Reconstruction training objective improves restoration clarity.Our single-step fine-tuning approach enables direct end-to-end supervision on images, aligning predicted clear and medium outputs with the dense scene-medium decomposition in Eq. (2). Real-world evaluation on<ref type="bibr" target="#b2">[3]</ref> shows that this reconstruction loss leads to clearer restorations(bottom row), compared to outputs of the model that does not use reconstruction loss (middle row).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 9 .</head><label>9</label><figDesc>Fig. 9. Cross-latent decoding enhances restoration details. Even though our method uses image loss during training, the limitations of the vanilla SD [4] decoder could still hallucinate high-frequency details. The cross-latent decoding allows us to obtain restorations with better details, such as the eyes of the diver in this figure.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig. 11 .</head><label>11</label><figDesc>Fig. 11. Visualizing our model's performance under challenging underwater scenarios. We show method restoring real world examples from [3], [52] with challenging lighting scenarios and strong turbidity.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 13 .</head><label>13</label><figDesc>Fig. 13. Additional real-world comparisons on real-world underwater datasets [3], [52]. Our method (second column from the left) achieves physically consistent results across varying depths, with improved performance in degraded distant regions. It also accurately estimates per-pixel medium parameters across diverse water types, enabling faithful scene restoration under various underwater conditions.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE 2 Qualitative evaluation on synthetic underwater dataset from [27].</head><label>2</label><figDesc></figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>TABLE 5 Quantitative results for ablation studies in the main paper.</head><label>5</label><figDesc>PSNR T. ↑ MAE T. ↓ PSNR B. ↑ MAE B. ↓ We provide further quantitative results on the synthetic dataset of [27] for the ablation studies in Sec. 4.3 of the main paper.</figDesc><table><row><cell>Osmosis</cell><cell>13.97</cell><cell>0.207</cell><cell>23.08</cell><cell>0.076</cell></row><row><cell>Ours</cell><cell>24.69</cell><cell>0.060</cell><cell>32.37</cell><cell>0.024</cell></row><row><cell cols="2">Ours without Recon. Loss</cell><cell>24.80</cell><cell>0.93</cell><cell>0.05</cell></row><row><cell cols="2">Ours without CLD</cell><cell>24.99</cell><cell>0.92</cell><cell>0.06</cell></row><row><cell>Ours</cell><cell></cell><cell>25.66</cell><cell>0.95</cell><cell>0.05</cell></row></table><note><p>PSNR ↑ SSIM ↑ LPIPS ↓</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>10 DISENTANGLING THE IMPACT OF NETWORK DESIGN AND TRAINING DATA Our</head><label></label><figDesc>work consists of two key components: a novel singlestep diffusion underwater restoration network, and a physics-based diverse underwater training data synthesis pipeline.</figDesc><table><row><cell></cell><cell>Terrestrial Data</cell><cell>Water Medium Data</cell><cell cols="3">PSNR ↑ SSIM ↑ LPIPS ↓</cell></row><row><cell>Osmosis</cell><cell>Osmosis Data</cell><cell>-</cell><cell>22.74</cell><cell>0.89</cell><cell>0.06</cell></row><row><cell>Ours</cell><cell>Osmosis Data</cell><cell>Random Values</cell><cell>24.87</cell><cell>0.94</cell><cell>0.05</cell></row><row><cell>Ours</cell><cell>Osmosis Data</cell><cell>Sample From Real-World Measurements</cell><cell>25.76</cell><cell>0.95</cell><cell>0.05</cell></row><row><cell>Ours</cell><cell>Our Data</cell><cell>Sample From Real-World Measurements</cell><cell>25.66</cell><cell>0.95</cell><cell>0.05</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><p>ACKNOWLEDGMENTS J.W. and Y.A. were supported in part by <rs type="funder">USDA NIFA sustainable agriculture system program</rs> under award no. <rs type="grantNumber">20206801231805</rs>. T.W. and C.A.M. were supported in part by the <rs type="funder">UMD AIM Seed Grant Program</rs>, <rs type="funder">NSF</rs> CAREER grant no. <rs type="grantNumber">2339616</rs>, and <rs type="funder">ONR</rs> grant no. <rs type="grantNumber">N00014-23-1-2752</rs>. M.A.S. and M.J.I. were supported in part by the <rs type="funder">NSF</rs> grant no. <rs type="grantNumber">2330416</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_N5skGXU">
+					<idno type="grant-number">20206801231805</idno>
+				</org>
+				<org type="funding" xml:id="_5TSF3XX">
+					<idno type="grant-number">2339616</idno>
+				</org>
+				<org type="funding" xml:id="_Wk9YTze">
+					<idno type="grant-number">N00014-23-1-2752</idno>
+				</org>
+				<org type="funding" xml:id="_GmJDfTX">
+					<idno type="grant-number">2330416</idno>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Combined with our physically-accurate data synthesis pipeline, we generate diverse and realistic underwater images with various underwater medium profiles. ADE20K <ref type="bibr" target="#b59">[60]</ref> is an outdoor dataset originally used for semanitic segmentation. DIV2K <ref type="bibr" target="#b57">[58]</ref> is a high-resolution dataset with diverse scene content. Flickr dataset <ref type="bibr" target="#b58">[59]</ref> is a large dataset consisting of crowd-sourced Internet images. Dark Zurich <ref type="bibr" target="#b61">[62]</ref> is a dataset of city scenes in night environment. InteriorVerse <ref type="bibr" target="#b60">[61]</ref> is an indoor dataset.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">A Revised Underwater Image Formation Model</title>
+		<author>
+			<persName><forename type="first">Derya</forename><surname>Akkaynak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tali</forename><surname>Treibitz</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2018.00703</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-06">2018</date>
+			<biblScope unit="page" from="6723" to="6732" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">AquaFuse: Waterbody Fusion for Physics-Guided View Synthesis of Underwater Scenes</title>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Abu Bakr</forename><surname>Siddique</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiayi</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0009-0004-6601-4963</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Rekleitis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Jahidul</forename><surname>Islam</surname></persName>
+			<idno type="ORCID">0000-0001-7211-2675</idno>
+		</author>
+		<idno type="DOI">10.1109/lra.2025.3550816</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Robotics and Automation Letters</title>
+		<title level="j" type="abbrev">IEEE Robot. Autom. Lett.</title>
+		<idno type="ISSNe">2377-3774</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="4316" to="4323" />
+			<date type="published" when="2025-05">2025</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">An underwater image enhancement benchmark dataset and beyond</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Cong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kwong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on image processing</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="4376" to="4389" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">High-Resolution Image Synthesis with Latent Diffusion Models</title>
+		<author>
+			<persName><forename type="first">Robin</forename><surname>Rombach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Blattmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominik</forename><surname>Lorenz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Esser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bjorn</forename><surname>Ommer</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52688.2022.01042</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-06">2022</date>
+			<biblScope unit="page" from="10674" to="10685" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Denoising diffusion probabilistic models</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Abbeel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">NeurIPS</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">LAION-5b: An open largescale dataset for training next generation image-text models</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Schuhmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Beaumont</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Vencu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">W</forename><surname>Gordon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wightman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cherti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Coombes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Katta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Mullis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wortsman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Schramowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Kundurthy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Crowson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kaczmarczyk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jitsev</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">NeurIPS Systems Datasets and Benchmarks Track</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Marigold: Affordable Adaptation of Diffusion-Based Image Generators for Image Analysis</title>
+		<author>
+			<persName><forename type="first">Bingxin</forename><surname>Ke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianfu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nando</forename><surname>Metzger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shengyu</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anton</forename><surname>Obukhov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konrad</forename><surname>Schindler</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tpami.2025.3591076</idno>
+		<idno type="arXiv">arXiv:2505.09358</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2025">2025</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Geowizard: Unleashing the diffusion priors for 3d geometry estimation from a single image</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Long</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Flash-split: 2d reflection removal with flash cues and latent diffusion separation</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Metzler</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2501.00637</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Uni-Renderer: Unifying Rendering and Inverse Rendering Via Dual Stream Diffusion</title>
+		<author>
+			<persName><forename type="first">Zhifei</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianshuo</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenhang</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leyi</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongyu</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luozhou</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lu</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shunsi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingcong</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52734.2025.02468</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2025-06-10">2025</date>
+			<biblScope unit="page" from="26504" to="26513" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Viewactive: Active viewpoint optimization from a single image</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fermuller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Aloimonos</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2409.09997</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Event3dgs: Event-based 3d gaussian splatting for high-speed robot egomotion</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Fermuller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Aloimonos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Metzler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">8th Annual Conference on Robot Learning</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Sea-Thru: A Method for Removing Water From Underwater Images</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Akkaynak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Treibitz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1682" to="1691" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">UDepth: Fast Monocular Depth Estimation for Visually-guided Underwater Robots</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Islam</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ICRA</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Fine-Tuning Image-Conditional Diffusion Models is Easier than you Think</title>
+		<author>
+			<persName><forename type="first">Gonzalo</forename><forename type="middle">Martin</forename><surname>Garcia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karim</forename><forename type="middle">Abou</forename><surname>Zeid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daan</forename><surname>De Geus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Hermans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bastian</forename><surname>Leibe</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/wacv61041.2025.00083</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</title>
+		<editor>
+			<persName><surname>Wacv</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2025-02-26">2025</date>
+			<biblScope unit="page" from="753" to="762" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Fast Underwater Image Enhancement for Improved Visual Perception</title>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Jahidul</forename><surname>Islam</surname></persName>
+			<idno type="ORCID">0000-0001-7211-2675</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Youya</forename><surname>Xia</surname></persName>
+			<idno type="ORCID">0000-0003-2306-0930</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Junaed</forename><surname>Sattar</surname></persName>
+			<idno type="ORCID">0000-0002-3983-6265</idno>
+		</author>
+		<idno type="DOI">10.1109/lra.2020.2974710</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Robotics and Automation Letters</title>
+		<title level="j" type="abbrev">IEEE Robot. Autom. Lett.</title>
+		<idno type="ISSNe">2377-3774</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="3227" to="3234" />
+			<date type="published" when="2020-04">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Simultaneous Enhancement and Super-Resolution of Underwater Imagery for Improved Visual Perception</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sattar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Robotics: Science and Systems (RSS)</title>
+		<meeting><address><addrLine>Corvalis, Oregon, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2020-07">July 2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">MARVIS: Motion &amp; Geometry Aware Real and Virtual Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Jiayi</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaomin</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shahriar</forename><surname>Negahdaripour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cornelia</forename><surname>Fermüller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiannis</forename><surname>Aloimonos</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iros58592.2024.10801473</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</title>
+		<editor>
+			<persName><surname>Iros</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-10-14">2024</date>
+			<biblScope unit="page" from="2778" to="2785" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">3D Reconstruction of Underwater Scenes using Nonlinear Domain Projection</title>
+		<author>
+			<persName><forename type="first">Jiayi</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boxiao</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Jahidul</forename><surname>Islam</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cai54212.2023.00157</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE Conference on Artificial Intelligence (CAI)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-06" />
+			<biblScope unit="page" from="359" to="361" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<title level="m" type="main">Low-cost depth estimation and 3d reconstruction in scattering medium</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+		<respStmt>
+			<orgName>University of Florida</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Ph.D. dissertation</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Enhancing Underwater Imagery Using Generative Adversarial Networks</title>
+		<author>
+			<persName><forename type="first">Cameron</forename><surname>Fabbri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Jahidul</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junaed</forename><surname>Sattar</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icra.2018.8460552</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE International Conference on Robotics and Automation (ICRA)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-05">2018</date>
+			<biblScope unit="page" from="7159" to="7165" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Fast Underwater Image Enhancement for Improved Visual Perception</title>
+		<author>
+			<persName><forename type="first">Md</forename><forename type="middle">Jahidul</forename><surname>Islam</surname></persName>
+			<idno type="ORCID">0000-0001-7211-2675</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Youya</forename><surname>Xia</surname></persName>
+			<idno type="ORCID">0000-0003-2306-0930</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Junaed</forename><surname>Sattar</surname></persName>
+			<idno type="ORCID">0000-0002-3983-6265</idno>
+		</author>
+		<idno type="DOI">10.1109/lra.2020.2974710</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Robotics and Automation Letters</title>
+		<title level="j" type="abbrev">IEEE Robot. Autom. Lett.</title>
+		<idno type="ISSNe">2377-3774</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="3227" to="3234" />
+			<date type="published" when="2020-04">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Contrastive Semi-Supervised Learning for Underwater Image Restoration via Reliable Bank</title>
+		<author>
+			<persName><forename type="first">Shirui</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keyan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunsong</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52729.2023.01740</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-06">2023</date>
+			<biblScope unit="page" from="18145" to="18155" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Histoformer: Histogram-Based Transformer for Efficient Underwater Image Enhancement</title>
+		<author>
+			<persName><forename type="first">Yan-Tsung</forename><surname>Peng</surname></persName>
+			<idno type="ORCID">0000-0002-3802-1670</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yen-Rong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guan-Rong</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0009-0002-5929-2418</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chun-Jung</forename><surname>Liao</surname></persName>
+			<idno type="ORCID">0009-0009-5239-9731</idno>
+		</author>
+		<idno type="DOI">10.1109/joe.2024.3474919</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Oceanic Engineering</title>
+		<title level="j" type="abbrev">IEEE J. Oceanic Eng.</title>
+		<idno type="ISSN">0364-9059</idno>
+		<idno type="ISSNe">2373-7786</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="164" to="177" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Phaseformer: Phase-based attention mechanism for underwater image restoration and beyond</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Negi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kulkarni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Phutke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Vipparthi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Murala</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2412.01456</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Wavelength-based attributed deep neural network for underwater image restoration</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Bisht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sur</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>ACM TOMM</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Osmosis: RGBD Diffusion Prior for Underwater Image Restoration</title>
+		<author>
+			<persName><forename type="first">Opher</forename><forename type="middle">Bar</forename><surname>Nathan</surname></persName>
+			<idno type="ORCID">0009-0006-6013-2306</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Deborah</forename><surname>Levy</surname></persName>
+			<idno type="ORCID">0000-0003-0080-1054</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tali</forename><surname>Treibitz</surname></persName>
+			<idno type="ORCID">0000-0002-3078-282X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Rosenbaum</surname></persName>
+			<idno type="ORCID">0009-0008-9558-3195</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-73033-7_17</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024-10-31">2024</date>
+			<biblScope unit="page" from="302" to="319" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Adding Conditional Control to Text-to-Image Diffusion Models</title>
+		<author>
+			<persName><forename type="first">Lvmin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anyi</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maneesh</forename><surname>Agrawala</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv51070.2023.00355</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-01">2023</date>
+			<biblScope unit="page" from="3813" to="3824" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Sdedit: Guided image synthesis and editing with stochastic differential equations</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-Y</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ermon</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2108.01073</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Breathing new life into 3d assets with generative repainting</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kanakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Schindler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Van Gool</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Obukhov</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>BMVC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Dginstyle: Domain-generalizable semantic segmentation with image diffusion models and stylized semantic control</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hoyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Van Gool</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Schindler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Obukhov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Consistencyˆ2: Consistent and fast 3d painting with latent consistency models</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Obukhov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Schindler</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2406.11202</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<title level="m" type="main">Parametric shadow control for portrait generation in text-to-image diffusion models</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T.-W</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gehlot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">Y</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G.-M</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Metzler</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2503.21943</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Stablenormal: Reducing diffusion variance for stable and sharp normal</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Han</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Graphics</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Deblurring via stochastic refinement</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Whang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Delbracio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Talebi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Saharia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">G</forename><surname>Dimakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Milanfar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The Power of Context: How Multimodality Improves Image Super-Resolution</title>
+		<author>
+			<persName><forename type="first">Kangfu</forename><surname>Mei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hossein</forename><surname>Talebi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mojtaba</forename><surname>Ardakani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishal</forename><forename type="middle">M</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peyman</forename><surname>Milanfar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauricio</forename><surname>Delbracio</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52734.2025.02155</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2025-06-10">2025</date>
+			<biblScope unit="page" from="23141" to="23152" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Imagenet: A large-scale hierarchical image database</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L.-J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fei-Fei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Diffusion models beat gans on image synthesis</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dhariwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nichol</surname></persName>
+		</author>
+		<editor>NeurIPS</editor>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Computer modeling and the design of optimal underwater imaging systems</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Jaffe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE journal of oceanic engineering</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="101" to="111" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">U-Net: Convolutional Networks for Biomedical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Olaf</forename><surname>Ronneberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Brox</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-24574-4_28</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">N</forename><surname>Miccai</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Navab</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">W</forename><forename type="middle">M W</forename><surname>Hornegger</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Iii</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Frangi</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="234" to="241" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Denoising diffusion implicit models</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ermon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICLR</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Score-based generative modeling through stochastic differential equations</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sohl-Dickstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ermon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Poole</surname></persName>
+		</author>
+		<editor>ICLR</editor>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">An Introduction to Variational Autoencoders</title>
+		<author>
+			<persName><forename type="first">Diederik</forename><forename type="middle">P</forename><surname>Kingma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Welling</surname></persName>
+		</author>
+		<idno type="DOI">10.1561/9781680836233</idno>
+	</analytic>
+	<monogr>
+		<title level="m">ICLR</title>
+		<imprint>
+			<publisher>Now Publishers</publisher>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Latent consistency models: Synthesizing high-resolution images with few-step inference</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2310.04378</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Consistency models</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Dhariwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Sutskever</surname></persName>
+		</author>
+		<editor>NeurIPS</editor>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Progressive distillation for fast sampling of diffusion models</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Salimans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ho</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICLR</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Analyzing and Improving the Training Dynamics of Diffusion Models</title>
+		<author>
+			<persName><forename type="first">Tero</forename><surname>Karras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miika</forename><surname>Aittala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jaakko</forename><surname>Lehtinen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Janne</forename><surname>Hellsten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timo</forename><surname>Aila</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuli</forename><surname>Laine</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52733.2024.02282</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<editor>
+			<persName><surname>Neurips</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="24174" to="24184" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">Depth pro: Sharp monocular metric depth in less than a second</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bochkovskii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Delaunoy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Germain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Santos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Richter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Koltun</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2410.02073</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Inherent optical properties of jerlov water types</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Solonenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">D</forename><surname>Mobley</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Appl. Opt</title>
+		<imprint>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page" from="5392" to="5401" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">A rapid scene depth estimation model based on underwater light attenuation prior for underwater image restoration</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tjondronegoro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Multimedia Information Processing -PCM 2018</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Vision meets robotics: The KITTI dataset</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Geiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lenz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Stiller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Urtasun</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0278364913491297</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The International Journal of Robotics Research</title>
+		<title level="j" type="abbrev">The International Journal of Robotics Research</title>
+		<idno type="ISSN">0278-3649</idno>
+		<idno type="ISSNe">1741-3176</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1231" to="1237" />
+			<date type="published" when="2013-08-23">2013</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Usod10k: a new benchmark dataset for underwater salient object detection</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on image processing</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Unsupervised Underwater Image Restoration: From a Homology Perspective</title>
+		<author>
+			<persName><forename type="first">Zhenqi</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huangxing</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shu</forename><surname>Chai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liyan</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yue</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinghao</forename><surname>Ding</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v36i1.19944</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="643" to="651" />
+			<date type="published" when="2022-06-28">2022</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Underwater image enhancement via minimal color loss and locally adaptive contrast enhancement</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zhuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-H</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kwong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Image Processing</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="3997" to="4010" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Human-Visual-System-Inspired Underwater Image Quality Measures</title>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Panetta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sos</forename><surname>Agaian</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/joe.2015.2469915</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Oceanic Engineering</title>
+		<title level="j" type="abbrev">IEEE J. Oceanic Eng.</title>
+		<idno type="ISSN">0364-9059</idno>
+		<idno type="ISSNe">2373-7786</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="541" to="551" />
+			<date type="published" when="2015">2015</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">MUSIQ: Multi-scale Image Quality Transformer</title>
+		<author>
+			<persName><forename type="first">Junjie</forename><surname>Ke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qifei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yilin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peyman</forename><surname>Milanfar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv48922.2021.00510</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-10">2021</date>
+			<biblScope unit="page" from="5128" to="5137" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Indoor segmentation and support inference from rgbd images</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Nathan Silberman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Derek</forename><surname>Hoiem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Fergus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ECCV</title>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Ntire 2017 challenge on single image super-resolution: Dataset and study</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Agustsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Timofte</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR Workshops</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions</title>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alice</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Micah</forename><surname>Hodosh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Hockenmaier</surname></persName>
+		</author>
+		<idno type="DOI">10.1162/tacl_a_00166</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Transactions of the Association for Computational Linguistics</title>
+		<title level="j" type="abbrev">TACL</title>
+		<idno type="ISSNe">2307-387X</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="67" to="78" />
+			<date type="published" when="2014-12">2014</date>
+			<publisher>MIT Press - Journals</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Scene parsing through ade20k dataset</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Puig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Fidler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Barriuso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Torralba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Learning-based inverse rendering of complex indoor scenes with differentiable monte carlo raytracing</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Luan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Huo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Xi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Tang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">SIGGRAPH Asia</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Map-guided curriculum domain adaptation and uncertainty-aware evaluation for semantic nighttime image segmentation</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Sakaridis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Van Gool</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE TPAMI</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Marine Video Kit: A New Marine Video Dataset for Content-Based Analysis and Retrieval</title>
+		<author>
+			<persName><forename type="first">Quang-Trung</forename><surname>Truong</surname></persName>
+			<idno type="ORCID">0000-0002-6242-2191</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tuan-Anh</forename><surname>Vu</surname></persName>
+			<idno type="ORCID">0000-0002-8872-0875</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tan-Sang</forename><surname>Ha</surname></persName>
+			<idno type="ORCID">0000-0001-9768-3634</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jakub</forename><surname>Lokoč</surname></persName>
+			<idno type="ORCID">0000-0002-3558-4144</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yue-Him</forename><surname>Wong</surname></persName>
+			<idno type="ORCID">0000-0001-5344-1916</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Joneja</surname></persName>
+			<idno type="ORCID">0000-0002-6797-1253</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sai-Kit</forename><surname>Yeung</surname></persName>
+			<idno type="ORCID">0000-0001-7974-0607</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-27077-2_42</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="539" to="550" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

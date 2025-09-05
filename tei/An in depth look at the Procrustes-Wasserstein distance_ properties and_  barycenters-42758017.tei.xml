@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">An in depth look at the Procrustes-Wasserstein distance: properties and barycenters</title>
+				<funder ref="#_4mpbgcB">
+					<orgName type="full">CNRS</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Arch&apos;AI&apos;Story project (Ministère de l&apos;Enseignement Supérieur et de la Recherche</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">French National Research Agency (ANR)</orgName>
+				</funder>
+				<funder ref="#_NPrCGRh">
+					<orgName type="full">University Côte d&apos;Azur)</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-07-01">1 Jul 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Davide</forename><surname>Adamo</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Marco</forename><surname>Corneli</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Manon</forename><surname>Vuillien</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Emmanuelle</forename><surname>Vila</surname></persName>
+						</author>
+						<title level="a" type="main">An in depth look at the Procrustes-Wasserstein distance: properties and barycenters</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-07-01">1 Jul 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">A3CD1BF33BB0C544E73D7A98AFFF9645</idno>
+					<idno type="arXiv">arXiv:2507.00894v1[stat.ML]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:29+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Due to its invariance to rigid transformations such as rotations and reflections, Procrustes-Wasserstein (PW) was introduced in the literature as an optimal transport (OT) distance, alternative to Wasserstein and more suited to tasks such as the alignment and comparison of point clouds. Having that application in mind, we carefully build a space of discrete probability measures and show that over that space PW actually is a distance. Algorithms to solve the PW problems already exist, however we extend the PW framework by discussing and testing several initialization strategies. We then introduce the notion of PW barycenter and detail an algorithm to estimate it from the data. The result is a new method to compute representative shapes from a collection of point clouds. We benchmark our method against existing OT approaches, demonstrating superior performance in scenarios requiring precise alignment and shape preservation. We finally show the usefulness of the PW barycenters in an archaeological context. Our results highlight the potential of PW in boosting 2D and 3D point cloud analysis for machine learning and computational geometry applications.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>In force of its capability to find correspondences between sets of objects, in the last decade computational optimal transport (OT, <ref type="bibr" target="#b23">Peyré et al., 2019)</ref> has become more and more ubiquitous in machine learning. Notable examples relate to learning tasks from (almost) any data type including images <ref type="bibr" target="#b25">(Solomon et al., 2015;</ref><ref type="bibr" target="#b12">Feydy et al., 2017)</ref>, 1 Université Côte d'Azur, UMR 7264 CEPAM, CNRS, Nice, France 2 Université Côte d'Azur, Inria, CNRS, Laboratoire J.A. Dieudonné, Maasai team, Nice, France 3 Université Lumiére Lyon II, UMR 5133 Archéorient CNRS, Lyon, France. Correspondence to: Davide Adamo &lt;davide.adamo@univ-cotedazur.fr&gt;.  graphs <ref type="bibr">(Vayer et al., 2019a;</ref><ref type="bibr" target="#b31">Vincent-Cuaz et al., 2021)</ref>, shapes <ref type="bibr" target="#b10">(Eisenberger et al., 2020)</ref> or text <ref type="bibr" target="#b33">(Zhang et al., 2017;</ref><ref type="bibr" target="#b15">Grave et al., 2019)</ref>. More generally and possibly more importantly OT allows one to assess the distance between probability distributions thus leading to applications in machine learning that go far beyond the comparison of sets of objects, such as domain adaptation <ref type="bibr" target="#b6">(Courty et al., 2016)</ref> or adversarial training <ref type="bibr" target="#b3">(Arjovsky et al., 2017)</ref>, just to cite some. However, here we keep the focus on the first framework we cited (i.e. data alignment and matching) since the applications we discuss in this work are of that kind.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Proceedings of the</head><p>Based on the modern formulation of <ref type="bibr" target="#b18">Kantorovich (1942)</ref>, the standard optimal transport tool to compare two sets of objects is the Wasserstein distance. If we assume that each set is a point cloud, in order to fix the ideas, adopting the Wasserstein distance to quantify the similarity between the clouds specifically requires to compute the Euclidean distance (or other) between the points of the first cloud and those of the second. Since, moreover, each point is equipped with a probability mass defining its importance within its cloud, we can say that the Wasserstein distance takes into account both the geometry and the distributional properties of data. However, the Wasserstein distance suffers from some limitations that makes it unfit to some applications such as point cloud matching. Indeed, it is sensitive to the way the two clouds are embedded in the space and in particular to isometries. To address some of the limitations of the Wasserstein distance, <ref type="bibr" target="#b19">Mémoli (2011)</ref> introduced the Gromov-Wasserstein (GW) distance. Unlike standard OT frameworks, which assume that the compared probability measures are supported on a shared metric space, GW compares distributions defined on distinct spaces. In the point cloud matching examples, GW requires computing two pairwise distance (or similarity) matrices between the points within each cloud. Points not being in the same cloud are never compared explicitly. GW is invariant to isometries and particularly suitable for the comparison of data sets with unknown correspondences or in different coodinate systems. However, GW has (at least) two main drawbacks: i) its rather prohibitive computational cost, although some solutions exist <ref type="bibr">(Vayer et al., 2019b;</ref><ref type="bibr" target="#b5">Chowdhury et al., 2021)</ref> and ii) the GW barycenters are still pairwise distance/similarity matrices. If one wishes to represent them in the original features domain, dimensionality reduction techniques are needed. This last drawback can be severe when computing mean shapes where a high fidelity to the original is required (see Figure <ref type="figure" target="#fig_1">1</ref>).</p><p>Mixing Procrustes and Wasserstein costs was recently done <ref type="bibr" target="#b33">(Zhang et al., 2017;</ref><ref type="bibr" target="#b15">Grave et al., 2019)</ref> in order to introduce into the Wasserstein optimization problem invariances to global transformations such as rotations and reflections in the space. In this sense Procrustes-Wasserstein (PW) can be seen as a compromise between GW (with whom it shares some invariances) and Wasserstein (since the two measures are directly compared with each other).  <ref type="bibr">(qWP)</ref>. The quantization step that discretizes the distributions enables for the joint estimate of the alignment and transformation. qWP leverages a quantization procedure inspired by <ref type="bibr" target="#b15">Grave et al. (2019)</ref>, such as k-means++, and reduces the problem to linear programming (LP). This technique not only simplifies the computation but also enhances the approximation quality of OT solvers, thus leading to a more efficient solutions with a fixed computational cost. Finally, <ref type="bibr" target="#b11">Even et al. (2024)</ref> approach the problem of matching pairs of distributions using PW distances from a theoretical perspective, providing convergence guarantees for the ML estimators of both the transport plan and the isometry. In more detail, they restrict their focus on discrete distributions with the same number of points in the support, further assuming that one distribution can be obtained from the other through a permutation and isometry of the support and the addition of Gaussian noise. The corresponding OT problem falls under the Monge formulation and instead of looking for doubly stochastic plans, they look for permutation matrices.</p><p>Contribution of our work. Despite the heterogeneous use of the PW cost in the above mentioned works, to the best of our knowledge i) it was never showed that Procrustes-Wasserstein distance actually is a distance; ii) PW barycenters were never defined/learned from the data. With a focus on scenarios where the objects to compare are geometric shapes represented as point clouds (and hence working with discrete measures) the main contribution of this paper is twofold: we define a quotient space of discrete measures over which PW is a distance and we provide an estimation algorithm for the PW barycenter. We then show that one of the main advantages of PW is its capability to produce very faithful barycenters in particular conditions. In the illustrative example in Figure <ref type="figure" target="#fig_1">1</ref>, two birds differ in both number of vertices and pose (rotation and/or reflection). As it can be seen, among the three tested OT methods, the PW barycenter result in more consistent geometric characteristics. We finally present a concrete application of the PW barycenters to detect morphological changes on archaeozoological data.</p><p>The paper is organized as follows: we provide a background on the PW problem and the formal definitions and proof where PW is a distance in section 2. We then introduce the PW barycenters and the algorithm to compute it in section 3. We investigate different intializations for specific match in point clouds and a clustering application on our barycenter in section 4. We conclude presenting a concrete real-world application in section 5.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Procrustes-Wasserstein: an OT distance</head><p>Notation. We denote by Σ n the n -1 probability simplex. So when saying that p := (p 1 , . . . , p n ) ∈ Σ n , we mean p i ≥ 0 for all i and n i=1 p i = 1. We denote by ⟨•, •⟩ F the Frobenious dot product, hence ⟨A, B⟩ F := trace(B T A), with A, B two compatible matrices. The set of the orthogonal matrices of order d is denoted by O(d).</p><p>Consider two matrices X ∈ R n×d and Y ∈ R m×d , where x i (respectively x j ) is the i-th row (j-th column) of X. Similarly for Y . We attach two discrete probability measures µ X and µ Y to X and Y , respectively:</p><formula xml:id="formula_0">µ X = n i=1 p i δ xi , p ∈ Σ n<label>(1)</label></formula><p>and</p><formula xml:id="formula_1">µ Y = m j=1 q j δ yj , q ∈ Σ m .</formula><p>Given an orthogonal matrix P ∈ O(d), we denote by µ Y P the measure defined on the transformed support of Y , namely µ Y P := m j=1 q j δ yj P . Given W 2 (µ X , µ Y ), the 2-Wasserstein distance between µ X and µ Y , we attack the following minimization problem</p><formula xml:id="formula_2">min P ∈O(d) W 2 2 (µ X , µ Y P ) = min P ∈O(d) Γ∈Π(p,q) ⟨C P (X, Y ), Γ⟩ F (2)</formula><p>where Π(p, q) is the set of the admissible transport plans, i.e.</p><formula xml:id="formula_3">Π(p, q) = {Γ ∈ R n×m + |Γ1 m = p, Γ T 1 n = q} and C P (X, Y ) ∈ R n×m + with (C P (X, Y )) ij = ∥x i -y j P ∥ 2 2 .</formula><p>The above minimization problem is a generalization of the one described in <ref type="bibr" target="#b15">Grave et al. (2019)</ref> and can be seen as a particular case of the one discussed in <ref type="bibr" target="#b2">Alvarez-Melis et al. (2019)</ref>.</p><p>By definition of C P (X, Y ) it is easy to show that</p><formula xml:id="formula_4">C P (X, Y ) = R X + R Y -2XP T Y T , where the i-th row of R X ∈ R n×m is (∥x i ∥ 2 2 , . . . , ∥x i ∥ 2 2 ) and the j-th column of R Y ∈ R n×m is (∥y j ∥ 2 2 , . . . , ∥y j ∥ 2 2 ) T .</formula><p>By plugging this into Eq. ( <ref type="formula">2</ref>) and thanks to the bilinearity of ⟨•, •⟩ F we get</p><formula xml:id="formula_5">⟨C P (X, Y ), Γ⟩ F = ⟨R X + R Y , Γ⟩ F -2⟨XP T Y T , Γ⟩ F = ⟨u, p⟩ + ⟨v, q⟩ -2⟨XP T Y T , Γ⟩ F ,<label>(3)</label></formula><p>where</p><formula xml:id="formula_6">u ∈ R n is such that u i = ∥x i ∥ 2 2 and v ∈ R m such that v j = ∥y j ∥ 2 2 .</formula><p>As such, the minimisation problem in Eq. ( <ref type="formula">2</ref>) is equivalent to</p><formula xml:id="formula_7">max P ∈O(d) Γ∈Π(p,q) ⟨XP T Y T , Γ⟩ F .<label>(4)</label></formula><p>We now consider the set M d of all discrete measures of the same form as in Eq. ( <ref type="formula" target="#formula_0">1</ref>). Namely, the generic µ X ∈ M d is a measure supported on some X ∈ R n×d , for some finite n and a fixed d and for some probability vector p. With a slight abuse of notation, given a permutation σ in S (n) , the set of all possible permutations of n elements, we denote by σ(X) = (x T σ(1) , . . . , x T σ(n) ) T the matrix X after the permutation of its rows according to σ. Similarly, we denote by σ(p) = (p σ(1) , . . . , p σ(n) ) the permuted histogram. We introduce the following equivalence relation on</p><formula xml:id="formula_8">M d µ X1 ∼ µ X2 if ∃P ∈ O(d), ∃σ ∈ S (n) such that X 1 = σ(X 2 )P and p 1 = σ(p 2 ).</formula><p>Thus, µ X1 ∼ µ X2 if and only if they share the same probability vector, up to a permutation, and the same support up to the same permutation of the points and a rigid transformation (rotation, reflection or a combination of both).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>If we denote</head><formula xml:id="formula_9">P W 2 (µ X , µ Y ) :=    min P ∈O(d) Γ∈Π(p,q) ⟨C P (X, Y ), Γ⟩ F    1/2</formula><p>, (5) then 1: Input: Locations and histograms (X, p), (Y, q); initial correspondences Γ 0 . 2: %% Initialization</p><formula xml:id="formula_10">3: U ΣV T ← SVD(Y T Γ T 0 X) 4: P 0 ← U V T , P ← P 0 5: while not converged do 6: C P ← cost(X, Y P ) 7:</formula><p>%% Update matching 8:</p><p>Γ ← EMD(C, p, q) %% Earth Mover Distance </p><formula xml:id="formula_11">U ΣV T ← SVD(Y T Γ T X) 11: P ← U V T 12: end while 13: Return: Γ * , P * Theorem 2.1. P W 2 (•, •) is a distance on M d / ∼.</formula><p>The proof of the above theorem is in Supplementary Material A. Moreover we have the following</p><formula xml:id="formula_12">Corollary 2.2. For all µ X , µ Y in M d it holds that P W 2 (µ X , µ Y ) ≤ W 2 (µ X , µ Y ). Proof. It suffices to note that P W 2 (µ X , µ Y ) : = min P ∈O(d) W 2 (µ X , µ Y P ) ≤ W 2 (µ X , µ Y I d ) = W 2 (µ X , µ Y ).</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Procrustes-Wasserstein barycenter(s)</head><p>Now that we established that P W 2 is a distance on M d / ∼, consider r empirical measures measures µ X1 , . . . , µ Xr , in M d , with supports {X j } r j=1 and probability vectors {p j } r j=1 . We look for a barycenter µ X with unknown support X ∈ R n×d and weights p given by the solution to the following problem</p><formula xml:id="formula_13">f (p, X) := 1 r r j=1 P W 2 2 (µ X , µ Xj ).<label>(6)</label></formula><p>In a general setting, we might consider positive weights λ j associated with each measure µ Xj , with λ := (λ 1 , . . . , λ r ) ∈ Σ r . For simplicity, we present the case λ j = 1 r .</p><p>3.1. Differentiability of f (p, X) with respect to X</p><p>In this section we assume that p is known. Let X ∈ R n×d and Y ∈ R m×d . Consider the transport cost as a function of X as outlined in Equation (3). The minimization of P W 2 2 (µ X , µ Y ) with respect to X can be developed as</p><formula xml:id="formula_14">min X P W 2 2 (µ X , µ Y ) = min X min P, Γ ⟨C P (X, Y ), Γ⟩ F = min X ⟨u, p⟩ + 2 min P, Γ ⟨-X, ΓY P ⟩ F ,<label>(7)</label></formula><p>where constant terms in Y and q are discarded. While the first term is a convex quadratic function of X (since</p><formula xml:id="formula_15">u i = ∥x i ∥ 2</formula><p>2 ), the second term renders the optimisation of P W 2 2 (µ X , µ Y ) with respect to X non-convex. Thus, the best we can do is to look for local minima via Newton-Raphson. Denote by (P * , Γ * ) the optimal alignment and transport plan for P W 2 2 (µ X , µ Y ). Calling g(X) the objective function in Eq. ( <ref type="formula" target="#formula_14">7</ref>)</p><formula xml:id="formula_16">g(X) := ⟨u, p⟩ -2⟨X, Γ * Y P * ⟩ F ,</formula><p>the gradient and the Hessian of g(•) with respect to X are</p><formula xml:id="formula_17">∇ X g = 2diag(p)X -2Γ * Y P * ,</formula><p>and</p><formula xml:id="formula_18">H X g = 2diag(p).</formula><p>Thus, the update of X reads</p><formula xml:id="formula_19">X (k+1) = X (k) -(H X g(X (k) )) -1 • ∇ X g(X (k) ) Newton step = X (k) -(X (k) -diag(p -1 )Γ * Y P * ) = diag(p -1 )Γ * Y P * .<label>(8)</label></formula><p>The update formula provides a meaningful geometric interpretation. The matrix diag(p -1 )Γ * , whose n rows belong to the simplex Σ m , computes weighted barycenters of points in Y , with weights defined by the optimal transport plan. This is analogous to the Wasserstein barycenter update <ref type="bibr" target="#b9">(Cuturi &amp; Doucet, 2014)</ref>, where each point in Y contributes to the updated locations in X proportionally to Γ * . However, in the PW framework, the additional right multiplication by P * allows for a simultaneous optimal alignment of the barycenter.</p><p>The steps to optimize f (p, X) with respect to the locations X are outlined in Algorithm 2. Solving Problem (6) involves computing r independent PW distances between the barycenter (µ X ) and the measures µ Xj . Thus, the first step (lines 4-5) consists into solving all P W 2 2 (µ X , µ Xj ) and finding r solutions (Γ * j , P * j ) following the iterative scheme introduced in <ref type="bibr" target="#b15">(Grave et al., 2019)</ref> that we report here in Algorithm 1 for completeness. The second step (line 7) updates the locations of the barycenter using the update formula in Eq. ( <ref type="formula" target="#formula_19">8</ref>).</p><p>Algorithm 2 Procrustes-Wasserstein barycenter (PWB) 1: Input: Locations X j ∈ R nj ×d and histograms p j ∈ R nj for j = 1, . . . , r; initial barycenter locations X 0 ; barycenter histogram p 2: X = X 0 3: while not converged do 4:</p><p>for j ∈ (1, . . . , r) do 5:</p><formula xml:id="formula_20">(Γ * j , P * j ) ← P W 2 X, p; X i , a j 6:</formula><p>end for 7:</p><formula xml:id="formula_21">X = X + 1 r r i=1 Γ * i X i P * i • diag(p -1 )</formula><p>8: end while 9: Return: X * 3.2. Differentiability of f (p, X) with respect to p Despite the obvious difference between the minimisation problem in Eq. ( <ref type="formula" target="#formula_13">6</ref>) and its Wasserstein counterpart illustrated in <ref type="bibr" target="#b9">Cuturi &amp; Doucet (2014)</ref>, it can be observed that</p><formula xml:id="formula_22">f (p, X) = 1 r r j=1 P W 2 2 (µ X , µ Xj ) = 1 r r j=1 W 2 2 (µ X , µ Xj P * j ).</formula><p>where, P * j is the optimal isometry aligning µ Xj with the barycenter. Denoting Xj := X j P * j , the analogy with the Wasserstein dual LP formulation is straightforward</p><formula xml:id="formula_23">max αj ,βj ⟨α j , p⟩ + ⟨β j , p j ⟩,<label>(9)</label></formula><p>where in the PW framework the couplings (α j , β j ) must satisfy</p><formula xml:id="formula_24">α j,i + β j,k ≤ (C P * j ) ik = ∥x i -xj,k ∥ 2</formula><p>, where (C P * j ) is the cost matrix incorporating the orthogonal alignment and xj,k denotes here the k-th row of Xj . Eq. ( <ref type="formula" target="#formula_23">9</ref>) is a linear programming (LP) problem for each j, with constraints defined by (C P * j ). The optimization of f (p, X) with respect to p can be approached analogously to <ref type="bibr" target="#b9">Cuturi &amp; Doucet (2014)</ref>, leveraging the solutions of the dual problems, e.g. α := 1 r r j=1 α * j . For completeness, we provide Algorithm 3 in the supplementary material, detailing the procedure for the optimization with respect to p.</p><p>When pursuing the joint optimization of Eq. ( <ref type="formula" target="#formula_13">6</ref>) with respect to (p, X), the outlined strategy remains the one presented in Algorithm 2, except for an additional equation after line 7 updating the weights p according to Algorithm 3.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Experiments</head><p>All the point clouds considered in this section are assumed to be centered at they Euclidean barycenter and scaled in  such a way to be enclosed the 1D or 2D unit ball. We leave for future works extensions of the PW framework accounting for translations and scaling. The OT solvers used in the implementations are based on the POT toolbox <ref type="bibr" target="#b14">(Flamary et al., 2021)</ref>. The code is available at https: //github.com/DavideAdamo98/PW-bary.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Initialization for point cloud matching</head><p>It is well known that a primary challenge in the computation of PW lies in its initialization <ref type="bibr" target="#b15">(Grave et al., 2019;</ref><ref type="bibr" target="#b2">Alvarez-Melis et al., 2019)</ref>. In this section, we inspect several initialization strategies of Γ 0 (Algorithm 1) for PW in the context of 2D/3D point cloud matching.</p><p>Let us consider a pivot measure µ X1 , either representing a 2 or 3-dimensional point cloud. Since it is assumed that each point is equipped with the same (uniform) probability mass, with a sligth abuse of notation we identify µ X1 with X 1 . We generate 50 clouds by randomly adding extra vertices, Gaussian noise and vertex permutation to X 1 . We also include a random rotation and reflection. We thus generate X i 2 for i = 1, . . . , 50 that underline the same geomertric structure of X 1 (e.g. they represent a perturbed versions of the pivot). We look for a pairwise clouds registration, in terms of global alignment and couplings. We test different approaches, with the objective to compute Γ 0 .</p><p>1. Euc-GW. Gromov-Wasserstein based on Euclidean pairwise distances is computed for each pair of point clouds and Γ 0 is set equal to the optimal GW plan.</p><p>2. Geo-GW. Same as before but with geodesic pairwise distance in place of the Euclidean.</p><p>3. Fiedler-W. Fiedler vector <ref type="bibr" target="#b13">(Fiedler, 1973)</ref> is the eigenvector associated with the algebraic connectivity (i.e. the second-smallest eigenvalue) of the Laplacian matrix of a connected graph. Since point clouds can be easily transformed into graphs <ref type="bibr" target="#b7">(Cover &amp; Hart, 1967;</ref><ref type="bibr" target="#b24">Preparata &amp; Shamos, 2012)</ref> G. We propose to resort to a Wasserstein matching between Fiedler vectors to initialise Γ 0 . More specifically, for a fixed i, we compute the Fiedler vectors of X 1 and X i 2 , denoted as f 1 and f i 2 , respectively, and we standardize them. Furthermore, we compute both the Wasserstein distance between (f 1 , f i 2 ) and (f 1 , -f i 2 ) (to account for the vectors orientation). The transport plan yielding the smaller distance determines Γ 0 . 4. UPCA-W.Given two point clouds, X and Y , the first step involves computing the eigenvector matrices Q X and Q Y , of their covariance matrices. The multiplication XQ X (resp. Y Q Y ) leads to a matrix X ′ (respectively Y ′ ) that is uncorrelated, e.g. the principal axes of X ′ and Y ′ correspond, up to the directions, to the standard coordinate axes of the d-dimensional Euclidean space. Moreover, fixing X, the matrix Y Q T X Q Y brings Y into the same (principal component) basis as X, once more up to the direction of the axes. At this stage, a Wasserstein matching can be performed between X and Y Q T X Q Y . In the case of d = 2, there are 2 2 possible combinations of directions to check, requiring the resolution of four independent Wasserstein problems. Similarly, for d = 3, we must solve 2 3 Wasserstein problems. As with Fiedler-W, the transport plan associated to the smallest distance defines the initialization Γ 0 .</p><p>Convergence results of the Algorithm 1 for the four presented initialization techniques are summarized in Figure <ref type="figure" target="#fig_3">2</ref>. Red colour for the cells denotes convergence to the global minimum (matching succeeded) while blue colour denotes failure (convergence to local minima). We observe that GW initializations generally lead to a good success rate.</p><p>However, despite their invariance to isometries, there are instances where the GW transport plan fails to establish the correct couplings. In cases where the data underline specific geometric structure GW could reveal optimal, however its computational cost makes it use clearly prohibitive when working with larger point clouds. In contrast, the Fiedler-W initialization consistently ensures robust convergence. In the tested scenarios, the Fiedler vectors prove to be optimal for capturing the geometry of the data. Finally, in the two cases, UPCA-W does not demonstrate effectiveness, particularly in the 3D case. We leave a further investigation of this approach for future works. Additional results and visualisations are available in Supplementary Material D.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Clustering</head><p>In this section, we propose an unsupervised application of PW for performing clustering directly in the space of point clouds. Our approach draws inspiration from the k-means reformulation presented in <ref type="bibr" target="#b22">Peyré et al. (2016)</ref> with Gromov-Wasserstein barycenters. We consider the MNIST dataset of handwritten digits with specific focus on the first five digits, from 0 to 4 (Figure <ref type="figure" target="#fig_4">3</ref>, left). For each digit class, we consider 10 images and convert them into 2-dimensional point clouds <ref type="bibr">(Figure 3,</ref><ref type="bibr">center)</ref>. This results in a dataset of 50 point clouds, which we aim to cluster with respect to the digit class (thus k = 5). Differently from <ref type="bibr" target="#b22">Peyré et al. (2016)</ref>, we avoid applying random rotations to the dataset to highlight some benefits of PW even in scenarios where the input data are already aligned (at least in terms of reflection and rotation).</p><p>To initialize the centroids, we adopt a strategy inspired by k-means++ as follows. We randomly select one point cloud from the 50 and label it as the first "candidate." The first centroid is determined by applying Euclidean k-means clustering to the candidate cloud, where the number of clusters equals the number of points specified for the OT centroids (PW barycenters). This ensures that the points sampled from the candidate form a uniform representation. Next, we identify the point cloud among the remaining 49 that is the farthest from the first candidate, based on the PW distance. This farthest point cloud becomes the second "candidate", and its centroid is computed using the same idea as for the first. By iterating this process: select the point cloud that is farthest from all previously selected candidates and compute its centroid, we obtain an initial configuration of five centroids. This approach ensures a well-distributed initialization with respect to the PW distance. Using the same initialization technique, we compare kmeans clustering across different OT metrics. Specifically, we present comparisons between discrete Wasserstein (Earth Mover's Distance, EMD), Gromov-Wasserstein with Euclidean distances (Euc-GW), with geodesic distances (Geo-GW) and PW with a Wasserstein initialization to establish  The clustering results are reported in Table <ref type="table" target="#tab_2">1</ref>, where we provide the computational time (in seconds), the adjusted rand index (ARI) and the normalized mutual info score (NMI) for each of the presented approaches. We also provide in Figure <ref type="figure" target="#fig_4">3</ref> (Center-right) and Figure <ref type="figure" target="#fig_4">3</ref> (Rightmost) the estimated centroids (OT barycenters) and the confusion matrices, respectively. From the results, we observe that the PW-based clustering provides the best performances, in terms of ARI and NMI. Moreover, clustering results optimal for the digits 0, 1, and 3. Consistent with findings from <ref type="bibr" target="#b22">Peyré et al. (2016)</ref>, the digits where clustering is less effective are 2 and 4, reflecting greater variability in handwritten style. Differently form the GW-based clustering, PW-based successfully returns more representative centroids for all the five considered digits. EMD-based clustering proves to perform well for certain digits. However, it consistently fails to identify digit 3. The superior performance of PW over EMD underscores the significance of incorporating optimal rotations, even in scenarios where the input data are already aligned, at least in the sense that poses is consistent.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Application: tracking the morphological evolution of domestic animals</head><p>The breeding of domestic ungulates began over 9500 years ago, leading to considerable phenotypic and genetic changes, adapted to the socio-economic and cultural requirements of human societies. In south-west Asia, from the end of the Bronze Age onwards, archaeozoological <ref type="bibr" target="#b29">(Vila &amp; Helmer, 2014;</ref><ref type="bibr" target="#b30">Vila et al., 2021;</ref><ref type="bibr" target="#b1">Abrahami &amp; Michel, 2023)</ref> and palaeogenetic data <ref type="bibr" target="#b16">(Her et al., 2022)</ref> indicate that zootechnical practices were used for the management and selection of sheep morphotypes. This led to a significant increase in phenotypic diversity and a decrease in genetic diversity. While the morphological changes observed are relatively well documented by palaeogenetic data, identifying the processes linked to morphological transformations in the bones of this species remains complex: which parts of the bone are modified (anatomical characteristics)? How do they change (bone plasticity)? Why do they change (morpho-functional adaptations linked to anthropic and environmental factors)?</p><p>To track these morphological changes, traditionally archaeozoologists rely on visual comparisons and manual measurements. These methods can be time-consuming and subject to interpretational bias, especially when dealing with intraspecific variations. With the advent of 3D scanning technologies, bones can now be digitized and represented as point clouds or meshes, opening new avenues for quantitative analysis and machine learning. In this context, OT offers a mathematically robust framework to tackle the problem of comparing and interpreting bone shapes. The objective of this study is to highlight the morphological evolution over time, i.e. the transition from archaeological to modern, by directly comparing three-dimensional representations of the astragalus (ankle bone) for one archaeological sheep dated to the Chalcolithic period and one modern sheep from the same region, the Alborz mountain in Iran. With this objective, let us consider two measures µ X and µ Y , with associated locations X and Y of nearly 10k vertices, representing an archaeological and a modern bone structure of the sheep species, respectively. By assigning weights λ X and λ Y respectively, we seek for a 10k PW barycenter via Algorithm 2, that defines an interpolation between the two bone's structures. Set η ∈ [0, 1] and re-write λ X = 1-η and λ Y = η. By varying η we can iterate the minimization problem ( <ref type="formula" target="#formula_13">6</ref>) and thus model the intermediate stages of morphological changes between the two bones, enabling the study of evolutionary trajectories and species transformations over "time". In order to create a pipeline that is as robust and accurate as possible, a priori step in this methodology is the normalization of the data. To ensure a meaningful comparison and avoid any bias, we resort to a volume-based normalization which consists in two key steps. First, we set to the origin the volumetric center of mass. Second, we constrain the shape to have a unit volume. This technique allows the model to compute interpolations that best capture morphological changes and are less influenced by overall distortions. We remark that the purpose of this section is not in comparing different types of normalization, however, different pre-processing techniques can be tested.</p><p>Figure <ref type="figure" target="#fig_5">4</ref> shows the evolution of the bone structure from archaeological to modern, by means of PW barycenters. In row 1 is reported the progressive interpolations in the 3D space. We can see that the four barycenters Discussion. The proposed approach allows us to trace the evolutionary trajectories of species by interpolating between bone shapes. This method provides archaeozoologists with a powerful quantitative tool to infer how species adapted, evolved, or were selectively bred by humans. Furthermore, the same technique could be used to compute a "mean" representative bone shape for species for which morphological criteria are not well-defined. This would reinforce and supplement studies combining machine learning and archaeozoology to identify morphologically related taxa <ref type="bibr" target="#b20">(Miele et al., 2020;</ref><ref type="bibr" target="#b21">Moclán et al., 2023;</ref><ref type="bibr" target="#b32">Vuillien et al., 2025)</ref>. In conclusion, by directly working on 3D models, this approach offers a robust solution that aim to avoid the subjectivity inherent in traditional morphological analysis. The use of the PW distance and PW barycenters introduce a rigorous and quantitative framework for analyzing shapes while offering to archaeologists a detailed and objective tool for interpreting species evolution, domestication patterns, and morphological diversity, ultimately enhancing our understanding of the past.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusions</head><p>In this paper, we carefully defined a space of discrete probability measures over which Procrustes-Wasserstein is a distance and provided a formal proof of such claim. This opens the door to a wider application of PW in various machine learning tasks, particularly when dealing with complex data structures. We also introduced PW barycenters extending the literature of OT barycenters. Our formulation enables the construction of representative measures that exhibit an improved visual loyalty to the geometry of the observed data. We propose applications that demonstrated the properties and advantages of our approach, with comparisons with state-of-the-art methods. Future works could explore denser formulations of the barycenter problem (via entropic regularisation) leading to smoother solutions and broader applicability to large-scale datasets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Optimization of P W 2 with respect to p</head><p>In this section we provide for clarity the algorithm for the optimization of the weights p, already proposed by <ref type="bibr" target="#b9">Cuturi &amp; Doucet (2014)</ref> within the context of Wasserstein barycenters. In our framework we assume p ∈ Σ n and denote • the Schur's product.</p><p>Algorithm 3 Optimization of p 1: Input: Cost matrices with orthogonal alignments C Pj ∈ R n×nj and histograms p j ∈ R nj for j = 1, . . . , r 2: Set p = p = 1 n /n 3: while not converged do ⟨C P (X, Y ), Γ⟩ F + ϵH(Γ),</p><p>where ϵ is a non-negative parameter controlling the strength of the regularization and H(Γ) := i,j Γ ij log(Γ ij ) is the entropy.</p><p>Looking for a measure µ X with unknown support X ∈ R n×d and weights p, given r measures µ X1 , . . . , µ Xr , translates into the following minimization problem f ϵ (p, X) := r j=1 λ j P W 2 ϵ,2 (µ X , µ Xj ).</p><p>The resolution of this problem can be done similarly as for the classical case. Given the probability vector p and assuming (Γ * j , P * j ) are the solutions of the regularized PW problem P W 2 ϵ,2 (µ X , µ Xj ), the Newton update is still given by Eq. ( <ref type="formula" target="#formula_19">8</ref>). Notably, at the optimum, both the gradient and the Hessian of Eq. ( <ref type="formula" target="#formula_26">11</ref>) are independent of the regularization term H(•). The optimization scheme for the computation of the barycenter is equivalent to Algorithm 2, where in this case we solve each PW sub-problem independently using the Sinkhorn algorithm <ref type="bibr" target="#b8">Cuturi (2013)</ref>. Under this framework, the optimization of Eq. ( <ref type="formula" target="#formula_26">11</ref>) can be seen as a particular case of the one discussed in <ref type="bibr" target="#b2">Alvarez-Melis et al. (2019)</ref>.</p><p>To illustrate the effectiveness of the proposed barycenter, we present a 2D toy example where we consider two measures µ X and µ Y , with associated locations X and Y , representing different instances of the "same" object. Specifically, X represents a point cloud depicting a bird in a particular pose. We define Y as a modified version of X with the following transformations: addition of Gaussian perturbations and random vertex permutation; addition of extra vertices; application of a random rotation. Within this setting, our goal is to generate interpolated shapes that progressively move from X to Y . Set thus η ∈ [0, 1] and re-write λ X = 1 -η and λ Y = η. By varying η we can iterate the minimization problem and model the intermediate stages. We compute PW barycenters using both the classical problem formulation (Problem 6) and the regularized version (Problem 11).</p><p>In Figure <ref type="figure" target="#fig_8">5</ref>  relaxed version (bottom). The colors of the barycenters are given by transporting the colors of X via the optimal plan Γ * X . This highlights how the cloud evolves while maintaining the structural consistency of the original shape.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>42 nd International Conference on Machine Learning, Vancouver, Canada. PMLR 267, 2025. Copyright 2025 by the author(s).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. (Top) Two point clouds representing a bird shape in different position. OT barycenters using (a) Exact Free Wasserstein (Cuturi &amp; Doucet, 2014) (b) Gromov-Wasserstein (Peyré et al., 2016) with MDS (Borg &amp; Groenen, 2007) (c) Gromov-Wasserstein with TSNE (Van der Maaten &amp; Hinton, 2008) (d) Procrustes-Wasserstein (our).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 2 .</head><label>2</label><figDesc>Figure2. Convergence comparison between different initialization approaches across randomly generated shapes. Each row corresponds to a different initialization method while each column corresponds to a run of the Algorithm 1 with a different shape. Red cells indicates successful convergence of the matching (in terms of rotation/reflection and couplings), while blue cells denotes failure.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Clustering k-means of MNIST dataset. (Leftmost) Subset of considered images. (Center-left) Corresponding 2D point clouds representation. (Center-right) Clustering centroids computed with different OT barycenters. (Rightmost) Confusion matrices. Rows correspond to the digits, while columns correspond to the clusters. The colour is proportional to the number of digits to each cluster.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. PW barycenter evolution of two 3D point clouds describing an archaeological (Leftmost) and a modern (Rightmost) astragalus of sheep's species. The four middle columns of the grid correspond to representative interpolations each assigned with a value of η. (row1)Progressive interpolation in the euclidean space, note that the two input point clouds are not aligned and no priori knowledge on pairwise correspondence is considered. The P * solution of PW permits us to optimally display the frontal view (row2) and top view (row3), in order to match reference manuals of morphological criteria in archaeology.</figDesc><graphic coords="8,85.84,81.46,425.19,183.22" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head></head><label></label><figDesc>, corresponding to four distinct values of η, are well representative of the input point clouds. The colouring of the bones reflect the point-wise similarity between each barycenter and the modern sheep (the rightmost bone) form the archaeological sheep (the leftmost bone). In yellow are outlined the parts of the bone that are more similar, while in blue the parts that different the most. The colour of the archaeological bone, on the other hand, reflects the distance between itself and the modern bone. As expected, we see that the first barycenter is the closest to the archaeological bone. As we get closer to the modern sheep, the PW distance increases and the blue areas become more pronounced. By exploiting the solution of the PW barycenter problem, we benefit of a complete registration of the barycenters, we can thus visualize different views: the dorsal view (row 2 ) and the proximal view (row 3 ). These orientations facilitate the observation of changes in the overall proportions of the bone and more targeted changes, particularly to the proximal trochlea, i.e. the upper pulley-shaped articular surface. A notable observation is the widening of the lateral lip in the proximal trochlea of the modern specimen in comparison to the archaeological specimen. The proximal view also demonstrates a narrowing of the tuberculus tali and a development of the projecting medial ridge in the modern specimen compared to the archaeological specimen. For a better understanding of the bone anatomical features is provided in Figure8in supplementary material.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head></head><label></label><figDesc>1 -β -1 )p + β -1 p 10: t ← t + 1 11: end while 12: Return: p C. Regularized PW barycenter(s) As common in the OT community, we extend in this section the PW barycenter problem by adding an entropic regularization. Consider the following relaxed version of the PW problem P W 2 ϵ,2 (µ X , µ Y P ) = min P ∈O(d) Γ∈Π(p,q)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Progressive interpolations of two point clouds describing a bird in different positions. The four central columns of the grid correspond to PW barycenters, each reflecting a specific interpolation step (defined by η). The two rows represent barycenters calculated using the classical formulation (PW) and considering an entropic relaxation of the problem (Reg-PW).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head></head><label></label><figDesc>Related works. Among the earliest PW formulations,<ref type="bibr" target="#b33">Zhang et al. (2017)</ref>;<ref type="bibr" target="#b15">Grave et al. (2019)</ref> aimed at jointly estimating an orthogonal and a permutation matrix to align word embeddings across different languages. Differently from<ref type="bibr" target="#b33">Zhang et al. (2017)</ref>, which initialized the orthogonal matrix using an adversarial training phase,Grave et al.   </figDesc><table><row><cell>(2019) proposed a convex relaxation of the initialization by</cell></row><row><cell>reformulating the problem over the convex hull. Alvarez-</cell></row><row><cell>Melis et al. (2019) extended the previous works by incor-</cell></row><row><cell>porating global invariances directly into the optimization</cell></row><row><cell>process. Their approach is not limited to invariances with</cell></row><row><cell>respect to isometries but generalizes to broader invariance</cell></row><row><cell>classes (characterized by Schatten p-norm ball) up to the</cell></row><row><cell>recovery of Gromov-Wasserstein. This extension is particu-</cell></row><row><cell>larly useful in scenarios where data are not simply related by</cell></row><row><cell>rigid transformations. Additionally, employing a convexity-</cell></row><row><cell>annealing strategy and considering a relaxed PW version,</cell></row></table><note><p><p><p><p><p>they eliminate the need for an ad-hoc initialization, avoiding strong dependence on an initial guess. In contrast with previous works, two-sided PW (TWP,</p><ref type="bibr" target="#b17">Jin et al., 2021)</ref> </p>adopts a two-fold transformation on both the source and target measures. Such an extension enables to handle data that lie in distinct spaces, transporting them into a common latent space. The optimal solution is obtained by solving a component-wise convex optimization problem, combining two-sided Procrustes Analysis with a relaxed Wasserstein formulation.</p><ref type="bibr" target="#b0">Aboagye et al. (2022)</ref> </p>tackle the computational limit of PW by proposing a quantized version of the problem</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 1 .</head><label>1</label><figDesc>Clustering results for MNIST dataset.</figDesc><table><row><cell cols="2">ALGORITHM TIME (S)</cell><cell>ARI</cell><cell>NMI</cell></row><row><cell>EMD</cell><cell>9.18</cell><cell cols="2">0.4069 0.5652</cell></row><row><cell>EUC-GW</cell><cell>675.19</cell><cell cols="2">0.5500 0.6815</cell></row><row><cell>GEO-GW</cell><cell>378.82</cell><cell cols="2">0.3797 0.5724</cell></row><row><cell>PW</cell><cell>130.11</cell><cell cols="2">0.7669 0.8361</cell></row><row><cell cols="2">initial correspondences.</cell><cell></cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>The work has received financial support from the <rs type="funder">CNRS</rs> through the <rs type="grantName">MITI interdisciplinary programs and the Junior Professor Chair (Chaire de Professeur Junior, CPJ)</rs> funded by the <rs type="funder">French National Research Agency (ANR)</rs>. We would like to thank <rs type="funder">Arch'AI'Story project (Ministère de l'Enseignement Supérieur et de la Recherche</rs> and <rs type="funder">University Côte d'Azur)</rs> for funding this project. We would like to express our gratitude to <rs type="person">Dr. Hossein Davoudi</rs> (<rs type="affiliation">Bioarchaeology Laboratory Central Laboratory, University of Tehran, Iran</rs>) and <rs type="person">Dr. Marjan Mashkour</rs> (<rs type="programName">Bioarchaeology, Interactions societies-environments laboratory-UMR 7209</rs>, <rs type="institution">CNRS, National Museum of Natural History of Paris, France)</rs> for their support and authorization to provide samples of the modern and archaeological sheep. We also wish to warmly thank <rs type="person">Cédric Vincent-Cuaz</rs> for the enlightening discussions we had with him around this work as well as for sharing with us his point of view regarding the Procrustes-Wasserstein distance. Our gratitude is finally extended to the anonymous reviewers whose contributions proved to be of substantial value in enhancing the quality of the article.</p></div>
+<div><head>Impact Statement</head><p>This paper presents work whose goal is to advance the field of <rs type="person">Machine Learning</rs>. There are many potential societal consequences of our work, none which we feel must be specifically highlighted here.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_4mpbgcB">
+					<orgName type="grant-name">MITI interdisciplinary programs and the Junior Professor Chair (Chaire de Professeur Junior, CPJ)</orgName>
+				</org>
+				<org type="funding" xml:id="_NPrCGRh">
+					<orgName type="program" subtype="full">Bioarchaeology, Interactions societies-environments laboratory-UMR 7209</orgName>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>A. Proof of Theorem 2.1.</p><p>Proof. First we check that P W 2 (µ X , µ Y ) = 0 iff µ X ∼ µ Y . The left implication is clear : if µ X ∼ µ Y , it means that there is (σ * , P * ) such that Y = σ * (X)P * and q = σ * (p). Then (σ * , P * ) is the solution of the problem in Eq. ( <ref type="formula">5</ref>), with the Kantorovich formulation being equivalent to the Monge's one. Vice-versa, if</p><p>it means that there exists à P * such that the 2-Wasserstein distance between µ X and µ Y P * is null, or equivalently that µ X and µ Y P are the same measure up to a permutation of the points in the support together with their masses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Second we prove that</head><p>by optimality of (P * , Γ * ) and where we used that the trace of a matrix equals the trace of its transposed and the trace is invariant under cyclic permutations of its arguments. The above equation shows that if (P * , Γ * ) is the stationary point leading to P W 2 (µ X , µ Y ) then, (P * ) T (Γ * ) T is the solution leading to P W 2 (µ Y , µ X ) and vice-versa. Thanks to Eq. ( <ref type="formula">3</ref>), it is now immediate to verify that P</p><p>Third, we show that the triangular inequality is satisfied :</p><p>where the first inequality holds since the Wasserstein distance is symmetric and satisfies the triangular inequality (as any distance) and the second equality comes from the fact that if we equally rotate or reflect the supports of two measures the Euclidean distances between any pair of points in the supports will be unchanged. From the above equation, paired with Eq. ( <ref type="formula">2</ref>) we deduce that, for any µ</p><p>Now, if we replace Z with Z * = ZP * where P * is solution of</p><p>where the last equality holds by the definition of PW. Finally, since Z and Z * only differ by right-multiplication with an orthogonal matrix, P W 2 (µ X , µ Z * ) = P W 2 (µ X , µ Z ).   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Additional results</head></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Quantized wasserstein procrustes alignment of word embedding spaces</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">O</forename><surname>Aboagye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Phillips</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2212.02468</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Evosheep-cuneiform data on sheep husbandry in mesopotamia from the third millennium bc to the second millennium bc</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Abrahami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Michel</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Gromov-Wasserstein Alignment of Word Embedding Spaces</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Alvarez-Melis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tommi</forename><surname>Jaakkola</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/d18-1214</idno>
+		<idno>PMLR</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</title>
+		<meeting>the 2018 Conference on Empirical Methods in Natural Language Processing</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1870" to="1879" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Wasserstein generative adversarial networks</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Arjovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chintala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bottou</surname></persName>
+		</author>
+		<idno>PMLR</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International conference on machine learning</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="214" to="223" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">MDS and Facet Theory</title>
+		<author>
+			<persName><forename type="first">Ingwer</forename><surname>Borg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Groenen</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-4757-2711-1_5</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Springer Series in Statistics</title>
+		<imprint>
+			<publisher>Springer New York</publisher>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="page" from="71" to="89" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Quantized gromov-wasserstein</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chowdhury</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Needham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Machine Learning and Knowledge Discovery in Databases. Research Track: European Conference, ECML PKDD 2021</title>
+		<meeting><address><addrLine>Bilbao, Spain</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2021">September 13-17, 2021. 2021</date>
+			<biblScope unit="page" from="811" to="827" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part III 21</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Optimal Transport for Domain Adaptation</title>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Courty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Remi</forename><surname>Flamary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Devis</forename><surname>Tuia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alain</forename><surname>Rakotomamonjy</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tpami.2016.2615921</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">2160-9292</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1853" to="1865" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Nearest neighbor pattern classification</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Cover</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hart</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on information theory</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="21" to="27" />
+			<date type="published" when="1967">1967</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Sinkhorn distances: Lightspeed computation of optimal transport</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cuturi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in neural information processing systems</title>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="volume">26</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Fast computation of wasserstein barycenters</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cuturi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Doucet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International conference on machine learning</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="685" to="693" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">G-MSM: Unsupervised Multi-Shape Matching with Graph-Based Affinity Priors</title>
+		<author>
+			<persName><forename type="first">Marvin</forename><surname>Eisenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aysim</forename><surname>Toker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Leal-Taixè</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Cremers</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52729.2023.02180</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="22762" to="22772" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Aligning embeddings and geometric random graphs: Informational results and computational approaches for the procrustes-wasserstein problem</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Even</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ganassali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Maier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Massoulié</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="70730" to="70764" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Optimal transport for diffeomorphic registration</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Feydy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Charlier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F.-X</forename><surname>Vialard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Peyré</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Medical Image Computing and Computer Assisted Intervention-MICCAI 2017: 20th International Conference</title>
+		<meeting><address><addrLine>Quebec City, QC, Canada</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2017">September 11-13, 2017. 2017</date>
+			<biblScope unit="page" from="291" to="299" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part I 20</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Algebraic connectivity of graphs</title>
+		<author>
+			<persName><forename type="first">Miroslav</forename><surname>Fiedler</surname></persName>
+		</author>
+		<idno type="DOI">10.21136/cmj.1973.101168</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Czechoslovak Mathematical Journal</title>
+		<title level="j" type="abbrev">Czech. Math. J.</title>
+		<idno type="ISSN">0011-4642</idno>
+		<idno type="ISSNe">1572-9141</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="298" to="305" />
+			<date type="published" when="1973">1973</date>
+			<publisher>Institute of Mathematics, Czech Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Pot: Python optimal transport</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Flamary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Courty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gramfort</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">Z</forename><surname>Alaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Boisbunon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chambon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chapel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Corenflos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Fatras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Fournier</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">78</biblScope>
+			<biblScope unit="page" from="1" to="8" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Unsupervised alignment of embeddings with wasserstein procrustes</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Grave</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Joulin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Berthet</surname></persName>
+		</author>
+		<idno>PMLR</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The 22nd International Conference on Artificial Intelligence and Statistics</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1880" to="1890" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Broad maternal geographic origin of domestic sheep in Anatolia and the Zagros</title>
+		<author>
+			<persName><forename type="first">Charlotte</forename><surname>Her</surname></persName>
+			<idno type="ORCID">0000-0001-6418-6201</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hamid‐reza</forename><surname>Rezaei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandrine</forename><surname>Hughes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saeid</forename><surname>Naderi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marilyne</forename><surname>Duffraisse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marjan</forename><surname>Mashkour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hamid‐reza</forename><surname>Naghash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrian</forename><surname>Bălășescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gordon</forename><surname>Luikart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steve</forename><surname>Jordan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deniz</forename><surname>Özüt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aykut</forename><surname>Kence</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">W</forename><surname>Bruford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anne</forename><surname>Tresset</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean‐denis</forename><surname>Vigne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Taberlet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catherine</forename><surname>Hänni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">François</forename><surname>Pompanon</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/age.13191</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Animal Genetics</title>
+		<title level="j" type="abbrev">Animal Genetics</title>
+		<idno type="ISSN">0268-9146</idno>
+		<idno type="ISSNe">1365-2052</idno>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="452" to="459" />
+			<date type="published" when="2022-03-14">2022</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Two-Sided Wasserstein Procrustes Analysis</title>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chaoyue</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cathy</forename><surname>Xia</surname></persName>
+		</author>
+		<idno type="DOI">10.24963/ijcai.2021/484</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence</title>
+		<meeting>the Thirtieth International Joint Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<publisher>International Joint Conferences on Artificial Intelligence Organization</publisher>
+			<date type="published" when="2021-08">2021</date>
+			<biblScope unit="page" from="3515" to="3521" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">On the translocation of masses</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">V</forename><surname>Kantorovich</surname></persName>
+		</author>
+		<idno type="DOI">10.29235/1561-8323-2019-63-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Dokl. Akad. Nauk. USSR</title>
+		<idno type="ISSN">1561-8323</idno>
+		<idno type="ISSNe">2524-2431</idno>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="199" to="201" />
+			<date type="published" when="1942">1942</date>
+			<publisher>Publishing House Belorusskaya Nauka</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Gromov–Wasserstein Distances and the Metric Approach to Object Matching</title>
+		<author>
+			<persName><forename type="first">Facundo</forename><surname>Mémoli</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10208-011-9093-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Foundations of Computational Mathematics</title>
+		<title level="j" type="abbrev">Found Comput Math</title>
+		<idno type="ISSN">1615-3375</idno>
+		<idno type="ISSNe">1615-3383</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="417" to="487" />
+			<date type="published" when="2011-04-30">2011</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Deep learning for species identification of modern and fossil rodent molars</title>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Miele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gaspard</forename><surname>Dussert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Cucchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabrina</forename><surname>Renaud</surname></persName>
+		</author>
+		<idno type="DOI">10.1101/2020.08.20.259176</idno>
+	</analytic>
+	<monogr>
+		<title level="j">BioRxiv</title>
+		<imprint>
+			<biblScope unit="page" from="2020" to="2028" />
+			<date type="published" when="2020-08-21">2020</date>
+			<publisher>Cold Spring Harbor Laboratory</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Machine Learning interspecific identification of mouse first lower molars (genus Mus Linnaeus, 1758) and application to fossil remains from the Estrecho Cave (Spain)</title>
+		<author>
+			<persName><forename type="first">Abel</forename><surname>Moclán</surname></persName>
+			<idno type="ORCID">0000-0001-5555-7760</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ángel</forename><forename type="middle">C</forename><surname>Domínguez-García</surname></persName>
+			<idno type="ORCID">0000-0003-1762-6328</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuelle</forename><surname>Stoetzel</surname></persName>
+			<idno type="ORCID">0000-0002-2724-5994</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Cucchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paloma</forename><surname>Sevilla</surname></persName>
+			<idno type="ORCID">0000-0001-7425-7173</idno>
+		</author>
+		<author>
+			<persName><forename type="first">César</forename><surname>Laplana</surname></persName>
+			<idno type="ORCID">0000-0002-2067-4091</idno>
+		</author>
+		<idno type="DOI">10.1016/j.quascirev.2022.107877</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Quaternary Science Reviews</title>
+		<title level="j" type="abbrev">Quaternary Science Reviews</title>
+		<idno type="ISSN">0277-3791</idno>
+		<imprint>
+			<biblScope unit="volume">299</biblScope>
+			<biblScope unit="page">107877</biblScope>
+			<date type="published" when="2023-01">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Gromov-wasserstein averaging of kernel and distance matrices</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Peyré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cuturi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Solomon</surname></persName>
+		</author>
+		<idno>PMLR</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International conference on machine learning</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="2664" to="2672" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Computational optimal transport: With applications to data science</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Peyré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cuturi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Foundations and Trends® in Machine Learning</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">5-6</biblScope>
+			<biblScope unit="page" from="355" to="607" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Introduction</title>
+		<author>
+			<persName><forename type="first">Franco</forename><forename type="middle">P</forename><surname>Preparata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">Ian</forename><surname>Shamos</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-1-4612-1098-6_1</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Computational Geometry</title>
+		<imprint>
+			<publisher>Springer New York</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="1" to="35" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Convolutional wasserstein distances</title>
+		<author>
+			<persName><forename type="first">Justin</forename><surname>Solomon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fernando</forename><surname>De Goes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Peyré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Cuturi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrian</forename><surname>Butscher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andy</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leonidas</forename><surname>Guibas</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2766963</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Graphics</title>
+		<title level="j" type="abbrev">ACM Trans. Graph.</title>
+		<idno type="ISSN">0730-0301</idno>
+		<idno type="ISSNe">1557-7368</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1" to="11" />
+			<date type="published" when="2015-07-27">2015</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Figure 3: Two-dimensional projection of the unsupervised embedding using t-distributed stochastic neighbor embedding (t-SNE) (Van Der Maaten &amp; Hinton, 2008).</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Van Der Maaten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj-cs.154/fig-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of machine learning research</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<date type="published" when="2008">2008</date>
+			<publisher>PeerJ</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Fused Gromov-Wasserstein Distance for Structured Objects</title>
+		<author>
+			<persName><forename type="first">Titouan</forename><surname>Vayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laetitia</forename><surname>Chapel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Remi</forename><surname>Flamary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Romain</forename><surname>Tavenard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Courty</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/a13090212</idno>
+		<idno>PMLR</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Algorithms</title>
+		<title level="j" type="abbrev">Algorithms</title>
+		<idno type="ISSNe">1999-4893</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">212</biblScope>
+			<date type="published" when="2019">2019</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Fused Gromov-Wasserstein Distance for Structured Objects</title>
+		<author>
+			<persName><forename type="first">Titouan</forename><surname>Vayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laetitia</forename><surname>Chapel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Remi</forename><surname>Flamary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Romain</forename><surname>Tavenard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Courty</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/a13090212</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Algorithms</title>
+		<title level="j" type="abbrev">Algorithms</title>
+		<idno type="ISSNe">1999-4893</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">212</biblScope>
+			<date type="published" when="2019">2019</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">The Expansion of Sheep Herding and the Development of Wool Production in the Ancient Near East:</title>
+		<author>
+			<persName><forename type="first">Emmanuelle</forename><surname>Vila</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Helmer</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/j.ctvh1djjn.6</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Wool Economy in the Ancient Near East</title>
+		<imprint>
+			<publisher>Oxbow Books</publisher>
+			<date type="published" when="2014-07-31">2014</date>
+			<biblScope unit="page" from="22" to="40" />
+		</imprint>
+	</monogr>
+	<note>Wool economy in the ancient Near East and the Aegean: from the beginnings of sheep husbandry to institutional textile industry</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">EVOSHEEP: the makeup of sheep breeds in the ancient Near East</title>
+		<author>
+			<persName><forename type="first">Emmanuelle</forename><surname>Vila</surname></persName>
+			<idno type="ORCID">0000-0002-2238-2340</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Abrahami</surname></persName>
+			<idno type="ORCID">0000-0001-9850-604X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Moussab</forename><surname>Albesso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Agraw</forename><surname>Amane</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Camille</forename><surname>Bader</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rémi</forename><surname>Berthon</surname></persName>
+			<idno type="ORCID">0000-0003-1215-0965</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sofiane</forename><surname>Bouzid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Bradley</surname></persName>
+			<idno type="ORCID">0000-0001-7335-7092</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Catherine</forename><surname>Breniquet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jwana</forename><surname>Chahoud</surname></persName>
+			<idno type="ORCID">0000-0002-9434-7798</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Cucchi</surname></persName>
+			<idno type="ORCID">0000-0001-6021-5001</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hossein</forename><surname>Davoudi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bea</forename><surname>De Cupere</surname></persName>
+			<idno type="ORCID">0000-0001-7559-8965</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gilles</forename><surname>Escarguel</surname></persName>
+			<idno type="ORCID">0000-0003-0985-6369</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Oscar</forename><surname>Estrada</surname></persName>
+			<idno type="ORCID">0000-0001-5803-7007</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lionel</forename><surname>Gourichon</surname></persName>
+			<idno type="ORCID">0000-0002-5160-5902</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Helmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Huangfu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joséphine</forename><surname>Lesur</surname></persName>
+			<idno type="ORCID">0000-0003-4245-7140</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marjan</forename><surname>Mashkour</surname></persName>
+			<idno type="ORCID">0000-0003-3630-9459</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cécile</forename><surname>Michel</surname></persName>
+			<idno type="ORCID">0000-0002-4207-111X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Azadeh</forename><surname>Mohaseb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ludovic</forename><surname>Orlando</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">François</forename><surname>Pompanon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacqueline</forename><surname>Studer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Manon</forename><surname>Vuillien</surname></persName>
+		</author>
+		<idno type="DOI">10.15184/aqy.2020.247</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Antiquity</title>
+		<title level="j" type="abbrev">Antiquity</title>
+		<idno type="ISSN">0003-598X</idno>
+		<idno type="ISSNe">1745-1744</idno>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="issue">379</biblScope>
+			<date type="published" when="2021-01-27">2021</date>
+			<publisher>Antiquity Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Online graph dictionary learning</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Vincent-Cuaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Vayer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Flamary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Corneli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Courty</surname></persName>
+		</author>
+		<idno>PMLR</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International conference on machine learning</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="10564" to="10574" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Topological Data Analysis and Multiple Kernel Learning for Species Identification of Modern and Archaeological Small Ruminants</title>
+		<author>
+			<persName><forename type="first">Manon</forename><surname>Vuillien</surname></persName>
+			<idno type="ORCID">0000-0001-7657-7613</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Adamo</surname></persName>
+			<idno type="ORCID">0009-0004-4994-6427</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuelle</forename><surname>Vila</surname></persName>
+			<idno type="ORCID">0000-0002-2238-2340</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amane</forename><surname>Agraw</surname></persName>
+			<idno type="ORCID">0000-0001-7693-0173</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thierry</forename><surname>Argant</surname></persName>
+			<idno type="ORCID">0000-0003-0308-9584</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Helmer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marjan</forename><surname>Mashkour</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdelkader</forename><surname>Moussous</surname></persName>
+			<idno type="ORCID">0009-0004-5991-2060</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Notter</surname></persName>
+			<idno type="ORCID">0000-0002-1068-7649</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><surname>Rossoni-Notter</surname></persName>
+			<idno type="ORCID">0000-0002-3437-9923</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Isabelle</forename><surname>Théry</surname></persName>
+			<idno type="ORCID">0000-0003-3766-0750</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Corneli</surname></persName>
+			<idno type="ORCID">0000-0002-9361-0080</idno>
+		</author>
+		<idno type="DOI">10.5334/jcaa.181</idno>
+		<ptr target="https://doi.org/10.5334/jcaa.181" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer Applications in Archaeology</title>
+		<title level="j" type="abbrev">JCAA</title>
+		<idno type="ISSNe">2514-8362</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2025-05-23">2025</date>
+			<publisher>Ubiquity Press, Ltd.</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Earth Mover&apos;s Distance Minimization for Unsupervised Bilingual Lexicon Induction</title>
+		<author>
+			<persName><forename type="first">Meng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huanbo</forename><surname>Luan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maosong</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/d17-1207</idno>
+		<ptr target="https://aclanthology.org/D17-1207/" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Palmer</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Hwa</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Riedel</surname></persName>
+		</editor>
+		<meeting>the 2017 Conference on Empirical Methods in Natural Language Processing<address><addrLine>Copenhagen, Denmark</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2017-09">September 2017</date>
+			<biblScope unit="page" from="1934" to="1945" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

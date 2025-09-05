@@ -1,0 +1,2487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Rejoining fragmented ancient bamboo slips with physics-driven deep learning</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-07-03">3 Jul 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jinchi</forename><surname>Zhu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zhou</forename><surname>Zhao</surname></persName>
+							<affiliation key="aff4">
+								<orgName type="department">School of Computer Science</orgName>
+								<orgName type="institution">Central China Normal University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hailong</forename><surname>Lei</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Center of Bamboo and Silk Manuscripts</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xiaoguang</forename><surname>Wang</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">School of Information Management</orgName>
+								<address>
+									<country>Wuhan University</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jialiang</forename><surname>Lu</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Center of Bamboo and Silk Manuscripts</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jing</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Qianqian</forename><surname>Tang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Center of Bamboo and Silk Manuscripts</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jiachen</forename><surname>Shen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Gui-Song</forename><surname>Xia</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">School of Artificial Intelligence</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Bo</forename><surname>Du</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">School of Artificial Intelligence</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yongchao</forename><surname>Xu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">School of Artificial Intelligence</orgName>
+								<orgName type="institution">Wuhan University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Rejoining fragmented ancient bamboo slips with physics-driven deep learning</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-07-03">3 Jul 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">3616A883E6617BDB5E851D29F7A3E010</idno>
+					<idno type="arXiv">arXiv:2505.08601v2[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:28+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Bamboo slips are a crucial medium for recording ancient civilizations in East Asia, and offers invaluable archaeological insights for reconstructing the Silk Road, studying material culture exchanges, and global history. However, many excavated bamboo slips have been fragmented into thousands of irregular pieces, making their rejoining a vital yet challenging step for understanding their content. Here we introduce WisePanda, a physics-driven deep learning framework designed to rejoin fragmented bamboo slips. Based on the physics of fracture and material deterioration, WisePanda automatically generates synthetic training data that captures the physical properties of bamboo fragmentations. This approach enables the training of a matching network without requiring manually paired samples, providing ranked suggestions to facilitate the rejoining process. Compared to the leading curve matching method, WisePanda increases Top-50 matching accuracy from 36% to 52% among more than one thousand candidate fragments. Archaeologists using WisePanda have experienced substantial efficiency improvements (approximately 20 times faster) when rejoining fragmented bamboo slips. This research demonstrates that incorporating physical principles into deep learning models can significantly enhance their performance, transforming how archaeologists restore and study fragmented artifacts. WisePanda provides a new paradigm for addressing data scarcity in ancient artifact restoration through physics-driven machine learning.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Main</head><p>Bamboo slips, serving as a fundamental medium for documenting ancient East Asian civilizations, contain invaluable historical records spanning philosophy, law, and social life of the period <ref type="bibr">[1]</ref><ref type="bibr">[2]</ref><ref type="bibr">[3]</ref><ref type="bibr">[4]</ref><ref type="bibr">[5]</ref>. Their durability has enabled these artifacts to survive millennia underground while retaining legible content, offering scholars unprecedented insights into historical societies. However, the excavation of these delicate artifacts presents a critical challenge <ref type="bibr">[2,</ref><ref type="bibr">6]</ref> -many bamboo slips have been fragmented into thousands of pieces (Figure <ref type="figure" target="#fig_3">1</ref>), significantly complicating efforts to reconstruct and interpret their content. This fragmentation creates a fundamental obstacle in accessing the wealth of historical knowledge contained in these artifacts.</p><p>The rejoining of fragmented bamboo slips represents one of the most challenging problems in archaeological preservation and cultural heritage studies <ref type="bibr">[7]</ref>. The difficulty stems from multiple factors: First, the enormous number of potential fragment combinations makes manual matching extremely timeconsuming -for instance, The Qin bamboo slips from the Shuihudi site comprise fragments numbering in the tens of thousands, with each piece potentially matching any of the others <ref type="bibr">[8]</ref>. Second, environmental factors like moisture and pressure have caused extensive physical deterioration <ref type="bibr">[9]</ref>, distorting the original shapes and surfaces. Third, the sparse recorded characters often make it difficult to capture textual remnants at the fracture curves created by transverse breakage, rendering text-based matching approaches largely ineffective and necessitating reliance primarily on the morphological patterns of fracture curves for identification. The unique fiber structure of bamboo creates complex fracture patterns that traditional curve-matching approaches struggle to analyze effectively. These challenges have made Figure <ref type="figure" target="#fig_3">1</ref>: The challenge of bamboo slip rejoining in archaeological research. Some excavated bamboo slip fragments from the Qin dynasty (221-206 BCE) arranged in a spiral pattern (left) illustrate the overwhelming scale of the rejoining challenge faced by archaeologists-with thousands of fragments at single excavation sites, each potentially matching with any other piece. A zoomed view of a representative fragment (upper right) reveals the characteristic irregular breakage pattern along the fracture curve. An example of a reconstructed complete slip (lower right) demonstrates how proper rejoining establishes morphological continuity, which is essential for the interpretation of ancient texts. The complex morphology of the fractures, coupled with deterioration from millennia underground, creates a matching problem of extraordinary complexity that has traditionally required intensive manual effort, with experts sometimes spending weeks to successfully match a single pair of fragments. the restoration process highly labor-intensive, with experts sometimes requiring weeks to successfully match a single pair of fragments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Deep learning for ancient artifact repair</head><p>Here we overcome the challenges of fragmented bamboo slip rejoining through physics-driven deep learning. Our approach integrates principles from the physics of fracture with deep neural networks, enabling automated matching of fragmented pieces without relying on manually labeled training data. Deep learning <ref type="bibr">[10]</ref> has been successfully used in restoring and attributing ancient texts <ref type="bibr">[11]</ref> empowered by large training datasets. Beyond cultural heritage applications, deep learning has also demonstrated remarkable success across diverse scientific domains <ref type="bibr">[12]</ref><ref type="bibr">[13]</ref><ref type="bibr">[14]</ref><ref type="bibr">[15]</ref><ref type="bibr">[16]</ref><ref type="bibr">[17]</ref><ref type="bibr">[18]</ref>. While recent years have also seen significant progress in fragmented cultural relic restoration <ref type="bibr">[19]</ref> with labeled data -from oracle bone reconstruction <ref type="bibr">[20,</ref><ref type="bibr">21]</ref> to manuscript fragment matching <ref type="bibr">[22,</ref><ref type="bibr">23]</ref> -most existing approaches rely on traditional computer vision techniques and struggle with complex degradation patterns <ref type="bibr">[24]</ref>. Some works have attempted to use generative models for cultural heritage restoration <ref type="bibr">[21]</ref>. While achieving promising results, these methods are constrained by the scarcity of training data and often fail to capture the intricate physical properties of ancient materials <ref type="bibr">[25,</ref><ref type="bibr">26]</ref>.</p><p>We propose WisePanda, a deep learning framework that leverages physical principles to overcome the data scarcity problem inherent in fragmented bamboo slip rejoining task. Training WisePanda presents a unique paradox: while manual fragment rejoining is prohibitively time-consuming. The very problem we aim to solve -this same process would traditionally be required to generate training data for the model. We resolve this dilemma by resorting to the physics of fracture <ref type="bibr">[27]</ref>. By modeling the physical properties of bamboo and the process that govern its degradation <ref type="bibr">[9,</ref><ref type="bibr">28]</ref>, we generate extensive synthetic training data that captures the essential characteristics of real paired fragment slips (Figure <ref type="figure" target="#fig_0">2</ref>). This physics-driven approach enables us to produce large-scale, realistic paired training data without requiring manual matching efforts, while ensuring the model learns meaningful patterns based on actual material properties rather than superficial features.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data synthesis with physics of fracture</head><p>The generation of training data for bamboo slip rejoining requires a comprehensive understanding of both fracture formation and degradation processes <ref type="bibr">[29]</ref>. Our physical model builds on two key observations: First, bamboo slips exhibit distinct "transverse" and "longitudinal" fracture modes due to their unique fiber structure <ref type="bibr">[29]</ref>, as illustrated in Extended Figure <ref type="figure" target="#fig_3">E1</ref>, with transverse fractures accounting for approximately 70% of cases. Second, these fractures undergo complex corrosion processes over time, significantly altering their original patterns <ref type="bibr">[2,</ref><ref type="bibr">9,</ref><ref type="bibr">30]</ref>. Building on these insights, we develop a systematic approach to generate synthetic fragment pairs for transverse fractures, which represent the majority of rejoining challenges.</p><p>The physics of fracture in bamboo slips is governed by their distinctive vertical fiber arrangement <ref type="bibr">[31]</ref><ref type="bibr">[32]</ref><ref type="bibr">[33]</ref>, as detailed in Extended Figure <ref type="figure" target="#fig_5">E2</ref>. When stress extends horizontally across the slip, it creates characteristic fracture patterns as it propagates through consecutive fiber bundles <ref type="bibr">[33,</ref><ref type="bibr">34]</ref>. We model this process through a probabilistic framework where the fracture angle of each fiber bundle is influenced by the stress field generated at the fracture endpoint of the preceding fiber bundle (Figure <ref type="figure" target="#fig_0">2a</ref> and<ref type="figure">b</ref>). This physical relationship can be expressed through a probability density function that determines likely fracture paths based on stress distribution and geometric configurations. The corrosion process is then simulated by analyzing geometric exposure -protruding areas and exposed surfaces are more susceptible to degradation through moisture absorption and microorganism activity <ref type="bibr">[35]</ref>. To efficiently calculate the exposure area of each fiber bundle, we ingeniously employ ReLU functions that compare the height differences between adjacent fiber bundles, effectively capturing only the protruding portions that are more vulnerable to environmental deterioration (Figure <ref type="figure" target="#fig_0">2c</ref>). This computational approach allows us to precisely model the progressive and differential deterioration patterns observed in archaeological samples.</p><p>To ensure the generated data accurately reflects real bamboo slip characteristics, we optimize model parameters using a genetic algorithm <ref type="bibr">[36]</ref>. The algorithm evaluates parameter sets by comparing the distribution of generated fragments against a reference set of 200 real fragment curves through dimensionality reduction and Silhouette analysis <ref type="bibr">[37]</ref>. Our analysis shows high similarity between the synthetic and real data distributions. The resulting pipeline enables us to generate extensive paired training data (Figure <ref type="figure" target="#fig_0">2d</ref> and<ref type="figure">e</ref>) that captures both the physical properties of fracture formation and the effects of long-term degradation, effectively addressing the data scarcity challenge in rejoining fragmented bamboo slips.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>WisePanda is a ranking system</head><p>WisePanda's architecture features an interpretable pipeline for fragmented bamboo slip rejoining task (Figure <ref type="figure" target="#fig_2">3</ref>), using synthesized data with physics of fracture for model training and providing Top-k candidates to assist archaeologists. At its core lies a TripletNet-based deep learning network <ref type="bibr">[38]</ref>, designed to learn effective feature representation that can distinguish between matching and non-matching fragments. The network processes each input as a 64-dimensional vector that captures the detailed features of the fracture curves. By leveraging a triplet loss function <ref type="bibr">[38,</ref><ref type="bibr">39]</ref>, the network learns to minimize the distance between matching pairs while maximizing the distance between non-matching ones.</p><p>In practical deployment, WisePanda operates by predicting matching probabilities between fragments and offers archaeologists a ranked list of the top potential matches for each fragment. This significantly reduces the search space from thousands of candidates to a manageable set <ref type="bibr">[40,</ref><ref type="bibr" target="#b40">41]</ref>, thereby streamlining the rejoining process. The network's output is a value between 0 and 1, indicating the match probability between a given pair of fragments, where a value closer to 1 signifies a higher likelihood of a correct match. This ranking approach effectively mitigates the overwhelming task of manually matching fragments by narrowing down the possibilities to the most probable matches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>WisePanda as an archaeologist adjunct</head><p>To bridge the gap between computational methods and archaeological research practices, we have developed an intuitive computer-assisted tool that implements WisePanda's capabilities in a practical   This matching network learns to effectively represent and compare fragment curves through a multi-layer architecture with specialized embedding capabilities. During inference (red arrows), the system compares the target fragment against all candidates, producing a ranked list of potential matches (bottom row). The ranking transforms thousands of possible matches into a manageable set, with the system highlighting the most probable candidates (position 5 shown in pink represents a correct match). This approach enables archaeologists to focus their verification efforts on the most promising candidates, significantly accelerating the traditionally time-consuming rejoining process.</p><p>workflow (Extended Figure <ref type="figure" target="#fig_6">E5</ref>). When working with this tool, archaeologists first select a query fragment from the collection. The system then automatically generates a ranked list of potential matching candidates, significantly narrowing down the search space from thousands to dozens of fragments. Each suggested match is accompanied by a matching score given by WisePanda's matching network, allowing archaeologists to prioritize their examination of the most promising candidates.</p><p>The tool provides a dedicated workspace where archaeologists can visually manipulate and compare fragments through intuitive operations such as dragging, rotating, and fine-tuning alignments. To facilitate detailed examination, the system offers specialized visualization features like layer swapping and curve enhancement, enabling careful inspection of fracture patterns, ink traces, and textures (e.g., fiber patterns). All successful matches are saved and documented in a centralized database, creating a growing repository of verified rejoining that contributes to the broader restoration effort. This computer-assisted tool has significantly accelerated the traditional rejoining workflow <ref type="bibr" target="#b40">[41]</ref>, ensuring archaeologists maintain full control over the final verification of matches while benefiting from AI-powered suggestions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experimental evaluation</head><p>Datasets. For evaluating WisePanda's effectiveness, we collected several datasets of bamboo and wooden slip fragments. Our primary test set (Bamboo236) consists of 118 pairs of matched bamboo slip fragments, carefully verified and provided by archaeological experts who successfully rejoined these fragments through meticulous manual work (achieved by three archaeological experts within half a year). These bamboo slip artifacts are part of an ongoing archaeological research project, with the cultural relics yet to be formally published. To simulate more challenging real-world scenarios, we created an extended dataset (Bamboo1350) by introducing 1114 additional interference fragments from the same set, expanding the candidate pool to 1,350 total fragments while maintaining the original matched pairs. To assess generalization capabilities across different materials, we also collected wooden slip datasets. The base wooden slip test set (Wood670) contains 335 expert-verified pairs, while its extended version (Wood3833) includes 3163 additional interference fragments. These diverse datasets enable comprehensive evaluation of fragment matching methods under varying conditions and material types.</p><p>Evaluation methodology. The evaluation process involved computing similarity scores between each fragment's fracture curve and all potential matching candidates from the pool. Fragments were preclassified as upper or lower parts, with matching only performed between these distinct groups. We extracted features from both fracture curves of each fragment, ranked the computed similarity scores, and measured the probability of finding the correct match within the Top-k predictions. We conducted comprehensive experiments comparing our WisePanda with several classical methods, including Manual Random Search, curve matching techniques (using Dynamic Time Warping (DTW)) <ref type="bibr" target="#b41">[42]</ref>, Fast Matching Method (FMM) <ref type="bibr" target="#b42">[43]</ref>, and Scale Invariant Signature (SIS) <ref type="bibr" target="#b43">[44]</ref>. This comparative framework allows us to assess the relative performance of our physics-driven approach against established techniques in the field of fragment matching.</p><p>Results and analysis. The performance variations among different methods reveal insights about the nature of the fragmented bamboo slip matching problem. In our original test set (Bamboo236), WisePanda demonstrated superior performance across all metrics, achieving a Top-1 accuracy of 12.29%, Top-5 accuracy of 35.17%, Top-10 accuracy of 52.54%, Top-20 accuracy of 69.07%, and Top-50 accuracy of 94.07%. Among traditional methods, SIS <ref type="bibr" target="#b43">[44]</ref> achieved the second-best performance with a Top-1 accuracy of 10.59% and Top-50 accuracy of 72.88%, followed by DTW <ref type="bibr" target="#b41">[42]</ref> with a Top-50 accuracy of 75.42%. FMM <ref type="bibr" target="#b42">[43]</ref> performed less effectively, with Top-50 accuracies of 65.25%. To simulate real-world archaeological scenarios where numerous unrelated fragments exist, we expanded our test dataset by introducing additional interference fragments. As shown in Extended Figure <ref type="figure">E4</ref>, when the candidate pool was increased by a factor of approximately 10, WisePanda maintained a Top-50 accuracy of 52.54% compared to the original 94.07%, demonstrating robust performance even with significantly increased search space.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Interpretability of WisePanda</head><p>The fundamental challenge in generating training data for fragmented bamboo slip matching lies in the irreversible nature of the physical degradation process <ref type="bibr">[9,</ref><ref type="bibr">24]</ref>. When archaeologists uncover bamboo slip fragments, they observe only the final degraded curves <ref type="bibr">[2]</ref> (Figure <ref type="figure" target="#fig_0">2c</ref>). The original fracture patterns are permanently altered by centuries of degradation and cannot be directly inferred from the preserved fragments <ref type="bibr">[7]</ref>. This irreversibility poses a significant limitation for conventional data-driven approaches <ref type="bibr">[21,</ref><ref type="bibr">25,</ref><ref type="bibr">26]</ref>, which typically require paired samples of "before-degradation" and "after-degradation" states for effective training data that is inherently unavailable in archaeological contexts. Even generative models like generative adversarial networks and diffusion models suffer from distribution bias when learning only from real fragments, failing to incorporate the underlying physical principles that govern fracture formation and degradation.</p><p>Our physics-driven model addresses this challenge by modeling the forward process of fragmentation and degradation. We first simulate the initial fracture patterns based on the physics of bamboo fiber structures <ref type="bibr">[28,</ref><ref type="bibr">29,</ref><ref type="bibr" target="#b44">45,</ref><ref type="bibr" target="#b45">46]</ref>, then apply physical degradation processes to these patterns. This sequential modeling captures both the immediate fracture characteristics and their subsequent transformation through environmental exposure. The physical processes governing bamboo deterioration follow specific geometric principles, where protruding areas and exposed surfaces are more susceptible to degradation <ref type="bibr">[9,</ref><ref type="bibr">24]</ref>. By incorporating these physical constraints, WisePanda generates realistic degradation patterns that closely mirror natural deterioration processes, effectively bridging the gap between the unknown original fracture patterns and the observed degraded edges.  <ref type="figure">E4</ref>, WisePanda consistently outperforms traditional curve matching approaches in both material types and across varying complexity levels, demonstrating the effectiveness of our physics-driven approach in handling diverse archaeological fragments.</p><p>These physical principles not only enhance the quality of synthetic training data but also provide interpretability to our WisePanda's behavior. The combination of authentic fracture patterns and physically-based degradation enables WisePanda to capture fundamental characteristics of bamboo slip fragmentation, generating abundant realistic training data and leading to more robust and generalizable performance. Unlike pure data-driven approaches that may overfit to superficial patterns in limited training samples, our physics-driven model learns meaningful features grounded in the actual physical processes of fracture and degradation, allowing it to generalize effectively to unseen fragments with diverse deterioration patterns.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Rejoin fragmented ancient wooden slips</head><p>To examine WisePanda's generalization capability, we applied our approach to wooden slips -another important medium for ancient text preservation that shares similar characteristics with bamboo slips but exhibits distinct material properties. While wooden slips served similar documentary purposes, their different fiber arrangement and material structure present unique challenges for fragment matching <ref type="bibr" target="#b46">[47]</ref>. We evaluated our method on a dataset of 335 pairs of wooden slip fragments, following the same experimental protocol as with bamboo slips.</p><p>As shown in Table <ref type="table" target="#tab_0">1</ref>, WisePanda demonstrated promising cross-material generalization with 32.99% Top-50 accuracy on wooden slips. When tested with extended interference fragments in both materials, performance predictably decreased to 52.54% for bamboo slips (Bamboo1350) and 15.67% for wooden slips (Wood3833).</p><p>This performance difference can be attributed to two key factors. First, the fiber structure of wooden slips differs substantially from bamboo slips, leading to distinct fracture patterns that deviate from our physics-driven model's assumptions <ref type="bibr" target="#b47">[48]</ref>. Second, the degradation process varies significantly due to diverse preservation conditions -factors such as burial duration, soil moisture levels, microbial activity, and regional soil composition all affect how materials deteriorate over time <ref type="bibr" target="#b48">[49]</ref>. Even artifacts of the same material excavated from different sites or time periods may exhibit varying degradation patterns, requiring different physical parameters for accurate modeling. These variations are particularly pronounced when comparing wooden and bamboo materials, as their distinct physical properties interact differently with environmental factors, leading to material-specific degradation processes that need to be carefully considered in the modeling approach.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this work, we present WisePanda, the first physics-driven deep learning framework designed for rejoining fragmented ancient bamboo slips. By incorporating principles from the physics of fracture into the generation of synthetic training data, our approach overcomes the fundamental challenge of paired data scarcity in AI for rejoining fragmented ancient bamboo slips, and significantly improves the efficiency of archaeologists. The effectiveness of this approach is demonstrated through superior matching accuracy and the development of practical tools that are now assisting archaeologists in their reconstruction work. Our framework's success in handling both fracture pattern generation and material degradation simulation highlights the advantage of combining physical principles with deep learning, particularly in scenarios where traditional data-driven approaches are constrained by limited training samples.</p><p>Beyond its current implementation, this research opens new horizons in bamboo slip reconstruction and broader cultural heritage preservation. For bamboo slips specifically, our framework can be extended to handle more complex scenarios by incorporating additional physical parameters that account for regional variations and different preservation conditions. Furthermore, our approach establishes a new paradigm for fragment matching where paired training data is scarce. The incorporation of physics-driven mechanism can be adapted to other archaeological materials such as wooden slips, ceramics, metals, and pottery, by modeling their specific physics of fracture and degradation processes.</p><p>In conclusion, WisePanda represents not merely a technical advancement in fragmented bamboo slip rejoining, but rather a transformative approach to preserving and studying cultural heritage. By combining physical principles with artificial intelligence, our method provides a robust solution when paired training data is limited but physical principles are well understood. This synergy of physics and deep learning opens new possibilities for archaeological fragment matching, potentially revolutionizing how we recover and interpret artifacts from our past.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Previous work</head><p>In recent years, various approaches have been proposed for restoring and analyzing fragmented ancient artifacts <ref type="bibr">[1,</ref><ref type="bibr">2]</ref>. Traditional methods have primarily focused on geometric feature analysis, particularly curve matching methods. Modern approaches mainly leverage artificial intelligence techniques <ref type="bibr">[3,</ref><ref type="bibr">4]</ref>. Notable recent work includes the restoration of Pompeii's frescoes using a robotic system for automated fragment matching <ref type="bibr">[5]</ref>, Ithaca, a deep neural network system that successfully restored and attributed ancient Greek texts <ref type="bibr">[6]</ref>, and the reunion helper for Dunhuang manuscript fragments <ref type="bibr">[7,</ref><ref type="bibr">8]</ref>. For oracle bone fragments, researchers have explored using GAN to generate training samples for restoration tasks <ref type="bibr">[9]</ref>.</p><p>The manual restoration of bamboo and wooden slips has a long history in China <ref type="bibr">[10]</ref><ref type="bibr">[11]</ref><ref type="bibr">[12]</ref>. Wang Guowei's pioneering work Liusha Zhuijian <ref type="bibr">[13]</ref> systematically documented traditional techniques for matching and rejoining ancient bamboo and wooden manuscripts, establishing foundational methodologies that are still valuable today. However, manual restoration remains an extremely time-consuming and labor-intensive task, often requiring weeks or months to successfully match a single pair of fragments. With recent technological advancements, computational approaches and artificial intelligence have emerged as powerful tools to assist archaeologists in this complex process, significantly accelerating the restoration workflow while maintaining the essential role of expert knowledge. While deep learning approaches have shown promise in cultural relic restoration, the application to fragmented bamboo slips faces significant challenges due to the lack of sufficient paired training data and the complex physical degradation patterns unique to bamboo materials. Our work addresses these limitations by introducing physics-driven data generation. Unlike previous approaches, we uniquely integrate fracture mechanics and material degradation principles into the restoration process. This novel approach allows us to generate physically plausible paired training data that reflects the actual physical processes of how bamboo slips break and degrade over time.</p><p>Moreover, our physics-driven approach not only provides interpretable results that align with archaeological domain knowledge, but also demonstrates strong extensibility to various archaeological fragment restoration tasks. The framework we propose may open a new paradigm for applying deep learning in archaeological restoration <ref type="bibr">[14]</ref>, particularly valuable when paired training data is scarce but physical principles are well understood. This methodology can potentially be adapted to restore other types of archaeological fragments by modeling their specific physical properties and degradation processes <ref type="bibr">[15,</ref><ref type="bibr">16]</ref>, offering a generalizable solution for the broader field of cultural heritage preservation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Physical model for data generation</head><p>Fracture modeling. Bamboo slip fragments exhibit two distinct fracture modes: transverse and longitudinal, with transverse fractures accounting for approximately 70% of cases <ref type="bibr">[17]</ref>. Due to bamboo's unique fiber structure, the transverse fractures occur when stress cuts across the bamboo slip's crosssection, creating uneven, wavy edge curves. The longitudinal fractures happen along the fiber direction, resulting in straight edges, as illustrated in Extended Figure <ref type="figure" target="#fig_3">E1</ref>. In this work, we focus on transverse fractures due to their prevalence and complexity. To systematically model the bamboo slip structure, we establish a coordinate system where the x-axis represents the horizontal direction along the bamboo slip's width and the y-axis represents the vertical direction corresponding to fiber bundle heights. We abstract the bamboo slip as a series of N f vertically aligned fiber bundles, as shown in Extended Figure <ref type="figure" target="#fig_5">E2a</ref>. Each fiber bundle is represented as a discrete structural unit with a uniform width of δ x , forming a continuous arrangement along the horizontal axis. The initial height for the front of i-th fiber bundle before environmental degradation is denoted as y init i . The final height after corrosion processes is represented as y f inal i . This discretization allows us to precisely model the propagation of fracture across the material's anisotropic structure. The vertical positions of these fiber bundles determine the morphology of the fracture curve, with the height of each bundle representing its position on the fracture curve. When modeling the fracture process, we observe that bamboo slips were typically buried in a loosely rolled form, causing them to experience predominantly Mode III (out-of-plane shear) stress during burial compression and subsequent deterioration. This specific stress mode occurs when opposing forces act parallel to each other but in different planes, creating a tearing effect particularly relevant to rolled manuscripts. We model the bamboo slip structure as consecutive fiber bundles <ref type="bibr">[18]</ref><ref type="bibr">[19]</ref><ref type="bibr">[20]</ref><ref type="bibr">[21]</ref>, where stress propagates from one bundle to another one (Figure <ref type="figure" target="#fig_0">2a</ref>). At the terminal point of each fractured fiber, a stress component K III continues to propagate <ref type="bibr">[22]</ref>, following the formula:</p><formula xml:id="formula_0">K III = √ 2πσ √ α,<label>(1)</label></formula><p>where σ represents the far-field shear force and α denotes the cumulative stress extension path length.</p><p>The stress field at the fracture propagation front σ yz (r, θ) can be described by:</p><formula xml:id="formula_1">σ yz (r, θ) = K III √ 2πr cos θ 2 ,<label>(2)</label></formula><p>where r is the radial distance from the fracture propagation front and θ is the angular position relative to the direction of stress propagation, as shown in Extended Figure <ref type="figure" target="#fig_5">E2b</ref>. This equation describes how the stress force decreases with distance from the fracture propagation front while also varying with direction.</p><p>For the xy plane of the writing surface, we develop a probabilistic model to describe how fracture propagates across consecutive fiber bundles. As illustrated in Extended Figure <ref type="figure" target="#fig_5">E2b</ref>, when a fracture reaches point P 2 at the end of fiber bundle f i-1 , it generates a stress field that determines the probable direction of continued fracture propagation into the next fiber bundle f i . The blue dotted circles emanating from point P 2 represent this stress field distribution, with point P 1 marking the beginning of the fracture on bundle f i-1 and point P 3 indicating the potential endpoint of the fracture on bundle f i . The stress field on the xy plane is described by:</p><formula xml:id="formula_2">σ xy (r, θ) = V xy • K III √ 2πr cos θ 2 ,<label>(3)</label></formula><p>where V xy is a dimensionless constant representing the projection of out-of-plane (Mode III) stress onto the writing surface plane, r is the radial distance from the fracture propagation front at point P 2 , and θ is the angular position in the stress field. This formulation accounts for bamboo's anisotropic fiber structure in translating three-dimensional stress into planar fracture propagation. The angles θ i-1 and θ i , measured relative to the horizontal axis, define the fracture directions in consecutive fiber bundles, with θ i = θ i-1 + ∆θ. The stress field determines the probability distribution of angle change ∆θ, which governs how the fracture direction transitions between fiber bundles. This probability density function can be expressed as:</p><formula xml:id="formula_3">p(∆θ|θ i-1 ) = V xy • K III • cos ∆θ 2 √ 2π(δ x cos(θ i-1 + ∆θ)) .<label>(4)</label></formula><p>By substituting K III = √ 2πσ √ α, we simplify the above equation to:</p><formula xml:id="formula_4">p(∆θ|θ i-1 ) = V xy • σ √ α • cos ∆θ 2 δ x cos(θ i-1 + ∆θ) .<label>(5)</label></formula><p>While V xy and σ are unmeasurable constants that scale the probability distribution, they do not affect the relative probabilities of different fracture paths. Once the fracture angle is determined, the initial vertical height relationship between adjacent fiber bundles follows:</p><formula xml:id="formula_5">y init i+1 -y init i = tan(θ i ) • δ x .<label>(6)</label></formula><p>This mathematical modeling enables us to construct a Markov chain-like model for fracture propagation, where each state represents a fiber bundle's initial front height y init i , and transitions between states are governed by the probability density function p(∆θ|θ i-1 ). This results in a physically plausible model that captures how Mode III stress-induced fracture propagates through bamboo's anisotropic structure, allowing us to generate diverse yet authentic synthetic fracture patterns that serve as the foundation for subsequent corrosion simulation to obtain the final degraded fracture curves.</p><p>Corrosion process simulation. After the initial fracture curves are generated, the bamboo slip fragments undergo long-term environmental degradation that significantly alters their original morphology. The degradation process of bamboo slip fragments is highly dependent on their geometric features, where sharp edges and protrusions are more susceptible to corrosion compared to smooth surfaces <ref type="bibr">[23,</ref><ref type="bibr">24]</ref>, even with identical perimeter lengths. This geometric dependency is primarily due to stress concentration at sharp points and increased surface area exposure to environmental factors <ref type="bibr">[23]</ref>. We observe that in archaeological samples, protruding areas of bamboo slip edges show significantly more deterioration than recessed areas, consistent with their greater environmental exposure. To mathematically capture this geometric dependency in our corrosion model, we employ the ReLU function to calculate the structural exposure area for each fiber bundle. We define the structural exposure area S i as:</p><formula xml:id="formula_6">S i = ReLU(y init i -y init i-1 ) + ReLU(y init i -y init i+1 ). (<label>7</label></formula><formula xml:id="formula_7">)</formula><p>The erosion process is then modeled by reducing the fiber height based on the structural exposure area and a corrosion rate coefficient c e . The final degraded height for the front of i-th fiber bundle y f inal i is given by:</p><formula xml:id="formula_8">y f inal i = y init i -(S i × c e ).<label>(8)</label></formula><p>This approach ensures that regions with higher geometric exposure experience accelerated degradation, accurately simulating how moisture and microorganisms propagate through the bamboo structure <ref type="bibr">[23]</ref><ref type="bibr">[24]</ref><ref type="bibr">[25]</ref>. To capture the progressive nature of long-term degradation, we implement an iterative corrosion process where the degradation is applied over multiple time steps, with each iteration representing a period of environmental exposure. The synchronized update mechanism ensures that all fiber heights are calculated based on the current state before updating to the next iteration, preventing cascade effects where early updates could disproportionately influence later calculations within the same corrosion cycle. This multi-step simulation accurately reflects the physical degradation process observed in actual bamboo slips, where environmental factors affect the entire surface concurrently rather than sequentially, ultimately generating realistic synthetic fragment pairs that capture both the initial fracture characteristics and their subsequent transformation through centuries of environmental exposure.</p><p>Parameter optimization. To ensure our physical model accurately reflects real bamboo slip characteristics, we develop a parameter optimization strategy driven by comparison between real and synthetic data distributions. We first select a set of 200 real fragment curves (set A) extracted from archaeological bamboo slips, which represent the final state after both fracture formation and corrosion processes, with curves characterized by their y f inal coordinates along the fragment curve. Concurrently, we generate a set of 200 simulated fragment curves (set B) using randomly initialized parameters in our physical model, where the synthetic fragments undergo the complete process from initial fracture generation (y init heights) through corrosion simulation to obtain final degraded curve profiles (y f inal heights). Both sets are subjected to t-SNE (t-Distributed Stochastic Neighbor Embedding) <ref type="bibr">[26]</ref> dimensionality reduction, projecting the high-dimensional curve data into a 2D space to facilitate comparison of their distributions. The silhouette score s for these reduced data sets is calculated as:</p><formula xml:id="formula_9">s(j) = b(j) -a(j) max{a(j), b(j)} ,<label>(9)</label></formula><p>where a(j) represents the mean distance between point j and all other points within its own set (either set of real fragments A or set of synthetic fragments B), and b(j) is the mean distance between point j and all points in the other set. A silhouette score approaching zero indicates that the boundary between real and synthetic data distributions becomes increasingly indistinguishable, suggesting optimal similarity between our simulated fragmented curves and actual archaeological fragments. To find the optimal set of parameters for our physical model, we employ a genetic algorithm <ref type="bibr">[27]</ref> with the fitness function F as:</p><formula xml:id="formula_10">F = 1 |s| + λ • diversity, (<label>10</label></formula><formula xml:id="formula_11">)</formula><p>where λ is a weight coefficient that balances optimization precision (minimizing silhouette score) with exploration capability (maintaining genetic diversity). The genetic algorithm manages a population of parameter configurations P = {p 1 , . . . , p n }, where each parameter set p i contains specific values for both fracture physics and corrosion simulation components of our model. During each optimization iteration, new candidate parameter sets are generated through controlled recombination:</p><formula xml:id="formula_12">p new = β • p 1 + (1 -β) • p 2 + ϵ,<label>(11)</label></formula><p>where p 1 and p 2 are parent parameter sets selected based on their fitness scores, β ∈ [0, 1] is a randomly generated crossover weight that varies with each recombination operation, and ϵ represents a small random mutation noise term added to maintain genetic diversity. This randomized crossover mechanism allows the algorithm to explore different combinations of parameter values while gradually converging towards configurations that produce simulated fracture patterns closely matching the real archaeological data <ref type="bibr">[27]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data preparation and augmentation</head><p>Fracture curve generation. Based on our analysis of Mode III (out-of-plane shear) stress-induced fracture mechanisms in bamboo slips <ref type="bibr">[28]</ref>, which typically occurs when rolled bamboo manuscripts experience perpendicular forces during burial and subsequent deterioration, we implement a probabilistic framework to generate initial fracture patterns. The generation process leverages Eq. ( <ref type="formula" target="#formula_4">5</ref>), Eq. ( <ref type="formula" target="#formula_5">6</ref>), and Eq. ( <ref type="formula" target="#formula_6">7</ref>) to construct a Markov chain-like structure, where each state represents the initial height y init i of i-th fiber bundle (Algorithm 1). This algorithm generates fracture curves that closely mimic the physical behavior of bamboo fiber bundles under stress. The probabilistic nature of the generation process, governed by the Probability Density Function (PDF) derived from stress field analysis in Eq. ( <ref type="formula" target="#formula_4">5</ref>), ensures that each generated curve exhibits realistic variations while maintaining the fundamental characteristics of bamboo slip fracture. These generated curves serve as the foundation for subsequent corrosion simulation.  Corrosion simulation. Building upon Eq. ( <ref type="formula" target="#formula_5">6</ref>), Eq. ( <ref type="formula" target="#formula_6">7</ref>) and Eq. ( <ref type="formula" target="#formula_8">8</ref>), we developed a multi-scale corrosion model that quantifies degradation based on the geometric exposure of individual fibers and their spatial relationships with adjacent fibers. The ReLU function effectively captures only the protruding portions that are more vulnerable to environmental degradation (Algorithm 2). Algorithm 2 implements a synchronized update mechanism where all fiber heights' expected changes are calculated first, and then all heights are updated simultaneously at each time step. This approach prevents cascade effects where early fiber updates could disproportionately influence later calculations within the same corrosion cycle. The number of iterations N c and corrosion rate c e are determined through parameter optimization to match observed degradation patterns in archaeological samples. This two-phase process -height calculation followed by simultaneous update -ensures that the corrosion simulation accurately reflects the physical degradation process observed in actual fragmented bamboo slips, where environmental factors affect the entire surface concurrently rather than sequentially. The algorithm transforms the initial fracture curves into realistic degraded fragments, completing the synthetic data generation pipeline.  </p><formula xml:id="formula_13">// Initialization P init ← new List() current x ← 0.0 current y init ← 0.0 current θ ← θinit Append (x0 = current x, y init 0 = current y init ) to P init i ← 0 // Iterative</formula><formula xml:id="formula_14">, y f inal 2 , . . . , y f inal N f ] // Initialization Y current ← copy(Y init ) // Start with initial heights N f ← length(Y current ) // Number of fiber bundles // Perform N iterations of corrosion for iteration from 1 to N do Y next ← new Array(N f ) for i from 1 to N f do ycurr ← Y current [i] if i &gt; 1 then yprev ← Y current [i -1] else yprev ← ycurr if i &lt; N f then ynext ← Y current [i + 1] else ynext ← ycurr //</formula><formula xml:id="formula_15">Y current ← Y next Y f inal ← Y current return Y f inal</formula><p>Parameter tuning through genetic algorithm. To ensure our physical model accurately reflects real bamboo slip characteristics, we developed a parameter optimization strategy driven by comparison between real and synthetic data distributions. The parameters in our physical model have physical interpretations that can be loosely connected to real-world properties <ref type="bibr">[29,</ref><ref type="bibr">30]</ref>, such as bamboo fiber structure, material characteristics, and environmental degradation factors. While these parameters are not direct measurements of physical properties, they collectively contribute to modeling the complex fracture and corrosion processes observed in archaeological bamboo slip fragments <ref type="bibr">[31,</ref><ref type="bibr">32]</ref>. We collect curves from real fragmented bamboo slips, which represent the final state after both fracture and corrosion processes, characterized by their y f inal coordinates along the fragment boundary. These curves undergo dimensionality reduction using t-SNE to create a reference distribution. Concurrently, we generate synthetic data using randomly initialized parameters and apply the same dimensionality reduction process. Our synthetic fragments undergo the complete physical simulation pipeline: starting with initial fracture generation to obtain y init coordinates, followed by corrosion simulation to produce final degraded profiles with y f inal coordinates that can be directly compared with real archaeological data. The optimization objective is to minimize the distributional difference between real and synthetic data, quantified by the silhouette coefficient in Eq. <ref type="bibr">(9)</ref>. Our genetic algorithm iteratively refines the parameter set by maintaining a population of parameter configurations P = {p 1 , . . . , p n }, where each p i contains parameters for both fracture and corrosion models <ref type="bibr">[27]</ref>. The visualization in Extended Figure <ref type="figure" target="#fig_2">E3</ref> confirms that optimizing these physical parameters directly improves the model's ability to identify correct fragment matches. The fitness function follows Eq. <ref type="bibr">(10)</ref>, which combines the silhouette score with a diversity term for balancing between distribution matching and population diversity. New parameter sets are generated through Eq. <ref type="bibr">(11)</ref>, where p 1 and p 2 are selected based on fitness scores, β is a random crossover weight, and ϵ represents mutation noise. The effectiveness of our parameter optimization approach is visually demonstrated in Extended Figure <ref type="figure" target="#fig_2">E3</ref>, where the distribution of synthetic data (blue points) progressively aligns with the real data distribution (green points) through iterations. The corresponding heatmap of matching quality shows stronger correlation patterns as the silhouette coefficient improves, validating our parameter optimization strategy <ref type="bibr">[33]</ref>. This optimization ensures that our synthetic fragments accurately capture both the initial fracture characteristics and the subsequent degradation patterns, enabling the deep learning model to learn features grounded in actual physical processes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>WisePanda architecture</head><p>Input representation. Each input to WisePanda consists of bamboo slip fragment curve data encoded as 64-dimensional vectors. We extract these vectors through a straightforward sampling process: after detecting and isolating the fracture curve from each fragment image, we normalize the curve length and sample 64 equidistant points along the curve from left to right. The resulting sequence of 64 heights capture the distinctive geometric profile of each fracture curve while providing a standardized input format for the following neural network. This fixed-dimensional representation ensures consistent processing across fragments of different sizes and complexities while preserving the key morphological features that distinguish potential matching pairs. Network design. The core of WisePanda's architecture is a TripletNet-based deep learning network designed for similarity learning between fragment pairs. The network processes triplets of fragments: an anchor sample c a (a fragmented curve), a positive sample c p (a matching fragment), and a negative sample c n (a non-matching fragment). Each branch of the TripletNet shares identical weights to maintain consistency in feature extraction, and comprises three key components: a local feature encoder that captures fine-grained geometric patterns using 1D convolutions, a self-attention mechanism for modeling long-range dependencies in the curve, and a cross-fragment attention module that learns to align corresponding patterns between potential matches <ref type="bibr">[34]</ref>. This network is trained using a triplet loss function:</p><formula xml:id="formula_16">L triplet = max(0, d(c a , c p ) -d(c a , c n ) + m),<label>(12)</label></formula><p>where d(c a , c p ) represents the distance between anchor and positive samples in the learned feature space, d(c a , c n ) is the distance between anchor and negative samples, and m is the margin parameter that enforces a minimum separation between matching and non-matching pairs. This loss function effectively guides the network to learn a feature space where matching fragments are pulled closer together while pushing non-matching fragments apart <ref type="bibr">[34]</ref>. The network outputs a similarity score within [0,1] for each potential match, where values closer to 1 indicate higher match probability.</p><p>Ranking mechanism. To facilitate archaeological fragment rejoining, WisePanda implements a rankingbased matching system that provides archaeologists with a manageable set of potential matches <ref type="bibr">[35,</ref><ref type="bibr">36]</ref>.</p><p>For each input fragment, the network computes similarity scores with all candidate fragments in the dataset. These scores are then sorted to generate a ranked list of the Top-k most probable matches, typically k = 50, significantly reducing the search space from thousands of possibilities to a practical subset for further manual verification. The ranking process is guided by the predicted similarity metric from our TripletNet network architecture. When a new fragment is presented, the system: 1) extracts the fracture curve and generates the 64-dimensional feature vector; 2) computes pair-wise similarity scores with existing fragments through the trained network; 3) ranks all candidates based on their similarity scores; and 4) returns the Top-k candidates with the highest matching probabilities. This approach transforms WisePanda from a theoretical matching model into a practical archaeological tool that effectively guides the rejoining process while involving human expertise in the final verification steps.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Training details</head><p>WisePanda was trained using two NVIDIA RTX 4090 GPUs with a batch size of 100. The network was trained using the Adam optimizer with an initial learning rate of 1e-3 and a one-cycle learning rate scheduler <ref type="bibr">[37]</ref>. We implemented a combined loss function that extends the concept of triplet loss to a more direct optimization objective:</p><formula xml:id="formula_17">L = E[(d pos -0) 2 + (d neg -1) 2 ] (<label>13</label></formula><formula xml:id="formula_18">)</formula><p>where d pos represents the distance between matching pairs (which we want to push toward 0) and d neg represents the distance between non-matching pairs (which we want to push toward 1). This squared error formulation provides smoother gradients compared to the standard triplet loss while maintaining the same conceptual goal of maximizing the separation between matching and non-matching fragments. We utilized PReLU activation functions for non-linear transformations, which adapt to the data by learning the optimal negative slope parameter rather than using a fixed value as in standard ReLU. The input fragmented curves were normalized by rescaling both x and y f inal coordinates to fall within the [0, 1] range before being sampled and fed into the network. The training process ran for 150 epochs to ensure convergence, with model parameters being updated approximately 100,000 times. To ensure reproducibility, model training was conducted with fixed random seeds. For inference, we employ an efficient ranking strategy where each fragment is compared with the entire database using the trained similarity metric. The matches are then sorted by matching probabilities to generate the Top-k recommendations for archaeological verification.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Baseline methods</head><p>To evaluate WisePanda's effectiveness, we compare it against three traditional methods widely used in fragment matching and curve alignment tasks.</p><p>Traditional curve matching baseline. The traditional curve matching approach employs dynamic time warping (DTW) <ref type="bibr">[38]</ref> to measure the geometric similarity between fragmented curves. This method directly compares the normalized (x, y f inal ) coordinate sequences of two fragments, characterizing their alignment cost as a measure of potential matching.</p><p>Scale Invariant Signature (SIS). SIS <ref type="bibr">[39]</ref> transforms fragmented curves into scale-invariant representations by computing local curvature features along the fragmented curve. This transformation generates signatures that are independent of fragment size and orientation, enabling comparison through simple distance metrics.</p><p>Fast Matching Method (FMM). FMM <ref type="bibr">[40]</ref> accelerates the matching process by decomposing fragmented curves into key geometric features and employing a hierarchical matching strategy. It first identifies potential matches using coarse features, then refines the results using more detailed geometric information.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Evaluation metrics</head><p>Top-k accuracy. To assess WisePanda's performance in bamboo slip rejoining, we employ the Top-k accuracy metric, which measures the percentage of correctly identified matches within the k highest-ranked suggestions. For each query fragment, a match is considered successful if the true matching fragment appears among the Top-k candidates proposed by the model. We report results for k ∈ 1, 5, 10, 20, 50, 100, providing a comprehensive view of the model's ranking capability at different thresholds of consideration. This metric directly reflects the system's practical utility in archaeological workflows, where experts typically examine a limited number of the most probable matches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Future work</head><p>While our current work demonstrates the effectiveness of physics-driven deep learning for fragmented bamboo slip rejoining, several promising directions remain for future exploration. First, our present approach primarily addresses transverse fractures, which account for approximately 70% of bamboo slip breakages. Extending WisePanda to handle longitudinal fractures (Figure <ref type="figure" target="#fig_3">E1</ref>)-which occur along the fiber direction and produce distinctly different breakage patterns-represents an important next step. For these longitudinal fractures, where the straight physical breakage features are less distinctive, focusing on text continuity and character alignment would be more effective than attempting to model the physical fracture properties. This would entail developing complementary methods that leverage optical character recognition and textual coherence to guide the matching process when geometric features alone are insufficient.</p><p>Beyond bamboo slips, the methodology established in this work opens avenues for broader applications in archaeological artifact restoration. Particularly promising is the extension to pottery and ceramic fragment matching, where material properties and degradation processes differ significantly from bamboo. Ceramics exhibit distinctive fracture mechanics governed by brittleness, firing conditions, and microstructure, which could be modeled using adaptations of our physics-driven approach. The translational potential of our framework to these domains could significantly advance digital archaeology tools across diverse cultural heritage contexts.</p><p>From a methodological perspective, integrating expert knowledge more deeply into the learning process presents another promising direction. Future systems might implement active learning paradigms where archaeologist feedback continuously refines the rejoining models, creating a virtuous cycle of human-AI collaboration. Additionally, exploring self-supervised or few-shot learning approaches could further reduce the dependence on synthetic data, potentially capturing even more nuanced aspects of artifact deterioration that are challenging to model explicitly.</p><p>These future directions share a common goal: bridging the gap between physical understanding and computational methods in cultural heritage preservation. By continuing to combine domain-specific physical principles with advanced machine learning techniques, we envision creating increasingly powerful tools that amplify rather than replace human expertise in the vital work of preserving and understanding our shared cultural past.   These results validate the physics-driven approach's practical value for large-scale bamboo slip fragment rejoining.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Physics-driven modeling of bamboo slip fracture and deterioration. a, The breakage process of bamboo slips showing how fracture propagates across the bamboo's fiber structure, with the resulting irregular curve composed of black line segments and the corresponding stress field distribution (blue gradient). b, Detailed stress field model illustrating the mathematical relationship between the fracture angles (θ i-1 , θ i ) and the stress propagation in the x-y coordinate system, where the blue dotted circles represent the stress field emanating from the fracture endpoint, showing how stress radiates outward and concentrates at fiber boundaries. c, Time-sequential simulation of the corrosion process, demonstrating how the original fracture pattern (left) changes through environmental exposure (middle) to produce the final deteriorated curve morphologies (right), with protruding areas experiencing accelerated degradation. d, Collection of real bamboo slip fracture curves extracted from archaeological samples, exhibiting diverse breakage patterns that serve as reference for model validation. e, Synthetically generated fracture curves produced by our physics-driven model, displaying morphological characteristics highly similar to the real samples in panel d. This approach enables the generation of extensive paired training data that captures both the physical properties of bamboo fragmentation and the effects of long-term degradation, effectively addressing the data scarcity challenge inherent in ancient artifact restoration.</figDesc><graphic coords="4,82.33,342.01,423.98,202.10" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Framework of WisePanda integrating physics-driven deep learning for bamboo slip rejoining.The workflow diagram illustrates the complete pipeline of our system. The process begins with input bamboo slip fragments (top row), where the target fragment is highlighted in pink. In the physical model stage, we implement two key components: a physics-driven fracture engine that generates initial breakage patterns, and a corrosion simulation modifier that replicates long-term degradation effects. The dimensionality reduction module (center) enables comparison between real and synthetic fragments through statistical visualization techniques, facilitating parameter optimization to ensure realistic fracture simulation. The optimized physical model feeds into the training pair synthesizer, which generates matching fragment pairs for training the matching network. This matching network learns to effectively represent and compare fragment curves through a multi-layer architecture with specialized embedding capabilities. During inference (red arrows), the system compares the target fragment against all candidates, producing a ranked list of potential matches (bottom row). The ranking transforms thousands of possible matches into a manageable set, with the system highlighting the most probable candidates (position 5 shown in pink represents a correct match). This approach enables archaeologists to focus their verification efforts on the most promising candidates, significantly accelerating the traditionally time-consuming rejoining process.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Algorithm 1 :</head><label>1</label><figDesc>Physics-Driven Fracture Pattern Generation Input : δx: Width of each fiber bundle N f : Number of vertically aligned fiber bundles θinit: Initial fracture angle at (x0, y0) = (0, 0) Output: P init = [(x0, y init 0 ), (x1, y init 1 ), . . .]</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Algorithm 2 : 1 , y init 2 ,</head><label>212</label><figDesc>Multi-Step Corrosion SimulationInput : Y init : Array of initial fiber heights [y init . . . , y init N f ] N : Number of corrosion simulation iterations N f : Number of vertically aligned fiber bundles ce: Corrosion rate coefficient Output: Y f inal : Array of fiber bundle heights after N iterations [y f inal 1</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure E2 :</head><label>E2</label><figDesc>FigureE2: Physics-driven model of bamboo fracture propagation. a, Bamboo microstructure showing vertical fiber bundles (red blocks) and a possible fracture path (composed of dotted black segments) traversing across fibers. The black arrows indicate shear forces (σ ∞ Z + ) inducing Mode III fracture. b, Bamboo fracture modeling with stress field propagation between fibers. Points P 1 , P 2 , and P 3 represent left fracture height on consecutive fibers f i-1 , f i and f i+1 , with angles θ i-1 and θ i showing fracture directions of fibers f i-1 and f i . Blue dotted circles illustrate the stress field emanating from point P 2 , determining the probability distribution of potential fracture paths.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure E5 :</head><label>E5</label><figDesc>FigureE5: Practical application of WisePanda. a, WisePanda software interface showing two successful matching cases: target bamboo slip fragments with their corresponding matching results, demonstrating the system's verification capabilities. b, Efficiency comparison between WisePanda-assisted and traditional manual matching across five test cases. The table records query (top fragment) and result fragments, system recommendation rank, and time measurements for both methods. WisePanda reduces average matching time from 326.49 to 15.03 seconds-approximately a 20-fold efficiency improvement. These results validate the physics-driven approach's practical value for large-scale bamboo slip fragment rejoining.</figDesc><graphic coords="24,90.21,198.96,194.74,116.36" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="2,72.00,72.00,451.28,276.11" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="23,77.17,74.50,441.94,265.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 :</head><label>1</label><figDesc>Comparison of fragment matching methods across different test scenarios</figDesc><table><row><cell></cell><cell>Method</cell><cell>Top-1(%)</cell><cell>Top-5(%)</cell><cell cols="4">Top-10(%) Top-20(%) Top-50(%) Top-100(%)</cell></row><row><cell>Bamboo236</cell><cell>Manual Random Search DTW [42] FMM [43] SIS [44] WisePanda</cell><cell>0.80 7.20 8.90 10.59 12.29</cell><cell>4.22 22.46 18.64 22.03 35.17</cell><cell>8.40 30.93 26.27 30.93 52.54</cell><cell>17.00 49.58 38.14 47.03 69.07</cell><cell>42.30 75.42 65.25 72.88 94.07</cell><cell>-----</cell></row><row><cell>Bamboo1350</cell><cell>Manual Random Search DTW [42] FMM [43] SIS [44] WisePanda</cell><cell>0.08 3.81 6.36 7.20 5.93</cell><cell>0.44 12.29 11.44 15.25 18.22</cell><cell>0.89 14.41 13.14 19.07 24.58</cell><cell>1.79 20.34 16.10 24.15 37.29</cell><cell>4.48 32.20 25.00 36.02 52.54</cell><cell>8.97 37.71 33.47 48.73 66.10</cell></row><row><cell></cell><cell>DTW [42][Wood670]</cell><cell>2.69</cell><cell>6.72</cell><cell>11.04</cell><cell>15.82</cell><cell>23.43</cell><cell>28.51</cell></row><row><cell>Wood</cell><cell>FMM [43][Wood670] SIS [44][Wood670] WisePanda[Wood670]</cell><cell>2.24 2.24 1.94</cell><cell>6.72 7.91 10.00</cell><cell>9.25 10.75 17.31</cell><cell>13.28 15.22 25.22</cell><cell>21.94 23.43 32.99</cell><cell>27.61 27.91 35.22</cell></row><row><cell></cell><cell>WisePanda[Wood3833]</cell><cell>1.19</cell><cell>2.84</cell><cell>5.67</cell><cell>9.25</cell><cell>15.67</cell><cell>19.85</cell></row></table><note><p>Results show Top-k matching accuracy (percentage of correctly identified matches within the top k candidates) across bamboo and wooden slip datasets. The original bamboo test set (Bamboo236) contains 118 paired fragments, while the expanded dataset (Bamboo1350) expands the candidate pool with 1,114 additional interference fragments. Similarly, for wooden slips, we compare performance on the original test set (Wood670) and an expanded dataset (Wood3833). As demonstrated in Extended Figure</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head></head><label></label><figDesc>generation across the width while i &lt; N f do // Sample the change in angle based on Eq.</figDesc><table><row><cell>(5)</cell></row><row><cell>∆θ ← SampleAngleChange(current θ)</cell></row><row><cell>// Calculate next state</cell></row><row><cell>next θ ← current θ + ∆θ</cell></row><row><cell>∆y init ← tan(next θ) × δx</cell></row><row><cell>next y init ← current y init + ∆y init</cell></row><row><cell>next x ← (i + 1) × δx</cell></row><row><cell>// Update current state for next iteration</cell></row><row><cell>current x ← next x</cell></row><row><cell>current y</cell></row></table><note><p>init ← next y init current θ ← next θ i ← i + 1 // Record the new point Append (xi = current x, y init i = current y init ) to P init return P init</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head></head><label></label><figDesc>Calculate structural exposure using ReLU(x) = max(0, x) exposure ← max(0, ycurr -yprev) + max(0, ycurr -ynext) // Calculate height after erosion eroded height ← ycurr -(exposure × ce) // Store result for the next state Y next [i] ← eroded height // Update the current state simultaneously for the next iteration</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Query fragment Result fragment Rank Software search time Manual rejoining time</head><label></label><figDesc></figDesc><table><row><cell>a</cell><cell>b</cell><cell></cell></row><row><cell></cell><cell>4</cell><cell>16.95s</cell><cell>322.05s</cell></row><row><cell></cell><cell>1</cell><cell>8.66s</cell><cell>129.90s</cell></row><row><cell></cell><cell>6</cell><cell>13.5s</cell><cell>337.50s</cell></row><row><cell></cell><cell>2</cell><cell>12.72s</cell><cell>256.76s</cell></row><row><cell></cell><cell>8</cell><cell>23.33s</cell><cell>586.25s</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability</head><p>The datasets used for training and evaluation are publicly available at GitHub https://github.com/ zhujinchi/wisepanda under Apache License 2.0. The repository includes fragment matching datasets: Bamboo236 (118 paired bamboo fragments), Wood670 (335 paired wooden fragments), and their extended versions Bamboo1350 and Wood3833 with additional 1,114 and 3,163 interference fragments respectively. Due to confidentiality requirements for unpublished archaeological materials, the original high-resolution fragment images cannot be released. Instead, the repository provides fracture curves, cropped edge images, and synthetic training data generated by our physics-driven model. The complete data processing workflow for extracting fracture curves from archaeological fragments and generating synthetic paired data is included in the codebase. All morphological features and curve data necessary for reproducing the fragment matching experiments are available in the repository.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Code availability</head><p>The source code for WisePanda framework is publicly available on GitHub at https://github.com/ zhujinchi/wisepanda under Apache License 2.0. The repository contains the implementation of our physics-driven deep learning model for bamboo slip fragment rejoining, including the fracture modeling algorithms, corrosion simulation processes, neural network architecture, and user interface. Users can install the required dependencies by following the installation instructions provided in the repository. The codebase is designed to be accessible to researchers, featuring an intuitive graphical user interface for fragment selection, comparison, and verification with integrated AI assistance. Additionally, we have established a project website at https://wisepanda.tech/ that provides demonstration videos, visual examples, and detailed documentation of the fragment rejoining and visualization tools discussed in this paper. This open-source release aims to facilitate further research in digital archaeology and enable the application of our methods to other types of archaeological fragment rejoining challenges.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Competing interests</head><p>The authors declare no competing interests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>J.Z. and Y.X. conceived the study. H.L., X.W., J.L.L. and J.L. provided archaeological data and domain knowledge. J.Z. and Z.Z performed experiments, analyzed data, wrote the code and manuscript. J.Z., Q.T. and J.S. contributed to the literature review and software implementation. G.X. participated in methodology discussions and manuscript organization. B.D. participated in methodology discussions, data analysis, and manuscript editing. Y.X. participated in methodology discussions, experimental design, manuscript organization and revision. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Buried Ideas</title>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Allan</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/9781438457796</idno>
+		<imprint>
+			<date type="published" when="2015-10-21">2015</date>
+			<publisher>SUNY Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Approaching the Tsinghua Bamboo Slips</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francis</forename><surname>Taylor</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">From Bamboo Slips to Received Versions: Common Features in the Transformation of the&quot; Laozi</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Harv. J. Asiat. Stud</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page" from="337" to="382" />
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Formulaic Structure of Chu Divinatory Bamboo Slips</title>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Ling</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0362502800005010</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Early China</title>
+		<title level="j" type="abbrev">Early China</title>
+		<idno type="ISSN">0362-5028</idno>
+		<idno type="ISSNe">2325-2324</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page" from="71" to="86" />
+			<date type="published" when="1990">1990</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A brief explanation of the Chu bamboo slips Hengxian</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Front. Philos. China</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="418" to="431" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Johnson</surname></persName>
+		</author>
+		<title level="m">Archaeological theory: an introduction</title>
+		<imprint>
+			<publisher>John Wiley &amp; Sons</publisher>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Identifying designs from incomplete, fragmented cultural heritage objects by curvepattern matching</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Electron. Imaging</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="11022" to="011022" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Shuihudi</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mu</forename><surname>Zhujian</surname></persName>
+		</author>
+		<editor>ed Group, S. Q. T. B. S. C.</editor>
+		<imprint>
+			<date type="published" when="1990">1990</date>
+			<publisher>Wenwu Chubanshe (Cultural Relics Publishing House</publisher>
+			<pubPlace>Beijing</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Shui hu di qin mu zhu jian. Title translates to: Bamboo Slips from the Qin Tomb at Shuihudi. [in Chinese</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Micromorphological and chemical aspects of archaeological bamboos under long-term waterlogged condition</title>
+		<author>
+			<persName><forename type="first">Mi</forename><forename type="middle">Young</forename><surname>Cha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kwang</forename><forename type="middle">Ho</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoon</forename><forename type="middle">Soo</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ibiod.2013.08.008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Biodeterioration &amp; Biodegradation</title>
+		<title level="j" type="abbrev">International Biodeterioration &amp; Biodegradation</title>
+		<idno type="ISSN">0964-8305</idno>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="115" to="121" />
+			<date type="published" when="2014-01">2014</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Deep learning</title>
+		<author>
+			<persName><forename type="first">Yann</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><surname>Hinton</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature14539</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">521</biblScope>
+			<biblScope unit="issue">7553</biblScope>
+			<biblScope unit="page" from="436" to="444" />
+			<date type="published" when="2015-05-27">2015</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Restoring and attributing ancient texts using deep neural networks</title>
+		<author>
+			<persName><forename type="first">Yannis</forename><surname>Assael</surname></persName>
+			<idno type="ORCID">0000-0001-7408-3847</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thea</forename><surname>Sommerschield</surname></persName>
+			<idno type="ORCID">0000-0002-6965-8105</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Shillingford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahyar</forename><surname>Bordbar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Pavlopoulos</surname></persName>
+			<idno type="ORCID">0000-0001-9188-7425</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marita</forename><surname>Chatzipanagiotou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ion</forename><surname>Androutsopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Prag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nando</forename><surname>De Freitas</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-022-04448-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">603</biblScope>
+			<biblScope unit="issue">7900</biblScope>
+			<biblScope unit="page" from="280" to="283" />
+			<date type="published" when="2022-03-09">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Mastering the game of Go without human knowledge</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Silver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julian</forename><surname>Schrittwieser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Simonyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Antonoglou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aja</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arthur</forename><surname>Guez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Hubert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucas</forename><surname>Baker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adrian</forename><surname>Bolton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yutian</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><surname>Lillicrap</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Hui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Sifre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Van Den Driessche</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thore</forename><surname>Graepel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Demis</forename><surname>Hassabis</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature24270</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">550</biblScope>
+			<biblScope unit="issue">7676</biblScope>
+			<biblScope unit="page" from="354" to="359" />
+			<date type="published" when="2017-10">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Improved protein structure prediction using potentials from deep learning</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Senior</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">577</biblScope>
+			<biblScope unit="page" from="706" to="710" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Highly accurate protein structure prediction with AlphaFold</title>
+		<author>
+			<persName><forename type="first">John</forename><surname>Jumper</surname></persName>
+			<idno type="ORCID">0000-0001-6169-6580</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Pritzel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Green</surname></persName>
+			<idno type="ORCID">0000-0002-3227-1505</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Figurnov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olaf</forename><surname>Ronneberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kathryn</forename><surname>Tunyasuvunakool</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Russ</forename><surname>Bates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Augustin</forename><surname>Žídek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Potapenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Bridgland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clemens</forename><surname>Meyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">A A</forename><surname>Kohl</surname></persName>
+			<idno type="ORCID">0000-0003-4271-4418</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">J</forename><surname>Ballard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Cowie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernardino</forename><surname>Romera-Paredes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stanislav</forename><surname>Nikolov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rishub</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonas</forename><surname>Adler</surname></persName>
+			<idno type="ORCID">0000-0001-9928-3407</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Trevor</forename><surname>Back</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stig</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Reiman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ellen</forename><surname>Clancy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michal</forename><surname>Zielinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Steinegger</surname></persName>
+			<idno type="ORCID">0000-0001-8781-9753</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michalina</forename><surname>Pacholska</surname></persName>
+			<idno type="ORCID">0000-0002-2160-6226</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tamas</forename><surname>Berghammer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Bodenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Silver</surname></persName>
+			<idno type="ORCID">0000-0002-5197-2892</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Oriol</forename><surname>Vinyals</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">W</forename><surname>Senior</surname></persName>
+			<idno type="ORCID">0000-0002-2401-5691</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Koray</forename><surname>Kavukcuoglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pushmeet</forename><surname>Kohli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Demis</forename><surname>Hassabis</surname></persName>
+			<idno type="ORCID">0000-0003-2812-9917</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-021-03819-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">596</biblScope>
+			<biblScope unit="issue">7873</biblScope>
+			<biblScope unit="page" from="583" to="589" />
+			<date type="published" when="2021-07-15">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Cooperative AI: machines must learn to find common ground</title>
+		<author>
+			<persName><forename type="first">Allan</forename><surname>Dafoe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoram</forename><surname>Bachrach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gillian</forename><surname>Hadfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Horvitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kate</forename><surname>Larson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thore</forename><surname>Graepel</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/d41586-021-01170-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">593</biblScope>
+			<biblScope unit="issue">7857</biblScope>
+			<biblScope unit="page" from="33" to="36" />
+			<date type="published" when="2021-05-04">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Scaling deep learning for materials discovery</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Merchant</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="volume">624</biblScope>
+			<biblScope unit="page" from="80" to="85" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A multimodal generative AI copilot for human pathology</title>
+		<author>
+			<persName><forename type="first">Ming</forename><forename type="middle">Y</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><forename type="middle">F K</forename><surname>Williamson</surname></persName>
+			<idno type="ORCID">0000-0003-1745-8846</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-0389-1331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aaron</forename><forename type="middle">K</forename><surname>Chow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenji</forename><surname>Ikemura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ahrong</forename><surname>Kim</surname></persName>
+			<idno type="ORCID">0000-0003-2317-8920</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dimitra</forename><surname>Pouli</surname></persName>
+			<idno type="ORCID">0000-0003-0890-9326</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ankush</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amr</forename><surname>Soliman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengkuan</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Judy</forename><forename type="middle">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Gerber</surname></persName>
+			<idno type="ORCID">0000-0002-9149-5509</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ivy</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><forename type="middle">Phi</forename><surname>Le</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anil</forename><forename type="middle">V</forename><surname>Parwani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><forename type="middle">L</forename><surname>Weishaupt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faisal</forename><surname>Mahmood</surname></persName>
+			<idno type="ORCID">0000-0001-7587-1562</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-024-07618-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">634</biblScope>
+			<biblScope unit="issue">8033</biblScope>
+			<biblScope unit="page" from="466" to="473" />
+			<date type="published" when="2024-06-12">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A foundation model for the Earth system</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bodnar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="8" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Machine Learning Arrives in Archaeology</title>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">H</forename><surname>Bickler</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/aap.2021.6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Archaeological Practice</title>
+		<title level="j" type="abbrev">Adv. archaeol. pract.</title>
+		<idno type="ISSNe">2326-3768</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="186" to="191" />
+			<date type="published" when="2021-05">2021</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Recognition of Oracle Bone Inscriptions Using Deep Learning based on Data Augmentation</title>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naoki</forename><surname>Kamitoku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katsuhiro</forename><surname>Yamazaki</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/metroarchaeo43810.2018.9089769</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 Metrology for Archaeology and Cultural Heritage (MetroArchaeo)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-10">2018</date>
+			<biblScope unit="page" from="33" to="38" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Data-driven oracle bone rejoining: A dataset and practical self-supervised learning scheme</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. ACM SIGKDD Int. Conf. Knowledge Discovery Data Mining</title>
+		<meeting>ACM SIGKDD Int. Conf. Knowledge Discovery Data Mining</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="4482" to="4492" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Globally consistent reconstruction of ripped-up documents</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Hu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. on Pattern Anal. and Mach. Intell</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Reunion helper: an edge matcher for sibling fragment identification of the Dunhuang manuscript</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Weng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Heritage Science</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">52</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Investigation into the deterioration process of archaeological bamboo strips of China from four different periods by chemical and anatomical analysis</title>
+		<author>
+			<persName><forename type="first">M.-Y</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Polym. Degrad. Stab</title>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="page" from="71" to="78" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Review of computer-based methods for archaeological ceramic sherds reconstruction</title>
+		<author>
+			<persName><forename type="first">Dariush</forename><surname>Eslami</surname></persName>
+			<idno type="ORCID">0000-0001-5876-4386</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Di Angelo</surname></persName>
+			<idno type="ORCID">0000-0002-5341-0500</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Di Stefano</surname></persName>
+			<idno type="ORCID">0000-0001-5003-2084</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>Pane</surname></persName>
+			<idno type="ORCID">0000-0002-6499-5241</idno>
+		</author>
+		<idno type="DOI">10.4995/var.2020.13134</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Virtual Archaeology Review</title>
+		<title level="j" type="abbrev">Virtual archaeol. rev.</title>
+		<idno type="ISSNe">1989-9947</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page">34</biblScope>
+			<date type="published" when="2020-07-08">2020</date>
+			<publisher>Universitat Politecnica de Valencia</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Novel method for virtual restoration of cultural relics with complex geometric structure based on multiscale spatial geometry</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ISPRS Int. J. Geo-Inf</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">353</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Anderson</surname></persName>
+		</author>
+		<title level="m">Fracture mechanics: fundamentals and applications</title>
+		<imprint>
+			<publisher>CRC press</publisher>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Mechanical properties of functionally graded hierarchical bamboo structures</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Biomater</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="3796" to="3803" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">A review on bamboo fiber reinforced composites and their potential applications</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Behera</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Emergent Mater</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="157" to="172" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">State-of-the-art review on research and application of original bamboo-based composite components in structural engineering</title>
+		<author>
+			<persName><forename type="first">Zhihua</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yansheng</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaodun</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.istruc.2021.11.059</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Structures</title>
+		<title level="j" type="abbrev">Structures</title>
+		<idno type="ISSN">2352-0124</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="1010" to="1029" />
+			<date type="published" when="2022-01">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">The structure and mechanics of Moso bamboo material</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Dixon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Gibson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. R. Soc. Interface</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">20140321</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Investigation of the effect of inhomogeneous material on the fracture mechanisms of bamboo by finite element method</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramful</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sakuma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Materials</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">5039</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Fracture modes of bamboo fiber bundles in three-point bending</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cellulose</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="8101" to="8108" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Investigation of the transverse fracture mechanisms of bamboo by the finite element method</title>
+		<author>
+			<persName><forename type="first">Raviduth</forename><surname>Ramful</surname></persName>
+			<idno type="ORCID">0000-0001-8650-6552</idno>
+		</author>
+		<idno type="DOI">10.1007/s10853-022-07041-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Materials Science</title>
+		<title level="j" type="abbrev">J Mater Sci</title>
+		<idno type="ISSN">0022-2461</idno>
+		<idno type="ISSNe">1573-4803</idno>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="6233" to="6248" />
+			<date type="published" when="2022-03">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Assessment of deterioration in archaeological wood from ancient Egypt</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Blanchette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Haight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Koestler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Hatchfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Arnold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Am. Inst. Conserv</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="55" to="70" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Genetic algorithms in search, optimization, and machine learning</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Goldberg</surname></persName>
+		</author>
+		<idno type="DOI">10.5860/choice.27-0936</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Choice Reviews Online</title>
+		<title level="j" type="abbrev">Choice Reviews Online</title>
+		<idno type="ISSN">0009-4978</idno>
+		<idno type="ISSNe">1523-8253</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">02</biblScope>
+			<biblScope unit="page">27-0936-27-0936</biblScope>
+			<date type="published" when="1989-10-01">1989</date>
+			<publisher>American Library Association</publisher>
+			<pubPlace>Reading, MA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Visualizing data using t-SNE</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Van Der Maaten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Deep metric learning using triplet network</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Hoffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ailon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Worksh. on Simil.-Based Pattern Recognit</title>
+		<meeting>Int. Worksh. on Simil.-Based Pattern Recognit</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="84" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">D2D: Keypoint Extraction with Describe to Detect Approach</title>
+		<author>
+			<persName><forename type="first">Yurun</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vassileios</forename><surname>Balntas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tony</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Axel</forename><surname>Barroso-Laguna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiannis</forename><surname>Demiris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Krystian</forename><surname>Mikolajczyk</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-69535-4_14</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<title level="s">Proc. of Adv. Neural Inf. Process. Syst.</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="223" to="240" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Learning how to match fresco fragments</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Funkhouser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hijung</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Toler-Franklin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><forename type="middle">García</forename><surname>Castañeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benedict</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Dobkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szymon</forename><surname>Rusinkiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Weyrich</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2037820.2037824</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal on Computing and Cultural Heritage</title>
+		<title level="j" type="abbrev">J. Comput. Cult. Herit.</title>
+		<idno type="ISSN">1556-4673</idno>
+		<idno type="ISSNe">1556-4711</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2011-11">2011</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Tools for Virtual Reassembly of Fresco Fragments</title>
+		<author>
+			<persName><forename type="first">Benedict</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lara</forename><surname>Laken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>Dutré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luc</forename><surname>Van Gool</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szymon</forename><surname>Rusinkiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Weyrich</surname></persName>
+		</author>
+		<idno type="DOI">10.1260/2047-4970.1.2.313</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Heritage in the Digital Era</title>
+		<title level="j" type="abbrev">International Journal of Heritage in the Digital Era</title>
+		<idno type="ISSN">2047-4970</idno>
+		<idno type="ISSNe">2047-4989</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="313" to="329" />
+			<date type="published" when="2012-06">2012</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Using dynamic time warping to find patterns in time series</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Berndt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Clifford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. ACM SIGKDD Int. Conf. Knowl. Discov. Data Min</title>
+		<meeting>ACM SIGKDD Int. Conf. Knowl. Discov. Data Min</meeting>
+		<imprint>
+			<date type="published" when="1994">1994</date>
+			<biblScope unit="page" from="359" to="370" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Curve Matching Using the Fast Marching Method</title>
+		<author>
+			<persName><forename type="first">Max</forename><surname>Frenkel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronen</forename><surname>Basri</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-540-45063-4_3</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="page" from="35" to="51" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Differential and Numerically Invariant Signature Curves Applied to Object Recognition</title>
+		<author>
+			<persName><forename type="first">Eugenio</forename><surname>Calabi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">J</forename><surname>Olver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chehrzad</forename><surname>Shakiban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Allen</forename><surname>Tannenbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><surname>Haker</surname></persName>
+		</author>
+		<idno type="DOI">10.1023/a:1007992709392</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computer Vision</title>
+		<title level="j" type="abbrev">International Journal of Computer Vision</title>
+		<idno type="ISSN">0920-5691</idno>
+		<idno type="ISSNe">1573-1405</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="107" to="135" />
+			<date type="published" when="1998-02">1998</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Fiber texture and mechanical graded structure of bamboo</title>
+		<author>
+			<persName><forename type="first">Shigeyasu</forename><surname>Amada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshinobu</forename><surname>Ichikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tamotsu</forename><surname>Munekata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yukito</forename><surname>Nagase</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroyuki</forename><surname>Shimizu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s1359-8368(96)00020-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Composites Part B: Engineering</title>
+		<title level="j" type="abbrev">Composites Part B: Engineering</title>
+		<idno type="ISSN">1359-8368</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="13" to="20" />
+			<date type="published" when="1997-01">1997</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Mapping the structure, composition and mechanical properties of bamboo</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">M</forename><surname>Low</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">Y</forename><surname>Che</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">A</forename><surname>Latella</surname></persName>
+		</author>
+		<idno type="DOI">10.1557/jmr.2006.0238</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Materials Research</title>
+		<title level="j" type="abbrev">J. Mater. Res.</title>
+		<idno type="ISSN">0884-2914</idno>
+		<idno type="ISSNe">2044-5326</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="1969" to="1976" />
+			<date type="published" when="2006-08-01">2006</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Ancient Chinese Scrolls as Evolving Entities: Implications for Reconstruction and Description</title>
+		<author>
+			<persName><forename type="first">Thies</forename><surname>Staack</surname></persName>
+			<idno type="ORCID">0000-0001-7989-5836</idno>
+		</author>
+		<idno type="DOI">10.1163/24689246-20230035</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bamboo and Silk</title>
+		<title level="j" type="abbrev">Bamboo Silk</title>
+		<idno type="ISSN">2468-9238</idno>
+		<idno type="ISSNe">2468-9246</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="296" to="328" />
+			<date type="published" when="1900">1900-2010. 2016</date>
+			<publisher>Walter de Gruyter GmbH</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Damage of bamboo and wooden materials based on linear elastic fracture mechanics in garden design</title>
+		<author>
+			<persName><forename type="first">Tang</forename><surname>Haiyan</surname></persName>
+		</author>
+		<idno type="DOI">10.3221/igf-esis.35.53</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frattura ed Integrità Strutturale</title>
+		<idno type="ISSNe">1971-8993</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">35</biblScope>
+			<biblScope unit="page" from="472" to="480" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Gruppo Italiano Frattura</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">The pivotal role of microscopy in unravelling the nature of microbial deterioration of waterlogged wood: A review</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Möller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Chavan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">S</forename><surname>Kim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Forests</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">889</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note>References -Methods</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Identifying designs from incomplete, fragmented cultural heritage objects by curve-pattern matching</title>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haozhou</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Colin</forename><surname>Wilder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongkai</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Song</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/1.jei.26.1.011022</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Electronic Imaging</title>
+		<title level="j" type="abbrev">J. Electron. Imaging</title>
+		<idno type="ISSN">1017-9909</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">011022</biblScope>
+			<date type="published" when="2017-01-05">2017</date>
+			<publisher>SPIE-Intl Soc Optical Eng</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">A multi feature fusion method for reassembly of 3D cultural heritage artifacts</title>
+		<author>
+			<persName><forename type="first">Yuhe</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoxue</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shunli</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guohua</forename><surname>Geng</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.culher.2018.03.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cultural Heritage</title>
+		<title level="j" type="abbrev">Journal of Cultural Heritage</title>
+		<idno type="ISSN">1296-2074</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="191" to="200" />
+			<date type="published" when="2018-09">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Role of Artificial Intelligence in Preservation of Culture and Heritage</title>
+		<author>
+			<persName><forename type="first">Bishwa</forename><forename type="middle">Ranjan</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hima</forename><forename type="middle">Bindu</forename><surname>Maringanti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niladri</forename><forename type="middle">Sekhar</forename><surname>Dash</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9781003332183-16</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Digitalization of Culture Through Technology</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2022-09-01">2022</date>
+			<biblScope unit="page" from="92" to="97" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Exploring the Path of Intangible Cultural Heritage and Protection Promoted by Artificial Intelligence: Taking the Eight Wonders of Yanjing as an Example</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tsatsanashvili</surname></persName>
+		</author>
+		<idno type="DOI">10.23977/jaip.2024.070409</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Artificial Intelligence Practice</title>
+		<title level="j" type="abbrev">jaip</title>
+		<idno type="ISSN">2371-8315</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="163" to="178" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Clausius Scientific Press, Inc.</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Re-assembling the past: The RePAIR dataset and benchmark for real world 2D and 3D puzzle solving</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tsesmelis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. of Adv. Neural Inf. Process. Syst</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="30076" to="30105" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Restoring and attributing ancient texts using deep neural networks</title>
+		<author>
+			<persName><forename type="first">Yannis</forename><surname>Assael</surname></persName>
+			<idno type="ORCID">0000-0001-7408-3847</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thea</forename><surname>Sommerschield</surname></persName>
+			<idno type="ORCID">0000-0002-6965-8105</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Brendan</forename><surname>Shillingford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahyar</forename><surname>Bordbar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Pavlopoulos</surname></persName>
+			<idno type="ORCID">0000-0001-9188-7425</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marita</forename><surname>Chatzipanagiotou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ion</forename><surname>Androutsopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Prag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nando</forename><surname>De Freitas</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-022-04448-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">603</biblScope>
+			<biblScope unit="issue">7900</biblScope>
+			<biblScope unit="page" from="280" to="283" />
+			<date type="published" when="2022-03-09">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Reunion helper: an edge matcher for sibling fragment identification of the Dunhuang manuscript</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Weng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Heritage Science</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">52</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">LLMCO4MR: LLMs-Aided Neural Combinatorial Optimization for Ancient Manuscript Restoration from Fragments with Case Studies on Dunhuang</title>
+		<author>
+			<persName><forename type="first">Yuqing</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0009-0004-7205-761X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hangqi</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0009-0003-8348-2331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shengyu</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-0030-8289</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Runzhong</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-9566-738X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Baoyi</forename><surname>He</surname></persName>
+			<idno type="ORCID">0000-0001-7404-2009</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Huaiyong</forename><surname>Dou</surname></persName>
+			<idno type="ORCID">0000-0002-9499-3394</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Junchi</forename><surname>Yan</surname></persName>
+			<idno type="ORCID">0000-0001-9639-7679</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yongquan</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-3065-7199</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0003-2139-8807</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-73226-3_15</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024-11-01">2024</date>
+			<biblScope unit="page" from="253" to="269" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<title level="m" type="main">Oracle Bone Inscriptions Multi-modal Dataset</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2407.03900</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Bindings of Ancient Chinese Bamboo and Wood Scrolls</title>
+		<author>
+			<persName><forename type="first">Thies</forename><surname>Staack</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/9783111292069-003</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Tied and Bound: A Comparative View on Manuscript Binding</title>
+		<imprint>
+			<publisher>De Gruyter</publisher>
+			<date type="published" when="2023-07-24">2023</date>
+			<biblScope unit="page" from="39" to="72" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Written on Bamboo and Silk: The Beginning of Chinese Books and Inscriptions</title>
+		<author>
+			<persName><forename type="first">C.-S</forename><surname>Chang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1964">1964</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Science and Civilisation in China</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Needham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Spagyrical Discovery and Invention: Physiological Alchemy</title>
+		<imprint>
+			<publisher>Cambridge University Press</publisher>
+			<date type="published" when="1983">1983</date>
+			<biblScope unit="volume">5</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Liusha Zhuijian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Shangyu Luo shi yin xing</title>
+		<title level="s">Liu sha zhui jian</title>
+		<imprint>
+			<date type="published" when="1914">1914</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">A qualitative study on the integration of artificial intelligence in cultural heritage conservation</title>
+		<author>
+			<persName><forename type="first">Kholoud</forename><surname>Ghaith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Hutson</surname></persName>
+		</author>
+		<idno type="DOI">10.54517/m.v5i2.2654</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Metaverse</title>
+		<title level="j" type="abbrev">Metaverse</title>
+		<idno type="ISSNe">2810-9791</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">2654</biblScope>
+			<date type="published" when="2024-07-18">2024</date>
+			<publisher>Asia Pacific Academy of Science Pte. Ltd.</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Physics-based machine learning for computational fracture mechanics</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Aldakheel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">S</forename><surname>Elsayed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Heider</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Weeger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mach. Learn. Comput. Sci. Eng</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">18</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<title level="m" type="main">Introduction to computational materials science: fundamentals to applications</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lesar</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Investigation of the transverse fracture mechanisms of bamboo by the finite element method</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ramful</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mater. Sci</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="6233" to="6248" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">The structure and mechanics of Moso bamboo material</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">G</forename><surname>Dixon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Gibson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. R. Soc. Interface</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">20140321</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Fracture modes of bamboo fiber bundles in three-point bending</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cellulose</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="8101" to="8108" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Investigation of the Effect of Inhomogeneous Material on the Fracture Mechanisms of Bamboo by Finite Element Method</title>
+		<author>
+			<persName><forename type="first">Raviduth</forename><surname>Ramful</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atsushi</forename><surname>Sakuma</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ma13215039</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Materials</title>
+		<title level="j" type="abbrev">Materials</title>
+		<idno type="ISSNe">1996-1944</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page">5039</biblScope>
+			<date type="published" when="2020-11-09">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Comparison of the mechanical characteristics of fibers and cell walls from moso bamboo and wood</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BioResources</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="8230" to="8239" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title level="a" type="main">Introduction</title>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><forename type="middle">E</forename><surname>Gdoutos</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-35098-7_1</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Solid Mechanics and Its Applications</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="1" to="14" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<monogr>
+		<title level="m" type="main">Wood handbook: wood as an engineering material 72 (The Laboratory</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">P L</forename><surname>Us)</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Assessment of deterioration in archaeological wood from ancient Egypt</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A</forename><surname>Blanchette</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Haight</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Koestler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Hatchfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Arnold</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Am. Inst. Conserv</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="55" to="70" />
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Cracks Repairing and Resistance to Water Penetration Properties of Microbial Self‐Healing Cement</title>
+		<author>
+			<persName><forename type="first">Luo</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-3542-8213</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Youxi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianrong</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junlai</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weijian</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yangyang</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kewei</forename><surname>Gao</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/elsc.70010</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Engineering in Life Sciences</title>
+		<title level="j" type="abbrev">Engineering in Life Sciences</title>
+		<idno type="ISSN">1618-0240</idno>
+		<idno type="ISSNe">1618-2863</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">70010</biblScope>
+			<date type="published" when="2025-02-28">2025</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Visualizing data using t-SNE</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Van Der Maaten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mach. Learn. Res</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">E</forename><surname>Goldberg</surname></persName>
+		</author>
+		<title level="m">Genetic Algorithms in Search, Optimization, and Machine Learning</title>
+		<meeting><address><addrLine>Reading, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Addison-Wesley</publisher>
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Anderson</surname></persName>
+		</author>
+		<title level="m">Fracture mechanics: fundamentals and applications</title>
+		<imprint>
+			<publisher>CRC press</publisher>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Machine learning-based constitutive modelling for material non-linearity: A review</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Hussain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Sakhaei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Shafiee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mech. Adv. Mater. Struct</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="19" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Machine learning for parameter estimation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">N</forename><surname>Kutz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Natl. Acad. Sci. U. S. A</title>
+		<imprint>
+			<biblScope unit="volume">120</biblScope>
+			<biblScope unit="page">2300990120</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Learning about physical parameters: The importance of model discrepancy</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Brynjarsdottir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>O'hagan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inverse Probl</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page">114007</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">Detecting and quantifying ongoing decay of organic archaeological remains: A discussion of different approaches</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Matthiesen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Quaternary International</title>
+		<imprint>
+			<biblScope unit="volume">368</biblScope>
+			<biblScope unit="page" from="43" to="50" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title level="a" type="main">Silhouettes: A graphical aid to the interpretation and validation of cluster analysis</title>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">J</forename><surname>Rousseeuw</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0377-0427(87)90125-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computational and Applied Mathematics</title>
+		<title level="j" type="abbrev">Journal of Computational and Applied Mathematics</title>
+		<idno type="ISSN">0377-0427</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="53" to="65" />
+			<date type="published" when="1987-11">1987</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title level="a" type="main">Deep metric learning using triplet network</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Hoffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ailon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Worksh. on Simil.-Based Pattern Recognit</title>
+		<meeting>Int. Worksh. on Simil.-Based Pattern Recognit</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="84" to="92" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">Learning how to match fresco fragments</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Funkhouser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM J. Comput. Cult. Herit</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">A review of computer-based methods for classification and reconstruction of 3D high-density scanned archaeological pottery</title>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Angelo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Di Stefano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Guardiani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Cult. Herit</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="10" to="24" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Super-convergence: Very fast training of neural networks using large learning rates</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">N</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Topin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">AI ML Multi-Domain Oper. Appl.</title>
+		<imprint>
+			<biblScope unit="volume">11006</biblScope>
+			<biblScope unit="page" from="369" to="386" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Using dynamic time warping to find patterns in time series</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Berndt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Clifford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. ACM SIGKDD Int. Conf. Knowl. Discov. Data Min</title>
+		<meeting>ACM SIGKDD Int. Conf. Knowl. Discov. Data Min</meeting>
+		<imprint>
+			<date type="published" when="1994">1994</date>
+			<biblScope unit="page" from="359" to="370" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title level="a" type="main">Differential and numerically invariant signature curves applied to object recognition</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Calabi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Olver</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Shakiban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tannenbaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Haker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Comput. Vis</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="107" to="135" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title level="a" type="main">Curve matching using the fast marching method</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Frenkel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Basri</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Int. Worksh. on Energy Minimiz. Methods in Comput. Vis. and Pattern Recognit</title>
+		<meeting>Int. Worksh. on Energy Minimiz. Methods in Comput. Vis. and Pattern Recognit</meeting>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<biblScope unit="page" from="35" to="51" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

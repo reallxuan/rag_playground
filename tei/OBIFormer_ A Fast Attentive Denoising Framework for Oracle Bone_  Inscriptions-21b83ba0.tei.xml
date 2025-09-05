@@ -1,0 +1,1967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">OBIFormer: A Fast Attentive Denoising Framework for Oracle Bone Inscriptions</title>
+				<funder ref="#_ejAn9gV">
+					<orgName type="full">National Social Science Foundation of China</orgName>
+				</funder>
+				<funder ref="#_GPa4ZxA">
+					<orgName type="full">Shanghai Philosophy and Social Science Planning Project</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-04-18">18 Apr 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jinhao</forename><surname>Li</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science and Technology</orgName>
+								<orgName type="institution">East China Normal University</orgName>
+								<address>
+									<postCode>200062</postCode>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zijian</forename><surname>Chen</surname></persName>
+							<email>zijian.chen@sjtu.edu.cn</email>
+							<affiliation key="aff1">
+								<orgName type="department">Institute of Image Communication and Information Processing</orgName>
+								<orgName type="institution">Shanghai Jiao Tong University</orgName>
+								<address>
+									<postCode>200240</postCode>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tingzhu</forename><surname>Chen</surname></persName>
+							<email>tingzhuchen@sjtu.edu.cn</email>
+							<affiliation key="aff2">
+								<orgName type="department">School of Humanities</orgName>
+								<orgName type="institution">Shanghai Jiao Tong University</orgName>
+								<address>
+									<postCode>200030</postCode>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zhiji</forename><surname>Liu</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Center for the Study and Application of Chinese Characters</orgName>
+								<orgName type="institution">East China Normal University</orgName>
+								<address>
+									<postCode>200241</postCode>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Changbo</forename><surname>Wang</surname></persName>
+							<email>cbwang@cs.ecnu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Computer Science and Technology</orgName>
+								<orgName type="institution">East China Normal University</orgName>
+								<address>
+									<postCode>200062</postCode>
+									<settlement>Shanghai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">OBIFormer: A Fast Attentive Denoising Framework for Oracle Bone Inscriptions</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-04-18">18 Apr 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">9339482BE3732FA85D23B99E557CA5FA</idno>
+					<idno type="arXiv">arXiv:2504.13524v1[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:32+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Oracle bone inscriptions Channel-wise self-attention Glyph information Image denoising Deep learning</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Oracle bone inscriptions (OBIs) are the earliest known form of Chinese characters and serve as a valuable resource for research in anthropology and archaeology. However, most excavated fragments are severely degraded due to thousands of years of natural weathering, corrosion, and man-made destruction, making automatic OBI recognition extremely challenging. Previous methods either focus on pixel-level information or utilize vanilla transformers for glyph-based OBI denoising, which leads to tremendous computational overhead. Therefore, this paper proposes a fast attentive denoising framework for oracle bone inscriptions, i.e., OBIFormer. It leverages channel-wise self-attention, glyph extraction, and selective kernel feature fusion to reconstruct denoised images precisely while being computationally efficient. Our OBIFormer achieves state-of-the-art denoising performance for PSNR and SSIM metrics on synthetic and original OBI datasets. Furthermore, comprehensive experiments on a real oracle dataset demonstrate the great potential of our OBIFormer in assisting automatic OBI recognition. The code will be made available at https://github.com/LJHolyGround/ OBIFormer.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="793.701"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Oracle bone inscriptions (OBIs) represent China's earliest known mature and systematic writing system. Carved on materials such as oxen or turtle bones for divination and record-keeping during the late Shang and Zhou Dynasties, they provide profound insights into Chinese social culture for anthropologists and archaeologists. Therefore, the recognition of OBIs is an indispensable step in exploring the history of ancient China. However, despite the numerous fragments excavated, only a small percentage of these OBIs has been successfully recognized. Since the annotation task requires a high demand of time and labor with domain knowledge from OBI experts, there is an urgent need to develop an automatic OBI recognition algorithm. Unfortunately, many oracle bones have suffered considerable degradation over millennia due to natural weathering, corrosion, and man-made destruction, making automatic OBI recognition extremely challenging.</p><p>As shown in Fig. <ref type="figure" target="#fig_0">1</ref>, noise in oracle bone inscriptions can be categorized into four types: stroke-broken, bone-cracked, abnormal edges, and dense white regions <ref type="bibr" target="#b0">[1]</ref>. Stroke-broken refers to the clusters of white regions near the strokes, complicating OBI recognition. Bone-cracked is caused by occlusion and typically runs through the center of the image, disrupting the glyph information. Abnormal edges also arise from occlusion and usually appear along the image boundaries. Besides, dense white regions represent fog-like noise, which obscures the structure and exacerbates ambiguity.</p><p>Traditional methods were first applied for OBI denoising. For example, Huang et al. <ref type="bibr" target="#b1">[2]</ref> conducted a comprehensive comparative study of image denoising techniques relying on methods such as the anisotropic diffusion filter, Wiener filter, total variation, non-local means, and bilateral filtering. However, these methods do not perform well due to the complex degradation in OBIs. Therefore, some tailored denoising methods have been designed for the different noise types. Gu et al. <ref type="bibr" target="#b2">[3]</ref> proposed an in-painting algorithm based on Poisson distribution and fractal geometry to remove erosion noise in OBIs. Khankasikam <ref type="bibr" target="#b3">[4]</ref> proposed a binarization method based on adaptive multilayer information to restore uneven backgrounds in degraded historical document images. Robust Kronecker component analysis (RKCA) <ref type="bibr" target="#b4">[5,</ref><ref type="bibr" target="#b5">6]</ref> has recently been proposed for handling structured data with inherent tensorial properties. Subsequently, Zhang et al. <ref type="bibr" target="#b6">[7]</ref> designed the Kronecker component with the low-rank dictionary (KCLD) and the Kronecker component with the robust low-rank dictionary (KCRD), which takes the Nuclear norm into RKCA to better capture the low-rank property of the two dictionaries in the basic sparse representation model. Considering the internal structural, spatial, and spectral information of the image block, they proposed the robust lowrank analysis with adaptive weighted tensor (AWTD) <ref type="bibr" target="#b7">[8]</ref>, a method that applies the adaptive weight tensor to the lowrank tensor model for image denoising.</p><p>With the prevalence of deep learning, numerous methods have been proposed for OBI denoising. For example, DnCNN <ref type="bibr" target="#b8">[9]</ref> was first introduced to handle blind noise with unknown noise levels. Zamir et al. <ref type="bibr" target="#b9">[10]</ref> designed Restormer, an efficient encoder-decoder transformer for high-resolution image restoration. However, these generic denoising models mainly focus on pixel-level information while neglecting glyph information, which leads to poor performance. RCRN <ref type="bibr" target="#b10">[11]</ref> first utilizes character skeleton information to achieve real-world character image restoration. Nevertheless, it extracts skeleton information from the input images, which results in unsatisfactory results. CharFormer <ref type="bibr" target="#b11">[12]</ref> attempts to leverage glyph information from the target images to address the problem, but it adopts a simple feature fusion strategy that limits its performance. Moreover, it leverages three vanilla transformer blocks in the residual self-attention block, which leads to tremendous computational overhead.</p><p>Additionally, automatic OBI recognition also suffers from data scarcity. In the early days, data augmentation methods primarily relied on techniques such as random rotation and flipping. Later, Han et al. <ref type="bibr" target="#b12">[13]</ref> introduced an Orc-Bert Augmentor pre-trained by self-supervised learning to recover masked input and generate pixel-format images as augmented data. Recently, Wang et al. <ref type="bibr" target="#b13">[14]</ref> proposed a structure-texture separation network (STSN), which disentangles features into structure and texture components. It swaps texture information between any pairs of images so that transformed images are realistic and diverse.</p><p>To address these problems, we propose a fast attentive denoising framework for OBIs, i.e., OBIFormer, which utilizes channel-wise self-attention, glyph extraction, and selective kernel feature fusion. Specifically, our OBIFormer comprises an input projector, an output projector, an additional feature corrector, and several OBIFormer blocks (OFBs). The input projector extracts shallow features from the input images. The OBIFormer block is composed of channel-wise self-attention blocks (CSAB), glyph structural network blocks (GSNB), and a selective kernel feature fusion (SKFF) module. The SKFF module aggregates the reconstruction and glyph features captured by CSAB and GSNB. Finally, the output projector reconstructs the denoised image, and the additional feature corrector obtains the skeleton image. We conduct comprehensive experiments (a) PSNR on Oracle-50K dataset <ref type="bibr" target="#b12">[13]</ref> (b) SSIM on Oracle-50K dataset <ref type="bibr" target="#b12">[13]</ref> (c) PSNR on RCRN dataset <ref type="bibr" target="#b10">[11]</ref> (d) SSIM on RCRN dataset <ref type="bibr" target="#b10">[11]</ref> Figure <ref type="figure">2</ref>: Our model achieves state-of-the-art performance on the OBI denoising task while being computationally efficient.</p><p>and demonstrate the effectiveness of our OBIFormer for OBI denoising tasks on Oracle-50K <ref type="bibr" target="#b12">[13]</ref> and RCRN <ref type="bibr" target="#b10">[11]</ref> datasets (See Fig. <ref type="figure">2</ref>). Furthermore, extensive experiments on a real oracle dataset (i.e., the OBC306 dataset <ref type="bibr" target="#b0">[1]</ref>) demonstrate its great potential in assisting automatic OBI recognition. Finally, we provide ablation studies to show the effectiveness of architectural designs and experimental choices. The main contributions of this work can be summarized as follows:</p><p>• We propose a fast attentive denoising framework for OBIs, i.e., OBIFormer, based on channel-wise selfattention, glyph extraction, and selective kernel feature fusion. Additionally, we apply domain adaptation for the Oracle-50K dataset to synthesize noisy images for experiments.</p><p>• Comprehensive experiments on synthetic and original OBI datasets demonstrate the superiority of our OB-IFormer for OBI denoising tasks. Furthermore, our OBIFormer is computationally efficient compared to other baseline methods.</p><p>• Extensive experiments on the OBC306 dataset show the strong generalization ability of the proposed OB-IFormer. It demonstrates the great potential of OBI-Former in assisting automatic OBI recognition.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Related Works</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Oracle Bone Inscriptions Datasets</head><p>In recent years, various OBI datasets have been established for OBI-related computer vision tasks, such as oracle bone recognition, rejoining, classification, retrieval, and deciphering <ref type="bibr" target="#b14">[15]</ref>. From the perspective of the content sources, OBI datasets can be categorized into handprints and rubbings, as shown in Fig. <ref type="figure">3</ref>. Furthermore, we summarize their statistical information in Table <ref type="table" target="#tab_0">1</ref>.</p><p>(a) Oracle-50K <ref type="bibr" target="#b12">[13]</ref> (b) HWOBC <ref type="bibr" target="#b15">[16]</ref> (c) EVOBI <ref type="bibr" target="#b16">[17]</ref> (d) OBC306 <ref type="bibr" target="#b0">[1]</ref> (e) OBI125 <ref type="bibr" target="#b17">[18]</ref> (f) EVOBC <ref type="bibr" target="#b18">[19]</ref> Figure <ref type="figure">3</ref>: Examples of oracle character images in different OBI datasets: (a) Oracle-50K <ref type="bibr" target="#b12">[13]</ref>, (b) HWOBC <ref type="bibr" target="#b15">[16]</ref>, (c) EVOBI <ref type="bibr" target="#b16">[17]</ref>, (d) OBC306 <ref type="bibr" target="#b0">[1]</ref>, (e) OBI125 <ref type="bibr" target="#b17">[18]</ref>, and (f) EVOBC dataset <ref type="bibr" target="#b18">[19]</ref>. The zoomed-in images are different structural variations of the same character. Handprinted OBI datasets contain distortion-free rubbing images rewritten by OBI experts. For example, the Oracle-20K dataset <ref type="bibr" target="#b19">[20]</ref> was collected and labeled by Guo Later, Han et al. <ref type="bibr" target="#b12">[13]</ref> further expanded the number of instances and proposed the Oracle-50K dataset, which consists of 59,081 instances belonging to 2,668 categories. Similarly, Li et al. built the HWOBC dataset <ref type="bibr" target="#b15">[16]</ref> for training automatic OBI recognition models. It became the largest handprinted OBI dataset with 83,245 character-level samples grouped into 3,881 categories. Moreover, the EVOBI dataset <ref type="bibr" target="#b16">[17]</ref> was proposed for OBI interpretation, which was crawled from the Chinese master website<ref type="foot" target="#foot_1">2</ref> . Nevertheless, these datasets only provide handprinted images, contributing minimally to automatic OBI recognition. To synthesize more realistic OBI data, Wang et al. <ref type="bibr" target="#b13">[14]</ref> constructed the Oracle-241 dataset to transfer knowledge across handprinted characters and scanned data. It comprises 78,565 handprinted and scanned images of 241 categories. Most recently, Li et al. <ref type="bibr" target="#b29">[30]</ref> proposed Oracle-P15K, a structure-aligned OBI dataset consisting of 14,542 images infused with domain knowledge from OBI experts, to achieve realistic and controllable OBI generation. Comprehensive experiments demonstrate that the augmented images can mitigate the long-tail distribution problem in existing OBI datasets.</p><p>Rubbing OBI datasets consist of scanned images from oracle bone publications, most of which suffer from severe and distinctive noise caused by thousands of years of natural weathering, corrosion, and man-made destruction. One of the representative datasets, OBC306 <ref type="bibr" target="#b0">[1]</ref>, encompasses 309,551 samples classified into 306 classes from eight authoritative oracle bone publications. The OracleBone8000 dataset <ref type="bibr" target="#b24">[25]</ref> contains 129,770 images with character-level annotations. However, it is highly imbalanced and sparse, limiting itself to serving as a comprehensive benchmark for automatic OBI recognition tasks. Yue et al. <ref type="bibr" target="#b17">[18]</ref> built the OBI125 dataset, which is composed of 4,257 images scanned from the collection of the Shanghai Museum (Volume I) <ref type="bibr" target="#b30">[31]</ref>. For the oracle bone rejoining task, Zhang et al. <ref type="bibr" target="#b26">[27]</ref> proposed the OB-Rejoin dataset, which covers different writing styles and fonts, featuring 249 pairs of known rejoining manually found by OBI experts over the past few decades. Moreover, the Oracle-MINST dataset <ref type="bibr" target="#b27">[28]</ref> was released to benchmark the oracle bone character classification task, following the same data format as the well-known MNIST dataset <ref type="bibr" target="#b31">[32]</ref>. Similar to EVOBI, the EVOBC dataset <ref type="bibr" target="#b18">[19]</ref> was constructed to trace the evolution of Chinese characters from oracle bone inscriptions to their contemporary forms, including written representations of the same character across different historical periods. Wang et al. <ref type="bibr" target="#b28">[29]</ref> introduced the HUST-OBC dataset, which comprises 141,053 images sourced from five different origins. Among them, 77,064 images spanning 1,781 categories have been deciphered, while 62,989 images across 9,411 categories remain undeciphered. Most recently, Chen et al. <ref type="bibr" target="#b14">[15]</ref> proposed O2BR and OBI-rejoin datasets to evaluate the recent large multi-modal models (LMMs) in OBI recognition and rejoining tasks. Each image in these datasets is equipped with several questions alongside correct answers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Oracle Bone Inscription Recognition</head><p>The traditional OBI recognition adopts a three-stage pipeline paradigm: data pre-processing, feature extraction, and recognition. In the early days, Guo et al. <ref type="bibr" target="#b19">[20]</ref> proposed a hierarchical representation that integrates a Gaborrelated low-level representation and a sparse-encoder-related mid-level representation with CNN-based models, which achieved better performance over both approaches. Similarly, Yang et al. <ref type="bibr" target="#b20">[21]</ref> also applied a feature extraction technique in CNN, but CNN completes both feature extraction and OBI recognition tasks. However, the simple feature representation limits the performance of traditional OBI recognition methods. Later, Du et al. <ref type="bibr" target="#b21">[22]</ref> designed a two-branch deep learning framework consisting of two pretext tasks for rotation and deformation. Experimental results demonstrated that their method could effectively learn features of OBIs and provide good feature representation for the downstream tasks.</p><p>Though achieving good accuracy, most traditional methods rely heavily on manually designed complex features at multiple levels. Therefore, they are not suitable for dealing with large-scale datasets. In contrast, deep learning methods are known for their representation capacity when processing large-scale datasets. Huang et al. <ref type="bibr" target="#b0">[1]</ref> first introduced the standard deep CNN-based evaluation (i.e., AlexNet <ref type="bibr" target="#b32">[33]</ref>, Inception-v4 <ref type="bibr" target="#b33">[34]</ref>, VGG16 <ref type="bibr" target="#b34">[35]</ref>, ResNet-50, and ResNet-101 <ref type="bibr" target="#b35">[36]</ref>) for the OBC306 dataset, which served as a benchmark. However, the long-tail distribution problem in OBI datasets hampers the performance of deep learning methods. Hence, Zhang et al. <ref type="bibr" target="#b36">[37]</ref> uses a CNN to map the character images to a Euclidean space where the nearest neighbor rule classifies them. Most recently, Wang et al. <ref type="bibr" target="#b13">[14]</ref> proposed a structure-texture separation network (STSN), which separates texture from the structure to avoid the negative influence caused by degradation. Nevertheless, the recognition accuracy of scanned images is still unsatisfactory. Afterward, they trained an unsupervised discriminative consistency network (UDCN) <ref type="bibr" target="#b37">[38]</ref> with an unsupervised transition loss and leveraged pseudo-labeling to make the predictions of scanned samples consistent under different noise.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Image Denoising</head><p>Image denoising plays a vital role in different image processing applications, such as medical imaging <ref type="bibr" target="#b38">[39,</ref><ref type="bibr" target="#b39">40]</ref>, remote sensing <ref type="bibr" target="#b40">[41]</ref>, and oracle bone research <ref type="bibr" target="#b10">[11,</ref><ref type="bibr" target="#b11">12]</ref>. Since the rise of deep learning, researchers have proposed various models for image denoising. For example, Zhang et al. <ref type="bibr" target="#b8">[9]</ref> leveraged residual learning and batch normalization to introduce DnCNN, a model capable of handling blind noise with unknown noise levels. Later, Fan et al. <ref type="bibr" target="#b41">[42]</ref> presented SRMNet, a blind real-image denoising network utilizing a hierarchical architecture improved from U-Net <ref type="bibr" target="#b42">[43]</ref>, which advanced the performance on two synthetic and two realworld noisy datasets. However, it requires tremendous computational overhead due to the complex hierarchical architecture. Therefore, Zhang et al. <ref type="bibr" target="#b43">[44]</ref> proposed KBNet, which consists of a kernel basis attention module and a multiaxis feature fusion block. It performs state-of-the-art on over ten image denoising benchmarks while maintaining low computational overhead. Besides, Liu et al. <ref type="bibr" target="#b44">[45]</ref> designed a lightweight, information-lossless, and memory-saving invertible neural network (INN) based model, namely InvDN, which replaces the noisy latent representation with another one sampled from a prior distribution during reversion and achieves promising results.</p><p>Generative adversarial network (GAN) based models have recently been applied for image denoising. Yue et al. <ref type="bibr" target="#b45">[46]</ref> introduced DANet, a unified framework synthesizing noisy-clean image pairs simultaneously with two new metrics. To preserve the structural consistency of characters, Shi et al. <ref type="bibr" target="#b10">[11]</ref> proposed RCRN, which comprises a skeleton extractor (SENet) and a character image restorer (CiRNet). It is capable of handling complex degradation and specific noise types in OBIs.</p><p>More recently, researchers have introduced visual transformer (ViT) <ref type="bibr" target="#b46">[47]</ref> to image denoising tasks. Shi et al. <ref type="bibr" target="#b11">[12]</ref> designed a glyph-based attentive framework, i.e., CharFormer, which maintains critical features of a character during the denoising process. Later, Wang et al. <ref type="bibr" target="#b47">[48]</ref> proposed Uformer based on a locally-refined window (LeWin) transformer and a learnable multi-scale restoration modulator. It excels at capturing local and global dependencies, making it highly effective for image restoration. However, though these transformer-based models obtain impressive performance, their computational complexity grows quadratically with the spatial resolution. Therefore, Zamir <ref type="bibr" target="#b9">[10]</ref> applied multi-Dconv head transposed attention (MDTA) and gated-Dconv feed-forward network (GDFN) in Restormer to balance the performance and computational overhead. Most recently, Ghasemabadi et al. <ref type="bibr" target="#b48">[49]</ref> presented CGNet to capture global information without self-attention, thus reducing the computational complexity significantly while maintaining outstanding performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Method</head><p>In this section, we elaborate on the overall pipeline and the hierarchical structure of our OBIFormer. Specifically, we provide the details of the OBIFormer block (OFB), which consists of channel-wise self-attention blocks (CSABs), glyph structural network blocks (GSNBs), and a selective kernel feature fusion (SKFF) module. The SKFF injects glyph features extracted by GSNBs into the denoising backbone, thereby guiding the model in removing the complex noise while preserving the inherent glyphs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Overall Pipeline</head><p>As shown in Fig. <ref type="figure" target="#fig_2">4</ref>, the overall structure of our OBI-Former is a U-shaped encoder-decoder network with skip connections between the OFBs. Specifically, given a degraded image I ∈ ℝ 3×𝐻×𝑊 , the input projector applies a 3 × 3 convolution layer with LeakyReLU to extract the shallow features F 0 ∈ ℝ 𝐶×𝐻×𝑊 from the input image. Then, the shallow features F 0 are passed through 𝑁 + 1 encoder stages. Each stage contains an OFB and a downsampling layer. The OFB is designed for precise OBI image denoising based on the glyph feature extraction and aggregation. Given intermediate shallow features F 𝑖 , the output of OFB 𝑖 is:</p><formula xml:id="formula_0">F 𝑖+1 = OFB 𝑖+1 (F 𝑖 ), 0 ≤ 𝑖 ≤ 𝑁.</formula><p>(1)</p><p>In the downsampling layer, we downsample the maps and double the channels using 4 × 4 convolution with stride 2.</p><p>Next, the latent features F 𝑁+1 are passed through 𝑁 decoder stages. Each stage contains an OFB and an upsampling layer. Moreover, we apply skip connections between the OFBs in the encoder and decoder to transmit extraction results on different scales and restore spatial features. Therefore, the deep features F 𝑖+1 can be formulated as:</p><formula xml:id="formula_1">F 𝑖+1 = OFB 𝑖 (F 𝑖 + F 2𝑁-𝑖+1 ), 𝑁 &lt; 𝑖 ≤ 2𝑁 (<label>2</label></formula><formula xml:id="formula_2">)</formula><p>where 𝑛 is the stage number of the decoder, OFB 2𝑁-𝑖+1 represents the (2𝑁 -𝑖 + 1)-th OFB. For feature upsampling, we apply a transposed convolution operation, which upsamples the maps and halves channels using 2 × 2 convolution with stride 2.</p><p>The last OFB produces F 2𝑁+1 , which consists of reconstruction features F 𝑅 2𝑁+1 and glyph features F 𝐺 2𝑁+1 . Finally, reconstruction features F 𝑅 2𝑁+1 are aggregated with the shallow features F 𝑅 0 . The output projector reconstructs the restored image I ′ with a 3 × 3 convolution layer:</p><formula xml:id="formula_3">I ′ = Conv(F 𝑅 0 + F 𝑅 2𝑁+1 ).<label>(3)</label></formula><p>Similarly, the additional feature corrector adjusts the glyph features F 𝐺 2𝑁+1 to obtain the restored skeleton S ′ with a 3 × 3 convolution layer:</p><formula xml:id="formula_4">S ′ = Conv(F 𝐺 2𝑁+1 ).<label>(4)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">OBIFormer Block</head><p>As shown in Fig. <ref type="figure" target="#fig_2">4</ref>(a), the OBIFormer block (OFB) consists of two residual channel-wise self-attention blocks (CSABs) as the denoising backbone, two glyph structural network blocks (GSNBs) for glyph extraction, and a selective kernel feature fusion (SKFF) module for feature aggregation. The primary purpose of the OFB is to alleviate the computational overhead and aggregate glyph features. We elaborate on the designs of these modules as follows: Residual Channel-Wise Self-Attention Block. The residual channel-wise self-attention block (CSAB) is a residual block with a modified transformer layer, as shown in Fig. <ref type="figure" target="#fig_2">4(c</ref>). Recently, transformer-based models have swept over various tasks with impressive results. However, the complexity of self-attention grows quadratically with the spatial resolution. Therefore, we apply channel-wise self-attention instead of spatial-wise self-attention, which remains effective while being computationally efficient. Specifically, each transformer layer performs channel-wise self-attention (CSA) and feed-forward (FN). For a normalized tensor F 𝑁 , query (Q), key (K), and value (V) are generated by applying 1 × 1 convolutions to aggregate pixel-wise cross-channel  </p><formula xml:id="formula_5">Q = W 𝑄 𝑑 W 𝑄 𝑝 F 𝑁 ,<label>(5)</label></formula><formula xml:id="formula_6">K = W 𝐾 𝑑 W 𝐾 𝑝 F 𝑁 ,<label>(6)</label></formula><formula xml:id="formula_7">V = W 𝑉 𝑑 W 𝑉 𝑝 F 𝑁 ,<label>(7)</label></formula><p>where W (⋅) 𝑑 and W (⋅) 𝑝 denote the projection matrices obtained by 1 × 1 point-wise convolution and 3 × 3 depth-wise convolution with no bias, respectively. Then, we reshape the query and key projection so that their dot product generates a transposed-attention map of size ℝ 𝐶×𝐶 instead of the regular attention map of size ℝ 𝐻𝑊 ×𝐻𝑊 :</p><formula xml:id="formula_8">Attention(Q, K, V) = Sof tMax( KQ 𝛼 )V,<label>(8)</label></formula><p>where Q ∈ ℝ 𝐻𝑊 ×𝐶 , K ∈ ℝ 𝐶×𝐻𝑊 , and V ∈ ℝ 𝐻𝑊 ×𝐶 matrices are obtained after reshaping. 𝛼 is a learnable scaling parameter. Therefore, the output features of the transformer layer in CSAB can be formulated as follows:</p><formula xml:id="formula_9">F ′ 𝑙 = W 𝑝 CSA(LN(F l-1 )) + F 𝑙-1 ,<label>(9)</label></formula><formula xml:id="formula_10">F 𝑙 = FN(LN(F ′ 𝑙 )),<label>(10)</label></formula><p>where LN represents layer normalization. F ′ 𝑙 refers to the intermediate output features of the 𝑙-th transformer layer. F 𝑙-1 and F 𝑙 denote the final output features of the (𝑙 -1)-th and 𝑙-th transformer layer, respectively. Glyph Structural Network Block. As shown in Fig. <ref type="figure" target="#fig_2">4(b)</ref>, the glyph structural network block (GSNB) consists of two 3 × 3 convolution layers with batch normalization and ReLU activation function in a residual block. Due to the strong capacity to capture local dependencies of CNNs, GSNB can effectively extract glyph features that will be fused with reconstruction features. Similarly, GSNB incorporates downsampling and upsampling layers to maintain the same scale as the corresponding RSAB. Given input glyph features F 𝐺 𝑖 ∈ ℝ 𝐶×𝐻×𝑊 , the GSNB in 𝑛-th OFB will output F 𝐺 𝑖+1 which has the same size as F 𝑅 𝑖+1 . Selective Kernel Feature Fusion. To better aggregate the glyph features, we perform selective kernel feature fusion (SKFF) <ref type="bibr" target="#b49">[50]</ref> instead of simple addition or concatenation. As shown in Fig. <ref type="figure" target="#fig_2">4</ref>(d), the SKFF module dynamically adjusts the receptive field via a triplet of operators: 𝑆𝑝𝑙𝑖𝑡, 𝐹 𝑢𝑠𝑒, and 𝑆𝑒𝑙𝑒𝑐𝑡. The 𝑆𝑝𝑙𝑖𝑡 operation generates reconstruction features F 𝑅 and glyph features F 𝐺 with different convolution layers. Then, the 𝐹 𝑢𝑠𝑒 operation combines them to obtain a compact feature representation F 𝐶 by applying elementwise summation, global average pooling, and pixel-wise convolution, which can be formulated as:</p><formula xml:id="formula_11">F 𝐶 = Conv(Pool(F 𝑅 + R 𝐺 )).<label>(11)</label></formula><p>Finally, the 𝑆𝑒𝑙𝑒𝑐𝑡 operation guides two other convolution layers followed by the softmax attention to enhance certain features:</p><formula xml:id="formula_12">𝐴𝑡𝑡𝑛 𝑅 = Sof tMax(Conv 𝑅 (F 𝐶 ), Conv 𝐺 (F 𝐶 )), (<label>12</label></formula><formula xml:id="formula_13">)</formula><formula xml:id="formula_14">𝐴𝑡𝑡𝑛 𝐺 = Sof tMax(Conv 𝑅 (F 𝐶 ), Conv 𝐺 (F 𝐶 )),<label>(13)</label></formula><p>where 𝐴𝑡𝑡𝑛 𝑅 and 𝐴𝑡𝑡𝑛 𝐺 represent the softmax attention of reconstruction and glyph features. The fused reconstruction and glyph features are computed by multiplying the softmax attention with the F 𝑅 and the F 𝐺 , respectively:</p><formula xml:id="formula_15">F 𝐹 𝑅 = 𝐴𝑡𝑡𝑛 𝑅 F 𝑅 , (<label>14</label></formula><formula xml:id="formula_16">)</formula><formula xml:id="formula_17">F 𝐹 𝐺 = 𝐴𝑡𝑡𝑛 𝐺 F 𝐺 , (<label>15</label></formula><formula xml:id="formula_18">)</formula><p>where F 𝐹 𝑅 and F 𝐹 𝐺 are fused reconstruction and glyph features. The fused features F 𝐹 are obtained by summing the F 𝐹 𝑅 and the F 𝐹 𝐺 :</p><formula xml:id="formula_19">F 𝐹 = F 𝐹 𝑅 + F 𝐹 𝐺 . (<label>16</label></formula><formula xml:id="formula_20">)</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Loss Function</head><p>We train the model with PSNR loss for the reconstructed OBI image I ′ and perceptual loss for the reconstructed skeleton image S ′ : <ref type="bibr" target="#b16">(17)</ref> where {𝛼 𝑖 }<ref type="foot" target="#foot_3">4</ref> 𝑖=1 are hyperparameters.  1 and  2 refer to PSNR and perceptual loss. Given an input image X,  1 and  2 are defined as:</p><formula xml:id="formula_21"> = 𝛼 1  1 (I ′ ) + 𝛼 2  2 (I ′ ) + 𝛼 3  1 (S ′ ) + 𝛼 4  2 (S ′ ),</formula><formula xml:id="formula_22"> 1 (X) = 10 log ( max 2 (X) MSE(X 𝐺𝑇 , X) ) , (<label>18</label></formula><formula xml:id="formula_23">)</formula><formula xml:id="formula_24"> 2 (X) =∥ VGG(X 𝐺𝑇 ) -VGG(X) ∥ 1 , (<label>19</label></formula><formula xml:id="formula_25">)</formula><p>where max and MSE denote the maximum value representing the color of the image pixel and the mean square error. X 𝐺𝑇 refers to the ground truth of the input image.  2 is computed based on a VGG16 <ref type="bibr" target="#b34">[35]</ref> model pre-trained on the ImageNet <ref type="bibr" target="#b50">[51]</ref> dataset. The ground truth of the skeleton is obtained by an existing method <ref type="bibr" target="#b51">[52]</ref> based on mathematical morphology.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Experiments</head><p>In this section, we conduct comprehensive experiments on three representative OBI datasets, i.e., Oracle-50K <ref type="bibr" target="#b12">[13]</ref>, RCRN <ref type="bibr" target="#b10">[11]</ref>, and OBC306 <ref type="bibr" target="#b0">[1]</ref>, to evaluate the effectiveness of the proposed OBIFormer for the OBI denoising task. The details are as follows:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Datasets</head><p>Oracle-50K: The Oracle-50K dataset <ref type="bibr" target="#b12">[13]</ref> is a large OBI dataset designed for OBI recognition and classification tasks. It contains various instances sourced from three different collections. The instances from Xiaoxuetang<ref type="foot" target="#foot_2">3</ref> and Chinese Etymology 4 are gathered by a custom web-crawling tool, while other instances are generated with a TrueType font file. Considering the long-tail distribution of oracle character instances in the Oracle-50K dataset, we solely select the top 100 characters with the highest frequency for our experiments. RCRN: The RCRN dataset <ref type="bibr" target="#b10">[11]</ref> is sampled from historical Chinese character and oracle document datasets. Due to its complex real-world degradation, it is an essential benchmark for OBI denoising tasks <ref type="bibr" target="#b10">[11,</ref><ref type="bibr" target="#b11">12]</ref>. While the test set is not publicly available, we use the training set for training, validation, and testing, which consists of 900 noisy-clean image pairs. For each pair, we split it into a noisy image and a clean image for experiments. OBC306: The OBC306 dataset <ref type="bibr" target="#b0">[1]</ref> is a well-known rubbing dataset constructed using eight authoritative oracle bone publications worldwide. These publications are first scanned and encoded using a six-character/number code. The characters in scanned images are retrieved with the help of an oracle bone dictionary tool by comparing the text in the images with A List of Oracle Characters <ref type="bibr" target="#b52">[53]</ref>. Finally, the best-matching character samples are added to the dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Implementation Details</head><p>We use Oracle-50K, RCRN, and OBC306 datasets for our experiments. Among them, the RCRN and OBC306 datasets are rubbing datasets, and the Oracle-50K dataset is a handprint dataset. Specifically, we utilize STSN <ref type="bibr" target="#b13">[14]</ref> to apply the domain adaptation for the Oracle-50K dataset. Then, these datasets are used to train denoising models. Our model is implemented using the PyTorch platform and trained on an NVIDIA RTX 4090 GPU for 300 epochs with the AdamW optimizer <ref type="bibr" target="#b53">[54]</ref>. The learning rate is set to 2e-4, and the weight decay is set to 0.01. We use a batch size of 10, and all images are resized to 256 × 256. For the RCRN dataset, due to its limited data scale, we adopt a data augmentation technique consisting of random rotation and horizontal and vertical flipping. Considering various quality assessment metrics <ref type="bibr" target="#b54">[55,</ref><ref type="bibr" target="#b55">56,</ref><ref type="bibr" target="#b56">57,</ref><ref type="bibr" target="#b57">58]</ref>, we apply two common metrics of low-level vision tasks, i.e., peak signal-to-noise ratio (PSNR) and the structural similarity index measure (SSIM) <ref type="bibr" target="#b58">[59]</ref>. Higher PSNR and SSIM values indicate better denoising results. For Oracle-50K and RCRN datasets, their target images serve as the ground truth to compute the PSNR and SSIM metrics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Baseline Algorithms</head><p>To evaluate the performance of the proposed OBI-Former, we select nine representative models, i.e., Denoising Convolutional Neural Networks (DnCNN) <ref type="bibr" target="#b8">[9]</ref>, Dual Adversarial Network (DANet) <ref type="bibr" target="#b45">[46]</ref>, Selective Residual M-Net (SRMNet) <ref type="bibr" target="#b41">[42]</ref>, Kernel Basis Network (KBNet) <ref type="bibr" target="#b43">[44]</ref>, Invertible Denoising Network (InvDN) <ref type="bibr" target="#b44">[45]</ref>, CharFormer <ref type="bibr" target="#b11">[12]</ref>, U-Shaped Transformer (Uformer) <ref type="bibr" target="#b47">[48]</ref>, Restoration Transformer (Restormer) <ref type="bibr" target="#b9">[10]</ref>, and CascadedGaze Network (CGNet) <ref type="bibr" target="#b48">[49]</ref> for comparisons.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4.">Comparison with the State-of-the-Art</head><p>Table <ref type="table">2</ref> reports the quantitative comparisons of baseline methods and our OBIFormer on Oracle-50K and RCRN datasets. On the Oracle-50K dataset, OBIFormer achieves 16.31 dB on PSNR and 0.893 on SSIM, surpassing all the other methods by at least 1.06 dB and 0.063, respectively. Similarly, on the RCRN dataset, OBIFormer attains 22.19 dB on PSNR and 0.969 on SSIM, outperforming all the other methods by at least 0.16 dB in PSNR and 0.019 in SSIM.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Table 2</head><p>Quantitative comparisons of baseline methods and our OB-IFormer on Oracle-50K <ref type="bibr" target="#b12">[13]</ref> and RCRN <ref type="bibr" target="#b10">[11]</ref> datasets. The compared methods include CNN, INN, GAN, and transformerbased models. The best and second-best results are in bold and underlined, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>Oracle-50K <ref type="bibr" target="#b12">[13]</ref> RCRN <ref type="bibr" target="#b10">[11]</ref> PSNR↑ However, these methods excel in only one metric while exhibiting poor performance in the other. In contrast, our OBIFormer achieves state-of-the-art performance on both PSNR and SSIM, with a particularly notable improvement on SSIM, highlighting the effectiveness of GSNB and SKFF. Furthermore, we provide qualitative comparisons of baseline methods and our OBIFormer on Oracle-50K and RCRN datasets. As illustrated in Fig. <ref type="figure" target="#fig_4">5</ref> and Fig. <ref type="figure" target="#fig_5">6</ref>, OBI-Former effectively removes complex noise while preserving glyph details, whereas other methods struggle to maintain glyph consistency. Notably, OBIFormer generates cleaner and visually closer images to the ground truths than other algorithms in challenging scenarios where noise and strokes are difficult to distinguish. For example, most other methods fail to remove the spindle-shaped noise in the second case in Fig. <ref type="figure" target="#fig_5">6</ref>. In the first case in Fig. <ref type="figure" target="#fig_4">5</ref> and the third case in Fig. <ref type="figure" target="#fig_5">6</ref>, only our OBIFormer succeeds in restoring the broken strokes precisely. Overall, OBIFormer achieves state-of-theart performance on Oracle-50K and RCRN quantitatively and qualitatively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.5.">OBI Recognition</head><p>To further validate the effectiveness of OBI denoising in enhancing recognition accuracy, we employ ResNet-18, ResNet-50, and ResNet-152 <ref type="bibr" target="#b35">[36]</ref> for the OBI recognition task on the test set of the Oracle-50K dataset. The test set is divided into training and testing subsets in a 7:3 ratio. The model is pre-trained on the ImageNet dataset <ref type="bibr" target="#b50">[51]</ref> and finetuned on the Oracle-50K dataset for 100 epochs using the Adam optimizer. We adopt a data augmentation technique of random rotation. The learning rate is set to 1e-3 (5e-4 for Table <ref type="table">3</ref> The number of parameters (#Param.), FLOPs, and inference time of baseline methods and our OBIFormer.  ResNet-152 <ref type="bibr" target="#b35">[36]</ref> on Oracle-50K dataset <ref type="bibr" target="#b12">[13]</ref>.</p><p>ResNet-152) with a batch size of 256 (128 for ResNet-50, 64 for ResNet-152). We compare the original Oracle-50K dataset with the denoising results generated by OBIFormer trained on the same dataset.</p><p>As illustrated in Fig. <ref type="figure" target="#fig_6">7</ref>, ResNet-18 obtains a significant gain of 3.65% in the recognition accuracy on denoised images compared to the noisy images, demonstrating the effectiveness of OBI denoising in improving recognition accuracy. In addition, we observe a more remarkable improvement (4.42% and 5.19%) when deeper networks were applied, i.e., ResNet-50 and ResNet-152. This is attributed to the fact that denoised images contain more discriminative features, which are better captured by deeper networks. However, the recognition accuracy of the denoised image is still far from the ground truth.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.6.">Computational efficiency</head><p>Table <ref type="table">3</ref> presents comprehensive comparisons of the computational efficiency of baseline methods and our OBI-Former. We evaluate the number of parameters (#Param.), FLOPs, and inference time. To ensure a consistent comparison, #Param., FLOPs, and inference time are calculated based on a random input patch with a 256 × 256 resolution. We perform 50 iterations of GPU warm-up for the inference time before the measurement. Consequently, OBIFormer has fewer FLOPs than most baseline methods. Compared to CharFormer, OBIFormer has 3.02× fewer parameters and runs 4.76× faster. When deployed on the 13th Gen Intel(R) Core(TM) i9-13900K CPU @ 3.00GHz, 32GB RAM, and an NVIDIA GeForce RTX 4090 GPU for acceleration,  OBIFormer processes an image in just 10.35 ms, yielding competitive inference efficiency.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.7.">Exploration of the Generalization Ability</head><p>To explore the generalization ability of our OBIFormer, we test it on a real oracle dataset (i.e., the OBC306 dataset) after training it on Oracle-50K and RCRN datasets. As shown in Fig. <ref type="figure" target="#fig_7">8</ref> and Fig. <ref type="figure" target="#fig_8">9</ref>, OBIFormer shows a strong generalization ability on the OBC306 dataset. On the one hand, the denoising results of OBIFormer trained on the Oracle-50K dataset demonstrate the effectiveness of the adapted texture, which can be easily obtained with STSN or other OBI generation methods. On the other hand, even when we train OBIFormer on the RCRN dataset, which contains only 900 noisy-clean image pairs, it still performs well on the OBC306 dataset. Therefore, with a large amount of synthetic noisy-clean image pairs of OBIs, the generalization ability of OBIFormer can be further improved. This study demonstrates the great potential of OBIFormer in assisting automatic OBI recognition.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.8.">Ablation Studies</head><p>To validate the effectiveness of our OBIFormer, we conduct ablation studies on the RCRN dataset. In our experiments, we analyze the contribution of each core component in OBIFormer and the impact of specific hyperparameters.  <ref type="bibr" target="#b10">[11]</ref>. For each case, the first two images are the noisy character image and its ground truth, the second two refer to the reconstructed skeleton image and its ground truth, and the last two are the visualization of reconstruction and glyph features. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Validation of Glyph Information Extraction.</head><p>To demonstrate that glyph structural network blocks (GSNBs) can effectively extract glyph information from input images, we visualize the output of the additional feature corrector. The results can be found in Fig. <ref type="figure" target="#fig_9">10</ref>. For each case in Fig. <ref type="figure" target="#fig_9">10</ref>, the first two images refer to the noisy character image and its ground truth, and the second two are the reconstructed skeleton image and its ground truth, where we can find that the glyphs are extracted properly. This visualization indicates that our OBIFormer can precisely extract glyph features from the input images. Evaluation of Feature Fusion Strategy. To evaluate the effectiveness of the selective kernel feature fusion (SKFF) module, we apply simple addition and concatenation of the output of 𝑖-th CASB and GSNB for comparison. As illustrated in Table <ref type="table" target="#tab_3">4</ref>, the SKFF module provides favorable gains of 1.50 dB and 1.23 dB compared to simple addition and concatenation in terms of PSNR. Similar performance gains can be observed in the SSIM metric. That's because the SKFF module can generate attention maps for the reconstruction and glyph features and aggregate them dynamically. Since the glyph features can guide the model in reconstructing the denoised image, a more significant improvement in PSNR is obtained compared to SSIM. Impact of the Hyperparameters. {𝛼 𝑖 } 4 𝑖=1 are the hyperparameters for different losses in Eq. 17. To investigate the performance of OBIFormer when these parameters change, we conduct ablation experiments and show the results in Fig. <ref type="figure" target="#fig_0">11</ref>. The models are trained for 200 epochs in all experiments for computational reasons. It can be observed that PSNR and SSIM metrics first increase and then decrease as 𝛼 1 and 𝛼 2 vary, demonstrating a desirable bell-shaped curve. In  principle, small values of 𝛼 1 and 𝛼 2 (e.g., 10) would limit the performance of the CSABs, while large values of 𝛼 1 and 𝛼 2 (e.g., 1000) would weaken the effect of GSNBs. We also observe that 𝛼 3 and 𝛼 4 lead to similar PSNR and SSIM metrics trends, indicating that glyph features can guide the model in reconstructing the denoised image. Additionally, we adjust the number of CSABs and GSNBs to optimize the performance of our OBIFormer. Fig. <ref type="figure" target="#fig_11">12</ref> shows the effects of different CSABs and GSNBs settings. As the number of CSABs and GSNBs increases, the PSNR metric initially rises but eventually declines due to overfitting as model complexity grows. In contrast, the SSIM metric continues to improve even when the model is overfitted. That can be attributed to the SKFF module, which effectively aggregates the overfitted reconstruction features and glyph features, mitigating the negative influence of excessive CSABs. Consequently, we use two CSABs and GSNBs in this paper.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.9.">Visualization</head><p>To further demonstrate the effectiveness of our OBI-Former, we conduct visualization studies. As shown in Fig. <ref type="figure" target="#fig_9">10</ref>, we visualize the deep features extracted by the final OFB, which consists of reconstruction and glyph features. For each case in Fig. <ref type="figure" target="#fig_9">10</ref>, the last two images correspond to the visualizations of reconstruction and glyph features, respectively. For the reconstruction features, OBIFormer successfully captures character-related features while removing complex noise. For the glyph features, OBIFormer precisely learns the glyph information from the input images, aided by the GSNBs and SKFFs. These visualizations indicate that both reconstruction and glyph features are successfully learned between the OFBs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusion and Future Work</head><p>In this paper, we propose a fast attentive denoising framework for OBIs, i.e., OBIFormer. Specifically, our OBI-Former consists of an input projector, an output projector, an additional feature corrector, and several OFBs. The OFB utilizes CSABs to extract reconstruction features and GSNBs to learn glyph information. Additionally, the SKFF module aggregates reconstruction features and glyph information dynamically. Extensive experiments demonstrate the superiority of OBIFormer on Oracle-50K and RCRN datasets quantitatively and qualitatively. Furthermore, OBIFormer shows a strong generalization ability on the OBC306 dataset, demonstrating its great potential in assisting automatic OBI recognition. Finally, we provide comprehensive ablations to validate the effectiveness of each module.</p><p>However, the performance of OBIFormer on OBIs with some types of noise, such as bone-cracked and dense white regions, remains unsatisfactory. That is because there are only a few images with such noise, which can be treated as a few-shot learning problem. Hence, one future trend is to investigate more generic methods, e.g., the conditional diffusion model, to utilize multi-modal conditions to generate a noise-balanced dataset for OBI denoising. Also, we can apply a conditional diffusion model for image denoising directly, where conditions guide the model in removing target noise.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Four types of noise in real rubbings. The red rectangle indicates the corresponding noise. (a) Stroke-broken, (b) Bonecracked, (c) Abnormal edges, (d) Dense white regions.</figDesc><graphic coords="1,306.60,350.33,237.36,127.62" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>et al. from the Chinese etymology website 1 . It encompasses 20,039 oracle character instances across 261 categories.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: The overall architecture of our OBIFormer. (a) OBIFormer block (OFB) that injects glyph information into the denoising backbone, (b) Glyph structural network block (GSNB) that extracts glyph features, (c) Channel-wise self-attention block (CSAB) that generates channel-wise self-attention effectively and efficiently, (d) Selective kernel feature fusion (SKFF) module that aggregates reconstruction features and glyph features.</figDesc><graphic coords="6,51.31,55.28,492.66,243.65" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>context followed by 3 × 3 depth-wise convolutions to encode channel-wise spatial context:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Qualitative comparisons of baseline methods and our OBIFormer on Oracle-50K dataset [13].</figDesc><graphic coords="8,54.38,55.28,492.65,132.46" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Qualitative comparisons of baseline methods and our OBIFormer on RCRN dataset [11].</figDesc><graphic coords="8,54.38,225.58,492.65,132.46" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Recognition results of ResNet-18, ResNet-50, and ResNet-152<ref type="bibr" target="#b35">[36]</ref> on Oracle-50K dataset<ref type="bibr" target="#b12">[13]</ref>.</figDesc><graphic coords="9,51.31,162.36,237.37,164.05" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: Denoising results of our OBIFormer (trained on Oracle-50K dataset [13]) on OBC306 dataset [1].</figDesc><graphic coords="9,306.60,162.36,237.36,78.06" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 9 :</head><label>9</label><figDesc>Figure 9: Denoising results of our OBIFormer (trained on RCRN dataset<ref type="bibr" target="#b10">[11]</ref>) on OBC306 dataset<ref type="bibr" target="#b0">[1]</ref>.</figDesc><graphic coords="9,306.60,285.22,237.37,77.91" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure 10 :</head><label>10</label><figDesc>Figure 10: Visualization results of our OBIFormer on RCRN dataset<ref type="bibr" target="#b10">[11]</ref>. For each case, the first two images are the noisy character image and its ground truth, the second two refer to the reconstructed skeleton image and its ground truth, and the last two are the visualization of reconstruction and glyph features.</figDesc><graphic coords="10,51.31,55.28,492.65,134.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>4 Figure 11 :</head><label>411</label><figDesc>Figure 11: The sensitivity of PSNR and SSIM to {𝛼 𝑖 } 4 𝑖=1 .</figDesc><graphic coords="10,425.49,474.60,113.93,81.95" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Figure 12 :</head><label>12</label><figDesc>Figure 12: Effects of different CSABs and GSNBs settings.</figDesc><graphic coords="10,311.15,472.26,113.93,84.28" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1</head><label>1</label><figDesc>Summary of the existing oracle bone inscription datasets.</figDesc><table><row><cell>Type</cell><cell>Dataset</cell><cell>Year</cell><cell>#Classes</cell><cell>#Total</cell><cell>Avg. Res.</cell><cell>Application</cell><cell>Availability</cell></row><row><cell></cell><cell>Oracle-20K [20]</cell><cell>2016</cell><cell>261</cell><cell>20,039</cell><cell>50×50</cell><cell>Recognition</cell><cell>✓</cell></row><row><cell></cell><cell>Yang et al. [21]</cell><cell>2018</cell><cell>39</cell><cell>21,373</cell><cell>-</cell><cell>Recognition</cell><cell>✗</cell></row><row><cell></cell><cell>Liu et al. [22]</cell><cell>2018</cell><cell>5,491</cell><cell>44,868</cell><cell>-</cell><cell>Recognition</cell><cell>✗</cell></row><row><cell>Handprints</cell><cell>Oracle-50K [13]</cell><cell>2020</cell><cell>2,668</cell><cell>59,081</cell><cell>50×50</cell><cell>Recognition</cell><cell>✓</cell></row><row><cell></cell><cell>HWOBC [16]</cell><cell>2020</cell><cell>3,881</cell><cell>83,245</cell><cell>400×400</cell><cell>Recognition</cell><cell>✓</cell></row><row><cell></cell><cell>EVOBI [17]</cell><cell>2022</cell><cell>972</cell><cell>4,860</cell><cell>105×105</cell><cell>Recognition</cell><cell>✓</cell></row><row><cell></cell><cell>OBC306 [1]</cell><cell>2019</cell><cell>306</cell><cell>309,551</cell><cell>&lt;382×478</cell><cell>Recognition</cell><cell>✓</cell></row><row><cell></cell><cell>Wang et al. [23]</cell><cell>2019</cell><cell>-</cell><cell>7,824</cell><cell>-</cell><cell>Denoising &amp; Recognition</cell><cell>✗</cell></row><row><cell></cell><cell>Liu et al. [24]</cell><cell>2020</cell><cell>682</cell><cell>-</cell><cell>-</cell><cell>Recognition</cell><cell>✗</cell></row><row><cell></cell><cell>OracleBone8000 [25]</cell><cell>2020</cell><cell>-</cell><cell>129,770</cell><cell>-</cell><cell>Rejoining &amp; Recognition</cell><cell>✗</cell></row><row><cell></cell><cell>Yoshiyuki et al. [26]</cell><cell>2022</cell><cell>27</cell><cell>649</cell><cell>-</cell><cell>Detection &amp; Recognition</cell><cell>✗</cell></row><row><cell>Rubbings</cell><cell>OBI125 [18] OB-Rejoin [27]</cell><cell>2022 2022</cell><cell>125 -</cell><cell>4,257 998</cell><cell>&lt;278×473 &lt;1408×1049</cell><cell>Recognition Rejoining</cell><cell>✓ ✗</cell></row><row><cell></cell><cell>Oracle-MINST [28]</cell><cell>2023</cell><cell>10</cell><cell>30,222</cell><cell>28×28</cell><cell>Recognition</cell><cell>✓</cell></row><row><cell></cell><cell>EVOBC [19]</cell><cell>2024</cell><cell>13,714</cell><cell>229,170</cell><cell>&lt;465×857</cell><cell>Generation &amp; Recognition</cell><cell>✓</cell></row><row><cell></cell><cell>HUST-OBC [29]</cell><cell>2024</cell><cell>10,999</cell><cell>140,053</cell><cell>&lt;400×520</cell><cell>Recognition</cell><cell>✓</cell></row><row><cell></cell><cell>O2BR [15]</cell><cell>2025</cell><cell>-</cell><cell>800</cell><cell>&lt;2664×2167</cell><cell>Recognition</cell><cell>✓</cell></row><row><cell></cell><cell>OBI-rejoin [15]</cell><cell>2025</cell><cell>-</cell><cell>200</cell><cell>&lt;2913×1268</cell><cell>Rejoining</cell><cell>✓</cell></row><row><cell>Hybrid</cell><cell>Oracle-241 [14] Oracle-P15K [30]</cell><cell>2022 2025</cell><cell>241 239</cell><cell>78,565 14,542</cell><cell>&lt;588×700 128×128</cell><cell>Generation &amp; Recognition Generation &amp; Denoising</cell><cell>✓ ✓</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4</head><label>4</label><figDesc>Effects of different feature fusion strategies.</figDesc><table><row><cell cols="4">Strategies Addition Concatenation SKFF</cell></row><row><cell>PSNR↑</cell><cell>20.69</cell><cell>20.96</cell><cell>22.19</cell></row><row><cell>SSIM↑</cell><cell>0.962</cell><cell>0.967</cell><cell>0.969</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>http://www.chineseetymology.org/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_1"><p>http://www.guoxuedashi.net/</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p>http://xiaoxue.iis.sinica.edu.tw/jiaguwen</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_3"><p>https://hanziyuan.net/</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgement</head><p>This work was supported by the <rs type="funder">National Social Science Foundation of China</rs> (<rs type="grantNumber">24Z300404220</rs>) and the <rs type="funder">Shanghai Philosophy and Social Science Planning Project</rs> (<rs type="grantNumber">2023BYY003</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_ejAn9gV">
+					<idno type="grant-number">24Z300404220</idno>
+				</org>
+				<org type="funding" xml:id="_GPa4ZxA">
+					<idno type="grant-number">2023BYY003</idno>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">OBC306: A Large-Scale Oracle Bone Character Recognition Dataset</title>
+		<author>
+			<persName><forename type="first">Shuangping</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haobin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaosong</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icdar.2019.00114</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-09">2019</date>
+			<biblScope unit="page" from="681" to="688" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Comparison of different image denoising algorithms for Chinese calligraphy images</title>
+		<author>
+			<persName><forename type="first">Zhi-Kai</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-1252-2001</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhi-Hong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhi-Biao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling-Ying</forename><surname>Hou</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.neucom.2014.11.106</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Neurocomputing</title>
+		<title level="j" type="abbrev">Neurocomputing</title>
+		<idno type="ISSN">0925-2312</idno>
+		<imprint>
+			<biblScope unit="volume">188</biblScope>
+			<biblScope unit="page" from="102" to="112" />
+			<date type="published" when="2016-05">2016</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Restoration method of characters on jiagu rubbings based on poisson distribution and fractal geometry</title>
+		<author>
+			<persName><forename type="first">Shaotong</forename><surname>Gu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gefei</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohu</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiming</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science China Information Sciences</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="1296" to="1304" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">A Unified Framework for Degraded Thai Historical Document Image Restoration</title>
+		<author>
+			<persName><forename type="first">Krisda</forename><surname>Khankasikam</surname></persName>
+		</author>
+		<idno type="DOI">10.4304/jcp.9.9.2146-2150</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computers</title>
+		<title level="j" type="abbrev">JCP</title>
+		<idno type="ISSN">1796-203X</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="1321" to="1338" />
+			<date type="published" when="2014-09-01">2014</date>
+			<publisher>International Academy Publishing (IAP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Robust kronecker-decomposable component analysis for low-rank modeling</title>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Bahri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yannis</forename><surname>Panagakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefanos</forename><surname>Zafeiriou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE International Conference on Computer Vision</title>
+		<meeting>the IEEE International Conference on Computer Vision</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="3352" to="3361" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Robust kronecker component analysis</title>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Bahri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yannis</forename><surname>Panagakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefanos</forename><surname>Zafeiriou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on pattern analysis and machine intelligence</title>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="2365" to="2379" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Kronecker component with robust low-rank dictionary for image denoising</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cong</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Displays</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page">102194</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Robust low-rank analysis with adaptive weighted tensor for image denoising</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cong</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Displays</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page">102200</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Beyond a gaussian denoiser: Residual learning of deep cnn for image denoising</title>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wangmeng</forename><surname>Zuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunjin</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deyu</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on image processing</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="3142" to="3155" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Restormer: Efficient transformer for high-resolution image restoration</title>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Syed Waqas Zamir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Salman</forename><surname>Arora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Munawar</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fahad</forename><surname>Hayat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming-Hsuan</forename><surname>Shahbaz Khan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF conference on computer vision and pattern recognition</title>
+		<meeting>the IEEE/CVF conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="5728" to="5739" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Rcrn: Real-world character image restoration network via skeleton extraction</title>
+		<author>
+			<persName><forename type="first">Daqian</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolei</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaomin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 30th ACM International Conference on Multimedia</title>
+		<meeting>the 30th ACM International Conference on Multimedia</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="1177" to="1185" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Charformer: A glyph fusion based attentive framework for high-precision character image denoising</title>
+		<author>
+			<persName><forename type="first">Daqian</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolei</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lida</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuntao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 30th ACM International Conference on Multimedia</title>
+		<meeting>the 30th ACM International Conference on Multimedia</meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="1147" to="1155" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Self-supervised Learning of Orc-Bert Augmentor for Recognizing Few-Shot Oracle Characters</title>
+		<author>
+			<persName><forename type="first">Wenhui</forename><surname>Han</surname></persName>
+			<idno type="ORCID">0000-0001-5896-3692</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xinlin</forename><surname>Ren</surname></persName>
+			<idno type="ORCID">0000-0002-8175-7392</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hangyu</forename><surname>Lin</surname></persName>
+			<idno type="ORCID">0000-0002-0538-7692</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yanwei</forename><surname>Fu</surname></persName>
+			<idno type="ORCID">0000-0002-6595-6893</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyang</forename><surname>Xue</surname></persName>
+			<idno type="ORCID">0000-0002-4897-9209</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-69544-6_39</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="652" to="668" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Unsupervised structure-texture separation network for oracle character recognition</title>
+		<author>
+			<persName><forename type="first">Mei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weihong</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Lin</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Image Processing</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="3137" to="3150" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Obibench: Can lmms aid in study of ancient script on oracle bones?</title>
+		<author>
+			<persName><forename type="first">Zijian</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tingzhu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangtao</forename><surname>Zhai</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">HWOBC-A Handwriting Oracle Bone Character Recognition Database</title>
+		<author>
+			<persName><forename type="first">Bang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qianwen</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiye</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1742-6596/1651/1/012050</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Physics: Conference Series</title>
+		<title level="j" type="abbrev">J. Phys.: Conf. Ser.</title>
+		<idno type="ISSN">1742-6588</idno>
+		<idno type="ISSNe">1742-6596</idno>
+		<imprint>
+			<biblScope unit="volume">1651</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">012050</biblScope>
+			<date type="published" when="2020-11-01">2020</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Study on the evolution of Chinese characters based on few-shot learning: From oracle bone inscriptions to regular script</title>
+		<author>
+			<persName><forename type="first">Mengru</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruichen</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingju</forename><surname>Jiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolin</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Jia</surname></persName>
+			<idno type="ORCID">0000-0002-3800-5347</idno>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0272974</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">e0272974</biblScope>
+			<date type="published" when="2022-08-19">2022</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Dynamic dataset augmentation for deep learning-based oracle bone inscriptions recognition</title>
+		<author>
+			<persName><forename type="first">Xuebin</forename><surname>Yue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hengyi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshiyuki</forename><surname>Fujikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Meng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Journal on Computing and Cultural Heritage</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1" to="20" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">An open dataset for the evolution of oracle bone characters</title>
+		<author>
+			<persName><forename type="first">Jinpeng</forename><surname>Haisu Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliang</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengjie</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaile</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhebin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Kuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Jin</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2401.12467</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<publisher>Evobc</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Building hierarchical representations for oracle character and sketch recognition</title>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Changhu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edgar</forename><surname>Roman-Rangel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongyang</forename><surname>Chao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Rui</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Image Processing</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="104" to="118" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Accurate Oracle Classification Based on Deep Convolutional Neural Network</title>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiqi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiuying</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhijian</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Yao</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icct.2018.8599885</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE 18th International Conference on Communication Technology (ICCT)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-10">2018</date>
+			<biblScope unit="page" from="1188" to="1191" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Deep Self-Supervised Learning for Oracle Bone Inscriptions Features Representation</title>
+		<author>
+			<persName><forename type="first">Bingxin</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guoying</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenying</forename><surname>Ge</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iciscae52414.2021.9590642</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE 4th International Conference on Information Systems and Computer Aided Education (ICISCAE)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-09-24">2021</date>
+			<biblScope unit="page" from="7" to="11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Unsupervised color texture segmentation based on multi-scale region-level Markov random field models</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.18287/2412-6179-2019-43-2-264-269</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Optics</title>
+		<title level="j" type="abbrev">Computer Optics</title>
+		<idno type="ISSN">0134-2452</idno>
+		<idno type="ISSNe">2412-6179</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2020">2020</date>
+			<publisher>Samara National Research University</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>Henan University</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Master&apos;s thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Oracle Bone Inscriptions Recognition Based on Deep Convolutional Neural Network</title>
+		<author>
+			<persName><forename type="first">Mengting</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guoying</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingju</forename><surname>Jiao</surname></persName>
+		</author>
+		<idno type="DOI">10.18178/joig.8.4.114-119</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Image and Graphics</title>
+		<title level="j" type="abbrev">JOIG</title>
+		<idno type="ISSN">2301-3699</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="114" to="119" />
+			<date type="published" when="2020">2020</date>
+			<publisher>EJournal Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">AI-Powered Oracle Bone Inscriptions Recognition and Fragments Rejoining</title>
+		<author>
+			<persName><forename type="first">Chongsheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruixing</forename><surname>Zong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuang</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Men</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bofeng</forename><surname>Mo</surname></persName>
+		</author>
+		<idno type="DOI">10.24963/ijcai.2020/779</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence</title>
+		<meeting>the Twenty-Ninth International Joint Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<publisher>International Joint Conferences on Artificial Intelligence Organization</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="5309" to="5311" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Recognition of oracle bone inscriptions by using two deep learning models</title>
+		<author>
+			<persName><forename type="first">Yoshiyuki</forename><surname>Fujikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hengyi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuebin</forename><surname>Yue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">V</forename><surname>Aravinda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Amar Prabhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Meng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Digital Humanities</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="65" to="79" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Data-Driven Oracle Bone Rejoining: A Dataset and Practical Self-Supervised Learning Scheme</title>
+		<author>
+			<persName><forename type="first">Chongsheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ke</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruixing</forename><surname>Zong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo-Feng</forename><surname>Mo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Men</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Almpanidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shanxiong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangliang</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3534678.3539050</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</title>
+		<meeting>the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2022-08-14">2022</date>
+			<biblScope unit="page" from="4482" to="4492" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">A dataset of oracle characters for benchmarking machine learning algorithms</title>
+		<author>
+			<persName><forename type="first">Mei</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weihong</forename><surname>Deng</surname></persName>
+			<idno type="ORCID">0000-0001-5952-6996</idno>
+		</author>
+		<idno type="DOI">10.1038/s41597-024-02933-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">87</biblScope>
+			<date type="published" when="2024-01-18">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">An open dataset for oracle bone script recognition and decipherment</title>
+		<author>
+			<persName><forename type="first">Pengjie</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaile</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinpeng</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haisu</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhebin</forename><surname>Kuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2401.15365</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">Mitigating long-tail distribution in oracle bone inscriptions: Dataset, model, and benchmark</title>
+		<author>
+			<persName><forename type="first">Jinhao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zijian</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Runze</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tingzhu</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Changbo</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangtao</forename><surname>Zhai</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Introduction to the Huayuanzhuang East Oracle Bone Inscriptions</title>
+		<author>
+			<persName><forename type="first">Maozuo</forename><surname>Pu</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/9781501505294-001</idno>
+	</analytic>
+	<monogr>
+		<title level="m">The Oracle Bone Inscriptions from Huayuanzhuang East</title>
+		<imprint>
+			<publisher>De Gruyter</publisher>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="1" to="70" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Gradient-based learning applied to document recognition. Proceedings of the IEEE</title>
+		<author>
+			<persName><forename type="first">Yann</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Léon</forename><surname>Bottou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshua</forename><surname>Bengio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Haffner</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998">1998</date>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page" from="2278" to="2324" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">ImageNet classification with deep convolutional neural networks</title>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Krizhevsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><forename type="middle">E</forename><surname>Hinton</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3065386</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<title level="j" type="abbrev">Commun. ACM</title>
+		<idno type="ISSN">0001-0782</idno>
+		<idno type="ISSNe">1557-7317</idno>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="84" to="90" />
+			<date type="published" when="2012">2012</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning</title>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Szegedy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergey</forename><surname>Ioffe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Vanhoucke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Alemi</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v31i1.11231</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2017-02-12">2017</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Very deep convolutional networks for large-scale image recognition</title>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Simonyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1409.1556</idno>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Deep residual learning for image recognition</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE conference on computer vision and pattern recognition</title>
+		<meeting>the IEEE conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="770" to="778" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Oracle Character Recognition by Nearest Neighbor Classification with Deep Metric Learning</title>
+		<author>
+			<persName><forename type="first">Yi-Kang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong-Ge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Lin</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icdar.2019.00057</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-09">2019</date>
+			<biblScope unit="page" from="309" to="314" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Oracle character recognition using unsupervised discriminative consistency network</title>
+		<author>
+			<persName><forename type="first">Mei</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-3559-9346</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weihong</forename><surname>Deng</surname></persName>
+			<idno type="ORCID">0000-0001-5952-6996</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sen</forename><surname>Su</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patcog.2023.110180</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition</title>
+		<title level="j" type="abbrev">Pattern Recognition</title>
+		<idno type="ISSN">0031-3203</idno>
+		<imprint>
+			<biblScope unit="volume">148</biblScope>
+			<biblScope unit="page">110180</biblScope>
+			<date type="published" when="2024-04">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Statistical techniques for digital pre-processing of computed tomography medical images: A current review</title>
+		<author>
+			<persName><forename type="first">Oscar</forename><surname>Valbuena Prada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miguel</forename><forename type="middle">Ángel</forename><surname>Vera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guillermo</forename><surname>Ramirez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">Barrientos</forename><surname>Rojel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">Mojica</forename><surname>Maldonado</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Displays</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page">102835</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Lesion-Inspired Denoising Network: Connecting Medical Image Denoising and Lesion Detection</title>
+		<author>
+			<persName><forename type="first">Kecheng</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yazhou</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiayu</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaorong</forename><surname>Pu</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3474085.3475480</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 29th ACM International Conference on Multimedia</title>
+		<meeting>the 29th ACM International Conference on Multimedia</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2021-10-17">2021</date>
+			<biblScope unit="page" from="3283" to="3292" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Indeandcoe: A framework based on multi-scale feature fusion and residual learning for interferometric sar remote sensing image denoising and coherence estimation</title>
+		<author>
+			<persName><forename type="first">Boyu</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingda</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaorui</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongxing</forename><surname>Hao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>Zou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Lu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Displays</title>
+		<imprint>
+			<biblScope unit="volume">79</biblScope>
+			<biblScope unit="page">102496</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Selective Residual M-Net for Real Image Denoising</title>
+		<author>
+			<persName><forename type="first">Chi-Mao</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tsung-Jung</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kuan-Hsien</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ching-Hsiang</forename><surname>Chiu</surname></persName>
+		</author>
+		<idno type="DOI">10.23919/eusipco55093.2022.9909521</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 30th European Signal Processing Conference (EUSIPCO)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-08-29">2022</date>
+			<biblScope unit="page" from="469" to="473" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">U-Net: Convolutional Networks for Biomedical Image Segmentation</title>
+		<author>
+			<persName><forename type="first">Olaf</forename><surname>Ronneberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Fischer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Brox</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-24574-4_28</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Munich, Germany</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2015">October 5-9, 2015. 2015</date>
+			<biblScope unit="page" from="234" to="241" />
+		</imprint>
+	</monogr>
+	<note>proceedings, part III 18</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dasong</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyu</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dailan</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kangning</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaogang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongwei</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongsheng</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2303.02881</idno>
+		<title level="m">Kbnet: Kernel basis network for image restoration</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Invertible denoising network: A light solution for real noise removal</title>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhenyue</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saeed</forename><surname>Anwar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pan</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongwoo</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabrina</forename><surname>Caldwell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Gedeon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF conference on computer vision and pattern recognition</title>
+		<meeting>the IEEE/CVF conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="13365" to="13374" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Dual adversarial network: Toward real-world noise removal and noise generation</title>
+		<author>
+			<persName><forename type="first">Zongsheng</forename><surname>Yue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deyu</forename><surname>Meng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Vision-ECCV 2020: 16th European Conference</title>
+		<meeting><address><addrLine>Glasgow, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2020">August 23-28, 2020. 2020</date>
+			<biblScope unit="page" from="41" to="58" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part X 16</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">An image is worth 16x16 words: Transformers for image recognition at scale</title>
+		<author>
+			<persName><forename type="first">Alexey</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucas</forename><surname>Beyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Kolesnikov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Weissenborn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohua</forename><surname>Zhai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mostafa</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Minderer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Georg</forename><surname>Heigold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sylvain</forename><surname>Gelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neil</forename><surname>Houlsby</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Learning Representations</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Uformer: A General U-Shaped Transformer for Image Restoration</title>
+		<author>
+			<persName><forename type="first">Zhendong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaodong</forename><surname>Cun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianmin</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wengang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianzhuang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Houqiang</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52688.2022.01716</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-06">2022</date>
+			<biblScope unit="page" from="17662" to="17672" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Cascadedgaze: Efficiency in global context extraction for image restoration</title>
+		<author>
+			<persName><forename type="first">Amirhosein</forename><surname>Ghasemabadi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><forename type="middle">Kamran</forename><surname>Janjua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Salameh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunhua</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fengyu</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Niu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transactions on Machine Learning Research</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Selective kernel networks</title>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenhai</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolin</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF conference on computer vision and pattern recognition</title>
+		<meeting>the IEEE/CVF conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="510" to="519" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Imagenet: A large-scale hierarchical image database</title>
+		<author>
+			<persName><forename type="first">Jia</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li-Jia</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Fei-Fei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2009 IEEE conference on computer vision and pattern recognition</title>
+		<imprint>
+			<publisher>Ieee</publisher>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="248" to="255" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Chinese characters stroke thinning and extraction based on mathematical morphology [j]</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Jian-Ping</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zi-Tuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Jin-Ling</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Guo-Jun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Hefei University of Technology (Natural Science)</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">17</biblScope>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<monogr>
+		<title level="m" type="main">Jiaguwen zixing biao (a list of oracle characters)</title>
+		<author>
+			<persName><forename type="first">Jianhua</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinyan</forename><surname>Cao</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2008</date>
+			<publisher>Shanghai cishuchubanshe</publisher>
+			<pubPlace>Shanghai, China</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<monogr>
+		<author>
+			<persName><surname>Loshchilov</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1711.05101</idno>
+		<title level="m">Decoupled weight decay regularization</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<monogr>
+		<author>
+			<persName><forename type="first">Zicheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingjie</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunyi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baixuan</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangtao</forename><surname>Zhai</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2409.00031</idno>
+		<title level="m">Quality assessment in the era of large models: A survey</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Q-Bench-Video: Benchmark the Video Quality Understanding of LMMs</title>
+		<author>
+			<persName><forename type="first">Zicheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziheng</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haoning</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunyi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zijian</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingjie</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiongkuo</forename><surname>Min</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weisi</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangtao</forename><surname>Zhai</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52734.2025.00307</idno>
+		<idno type="arXiv">arXiv:2406.03070</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="3229" to="3239" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<monogr>
+		<title level="m" type="main">Q-bench-video: Benchmarking the video quality understanding of lmms</title>
+		<author>
+			<persName><forename type="first">Zicheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziheng</forename><surname>Jia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haoning</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chunyi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zijian</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingjie</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohong</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiongkuo</forename><surname>Min</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weisi</forename><surname>Lin</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2409.20063</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Study of Subjective and Objective Naturalness Assessment of AI-Generated Images</title>
+		<author>
+			<persName><forename type="first">Zijian</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0002-8502-4110</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Sun</surname></persName>
+			<idno type="ORCID">0000-0001-8162-1949</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Haoning</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0001-8642-8101</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zicheng</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-7247-7938</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Jia</surname></persName>
+			<idno type="ORCID">0000-0002-5424-4284</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ru</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0001-7545-0987</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiongkuo</forename><surname>Min</surname></persName>
+			<idno type="ORCID">0000-0001-5693-0416</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guangtao</forename><surname>Zhai</surname></persName>
+			<idno type="ORCID">0000-0001-8165-9322</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjun</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-8799-1182</idno>
+		</author>
+		<idno type="DOI">10.1109/tcsvt.2024.3509032</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Circuits and Systems for Video Technology</title>
+		<title level="j" type="abbrev">IEEE Trans. Circuits Syst. Video Technol.</title>
+		<idno type="ISSN">1051-8215</idno>
+		<idno type="ISSNe">1558-2205</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="3573" to="3588" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Image quality metrics: Psnr vs. ssim</title>
+		<author>
+			<persName><forename type="first">Alain</forename><surname>Hore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Djemel</forename><surname>Ziou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2010 20th international conference on pattern recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="2366" to="2369" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

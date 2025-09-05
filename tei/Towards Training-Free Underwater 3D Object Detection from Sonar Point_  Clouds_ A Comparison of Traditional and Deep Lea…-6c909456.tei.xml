@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Towards Training-Free Underwater 3D Object Detection from Sonar Point Clouds: A Comparison of Traditional and Deep Learning Approaches</title>
+				<funder ref="#_UDss7hs">
+					<orgName type="full">German Federal Ministry of Education and Research (BMBF)</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-08-22">22 Aug 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">M</forename><forename type="middle">Salman</forename><surname>Shaukat</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yannik</forename><surname>Käckenmeister</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Sebastian</forename><surname>Bader</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Thomas</forename><surname>Kirste</surname></persName>
+						</author>
+						<title level="a" type="main">Towards Training-Free Underwater 3D Object Detection from Sonar Point Clouds: A Comparison of Traditional and Deep Learning Approaches</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-08-22">22 Aug 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">1BD336180C74844CB02FC9744CB0A868</idno>
+					<idno type="arXiv">arXiv:2508.18293v1[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:27+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Ocean remote sensing</term>
+					<term>3D object detection</term>
+					<term>Sonar signal processing</term>
+					<term>Modeling and simulation</term>
+					<term>Point cloud processing</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Underwater 3D object detection remains one of the most challenging frontiers in computer vision, where traditional approaches struggle with the harsh acoustic environment and scarcity of training data. While deep learning has revolutionized terrestrial 3D detection, its application underwater faces a critical bottleneck: obtaining sufficient annotated sonar data is prohibitively expensive and logistically complex, often requiring specialized vessels, expert surveyors, and favorable weather conditions. This work addresses a fundamental question: Can we achieve reliable underwater 3D object detection without realworld training data? We tackle this challenge by developing and comparing two paradigms for training-free detection of artificial structures in multibeam echo-sounder point clouds. Our dual approach combines a physics-based sonar simulation pipeline that generates synthetic training data for state-of-the-art neural networks, with a robust model-based template matching system that leverages geometric priors of target objects. Evaluation on real bathymetry surveys from the Baltic Sea reveals surprising insights: while neural networks trained on synthetic data achieve 98% mean Average Precision (mAP) on simulated scenes, they drop to 40% mAP on real sonar data due to domain shift. Conversely, our template matching approach maintains 83% mAP on real data without requiring any training, demonstrating remarkable robustness to acoustic noise and environmental variations. Our findings challenge conventional wisdom about data-hungry deep learning in underwater domains and establish the first large-scale benchmark for training-free underwater 3D detection. This work opens new possibilities for autonomous underwater vehicle navigation, marine archaeology, and offshore infrastructure monitoring in data-scarce environments where traditional machine learning approaches fail.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION &amp; BACKGROUND</head><p>The underwater world is both important and challenging for visual computing. Studying and monitoring these environments matters for ecological as well as industrial reasons. They include a wide range of marine ecosystems such as coral reefs, fish populations, and microorganisms. Alongside natural habitats, there are also many human-made structures beneath the ocean surface, including offshore oil and gas platforms, subsea pipelines, communication cables, and artificial reefs.</p><p>This research focuses on the challenge of classifying and localizing artificial underwater structures. A key factor in this task is the choice of sensor modality. As discussed in Section I-A, sonar is the natural option for underwater exploration and, in deep oceans, often the only practical one. Sonar works by using acoustic reflections to measure depth. In particular, Multibeam Echosounder (MBES) systems capture dense sets of 3D points that represent the geometry of the seafloor and any objects present on it.</p><p>In computer vision, this type of data is commonly referred to as a 3D point cloud. It requires specialized computational methods for analysis and interpretation. Many existing approaches down-sample 3D point cloud data into 2D images, allowing the use of well-established image processing techniques and deep neural networks. However, this downsampling inevitably leads to information loss. In our work, we remain in the 3D domain to fully exploit the richness of point cloud data. This allows us to estimate the size, position, and orientation of objects, rather than only performing classification. As a result, our method addresses a 3D Object Detection (3DOD) task.</p><p>Regarding the 3DOD field, substantial research has been carried out, especially in the deep learning domain. This is mainly driven by the growing interest in autonomous driving, which relies on LiDAR sensors that produce 3D point clouds of the vehicle's surroundings for navigation. As expected, the performance of deep learning-based 3DOD methods depends heavily on the availability of large amounts of annotated training data.</p><p>In underwater environments, however, obtaining training data is extremely difficult due to several factors. It requires careful planning by expert surveyors and involves costly resources such as specialized equipment and personnel <ref type="bibr" target="#b0">[1]</ref>. Unlike terrestrial or aerial data collection, the extreme underwater environment presents unique challenges. Weather conditions and environmental factors make the process complex and prone to errors <ref type="bibr" target="#b1">[2]</ref>. Additionally, because of the high cost of data collection and issues of confidentiality, most datasets remain private <ref type="bibr" target="#b2">[3]</ref> and are therefore of limited use for research and development.</p><p>In the absence of sonar training data, this work focuses on training-less underwater 3D object detection, where real sonar data is used only during the testing phase. In particular, we target man-made structures where the shape and size of objects are known as background knowledge.</p><p>Regarding the choice of detection methods for our research focus, an obvious direction is a deep learning-based solution trained on simulated sonar data. This choice is motivated by the widespread adoption, rapid development, and strong performance of neural-based approaches in recent years. Therefore, we developed an underwater sonar simulator and used the generated synthetic data to train a state-of-the-art neural network. The trained network was then directly applied to detect objects from real-world sonar data.</p><p>Beyond learning-based approaches, there also exist several traditional model-based methods for 3DOD. These involve creating a library of object models and applying them in a template-matching manner. Model-based methods are therefore compelling candidates for training-less 3DOD as well. For this purpose, we constructed a model template library by generating 3D polygon mesh models of objects and converting them into sonar point cloud templates. These model templates were then applied directly to raw sonar data.</p><p>The paper is organized as follows: The remainder of this section introduces key concepts in underwater environments, sonar sensing, and 3D detection methods. Section II reviews existing work on 3DOD in the underwater domain. Section III provides detailed information on both the synthetic and real sonar data. Sections IV and V describe the implementation details and present the results, respectively. Finally, Section VI offers a discussion and an outlook on future work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Underwater Environment and Sensors</head><p>In underwater environments, computer vision application areas include surveillance, scientific exploration, and industrial repair &amp; maintenance <ref type="bibr" target="#b3">[4]</ref>. Despite its importance, underwater perception faces challenges that are not present in terrestrial or aerial environments. These challenges include light distortion, attenuation, and scattering, which lead to image degradation and loss of contrast <ref type="bibr" target="#b4">[5]</ref>. As a result, optical vision deteriorates with increasing depth, particularly due to the lack of natural light. Therefore, acoustic sonar sensors are widely used in underwater settings because acoustic signals are more robust against attenuation compared to optical sensors such as cameras or LiDAR <ref type="bibr" target="#b5">[6]</ref>.</p><p>There are numerous types of underwater sonar sensors in use today, differing in both their design principles and the data they record. They are generally categorized into three types: singlebeam (or forward-looking), multibeam, and sidescan sonar. A multibeam sonar, as the name suggests, emits hundreds of beams on both sides and maps the seafloor in high resolution. In this work, the data was recorded using a similar multibeam sonar towed by a surface vessel. For further reading on sonar sensors, a comprehensive review is provided in <ref type="bibr" target="#b6">[7]</ref>.</p><p>1) Data Recording in the Baltic Sea (Digital Ocean Lab): Between 2019 and 2021, the Mecklenburg-Vorpommern Research Center for Agriculture and Fisheries in Germany initiated the construction of an artificial reef in the Baltic Sea, in collaboration with the European Maritime and Fisheries Fund (EMFF). This project, known as the "Digital Ocean Lab" (DOL), created underwater habitats that serve as recruitment, growth, and resting zones for local fish species <ref type="bibr" target="#b7">[8]</ref>, <ref type="bibr" target="#b8">[9]</ref>.</p><p>The DOL testing site includes man-made concrete structures such as wave-dissipating blocks (tetrapods), reef rings, and reef cones, in addition to natural rocks. Figure <ref type="figure" target="#fig_0">1</ref> shows a conceptual 3D depiction of the DOL along with 3D models of the objects present there. The total area of interest is approximately 200 × 200 meters and contains nearly 1,400 objects, including reef ring, tetrapod, and reef cone types. Further details on the recorded sonar data are provided in Section III-A.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Point Cloud Data</head><p>Point cloud data is one of the most fundamental forms of 3D data, representing objects or scenes as a collection of discrete points in a 3D coordinate space. Each point captures a location in space and, depending on the sensing device, may also include attributes such as color, reflectance, or intensity <ref type="bibr" target="#b9">[10]</ref>, <ref type="bibr" target="#b10">[11]</ref>. In our case, we work with raw, uncolored sonar point cloud data. This lack of additional features makes the detection task inherently more challenging.</p><p>While depth information in point cloud data offers clear advantages, it also introduces challenges unique to 3D representation. Compared to 2D images, point clouds have several difficult characteristics. They are irregular due to uneven point distribution, unstructured because they do not follow a fixed grid, and permutation-invariant, meaning the order of points does not affect the representation <ref type="bibr" target="#b11">[12]</ref>. These attributes create significant challenges. They complicate the use of conventional deep learning architectures such as convolutional neural networks (Convolutional Neural Networkss (CNNs)), which assume structured input data.</p><p>To address these issues, intermediate representations such as voxelization or multi-view projections are often used. However, these down-sampling transformations result in a loss of geometric detail. In contrast, methods like PointNet <ref type="bibr" target="#b12">[13]</ref> operate directly on raw point sets, preserving fine-grained spatial information. In this work, recognizing the limitations of down-sampling, we employed methods that process sonar point clouds directly.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Overview of 3D Detection Methods</head><p>Widespread interest in autonomous driving has accelerated the development of deep learning-based approaches for 3D data processing. These methods leverage large annotated datasets and modern hardware to enable efficient 3D processing. Section I-C1 outlines the techniques used in this work. In contrast, traditional model-fitting approaches remain relevant, especially in scenarios where annotated training data is scarce or unavailable. A basic overview of these modelbased techniques is provided in Section I-C2.</p><p>1) Deep Learning Based Approaches: The adoption of deep learning in 3D computer vision has accelerated in recent years, driven by its success across diverse tasks. For example, applications include self-driving vehicles in the aerial domain <ref type="bibr" target="#b13">[14]</ref> and robotic object grasping <ref type="bibr" target="#b14">[15]</ref>. Deep learning architectures typically require input data in a regularized format such as images, where each pixel corresponds to a spatial location. This structure enables convolutional and other gridbased processing techniques.</p><p>Similarly, in 3D, point cloud data can be down-sampled into a 3D grid, allowing the use of methods such as 3D convolutions. These architectures are referred to as volumetric learning methods. However, down-sampling inevitably leads to a loss of geometric detail. To address this, researchers have developed methods that directly process raw point cloud data, known as pointwise learning methods.</p><p>In volumetric feature learning, point cloud data is segmented into a structured grid representation such as voxels, enabling the application of 3D convolutional operations. While this approach has shown promise, particularly with advances like VoxelNet <ref type="bibr" target="#b15">[16]</ref> and sparse convolutions <ref type="bibr" target="#b16">[17]</ref>, it struggles with the inherent sparsity of point clouds and the heavy computational cost of 3D convolutions.</p><p>Pointwise feature learning, on the other hand, processes point clouds directly without regularization, thereby preserving the original geometric information. This approach was pioneered by PointNet <ref type="bibr" target="#b12">[13]</ref>, which uses Multiplayer Perception Network (MLP) for feature learning and has since evolved into more sophisticated architectures. One notable example is SASA <ref type="bibr" target="#b17">[18]</ref>, which performed exceptionally well on the KITTI 3D object detection benchmark among methods that rely solely on point cloud data <ref type="bibr" target="#b18">[19]</ref>. Therefore, for the deep learning-based approach to underwater 3D object detection in our work, we employed the SASA neural network.</p><p>2) Model Fitting Based Approaches: In model-fitting-based 3DOD, a model of the target object is used to identify its presence in the recorded data. A model can be represented mathematically (e.g., a parametric equation of a sphere) or as a template. Templates may be acquired synthetically (i.e., 3D Computer-Aided Design (CAD) models of objects) or naturally using 3D sensors. In practice, templates of different objects, captured from multiple viewpoints, are stored in a template database. This database is then used to search for corresponding objects in the recorded data.</p><p>To detect objects using mathematical models, the Random Sample Consensus (RANSAC) method can be applied.</p><p>RANSAC fits a parametric model to the data and identifies the inlier points that best conform to the model. The inlier count serves as a measure of how well a set of points in the point cloud matches the target model. RANSAC is most often used for detecting primitive 3D shapes such as planes, spheres, or cylinders <ref type="bibr" target="#b19">[20]</ref>. Its strength lies in its simplicity and robustness against noise and outliers <ref type="bibr" target="#b20">[21]</ref>. In the 3DOD domain, RANSAC is frequently employed as a pre-processing step for plane (ground) removal or segmentation <ref type="bibr" target="#b21">[22]</ref>. In our case, we used RANSAC to remove the seabed from sonar data as a pre-processing step.</p><p>Template matching methods, in contrast, compute the similarity between stored 3D models in the database and potential object instances in the data. Traditionally, this has been achieved with 3D feature descriptors such as Point Feature Histograms (PFH) <ref type="bibr" target="#b22">[23]</ref>. However, in our use case, sonar data was highly noisy, which made feature descriptors unreliable for robust feature computation. To address this, we adopted a direct alignment strategy using the Iterative Closest Point (ICP) algorithm. ICP is an iterative method that alternates between establishing point correspondences between two point clouds and estimating the rigid transformation that minimizes the distance between them.</p><p>ICP is traditionally used for fine-tuning an initial alignment obtained through feature matching. However, in our case, it proved to be the only reliable method for both coarse and fine alignment due to the high noise levels in sonar data. Instead of relying on feature descriptors, we performed object detection by directly aligning template models to segmented regions in the data using ICP. This approach avoids dependence on unstable geometric features in noisy or low-resolution data and instead leverages the global geometric consistency between the model and the scene.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. RELATED WORK</head><p>In recent years, there has been significant progress in the field of 3DOD. Most research, however, has focused on automation and indoor monitoring. In the underwater domain (Underwater 3D Object Detection (Underwater-3DOD)), only a few notable contributions have been reported. This section provides a brief overview of the state of the art in underwater 3D perception. Table <ref type="table" target="#tab_0">I</ref> outlines the studies that specifically address underwater 3D object detection. Along with the detection algorithm, we summarize the application domain, experimental setting, target objects, and sensors used.</p><p>Previous work can be grouped into two domains: exploration and Inspection, Maintenance and Repair (IMR). In exploration, the goal is to observe the state of underwater environments such as coral reefs <ref type="bibr" target="#b23">[24]</ref>. In contrast, IMR focuses on the inspection and maintenance of underwater infrastructure such as plumbing hardware. As shown in Table <ref type="table" target="#tab_0">I</ref>, most prior work targets primitive objects (cylinders, cubes, tyres) or industrial components such as valves and pipes. Regarding algorithms, deep learning has dominated in recent years, in line with the general trend in computer vision. Nonetheless, feature descriptor and RANSAC-based methods remain relevant due to their advantages in situations where training data is unavailable.</p><p>In the deep learning domain, Abadal et al. <ref type="bibr" target="#b24">[25]</ref>, <ref type="bibr" target="#b25">[26]</ref> collected an underwater dataset in a controlled pool setting to train PointNet <ref type="bibr" target="#b12">[13]</ref> for detecting pipes and valves. Their model was later tested on sea data. They annotated 262 point clouds in the pool and 22 in the sea over diverse seabeds such as rocks and algae. Although their target objects were relatively simple, the results demonstrated the strong potential of neural networks when sufficient, high-quality training data is available. Similarly, Bhandarkar et al. <ref type="bibr" target="#b23">[24]</ref> used ≃ 5000 images to reconstruct a 3D mesh of coral reefs and detect coral categories. Tsai et al. <ref type="bibr" target="#b26">[27]</ref> applied RANSAC to remove the seabed plane from point clouds before using PointNet to detect tyres placed on the seabed. Wang et al. <ref type="bibr" target="#b27">[28]</ref> combined a 2D detection step with 3D processing: after extracting objectspecific point clouds, they refined alignment and estimated object poses using Iterative Closest Point (ICP).</p><p>While deep learning methods are the obvious choice when large amounts of training data are available, traditional modelfitting approaches remain valuable in its absence. This is especially relevant underwater, where acquiring annotated training data is particularly challenging. Himri et al. <ref type="bibr" target="#b28">[29]</ref>- <ref type="bibr" target="#b31">[32]</ref> investigated model-fitting approaches using an underwater laser scanner to capture plumbing items (e.g., pipes and valves) in a pool setting. For instance, in <ref type="bibr" target="#b31">[32]</ref>, RANSAC was applied both in pre-processing and detection: first to remove the pool surface, and later to detect pipes due to their primitive shape. More complex components, such as butterfly valves, were then detected using template-based methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. DATASET</head><p>Although our main goal is to analyze raw MBES data, we also generate and report synthetic sonar data. The simulated data serves two objectives: i) training the neural network, and ii) enabling a comparison between model-based and neural-based approaches. We first describe the acquisition and specifications of the sonar data, followed by the synthetic data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Sonar Data</head><p>The sonar data was collected by bathymetric mapping of the Digital Ocean Lab (DOL) test field in the Baltic Sea (Section I-A1) using a MBES mounted on a surface vessel. The survey area was mapped over n = 67 vessel trajectories. Figure <ref type="figure" target="#fig_1">2</ref> shows the trajectory lines drawn on top of the acquired sonar data. In total, the sonar scans cover an area of approximately 200 square meters.</p><p>1) Sonar Data Preprocessing: In order to feed the sonar data to processing algorithms, we performed a few preprocessing steps. Firstly, to reduce dataset size, we partitioned the data into 100 equally sized segments. After excluding empty regions (since the covered area is not a perfect square), we obtained 88 segments. Furthermore, because most of the covered area did not contain objects of interest, we manually removed the empty segments. In the end, we retained 29 point clouds, each approximately 46 × 40 meters in size. For this work, as a proof-of-concept and evaluation, we annotated 15 of these segments. Hence, throughout this work, we use these 15 sonar samples to report our findings.</p><p>Figure <ref type="figure">3</ref> shows the top view of three such sonar samples. As seen, the samples exhibit varying levels of complexity. In the first sample, 12 tetrapod b (larger tetrapods) objects are present, each positioned with sufficient spatial separation from the others. The second sample contains objects of all types, with noticeably reduced spatial separation. Finally, the last sample shows a more challenging case with clutter and piles of reef ring objects. We used these three samples for visual reporting of our results, while Table II outlines the combined object distribution of all 15 annotated samples.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Synthetic Data</head><p>Sonar data synthesis requires two key components: (a) creating realistic underwater environments and (b) simulating sonar sensors to sample data points. The underwater environment should contain a realistic seabed with both natural and artificial (our domain) objects placed in a physically plausible way. Moreover, to generate a diverse and automated sonar dataset for neural network training, the environment generation must be procedural. This ensures that each data sample exhibits varying seabed characteristics and object placement. The sonar sensor simulation requires: (i) modeling the spatial movement of the sensor as it scans the environment, and (ii) reproducing the multi-beam acoustic geometry of the sonar, which defines the points sampled from the environment. 1) Seabed Generation and Object Placement: To train neural networks, numerous randomized yet plausible data samples are required. Hence, the process must be procedural with minimal supervision. Seabed generation and object placement are therefore performed in a fully automated manner.</p><p>For seabed generation, we use Perlin noise <ref type="bibr" target="#b40">[41]</ref>, a gradient noise function that produces smooth and continuous random values. This results in organic-looking terrain with varying levels of roughness. Once a terrain is generated, objects are placed on it. They are initially positioned at a configurable height above the seabed and then allowed to fall under gravity, with their final positions determined by physics simulation. This creates natural-looking arrangements where objects settle in physically plausible positions on the seafloor.</p><p>2) Multi-beam Sonar Simulation: Once the synthetic 3D scene with seabed and objects is created, a sonar scan can be simulated. We model an MBES sensor traversing above the 3D environment, imitating a surface vessel at a configurable height. The virtual sensor follows a predefined trajectory, and at each step it emits a fan of acoustic beams modeled using ray casting. Each beam's return is computed by intersecting rays with the 3D scene geometry.</p><p>The number of beams is configurable, but to match the real MBES used in our domain, we fix it to a maximum of n = 1024 beams. Noise fluctuations are included to simulate beams with no returns. To further model sensor noise, we characterized the sonar using a flat algae-covered table from our survey data, where the ground-truth geometry (a plane) was known. Point-to-plane distance analysis revealed near-zero  bias (µ ≈ -0.001 m) and a standard deviation of σ ≈ 0.01 m. Accordingly, we approximate the measurement noise using a Gaussian distribution: N (0, 0.01 2 ). The detailed methodology and normality assessment are provided in the Appendix. The ray casting approach allows simulation of multiple beams at each sensor position while only recording areas within the line of sight. This naturally accounts for partial self-occlusion, as objects can block beams and create sonar shadows.</p><p>Finally, the movement direction of the virtual sensor must be specified, since different trajectories produce different point distributions. In the real survey (section III-A), mapping was performed mainly along the xor y-axis, with some areas recorded in both directions, resulting in denser point clouds. To replicate this effect, our simulation randomly selects the scanning direction to be along the x-axis, y-axis, or both, thereby producing synthetic point distributions that closely resemble real sonar data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Synthetic Dataset</head><p>Using our simulation tool, we created 100 synthetic MBES sonar samples with a total of 5491 objects. We used 80 scenes for training the neural network and 20 for testing. Same testing set was also used to evaluate the model-based approach. As shown in Table <ref type="table" target="#tab_1">II</ref>, both training and test sets maintain a nearly equal distribution of object classes, resulting in a representative dataset. Figure <ref type="figure">4</ref> shows an example of the created synthetic environment and the simulated MBES sonar point cloud from it.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. IMPLEMENTATION</head><p>We implemented and evaluated two paradigms of 3D object detection methods while maintaining our focal restriction of not using any real training data. The fundamentals of i) model fitting and ii) deep learning approach are introduced in the section I-C. Following we outline implementation details of these approaches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Model Fitting</head><p>Our model fitting approach takes raw sonar point clouds as input and uses object templates to detect their position and orientation in the data as output. The pipeline comprises the following stages:</p><p>1) Input &amp; Preprocessing: Our model-fitting pipeline takes three main inputs: (a) raw sonar point cloud samples, (b) mesh models of the target objects, and (c) a configuration file containing hyper-parameters for subsequent steps.</p><p>The preparation of raw sonar data was described in Section III-A, where the complete dataset was partitioned into smaller, more manageable samples (40×40 m). In the preprocessing stage, each sonar sample undergoes seabed removal. A plane is fitted using the RANSAC algorithm, which significantly reduces the point cloud size without losing useful object information. The resulting sample contains points corresponding to potential objects along with some residual seabed noise. This preprocessed point cloud is then passed to the segmentation module.</p><p>For template preparation, mesh models of the target objects are converted into point clouds by synthetically sampling points from their surfaces. To ensure robust matching, the templates must replicate the point distributions produced by real sonar. We therefore simulate the acquisition process by virtually scanning each mesh with a ray-casting approach, analogous to a multibeam echosounder mounted on a surface vessel. This ensures the templates closely resemble the characteristics of the sonar data.</p><p>2) Segmentation: After seabed removal, segmentation is applied to extract meaningful regions from the sonar point cloud. This step serves two purposes. First, it eliminates residual noise in areas where point density is too low to represent an object. Second, it generates initial hypotheses indicating potential object locations. Effective segmentation is crucial, as To address these challenges, we adopt a simple yet effective sliding-window segmentation. This allows us to focus on object detection rather than complex segmentation design. While this method introduces extra computational cost due to overlapping windows, it preserves object information and provides a reliable basis for detection. The window size is chosen according to the expected object dimensions, and the overlap is defined in the configuration file. Each window segment serves as a model hypothesis for subsequent analysis. To reduce false positives, segments with fewer points than an object-specific threshold are discarded, with the threshold scaled to the size of the target object.</p><p>3) Detection and Output: In the detection step, each candidate segment is evaluated against the object templates generated during preprocessing. For every segment-template pair, an initial alignment is obtained by matching their centroids. This is followed by fine registration using the Iterative Closest Point (ICP) algorithm. The quality of alignment is measured using the root mean square error (RMSE) between corresponding points after registration. Only matches with an RMSE below an object-specific threshold are retained as valid detections. For each detection, the estimated pose, location, and RMSE score are stored.</p><p>Since overlapping windows can lead to duplicate detections of the same object, a post-processing step is applied to keep only the highest-scoring hypothesis per object. The final output consists of all detected objects, along with their estimated positions and orientations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Deep Learning</head><p>We selected the state-of-the-art SASA (Semantics-Augmented Set Abstraction) neural network for 3D object detection. SASA is designed to work directly with point cloud data and focuses on the most relevant parts of the scene by learning to ignore background points. We adapted its configuration to our dataset and evaluated its performance on sonar data. For detailed technical information about the network, readers are referred to the original publication <ref type="bibr" target="#b41">[42]</ref>.</p><p>The SASA network was trained on a synthetic dataset of 80 scenes for 100 epochs using an NVIDIA L40 GPU. To improve robustness, standard data augmentation techniques were applied, including scene-level geometric transformations (rotation, scaling, flipping) and object-level bounding box noise injection. Training used the Adam optimizer with an initial learning rate of 0.01, a batch size of 8, and a scheduled learning rate decay to ensure convergence.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>V. RESULTS</head><p>Following, we first describe the evaluation method used to compare the, later outlined, results for model fitting and deep learning approach on both synthetic data and sonar data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Evaluation Metric</head><p>To evaluate detection performance, we adopt the official nuScenes evaluation framework <ref type="bibr" target="#b42">[43]</ref>, which computes the Mean Average Precision (mAP) for 3D object detection. The evaluation proceeds in two steps. First, predicted detections are matched to ground-truth objects using predefined centerto-center distance thresholds (i.e., 0.5 meters), capturing spatial alignment between predictions and annotations. Second, matched detections are used to compute precision-recall (PR) curves for each object class. The Average Precision (AP) is defined as the area under the PR curve, and the final metric, mean Average Precision (mAP), is the arithmetic mean of AP across all classes:</p><formula xml:id="formula_0">mAP = 1 N N i=1 AP i</formula><p>where N is the number of object classes (4 in our case) and AP i is the Average Precision for class i. This evaluation reflects both detection accuracy and localization quality across all classes and is among one of the most commonly used 3D detection metrics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Results on Synthetic Data</head><p>As mentioned before, we created 100 synthetic test samples to evaluate the performance of both model-based and deep learning detection methods on the same data. Table <ref type="table" target="#tab_2">III</ref> presents the Mean Average Precision (mAP) and class-wise AP scores for both approaches. The SASA network was trained for 100 epochs on 80 training scenes containing 4518 labeled objects, while the model-based method required no training data and was only tuned on a small validation subset before being evaluated on the full test set.</p><p>Overall, SASA achieves slightly superior performance with an mAP of 0.98, compared to 0.97 for the model-based method. The class-wise breakdown shows that both approaches perform consistently across all object categories, with SASA achieving marginally higher scores for reef cone and tetrapod b, while the model-based method is competitive for tetrapod s. Importantly, both methods demonstrate robustness to object variability, which is crucial for generalizing to more complex underwater environments.</p><p>Another noteworthy observation is the number of predictions: SASA produced 991 detections compared to 957 for the model-based method. This small difference suggests that SASA may capture slightly more difficult cases or overlapping objects, while the model-based method remains more conservative but highly reliable. The near-equivalent performance highlights an important trade-off: while SASA requires a large set of annotated training data and substantial computational resources, the model-based method achieves almost the same level of accuracy without any training data. This makes the latter especially attractive for practical scenarios where annotated underwater datasets are scarce or costly to acquire.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Results on Sonar Data</head><p>The results on synthetic data demonstrated that both approaches can achieve high performance under controlled conditions. We now turn to the main goal of this work: detecting objects in real-world sonar data. For this evaluation, we used the 15 annotated sonar test scenes containing 373 objects, as described in Section III. The SASA network was applied directly without retraining, using the weights obtained from the synthetic dataset (80 training samples). For the model-based approach, only minor adjustments were required, specifically to the segmentation parameters and ICP thresholds, to account for the varying point density and noise levels in the sonar data.</p><p>As shown in Table <ref type="table" target="#tab_0">IV</ref>, the model-based approach significantly outperforms the deep learning method, achieving a mean Average Precision (mAP) of 0.83 compared to 0.40 for SASA. This large performance gap indicates that the domain gap between synthetic and real sonar data is substantial and that the learned features of SASA do not generalize well without domain adaptation. In contrast, the model-based approach, which relies directly on geometric alignment, remains more robust to the sensor-specific characteristics and noise patterns.</p><p>Looking at class-wise AP scores, the model-based method performs consistently across most object categories. The largest drop is observed for reef ring objects, which are often heavily cluttered or stacked in piles. This difficulty is primarily caused by segmentation errors rather than deficiencies in the detection stage: when multiple rings overlap or occlude one another, the sliding window segmentation tends to merge them into ambiguous clusters, which limits subsequent detection accuracy.</p><p>Whereas the deep learning-based SASA network showed much more pronounced variance across object classes. For example, SASA achieved performance comparable to the model-based approach for tetrapod b objects (0.85 AP) and a reasonable score for tetrapod s. In contrast, its performance dropped sharply for reef ring objects, with only 0.04 AP. This suggests that the network is more effective at detecting objects that are well separated from the seabed. Put simply, SASA is better at identifying objects with larger vertical dimensions (e.g., tetrapod b at 2.08 meters) than low-profile objects such as reef ring (0.75 meters in height).</p><p>Qualitative results are shown in Figure <ref type="figure" target="#fig_5">6</ref>, where predictions from both approaches are visualized alongside ground truth annotations for three sonar scenes. For clarity, 3D mesh models are displayed instead of bounding boxes. As seen, both approaches perform equally well on the simple scene in the first column containing 12 well-separated tetrapod b objects. In more complex cases, the model-based approach largely maintains its accuracy with few exceptions, while SASA performs well when objects are spatially separated but fails in cluttered scenes (e.g., reef cone) or heavily piled configurations (e.g., reef ring in the last column).</p><p>The sharp decline in SASA's performance on real sonar data does not reflect its capacity to learn the 3D detection task. As shown in Section V, the network achieved excellent results on synthetic data when sufficient training was available. Instead, its poor generalization is due to the well-known domain shift between simulated and real sonar. We hypothesize that narrowing this gap by incorporating more realistic MBES noise models and object placements that include clutter and piling will significantly improve deep learning performance. Hence, this will form an important direction for our future work.  <ref type="table" target="#tab_2">III</ref> shows the achieved mAP for different training configurations on both synthetic and sonar data. Several key observations emerge from this analysis. First, even with only 25% of the training data, SASA achieves performance equal to the model-fitting based approach on synthetic data (0.96 mAP). As for the sonar data, the performance of the SASA network drops as the amount of training data is reduced. The most significant insight from these experiments is revealing. We still need approximately 1000 object annotations for the neural network to match the model-based approach performance. This indicates that substantial labeled data is still required to match model-based performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VI. CONCLUSION &amp; FUTURE WORK</head><p>In this work, we set out to design underwater 3D object detection techniques tailored for large-area seafloor surveys, with the goal of avoiding costly and time-consuming annotated training data. To this end, we investigated two complementary approaches: a deep-learning method based on the state-of-theart SASA network, trained exclusively on synthetic sonar data, and a traditional model-based method that relies on template matching without training data.</p><p>Our contributions are threefold: (i) developing a procedural MBES simulation framework to generate synthetic sonar datasets, together with the implementation of a deep-learning based detection method trained exclusively on this simulated data, (ii) the implementation of a training-less, model-based detection pipeline, and (iii) the first large-scale evaluation and direct comparison of model-based and deep-learning based Results revealed a sharp contrast between methods. On synthetic data, the SASA network slightly outperformed the model-based approach, demonstrating the potential of learning-based methods when sufficient labeled data is available. On real sonar data, however, the model-based pipeline showed a clear advantage, achieving more than double the detection performance of SASA. This highlights a key insight: while deep learning excels in controlled synthetic settings, model-based techniques currently remain more robust when confronted with the noise, variability, and clutter of real sonar surveys.</p><p>We also addressed an important practical question: how much annotated sonar data would be required for deep learning to match model-based performance? Our findings suggest that a substantial volume of labeled data would be necessary, underlining the value of simulation and training-less methods in data-scarce domains.</p><p>Looking ahead, future work will focus on several directions aimed at bridging the gap between synthetic and real-world sonar data. First, we plan to further improve the MBES simulation framework, particularly by enhancing noise modeling, incorporating environmental effects such as salinity and temperature variations, and developing more accurate sensor response models. Second, the realism of synthetic datasets will be extended by modeling natural phenomena, such as objects partially sinking into seabed, bio-fouling over time, and the presence of diverse natural clutter including rocks and irregular seabed textures. We believe these additions will help reduce the domain gap between simulation and reality, thereby improving the robustness of deep-learning based approaches.</p><p>In conclusion, our findings demonstrate that training-less 3D underwater object detection is both feasible and effective, establishing a solid baseline for future research. More broadly, this work points toward a scalable path for automated, trainingfree seafloor mapping, including robust object detection in challenging underwater environments.   These point-to-plane distances represent the total measurement error combining sensor noise and surface artifacts.</p><p>Initial analysis of the raw distribution (µ = -0.001 m, σ = 0.010 m) showed deviations from perfect normality in statistical tests. However, applying statistical trimming (removing points with Z-scores &gt; ±2) improved the results, with the skewness normality test <ref type="bibr" target="#b43">[44]</ref> passing after outlier removal.</p><p>Figure <ref type="figure" target="#fig_6">7</ref> shows the measurement distributions before and after outlier removal, along with the 3D plane fitting visualization. The removed outliers (statistical trimming) could likely represent surface artifacts such as algae growth though the exact nature of these artifacts cannot be definitively determined from the acoustic data alone.</p><p>The trimmed dataset exhibited near-zero mean (µ ≈ -0.001 m) and standard deviation (σ ≈ 0.008 m) with approximately Gaussian characteristics. For simulation purposes, we used a simplified Gaussian noise model N (0, 0.01 2 ) to approximate MBES measurement uncertainty.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Digital Ocean Lab (DOL) overview. (Left) Side view showing underwater placement. (Right) Top view displaying spatial distribution of artificial reef structures over 200×200 meter area. For more information, we refer to https://www.riff-nienhagen.de.</figDesc><graphic coords="3,48.96,56.07,514.13,258.59" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 2 .</head><label>2</label><figDesc>Fig. 2. Trajectory of the surface vessel for data recording using an MBES sonar.</figDesc><graphic coords="4,347.54,56.07,179.93,179.13" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .Fig. 4 .</head><label>34</label><figDesc>Fig. 3. Examples of MBES sonar point cloud segments with different complexity levels</figDesc><graphic coords="5,-8.85,565.18,276.83,155.71" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 5 .</head><label>5</label><figDesc>Fig. 5. Model-Based Object Detection Pipeline</figDesc><graphic coords="7,48.96,56.07,514.07,202.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head></head><label></label><figDesc>(a) Ground Truth (b) Predictions: Model Fitting (c) Predictions: SASA</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 6 .</head><label>6</label><figDesc>Fig. 6. Sonar Detection Results: Comparison of ground truth, model-fitting, and SASA results for sonar point clouds detection. The predictions are shown by the colored 3D mesh-models of each object placed on the sonar data with detected position and pose.</figDesc><graphic coords="10,-14.99,493.04,304.51,171.29" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 7 .</head><label>7</label><figDesc>Fig. 7. MBES noise characterization using algae table as the reference surface. Left: 3D visualization showing RANSAC-fitted plane and MBES measurement points. Right: Point-to-plane distance distributions showing raw measurements (top) and after statistical outlier removal using Z-score.</figDesc><graphic coords="11,48.96,56.07,251.05,135.17" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="6,100.37,56.07,411.27,156.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>TABLE I RELATED</head><label>I</label><figDesc>WORK FOR UNDERWATER 3D OBJECT DETECTION SHOWING THE APPLICATION DOMAIN, TYPES OF OBJECTS DETECTED ALONG WITH SENSORS AND ALGORITHMS USED.</figDesc><table><row><cell>Year</cell><cell>Domain</cell><cell>Setting</cell><cell cols="2">Object Type Objects</cell><cell>Sensor</cell><cell>Algorithm</cell></row><row><cell cols="2">2022 IMR *</cell><cell>Real and Controlled</cell><cell>Plumbing</cell><cell>Pipes, Valves</cell><cell>Stereo Camera</cell><cell>Deep Learning</cell><cell>[26]</cell></row><row><cell cols="3">2022 Exploration Real</cell><cell>Misc</cell><cell cols="2">Shipwreck, Pipe, Seabed Laser</cell><cell>Model Fitting</cell><cell>[33]</cell></row><row><cell cols="3">2022 Exploration Real</cell><cell>Seabed</cell><cell>Coral Reef</cell><cell>Stereo Camera</cell><cell>Deep Learning</cell><cell>[24]</cell></row><row><cell cols="3">2022 Exploration Real</cell><cell>Seabed</cell><cell>Seafloor Plume</cell><cell>Multibeam Sonar</cell><cell>Model Fitting</cell><cell>[34]</cell></row><row><cell cols="3">2022 Exploration Real</cell><cell>Primitives</cell><cell>Cube</cell><cell>LiDAR</cell><cell>-</cell><cell>[35]</cell></row><row><cell cols="2">2022 IMR</cell><cell>Real and Simulated</cell><cell>Plumbing</cell><cell>Pipes</cell><cell>Laser and Camera</cell><cell>RANSAC</cell><cell>[36]</cell></row><row><cell cols="2">2021 IMR</cell><cell>Controlled</cell><cell>Plumbing</cell><cell>Plane, Pipes, Valves</cell><cell>Laser</cell><cell>Model Fitting</cell><cell>[32]</cell></row><row><cell cols="3">2021 Exploration Real</cell><cell>Primitives</cell><cell>Tyre</cell><cell cols="2">Mechanical Scanning Sonar Deep Learning</cell><cell>[27]</cell></row><row><cell cols="2">2020 IMR</cell><cell>Real and Controlled</cell><cell>Plumbing</cell><cell>Pipes, Valves</cell><cell>Stereo Camera</cell><cell>Deep Learning</cell><cell>[25]</cell></row><row><cell cols="3">2020 Exploration Controlled</cell><cell>Misc</cell><cell>Misc</cell><cell>Stereo Camera</cell><cell>Deep Learning</cell><cell>[28]</cell></row><row><cell cols="2">2019 IMR</cell><cell cols="2">Controlled and Simulated Plumbing</cell><cell>Pipes, Valves</cell><cell>Laser</cell><cell>Model Fitting</cell><cell>[31]</cell></row><row><cell cols="2">2018 IMR</cell><cell>Controlled</cell><cell>Plumbing</cell><cell>Pipes, Valves</cell><cell>Laser</cell><cell>Model Fitting</cell><cell>[29]</cell></row><row><cell cols="2">2018 IMR</cell><cell>Controlled</cell><cell>Plumbing</cell><cell>Pipes, Valves</cell><cell>Laser</cell><cell>Model Fitting</cell><cell>[30]</cell></row><row><cell cols="2">2015 IMR</cell><cell>Real</cell><cell>Primitives</cell><cell>Cylinder, Cube, Sphere</cell><cell>Other</cell><cell>Model Fitting</cell><cell>[37]</cell></row><row><cell cols="2">2014 IMR</cell><cell>Real</cell><cell>Plumbing</cell><cell>Pipes</cell><cell>Stereo Camera</cell><cell>RANSAC</cell><cell>[38]</cell></row><row><cell cols="2">2014 IMR</cell><cell>Real</cell><cell>Plumbing</cell><cell>Pipes</cell><cell>Stereo Camera</cell><cell>RANSAC</cell><cell>[39]</cell></row><row><cell cols="2">2005 IMR</cell><cell>Real</cell><cell>Primitives</cell><cell>Cylinder</cell><cell>Other</cell><cell cols="2">Hough Transform [40]</cell></row></table><note><p>* (IMR) Inspection, Maintenance &amp; Repair.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE II DATASET</head><label>II</label><figDesc>STATISTICS FOR SYNTHETIC AND REAL SONAR DATA</figDesc><table><row><cell>Dataset</cell><cell cols="2">Scenes Total Objects</cell><cell>Reef Ring</cell><cell>Reef Cone</cell><cell>Tetrapod B</cell><cell>Tetrapod S</cell></row><row><cell>Synthetic (Train)</cell><cell>80</cell><cell>4518</cell><cell cols="2">1144 (25.3%) 1108 (24.5%)</cell><cell cols="2">1148 (25.4%) 1118 (24.7%)</cell></row><row><cell>Synthetic (Test)</cell><cell>20</cell><cell>973</cell><cell>236 (24.3%)</cell><cell>255 (26.2%)</cell><cell>241 (24.8%)</cell><cell>241 (24.8%)</cell></row><row><cell>Sonar (Test)</cell><cell>15</cell><cell>373</cell><cell>70 (18.77%)</cell><cell>158 (42.36%)</cell><cell>81 (21.72%)</cell><cell>64 (17.16%)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>TABLE III PERFORMANCE</head><label>III</label><figDesc>COMPARISON ON SYNTHETIC DATA (20 TEST SCENES WITH 973 GROUND TRUTH OBJECTS)</figDesc><table><row><cell>Model Type</cell><cell cols="3">mAP Predictions Reef Ring</cell><cell cols="3">Reef Cone Tetrapod B Tetrapod S</cell></row><row><cell>SASA</cell><cell>0.98</cell><cell>991</cell><cell>0.98</cell><cell>0.99</cell><cell>0.98</cell><cell>0.96</cell></row><row><cell>Model-Based</cell><cell>0.97</cell><cell>957</cell><cell>0.98</cell><cell>0.98</cell><cell>0.97</cell><cell>0.97</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head></head><label></label><figDesc>For this purpose, we created subtraining datasets with 25, 50, and 100 percent of the available 80 training scenes. While keeping the test dataset same as before with 20 scene samples. Table</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell>TABLE IV</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="7">PERFORMANCE COMPARISON ON REAL SONAR DATA (15 TEST SCENES</cell></row><row><cell></cell><cell></cell><cell cols="3">WITH 373 GROUND TRUTH OBJECTS)</cell><cell></cell><cell></cell></row><row><cell>Model Type</cell><cell>mAP</cell><cell cols="4">Predictions Reef Ring Reef Cone Tetrapod B</cell><cell>Tetrapod S</cell></row><row><cell>Model-Based</cell><cell>0.83</cell><cell>324</cell><cell>0.72</cell><cell>0.84</cell><cell>0.94</cell><cell>0.80</cell></row><row><cell>SASA</cell><cell>0.40</cell><cell>233</cell><cell>0.04</cell><cell>0.17</cell><cell>0.85</cell><cell>0.52</cell></row><row><cell cols="4">D. Training Data Requirements</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="7">Since, in this publication, our core focus is on detecting</cell></row><row><cell cols="7">underwater objects in absence or shortage of training data, it is</cell></row><row><cell cols="7">crucial to understand how the amount of training data impacts</cell></row><row><cell cols="7">detection performance of the neural network. In other words,</cell></row><row><cell cols="7">we question: how much training data would be sufficient to</cell></row><row><cell cols="7">directly use a neural-based approach and not investing efforts</cell></row><row><cell cols="7">into tuning model-based approach or creating a simulation</cell></row><row><cell>model.</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="7">Therefore, we performed additional experiments with vary-</cell></row><row><cell cols="4">ing training data percentages.</cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>Computer Science Department, University of Rostock, Rostock, Germany. *Corresponding author: muhammad.shaukat@uni-rostock.de</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>ACKNOWLEDGMENTS</head><p>This research is funded by the <rs type="funder">German Federal Ministry of Education and Research (BMBF)</rs> as a part of the <rs type="institution">OTC-Digital Twin &amp; Analytics (OTC-DaTA)</rs> project (<rs type="grantNumber">03ZU1107FB</rs>). The authors gratefully acknowledge <rs type="person">Teledyne Marine</rs> for providing the Multibeam Echo Sounder (MBES) sonar data essential to this research.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_UDss7hs">
+					<idno type="grant-number">03ZU1107FB</idno>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>APPENDIX MBES SONAR NOISE APPROXIMATION</head><p>To characterize MBES measurement noise for simulation, we used a flat algae table surface from our survey data as a controlled reference with known ground truth geometry of a plane. This approach isolates sensor measurement uncertainty from natural seafloor roughness variations. To approximate the plane, we used RANSAC plane fitting and measured orthogonal distances from each measurement point to the fitted plane.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">A Dataset with Multibeam Forward-Looking Sonar for Underwater Object Detection</title>
+		<author>
+			<persName><forename type="first">Kaibing</forename><surname>Xie</surname></persName>
+			<idno type="ORCID">0000-0002-6990-3545</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kang</forename><surname>Qiu</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41597-022-01854-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">739</biblScope>
+			<date type="published" when="2022-12-01">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Research Challenges, Recent Advances, and Popular Datasets in Deep Learning-Based Underwater Marine Object Detection: A Review</title>
+		<author>
+			<persName><forename type="first">Meng</forename><forename type="middle">Joo</forename><surname>Er</surname></persName>
+			<idno type="ORCID">0000-0003-4597-7088</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0002-4313-0337</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yani</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenxiao</forename><surname>Gao</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s23041990</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">1990</biblScope>
+			<date type="published" when="1990">1990. 2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Sonar-Based Deep Learning in Underwater Robotics: Overview, Robustness, and Challenges</title>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Aubard</surname></persName>
+			<idno type="ORCID">0009-0000-3070-8067</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ana</forename><surname>Madureira</surname></persName>
+			<idno type="ORCID">0000-0002-0264-4710</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luís</forename><surname>Teixeira</surname></persName>
+			<idno type="ORCID">0000-0002-4050-7880</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><surname>Pinto</surname></persName>
+			<idno type="ORCID">0000-0003-1224-9391</idno>
+		</author>
+		<idno type="DOI">10.1109/joe.2025.3531933</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Oceanic Engineering</title>
+		<title level="j" type="abbrev">IEEE J. Oceanic Eng.</title>
+		<idno type="ISSN">0364-9059</idno>
+		<idno type="ISSNe">2373-7786</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1866" to="1884" />
+			<date type="published" when="2025-07">2025</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Advancements in the field of autonomous underwater vehicle</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sahoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Dwivedy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Robi</surname></persName>
+		</author>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0029801819301623" />
+	</analytic>
+	<monogr>
+		<title level="j">Ocean Engineering</title>
+		<imprint>
+			<biblScope unit="volume">181</biblScope>
+			<biblScope unit="page" from="145" to="160" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A Survey on Underwater Computer Vision</title>
+		<author>
+			<persName><forename type="first">Salma</forename><forename type="middle">P</forename><surname>González-Sabbagh</surname></persName>
+			<idno type="ORCID">0000-0002-4583-9235</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>Robles-Kelly</surname></persName>
+			<idno type="ORCID">0000-0002-2465-5971</idno>
+		</author>
+		<idno type="DOI">10.1145/3578516</idno>
+		<ptr target="https://doi.org/10.1145/3578516" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Computing Surveys</title>
+		<title level="j" type="abbrev">ACM Comput. Surv.</title>
+		<idno type="ISSN">0360-0300</idno>
+		<idno type="ISSNe">1557-7341</idno>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="issue">13s</biblScope>
+			<biblScope unit="page" from="1" to="39" />
+			<date type="published" when="2023-07-13">jul 2023</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Object perception in underwater environments: a survey on sensors and sensing methodologies</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Q</forename><surname>Huy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Sadjoli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">B</forename><surname>Azam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Elhadidi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Seet</surname></persName>
+		</author>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0029801822024854" />
+	</analytic>
+	<monogr>
+		<title level="j">Ocean Engineering</title>
+		<imprint>
+			<biblScope unit="volume">267</biblScope>
+			<biblScope unit="page">113202</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Review of Underwater Sensing Technologies and Applications</title>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Sun</surname></persName>
+			<idno type="ORCID">0000-0002-4784-0782</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weicheng</forename><surname>Cui</surname></persName>
+			<idno type="ORCID">0000-0003-1871-2658</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chi</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0002-8757-7456</idno>
+		</author>
+		<idno type="DOI">10.3390/s21237849</idno>
+		<ptr target="https://www.mdpi.com/1424-8220/21/23/7849" />
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page">7849</biblScope>
+			<date type="published" when="2021-11-25">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Building artificial reefs to improve the ecosystem</title>
+		<author>
+			<persName><forename type="first">European</forename><surname>Maritime</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fisheries</forename><surname>Fund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">(</forename><surname>Emff)</surname></persName>
+		</author>
+		<ptr target="https://oceans-and-fisheries.ec.europa.eu/projects/building-artificial-reefs-improve-ecosystemen" />
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note>European Commission</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Sulfatierte Polysaccharide aus der Rotalge Delesseria sanguinea vom künstlichen Riff Nienhagen</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Alban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Grünewald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Groth</surname></persName>
+		</author>
+		<idno type="DOI">10.1055/s-0029-1239846</idno>
+		<ptr target="https://www.riff-nienhagen.de/indexen.shtml" />
+	</analytic>
+	<monogr>
+		<title level="j">Zeitschrift für Phytotherapie</title>
+		<title level="j" type="abbrev">Z Phytother</title>
+		<idno type="ISSN">0722-348X</idno>
+		<idno type="ISSNe">1438-9584</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">S 01</biblScope>
+			<date type="published" when="2022">2022</date>
+			<publisher>Georg Thieme Verlag KG</publisher>
+		</imprint>
+	</monogr>
+	<note>Riff-nienhagen.de</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A Review on Deep Learning Techniques for 3D Sensed Data Classification</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Griffiths</surname></persName>
+			<idno type="ORCID">0000-0002-8582-138X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><surname>Boehm</surname></persName>
+			<idno type="ORCID">0000-0003-2190-0449</idno>
+		</author>
+		<idno type="DOI">10.3390/rs11121499</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<title level="j" type="abbrev">Remote Sensing</title>
+		<idno type="ISSNe">2072-4292</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">1499</biblScope>
+			<date type="published" when="2019-06-25">2019</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">An overview of 3d object detection</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ye</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2010.15614</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Deep learning on 3d point clouds</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Bello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Adam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">1729</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Pointnet: Deep learning on point sets for 3d classification and segmentation</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Mo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Guibas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE conference on computer vision and pattern recognition</title>
+		<meeting>the IEEE conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="652" to="660" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">LiDAR-based 3D object detection and tracking for autonomous driving</title>
+		<author>
+			<persName><forename type="first">Zhipeng</forename><surname>Luo</surname></persName>
+		</author>
+		<idno type="DOI">10.32657/10356/174239</idno>
+		<idno type="arXiv">arXiv:2204.00106</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<publisher>Nanyang Technological University</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">3d object detection and recognition for robotic grasping based on rgb-d images and global features</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Czajewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kołomyjec</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/fcds-2017-0011</idno>
+		<ptr target="https://doi.org/10.1515/fcds-2017-0011" />
+	</analytic>
+	<monogr>
+		<title level="j">Foundations of Computing and Decision Sciences</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="219" to="237" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection</title>
+		<author>
+			<persName><forename type="first">Yin</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oncel</forename><surname>Tuzel</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2018.00472</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-06">2018</date>
+			<biblScope unit="page" from="4490" to="4499" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Second: Sparsely embedded convolutional detection</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Mao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">3337</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Sasa: Semantics-augmented set abstraction for point-based 3d object detection</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tao</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/2201.01976" />
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Are we ready for autonomous driving? The KITTI vision benchmark suite</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Geiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lenz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Urtasun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2012.6248074</idno>
+		<ptr target="https://www.cvlibs.net/datasets/kitti/evalobject.php?objbenchmark=3d" />
+	</analytic>
+	<monogr>
+		<title level="m">2012 IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2012-06" />
+			<biblScope unit="page" from="3354" to="3361" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">RANSAC for Robotic Applications: A Survey</title>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">María</forename><surname>Martínez-Otzeta</surname></persName>
+			<idno type="ORCID">0000-0001-5015-1315</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Itsaso</forename><surname>Rodríguez-Moreno</surname></persName>
+			<idno type="ORCID">0000-0001-8471-9765</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Iñigo</forename><surname>Mendialdua</surname></persName>
+			<idno type="ORCID">0000-0003-2519-4094</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Basilio</forename><surname>Sierra</surname></persName>
+			<idno type="ORCID">0000-0001-8062-9332</idno>
+		</author>
+		<idno type="DOI">10.3390/s23010327</idno>
+		<ptr target="https://www.scopus.com/inward/record.uri?eid=2-s2" />
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">327</biblScope>
+			<date type="published" when="2023">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+	<note>&amp;doi=10.3390%2fs23010327&amp;partnerID=40&amp; md5=3a2a4b32a0331014af6505da6d8de9be</note>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">A Survey of Simple Geometric Primitives Detection Methods for Captured 3D Data</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Zepeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Boubekeur</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/cgf.13451</idno>
+		<ptr target="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13451" />
+	</analytic>
+	<monogr>
+		<title level="j">Computer Graphics Forum</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="167" to="196" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Linking Points With Labels in 3D: A Review of Point Cloud Semantic Segmentation</title>
+		<author>
+			<persName><forename type="first">Yuxing</forename><surname>Xie</surname></persName>
+			<idno type="ORCID">0000-0002-6408-5109</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaojiao</forename><surname>Tian</surname></persName>
+			<idno type="ORCID">0000-0002-8407-5098</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><forename type="middle">Xiang</forename><surname>Zhu</surname></persName>
+			<idno type="ORCID">0000-0001-5530-3613</idno>
+		</author>
+		<idno type="DOI">10.1109/mgrs.2019.2937630</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Geoscience and Remote Sensing Magazine</title>
+		<title level="j" type="abbrev">IEEE Geosci. Remote Sens. Mag.</title>
+		<idno type="ISSN">2473-2397</idno>
+		<idno type="ISSNe">2373-7468</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="38" to="59" />
+			<date type="published" when="2020-12">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">3D Shape Analysis</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Laga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tabia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Fisher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bennamoun</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/9781119405207</idno>
+	</analytic>
+	<monogr>
+		<title level="m">3D Shape analysis: fundamentals, theory, and applications</title>
+		<imprint>
+			<publisher>Wiley</publisher>
+			<date type="published" when="2018-12-21">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Object Detection in 3D Coral Ecosystem Maps from Multiple Image Sequences</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bhandarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sushanth</forename><surname>Kathirvelu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Hopkinson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Pattern Recognition</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Underwater Pipe and Valve 3D Recognition Using Deep Learning Segmentation</title>
+		<author>
+			<persName><forename type="first">Miguel</forename><surname>Martin-Abadal</surname></persName>
+			<idno type="ORCID">0000-0003-1925-7378</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><surname>Piñar-Molina</surname></persName>
+			<idno type="ORCID">0000-0002-1294-9323</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Antoni</forename><surname>Martorell-Torres</surname></persName>
+			<idno type="ORCID">0000-0001-9189-5265</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Oliver-Codina</surname></persName>
+			<idno type="ORCID">0000-0001-6910-1940</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yolanda</forename><surname>Gonzalez-Cid</surname></persName>
+			<idno type="ORCID">0000-0001-6155-2288</idno>
+		</author>
+		<idno type="DOI">10.3390/jmse9010005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Marine Science and Engineering</title>
+		<title level="j" type="abbrev">JMSE</title>
+		<idno type="ISSNe">2077-1312</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">5</biblScope>
+			<date type="published" when="2020-12-23">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Real-Time Pipe and Valve Characterisation and Mapping for Autonomous Underwater Intervention Tasks</title>
+		<author>
+			<persName><forename type="first">Miguel</forename><surname>Martin-Abadal</surname></persName>
+			<idno type="ORCID">0000-0003-1925-7378</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Oliver-Codina</surname></persName>
+			<idno type="ORCID">0000-0001-6910-1940</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yolanda</forename><surname>Gonzalez-Cid</surname></persName>
+			<idno type="ORCID">0000-0001-6155-2288</idno>
+		</author>
+		<idno type="DOI">10.3390/s22218141</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page">8141</biblScope>
+			<date type="published" when="2022-10-24">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Multi-Dimensional Underwater Point Cloud Detection Based on Deep Learning</title>
+		<author>
+			<persName><forename type="first">Chia-Ming</forename><surname>Tsai</surname></persName>
+			<idno type="ORCID">0000-0001-9512-4249</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yi-Horng</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yung-Da</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Jen</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jau-Woei</forename><surname>Perng</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s21030884</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">884</biblScope>
+			<date type="published" when="2021-01-28">2021</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Recognition and 3D Pose Estimation for Underwater Objects Using Deep Convolutional Neural Network and Point Cloud Registration</title>
+		<author>
+			<persName><forename type="first">Xin-Xin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Feng</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icsse50014.2020.9219266</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 International Conference on System Science and Engineering (ICSSE)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-08">2020</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Semantic SLAM for an AUV using object recognition from point clouds</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Himri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ridao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Gracias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Palomer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Palomeras</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Pi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ifacol.2018.09.497</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IFAC-PapersOnLine</title>
+		<title level="j" type="abbrev">IFAC-PapersOnLine</title>
+		<idno type="ISSN">2405-8963</idno>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">29</biblScope>
+			<biblScope unit="page" from="360" to="365" />
+			<date type="published" when="2018">2018</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Object Recognition and Pose Estimation using Laser scans For Advanced Underwater Manipulation</title>
+		<author>
+			<persName><forename type="first">Khadidja</forename><surname>Himri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><surname>Pi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pere</forename><surname>Ridao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nuno</forename><surname>Gracias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><surname>Palomer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Narcis</forename><surname>Palomeras</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/auv.2018.8729742</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2018 IEEE/OES Autonomous Underwater Vehicle Workshop (AUV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2018-11">2018</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">3D Object Recognition Based on Point Clouds in Underwater Environment with Global Descriptors: A Survey</title>
+		<author>
+			<persName><forename type="first">Khadidja</forename><surname>Himri</surname></persName>
+			<idno type="ORCID">0000-0001-7378-5353</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pere</forename><surname>Ridao</surname></persName>
+			<idno type="ORCID">0000-0002-1724-3012</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nuno</forename><surname>Gracias</surname></persName>
+			<idno type="ORCID">0000-0002-4675-9595</idno>
+		</author>
+		<idno type="DOI">10.3390/s19204451</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">20</biblScope>
+			<biblScope unit="page">4451</biblScope>
+			<date type="published" when="2019-10-14">2019</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Underwater object recognition using point-features, bayesian estimation and semantic information</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Himri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ridao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Gracias</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">1807</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Performance Evaluation of 3D Keypoint Detectors and Descriptors on Coloured Point Clouds in Subsea Environments</title>
+		<author>
+			<persName><forename type="first">Kyungmin</forename><surname>Jung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Hitchcox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">Richard</forename><surname>Forbes</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icra48891.2023.10160348</idno>
+		<idno>arXiv.org</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE International Conference on Robotics and Automation (ICRA)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="1105" to="1111" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Extraction of Submarine Gas Plume Based on Multibeam Water Column Point Cloud Model</title>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dong</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haosen</forename><surname>Qin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangxue</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0001-7157-8529</idno>
+		</author>
+		<idno type="DOI">10.3390/rs14174387</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<title level="j" type="abbrev">Remote Sensing</title>
+		<idno type="ISSNe">2072-4292</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">17</biblScope>
+			<biblScope unit="page">4387</biblScope>
+			<date type="published" when="2022-09-03">2022</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Evaluation of a New Lightweight UAV-Borne Topo-Bathymetric LiDAR for Shallow Water Bathymetry and Object Detection</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Dandi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Shuai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Qing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Pengcheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1379" to="1379" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">A Deep Learning Framework for Semantic Segmentation of Underwater Environments</title>
+		<author>
+			<persName><forename type="first">Amos</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeremy</forename><surname>Coffelt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Lingemann</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/oceans47191.2022.9977212</idno>
+	</analytic>
+	<monogr>
+		<title level="m">OCEANS 2022, Hampton Roads</title>
+		<meeting><address><addrLine>Hampton Roads</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-10-17">2022</date>
+			<biblScope unit="volume">2022</biblScope>
+			<biblScope unit="page" from="1" to="7" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Haptic Object Recognition in Underwater and Deep‐sea Environments</title>
+		<author>
+			<persName><forename type="first">Achint</forename><surname>Aggarwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Kampmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Johannes</forename><surname>Lemburg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Kirchner</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/rob.21538</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Field Robotics</title>
+		<title level="j" type="abbrev">Journal of Field Robotics</title>
+		<idno type="ISSN">1556-4959</idno>
+		<idno type="ISSNe">1556-4967</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="167" to="185" />
+			<date type="published" when="2015-01-01">2015-01-01</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Performance Evaluation of a Low-Cost Stereo Vision System for Underwater Object Detection</title>
+		<author>
+			<persName><forename type="first">Oleari</forename><surname>Fabio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kallasi</forename><surname>Fabjan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lodi</forename><forename type="middle">Rizzini</forename><surname>Dario</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aleotti</forename><surname>Jacopo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caselli</forename><surname>Stefano</surname></persName>
+		</author>
+		<idno type="DOI">10.3182/20140824-6-za-1003.01450</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IFAC Proceedings Volumes</title>
+		<title level="j" type="abbrev">IFAC Proceedings Volumes</title>
+		<idno type="ISSN">1474-6670</idno>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="3388" to="3394" />
+			<date type="published" when="2014">2014</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Object detection and pose estimation algorithms for underwater manipulation</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Kallasi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Oleari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bottioni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Rizzini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Caselli</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2014 Conference on Advances in Marine Robotics Applications</title>
+		<meeting>the 2014 Conference on Advances in Marine Robotics Applications<address><addrLine>Palermo, Italy</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="16" to="19" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Results of cylinder detection and fitting from real three dimensional underwater acoustic images</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">C</forename><surname>Patel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Greig</surname></persName>
+		</author>
+		<idno type="DOI">10.3723/175605405784426646</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Underwater Technology</title>
+		<title level="j" type="abbrev">uw tech: int j soc uw tech</title>
+		<idno type="ISSN">1756-0543</idno>
+		<idno type="ISSNe">1756-0551</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="115" to="127" />
+			<date type="published" when="2005-11-01">2005</date>
+			<publisher>Society for Underwater Technology</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">An image synthesizer</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Perlin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Siggraph Computer Graphics</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="287" to="296" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">SASA: Semantics-Augmented Set Abstraction for Point-Based 3D Object Detection</title>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhe</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dacheng</forename><surname>Tao</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v36i1.19897</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="221" to="229" />
+			<date type="published" when="2022-06-28">2022</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">nuscenes: A multimodal dataset for autonomous driving</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Caesar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Bankiti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Lang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Vora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">E</forename><surname>Liong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Krishnan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Baldan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Beijbom</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF conference on computer vision and pattern recognition</title>
+		<meeting>the IEEE/CVF conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page">631</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">A suggestion for using powerful and informative tests of normality</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Belanger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Agostino</surname><genName>Jr</genName></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The American Statistician</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="316" to="321" />
+			<date type="published" when="1990">1990</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

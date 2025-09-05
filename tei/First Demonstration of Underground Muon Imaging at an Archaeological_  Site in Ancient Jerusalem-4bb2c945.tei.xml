@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">First Demonstration of Underground Muon Imaging at an Archaeological Site in Ancient Jerusalem</title>
+				<funder ref="#_wUwSBJq">
+					<orgName type="full">unknown</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Pazy and Cogito</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-09-03">3 September 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Y</forename><surname>Benhammou</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics and Astronomy</orgName>
+								<orgName type="institution">Tel-Aviv University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">E</forename><surname>Etzion</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics and Astronomy</orgName>
+								<orgName type="institution">Tel-Aviv University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Y</forename><surname>Gadot</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Archaeology and Ancient Near Eastern Cultures</orgName>
+								<orgName type="institution">Tel-Aviv University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">O</forename><surname>Lipschits</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Archaeology and Ancient Near Eastern Cultures</orgName>
+								<orgName type="institution">Tel-Aviv University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">G</forename><surname>Mizrachi</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics and Astronomy</orgName>
+								<orgName type="institution">Tel-Aviv University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Y</forename><surname>Shalev</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">Israel Antiquities Authority</orgName>
+								<address>
+									<country key="IL">Israel</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Y</forename><surname>Silver</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics and Astronomy</orgName>
+								<orgName type="institution">Tel-Aviv University</orgName>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="institution">Rafael Advanced Defense Systems LTD</orgName>
+								<address>
+									<country key="IL">Israel</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">A</forename><surname>Weissbein</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="institution">Rafael Advanced Defense Systems LTD</orgName>
+								<address>
+									<country key="IL">Israel</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">I</forename><surname>Zolkin</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics and Astronomy</orgName>
+								<orgName type="institution">Tel-Aviv University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">First Demonstration of Underground Muon Imaging at an Archaeological Site in Ancient Jerusalem</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-09-03">3 September 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">D6EE4EA6AD27FE5F5D7804E39F42C5FE</idno>
+					<idno type="arXiv">arXiv:2504.03078v2[physics.app-ph]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:31+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We present a novel underground imaging system that utilizes cosmic-ray muons to explore the subsurface environment at the City of David archaeological site in ancient Jerusalem. The method exploits the fact that muons lose energy as they travel through matter, with attenuation depending on the integrated density along their path. By tracking muon trajectories through a multi-layered, scintillator-based detector, we reconstruct angular flux distributions and infer variations in overburden density. This report details initial findings from measurements conducted at a large rock-hewn installation, commonly known as "Jeremiah's cistern." A high-resolution LiDAR scan of the interior was combined with muon flux simulations to map structural anomalies. The system successfully identifies variations in ground opacity, demonstrating the viability of muon tomography for archaeological imaging in complex environments. This work represents a significant interdisciplinary effort to deepen our understanding of this historical site.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>Muon tomography is a non-invasive imaging technique that exploits cosmic-ray muons to probe the density distribution within a target material <ref type="bibr" target="#b0">[1]</ref><ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref> . Muons are highly penetrating particles produced by interactions of cosmic rays with atoms in the upper atmosphere. At ground level, their flux is approximately 1 muon per cm 2 per minute, or about 10,000 muons per m 2 per minute, with energies ranging from a few hundred MeV to several TeV. Unlike X-rays, muons can traverse tens to hundreds of meters of rock or concrete, making them ideal probes for dense or inaccessible structures. As they pass through matter, muons lose energy via ionization and radiative processes, and their trajectories are altered by scattering and absorption. The level of attenuation depends on the integrated density along their path. By measuring the rate and direction of muons that pass through a target volume using several tracking detectors, a tomographic image of the internal structure can be reconstructed. This is illustrated in Fig. <ref type="figure">1</ref> In our system, muons are detected directly through the ionization they produce while traversing plastic scintillator bars, which emit light in response to deposited energy. The typical duration of data collection ranges from a few days to several weeks, depending on detector size, overburden thickness, and the desired resolution. The muon flux is generally stable but may exhibit mild environmental dependence, particularly on atmospheric pressure and temperature, which affect muon production altitudes and energy spectra. This technique has recently been applied in geological and archaeological investigations <ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref> .</p><p>The south-eastern ridge (also known as the City of David) in ancient Jerusalem, with stratified deposits dating back to the second and first millennia BCE <ref type="bibr" target="#b5">6</ref> , provides an excellent test bed for muon tomography. This work describes the first operational test of our custom-developed muon detector deployed at Jeremiah's cistern (referenced in Jeremiah 38:6), a site adjacent to ongoing excavations. Our objectives include (i) demonstrating the efficacy of muon tomography for archaeological imaging, (ii) performing muon angular rates measurements, (iii) deriving integrated opacity -the integrated ground density traversed by muons (calculated by ρ • dl where ρ is the ground density and the integration is performed along the muon path) and (iv) preparing for a second campaign, in which the detector will be placed underneath the City of David near the Gihon spring.</p><p>The cistern is a large, rock-hewn installation. A picture of the cistern is shown in Fig. <ref type="figure">3</ref>. The feature, approximately six meters deep, includes a narrow shaft and a bell-shaped lower chamber, exhibits typical water system characteristics and was likely used for water storage or containment. The age of the cistern is still unclear. Nevertheless, its location-at the top of the ridge, adjacent to the "Large Stone Structure" and the "Rock-Cut Moat", two major architectural features interpreted by some scholars as part of a royal construction project, suggests that it may have been part of a prominent building complex. These structures were uncovered in Area G of the City of David excavations and are associated with the First Temple period, which generally refers to the era between the construction of the First Temple in Jerusalem and its destruction (circa 1000-586 BCE) <ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref> . </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. EXPERIMENTAL SETUP AND METHODS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Detector Design and Calibration</head><p>The muon detector is a compact, scintillator-based telescope optimized for underground applications. It comprises four detection layers containing 23 extruded plastic scintillator bars, 40 cm long, with a triangular cross-section of 3.3 × 1.7 cm 2 . The triangular cross-section enables sub-pixel position resolution by analyzing the light distribution between adjacent bars, as detailed in Section II C and illustrated in Fig. <ref type="figure">5</ref>. The scintillators are fabricated from polystyrene doped with PPO (2,5-Diphenyloxazole) and POPOP (1,4bis(5-phenyloxazol-2-yl)benzene), which act as primary and secondary fluors, respectively, and are coated with titanium dioxide to enhance light reflection (see Ref. <ref type="bibr" target="#b9">10</ref> ). When traversed by a muon, scintillation light is produced and captured by wavelength-shifting (WLS) fibers (Saint-Gobain BCF-91A). These fibers absorb the blue scintillation light (∼420 nm) emitted by the plastic scintillator and re-emit it in the green (∼500 nm), a wavelength range with lower attenuation and better matched to the spectral sensitivity of the Sensel mi-croJ 30035 Silicon Photomultipliers (SiPMs) <ref type="bibr" target="#b10">11</ref> mounted on a Printed Circuit Board (PCB). This wavelength shifting improves light collection and signal uniformity over the fiber length. While the re-emission process introduces a small timing delay and may lead to mild spatial inhomogeneities in light yield, these effects are negligible in our application and do not bias the reconstruction performance. Each fiber extends an additional 50 cm beyond the scintillator to mitigate attenuation losses. A detailed description of the detector is given in Ref. <ref type="bibr" target="#b11">12</ref> .</p><p>Calibration of the detector involved measuring individual scintillator responses, gain matching for the SiPMs and validation of the detector's sensitivity uniformity. The detector was initially calibrated in a controlled laboratory environment at Tel Aviv University using cosmic-ray muons. Individual scintillator responses were measured and the gains of the SiPMs were equalized. Based on these tests, the trigger threshold was set to 2600 Analog-to-Digital Converter (ADC) counts, above the electronic noise floor. However, this value was close to the most probable value (MPV) of a muon signal, measured at 3096 ADC counts with a distribution width of approximately 250 counts (this corresponds to a pulse height of roughly 100 mV for a muon passing through a triangular bar near its center). This is shown in Fig. <ref type="figure" target="#fig_4">6</ref> of the publication describing the detector <ref type="bibr" target="#b11">12</ref> . This configuration, while effective at suppressing noise, also rejected a substantial fraction of valid muon signals, resulting in a detection efficiency of approximately 30%. For subsequent data acquisition, the threshold was lowered and a stricter event selection criterion was applied: valid events were required to register hits in all four scintillator layers. This improved detection efficiency to close to 90%, while maintaining negligible noise contamination.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Data Acquisition System</head><p>The detector employs the CAEN DT5550W data acquisition system based on the WeeROC Application-Specific Integrated Circuit (ASIC) <ref type="bibr">13</ref> . A mezzanine card with four 32channel Citiroc ASICs, combined with a Xilinx XC7K160T 14 FPGA (Field-Programmable Gate Array), processes the signals. A 14-bit, 80 MS/s ADC digitizes the signals in real time. The system is powered by 128 bias voltage lines (20-35 V) and housed in a dedicated cooling box to ensure thermal stability. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Muon Trajectory Determination</head><p>Each cosmic-ray muon is expected to leave a trace in all four scintillator layers. The overall muon trajectory is reconstructed by correlating the hit positions across these layers. However, accurate determination of the hit location within each layer is nontrivial due to the geometry of the scintillator bars and the strong dependence of the signal amplitude on both the angle of incidence and the transverse impact position.</p><p>In particular, the path length of a muon within a single triangular scintillator bar varies significantly even for vertically incident particles. If the muon passes near a vertex, the path length may approach zero, while a hit near the center of the bar yields the maximum path length, equal to the triangle's height (≈1.7 cm). This geometric effect causes substantial variation in signal amplitude even at a fixed angle, making direct position estimation from single-bar signals unreliable.</p><p>To overcome this, our reconstruction algorithm exploits the relative light yield in adjacent scintillator bars. When a muon crosses the interface between two triangular bars, it traverses FIG. <ref type="figure">5</ref>. Illustration of a muon passing through two adjacent triangular scintillator bars. Due to the triangular geometry, the muon's path length, and thus the signal amplitude, varies strongly with its transverse position, even at normal incidence. By comparing the signal amplitudes n and N collected in adjacent bars, the hit position X can be estimated using a known geometric relation (Eq. 1). This method enables sub-pixel spatial resolution, essential for accurate trajectory reconstruction. Also shown schematically are the WLS fibers from the scintillator to the SiPM and the data acquisition. a path of length X in one bar and a -X in the other, where a is the base width of the triangular cross-section and X is measured from the vertex. Since the amount of scintillation light produced is proportional to the path length, the collected signals n and N in the two bars satisfy:</p><p>n ∝ X, N ∝ a -X Taking the ratio of the two signals yields:</p><formula xml:id="formula_0">n N = X a -X . (<label>1</label></formula><formula xml:id="formula_1">)</formula><p>Assuming that the signal amplitudes follow Poisson statistics (∆n = √ n and ∆N = √ N), the uncertainty in X is given by error propagation:</p><formula xml:id="formula_2">δ X 2 = ∂ X ∂ N ∆N 2 + ∂ X ∂ n ∆n 2 ,<label>(2)</label></formula><p>which yields:</p><formula xml:id="formula_3">δ X = a N + n n • N N + n . (<label>3</label></formula><formula xml:id="formula_4">)</formula><p>This method, illustrated in Fig. <ref type="figure">5</ref>, enables sub-pixel resolution and is essential for achieving the detector's overall angular resolution of approximately 20 mrad. This resolution corresponds to a spatial resolving power of 1-2 meters at typical overburden distances of 50-100 meters, which matches the expected scale of archaeological features such as cisterns, shafts, and stone alignments. It also inherently accounts for variation in signal amplitude caused by the muon's transverse position and angle, thereby improving spatial accuracy and the consistency of track reconstruction. For overall trajectory reconstruction, the refined hit positions from each layer are correlated. Denote the hit positions in the top and bottom layers as x top and x bottom (and similarly for y). The differences ∆x = x bottomx top and ∆y = y bottomy top are computed over a known vertical separation ∆z. The muon incident angles are then given by:</p><formula xml:id="formula_5">τ x = tan(θ x ) = ∆x ∆z , τ y = tan(θ y ) = ∆y ∆z .<label>(4)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Flux Measurement and Angular Ground Depth Estimation</head><p>Muon trajectories are binned in the angular space (τ x , τ y ) to form the count matrix C µ (τ x , τ y ), and Poisson statistics govern the uncertainty in each bin.</p><p>The muon rate per angular bin is defined as:</p><formula xml:id="formula_6">R µ (τ x , τ y ) = C µ (τ x , τ y ) T det ,<label>(5)</label></formula><p>with T det being the exposure time. It is common to calculate and represent the muonic flux in spherical coordinates (as it depends only on the zenith angle θ and not the azimuthal angle φ ) this is shown in the next sections. In order to correlate the measured flux with the theoretical expectation, we calculated the differential muon flux using:</p><formula xml:id="formula_7">F µ (τ x , τ y ) = R µ (τ x , τ y ) S eff (τ x , τ y ) J ,<label>(6)</label></formula><p>where S eff (τ x , τ y ) is the effective detection surface, defined as the geometrical area of the detector that contributes to muon detection in direction (τ x , τ y ), weighted by detection efficiency and angular acceptance. It accounts for both the physical size and directional sensitivity of the detector. J = cos 3 θ is the Jacobian for the transformation from (τ x , τ y ) to spherical angles (θ , φ ). The angular domain (τ x , τ y ) was divided into uniform square bins, in dimensionless tangent units, in both directions. This bin size was chosen to balance angular resolution with statistical significance per bin. While the binning is uniform in (τ x , τ y ), it corresponds to non-uniform solid angles in spherical coordinates due to the Jacobian transformation. This effect is corrected in the calculation of the differential flux using the factor J = cos 3 θ . No angular-dependent biases were observed beyond expected statistical fluctuations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Estimation of Integrated Opacity</head><p>Our objective is to use the measured angular muon rate to estimate the angular ground depth D(τ x , τ y ). This reflects the effective overburden thickness above the detector. As noted earlier, the muon flux is reduced with ground depth, because muons lose energy while traversing through the ground until they stop and decay. The muon flux is related to the integrated density (or opacity) ρL (in g cm -2 ) along the muon path via energy-dependent attenuation:</p><formula xml:id="formula_8">dE dX = -a(E) -b(E) • E<label>(7)</label></formula><p>Here, a(E) represents nearly constant ionization losses (approximately 2 MeV cm 2 /g, per the Bethe-Bloch formula) and b(E) represents radiative losses (including bremsstrahlung, pair production, and photonuclear interactions) that become significant at higher energies <ref type="bibr" target="#b14">15,</ref><ref type="bibr" target="#b15">16</ref> . The integrated opacity is obtained by solving:</p><formula xml:id="formula_9">E GL E min dE a(E) + b(E) E = ρL,<label>(8)</label></formula><p>where E GL is the muon energy at ground level and E min is the threshold energy for muon reaching a specific ground depth. Detailed muon transport simulations yield lookup tables correlating the measured flux with ρL.</p><p>For this, we simulated the expected muonic flux using the parameterization for the vertical intensity shown in <ref type="bibr" target="#b16">17</ref> and <ref type="bibr" target="#b17">18</ref> . Specifically, the muon intensity at any zenith angle θ and muon momentum p µ is expressed as</p><formula xml:id="formula_10">I(p µ , θ ) = cos 3 θ I v p µ cos θ ,<label>(9)</label></formula><p>where the vertical muon intensity I v (p µ ) is given by  <ref type="formula" target="#formula_10">9</ref>) and ( <ref type="formula">10</ref>) were incorporated into our simulation framework to predict the angular and momentum distribution of muons at the surface, which was subsequently used to estimate the expected muonic flux for every angle and depth. The results of these calculations were combined into a comprehensive lookup table that relates expected muon rates at every angle for every effective depth.</p><formula xml:id="formula_11">I v (p µ ) = c 1 p</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>F. Uncertainty and Error Analysis</head><p>Quantifying uncertainties reliably is crucial for resolving ground structure deviations and ensuring the robustness of the reconstruction. The main sources of uncertainty include:</p><p>• Detector Efficiency: The overall efficiency (less than 20%)-due to high trigger thresholds and non-optimal trigger logic-introduces systematic bias.</p><p>• Atmospheric Modeling: Our simulation used sea-level muon flux models; however, Jerusalem's altitude (approximately 650 m) yields a higher flux and slightly altered angular distribution.</p><p>• Simulations: Limitations in the muon transport simulations, mainly due to insufficient modeling of the surface and terrain, contribute additional uncertainties. This is described in section II E.</p><p>• Statistical Fluctuations: Poisson statistics dictate the uncertainty in each angular bin.</p><p>The follow-up work aims to optimize trigger thresholds, incorporate altitude corrections, and refine simulation models, which is expected to significantly reduce the main sources of uncertainty.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. RESULTS</head><p>After thorough calibration and extensive laboratory testing, the detector was deployed at the cistern in the City of David archaeological site. A high-resolution Light Detection and Ranging (LiDAR) scan was used to map the interior geometry of the cistern, including the vertical shafts. This structural model was then incorporated into our simulation framework to predict the expected muon flux under the assumption of a homogeneous overburden and flat surface.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Integrated Muon Rate and Overall Efficiency</head><p>The detector was deployed and operated at the cistern for a total duration of approximately ten days (14,709 minutes). The total muon rate τ x τ y R µ (τ x , τ y ) and the rate after applying quality selection criteria acquired during this period is shown in Fig. <ref type="figure" target="#fig_4">6</ref>. We have used only those muon tracks that were analyzed with super resolution (i.e., recorded in two adjacent bars in each of the four detector layers). These constitute our quality selection criteria, ensuring sub-pixel spatial resolution and consistent angular reconstruction.</p><p>The expected muon rate of approximately 2.45 Hz was calculated by combining surface muon flux models from Reyna <ref type="bibr" target="#b16">17</ref> and Bugaev <ref type="bibr" target="#b17">18</ref> with muon transport simulations based on the energy loss formalism described in Eq. 8. This corresponds to an expected total of approximately 2.12 million muons over the full exposure period. By comparing these measured total rates to the expected value, we estimate the overall detector efficiency to be approximately 50% for all detected muons, and only 15-20% for the subset of muons passing the quality selection. The discrepancy between observed and simulated rates is thus partially explained by the stricter selection criteria applied to the data, which were not included in the simulations. Future refinements will integrate these criteria into the simulation chain for more accurate efficiency modeling.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. LiDAR Mapping and Angular Muon Distribution</head><p>Fig. <ref type="figure">7</ref> shows a LiDAR image of the interior of the cistern, clearly revealing the ventilation shafts extending toward the ground surface and the detector's location. Fig. <ref type="figure" target="#fig_5">8</ref> presents a qualitative comparison between the tan θ x versus tan θ y distributions of the muon rates. The top panel shows simulation results for the expected angular muon rate (the simulated flux × the detector's effective surface), while the bottom displays the measured angular muon rate. Although the absolute numbers differ significantly (discussed in the previous section), both distributions exhibit a maximum near the zenith, with a </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Measured Angular Ground Depth</head><p>By applying the lookup tables from muon transport simulations to the measured data, we derive the angular ground depth D(τ x , τ y ), which acts as a proxy for the integrated density of the overburden. Fig. <ref type="figure">9</ref> shows the resulting density map. This map, the primary result of our study, reveals variations in the overburden that may indicate subsurface anomalies, such as voids or high-density inclusions.</p><p>--</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. DISCUSSION</head><p>The measurement shows that muons can map underground features and resolve structural variations in the overbur- den. The angular muon flux distribution (Fig. <ref type="figure" target="#fig_5">8</ref>) highlights anisotropies consistent with the ventilation shafts seen in the LiDAR scan (Fig. <ref type="figure">7</ref>), which was integrated into our simulation framework. The match between simulated and measured angular patterns confirms that the features correspond to actual geometric structures above the detector. However, while the relative angular trends are meaningful, the overall flux normalization is affected by several factors: detector efficiency, the assumption of uniform overburden density, and the flat surface profile approximation above the cistern, all of which differ from actual site conditions. These discrepancies are discussed below.</p><p>First, the detector efficiency is low (less than 20%), mainly because of a suboptimal trigger scheme and excessively high detection thresholds. This inefficiency leads to a significant under-counting of muon events and a reduced flux compared to simulation predictions. Improving the trigger logic and recalibrating the thresholds are essential steps to enhance the measurement's sensitivity and accuracy.</p><p>Second, the simulation of the atmospheric muon flux assumed a sea-level model. Since Jerusalem is approximately 650 m above sea level, the actual muon flux is higher, with a slightly different angular distribution. Empirical models of cosmic-ray muon production <ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b17">18</ref> indicate that at this el-FIG. <ref type="figure">9</ref>. The angular ground depth D(τ x , τ y ) derived by applying the lookup tables from muon transport simulations to the measured data. evation, the vertical muon flux increases by approximately 15-20% compared to sea level. This increase results from the thinner atmosphere, which allows more muons to reach the surface. Not applying altitude correction causes a systematic difference in both the absolute muon rate and its angular distribution, thus impacting the inferred overburden.</p><p>Third, although the cistern's interior was accurately scanned with LiDAR, the simulations assumed a flat ground surface above it. In reality, the terrain has significant features on the meter scale, such as large stone walls, mature olive trees, and nearby buildings. These were not included in the simulation geometry, and their omission adds extra error in modeling muon attenuation.</p><p>Finally, limitations in muon transport simulations also contribute to the observed discrepancies. These simulations, based on the energy loss equation (Eq. 8), incorporate ionization and radiative losses via energy-dependent coefficients a(E) and b(E). The lookup tables derived from these models assume a homogeneous material and simplified geometry, neglecting local inhomogeneities or complex surface structures. This simplification can cause local errors in the reconstructed density map. Additional uncertainties come from environmental variations and potential systematic biases in detector calibration. Ongoing efforts include adding altitude corrections, improving calibration procedures, and expanding the detector array to enable full three-dimensional subsurface imaging.</p><p>Furthermore, as part of our forward-looking strategy, we plan to incorporate AI-based image processing techniques to reduce noise, improve flux map reconstruction, and detect subtle anomalies in challenging data conditions. These efforts will build on advances in other fields such as medical tomography and geophysical imaging, and we believe they have strong potential for archaeological muon imaging as well.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>V. CONCLUSION</head><p>This study demonstrates the utility of muon imaging as an effective, non-invasive technique for mapping underground features, specifically in the archaeological context of the cistern in the City of David, Jerusalem. We could derive key insights into the subsurface density variation and overburden characteristics by deploying a custom muon detector and integrating high-resolution LiDAR mapping. While discrepancies between the measured and expected muon flux were identified, primarily attributed to detector efficiency, altitude effects, and the inherent complexity of the overlying structures, these findings pave the way for further refinement and optimization of the muon detection process. Future work will address these uncertainties by improving calibration methods, incorporating altitude adjustments in simulations, and expanding the detector network to enable comprehensive threedimensional imaging. Overall, this study highlights the potential of muon tomography for archaeological investigations and supports its continued application in exploring buried structures and understanding ancient civilizations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VI. DATA AVAILABILITY</head><p>The data supporting the findings of this study are available from the corresponding author upon reasonable request. Due to the technical nature of the data and its dependence on specific analysis procedures, effective use requires further explanation from the authors.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>23A</head><label></label><figDesc>FIG.1. Schematic illustration of cosmic-ray muons penetrating the overburden from various angles. The ground is continuously bombarded by muons at a known rate and angular distribution. As muons lose energy while traversing matter, their flux is attenuated depending on the integrated density along their path. A greater-than-expected flux from a particular direction indicates reduced attenuation, suggesting the presence of a void or low-density region (marked for illustration as yellow lines). The muon telescope detects these angular flux variations to map subsurface structures.</figDesc><graphic coords="1,343.39,339.75,192.37,54.14" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIG. 2 .</head><label>2</label><figDesc>FIG. 2. Photograph of the cistern, the bell-shaped water facility underneath the City of David visitor center.</figDesc><graphic coords="2,62.22,145.92,228.63,152.67" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 4</head><label>4</label><figDesc>Fig.4shows an artist's representation of the detector with relevant sizes and a photograph of the detector during installation and commissioning in the cistern.</figDesc><graphic coords="3,87.62,99.18,177.84,140.99" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>-1 c 2</head><label>2</label><figDesc>+c 3 log 10 (p µ )+c 4 log 2 10 (p µ )+c 5 log<ref type="bibr" target="#b2">3</ref> 10 (p µ ) µ(10)   Using the best-fit coefficients<ref type="bibr" target="#b16">17</ref> c 1 = 0.00253, c 2 = 0.2455, c 3 = 1.288, c 4 = -0.2555, and c 5 = 0.0209, parameterization accurately reproduces the observed muon intensities over a broad momentum range. Equations (</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>FIG. 6 .</head><label>6</label><figDesc>FIG. 6. Muon rates during the measurement, recorded continuously over ten days and grouped into 20-minute bins for display. (Top): Total detected muon rate (blue) and the subset passing strict quality selection criteria (orange), reflecting overall detector performance.(Bottom): Rejected muon rate (black), calculated as the difference between total and quality-selected events, and the corresponding quality/total rate ratio (turquoise, right axis), which reflects the relative tracking efficiency. The data remain stable throughout the acquisition period, with mild fluctuations in rate and efficiency. This dual representation highlights both the absolute rejection level and the relative selection behavior over time.</figDesc><graphic coords="5,315.07,52.07,248.96,121.78" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>FIG. 8 .</head><label>8</label><figDesc>FIG. 8. tan θ x versus tan θ y distributions. (Top): Muon rates derived from the simulated flux multiplied by the detector's effective surface. (Bottom): Measured muon rate data.</figDesc><graphic coords="6,62.22,213.55,228.64,160.28" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>ACKNOWLEDGMENTS</head><p>This work was supported in part by the <rs type="funder">Pazy and Cogito</rs> foundations.</p><p>The site is located in the City of David within the <rs type="institution">Jerusalem Walls National Park</rs>. <rs type="person">Y. Shalev</rs> and <rs type="person">F. Vukosavović</rs> excavated on behalf of the IAA, Permit No. <rs type="grantNumber">8928</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_wUwSBJq">
+					<idno type="grant-number">8928</idno>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Muon-electron scattering at high energies and the muon content of extensive air showers</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">W</forename><surname>Alvarez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review D</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">1035</biblScope>
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Muon tomography</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nagamine</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Physics: Conference Series</title>
+		<imprint>
+			<biblScope unit="volume">136</biblScope>
+			<biblScope unit="page">22001</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Muon geotomography: selected case studies</title>
+		<author>
+			<persName><forename type="first">Doug</forename><surname>Schouten</surname></persName>
+			<idno type="ORCID">0000-0002-0452-6320</idno>
+		</author>
+		<idno type="DOI">10.1098/rsta.2018.0061</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</title>
+		<title level="j" type="abbrev">Phil. Trans. R. Soc. A.</title>
+		<idno type="ISSN">1364-503X</idno>
+		<idno type="ISSNe">1471-2962</idno>
+		<imprint>
+			<biblScope unit="volume">377</biblScope>
+			<biblScope unit="issue">2137</biblScope>
+			<biblScope unit="page">20180061</biblScope>
+			<date type="published" when="2018-12-10">2018</date>
+			<publisher>The Royal Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Development of a two-fold segmented detection system for near horizontally cosmic-ray muons to probe the internal structure of a volcano</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tanaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nagamine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kawamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">N</forename><surname>Nakamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ishida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Shimomura</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0168-9002(03)01372-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<title level="j" type="abbrev">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<idno type="ISSN">0168-9002</idno>
+		<imprint>
+			<biblScope unit="volume">507</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="657" to="669" />
+			<date type="published" when="2003-07">2003</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Muon radiography applied to volcanoes imaging: the MURAVES experiment at Mt. Vesuvius</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Errico</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">JINST</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">3014</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note>MURAVES)</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Digging the city of david: Where jerusalem&apos;s history began</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Reich</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<publisher>Israel Exploration Sociery</publisher>
+			<pubPlace>Jerusalem</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The palace of king david: Excavations at the summit of the city of david: Preliminary report of the 2005-2007 seasons</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mazar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Jerusalem: Shoham</title>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The Beth Shean Valley and its Vicinity in the 10th Century BCE</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mazar</surname></persName>
+		</author>
+		<idno type="DOI">10.52486/01.00001.10</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Jerusalem Journal of Archaeology</title>
+		<title level="j" type="abbrev">JJAR</title>
+		<idno type="ISSNe">2788-8819</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="241" to="271" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Institute of Archaeology, the Hebrew University of Jerusalem</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">An Early Iron Age Moat in Jerusalem between the Ophel and the Southeastern Ridge/City of David</title>
+		<author>
+			<persName><forename type="first">Yuval</forename><surname>Gadot</surname></persName>
+			<idno type="ORCID">0000-0002-7301-2745</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Efrat</forename><surname>Bocher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liora</forename><surname>Freud</surname></persName>
+			<idno type="ORCID">0000-0002-1775-0145</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yiftah</forename><surname>Shalev</surname></persName>
+			<idno type="ORCID">0000-0003-4969-531X</idno>
+		</author>
+		<idno type="DOI">10.1080/03344355.2023.2246811</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Tel Aviv</title>
+		<title level="j" type="abbrev">Tel Aviv</title>
+		<idno type="ISSN">0334-4355</idno>
+		<idno type="ISSNe">2040-4786</idno>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="147" to="170" />
+			<date type="published" when="2023-07-03">2023</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Low-cost extruded plastic scintillator</title>
+		<author>
+			<persName><forename type="first">Anna</forename><surname>Pla-Dalmau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><forename type="middle">D</forename><surname>Bross</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kerry</forename><forename type="middle">L</forename><surname>Mellott</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0168-9002(01)00177-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<title level="j" type="abbrev">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<idno type="ISSN">0168-9002</idno>
+		<imprint>
+			<biblScope unit="volume">466</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="482" to="491" />
+			<date type="published" when="2001-07">2001</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Silicon photomultipliers (sipm), high pde and timing resolution sensors in a tsv package j-series sipm</title>
+		<author>
+			<persName><surname>Onsemi</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Muon detector for underground tomography</title>
+		<author>
+			<persName><forename type="first">Yan</forename><surname>Benhammou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erez</forename><surname>Etzion</surname></persName>
+			<idno type="ORCID">0000-0001-6871-7794</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gilad</forename><surname>Mizrachi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meny</forename><forename type="middle">Raviv</forename><surname>Moshe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiftah</forename><surname>Silver</surname></persName>
+			<idno type="ORCID">0000-0002-8200-6013</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Igor</forename><surname>Zolkin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.nima.2022.167412</idno>
+		<idno type="arXiv">arXiv:2205.03722</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<title level="j" type="abbrev">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<idno type="ISSN">0168-9002</idno>
+		<imprint>
+			<biblScope unit="volume">1042</biblScope>
+			<biblScope unit="page">167412</biblScope>
+			<date type="published" when="2022-11">2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note>physics.ins-det</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Caen</title>
+		<author>
+			<persName><forename type="first">Maylis</forename><surname>Baylé</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/gao/9781884446054.article.t012948</idno>
+	</analytic>
+	<monogr>
+		<title level="m">User manual um6697 dt5550w weeroc asics evaluation and daq system, www.caen.it</title>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">7 series fpgas data sheet: Overview</title>
+		<author>
+			<persName><surname>Xilinix</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">MUON STOPPING POWER AND RANGE TABLES 10 MeV–100 TeV</title>
+		<author>
+			<persName><forename type="first">Donald</forename><forename type="middle">E</forename><surname>Groom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikolai</forename><forename type="middle">V</forename><surname>Mokhov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sergei</forename><forename type="middle">I</forename><surname>Striganov</surname></persName>
+		</author>
+		<idno type="DOI">10.1006/adnd.2001.0861</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Atomic Data and Nuclear Data Tables</title>
+		<title level="j" type="abbrev">Atomic Data and Nuclear Data Tables</title>
+		<idno type="ISSN">0092-640X</idno>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="183" to="356" />
+			<date type="published" when="2001-07">2001</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Tables of Particle Properties**From Review of Particle Properties, Particle Data Group, reprinted from Phys. Lett. 39B, April 1972.</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Navas</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">Particle Data Group</orgName>
+			</affiliation>
+		</author>
+		<idno type="DOI">10.1016/b978-0-12-443850-7.50018-5</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Particle Physics: an Introduction</title>
+		<imprint>
+			<publisher>Elsevier</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="page" from="251" to="264" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A simple parameterization of the cosmic-ray muon momentum spectra at the surface as a function of zenith angle</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Reyna</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">arXiv: High Energy Physics -Phenomenology</title>
+		<imprint>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Atmospheric muon flux at sea level, underground, and underwater</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">V</forename><surname>Bugaev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Misaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">A</forename><surname>Naumov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">S</forename><surname>Sinegovskaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">I</forename><surname>Sinegovsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Takahashi</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/physrevd.58.054001</idno>
+		<idno type="arXiv">arXiv:hep-ph/9803488</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review D</title>
+		<title level="j" type="abbrev">Phys. Rev. D</title>
+		<idno type="ISSN">0556-2821</idno>
+		<idno type="ISSNe">1089-4918</idno>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">54001</biblScope>
+			<date type="published" when="1998-07-15">1998</date>
+			<publisher>American Physical Society (APS)</publisher>
+		</imprint>
+	</monogr>
+	<note>hep-ph</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

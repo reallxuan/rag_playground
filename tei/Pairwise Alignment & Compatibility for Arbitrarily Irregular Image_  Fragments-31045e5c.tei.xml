@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Pairwise Alignment &amp; Compatibility for Arbitrarily Irregular Image Fragments</title>
+				<funder>
+					<orgName type="full">ABC Robotics Initiative</orgName>
+				</funder>
+				<funder ref="#_fDKuA9w">
+					<orgName type="full">European Union</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-07-13">13 Jul 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ofir</forename><forename type="middle">Itzhak</forename><surname>Shahar</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Dept. of Computer Science</orgName>
+								<orgName type="institution">Ben-Gurion University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Gur</forename><surname>Elkin</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Dept. of Computer Science</orgName>
+								<orgName type="institution">Ben-Gurion University of the Negev</orgName>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Ohad</forename><surname>Ben-Shahar</surname></persName>
+							<email>ben-shahar@cs.bgu.ac.il</email>
+							<affiliation key="aff2">
+								<orgName type="department">Dept. of Computer Science</orgName>
+								<orgName type="institution">Ben-Gurion University of the Negev</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Pairwise Alignment &amp; Compatibility for Arbitrarily Irregular Image Fragments</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-07-13">13 Jul 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">402E9564BF90AAA236F43D5218E51882</idno>
+					<idno type="arXiv">arXiv:2507.09767v1[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:30+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Pairwise compatibility calculation is at the core of most fragments-reconstruction algorithms, in particular those designed to solve different types of the jigsaw puzzle problem. However, most existing approaches fail, or aren't designed to deal with fragments of realistic geometric properties one encounters in real-life puzzles. And in all other cases, compatibility methods rely strongly on the restricted shapes of the fragments. In this paper, we propose an efficient hybrid (geometric and pictorial) approach for computing the optimal alignment for pairs of fragments, without any assumptions about their shapes, dimensions, or pictorial content. We introduce a new image fragments dataset generated via a novel method for image fragmentation and a formal erosion model that mimics real-world archaeological erosion, along with evaluation metrics for the compatibility task. We then embed our proposed compatibility into an archaeological puzzle-solving framework and demonstrate state-of-the-art neighborhood-level precision and recall on the RePAIR 2D dataset, directly reflecting compatibility performance improvements.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction &amp; related work</head><p>Although computer vision and image processing have been experiencing significant breakthroughs in the last decade, some real-world problems, even those that could be abstracted and formulated relatively easily, remain unsolved. Such is the problem of robustly reconstructing real-world archaeological artifacts from their fragments, a challenge that is a major motivation for seeking computational solutions to the jigsaw puzzle problem (e.g., <ref type="bibr" target="#b13">[14]</ref>, <ref type="bibr" target="#b20">[21]</ref>, <ref type="bibr" target="#b21">[22]</ref>, <ref type="bibr" target="#b23">[24]</ref>, <ref type="bibr" target="#b26">[27]</ref>, <ref type="bibr" target="#b27">[28]</ref>, <ref type="bibr" target="#b33">[34]</ref>, <ref type="bibr" target="#b41">[42]</ref>) and is still largely open despite the vast resources, time, and direct involvement of domain experts recruited to its solution <ref type="bibr" target="#b0">[1]</ref>, <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b7">[8]</ref>, <ref type="bibr" target="#b17">[18]</ref>.</p><p>Freeman and Garder first posed the 2D jigsaw-puzzle problem for unrestricted shapes in 1964 <ref type="bibr" target="#b18">[19]</ref>, later shown to be NP-complete <ref type="bibr" target="#b12">[13]</ref>. Since then most research has focused on square-piece puzzles-now even addressed by deep learning <ref type="bibr" target="#b24">[25]</ref>, <ref type="bibr" target="#b37">[38]</ref>, <ref type="bibr" target="#b38">[39]</ref>-while the original case of arbitraryshape fragments remains unsolved. To date, to our best knowledge, no solver successfully reconstructs public archaeological datasets without relying on prior knowledge of the target image <ref type="bibr" target="#b1">[2]</ref>, <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b14">[15]</ref>, <ref type="bibr" target="#b25">[26]</ref>, <ref type="bibr" target="#b40">[41]</ref>.</p><p>An additional important aspect of the archaeological reconstruction domain, which is often treated poorly or completely ignored by recent works, is the potential erosion on the archaeological fragments (see Fig. <ref type="figure">1</ref>). In realistic scenarios, fragments may be degraded due to poor handling, A B C</p><p>Figure <ref type="figure">1</ref>: Samples from publicly available puzzle datasets. A: A Square Jigsaw puzzle from JPwLEG-5 dataset <ref type="bibr" target="#b37">[38]</ref>. published in 2023 along with JPwLEG-3, both containing strictly square puzzles with 25 / 9 fragments respectively, while containing gaps between neighboring fragments. B: A region from a fragmented puzzle of the fresco Giotto, Adoration of the Magi, sampled from the DAFNE dataset <ref type="bibr" target="#b14">[15]</ref>. The fragments are created by a Voronoi partition with a smoothing-based erosion, leaving the eroded pieces with relatively simple shapes. C: An archaeological puzzle, sampled from the RePAIR dataset <ref type="bibr" target="#b40">[41]</ref>, which is based on 3D scanned fragments of a broken fresco from Pompeii, and 2D rendered versions of their pictorial surface. All fragments exhibit real-world erosion and unrestricted complex shapes, with varying degrees of pictorial content.</p><p>harsh physical conditions, or simply matter deterioration over time which might drastically alter their physical geometric shape, as is often observed in real pieces <ref type="bibr" target="#b40">[41]</ref>. Unfortunately, even when this is taken into consideration, recent works on puzzle solving and archaeological reconstruction tend to simulate it in ways that rarely resemble realistic scenarios <ref type="bibr" target="#b2">[3]</ref>, <ref type="bibr" target="#b9">[10]</ref>, <ref type="bibr" target="#b34">[35]</ref>, <ref type="bibr" target="#b37">[38]</ref>, <ref type="bibr" target="#b42">[43]</ref>.</p><p>It should be mentioned that unlike in the computer-vision literature, efforts to handle puzzles of unrestricted geometric shapes were made in the computational archaeology literature, often while ignoring pictorial content <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b4">[5]</ref>, <ref type="bibr" target="#b8">[9]</ref>, <ref type="bibr" target="#b19">[20]</ref>, <ref type="bibr" target="#b31">[32]</ref>, <ref type="bibr" target="#b32">[33]</ref>, <ref type="bibr" target="#b39">[40]</ref>. These works typically focus on 3D rather than 2D reconstruction and tend to follow a similar computational pipeline. In this pipeline, the fragments are scanned into point clouds, processed into meshes, and segmented into facets, while geometrical features, and occasionally simple pictorial features (such as average color, saturation, and variance) are extracted either from these facets or their boundary curves. Candidate pairwise matches of fragments are then computed utilizing these features, while often optimizing geometrical coherency (e.g., <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b8">[9]</ref>).</p><p>As implied above, only few existing approaches are even capable of running on (and let alone solving) general problems at the complexity of archaeological puzzles with no limitations on the fragment shapes, sizes, and content. Among these works, Derech et al. <ref type="bibr" target="#b13">[14]</ref> proposed a greedy reconstruction algorithm that iteratively picks the best additional fragment to add to a growing collection of reconstructed pieces, discretizing the infinite space of orientations into a coarse finite set and scoring solely pictorial compatibility via pixel-wise dissimilarity on extrapolated content. However, relying on a regular, equally-spaced discretization of the configuration space creates a trade-off between runtime and the ability to capture optimal alignments, potentially missing better matches due to coarse sampling. Additionally, their outdated extrapolation prohibits useful results on real archaeological data. Tsesmelis et al. <ref type="bibr" target="#b40">[41]</ref> present two geometric schemes-one replacing pictorial matching with Harel et al. 's spring-mass optimization <ref type="bibr" target="#b21">[22]</ref>, the other a genetic global optimizer balancing reconstruction area and overlap-both ignoring pictorial coherence. Cao et al. <ref type="bibr" target="#b6">[7]</ref> employ a two-stage global reassembly with region-overlap pruning and a MobileViT classifier to score polygonal-edge alignments but do not model erosion. Khoroshiltseva et al. <ref type="bibr" target="#b23">[24]</ref> handle irregular shapes via line-continuation features and limited orientations, while Puzzlefusion <ref type="bibr" target="#b22">[23]</ref> and the Crossing Cut solver <ref type="bibr" target="#b21">[22]</ref> depend on low-degree polygonal approximations ill-suited to unrestricted, eroded fragments. Overall, these methods impose substantial constraints on shape, orientation, or compatibility scoring and neglect the combined challenges of unrestricted geometries, pictorial content, and realistic erosion.</p><p>In this work we propose a different approach that does not restrict fragment shapes, sizes, pictorial content, or the potential loss of information (both geometric and pictorial) due to erosion. We deliberately choose to focus on what might be considered the most important part of any puzzle-solving algorithm, namely the determination of compatibility and relative alignment between potentially neighboring pairs of pieces. Toward that goal, we also propose an adaptive discretization method to constrain the infinite space of potential relative configurations between fragments to a tractable size, in an informed way based on their unique shapes. We thus propose PolEx, a Polygonal approximation &amp; Extrapolated Pictorial dissimilarity, whose outline include the following steps:</p><p>• 1 -Extrapolation of the pictorial content of all fragments, while utilizing an advanced diffusion model <ref type="bibr" target="#b35">[36]</ref>, and the extraction of extrapolated bands.</p><p>• 2 -Rich multiscale polygonal approximation of the fragments' original geometric shapes, including augmented edges representing larger scale geometric segments of the boundary.</p><p>• 3 -Extraction of Candidate Matching Edges between the rich polygonal approximations of the two fragments under consideration.</p><p>• 4 -Computing Potential Alignment Configurations for the inspected edges.</p><p>• 5 -Scoring potential configurations based on pictorial dissimilarity of random patches sampled across the shared region of the fragments' extrapolated bands.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Archaeologically-inspired fragmentation</head><p>Although many have addressed puzzle-solving challenges, only few archaeological reconstruction datasets are currently available, and none are specifically designed to test pairwise pictorial dissimilarity and alignment. To address this gap and asses our pairwise alignment and compatibility approach, we present a novel dataset of fragmented images that better simulate the geometry of broken archaeological artifacts. The pieces are generated using a controlled fragmentation process, inspired by contemporary reconstruction challenges <ref type="bibr" target="#b14">[15]</ref>, <ref type="bibr" target="#b40">[41]</ref>. The realism of our synthetic approach is most strongly apparent in the uneven degree of erosion along fragment boundaries, thus incorporating another aspect of complexity for reassembly algorithms.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Image generation</head><p>In total, our dataset comprises 1000 archaeological puzzles. To generate the base images, we first employed a LLM <ref type="bibr" target="#b5">[6]</ref> to create approximately 1400 specialized prompts, seeking to describe high-quality fresco images across various artistic styles <ref type="bibr" target="#b16">[17]</ref>. These prompts were then fed into Stable-Diffusion 3.5 <ref type="bibr" target="#b35">[36]</ref> to generate the diverse set of images used in our dataset.</p><p>Our decision to use synthetically generated images rather than photographs of actual frescos serves multiple purposes: (1) it ensures no publicly available images can be exploited in the (2) it provides precise control over image properties that affect reconstruction difficulty, such as detail size and color variance; and (3) it avoids potential copyright and cultural heritage considerations while still producing convincing fresco-like images.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Puzzle and fragment pairs generation</head><p>At the base of our dataset generation pipeline lies a Voronoi tessellation of the image domain, a mathematical process that partitions a plane into disjoint regions based on the distance to predetermined generating sites</p><formula xml:id="formula_0">V(s 1 , . . . , s N ) = {R 1 , . . . , R N }, such that R i = {x ∈ R 2 | ∀j, ∥s i - x∥ ≤ ∥s j -x∥}.</formula><p>Thus, we start by uniformly sampling s 1 , . . . , s N from the image plane (Fig. <ref type="figure" target="#fig_0">2a</ref>) and treat each Voronoi region as a unique piece segment (Fig. <ref type="figure" target="#fig_0">2b</ref>).</p><p>To simulate the natural erosion patterns observed in archaeological fragments, we implement a controlled degradation process on the Voronoi boundaries. First, we extract the region boundaries using an edge detector (Fig. <ref type="figure" target="#fig_0">2c</ref>), creating a binary edge map that precisely localizes the potential erosion regions. We then generate a two-dimensional Perlin noise <ref type="bibr" target="#b30">[31]</ref> field matched to the image dimensions (Fig. <ref type="figure" target="#fig_0">2d</ref>), which provides smoothly varying values that determine the local erosion intensity. This noise intensity at each edge pixel is then multiplied by the overall erosion rate parameter, to determine an "erosion radius" around it. Pixels within this radius are then deleted from the Voronoi segmentation image (Fig. <ref type="figure" target="#fig_0">2e-f</ref>). To produce the final puzzle, the eroded partition is applied to an image (Fig. <ref type="figure" target="#fig_0">2h</ref>). Given the continuity of the noise model, this approach ensures spatial coherence in the erosion pattern while maintaining local variability, as adjacent boundary points with similar noise values undergo similar degrees of erosion. The resulting erosion map is then applied to the original Voronoi regions, discarding the eroded pixels. Finally, we use this eroded segmentation to extract the puzzle pieces from the input image, producing a set of realistically degraded fragments that closely mimic the appearance of actual archaeological artifacts.</p><p>To extract pairs of adjacent fragments from the generated puzzle (Fig. <ref type="figure" target="#fig_0">2i</ref>), we relied on the Delaunay triangulation <ref type="bibr" target="#b11">[12]</ref> of the generating sites s 1 , . . . , s N . This graph is known to be dual to the Voronoi diagram over the same set of site. Hence, fragments that are generated from adjacent sites in the Delauney triangulation are neighbors in the generated puzzle.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Statistical properties of the proposed dataset</head><p>The puzzles created by the above Voronoi-based approach exhibit well-known statistical properties <ref type="bibr" target="#b28">[29]</ref>. Being generated from randomly distributed points, the expected region size in our Voronoi tessellation is 1 N <ref type="bibr" target="#b28">[29]</ref> of the total image area. This hints at the volume of pictorial information on a piece, intuitively implying that as the number of pieces increases, fragments that cover significant areas of the image are less likely. From a topological perspective, the tessellation forms a planar graph whose edges represent the interfaces between adjacent fragments. Following Euler's characteristic formula for planar graphs, the expected number of edges per fragment converges to 6 as N increases <ref type="bibr" target="#b28">[29]</ref>, which means each puzzle fragment is expected to have around 6 potential neighbors. Consequently, the expected perimeter of each fragment is approximately 4 √ N <ref type="bibr" target="#b28">[29]</ref>. Because compatibility often uses pictorial information at or near the boundary of fragments, this last figure indicates how much information should be analyzed during the reconstruction process.</p><p>As expected, certain properties, such as the area and perimeter of fragments, diverge from theoretical predictions as the erosion increases. While the neighboring relationships generally remain intact, the quantitative metrics should be interpreted as baseline expectations rather than precise values for heavily eroded puzzles. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Pairwise alignment and compatibility for fragments of unrestricted shapes</head><p>As briefly described above, the task of pairwise alignment, i.e., computing a valid alignment configuration out of an infinite space of potential transformations, is challenging. Nonetheless, the task of measuring compatibility, either geometric or pictorial in the presence of potential erosion, is challenging as well. With both in mind, PolEx is a compatibility measure that is completely free of restrictions regarding the geometric or pictorial features of the inspected fragments, or any information regarding erosion which might have altered them. To do so we take an approach which first reduces the otherwise infinite set of possible alignment configurations by utilizing the geometric shape of the fragments, and then scores them based on pictorial regions extrapolated beyond their original boundaries. Before we begin, we note that given the task of aligning two fragments, it is common to fix one while computing the proper alignment transformation for the other. In the following subsections we denote the latter the Source, and the former the Target. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Handling erosion by extrapolation</head><p>Since fragments are eroded and thus miss regions along their perimeter, we first dilate their geometric shape and extrapolate their pictorial content into the dilated area. This is done far enough to exceed their original (pre-eroded) boundary, while potentially utilizing some knowledge on the maximum erosion level. This is done to compensate for the missing near-border pictorial content that is typically used to evaluate the coherence of neighboring fragments. The extrapolation is performed using a pre-trained Stable-Diffusion 1.4 model <ref type="bibr" target="#b35">[36]</ref>, which generates plausible visual extensions of the fragment. It should be noted that this pre-trained model was chosen as it was trained for the inpainting task, for which extrapolation is a special (albeit extreme and more challenging) case. Hence, with proper adjustments, it could be applied on our task. Moreover, this model can be activated without input text prompts, which greatly simplifies its application in our context.</p><p>The extrapolation process extrapolates the fragment image with pictorial content to occupy the entire rectangular region of the image. To focus only on the relevant extrapolation regions, we apply a binary mask that confines the newly generated content to a region slightly larger than the fragment's original shape. Slightly more formally, let I be the image of the fragment, and let M be its binary mask (where M = 1 indicates a fragment point and M = 0 otherwise). Let M ′ = dilate(M, K str ), be a morphologically dilated mask <ref type="bibr" target="#b36">[37]</ref>, where K str is a standard structuring element of size (n px × n px ) (e.g., n px = 20). M is used as a "visual prompt" region for the Stable-Diffusion model, so that the generative process augments only the zone surrounding the fragment. The result is cropped back by M ′ , and the original content of the eroded piece is removed, yielding an extrapolated band that possesses the extrapolated content around the original eroded fragment (see Fig. <ref type="figure" target="#fig_3">5</ref> for an example).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Space of potential alignments</head><p>The space of potential relative alignments between two fragments is three-dimensional, continuous, and thus infinite. In contrast to earlier proposals, which sample this space uniformly and regularly (i.e., equally spaced samples) to allow reasonable exploration time <ref type="bibr" target="#b13">[14]</ref>, <ref type="bibr" target="#b23">[24]</ref>, we seek an alternative approach that adapts the sampling to the geometrical shapes of the fragments. Specifically, we first compute explicit edges and augmented edges (see below) from the polygonal approximations of both fragments. Then, we compute the transformation required to align the selected edge of the source fragment to the one of the target, in order to score the pictorial coherency of the two fragments under the corresponding alignment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.1">Polygonal approximation and edge augmentation</head><p>In order to robustly capture the geometric shape of a fragment, we represent it as a binary image M (i, j) = 1, if pixel (i, j) belongs to the fragment 0, otherwise .</p><p>To obtain a clean boundary representation of the fragment, we apply a smoothing operation (e.g., Gaussian filtering) to M to reduce noise and irregularities. We then re-binarize the result to extract a refined contour C that is then is approximated by a polygon P C using the Ramer-Douglas-Peucker algorithm <ref type="bibr" target="#b15">[16]</ref>.</p><p>Let p denote the perimeter of P C and let ε = α p, with α ≪ 1 be a tolerance parameter. A representation simplification step then retains only the vertices essential to the overall structure by removing the middle vertex where three consecutive vertices p i , p i+1 , and p i+2 form an angle θ = arccos (p i+1 -p i )•(p i+2 -p i+1 ) ∥p i+1 -p i ∥ ∥p i+2 -p i+1 ∥ that is below a pre-defined small threshold ∆α. This process yields a compact polygonal representation of the fragment's shape (see Fig. <ref type="figure" target="#fig_2">4</ref>).</p><p>To better capture geometric structure at different scales, and possible differences in polygonization of matching fragments, we augment the initial representation with additional edges. While there are different ways to augment the geometric representation, we chose to consider triples of consecutive edges and test whether they can be considered one edge at some larger scale. If the central edge in the triple is sufficiently short and the outer edges are nearly collinear (i.e., their angular difference is below a given threshold), a new edge is synthesized from the first vertex of the first edge to the last vertex of the third edge.</p><p>This augmented edge represents a larger-scale, implicit boundary segment that captures the overall geometric structure. In contrast to the edge-merging procedure performed in the prior polygonal simplification step, the augmented edge is added to the representation as an extra edge, without replacing its components. The augmented representation is no longer a simple polygonization, but a multiscale representation that captures numerous polygonizations concurrently. This procedure is illustrated in Fig 4.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.2">Extraction of candidate matching edges</head><p>To establish potential correspondences between the two fragments, candidate pairs of matching edges from the two fragments are identified from their polygonal approximations. Recall that each polygon is initially decomposed into base edges defined by consecutive vertices of the polygonization.</p><p>Once the augmented representation is available for the source and target fragments, candidate matching between them is established based on edge lengths. Two candidate edges with lengths L t and L s are considered compatible if min(Lt,Ls) max(Lt,Ls) ≥ γ, where γ is a predefined length ratio. Edge pairs failing to meet this criterion are considered inadmissible and discarded, an operation that filters out most candidate pairs for most practical values of γ (see experimental evaluation). The pairs that survive this test proceed to the next step.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.3">Calculating potential alignment configurations</head><p>Given a pair of admissible candidate matching edges, our goal is to compute a rigid transformation that aligns the source edge with the target edge so that they are oppositely oriented and offset properly. Let M t and M s be the midpoints of the target and source edges, respectively. To ensure a proper gap between the fragments such that the erosion is accounted for, the target midpoint is offset outward by a distance g along its outward normal n t , yielding an adjusted midpoint</p><formula xml:id="formula_1">M offset t = M t + g n t .</formula><p>Let the target edge have an orientation θ t and the source edge an orientation θ s . The angle θ = (θ t + π) -θ s thus defines a rotation that aligns the two fragments such that the source edge faces its corresponding target edge, as would be expected if the two fragments indeed match this way. The source edge midpoint is then rotated by θ about the source fragment centroid to obtain M rot s . The required translation T = (T x , T y ) is computed as T = M offset t -M rot s and the overall alignment configuration for this edge pair is thus given by the transformation parameters (θ, T x , T y ), which are subsequently used to assess the pictorial compatibility of the fragment pair.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Pictorial compatibility of candidate alignments</head><p>Each candidate alignment is finally assessed for its pictorial compatibility by comparing the extrapolated bands of the fragments after the source fragment is transformed by (θ, T x , T y ). To do so we find the intersection of the two extrapolated bands and sample patches of random sizes in the predetermined range [P min , P max ] at fixed intervals with stride s. Given corresponding patches from the two bands, we then compute their LAB color difference. Since the latter is sensitive to the size of patch in which it is computed (i.e., indeed, small objects may be washed out in excessively large patches, and large objects may be missed in patches that are smaller), fixed size patches are intrinsically inferior. The random patches thus serve the purpose of better capturing pictorial structure, shapes, and details of unpredictable scales.</p><p>More formally, for each patch i, let Ω i denote its set of pixel indices. For each pixel k ∈ Ω i , let (L t,k , a t,k , b t,k ) and (L s,k , a s,k , b s,k ) denote the LAB color values in the target and source patches, respectively. The per-patch dissimilarity is then computed as ∆E i = 1</p><formula xml:id="formula_2">|Ω i | k∈Ω i ∆E i,k , where ∆E i,k = (L t,k -L s,k ) 2 + (a t,k -a s,k ) 2 + (b t,k -b s,k ) 2 .</formula><p>Since different pairs of patches yield different differences, all of the latter are aggregated using a p-norm over N patches, namely S = 1</p><formula xml:id="formula_3">N N i=1 ∆E p i 1/p</formula><p>, and the value is finally normalized by the maximum possible LAB distance to yield a unitless measure.</p><p>In order to handle extreme cases in which a large shared extrapolated region between the two fragments is similar and uniform (as in regions containing mostly sky or water) except for a small sub region, it is desirable to enhance the weight of such non-coherent sub regions in the computation. For that, we define an additional amplification factor λ ≥ 1 that scales the score if prominent color exceptions are detected in the shared areas of the source and target extrapolations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Evaluation</head><p>As thoroughly described in previous works <ref type="bibr" target="#b21">[22]</ref>, <ref type="bibr" target="#b29">[30]</ref>, <ref type="bibr" target="#b40">[41]</ref>, evaluating the reconstruction of fragment assemblies is challenging, not only because the evaluation metric must be invariant to rigid transformations, but because erosion introduces uncertainties in the desired outcome. At the same time, the evaluation measures previously proposed emerge from the need to score assemblies of many fragments, while in our case we seek to handle just pairs. With this in mind, we propose two pairwise metrics inspired by and improve upon the global metrics introduced by Tsemelis et al. <ref type="bibr" target="#b40">[41]</ref> -the Pairwise Relative Position Score and the Pairwise Anchored RMSE (of both the translation T and rotation angle rot) -to assess the quality of the predicted configurations relative to the ground truth.</p><p>For the Pairwise Anchored RMSE, the target fragment (used as the anchor) is first aligned according to its ground truth transformation. The source fragment is then transformed using its predicted configuration relative to the aligned target fragment. Denoting by c p and c g the centroids of the source fragment in the predicted and ground truth configurations respectively, the translation error is defined as: RMSE T = (c p,x -c g,x ) 2 + (c p,y -c g,y ) 2 . Similarly, let θ p and θ g denote the predicted and ground-truth rotation angles of the source fragment. The rotation error is then defined as RMSE R = min |θ p -θ g | , 2π -|θ p -θ g | , which also accounts for periodicity.</p><p>The Pairwise Relative Position Score quantifies the spatial consistency between the aligned configurations. After aligning the target and source fragments into a common coordinate frame, we extract the shared region (i.e., the intersection of their M shapes as defined in Sec. 3). The score is then defined as the ratio of the area of the shared region to the area of the ground truth fragment: S rel = Area(Shared region) Area(Source fragment) . A higher S rel score indicates better alignment between the fragments, and shorter adjustments are required to align the inspected solution with the ground truth solution. Together, the S rel and the RMSE metrics provide a comprehensive assessment of the geometric and spatial fidelity of the reconstruction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Results</head><p>In order to test the approach, we've applied PolEx on a test-set containing all of the pairs of neighboring fragments in 150 puzzles (with a total of 1483 fragments), randomly sampled from our dataset. We present comprehensive quantitative results in Fig. <ref type="figure" target="#fig_6">8</ref>, using the three pairwise-adjusted evaluation metrics proposed in Sec. 4, while testing the edge matching procedure using different parameter values. As presented in Fig. <ref type="figure" target="#fig_6">8</ref>, choosing only the top-ranked alignment configuration candidate already leads in many cases to the true one. However, a perfect compatibility cannot be expected due to the intractable nature of the puzzle-solving problem <ref type="bibr" target="#b12">[13]</ref>, and thus most solvers must assume a compatibility where the correct match is one among several best ones. In our case,  considering multiple top-ranked candidates rapidly improves the overall scores in all measures. This can be explained by the fact that in some cases, our approach fails to rank the true reconstruction configuration of fragments as the top candidate, due to several potential confounds. For example, cases in which fragments might share a relatively large and monochromatic region (such as a partial sky, or a part of a colored frame), may lead to preferring a transformation that aligns such region over the true shared region, especially if its smaller in size (See demonstration in Fig. <ref type="figure" target="#fig_5">7</ref>). Moreover, the potential change in the fragments' geometric shapes due to erosion, may too affect the possibility of matching truly neighboring edges, most commonly when an edge gets broken into multiple non-collinear edges during polygonization (e.g., Fig. <ref type="figure" target="#fig_0">2</ref>).</p><p>In addition, while not our main goal, we integrated PolEx compatibility into a beam-search reconstruction framework (see Appendix A), which maintains a beam of top partial assemblies and iteratively extends each by the best-scored PolEx match before pruning to the top B hypotheses. On the RePAIR 2D dataset <ref type="bibr" target="#b40">[41]</ref>, this solver achieves state-of-the-art results on all neighbor-based metrics (neighborhood precision, recall, F1) and remains competitive on remaining metrics.  The experiments were conducted on a machine equipped with a 13th Gen Intel® Core™ i7-13620H processor (base clock 2.40 GHz), 32.0 GB of RAM, and an NVIDIA GeForce RTX 4070 Laptop GPU. The parameters used for evaluation were ℓ min = 15px, γ = L min Lmax = 0.5, ∆α = 10 • , α = 0.005, k smooth = 3, g = 10px. All values were selected after simple rough grid search on their ranges. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: (a-h) Puzzle generation process. (i) Pair extraction. (j) An eroded fragment (pictorial) on top of its original Voronoi region (gray). (k) Polygonization of the eroded fragment (blue) and Voronoi cell (red); note how the number of vertices increased post-erosion.</figDesc><graphic coords="4,303.27,141.18,52.15,52.15" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Empirical properties obtained from multiple non-eroded puzzles with 10, 20, . . . , 100 fragments.</figDesc><graphic coords="5,77.98,310.30,145.08,114.60" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Illustration of the compatibility calculation process on two fragments from the RePAIR Dataset [41]. A: Fragment extrapolations. B: Extraction of the extrapolated bands. C: Computation of the augmented polygonal approximations (colored edges). D: If a matched pair of edges (in green) is similar enough in length, an alignment transformation is computed. Note that the edge on the right fragment is an augmented edge. E: The alignment transformation is applied on the source fragment, and the shared region of the extrapolated bands is scored via aggregation of similarities of random patch pairs.</figDesc><graphic coords="6,118.80,72.00,374.40,157.51" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Fragment Extrapolation Process. First, the fragment's binary mask (M ) is extracted (A), then both image and mask are fed into a Latent Diffusion Model [36] (B) while M is dilated into M ′ (C). The model's output is then cropped by M ′ to create an extrapolated fragment (D), from which the original content is removed to create the extrapolated band (E).</figDesc><graphic coords="7,118.80,72.00,374.40,169.98" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Qualitative Reconstruction Results on pairs of fragments from our dataset.</figDesc><graphic coords="10,118.80,72.00,374.41,201.32" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Potential pitfalls of our approach. Top: Initial positions of the two fragments. Middle: The reconstruction chosen by PolEx. Bottom: The ground truth reconstruction.</figDesc><graphic coords="10,235.80,417.54,140.40,53.25" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: Quantitative results on all pairs in the test set, with different γ's. Plots present the score averages (over all pairs, and each metric) of the best n candidates.</figDesc><graphic coords="11,72.00,72.00,468.00,154.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 9 :</head><label>9</label><figDesc>Figure 9: Qualitative reconstruction results on a selected fragments group from the RePAIR Dataset [41].</figDesc><graphic coords="16,118.80,322.25,374.40,110.45" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 :</head><label>1</label><figDesc>Results on RePAIR 2D Dataset test-set<ref type="bibr" target="#b40">[41]</ref> </figDesc><table><row><cell></cell><cell>0.037</cell><cell>80.964</cell><cell>139.495</cell><cell>0.454</cell><cell>0.527</cell><cell>0.471</cell></row><row><cell cols="2">Tsemelis et al. [41] Genetic 0.047</cell><cell>85.625</cell><cell>151.714</cell><cell>0.313</cell><cell>0.662</cell><cell>0.394</cell></row><row><cell>Tsemelis et al. [41] Greedy</cell><cell>0.023</cell><cell>76.987</cell><cell>135.946</cell><cell>0.297</cell><cell>0.470</cell><cell>0.351</cell></row><row><cell>Beam-search + PolEx</cell><cell>0.040</cell><cell>88.950</cell><cell>149.543</cell><cell>0.645</cell><cell>0.666</cell><cell>0.518</cell></row></table><note><p><p><p>Method Q pos ↑ RMSE (R • ) ↓ RMSE (T mm ) ↓ Precision ↑ Recall ↑ F1 ↑</p>Derech et al.</p><ref type="bibr" target="#b13">[14]</ref> </p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_0"><p>ConclusionsIn this work we propose PolEx, an approach for determining pairwise compatibility of fragment images with unrestricted shapes, while computing optimal alignment configurations. We also provide a unique dataset and demonstrate results on it. As can be seen in Table1, incorporating PolEx in an iterative puzzle-solving framework, achieves SOTA results on the RePAIR 2D dataset in all neighbor or pairwise metrics presented in their work<ref type="bibr" target="#b40">[41]</ref>. Future works could consider incorporating it within a global-optimization based scheme, which could lead to better handling of potential pitfalls, as described in Sec. 5.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>This work has been funded in part by the <rs type="funder">European Union</rs>'s <rs type="programName">Horizon 2020 research and innovation programme</rs> under grant agreement No <rs type="grantNumber">964854</rs> (the <rs type="projectName">RePAIR</rs> project). We also thank the <rs type="institution">Helmsley Charitable Trust</rs> through the <rs type="funder">ABC Robotics Initiative</rs> and the <rs type="institution">Frankel Fund of the Computer Science Department at Ben-Gurion University</rs> for their generous support.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funded-project" xml:id="_fDKuA9w">
+					<idno type="grant-number">964854</idno>
+					<orgName type="project" subtype="full">RePAIR</orgName>
+					<orgName type="program" subtype="full">Horizon 2020 research and innovation programme</orgName>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A PolEx compatibility in puzzle solving</head><p>While this is not meant to be a puzzle-solving work, in order to demonstrate the effectiveness of PolEx, we embedded it within a novel archaeological reconstruction framework that generalizes the greedy strategies proposed in various prior works <ref type="bibr" target="#b13">[14]</ref>, <ref type="bibr" target="#b40">[41]</ref> by employing beam search. Reconstruction begins with a seed fragment, and during each iteration, every remaining piece is evaluated via our PolEx approach, which computes a composite score combining pictorial dissimilarity and an overlap penalty. Instead of a purely greedy approach, the framework maintains a beam of top hypotheses. Each hypothesis is extended by adding the fragment with the best score, and the beam is pruned to retain only the most promising candidates. This multi-path exploration reduces the risk of local minima and robustly assembles the fragments into a final reconstruction. The high-level pseudocode is shown in Algorithm 1 and qualitative results on a small group of fragments sampled from RePAIR dataset <ref type="bibr" target="#b40">[41]</ref> are provided in Fig. <ref type="figure">9</ref>. A detailed illustration of a single step (combining two fragments) is depicted in section 2.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Beam-Search Assembly with PolEx</head><p>Input: Set F of fragments and extrapolations, compatibility parameters, beam size B, etc.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Initialize:</head><p>-Select target fragment D as the seed.</p><p>- </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">From storing to storytelling – archaeological museums and digitisation</title>
+		<author>
+			<persName><forename type="first">Archaeological</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Pompeii</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9781315225272-5</idno>
+		<ptr target="https://pompeiisites.org/en/comunicati/the-repair-project-begins-robotics-and-digitisation-at-the-service-of-archaeology" />
+	</analytic>
+	<monogr>
+		<title level="m">Archaeology and Archaeological Information in the Digital Society</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2021-09">Sep. 2021</date>
+			<biblScope unit="page" from="70" to="105" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">SAFFO: A SIFT based approach for digital anastylosis for fresco recOnstruction</title>
+		<author>
+			<persName><forename type="first">Paola</forename><surname>Barra</surname></persName>
+			<idno type="ORCID">0000-0002-7692-0626</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Silvio</forename><surname>Barra</surname></persName>
+			<idno type="ORCID">0000-0003-4042-3000</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michele</forename><surname>Nappi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabio</forename><surname>Narducci</surname></persName>
+			<idno type="ORCID">0000-0003-4879-7138</idno>
+		</author>
+		<idno type="DOI">10.1016/j.patrec.2020.07.008</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0167865520302543" />
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<title level="j" type="abbrev">Pattern Recognition Letters</title>
+		<idno type="ISSN">0167-8655</idno>
+		<imprint>
+			<biblScope unit="volume">138</biblScope>
+			<biblScope unit="page" from="123" to="129" />
+			<date type="published" when="2020-10">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Solving jigsaw puzzles with eroded boundaries</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Bridger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Danon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF conference on computer vision and pattern recognition</title>
+		<meeting>the IEEE/CVF conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="3526" to="3535" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">A system for high-volume acquisition and matching of fresco fragments</title>
+		<author>
+			<persName><forename type="first">Benedict</forename><forename type="middle">J</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Toler-Franklin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diego</forename><surname>Nehab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Burns</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Dobkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Vlachopoulos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christos</forename><surname>Doumas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szymon</forename><surname>Rusinkiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Weyrich</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1360612.1360683</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Graphics</title>
+		<title level="j" type="abbrev">ACM Trans. Graph.</title>
+		<idno type="ISSN">0730-0301</idno>
+		<idno type="ISSNe">1557-7368</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1" to="9" />
+			<date type="published" when="2008-08">2008</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Tools for Virtual Reassembly of Fresco Fragments</title>
+		<author>
+			<persName><forename type="first">Benedict</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lara</forename><surname>Laken</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>Dutré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luc</forename><surname>Van Gool</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szymon</forename><surname>Rusinkiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Weyrich</surname></persName>
+		</author>
+		<idno type="DOI">10.1260/2047-4970.1.2.313</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Heritage in the Digital Era</title>
+		<title level="j" type="abbrev">International Journal of Heritage in the Digital Era</title>
+		<idno type="ISSN">2047-4970</idno>
+		<idno type="ISSNe">2047-4989</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="313" to="329" />
+			<date type="published" when="2012-06">2012</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Language models are few-shot learners</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Mann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ryder</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2005.14165</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">2D Irregular Fragment Reassembly With Deep Learning Assistance</title>
+		<author>
+			<persName><forename type="first">Yangjie</forename><surname>Cao</surname></persName>
+			<idno type="ORCID">0000-0002-1170-4340</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Fang</surname></persName>
+			<idno type="ORCID">0009-0001-6926-4616</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronghan</forename><surname>Wei</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/access.2024.3368004</idno>
+		<ptr target="https://ieeexplore.ieee.org/document/3368004" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<title level="j" type="abbrev">IEEE Access</title>
+		<idno type="ISSNe">2169-3536</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="28554" to="28563" />
+			<date type="published" when="2024" />
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Studies in Archaeological Conservation</title>
+		<idno type="DOI">10.4324/9780429342257</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Studies in Archaeological Conservation</title>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Caple</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">V</forename><surname>Garlick</surname></persName>
+		</editor>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2020-11-02">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Global consistency in the automatic assembly of fragmented artefacts</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Castañeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rusinkiewicz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">VAST</title>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Jigsaw-ViT: Learning jigsaw puzzles in vision transformer</title>
+		<author>
+			<persName><forename type="first">Yingyi</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0002-5571-9050</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yahui</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qinghua</forename><surname>Tao</surname></persName>
+			<idno type="ORCID">0000-0001-9705-7748</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Johan</forename><forename type="middle">A K</forename><surname>Suykens</surname></persName>
+			<idno type="ORCID">0000-0002-8846-6352</idno>
+		</author>
+		<idno type="DOI">10.1016/j.patrec.2022.12.023</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0167865522003920" />
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<title level="j" type="abbrev">Pattern Recognition Letters</title>
+		<idno type="ISSN">0167-8655</idno>
+		<imprint>
+			<biblScope unit="volume">166</biblScope>
+			<biblScope unit="page" from="53" to="60" />
+			<date type="published" when="2023-02">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Reconstruction of frescoes by sequential layers of feature extraction</title>
+		<author>
+			<persName><forename type="first">Thiago</forename><surname>Da Silva Teixeira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mauren</forename><forename type="middle">Louise</forename><surname>Sguario Coelho De Andrade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mathias</forename><surname>Rodrigues Da Luz</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patrec.2021.04.012</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0167865521001422" />
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<title level="j" type="abbrev">Pattern Recognition Letters</title>
+		<idno type="ISSN">0167-8655</idno>
+		<imprint>
+			<biblScope unit="volume">147</biblScope>
+			<biblScope unit="page" from="172" to="178" />
+			<date type="published" when="2021-07">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Sur la sphère vide. a la mémoire de georges voronoï</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Delaunay</surname></persName>
+		</author>
+		<author>
+			<persName><surname>French</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bulletin de l&apos;Académie des Sciences de l&apos;URSS. Classe des sciences mathématiques et naturelles</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="793" to="800" />
+			<date type="published" when="1934">1934</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Jigsaw Puzzles, Edge Matching, and Polyomino Packing: Connections and Complexity</title>
+		<author>
+			<persName><forename type="first">Erik</forename><forename type="middle">D</forename><surname>Demaine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">L</forename><surname>Demaine</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00373-007-0713-4</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Graphs and Combinatorics</title>
+		<title level="j" type="abbrev">Graphs and Combinatorics</title>
+		<idno type="ISSN">0911-0119</idno>
+		<idno type="ISSNe">1435-5914</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">S1</biblScope>
+			<biblScope unit="page" from="195" to="208" />
+			<date type="published" when="2007-06">2007</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note>Graphs and Combinatorics</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Solving archaeological puzzles</title>
+		<author>
+			<persName><forename type="first">Niv</forename><surname>Derech</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayellet</forename><surname>Tal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilan</forename><surname>Shimshoni</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patcog.2021.108065</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition</title>
+		<title level="j" type="abbrev">Pattern Recognition</title>
+		<idno type="ISSN">0031-3203</idno>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="page">108065</biblScope>
+			<date type="published" when="2021-11">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">DAFNE: A dataset of fresco fragments for digital anastlylosis</title>
+		<author>
+			<persName><forename type="first">Piercarlo</forename><surname>Dondi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Lombardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessandra</forename><surname>Setti</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patrec.2020.09.015</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0167865520303408" />
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<title level="j" type="abbrev">Pattern Recognition Letters</title>
+		<idno type="ISSN">0167-8655</idno>
+		<imprint>
+			<biblScope unit="volume">138</biblScope>
+			<biblScope unit="page" from="631" to="637" />
+			<date type="published" when="2020-10">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">ALGORITHMS FOR THE REDUCTION OF THE NUMBER OF POINTS REQUIRED TO REPRESENT A DIGITIZED LINE OR ITS CARICATURE</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">H</forename><surname>Douglas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">K</forename><surname>Peucker</surname></persName>
+		</author>
+		<idno type="DOI">10.3138/fm57-6770-u75u-7727</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cartographica</title>
+		<title level="j" type="abbrev">Cartographica</title>
+		<idno type="ISSN">0317-7173</idno>
+		<idno type="ISSNe">1911-9925</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="112" to="122" />
+			<date type="published" when="1973-12-01">1973</date>
+			<publisher>University of Toronto Press Inc. (UTPress)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Recognizing Artistic Style of Archaeological Image Fragments Using Deep Style Extrapolation</title>
+		<author>
+			<persName><forename type="first">Gur</forename><surname>Elkin</surname></persName>
+			<idno type="ORCID">0009-0001-0464-7712</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ofir</forename><forename type="middle">Itzhak</forename><surname>Shahar</surname></persName>
+			<idno type="ORCID">0009-0001-3688-1159</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yaniv</forename><surname>Ohayon</surname></persName>
+			<idno type="ORCID">0009-0009-1141-1909</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nadav</forename><surname>Alali</surname></persName>
+			<idno type="ORCID">0009-0006-0627-5963</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Ben-Shahar</surname></persName>
+			<idno type="ORCID">0000-0001-5346-152X</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-93160-4_8</idno>
+		<ptr target="https://doi.org/10.1007/978-3-031-93160-4_8" />
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<title level="s">ser. Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Gothenburg, Sweden; Cham, Switzerland; Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2025">June 22-27, 2025. 2025</date>
+			<biblScope unit="volume">15800</biblScope>
+			<biblScope unit="page" from="115" to="131" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part I, M. Rauterberg</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Review of computer-based methods for archaeological ceramic sherds reconstruction</title>
+		<author>
+			<persName><forename type="first">Dariush</forename><surname>Eslami</surname></persName>
+			<idno type="ORCID">0000-0001-5876-4386</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Di Angelo</surname></persName>
+			<idno type="ORCID">0000-0002-5341-0500</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Di Stefano</surname></persName>
+			<idno type="ORCID">0000-0001-5003-2084</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Caterina</forename><surname>Pane</surname></persName>
+			<idno type="ORCID">0000-0002-6499-5241</idno>
+		</author>
+		<idno type="DOI">10.4995/var.2020.13134</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Virtual Archaeology Review</title>
+		<title level="j" type="abbrev">Virtual archaeol. rev.</title>
+		<idno type="ISSNe">1989-9947</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page">34</biblScope>
+			<date type="published" when="2020-07-08">2020</date>
+			<publisher>Universitat Politecnica de Valencia</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Apictorial Jigsaw Puzzles: The Computer Solution of a Problem in Pattern Recognition</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Freeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Garder</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/pgec.1964.263781</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Electronic Computers</title>
+		<title level="j" type="abbrev">IEEE Trans. Electron. Comput.</title>
+		<idno type="ISSN">0367-7508</idno>
+		<imprint>
+			<biblScope unit="volume">EC-13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="118" to="127" />
+			<date type="published" when="1964-04">1964</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Learning how to match fresco fragments</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Funkhouser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hijung</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Toler-Franklin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><forename type="middle">García</forename><surname>Castañeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benedict</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Dobkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szymon</forename><surname>Rusinkiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Weyrich</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/2037820.2037824</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal on Computing and Cultural Heritage</title>
+		<title level="j" type="abbrev">J. Comput. Cult. Herit.</title>
+		<idno type="ISSN">1556-4673</idno>
+		<idno type="ISSNe">1556-4711</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2011-11">2011</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">From Square Pieces to Brick Walls: The Next Challenge in Solving Jigsaw Puzzles</title>
+		<author>
+			<persName><forename type="first">Shir</forename><surname>Gur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Ben-Shahar</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2017.434</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-10">2017</date>
+			<biblScope unit="page" from="4049" to="4057" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Pictorial and Apictorial Polygonal Jigsaw Puzzles from Arbitrary Number of Crossing Cuts</title>
+		<author>
+			<persName><forename type="first">Peleg</forename><surname>Harel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ofir</forename><forename type="middle">Itzhak</forename><surname>Shahar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Ben-Shahar</surname></persName>
+			<idno type="ORCID">0000-0001-5346-152X</idno>
+		</author>
+		<idno type="DOI">10.1007/s11263-024-02033-7</idno>
+		<ptr target="https://doi.org/10.1007/s11263-024-02033-7" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computer Vision</title>
+		<title level="j" type="abbrev">Int J Comput Vis</title>
+		<idno type="ISSN">0920-5691</idno>
+		<idno type="ISSNe">1573-1405</idno>
+		<imprint>
+			<biblScope unit="volume">132</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="3428" to="3462" />
+			<date type="published" when="2024-03-22">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Puzzlefusion: Unleashing the power of diffusion models for spatial puzzle solving</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hosseini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Shabani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Irandoust</surname></persName>
+		</author>
+		<ptr target="https://openreview.net/forum?id=Z764QxwETf" />
+	</analytic>
+	<monogr>
+		<title level="m">Thirty-seventh Conference on Neural Information Processing Systems</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Nash Meets Wertheimer: Using Good Continuation in Jigsaw Puzzles</title>
+		<author>
+			<persName><forename type="first">Marina</forename><surname>Khoroshiltseva</surname></persName>
+			<idno type="ORCID">0000-0003-0424-0661</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Palmieri</surname></persName>
+			<idno type="ORCID">0000-0002-9701-1915</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sinem</forename><surname>Aslan</surname></persName>
+			<idno type="ORCID">0000-0003-0068-6551</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastiano</forename><surname>Vascon</surname></persName>
+			<idno type="ORCID">0000-0002-7855-1641</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marcello</forename><surname>Pelillo</surname></persName>
+			<idno type="ORCID">0000-0001-8992-9243</idno>
+		</author>
+		<idno type="DOI">10.1007/978-981-96-0960-4_29</idno>
+		<ptr target="https://openaccess.thecvf.com/content/ACCV2024/papers/" />
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Singapore</publisher>
+			<date type="published" when="2024-12-08">2024</date>
+			<biblScope unit="page" from="480" to="495" />
+		</imprint>
+	</monogr>
+	<note>Proceedings of the Asian Conference on Computer Vision (ACCV). pdf</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Solving jigsaw puzzles by predicting fragment’s coordinate based on vision transformer</title>
+		<author>
+			<persName><forename type="first">Garam</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyeonseong</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyoungsik</forename><surname>Nam</surname></persName>
+			<idno type="ORCID">0000-0002-1646-7954</idno>
+		</author>
+		<idno type="DOI">10.1016/j.eswa.2025.126776</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0957417425003987" />
+	</analytic>
+	<monogr>
+		<title level="j">Expert Systems with Applications</title>
+		<title level="j" type="abbrev">Expert Systems with Applications</title>
+		<idno type="ISSN">0957-4174</idno>
+		<imprint>
+			<biblScope unit="volume">272</biblScope>
+			<biblScope unit="page">126776</biblScope>
+			<date type="published" when="2025-05">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Fast and efficient reconstruction of digitized frescoes</title>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Lermé</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sylvie</forename><forename type="middle">Le</forename><surname>Hégarat-Mascle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boyang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emanuel</forename><surname>Aldea</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patrec.2020.08.006</idno>
+		<idno>1016 / j . patrec . 2020 . 08 . 006</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0167865520303044" />
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<title level="j" type="abbrev">Pattern Recognition Letters</title>
+		<idno type="ISSN">0167-8655</idno>
+		<imprint>
+			<biblScope unit="volume">138</biblScope>
+			<biblScope unit="page" from="417" to="423" />
+			<date type="published" when="2020-10">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">A texture based matching approach for automated assembly of puzzles</title>
+		<author>
+			<persName><forename type="first">Mahmut</forename><surname>Şamil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sağıroğlu</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aytül</forename><surname>Erçil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 18th International Conference on Pattern Recognition (ICPR&apos;06)</title>
+		<meeting>the 18th International Conference on Pattern Recognition (ICPR&apos;06)<address><addrLine>Hong Kong, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2006-08">Aug. 2006</date>
+			<biblScope unit="page" from="1036" to="1041" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Optimization for automated assembly of puzzles</title>
+		<author>
+			<persName><forename type="first">Mahmut</forename><surname>Şamil</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sağıroğlu</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aytül</forename><surname>Erçil</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11750-010-0156-6</idno>
+		<ptr target="https://doi.org/10.1007/s11750-010-0156-6" />
+	</analytic>
+	<monogr>
+		<title level="j">TOP</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="321" to="338" />
+			<date type="published" when="2010-10">Oct. 2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Interface area, edge length, and number of vertices in crystal aggregates with random nucleation</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Meijering</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Philips Research Reports</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="270" to="290" />
+			<date type="published" when="1953">1953</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Deepzzle: Solving Visual Jigsaw Puzzles With Deep Learning and Shortest Path Optimization</title>
+		<author>
+			<persName><forename type="first">Marie-Morgane</forename><surname>Paumard</surname></persName>
+			<idno type="ORCID">0000-0002-4319-0321</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Picard</surname></persName>
+			<idno type="ORCID">0000-0002-6296-4222</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hedi</forename><surname>Tabia</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tip.2019.2963378</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Image Processing</title>
+		<title level="j" type="abbrev">IEEE Trans. on Image Process.</title>
+		<idno type="ISSN">1057-7149</idno>
+		<idno type="ISSNe">1941-0042</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="3569" to="3581" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">An image synthesizer</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Perlin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Siggraph Computer Graphics</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="287" to="296" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">A Survey of Geometric Analysis in Cultural Heritage</title>
+		<author>
+			<persName><forename type="first">Ruggero</forename><surname>Pintus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazim</forename><surname>Pal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Weyrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enrico</forename><surname>Gobbetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Holly</forename><surname>Rushmeier</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/cgf.12668</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Graphics Forum</title>
+		<title level="j" type="abbrev">Computer Graphics Forum</title>
+		<idno type="ISSN">0167-7055</idno>
+		<idno type="ISSNe">1467-8659</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="4" to="31" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">A Survey of Geometric Analysis in Cultural Heritage</title>
+		<author>
+			<persName><forename type="first">Ruggero</forename><surname>Pintus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazim</forename><surname>Pal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ying</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Weyrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enrico</forename><surname>Gobbetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Holly</forename><surname>Rushmeier</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/cgf.12668</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Graphics Forum</title>
+		<title level="j" type="abbrev">Computer Graphics Forum</title>
+		<idno type="ISSN">0167-7055</idno>
+		<idno type="ISSNe">1467-8659</idno>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="4" to="31" />
+			<date type="published" when="2014">2014</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">A fully automated greedy square jigsaw puzzle solver</title>
+		<author>
+			<persName><forename type="first">Dolev</forename><surname>Pomeranz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michal</forename><surname>Shemesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Ben-Shahar</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2011.5995331</idno>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR 2011</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2011-06">2011</date>
+			<biblScope unit="page" from="9" to="16" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">A generic hybrid framework for 2d visual reconstruction</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Rika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sholomon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>David</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2501.19325</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">High-Resolution Image Synthesis with Latent Diffusion Models</title>
+		<author>
+			<persName><forename type="first">Robin</forename><surname>Rombach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Blattmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominik</forename><surname>Lorenz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Esser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bjorn</forename><surname>Ommer</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52688.2022.01042</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-06">Jun. 2022</date>
+			<biblScope unit="page" from="10674" to="10685" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Serra</surname></persName>
+		</author>
+		<title level="m">Image Analysis and Mathematical Morphology</title>
+		<meeting><address><addrLine>San Diego, CA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Siamese-Discriminant Deep Reinforcement Learning for Solving Jigsaw Puzzles with Large Eroded Gaps</title>
+		<author>
+			<persName><forename type="first">Xingke</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiahuan</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenglin</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shihe</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianfeng</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruibin</forename><surname>Bai</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v37i2.25325</idno>
+		<ptr target="https://api.semanticscholar.org/CorpusID:259755242" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="2303" to="2311" />
+			<date type="published" when="2023-06-26">2023</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">GANzzle&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot; altimg=&quot;si1.svg&quot; display=&quot;inline&quot; id=&quot;d1e944&quot;&gt;&lt;mml:mrow&gt;&lt;mml:mo&gt;+&lt;/mml:mo&gt;&lt;mml:mo&gt;+&lt;/mml:mo&gt;&lt;/mml:mrow&gt;&lt;/mml:math&gt;: Generative approaches for jigsaw puzzle solving as local to global assignment in latent spatial representations</title>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Talon</surname></persName>
+			<idno type="ORCID">0009-0003-6029-1532</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alessio</forename><surname>Del Bue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><surname>James</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patrec.2024.11.010</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0167865524003179" />
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<title level="j" type="abbrev">Pattern Recognition Letters</title>
+		<idno type="ISSN">0167-8655</idno>
+		<imprint>
+			<biblScope unit="volume">187</biblScope>
+			<biblScope unit="page" from="35" to="41" />
+			<date type="published" when="2025-01">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Multi-feature matching of fresco fragments</title>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Toler-Franklin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benedict</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Weyrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Funkhouser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szymon</forename><surname>Rusinkiewicz</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/1882262.1866207</idno>
+	</analytic>
+	<monogr>
+		<title level="m">ACM SIGGRAPH Asia 2010 papers on - SIGGRAPH ASIA &apos;10</title>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Re-assembling the past: The repair dataset and benchmark for real world 2d and 3d puzzle solving</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tsesmelis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Palmieri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Khoroshiltseva</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper_files/paper/2024/file/3507ec" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Globerson</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">L</forename><surname>Mackey</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">D</forename><surname>Belgrave</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="30" to="076" />
+		</imprint>
+	</monogr>
+	<note>d7d6895eb9feb87a2098abe11-Paper-Datasets_ and_Benchmarks_Track.pdf</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Multi-Phase Relaxation Labeling for Square Jigsaw Puzzle Solving</title>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Vardi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Torcinovich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marina</forename><surname>Khoroshiltseva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcello</forename><surname>Pelillo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Ben-Shahar</surname></persName>
+		</author>
+		<idno type="DOI">10.5220/0011622800003417</idno>
+		<idno type="arXiv">arXiv:2303.14793</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 18th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications</title>
+		<meeting>the 18th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications</meeting>
+		<imprint>
+			<publisher>SCITEPRESS - Science and Technology Publications</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="785" to="795" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Self-Supervised Fragment Alignment With Gaps</title>
+		<author>
+			<persName><forename type="first">Mingxin</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0003-1744-5607</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yonatan</forename><surname>Svirsky</surname></persName>
+			<idno type="ORCID">0000-0001-5080-1031</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhanglin</forename><surname>Cheng</surname></persName>
+			<idno type="ORCID">0000-0002-3360-2679</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrei</forename><surname>Sharf</surname></persName>
+			<idno type="ORCID">0000-0002-3963-4508</idno>
+		</author>
+		<idno type="DOI">10.1109/tvcg.2023.3330859</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Visualization and Computer Graphics</title>
+		<title level="j" type="abbrev">IEEE Trans. Visual. Comput. Graphics</title>
+		<idno type="ISSN">1077-2626</idno>
+		<idno type="ISSNe">2160-9306</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="6235" to="6246" />
+			<date type="published" when="2024-09">2024</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,2644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Ecological Legacies of Pre-Columbian Settlements Evident in Palm Clusters of Neotropical Mountain Forests</title>
+				<funder>
+					<orgName type="full">European Space Agency</orgName>
+				</funder>
+				<funder ref="#_fKV6cMY">
+					<orgName type="full">Leiden-Delft-Erasmus Global Support</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-09-04">4 Sep 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Sebastian</forename><surname>Fajardo</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution" key="instit1">Leiden Institute of Advanced Computer Science (LIACS)</orgName>
+								<orgName type="institution" key="instit2">Leiden University</orgName>
+								<address>
+									<settlement>Leiden</settlement>
+									<country>The Netherlands 2300 RA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Sina</forename><surname>Mohammadi</surname></persName>
+							<email>s.mohammadi@liacs.leidenuniv.nl</email>
+							<affiliation key="aff0">
+								<orgName type="institution" key="instit1">Leiden Institute of Advanced Computer Science (LIACS)</orgName>
+								<orgName type="institution" key="instit2">Leiden University</orgName>
+								<address>
+									<settlement>Leiden</settlement>
+									<country>The Netherlands 2300 RA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jonas</forename><surname>Gregorio De Souza</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Humanities</orgName>
+								<orgName type="institution">Universitat Pompeu Fabra</orgName>
+								<address>
+									<addrLine>CASEs group</addrLine>
+									<postCode>08023</postCode>
+									<settlement>Barcelona</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">César</forename><surname>Ardila</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Subdirección de Gestión</orgName>
+								<orgName type="institution">Instituto Colombiano de Antropología e Historia</orgName>
+								<address>
+									<postCode>111711</postCode>
+									<settlement>Bogotá</settlement>
+									<country key="CO">Colombia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Alan</forename><surname>Tapscott</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Humanities</orgName>
+								<orgName type="institution">Universitat Pompeu Fabra</orgName>
+								<address>
+									<addrLine>CASEs group</addrLine>
+									<postCode>08023</postCode>
+									<settlement>Barcelona</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Shaddai</forename><surname>Heidgen</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Humanities</orgName>
+								<orgName type="institution">Universitat Pompeu Fabra</orgName>
+								<address>
+									<addrLine>CASEs group</addrLine>
+									<postCode>08023</postCode>
+									<settlement>Barcelona</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Maria</forename><forename type="middle">Isabel</forename><surname>Mayorga Hernández</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Facultad de Artes</orgName>
+								<orgName type="institution">Universidad Nacional de Colombia</orgName>
+								<address>
+									<postCode>111321</postCode>
+									<settlement>Bogotá</settlement>
+									<country key="CO">Colombia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sylvia</forename><surname>Mota De Oliveira</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Fernando</forename><surname>Montejo</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Subdirección de Gestión</orgName>
+								<orgName type="institution">Instituto Colombiano de Antropología e Historia</orgName>
+								<address>
+									<postCode>111711</postCode>
+									<settlement>Bogotá</settlement>
+									<country key="CO">Colombia</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="institution">Naturalis Biodiversity Center</orgName>
+								<address>
+									<addrLine>The Netherlands</addrLine>
+									<postCode>2300 RA</postCode>
+									<settlement>Leiden</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Marco</forename><surname>Moderato</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Humanities</orgName>
+								<orgName type="institution">Universitat Pompeu Fabra</orgName>
+								<address>
+									<addrLine>CASEs group</addrLine>
+									<postCode>08023</postCode>
+									<settlement>Barcelona</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Vinicius</forename><surname>Peripato</surname></persName>
+							<affiliation key="aff5">
+								<orgName type="department" key="dep1">Division of Earth Observation and Geoinformatics (DIOTG)</orgName>
+								<orgName type="department" key="dep2">General Coordination of Earth Sciences (CG-CT)</orgName>
+								<orgName type="institution">National Institute for Space Research (INPE)</orgName>
+								<address>
+									<settlement>São José dos Campos</settlement>
+									<region>SP</region>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Katy</forename><surname>Puche</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Subdirección de Gestión</orgName>
+								<orgName type="institution">Instituto Colombiano de Antropología e Historia</orgName>
+								<address>
+									<postCode>111711</postCode>
+									<settlement>Bogotá</settlement>
+									<country key="CO">Colombia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Carlos</forename><surname>Reina</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Subdirección de Gestión</orgName>
+								<orgName type="institution">Instituto Colombiano de Antropología e Historia</orgName>
+								<address>
+									<postCode>111711</postCode>
+									<settlement>Bogotá</settlement>
+									<country key="CO">Colombia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Juan</forename><forename type="middle">Carlos</forename><surname>Vargas</surname></persName>
+							<affiliation key="aff6">
+								<orgName type="department">Departmento de Antropología</orgName>
+								<orgName type="institution">Universidad del Magdalena</orgName>
+								<address>
+									<postCode>470004</postCode>
+									<settlement>Santa Marta</settlement>
+									<country key="CO">Colombia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Frank</forename><forename type="middle">W</forename><surname>Takes</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution" key="instit1">Leiden Institute of Advanced Computer Science (LIACS)</orgName>
+								<orgName type="institution" key="instit2">Leiden University</orgName>
+								<address>
+									<settlement>Leiden</settlement>
+									<country>The Netherlands 2300 RA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Marco</forename><surname>Madella</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Humanities</orgName>
+								<orgName type="institution">Universitat Pompeu Fabra</orgName>
+								<address>
+									<addrLine>CASEs group</addrLine>
+									<postCode>08023</postCode>
+									<settlement>Barcelona</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff7">
+								<orgName type="institution">ICREA</orgName>
+								<address>
+									<postCode>08010</postCode>
+									<settlement>Barcelona</settlement>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff8">
+								<orgName type="department">GAES</orgName>
+								<orgName type="institution">The University of the Witwatersrand</orgName>
+								<address>
+									<postCode>2050</postCode>
+									<settlement>Johannesburg</settlement>
+									<country key="ZA">South Africa</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Ecological Legacies of Pre-Columbian Settlements Evident in Palm Clusters of Neotropical Mountain Forests</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-09-04">4 Sep 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">1902E0B3A1138D7BF7535E0D94F671C6</idno>
+					<idno type="arXiv">arXiv:2507.06949v2[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:24+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Ancient populations markedly transformed Neotropical forests, yet the spatial extent of their ecological influence remains underexplored at high resolution. Here we present a deep learning and remote sensing based approach to estimate areas of pre-Columbian forest modification based on modern vegetation. We apply this method to high-resolution satellite imagery from the Sierra Nevada de Santa Marta, Colombia, as a demonstration of a scalable approach, to evaluate palm tree distributions in relation to archaeological infrastructure. Palms were significantly more abundant near archaeological sites with large infrastructure investment. The extent of the largest palm cluster indicates that ancient humanmanaged areas linked to major infrastructure sites may be up to two orders of magnitude bigger than indicated by current archaeological evidence alone. Our findings suggest that pre-Columbian populations influenced vegetation, fostering conditions conducive to palm proliferation, leaving a lasting ecological footprint. This may have lowered the logistical costs of establishing infrastructure-heavy settlements in less accessible locations.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="27" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="28" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="29" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>The activities of ancient populations transformed the composition of forests in many Neotropical regions. Ancient human management included the cultivation, tending, and dispersal of tree species for food and technological materials <ref type="bibr" target="#b0">(1,</ref><ref type="bibr" target="#b1">2)</ref>, as well as the use of fire for forest clearance and enriching nutrient soil composition <ref type="bibr" target="#b2">(3,</ref><ref type="bibr" target="#b3">4)</ref>. Forest tree inventory data, reported archaeological sites, and classic machine learning models have been used to examine the relationship between plant species and their association with past human activities in large regions <ref type="bibr" target="#b0">(1,</ref><ref type="bibr" target="#b4">5,</ref><ref type="bibr" target="#b5">6)</ref>. These studies show that the impacts of past activities on modern forest structures near the location of ancient settlements are long-lasting, to the extent that they may influence our current estimates of forest composition in tropical forests, such as the Amazon <ref type="bibr" target="#b6">(7,</ref><ref type="bibr" target="#b7">8)</ref> and the eastern flank of the tropical Andes <ref type="bibr" target="#b5">(6)</ref>.</p><p>Archaeological sites and forest tree inventories used to estimate the level of ancient human management on modern forest composition are limited by sparse data on the variability of pre-Columbian settlement patterns and the small number of forest tree inventories that represent the vast areas once occupied by these communities. Both limitations result in coarse resolution estimates, making it difficult to accurately assess the long-term effects of various past human activities on local forest composition <ref type="bibr" target="#b8">(9)</ref>. This challenge is especially evident in montane forests, where persistent fog and light limitations <ref type="bibr" target="#b9">(10,</ref><ref type="bibr" target="#b10">11)</ref>, low soil fertility <ref type="bibr" target="#b10">(11,</ref><ref type="bibr">12)</ref>, and abrupt terrain <ref type="bibr" target="#b11">(13)</ref> create conditions that require land-use practices beyond conventional agrarian expectations. Yet, archaeological evidence demonstrates that pre-Columbian communities frequently occupied these environments across Colombia <ref type="bibr" target="#b12">(14,</ref><ref type="bibr" target="#b13">15)</ref> and other Tropical Andean forests <ref type="bibr" target="#b5">(6)</ref>. While the distribution of tree species exploited for food is relatively well documented <ref type="bibr" target="#b14">(16)</ref>, the management of plants used for raw materials-and their relationship to ancient settlements of different sizes and spatial arrangements-remains poorly understood. Understanding the extent, intensity, and cultural sources of ancient human management on the composition and dynamics of Neotropic montane forests, within a continuous area broad enough to capture both ecological and archaeological variability, is essential for the integration of human legacy strategies into ecological models and incorporating current forest composition into automatic methods for detecting archaeological sites using remote sensing data.</p><p>In this study, we propose a method called "PABAM" (Past Areas of Bio-cultural Activity and Management). This method, combined with legacy archaeological data on settlement locations, enables us to explore the relationship between archaeological sites and palm trees with a starshaped crown (e.g. Dictyocaryum sp. and Bactris sp.) associated with multi-purpose exploitation by indigenous populations <ref type="bibr" target="#b15">(17,</ref><ref type="bibr" target="#b16">18)</ref>. We tested the method in the montane forests region of the Sierra Nevada de Santa Marta (SNSM) in Colombia. By combining deep learning to identify the locations of individual palms based on the star-shaped crown, alongside archaeological legacy data and pedestrian surveys, we aimed to understand the association between the presence of these plants due to human management and the archaeological sites. While the PABAM method is tested in the SNSM, it is designed to be broadly applicable to other Neotropical-and potentially global-regions with similar vegetation and archaeological complexity. This integrated approach provides deeper insights into the formation of cultural landscapes in Neotropical forests. The longterm human history of Neotropical forests reflects the recognition that pre-colonial Indigenous societies shaped resource-rich, enduring landscapes across the region; we hypothesize that the present-day distribution of palms is partially linked to these past human activities. To test our hypothesis, we analyzed palm concentrations around archaeological sites using a Inverse Distance Weighting (IDW) score and conducted an elevation analysis comparing site-associated palms to regional baselines. These analyses allowed us to assess whether palm presence is related to archaeological site locations and elevation patterns indicative of ancient human management.</p><p>Our main contributions are as follows. 1) A method to analyze tropical vegetation and human activity. We propose a multi-component machine learning method to investigate the spatial relationship between vegetation patterns and archaeological sites. 2) Release of a manually annotated palm tree dataset. We are releasing a high-quality palm tree dataset covering 69.5 km 2 , manually labeled by human annotators (Figure <ref type="figure" target="#fig_0">1</ref>). We believe such a dataset to be a valuable resource for future research, particularly in the area of domain adaptation in other computer vision applications.</p><p>Researchers can use our well-annotated dataset as a source domain to develop and test methods for adapting models to new regions. 3) Release of ground-surveyed archaeological site locations.</p><p>We are also releasing the locations of archaeological sites in the area of study, along with associated levels of certainty, verified through ground surveys and reviews of legacy data. This dataset can support future studies exploring the relationship between the presence of archaeological sites, vegetation patterns, and past human activity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Palm Tree Detection Model Performance</head><p>We evaluated the performance of the model on the test dataset using different confidence thresholds of 0.2, 0.3, and 0.4. Precision and recall metrics are reported in Figure <ref type="figure" target="#fig_1">2</ref>. In our application, minimizing false positives was more important than maximizing recall because high false positive rates in palm tree detection could produce artificial clusters and misleading density estimates.</p><p>Since clusters should reflect true patterns with high precision, we prioritized precision over recall. Therefore, a confidence threshold of ≥ 0.4 was selected to reduce false positives. The final palm tree bounding box predictions for the entire study area, based on the ≥ 0.4 threshold, are shown in Figure <ref type="figure" target="#fig_1">2</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Palm Distribution and Archaeological Sites</head><p>To evaluate the relationship between palm tree distribution and past human presence, we conducted a spatial clustering analysis of palm trees across the study area. Clusters 1, 2, and 15, which are located in the southwest, west, and east portions of the study area (Figure <ref type="figure" target="#fig_1">2</ref>), exhibited spatial overlap with known archaeological features. Because the areas in the western portion of the study area have undergone more modern human intervention, we chose to focus our analysis in the less-disturbed eastern part of the area of study.</p><p>Notably, the largest archaeological site (Teyuna), marked by significant infrastructure invest- ment, is located within the largest cluster of palms (Cluster 15), spanning approximately 100 km 2 across both well-lit ridges and steep shaded slopes in the eastern part of the study area (Figure <ref type="figure" target="#fig_1">2</ref>). This cluster also contains 17 archaeological zones recorded as points or polygons. We calculated the centroids of these sites to serve as reference points for spatial analysis. This resulted in 17 reference points used in our study. Archaeological sites within the largest palm cluster are located in areas with significantly higher IDW values than random locations within palm clusters lacking archaeological features (Figure <ref type="figure" target="#fig_2">3A</ref>). To estimate the extent of ancient human management influence in Cluster 15, we compared palm tree densities at 100 randomly selected points within the cluster, but outside a 1 km buffer around archaeological sites, with densities at the 17 archaeological points in the same cluster. The observed means overlap at the 80% bootstrapped confidence interval, indicating that the differences in palm density are likely not statistically significant (Figure <ref type="figure" target="#fig_2">3A</ref>).</p><p>Beyond the localized analysis of archaeological centroids near Teyuna, we expanded the IDW analysis to include four additional archaeological centroids situated in geographically distinct regions of the study area. These centroids were spatially independent from both the Teyunaassociated centroids and the control points used in the initial analysis. One of these centroids, in the southwest of the study area corresponds to El Congo-Ciudad Antigüa <ref type="bibr" target="#b17">(19)</ref>, a previously known archaeological site. The remaining two centroids were estimated based on nearby archaeological sites reported in legacy data in recorded in our surveys. The IDW values for the centroids in the northwest, southwest (Ciudad Antigüa), and south-center regions were 0.005, 0.002, and 0 respectively. In contrast, the Teyuna centroid yielded a IDW value of 3.75. These results suggested that palm tree density around Teyuna is substantially greater than in the other regions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Modern Buildings and Palm Tree Distribution</head><p>The Spearman correlation between the number of modern human buildings and the number of palm trees detected in each 200x200 m cell grid and the detected palms (Figure <ref type="figure" target="#fig_2">3B</ref>) was low (𝜌 = 0.21, p-value &lt; 0.001), suggesting weak relationship between the presence of modern buildings and the distribution of palm trees in the study area. This pattern is mainly driven by small modern nucleated settlements and low density dispersed farms populations located at lower elevations on the western side of the study area, away from zones from the largest clusters of detected palms. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Elevation Analysis</head><p>The centroids of archaeological locations within Cluster 15 span elevations ranging from 819 to 1570 m, with a mean elevation of 1113 m. The violin plots in Figure <ref type="figure" target="#fig_2">3C</ref> show that palm trees located within a 1 km radius of archaeological sites in Cluster 15 tend to occur at lower elevations compared to those outside this buffer zone but within Cluster 15. Furthermore, both elevation distributionspalms near archaeological sites and those outside the buffer in Cluster 15-show more frequently values at lower than those of other palm clusters without archaeological overlap. In addition, all median elevation values of clustered palms that overlap with archaeological sites are below the GBIF baseline median. In contrast, only the clusters of palms without archaeological overlap exhibit median elevation values higher than that of the GBIF baseline. All elevation distributions of the detected palm subsets fall within the range of the Global Biodiversity Information Facility (GBIF) baseline, suggesting that the palm detection is consistent capturing the overall variability of palm distribution.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion Ecological Implications of Palm Distribution and Elevational Patterns</head><p>Previous studies typically examined broad geographical regions using sparse sampling <ref type="bibr" target="#b0">(1,</ref><ref type="bibr" target="#b5">6)</ref>, making it difficult to capture finer-scale patterns of human-environment interaction. Our fine-scale detection analysis across a contiguous, yet regionally extensive, area reveals a spatial correlation between the pre-Columbian populations and the densest cluster of palm trees in the Neotropic forest of the SNSM. This correlation is not consistent across all sites but is particularly pronounced around Teyuna, where pre-Columbian populations invested significantly in infrastructure development.</p><p>Settlement data from the southwestern part of our study area indicate that most archaeological sites are relatively small (≤ 1 ha), with a maximum surface of around 5 ha <ref type="bibr" target="#b18">(21,</ref><ref type="bibr" target="#b19">22)</ref>. This surface is considerably smaller than the main site of Teyuna (∼ 33 ha). The area around Teyuna contains a significantly higher number of individuals from the detected plant taxa than would be expected under a random distribution model, suggesting that pre-Columbian activities shaped this pattern.</p><p>While Teyuna is occupied from around 400 CE <ref type="bibr" target="#b20">(23)</ref>, paleoecological reconstructions show an increase in palm pollen <ref type="bibr" target="#b21">(24,</ref><ref type="bibr" target="#b22">25)</ref>, coinciding with the first centuries (1100 and 1250 CE) of the Tairona period. Given that the estimated ancient human management area at the Teyuna site alone is around 100 ha <ref type="bibr" target="#b17">(19)</ref>, incorporating the large surrounding cluster of detected palms suggests a much broader area of influence. This palm cluster spans approximately 100 km 2 suggesting that the extent of activity around Teyuna, including paths, cultivation, resource collection, and general forest management could be up to two orders of magnitude larger than what archaeological evidence alone indicates. This finding complements the temporal data from the palynological analysis and is aligned with the period of major infrastructural investment in the SNSM. Similar dynamics have been observed in many parts of the Amazon, where archaeological earthworks coincide with the hyperdominance of useful species <ref type="bibr" target="#b0">(1,</ref><ref type="bibr" target="#b4">5)</ref>, and in the highlands of Colombia, where activities around pre-Hispanic population centers likely impacted high-altitude lakes <ref type="bibr" target="#b23">(26)</ref>.</p><p>Teyuna and adjacent sites located within the largest identified palm cluster exhibit significantly higher palm densities compared to randomly selected points inside clusters without evidence of prehispanic occupation within the same region. This pattern suggests that pre-Columbian activities that managed the forest, and possibly opened the canopy, favored these palms. Along with canopy openness, the typically short dispersal distances in palms combined with the low density of other species probably contributed to the higher local density. In the case of Dictyocaryum lamarckianum, its stilt roots provide an increased mechanical support on steep hillsides, again offering an advantage to occupy the cleared landscape. Following initial settlement and palm proliferation, the technological utility of palms likely enhanced the value of the area and influenced subsequent settlement decisions by offering valuable resources-such as materials for construction, containers, thatch, and edible parts like palm hearts <ref type="bibr" target="#b15">(17,</ref><ref type="bibr" target="#b16">18)</ref>-making these areas more suitable for long-term habitation and infrastructure investment.</p><p>Building on the extended analysis across multiple archaeological sites, and given Teyuna's historical prominence as a major pre-Columbian center <ref type="bibr" target="#b17">(19,</ref><ref type="bibr" target="#b20">23)</ref>, it is plausible that anthropogenic influences-such as the planting, cultivation, or preferential retention of palms-were more intensive in this region. These practices may have constituted a form of low-intensity management or stewardship of plant communities (2). Our results suggest that the legacy effects of pre-Columbian human activity on palm distribution are not uniform across the landscape. Instead, they appear to be spatially variable, with a more pronounced presence persisting near major centers such as Teyuna.</p><p>Elevation analysis also supports the idea that prehistoric human activity contributed to localized ecological modifications that promoted palm persistence or proliferation at lower altitudes than the GBIF baseline data. The presence of Pre-Columbian Indigenous populations possibly facilitated the creation of micro-environmental conditions, such as access to light, modified hydrology, reduced interspecific competition, and/or direct management practices, that favored the survival and expansion of clusters of Dictyocaryum palms at lower altitude sites. This presence of palms supports the hypothesis that pre-Columbian people management of the forest has left a durable ecological imprint. Although such occurrences are unlikely to act as standalone predictors for the presence of archaeological sites, they offer valuable supplementary information when integrated with broader environmental and multispectral and hyperspectral datasets. The palm distribution detected in our area of work of the SNSM is an example of long-term human-ecological interactions and niche construction <ref type="bibr" target="#b24">(27)</ref>, where sometimes subtle but persistent anthropogenic influences shape the distribution of key plant species in time and space. Although Teyuna exhibits a particularly strong signature of ecological legacy, the methodology developed here is not limited to this region. Future applications across other Neotropical and tropical environments can further test the model's potential to detect hidden landscapes of ancient human activity.</p><p>The current palm distribution is the result of ecological processes that unfolded during the Pre-Columbian occupation of these sites. The composition of the SNSM forest in areas without reported human presence indicates that palms are a key component of the floristic assemblage but their frequency in the vegetation is relatively low <ref type="bibr" target="#b25">(28,</ref><ref type="bibr" target="#b26">29)</ref>. Although short-term successional dynamics following forest disturbance are relatively well understood for lowland Amazonia (30)for instance, the dominance of early successional species depending on disturbance scale-such processes in Neotropical montane environments remain less studied. Our data suggest that patterns of certain plant frequencies that coincide with nearby archaeological sites are most likely the result of human agency rather than only forest regeneration dynamics. More research using plant proxies for plants such as phytoliths or environmental DNA extracted from archaeological deposits and soils from nearby areas is needed to understand these dynamics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Potential applications, limitations, and future work directions</head><p>Our approach could be extended to analyze other Neotropical forests, such as the Amazon, as well as more arid landscapes with sparse vegetation-where plant species may serve as especially clear ecological markers of past human activity. These markers may reflect lasting ecological legacy of indigenous land use <ref type="bibr" target="#b28">(31)</ref> or post-abandonment conditions shaped by earlier human presence <ref type="bibr" target="#b29">(32)</ref>. Combining automatic species detection and botanical field surveys with archaeological and paleoenvironmental data can enhance our understanding of pre-Columbian indigenous settlements in the Neotropics, and contextualize them within interconnected local and global dynamics of past human-environment relationships <ref type="bibr" target="#b30">(33)</ref>. Beyond archaeological applications, the model have potentials for efficient palm tree distribution mapping <ref type="bibr" target="#b31">(34)</ref> for bio-economic development, landuse planning, and ecological monitoring. Our method, using satellite imagery and deep learning, provides a scalable approach to detect such patterns on wider surfaces and more remote regions.</p><p>By automatically mapping the distribution and dominance of specific plant species-particularly those with cultural or ecological ties to past human groups-this approach can aid in identifying affiliation of current indigenous groups to land, complementing traditional field-based evidences.</p><p>Although the palm detection model used in this study successfully captured the overall distribution and density patterns of palm trees throughout the canopy of the study area, it occasionally failed to accurately detect individual trees. These errors are primarily caused by visual similarities between palm trees and certain human-made structures, such as crossroads or buildings, that can exhibit textures or shapes resembling the star-like appearance of a palm tree crown. These misclassifications mainly occur in heavily modified landscapes; in well-preserved forests-where this approach is intended-the risk of confusing natural features with roads or buildings is minimal.</p><p>To address this issue, future work can focus on integrating semi-supervised learning into the detection framework to enhance palm tree detection performance, even in urbanized landscapes. By combining limited labeled data with large unlabeled image collections, these methods can help models learn more robust and generalizable features. Techniques such as pseudo-labeling <ref type="bibr" target="#b32">(35)</ref> and consistency regularization (36) may be particularly effective in leveraging the variability present in unlabeled data, including differences in appearance, lighting, and environmental conditions. This strategy is expected to improve detection accuracy and adaptability to unseen regions and palm tree varieties.</p><p>The computer vision model detected a specific crown pattern at the top of the canopy. Palms with different crown patterns or located lower in the canopy were less detected. Some areas in the study region-particularly in the southwest-show signs of modern human intervention, while the area around Teyuna appears more preserved. To further enhance the efficiency and accuracy of palm detection, future research could focus on integrating active learning into the training pipeline <ref type="bibr" target="#b34">(37)</ref>. This would involve iteratively training a model on a small labeled set, using the model to identify the most informative unlabeled samples (e.g., those with high prediction uncertainty), acquiring annotations for these selected samples, and retraining the model with the expanded labeled set.</p><p>This iterative process has the potential to significantly improve performance while minimizing annotation costs.</p><p>We believe that our palm tree detection dataset will be a valuable asset for future research, particularly in the context of domain adaptation. By using our dataset as a well-annotated source, researchers can investigate methods to adapt models to new regions, thereby significantly reducing the need for extensive labeling efforts in those target domains.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>Using our scalable methodology for identifying potential archaeological features through their ecological signatures we find that palm density is indicative of past human activity, suggesting that a synergetic relation between initial settlement and subsequent palm proliferation influenced decisions on where to continue developing settlements. The abundance of palm trees around archaeological centroids-especially at Teyuna-and the observation that site-associated palms occurred at lower elevations than both regional baselines and non-site-associated palms, indicate that pre-Columbian populations actively shaped environments in ways that promoted palm proliferation in areas where plant species competition should be intense. This in turn, may have lowered the logistical costs of establishing infrastructure-heavy settlements in otherwise less accessible locations.</p><p>These findings contribute to our understanding of ancient human-environment interactions in Neotropical ecosystems and suggest that pre-Columbian populations left lasting ecological imprints that persist centuries after site abandonment. The integrative approach demonstrated here, combining automated vegetation detection with archaeological data, has particular relevance for tropical regions where traditional archaeological methods face significant challenges due to dense vegetation and limited accessibility. The approach is scalable to any large areas with submetric resolution satellite imagery available. This work underscores the importance of interdisciplinary collaboration between ecologists, archaeologists, and computer scientists to uncover the complex legacies of ancient human activities in shaping contemporary forest compositions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pre-Columbian Settlements and Forest Management in the Sierra Nevada de</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Santa Marta</head><p>Pre-Columbian communities of the Tairona cultural tradition transformed the SNSM landscape.</p><p>Human occupation, dated from 200 to 1600 CE <ref type="bibr" target="#b17">(19,</ref><ref type="bibr" target="#b20">23)</ref>, is divided into two archaeological periods: Neguanje (200-1100 CE) and Tairona (1100-1600 CE). Settlements occur on ridgelines, valley slopes <ref type="bibr" target="#b17">(19,</ref><ref type="bibr" target="#b20">23,</ref><ref type="bibr" target="#b35">38)</ref>, riverbanks, bays, inlets, flat coastal areas, and deeper canyons <ref type="bibr" target="#b20">(23,</ref><ref type="bibr" target="#b36">39)</ref>. Longdistance mobility between sites within the SNSM has been documented both historically <ref type="bibr" target="#b37">(40)</ref> and in the present, with a 60 km round-trip between two Indigenous communities completed in 18 hours <ref type="bibr" target="#b38">(41)</ref>. Entire valleys, typically 30 km long, can be traversed in three days from sea level to the paramo (∼ 3000 m elevation) <ref type="bibr" target="#b39">(42)</ref>. Spanning from coastal lowlands to 2000 m elevation, the Tairona sites feature terraced platforms with curved stone walls, rammed earth foundations, rainwater drainage systems, and circular stone floors for wood-and-thatch structures connected by paved paths <ref type="bibr" target="#b20">(23,</ref><ref type="bibr" target="#b35">38,</ref><ref type="bibr" target="#b40">(43)</ref><ref type="bibr" target="#b41">(44)</ref><ref type="bibr" target="#b42">(45)</ref><ref type="bibr" target="#b43">(46)</ref>. All this represent a significant infrastructure investment given the rugged terrain and the logistical challenges of transporting large amount of stones.</p><p>Small settlements (&lt;3 ha) are scattered across the landscape <ref type="bibr" target="#b19">(22)</ref>. Larger sites (≥3 ha) are less common but present in both the Neguanje and Tairona periods. However, estimating the size of settlements in the Neguanje phase is challenging due to the superimposing Tairona structures that cover the earlier deposits <ref type="bibr" target="#b20">(23)</ref>. The largest known settlement is Teyuna (Ciudad Perdida or , occupied in the Neguanje period from around 400 CE <ref type="bibr" target="#b20">(23)</ref>. During the Tairona period, it expanded to a settlement of 33 ha with typical regional architecture <ref type="bibr" target="#b17">(19,</ref><ref type="bibr" target="#b20">23,</ref><ref type="bibr" target="#b43">46)</ref>. A remote sensing analysis estimates the footprint of Teyuna at approximately 100 ha (Figure <ref type="figure" target="#fig_0">1</ref>), supporting the role of the settlement as a regional center within an extensive and interconnected system, but also suggesting a broader anthropogenic landscape surrounding the site. This aligns with the models of "low-density agricultural urbanism" seen in Mesoamerica and Southeast Asia <ref type="bibr" target="#b17">(19)</ref> and with evidence from other Neotropical forests such as the Amazon <ref type="bibr" target="#b14">(16)</ref>.</p><p>Palynological analyses <ref type="bibr" target="#b22">(25,</ref><ref type="bibr" target="#b42">45)</ref> in a radius of 6 km from Teyuna, along with phytolith studies at the site <ref type="bibr" target="#b20">(23)</ref>, indicate that landscape transformation began between 600 and 900 CE, likely for small-scale cultivation of maize (Zea mays) and manioc (Manihot sp.). Phytoliths from Bactris sp. and other palms (Arecaceae) were identified in Teyuna, suggesting the exploitation of such plant resource <ref type="bibr" target="#b20">(23)</ref>. Also, an increase in palm pollen between 1100 and 1250 CE in the lowlands <ref type="bibr" target="#b21">(24)</ref>, and at 900-1300 m elevations <ref type="bibr" target="#b22">(25)</ref>, coincided with the Tairona occupation period. Among palms, Dictyocaryum lamarckianum-common in the SNSM at elevations of 900-2000 m-is used for construction and may represent one of the sources of phytoliths within the recovered assemblages <ref type="bibr" target="#b20">(23,</ref><ref type="bibr" target="#b44">47)</ref>. Palynological evidence also suggests rapid forest regeneration after site abandonment in the 16th century, implying that Tairona settlements had an ecological footprint on modern forest composition <ref type="bibr" target="#b42">(45)</ref>.</p><p>We selected a study area of approximately 765 km 2 in Colombia, which is known to contain Tairona occupation. We collected archaeological legacy data (Suplementary Material, Data S1 and S2), harmonizing geospatial location of historical maps and archaeological reports to estimate areas with possible archaeological sites with low and medium certainty <ref type="bibr" target="#b43">(46)</ref>. High-certainty locations were identified through systematic pedestrian surveys, as detailed in previous studies <ref type="bibr" target="#b18">(21,</ref><ref type="bibr" target="#b43">46)</ref>. We utilized the panchromatic band, which offers the highest spatial resolution (30 cm), making it particularly well-suited for detecting individual palm trees. A total of 37 scenes covering the study area were used for analysis. A 69.5 km 2 non-contiguous subset was annotated with the locations of star-shaped palm trees and used to train and test the object detection model (Suplemmentary Material, Data S3 and S4). To streamline the annotation process and minimize the risk of missing any palm trees, the area was divided into 200x200 m grid. Human annotators systematically scanned each grid and marked individual palm trees bounding boxes. In total, 24,430 palm trees were annotated. (Figure <ref type="figure" target="#fig_0">1</ref>, bottom-center). Since orbital optical imagery is typically acquired at nadir, detection is biased toward the canopy layer. In the montane forest of the study area, the most likely palm detected under these conditions is Dictyocaryum sp. This genus is known for its tall, solitary growth form and prominent canopy presence in Andean cloud forests <ref type="bibr" target="#b15">(17,</ref><ref type="bibr" target="#b46">48)</ref>. This makes it more readily distinguishable than understory palms such as Bactris sp. or lowland species such as Phytelephas sp.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Past Areas of Bio-cultural Activity and Management (PABAM) Methodology</head><p>We propose a multi-component machine learning method to estimate areas of ancient human management using known archaeological sites and vegetation patterns as inputs. In this study, we used star-shaped palm tree crowns as indicators of plants exploited for raw materials in the past and archaeological sites categorized by varying levels of location certainty.</p><p>First, we trained the extra-large variant of the "You Only Look Once" (YOLO) object detection architecture, a family of deep learning models designed for fast and accurate object localization and classification in images <ref type="bibr" target="#b47">(49)</ref>. Within it's 10th variant, YOLO introduces several improvements in efficiency and accuracy, and the x configuration represents the most accurate variant, optimized for detecting small or complex objects. We applied this model (YOLOv10x) to 30 cm resolution Pléiades Neo satellite imagery to identify palm trees (Figure <ref type="figure" target="#fig_1">2</ref>), taking advantage of its ability to capture fine-scale canopy features. The labeled palm area was divided into two spatially distinct regions (Figure <ref type="figure" target="#fig_1">2</ref>). The lower region, comprising 47% of the annotations, was used for training and validation, while the upper region, containing the remaining 53%, was reserved for testing. This spatial separation aimed to reduce the risk of spatial bias during classification. Each region was further subdivided into 640×640 pixel patches for model input. Within the training and validation region, 95% of the patches were used for training and the remaining 5% were used for validation to guide hyperparameter tuning and model selection. The best-performing model based on precision and recall scores was applied to the test patches for evaluation, as well as to the full study area, for palm tree detection (Suplementary Material, Data S5).</p><p>Next, we applied Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN) <ref type="bibr" target="#b48">(50)</ref> to identify spatial clusters of palm trees using 100 as minimum number of points required to form a cluster. This algorithm handles clusters of varying densities, it does not require a parameter for neighborhood radius, and it is robust to noise and outliers. We linked these clusters to past human activity by associating them with the centroids of known archaeological sites and low-location-certainty archaeological zones within the convex hull boundaries of each palm cluster.</p><p>To compare palm concentrations, we generated centroids for archaeological sites and lowlocation-certainty archaeological zones. We also generated random centroids in the largest palm cluster and in areas showing clustered palms without reported archaeological sites. Palm concentration differences were measured using a Inverse Distance Weighting (IDW) score, which models the density of nearby palm trees by assigning higher weights to those located closer to each centroid.</p><p>Palm trees within a 1000 m radius of each centroid were included in the IDW calculations, ensuring that the analysis captured localized patterns while excluding influence from distant and ecologically distinct areas. This radius is an conservative estimate of human mobility based on recently reported walking distances and travel times between Indigenous settlements <ref type="bibr" target="#b38">(41,</ref><ref type="bibr" target="#b39">42)</ref>. The score is calculated</p><formula xml:id="formula_0">as 𝐺 = 𝑖 1 𝑑 𝑤 𝑖</formula><p>, where 𝐺 is the IDW score, 𝑑 𝑖 is the distance from the selected point to palm tree 𝑖 (only if 𝑑 𝑖 ≤ 1000 meters), and 𝑤 is a decay factor that gives more weight to closer trees. We use 𝑤 = 1 in our analysis. Finally, we used bootstrapping techniques to compare palm concentrations around archaeological centroids with those in control zones-palm areas without known archaeological features. For this, we generated 100 control points, randomly sampled from palm cluster regions without known archaeological features. We also generated an additional set of 100 control points within the largest palm cluster but outside 1 km buffers around the archaeological sites.</p><p>For both control sets and the archaeological centroids within the largest palm cluster, we created 1000 bootstrapped datasets. Each dataset consisted of 17 observations sampled with replacement, matching the number of archaeological centroids in the largest cluster.</p><p>We further evaluated the consistency of the palm detection model by comparing the elevation of detected palms with the elevation distribution of Dictyocaryum sp. occurrences recorded in the Global Biodiversity Information Facility (GBIF) database <ref type="bibr" target="#b49">(51)</ref>. Elevation data for both sets were extracted from the Shuttle Radar Topography Mission (SRTM) dataset at 1 arc second (∼30 m) resolution ( <ref type="formula">52</ref>). An interquartile range-based outlier filtering on the SRTM elevation was applied to the GBIF baseline. GBIF records served as proxy for the species' natural elevational range, likely reflecting areas less affected by pre-Columbian human activity. We then compared GBIF data with the elevations of palm trees detected by our deep learning model within a 1000 m radius of archaeological centroids in the largest palm cluster. We also examined the elevation data for all palm trees located in areas showing clustered and non-clustered palms without archaeological sites.</p><p>To assess the potential relationship between the number of modern human activities and the number of palm trees detected within the study area, we conducted a Spearman rank correlation between the number of modern buildings detected in a 200x200 m cell grid and the detected palms (Figure <ref type="figure" target="#fig_2">3B</ref>). The analysis used a dataset containing automatic detected building from satellite imagery between 2014 and 2024 (20) and palm trees detected per spatial unit (Figure <ref type="figure" target="#fig_2">3B</ref>).</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Study area at different resolutions. Regional and global context of the study area (topcenter and top-right). Archaeological site locations with varying levels of location certainty (left). Annotated 200×200 m grid in yellow and palm tree labels in green (bottom-center). Detailed view of annotated palm trees on high-resolution imagery (bottom-right). Bottom-right panel includes material © CNES (2024), Distribution Airbus DS. All other panels include Sentinel-2 cloudlesshttps://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2016 &amp; 2017).</figDesc><graphic coords="5,72.00,72.00,505.44,280.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: PABAM methodology, which incorporates the YOLOv10 architecture. After selecting the best-performing model based on validation data, we applied it to the test set for performance evaluation, as well as to the entire study area for palm tree detection. Detected palm trees were clustered using the HDBSCAN algorithm, followed by an IDW analysis to compare palm tree densities. Each cluster with its corresponding cluster ID is shown on the bottom-left frame. Right panels include material © CNES (2024), Distribution Airbus DS. Left panel includes Sentinel-2 cloudless -https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2016 &amp; 2017).</figDesc><graphic coords="6,116.40,234.30,379.08,233.34" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Human activity and palm distribution. (A) Bootstrapped confidence intervals for observed means (Bootstrap samples = 1000; sample size = 17). The subsets shown are IDW means for archaeological centroids inside Cluster 15 (left), 100 random points in Cluster 15 outside 1 km archaeological buffers (center), and 100 random points in clusters without overlap with archaeological features (right). Means are shown as text labels to the right of each bullet graph. (B) Spearman correlation between modern buildings (20) and palm detections in each 200x200 m grid inside the study area. (C) Elevation distributions across subsets of detected palms and the GBIF baseline for the distribution of Dictyocaryum in South America. Violin plots (left) display Gaussian kernel density estimates for each subset, with overlaid box plots indicating the median (white line) and mean (red dot). (D) The heatmap presents pairwise Dunn test results between subsets following a significant Kruskal-Wallis test.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 1</head><label>1</label><figDesc>Figure1presents the study area at various zoom levels for better spatial context.Within this region, we used high spatial resolution satellite imagery from the Pléiades Neo constellation acquired between 2022 and 2024 to annotate the locations of star-shaped palm trees.</figDesc></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>Funding: This research is part of the "<rs type="projectName">Mapping the Archaeological Pre-Columbian Heritage in South America -MAPHSA" Project funded by Arcadia -a charitable fund of Lisbet Rausing</rs> and <rs type="person">Peter Baldwin</rs>. This research was also supported by a <rs type="funder">Leiden-Delft-Erasmus Global Support</rs> Grant (Grant No. <rs type="grantNumber">LDE-127</rs>). Pleiades Neo satellite imagery data provided by the <rs type="funder">European Space Agency</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funded-project" xml:id="_fKV6cMY">
+					<idno type="grant-number">LDE-127</idno>
+					<orgName type="project" subtype="full">Mapping the Archaeological Pre-Columbian Heritage in South America -MAPHSA&quot; Project funded by Arcadia -a charitable fund of Lisbet Rausing</orgName>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Author contributions: Conceptualization: S.F., M.Ma., S.M., J.G.S; Data curation: S.F., M.I.M., F.M., K.P., C.R., J.C.V.; Formal analysis: S.F., S.M.; Funding acquisition: S.F., M.Ma., J.G.S.; Investigation: S.F., S.M.; Methodology: S.F., S.M.; Project administration: S.F., M.Ma.,M.M., J.G.S.,  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>This PDF file includes:</head><p>Other Supplementary Materials for this manuscript: </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Persistent effects of pre-Columbian plant domestication on Amazonian forest composition</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Levis</surname></persName>
+		</author>
+		<ptr target="https://www.jstor.org/stable/24918447" />
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">355</biblScope>
+			<biblScope unit="issue">6328</biblScope>
+			<biblScope unit="page" from="925" to="931" />
+			<date type="published" when="2017">2017</date>
+			<publisher>American Association for the Advancement of Science</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Eighty-four per cent of all Amazonian arboreal plant individuals are useful to humans</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Coelho</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0257875</idno>
+		<ptr target="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0257875" />
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">257875</biblScope>
+			<date type="published" when="2021">2021</date>
+			<publisher>Public Library of Science</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Human-made fires and forest clearance as evidence for late Holocene landscape domestication in the Orinoco Llanos (Venezuela)</title>
+		<author>
+			<persName><forename type="first">Alejandra</forename><surname>Leal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rafael</forename><surname>Gassón</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hermann</forename><surname>Behling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fernando</forename><surname>Sánchez</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00334-019-00713-w</idno>
+		<ptr target="https://doi.org/10.1007/s00334-019-00713-w" />
+	</analytic>
+	<monogr>
+		<title level="j">Vegetation History and Archaeobotany</title>
+		<title level="j" type="abbrev">Veget Hist Archaeobot</title>
+		<idno type="ISSN">0939-6314</idno>
+		<idno type="ISSNe">1617-6278</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="545" to="557" />
+			<date type="published" when="2019-02-07">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Fire-human-climate interactions in the Bolivian Amazon rainforest ecotone from the Last Glacial Maximum to late Holocene</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Yoshi</forename><surname>Maezumi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchell</forename><forename type="middle">J</forename><surname>Power</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">J</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kendra</forename><forename type="middle">K</forename><surname>Mclauchlan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><forename type="middle">R</forename><surname>Brunelle</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Carleton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><forename type="middle">U</forename><surname>Kay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Roberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francis</forename><forename type="middle">E</forename><surname>Mayle</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fearc.2023.1208985</idno>
+		<ptr target="https://www.frontiersin.org/journals/environmental-archaeology/articles/10.3389/fearc.2023.1208985/full" />
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Environmental Archaeology</title>
+		<title level="j" type="abbrev">Front. Environ. Archaeol.</title>
+		<idno type="ISSNe">2813-432X</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<date type="published" when="2023-12-11">2023</date>
+			<publisher>Frontiers Media SA</publisher>
+		</imprint>
+	</monogr>
+	<note>Frontiers</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">More than 10,000 pre-Columbian earthworks are still hidden throughout Amazonia</title>
+		<author>
+			<persName><forename type="first">Vinicius</forename><surname>Peripato</surname></persName>
+			<idno type="ORCID">0000-0002-3137-211X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carolina</forename><surname>Levis</surname></persName>
+			<idno type="ORCID">0000-0002-8425-9479</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><forename type="middle">A</forename><surname>Moreira</surname></persName>
+			<idno type="ORCID">0000-0001-7557-0874</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dani</forename><surname>Gamerman</surname></persName>
+			<idno type="ORCID">0000-0003-0697-4589</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hans</forename><surname>Ter Steege</surname></persName>
+			<idno type="ORCID">0000-0002-8738-2659</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nigel</forename><forename type="middle">C A</forename><surname>Pitman</surname></persName>
+			<idno type="ORCID">0000-0002-9211-2880</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jonas</forename><forename type="middle">G</forename><surname>De Souza</surname></persName>
+			<idno type="ORCID">0000-0001-6032-4443</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><surname>Iriarte</surname></persName>
+			<idno type="ORCID">0000-0002-8155-5360</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Robinson</surname></persName>
+			<idno type="ORCID">0000-0002-1520-8459</idno>
+		</author>
+		<author>
+			<persName><forename type="first">André</forename><forename type="middle">Braga</forename><surname>Junqueira</surname></persName>
+			<idno type="ORCID">0000-0003-3681-1705</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thiago</forename><forename type="middle">B</forename><surname>Trindade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fernando</forename><forename type="middle">O</forename><surname>De Almeida</surname></persName>
+			<idno type="ORCID">0000-0002-9061-0026</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Claide</forename><forename type="middle">De Paula</forename><surname>Moraes</surname></persName>
+			<idno type="ORCID">0000-0002-3562-0029</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Umberto</forename><surname>Lombardo</surname></persName>
+			<idno type="ORCID">0000-0002-0001-4870</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eduardo</forename><forename type="middle">K</forename><surname>Tamanaha</surname></persName>
+			<idno type="ORCID">0000-0001-9400-0682</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shira</forename><forename type="middle">Y</forename><surname>Maezumi</surname></persName>
+			<idno type="ORCID">0000-0002-4333-1972</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><forename type="middle">P H B</forename><surname>Ometto</surname></persName>
+			<idno type="ORCID">0000-0002-4221-1039</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">R G</forename><surname>Braga</surname></persName>
+			<idno type="ORCID">0000-0001-9585-3329</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wesley</forename><forename type="middle">A</forename><surname>Campanharo</surname></persName>
+			<idno type="ORCID">0000-0001-5719-8407</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Henrique</forename><forename type="middle">L G</forename><surname>Cassol</surname></persName>
+			<idno type="ORCID">0000-0001-6728-4712</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Philipe</forename><forename type="middle">R</forename><surname>Leal</surname></persName>
+			<idno type="ORCID">0000-0001-8438-7561</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mauro</forename><forename type="middle">L R</forename><surname>De Assis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adriana</forename><forename type="middle">M</forename><surname>Da Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><forename type="middle">L</forename><surname>Phillips</surname></persName>
+			<idno type="ORCID">0000-0002-8993-6168</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Flávia</forename><forename type="middle">R C</forename><surname>Costa</surname></persName>
+			<idno type="ORCID">0000-0002-9600-4625</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bernardo</forename><forename type="middle">Monteiro</forename><surname>Flores</surname></persName>
+			<idno type="ORCID">0000-0003-4555-5598</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bruce</forename><surname>Hoffman</surname></persName>
+			<idno type="ORCID">0000-0003-4847-5163</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Terry</forename><forename type="middle">W</forename><surname>Henkel</surname></persName>
+			<idno type="ORCID">0000-0001-9760-8837</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Natalia</forename><surname>Umaña</surname></persName>
+			<idno type="ORCID">0000-0001-5876-7720</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">E</forename><surname>Magnusson</surname></persName>
+			<idno type="ORCID">0000-0003-1988-3950</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elvis</forename><forename type="middle">H</forename><surname>Valderrama Sandoval</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jos</forename><surname>Barlow</surname></persName>
+			<idno type="ORCID">0000-0003-4992-2594</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Milliken</surname></persName>
+			<idno type="ORCID">0000-0002-3926-6661</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Aparecida</forename><surname>Lopes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcelo</forename><forename type="middle">Fragomeni</forename><surname>Simon</surname></persName>
+			<idno type="ORCID">0000-0002-5732-1716</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tinde</forename><forename type="middle">R</forename><surname>Van Andel</surname></persName>
+			<idno type="ORCID">0000-0002-4951-1894</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><forename type="middle">G W</forename><surname>Laurance</surname></persName>
+			<idno type="ORCID">0000-0002-2831-2933</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">F</forename><surname>Laurance</surname></persName>
+			<idno type="ORCID">0000-0003-4430-9408</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Armando</forename><surname>Torres-Lezama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rafael</forename><forename type="middle">L</forename><surname>Assis</surname></persName>
+			<idno type="ORCID">0000-0001-8468-6414</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-François</forename><surname>Molino</surname></persName>
+			<idno type="ORCID">0000-0001-8853-7133</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mickaël</forename><surname>Mestre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><surname>Hamblin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luiz</forename><forename type="middle">De Souza</forename><surname>Coelho</surname></persName>
+			<idno type="ORCID">0000-0001-6710-7660</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Diogenes</forename><forename type="middle">De Andrade</forename><surname>Lima Filho</surname></persName>
+			<idno type="ORCID">0000-0001-7729-9790</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Florian</forename><surname>Wittmann</surname></persName>
+			<idno type="ORCID">0000-0001-9180-356X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rafael</forename><forename type="middle">P</forename><surname>Salomão</surname></persName>
+			<idno type="ORCID">0000-0003-0947-0132</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Iêda</forename><forename type="middle">Leão</forename><surname>Amaral</surname></persName>
+			<idno type="ORCID">0000-0002-2645-4380</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Ernesto</forename><surname>Guevara</surname></persName>
+			<idno type="ORCID">0000-0002-5433-6218</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francisca</forename><forename type="middle">Dionízia</forename><surname>De Almeida Matos</surname></persName>
+			<idno type="ORCID">0000-0002-3030-8968</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carolina</forename><forename type="middle">V</forename><surname>Castilho</surname></persName>
+			<idno type="ORCID">0000-0002-1064-2758</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marcelo</forename><forename type="middle">De Jesus Veiga</forename><surname>Carim</surname></persName>
+			<idno type="ORCID">0000-0002-8576-7002</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dairon</forename><surname>Cárdenas López</surname></persName>
+			<idno type="ORCID">0000-0002-7495-7564</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Sabatier</surname></persName>
+			<idno type="ORCID">0000-0003-0883-1530</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mariana</forename><forename type="middle">Victória</forename><surname>Irume</surname></persName>
+			<idno type="ORCID">0000-0002-1590-3013</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Pires</forename><surname>Martins</surname></persName>
+			<idno type="ORCID">0000-0001-8094-1879</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">Renan Da Silva</forename><surname>Guimarães</surname></persName>
+			<idno type="ORCID">0000-0003-2055-7642</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olaf</forename><forename type="middle">S</forename><surname>Bánki</surname></persName>
+			<idno type="ORCID">0000-0001-6197-9951</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Teresa Fernandez</forename><surname>Piedade</surname></persName>
+			<idno type="ORCID">0000-0002-7320-0498</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">Ferreira</forename><surname>Ramos</surname></persName>
+			<idno type="ORCID">0000-0002-1580-3370</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bruno</forename><forename type="middle">Garcia</forename><surname>Luize</surname></persName>
+			<idno type="ORCID">0000-0002-8384-8386</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Evlyn</forename><forename type="middle">Márcia Moraes De Leão</forename><surname>Novo</surname></persName>
+			<idno type="ORCID">0000-0002-1223-9276</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Percy</forename><surname>Núñez Vargas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thiago</forename><forename type="middle">Sanna Freire</forename><surname>Silva</surname></persName>
+			<idno type="ORCID">0000-0001-8174-0489</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eduardo</forename><forename type="middle">Martins</forename><surname>Venticinque</surname></persName>
+			<idno type="ORCID">0000-0002-3455-9107</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Angelo</forename><forename type="middle">Gilberto</forename><surname>Manzatto</surname></persName>
+			<idno type="ORCID">0000-0002-6414-8966</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Neidiane</forename><forename type="middle">Farias Costa</forename><surname>Reis</surname></persName>
+			<idno type="ORCID">0000-0003-2833-7126</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Terborgh</surname></persName>
+			<idno type="ORCID">0000-0002-8238-4583</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Katia</forename><forename type="middle">Regina</forename><surname>Casula</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Layon</forename><forename type="middle">O</forename><surname>Demarchi</surname></persName>
+			<idno type="ORCID">0000-0001-8441-2106</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Euridice</forename><forename type="middle">N</forename><surname>Honorio Coronado</surname></persName>
+			<idno type="ORCID">0000-0003-2314-590X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abel</forename><surname>Monteagudo Mendoza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Carlos</forename><surname>Montero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jochen</forename><surname>Schöngart</surname></persName>
+			<idno type="ORCID">0000-0002-7696-9657</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ted</forename><forename type="middle">R</forename><surname>Feldpausch</surname></persName>
+			<idno type="ORCID">0000-0002-6631-7962</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adriano</forename><forename type="middle">Costa</forename><surname>Quaresma</surname></persName>
+			<idno type="ORCID">0000-0002-3684-2635</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gerardo</forename><forename type="middle">A</forename><surname>Aymard C.</surname></persName>
+			<idno type="ORCID">0000-0001-9405-0508</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Baraloto</surname></persName>
+			<idno type="ORCID">0000-0001-7322-8581</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolás</forename><surname>Castaño Arboleda</surname></persName>
+			<idno type="ORCID">0000-0003-2892-1074</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Engel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pascal</forename><surname>Petronelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><forename type="middle">Eugene</forename><surname>Zartman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">J</forename><surname>Killeen</surname></persName>
+			<idno type="ORCID">0000-0002-2711-1646</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Beatriz</forename><forename type="middle">S</forename><surname>Marimon</surname></persName>
+			<idno type="ORCID">0000-0003-3105-2914</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><forename type="middle">Hur</forename><surname>Marimon-Junior</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juliana</forename><surname>Schietti</surname></persName>
+			<idno type="ORCID">0000-0002-1687-4373</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thaiane</forename><forename type="middle">R</forename><surname>Sousa</surname></persName>
+			<idno type="ORCID">0000-0003-0598-4996</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rodolfo</forename><surname>Vasquez</surname></persName>
+			<idno type="ORCID">0000-0002-2282-5009</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lorena</forename><forename type="middle">M</forename><surname>Rincón</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erika</forename><surname>Berenguer</surname></persName>
+			<idno type="ORCID">0000-0001-8157-8792</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joice</forename><surname>Ferreira</surname></persName>
+			<idno type="ORCID">0000-0002-4008-2341</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bonifacio</forename><surname>Mostacedo</surname></persName>
+			<idno type="ORCID">0000-0003-3806-2445</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dário</forename><forename type="middle">Dantas</forename><surname>Do Amaral</surname></persName>
+			<idno type="ORCID">0000-0002-3546-5719</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hernán</forename><surname>Castellanos</surname></persName>
+			<idno type="ORCID">0000-0001-5039-9097</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marcelo</forename><forename type="middle">Brilhante</forename><surname>De Medeiros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ana</forename><surname>Andrade</surname></persName>
+			<idno type="ORCID">0000-0001-8550-1127</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">Luís</forename><surname>Camargo</surname></persName>
+			<idno type="ORCID">0000-0003-0370-9878</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emanuelle</forename><forename type="middle">De Sousa</forename><surname>Farias</surname></persName>
+			<idno type="ORCID">0000-0001-5949-877X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">Leonardo Lima</forename><surname>Magalhães</surname></persName>
+			<idno type="ORCID">0000-0001-7498-5189</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Henrique</forename><forename type="middle">Eduardo</forename><surname>Mendonça Nascimento</surname></persName>
+			<idno type="ORCID">0000-0003-3476-401X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Helder</forename><forename type="middle">Lima</forename><surname>De Queiroz</surname></persName>
+			<idno type="ORCID">0000-0002-4425-3208</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roel</forename><surname>Brienen</surname></persName>
+			<idno type="ORCID">0000-0002-5397-5755</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">David</forename><surname>Cardenas Revilla</surname></persName>
+			<idno type="ORCID">0000-0002-8277-5023</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pablo</forename><forename type="middle">R</forename><surname>Stevenson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alejandro</forename><surname>Araujo-Murakami</surname></persName>
+			<idno type="ORCID">0000-0001-6151-8995</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bruno</forename><surname>Barçante Ladvocat Cintra</surname></persName>
+			<idno type="ORCID">0000-0002-5116-2654</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yuri</forename><forename type="middle">Oliveira</forename><surname>Feitosa</surname></persName>
+			<idno type="ORCID">0000-0001-7961-2779</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Flávia</forename><forename type="middle">Rodrigues</forename><surname>Barbosa</surname></persName>
+			<idno type="ORCID">0000-0002-5649-6338</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rainiellen</forename><forename type="middle">De Sá</forename><surname>Carpanedo</surname></persName>
+			<idno type="ORCID">0000-0002-4373-1028</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joost</forename><forename type="middle">F</forename><surname>Duivenvoorden</surname></persName>
+			<idno type="ORCID">0000-0001-6133-2015</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Janaína</forename><forename type="middle">Da Costa</forename><surname>De Noronha</surname></persName>
+			<idno type="ORCID">0000-0003-0480-085X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Domingos</forename><forename type="middle">De Jesus</forename><surname>Rodrigues</surname></persName>
+			<idno type="ORCID">0000-0002-8360-2036</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><forename type="middle">F</forename><surname>Mogollón</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leandro</forename><forename type="middle">Valle</forename><surname>Ferreira</surname></persName>
+			<idno type="ORCID">0000-0001-9674-0238</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">Ethan</forename><surname>Householder</surname></persName>
+			<idno type="ORCID">0000-0002-5959-3504</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">Rafael</forename><surname>Lozada</surname></persName>
+			<idno type="ORCID">0000-0001-6781-6053</idno>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">A</forename><surname>Comiskey</surname></persName>
+			<idno type="ORCID">0000-0001-6710-1269</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Freddie</forename><forename type="middle">C</forename><surname>Draper</surname></persName>
+			<idno type="ORCID">0000-0001-7568-0838</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">Julio</forename><surname>De Toledo</surname></persName>
+			<idno type="ORCID">0000-0002-1778-0117</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Damasco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nállarett</forename><surname>Dávila</surname></persName>
+			<idno type="ORCID">0000-0003-0826-7167</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roosevelt</forename><surname>García-Villacorta</surname></persName>
+			<idno type="ORCID">0000-0002-2880-1227</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aline</forename><surname>Lopes</surname></persName>
+			<idno type="ORCID">0000-0001-5771-4643</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fernando</forename><surname>Cornejo Valverde</surname></persName>
+			<idno type="ORCID">0000-0001-6635-4184</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alfonso</forename><surname>Alonso</surname></persName>
+			<idno type="ORCID">0000-0001-6860-8432</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francisco</forename><surname>Dallmeier</surname></persName>
+			<idno type="ORCID">0000-0001-8240-1315</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vitor</forename><forename type="middle">H F</forename><surname>Gomes</surname></persName>
+			<idno type="ORCID">0000-0002-3855-5584</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eliana</forename><forename type="middle">M</forename><surname>Jimenez</surname></persName>
+			<idno type="ORCID">0000-0002-8610-1771</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Neill</surname></persName>
+			<idno type="ORCID">0000-0002-5143-9430</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Cristina</forename><surname>Peñuela Mora</surname></persName>
+			<idno type="ORCID">0000-0002-9611-1359</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">P P</forename><surname>De Aguiar</surname></persName>
+			<idno type="ORCID">0000-0003-2373-4763</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luzmila</forename><surname>Arroyo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fernanda</forename><surname>Antunes Carvalho</surname></persName>
+			<idno type="ORCID">0000-0002-3485-0797</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fernanda</forename><surname>Coelho De Souza</surname></persName>
+			<idno type="ORCID">0000-0002-3919-4493</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">J</forename><surname>Feeley</surname></persName>
+			<idno type="ORCID">0000-0002-3618-1144</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rogerio</forename><surname>Gribel</surname></persName>
+			<idno type="ORCID">0000-0002-0850-5578</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marcelo</forename><forename type="middle">Petratti</forename><surname>Pansonato</surname></persName>
+			<idno type="ORCID">0000-0003-3365-2382</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marcos</forename><surname>Ríos Paredes</surname></persName>
+			<idno type="ORCID">0000-0003-4379-7745</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Izaias</forename><surname>Brasil Da Silva</surname></persName>
+			<idno type="ORCID">0000-0002-6975-3460</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Julia</forename><surname>Ferreira</surname></persName>
+			<idno type="ORCID">0000-0003-2065-6229</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">V A</forename><surname>Fine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Émile</forename><surname>Fonty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcelino</forename><forename type="middle">Carneiro</forename><surname>Guedes</surname></persName>
+			<idno type="ORCID">0000-0003-2702-5614</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Carlos</forename><surname>Licona</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Toby</forename><surname>Pennington</surname></persName>
+			<idno type="ORCID">0000-0002-8196-288X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">A</forename><surname>Peres</surname></persName>
+			<idno type="ORCID">0000-0002-1588-8765</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Boris</forename><forename type="middle">Eduardo</forename><surname>Villa Zegarra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Germaine</forename><forename type="middle">Alexander</forename><surname>Parada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guido</forename><surname>Pardo Molina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><forename type="middle">Antoine</forename><surname>Vos</surname></persName>
+			<idno type="ORCID">0000-0002-0388-8530</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Cerón</surname></persName>
+			<idno type="ORCID">0000-0001-7054-3930</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Maas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcos</forename><surname>Silveira</surname></persName>
+			<idno type="ORCID">0000-0003-0485-7872</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juliana</forename><surname>Stropp</surname></persName>
+			<idno type="ORCID">0000-0002-2831-4066</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Raquel</forename><surname>Thomas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><forename type="middle">R</forename><surname>Baker</surname></persName>
+			<idno type="ORCID">0000-0002-3251-1679</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Doug</forename><surname>Daly</surname></persName>
+			<idno type="ORCID">0000-0003-1205-9491</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Isau</forename><surname>Huamantupa-Chuquimaco</surname></persName>
+			<idno type="ORCID">0000-0002-4153-5875</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ima</forename><forename type="middle">Célia Guimarães</forename><surname>Vieira</surname></persName>
+			<idno type="ORCID">0000-0003-1233-318X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bianca</forename><surname>Weiss Albuquerque</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alfredo</forename><surname>Fuentes</surname></persName>
+			<idno type="ORCID">0000-0003-4848-4182</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bente</forename><surname>Klitgaard</surname></persName>
+			<idno type="ORCID">0000-0002-8509-0556</idno>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">Luis</forename><surname>Marcelo-Peña</surname></persName>
+			<idno type="ORCID">0000-0002-0095-4643</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Miles</forename><forename type="middle">R</forename><surname>Silman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Sebastián</forename><surname>Tello</surname></persName>
+			<idno type="ORCID">0000-0003-2539-6796</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Corine</forename><surname>Vriesendorp</surname></persName>
+			<idno type="ORCID">0000-0003-2119-6797</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jerome</forename><surname>Chave</surname></persName>
+			<idno type="ORCID">0000-0002-7766-1347</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Anthony</forename><surname>Di Fiore</surname></persName>
+			<idno type="ORCID">0000-0001-8893-9052</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Renato</forename><forename type="middle">Richard</forename><surname>Hilário</surname></persName>
+			<idno type="ORCID">0000-0002-0346-0921</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Fernando</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gonzalo</forename><surname>Rivas-Torres</surname></persName>
+			<idno type="ORCID">0000-0002-2704-8288</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Patricio</forename><surname>Von Hildebrand</surname></persName>
+			<idno type="ORCID">0000-0002-3635-4199</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luciana</forename><forename type="middle">De Oliveira</forename><surname>Pereira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edelcilio</forename><forename type="middle">Marques</forename><surname>Barbosa</surname></persName>
+			<idno type="ORCID">0000-0003-1331-8563</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luiz</forename><forename type="middle">Carlos</forename><surname>De Matos Bonates</surname></persName>
+			<idno type="ORCID">0000-0002-9421-6624</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hilda</forename><forename type="middle">Paulette Dávila</forename><surname>Doza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><surname>Zárate Gómez</surname></persName>
+			<idno type="ORCID">0000-0002-5904-8020</idno>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><forename type="middle">Pepe</forename><surname>Gallardo Gonzales</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Therany</forename><surname>Gonzales</surname></persName>
+			<idno type="ORCID">0000-0002-1885-2362</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yadvinder</forename><surname>Malhi</surname></persName>
+			<idno type="ORCID">0000-0002-3503-4783</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ires</forename><forename type="middle">Paula</forename><surname>De Andrade Miranda</surname></persName>
+			<idno type="ORCID">0000-0002-0414-2183</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Linder</forename><forename type="middle">Felipe</forename><surname>Mozombite Pinto</surname></persName>
+			<idno type="ORCID">0000-0001-7701-4038</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adriana</forename><surname>Prieto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Agustín</forename><surname>Rudas</surname></persName>
+			<idno type="ORCID">0000-0002-9070-2588</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ademir</forename><forename type="middle">R</forename><surname>Ruschel</surname></persName>
+			<idno type="ORCID">0000-0002-0352-5238</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Natalino</forename><surname>Silva</surname></persName>
+			<idno type="ORCID">0000-0003-4068-2432</idno>
+		</author>
+		<author>
+			<persName><forename type="first">César</forename><forename type="middle">I A</forename><surname>Vela</surname></persName>
+			<idno type="ORCID">0000-0001-7177-8352</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Egleé</forename><forename type="middle">L</forename><surname>Zent</surname></persName>
+			<idno type="ORCID">0000-0002-7475-7335</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stanford</forename><surname>Zent</surname></persName>
+			<idno type="ORCID">0000-0002-5197-1638</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Angela</forename><surname>Cano</surname></persName>
+			<idno type="ORCID">0000-0002-5090-7730</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yrma</forename><forename type="middle">Andreina</forename><surname>Carrero Márquez</surname></persName>
+			<idno type="ORCID">0000-0002-9564-2836</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Diego</forename><forename type="middle">F</forename><surname>Correa</surname></persName>
+			<idno type="ORCID">0000-0002-6510-4906</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Janaina</forename><forename type="middle">Barbosa Pedrosa</forename><surname>Costa</surname></persName>
+			<idno type="ORCID">0000-0002-6289-202X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Galbraith</surname></persName>
+			<idno type="ORCID">0000-0002-5555-4823</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Milena</forename><surname>Holmgren</surname></persName>
+			<idno type="ORCID">0000-0001-5963-5527</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Michelle</forename><surname>Kalamandeen</surname></persName>
+			<idno type="ORCID">0000-0001-5385-7444</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guilherme</forename><surname>Lobo</surname></persName>
+			<idno type="ORCID">0000-0002-0909-9639</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marcelo</forename><forename type="middle">Trindade</forename><surname>Nascimento</surname></persName>
+			<idno type="ORCID">0000-0003-4492-3344</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandre</forename><forename type="middle">A</forename><surname>Oliveira</surname></persName>
+			<idno type="ORCID">0000-0001-5526-8109</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hirma</forename><surname>Ramirez-Angulo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maira</forename><surname>Rocha</surname></persName>
+			<idno type="ORCID">0000-0002-8587-5943</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Veridiana</forename><forename type="middle">Vizoni</forename><surname>Scudeller</surname></persName>
+			<idno type="ORCID">0000-0002-7649-5818</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rodrigo</forename><surname>Sierra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Milton</forename><surname>Tirado</surname></persName>
+			<idno type="ORCID">0009-0006-2215-1514</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Geertje</forename><surname>Van Der Heijden</surname></persName>
+			<idno type="ORCID">0000-0002-2110-5173</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emilio</forename><surname>Vilanova Torre</surname></persName>
+			<idno type="ORCID">0000-0001-6289-5127</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><forename type="middle">Augusto</forename><surname>Ahuite Reategui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cláudia</forename><surname>Baider</surname></persName>
+			<idno type="ORCID">0000-0002-2203-2076</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Henrik</forename><surname>Balslev</surname></persName>
+			<idno type="ORCID">0000-0002-7101-7120</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sasha</forename><surname>Cárdenas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luisa</forename><forename type="middle">Fernanda</forename><surname>Casas</surname></persName>
+			<idno type="ORCID">0000-0002-6327-9163</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Farfan-Rios</surname></persName>
+			<idno type="ORCID">0000-0002-3196-0317</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cid</forename><surname>Ferreira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reynaldo</forename><surname>Linares-Palomino</surname></persName>
+			<idno type="ORCID">0000-0002-7631-5549</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Casimiro</forename><surname>Mendoza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Italo</forename><surname>Mesones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ligia</forename><forename type="middle">Estela</forename><surname>Urrego Giraldo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Villarroel</surname></persName>
+			<idno type="ORCID">0000-0002-8794-4121</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roderick</forename><surname>Zagt</surname></persName>
+			<idno type="ORCID">0000-0002-4351-2490</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Miguel</forename><forename type="middle">N</forename><surname>Alexiades</surname></persName>
+			<idno type="ORCID">0000-0001-5674-5341</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Edmar</forename><forename type="middle">Almeida</forename><surname>De Oliveira</surname></persName>
+			<idno type="ORCID">0000-0002-6446-3376</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Karina</forename><surname>Garcia-Cabrera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lionel</forename><surname>Hernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Walter</forename><surname>Palacios Cuenca</surname></persName>
+			<idno type="ORCID">0000-0002-0350-0399</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Susamar</forename><surname>Pansini</surname></persName>
+			<idno type="ORCID">0000-0001-7859-9306</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniela</forename><surname>Pauletto</surname></persName>
+			<idno type="ORCID">0000-0003-1855-6077</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fredy</forename><surname>Ramirez Arevalo</surname></persName>
+			<idno type="ORCID">0000-0003-2441-9984</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adeilza</forename><forename type="middle">Felipe</forename><surname>Sampaio</surname></persName>
+			<idno type="ORCID">0000-0002-9907-4741</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luis</forename><surname>Valenzuela Gamarra</surname></persName>
+			<idno type="ORCID">0000-0002-6191-0580</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luiz</forename><forename type="middle">E O C</forename><surname>Aragão</surname></persName>
+			<idno type="ORCID">0000-0002-4134-6708</idno>
+		</author>
+		<idno type="DOI">10.1126/science.ade2541</idno>
+		<ptr target="https://www.science.org/doi/10.1126/science.ade2541" />
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<title level="j" type="abbrev">Science</title>
+		<idno type="ISSN">0036-8075</idno>
+		<idno type="ISSNe">1095-9203</idno>
+		<imprint>
+			<biblScope unit="volume">382</biblScope>
+			<biblScope unit="issue">6666</biblScope>
+			<biblScope unit="page" from="103" to="109" />
+			<date type="published" when="2023-10-06">2023</date>
+			<publisher>American Association for the Advancement of Science (AAAS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Potential distributions of pre-Columbian people in Tropical Andean landscapes</title>
+		<author>
+			<persName><forename type="first">Rachel</forename><forename type="middle">K</forename><surname>Sales</surname></persName>
+			<idno type="ORCID">0000-0001-6625-7261</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Crystal</forename><forename type="middle">N H</forename><surname>Mcmichael</surname></persName>
+			<idno type="ORCID">0000-0002-1064-1499</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Suzette</forename><forename type="middle">G A</forename><surname>Flantua</surname></persName>
+			<idno type="ORCID">0000-0001-6526-3037</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kimberley</forename><surname>Hagemans</surname></persName>
+			<idno type="ORCID">0000-0003-4480-9939</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jesse</forename><forename type="middle">R</forename><surname>Zondervan</surname></persName>
+			<idno type="ORCID">0000-0002-7862-3879</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Catalina</forename><surname>González-Arango</surname></persName>
+			<idno type="ORCID">0000-0003-1709-4405</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Warren</forename><forename type="middle">B</forename><surname>Church</surname></persName>
+			<idno type="ORCID">0000-0001-8003-4195</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><forename type="middle">B</forename><surname>Bush</surname></persName>
+			<idno type="ORCID">0000-0001-6894-8613</idno>
+		</author>
+		<idno type="DOI">10.1098/rstb.2020.0502</idno>
+		<ptr target="https://royalsocietypublishing.org/doi/10.1098/rstb.2020.0502" />
+	</analytic>
+	<monogr>
+		<title level="j">Philosophical Transactions of the Royal Society B: Biological Sciences</title>
+		<title level="j" type="abbrev">Phil. Trans. R. Soc. B</title>
+		<idno type="ISSN">0962-8436</idno>
+		<idno type="ISSNe">1471-2970</idno>
+		<imprint>
+			<biblScope unit="volume">377</biblScope>
+			<biblScope unit="issue">1849</biblScope>
+			<biblScope unit="page">20200502</biblScope>
+			<date type="published" when="1849">1849. 2022</date>
+			<publisher>The Royal Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Comment on &quot;Persistent effects of pre-Columbian plant domestication on Amazonian forest composition</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">H</forename><surname>Mcmichael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Feeley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">W</forename><surname>Dick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Piperno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Bush</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.aan8347</idno>
+		<ptr target="https://www-science-org.ezproxy.leidenuniv.nl/doi/10.1126/science.aan8347" />
+	</analytic>
+	<monogr>
+		<title level="j">American Association for the Advancement of Science</title>
+		<imprint>
+			<biblScope unit="volume">358</biblScope>
+			<biblScope unit="issue">6361</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note>Science</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Ancient human disturbances may be skewing our understanding of Amazonian forests</title>
+		<author>
+			<persName><forename type="first">Crystal</forename><forename type="middle">N H</forename><surname>Mcmichael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frazer</forename><surname>Matthews-Bird</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Farfan-Rios</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">J</forename><surname>Feeley</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.1614577114</idno>
+		<ptr target="https://www.pnas.org/doi/10.1073/pnas.1614577114" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="522" to="527" />
+			<date type="published" when="2017-01-03">2017</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The domestication of Amazonia before European conquest</title>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">R</forename><surname>Clement</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rspb.2015.0813</idno>
+		<ptr target="https://royalsocietypublishing.org/doi/10.1098/rspb.2015.0813" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the Royal Society B: Biological Sciences</title>
+		<imprint>
+			<biblScope unit="volume">282</biblScope>
+			<biblScope unit="page">20150813</biblScope>
+			<date type="published" when="1812">1812. 2015</date>
+			<publisher>Royal Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">The impact of light quality and leaf wetness on photosynthesis in north-west Andean tropical montane cloud forest</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Letts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Mulligan</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/S0266467405002488</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Tropical Ecology</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="549" to="557" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Tropical montane cloud forest: environmental drivers of vegetation structure and ecosystem function</title>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">J</forename><surname>Fahey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruth</forename><forename type="middle">E</forename><surname>Sherman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edmund</forename><forename type="middle">V J</forename><surname>Tanner</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0266467415000176</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Tropical Ecology</title>
+		<title level="j" type="abbrev">J. Trop. Ecol.</title>
+		<idno type="ISSN">0266-4674</idno>
+		<idno type="ISSNe">1469-7831</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="355" to="367" />
+			<date type="published" when="2016">2016</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Natural disturbance, vegetation patterns and ecological dynamics in tropical montane forests</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Crausbay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">H</forename><surname>Martin</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/S0266467416000328</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Tropical Ecology</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="384" to="403" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">H</forename><surname>Langebaek</surname></persName>
+		</author>
+		<title level="m">Cuántos eran?¿ Dónde estaban?¿ Qué les pasó? Poblamiento indígena en la Colombia prehispánica y su transformación después de la Conquista, in Colombia. Preguntas y respuestas sobre su pasado y su presente (Ediciones Uniandes)</title>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="27" to="52" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Colombia prehispánica: regiones arqueológicas (Colcultura, Instituto Colombiano de Antropología</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">Botiva</forename><surname>Contreras</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">The origins of Amazonian landscapes: Plant cultivation, domestication and the spread of food production in tropical South America</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Iriarte</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.quascirev.2020.106582</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0277379120305448" />
+	</analytic>
+	<monogr>
+		<title level="j">Quaternary Science Reviews</title>
+		<imprint>
+			<biblScope unit="volume">248</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Dictyocaryum lamarckianum (Mart.) H. Wendl</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">Y</forename><surname>Paniagua-Zambrana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Bussmann</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-77093-299-1</idno>
+		<ptr target="https://doi.org/10.1007/978-3-319-77093-2_99-1" />
+	</analytic>
+	<monogr>
+		<title level="m">Ethnobotany of the Andes</title>
+		<editor>
+			<persName><forename type="first">N</forename><forename type="middle">Y</forename><surname>Paniagua-Zambrana</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Bussmann</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="1" to="17" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Fundamentos filosófico-pedagógicos para la educación superior en economía</title>
+		<author>
+			<persName><forename type="first">Luis</forename><forename type="middle">Augusto</forename><surname>Panchi Vasco</surname></persName>
+			<idno type="ORCID">0000-0002-6825-4002</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Esteban</forename><forename type="middle">Fausto</forename><surname>Ayala Costales</surname></persName>
+			<idno type="ORCID">0009-0007-0910-012X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Héctor</forename><forename type="middle">Aníbal</forename><surname>Loyaga Méndez</surname></persName>
+			<idno type="ORCID">0000-0002-9315-9816</idno>
+		</author>
+		<idno type="DOI">10.17163/abyaups.112.941</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Filosofía de la educación. Transformaciones, desafíos y prácticas pedagógicas</title>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Balslev</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">H</forename><surname>Macia</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Navarrete</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Quito, Ecuador</addrLine></address></meeting>
+		<imprint>
+			<publisher>spue</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="498" to="534" />
+		</imprint>
+		<respStmt>
+			<orgName>Pontificia Universidad Católica del Ecuador</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Beyond Visualization: Remote Sensing Applications in Prehispanic Settlements to Understand Ancient Anthropogenic Land Use and Occupation in the Sierra Nevada de Santa Marta</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Rodríguez</forename><surname>Osorio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Giraldo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Mazuera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Burbano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Figueredo</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/laq.2022.91</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Colombia. Latin American Antiquity</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="821" to="841" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Vargas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Londoño</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Soto</surname></persName>
+		</author>
+		<title level="m">Arqueología de la microcuenca El Congo, Sierra Nevada de Santa Marta</title>
+		<meeting><address><addrLine>Santa Marta, Colombia</addrLine></address></meeting>
+		<imprint>
+			<publisher>Editorial Unimagdalena</publisher>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Network analysis in Tairona chiefdoms of the Río Frío basin, Sierra Nevada de Santa Marta, Colombia</title>
+		<author>
+			<persName><forename type="first">Luis</forename><forename type="middle">Miguel</forename><surname>Soto Rodríguez</surname></persName>
+			<idno type="ORCID">0009-0003-3991-8118</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Carlos</forename><surname>Vargas</surname></persName>
+			<idno type="ORCID">0000-0002-7933-629X</idno>
+		</author>
+		<idno type="DOI">10.1016/j.jas.2025.106230</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0305440325000792" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Archaeological Science</title>
+		<title level="j" type="abbrev">Journal of Archaeological Science</title>
+		<idno type="ISSN">0305-4403</idno>
+		<imprint>
+			<biblScope unit="volume">179</biblScope>
+			<biblScope unit="page">106230</biblScope>
+			<date type="published" when="2025-07">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Nuevas aproximaciones al urbanismo tairona en la Sierra Nevada de Santa Marta</title>
+		<author>
+			<persName><forename type="first">Santiago</forename><surname>Giraldo</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/j.ctvb4bsr8.7</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Historia de Santa Marta y el &quot;Magdalena Grande&quot; Del período Nahuange al siglo XXI</title>
+		<meeting><address><addrLine>Colombia; Chicago, Illinois</addrLine></address></meeting>
+		<imprint>
+			<publisher>Editorial Unimagdalena</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="101" to="128" />
+		</imprint>
+		<respStmt>
+			<orgName>University of Chicago</orgName>
+		</respStmt>
+	</monogr>
+	<note>Phd thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Paleoecology of the Ciénaga Grande (Great Lagoon) of Santa Marta</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Van Der Hammen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">W</forename><surname>Noldus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">La Sierra Nevada de Santa Marta (Colombia) Transecto Buritaca la Cumbre, T. van der Hammen</title>
+		<editor>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Ruiz</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">(</forename><forename type="middle">J</forename><surname>Eds</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Cramer</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Berlin-Stuggart</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Germany</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1984">1984</date>
+			<biblScope unit="page" from="581" to="588" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Herrera</surname></persName>
+		</author>
+		<title level="m">La Sierra Nevada de Santa Marta (Colombia) Transecto Buritaca la Cumbre, T. van der Hammen</title>
+		<editor>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Ruiz</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">(</forename><forename type="middle">J</forename><surname>Eds</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Cramer</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Berlin-Stuggart</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Germany</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1984">1984</date>
+			<biblScope unit="page" from="531" to="546" />
+		</imprint>
+	</monogr>
+	<note>Buritaca 200: survey of the archaeology and a palynological investigation</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Humans and climate in ritualized landscapes, the case of Lake Tota in the eastern highlands of Colombia</title>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">I</forename><surname>Vélez</surname></persName>
+			<idno type="ORCID">0000-0003-2990-6343</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><surname>Salgado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miguel</forename><surname>Delgado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luisa</forename><forename type="middle">F</forename><surname>Patiño</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Broxton</forename><surname>Bird</surname></persName>
+			<idno type="ORCID">0000-0003-2665-2528</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jaime</forename><forename type="middle">H</forename><surname>Escobar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><surname>Fajardo</surname></persName>
+			<idno type="ORCID">0000-0002-1216-821X</idno>
+		</author>
+		<idno type="DOI">10.1177/09596836241266408</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Holocene</title>
+		<title level="j" type="abbrev">The Holocene</title>
+		<idno type="ISSN">0959-6836</idno>
+		<idno type="ISSNe">1477-0911</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1587" to="1597" />
+			<date type="published" when="2024-09-04">2024</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Niche construction, biological evolution, and cultural change</title>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">N</forename><surname>Laland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Odling-Smee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcus</forename><forename type="middle">W</forename><surname>Feldman</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0140525x00002417</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Behavioral and Brain Sciences</title>
+		<title level="j" type="abbrev">Behav Brain Sci</title>
+		<idno type="ISSN">0140-525X</idno>
+		<idno type="ISSNe">1469-1825</idno>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="131" to="146" />
+			<date type="published" when="2000-02">2000</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Diversity, composition, and structure of a 1-hectare tree plot in the cloud forest of the Sierra Nevada de Santa Marta, Colombia</title>
+		<author>
+			<persName><forename type="first">Riley</forename><forename type="middle">P</forename><surname>Fortier</surname></persName>
+			<idno type="ORCID">0000-0003-4032-7676</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Manuel</forename><surname>Bernal-Escobar</surname></persName>
+			<idno type="ORCID">0000-0003-2888-1068</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alyssa</forename><forename type="middle">T</forename><surname>Kullberg</surname></persName>
+			<idno type="ORCID">0000-0002-1521-439X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Camilo</forename><surname>Osorio Ospina</surname></persName>
+			<idno type="ORCID">0009-0002-8690-8601</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yeison</forename><surname>Herrera Medina</surname></persName>
+			<idno type="ORCID">0000-0002-6059-0757</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lina</forename><surname>Aragón</surname></persName>
+			<idno type="ORCID">0000-0001-5389-2733</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Camilo</forename><surname>Palacios Hurtado</surname></persName>
+			<idno type="ORCID">0009-0001-9726-7945</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><forename type="middle">Paula</forename><surname>Contreras</surname></persName>
+			<idno type="ORCID">0000-0001-8930-2272</idno>
+		</author>
+		<idno type="DOI">10.1186/s13595-024-01239-6</idno>
+		<ptr target="https://doi.org/10.1186/s13595-024-01239-6" />
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Forest Science</title>
+		<title level="j" type="abbrev">Annals of Forest Science</title>
+		<idno type="ISSNe">1297-966X</idno>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">24</biblScope>
+			<date type="published" when="2024-06-26">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Floristic composition and structure of forested areas along the low basin of the San Salvador river, north side of Sierra Nevada de Santa Marta</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dechner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Diazgranados</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Colombia. Univ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="99" to="124" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Successional dynamics in Neotropical forests are as uncertain as they are predictable</title>
+		<author>
+			<persName><forename type="first">Natalia</forename><surname>Norden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Héctor</forename><forename type="middle">A</forename><surname>Angarita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frans</forename><surname>Bongers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Miguel</forename><surname>Martínez-Ramos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Iñigo</forename><surname>Granzow-De La Cerda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michiel</forename><surname>Van Breugel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edwin</forename><surname>Lebrija-Trejos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><forename type="middle">A</forename><surname>Meave</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Vandermeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">Bruce</forename><surname>Williamson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bryan</forename><surname>Finegan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rita</forename><surname>Mesquita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robin</forename><forename type="middle">L</forename><surname>Chazdon</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.1500403112</idno>
+		<ptr target="https://www.pnas.org/doi/abs/10.1073/pnas.1500403112" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="issue">26</biblScope>
+			<biblScope unit="page" from="8013" to="8018" />
+			<date type="published" when="2015-06-15">2015</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Plant species richness at archaeological sites suggests ecological legacy of Indigenous subsistence on the Colorado Plateau</title>
+		<author>
+			<persName><forename type="first">Bruce</forename><forename type="middle">M</forename><surname>Pavlik</surname></persName>
+			<idno type="ORCID">0000-0003-2504-3798</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lisbeth</forename><forename type="middle">A</forename><surname>Louderback</surname></persName>
+			<idno type="ORCID">0000-0002-9549-3455</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">B</forename><surname>Vernon</surname></persName>
+			<idno type="ORCID">0000-0003-0098-5092</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">M</forename><surname>Yaworsky</surname></persName>
+			<idno type="ORCID">0000-0002-4620-9569</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cynthia</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arnold</forename><surname>Clifford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">F</forename><surname>Codding</surname></persName>
+			<idno type="ORCID">0000-0001-7977-8568</idno>
+		</author>
+		<idno type="DOI">10.1073/pnas.2025047118</idno>
+		<ptr target="https://www.pnas.org/doi/abs/10.1073/pnas.2025047118" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="issue">21</biblScope>
+			<biblScope unit="page">2025047118</biblScope>
+			<date type="published" when="2021-05-17">2021</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Using floristic characteristics of contemporary vegetation for identifying archaeological sites: Tel ‘Eton archaeological site as a test case</title>
+		<author>
+			<persName><forename type="first">Yair</forename><surname>Sapir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuval</forename><surname>Sapir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Avraham</forename><surname>Faust</surname></persName>
+		</author>
+		<idno type="DOI">10.1163/22238980-00001029</idno>
+		<ptr target="https://brill.com/view/journals/ijps/66/1-2/article-p60_60.xml" />
+	</analytic>
+	<monogr>
+		<title level="j">Israel Journal of Plant Sciences</title>
+		<title level="j" type="abbrev">Israel J. Plant Sci.</title>
+		<idno type="ISSNe">2223-8980</idno>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="60" to="68" />
+			<date type="published" when="2019-03-11">2019</date>
+			<publisher>Walter de Gruyter GmbH</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Archaeological sites as Distributed Long-term Observing Networks of the Past (DONOP)</title>
+		<author>
+			<persName><forename type="first">George</forename><surname>Hambrecht</surname></persName>
+			<idno type="ORCID">0000-0002-9864-1521</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cecilia</forename><surname>Anderung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seth</forename><surname>Brewington</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Dugmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ragnar</forename><surname>Edvardsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francis</forename><surname>Feeley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Gibbons</surname></persName>
+			<idno type="ORCID">0000-0002-7216-4499</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ramona</forename><surname>Harrison</surname></persName>
+			<idno type="ORCID">0000-0003-0242-9401</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Megan</forename><surname>Hicks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rowan</forename><surname>Jackson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guðbjörg</forename><forename type="middle">Ásta</forename><surname>Ólafsdóttir</surname></persName>
+			<idno type="ORCID">0000-0002-2814-9160</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marcy</forename><surname>Rockman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konrad</forename><surname>Smiarowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Streeter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vicki</forename><surname>Szabo</surname></persName>
+			<idno type="ORCID">0000-0003-2228-1918</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Mcgovern</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.quaint.2018.04.016</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S1040618217311746" />
+	</analytic>
+	<monogr>
+		<title level="j">Quaternary International</title>
+		<title level="j" type="abbrev">Quaternary International</title>
+		<idno type="ISSN">1040-6182</idno>
+		<imprint>
+			<biblScope unit="volume">549</biblScope>
+			<biblScope unit="page" from="218" to="226" />
+			<date type="published" when="2020-05">2020</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Individual tree detection and species classification of Amazonian palms using UAV images and deep learning</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Ferreira</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.foreco.2020.118397</idno>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S037811272031166X" />
+	</analytic>
+	<monogr>
+		<title level="j">Forest Ecology and Management</title>
+		<imprint>
+			<biblScope unit="volume">475</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">SSDA-YOLO: Semi-supervised domain adaptive YOLO for cross-domain object detection</title>
+		<author>
+			<persName><forename type="first">Huayi</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongtao</forename><surname>Lu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cviu.2023.103649</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Vision and Image Understanding</title>
+		<title level="j" type="abbrev">Computer Vision and Image Understanding</title>
+		<idno type="ISSN">1077-3142</idno>
+		<imprint>
+			<biblScope unit="volume">229</biblScope>
+			<biblScope unit="page">103649</biblScope>
+			<date type="published" when="2023-03">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Domain adaptive YOLO for one-stage cross-domain detection</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tuo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Jing</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Asian conference on machine learning (PMLR) (2021)</title>
+		<imprint>
+			<biblScope unit="page" from="785" to="797" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Mapping oil palm density at country scale: An active learning approach</title>
+		<author>
+			<persName><forename type="first">Andrés</forename><forename type="middle">C</forename><surname>Rodríguez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>D'aronco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Konrad</forename><surname>Schindler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><forename type="middle">D</forename><surname>Wegner</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.rse.2021.112479</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing of Environment</title>
+		<title level="j" type="abbrev">Remote Sensing of Environment</title>
+		<idno type="ISSN">0034-4257</idno>
+		<imprint>
+			<biblScope unit="volume">261</biblScope>
+			<biblScope unit="page">112479</biblScope>
+			<date type="published" when="2021-08">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Arquitectura y urbanismo en la cultura Tairona</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Serje</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bol. Mus. Oro</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="87" to="96" />
+			<date type="published" when="1987">1987</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<title level="m" type="main">Social and economic development of a specialized community in Chengue, Parque Tairona, Colombia</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dever</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007">2007</date>
+			<pubPlace>Pittsburgh, Pennsylvania</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Pittsburgh</orgName>
+		</respStmt>
+	</monogr>
+	<note>Ph.D. thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Las sociedades originarias de la Sierra Nevada de Santa Marta Ocupación espacial y desarrollo arquitectónico Siglos x al xvi (ediciones doce calles</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">Gutiérrez</forename><surname>Montoya</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<pubPlace>Madrid</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Etnografía de una negociación intercultural el caso de la Línea Negra - Seshiza -, territorio ancestral de los pueblos indígenas Kogui, Arhuaco, Wiwa y Kankuamo de la Sierra Nevada de Santa Marta</title>
+		<author>
+			<persName><forename type="first">Mayra</forename><forename type="middle">Alejandra</forename><surname>Oros Vargas</surname></persName>
+		</author>
+		<idno type="DOI">10.11144/javeriana.10554.36169</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<publisher>Editorial Pontificia Universidad Javeriana</publisher>
+			<pubPlace>Barranquilla, Atlántico</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Univerisidad de la Costa C.U.C.</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Ba thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Cultural Change and Environmental Awareness: A Case Study of the Sierra Nevada de Santa Marta, Colombia</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Reichel-Dolmatoff</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/3673093</idno>
+		<ptr target="http://www.jstor.org/stable/3673093" />
+	</analytic>
+	<monogr>
+		<title level="j">Mountain Research and Development</title>
+		<title level="j" type="abbrev">Mountain Research and Development</title>
+		<idno type="ISSN">0276-4741</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">289</biblScope>
+			<date type="published" when="1982-08">1982</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">El área de Cultura en el gobierno nacional:</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Cadavid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Herrera</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/jj.15454012.5</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Batallas culturales</title>
+		<imprint>
+			<publisher>Prometeo Editorial</publisher>
+			<date type="published" when="1985">1985</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="25" to="54" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Arqueología y conservación de la localidad precolombina de Buritaca 200 en la Sierra Nevada de Santa Marta</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Groot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inform. Antropol</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="55" to="102" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Herrera</surname></persName>
+		</author>
+		<title level="m">Agricultural activity in the Sierra Nevada de Santa Marta (Colombia): historical perspective</title>
+		<editor>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Ruiz</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">(</forename><forename type="middle">J</forename><surname>Eds</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Cramer</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Berlin-Stuggart</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Germany</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1984">1984</date>
+			<biblScope unit="page" from="501" to="530" />
+		</imprint>
+	</monogr>
+	<note>La Sierra Nevada de Santa Marta (Colombia) Transecto Buritaca la Cumbre, T. van der Hammen</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Capítulo 11: Un instrumento para identificar oportunidades en iniciativas de turismo de naturaleza: caso de estudio de las familias de la comunidad TICOYA en el municipio de Puerto Nariño – Amazonas - Colombia</title>
+		<author>
+			<persName><forename type="first">Ana</forename><forename type="middle">Milena</forename><surname>Molina</surname></persName>
+			<idno type="ORCID">0000-0002-8473-5156</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emilmar</forename><forename type="middle">Sulamit</forename><surname>Rodríguez Caldera</surname></persName>
+			<idno type="ORCID">0000-0002-5633-4945</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jaime</forename><forename type="middle">Andrés</forename><surname>Erazo</surname></persName>
+			<idno type="ORCID">0000-0003-3733-9588</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">Andrés</forename><surname>Gaviria Mendoza</surname></persName>
+			<idno type="ORCID">0000-0002-3741-4325</idno>
+		</author>
+		<idno type="DOI">10.59899/ges-cono-68-c11</idno>
+		<ptr target="https://hdl.handle.net/10481/89459" />
+	</analytic>
+	<monogr>
+		<title level="m">Gestión del conocimiento. Perspectiva multidisciplinaria (libro 68)</title>
+		<meeting><address><addrLine>Sierra Nevada de Santa Marta; Granada, Spain</addrLine></address></meeting>
+		<imprint>
+			<publisher>Fondo Editorial de la Universidad Nacional Experimental Sur del Lago, Jesús María Semprum (UNESUR)</publisher>
+			<date type="published" when="2024-09-30">2024</date>
+			<biblScope unit="page" from="195" to="209" />
+		</imprint>
+		<respStmt>
+			<orgName>Universidad de Granada</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Phd thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Van Der Hammen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">;</forename><surname>Ruiz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">La</forename><surname>Sierra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nevada</forename><surname>De</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Santa</forename><surname>Marta</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note>Colombia</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Transecto</forename><surname>Buritaca</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">-La</forename><surname>Cumbre</surname></persName>
+		</author>
+		<ptr target="http://www.schweizerbart.de//publications/detail/isbn/9783443650018/Studies\_on\_Tropical\_Andean\_Ecosystems\_" />
+		<imprint>
+			<date type="published" when="1986">1986</date>
+			<publisher>Schweizerbart Science Publishers</publisher>
+			<biblScope unit="volume">2</biblScope>
+			<pubPlace>Stuttgart, Germany</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Field Guide to the Palms of the Americas</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Henderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gloria</forename><surname>Galeano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rodrigo</forename><surname>Bernal</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/9780691197708</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Field guide to the palms of the Americas</title>
+		<imprint>
+			<publisher>Princeton University Press</publisher>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Real-Time End-to-End Object Detection</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wang</surname></persName>
+		</author>
+		<ptr target="https://proceedings.neurips.cc/paper_files/paper/2024/file/c34" />
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Globerson</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="107984" to="108011" />
+		</imprint>
+	</monogr>
+	<note>ddd05eb089991f06f3c5dc36836e0-Paper-Conference.pdf</note>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Density-Based Clustering Based on Hierarchical Density Estimates</title>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">J G B</forename><surname>Campello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Davoud</forename><surname>Moulavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joerg</forename><surname>Sander</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-37456-2_14</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Pei</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">V</forename><forename type="middle">S</forename><surname>Tseng</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">L</forename><surname>Cao</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">H</forename><surname>Motoda</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">G</forename><surname>Xu</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Berlin Heidelberg, Berlin, Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Berlin Heidelberg</publisher>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="160" to="172" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<author>
+			<persName><forename type="first">Dictyocaryum</forename><forename type="middle">H</forename><surname>Gbif</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Wendl</surname></persName>
+		</author>
+		<idno type="DOI">10.15468/DL.ND44PT</idno>
+		<ptr target="https://www.gbif.org/occurrence/download/0025145-250310093411724" />
+	</analytic>
+	<monogr>
+		<title level="m">Occurrence Download</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="2025" to="2028" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">NASA Shuttle Radar Topography Mission Global 1 arc second [Data set</title>
+		<author>
+			<persName><forename type="first">Nasa</forename><surname>Jpl</surname></persName>
+		</author>
+		<idno type="DOI">10.5067/MEASURES/SRTM/SRTMGL1.003</idno>
+		<ptr target="https://doi.org/10.5067/MEASURES/SRTM/SRTMGL1.003" />
+	</analytic>
+	<monogr>
+		<title level="m">nASA Land Processes Distributed Active Archive Center</title>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="2025" to="2026" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

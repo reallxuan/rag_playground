@@ -1,0 +1,1498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">AI-ming backwards: Vanishing archaeological landscapes in Mesopotamia and automatic detection of sites on CORONA imagery</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Alessandro</forename><surname>Pistola</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Valentina</forename><surname>Orcid</surname></persName>
+							<idno type="ORCID">0009-0004-8143-6101</idno>
+						</author>
+						<author>
+							<persName><surname>Orrù</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Nicolò</forename><surname>Orcid</surname></persName>
+							<idno type="ORCID">0000-0001-8554-0644</idno>
+						</author>
+						<author role="corresp">
+							<persName><surname>Marchetti</surname></persName>
+							<email>marco.roccetti@unibo.it</email>
+						</author>
+						<author>
+							<persName><forename type="first">Marco</forename><surname>Orcid</surname></persName>
+							<idno type="ORCID">0000-0003-0040-5115</idno>
+						</author>
+						<author>
+							<persName><surname>Roccetti</surname></persName>
+						</author>
+						<author>
+							<affiliation>
+								<orgName>1 Department of Computer Science and Engineering, University of Bologna, </orgName>
+								<address><addrLine>Bologna, Italy Italy</addrLine></address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation>
+								<orgName> 2 Department of History and Cultures, University of Bologna,</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">AI-ming backwards: Vanishing archaeological landscapes in Mesopotamia and automatic detection of sites on CORONA imagery</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">FDA360C127BD9C242F927236FF992D2C</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:29+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>By upgrading an existing deep learning model with the knowledge provided by one of the oldest sets of grayscale satellite imagery, known as CORONA, we improved the AI model's attitude towards the automatic identification of archaeological sites in an environment which has been completely transformed in the last five decades, including the complete destruction of many of those same sites.</p><p>The initial Bing-based convolutional network model was re-trained using CORONA satellite imagery for the district of Abu Ghraib, west of Baghdad, central Mesopotamian floodplain. The results were twofold and surprising. First, the detection precision obtained on the area of interest increased sensibly: in particular, the Intersection-over-Union (IoU) values, at the image segmentation level, surpassed 85%, while the general accuracy in detecting archeological sites reached 90%. Second, our re-trained model allowed the identification of four new sites of archaeological interest (confirmed through field verification), previously not identified by archaeologists with traditional techniques. This has confirmed the efficacy of using AI techniques and the CORONA imagery from the 1960s to discover archaeological sites currently no longer visible, a concrete breakthrough with significant consequences for the study of landscapes with vanishing archaeological evidence induced by anthropization.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>For the study of archaeological landscapes in the Near East and the reconstruction of settlement patterns therein, the primary objective is the identification, localization and chronological characterization of ancient settlements: those considered in this analysis are predominantly tells, both because they represent the most widespread type of ancient settlement evidence in the region under study and because of their high visibility starting already from preliminary remote sensing approaches.</p><p>A tell is an artificial mound created by the accumulated debris from centuries of human habitation. These mounds typically form in regions such as the Mesopotamian floodplain, where communities repeatedly built and rebuilt their settlements at the same site with perishable material. Prior to any field verification, the very first step for site identification is remote sensing, which has been a key resource for archaeologists for many years, being a non-invasive method that contributes to the detection and preservation of cultural heritage, it requires, however, a large amount of expert human work and consequently requires a significant amount of time <ref type="bibr" target="#b0">[1]</ref><ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref>. It goes without saying that using deep learning techniques as a support to human efforts could open new perspectives. For example, deep learning abilities can be put to good use for automatically analyzing satellite imagery, especially using a technique called semantic segmentation which, in simple words, consists of assigning a class label to each pixel in an image, up to a point where the entire image is recognized as easily interpretable by archaeologists. Several works in this field have confirmed the efficacy of this approach <ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref>. Finally, it is worth mentioning that since the time when we began our research activity in the area of Deep Learning applied to archaeology, many other similar initiatives have taken shape and have been brought to the forefront of scientific discussion. We are well aware that a wealth of studies have made relevant advances in this field <ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref>. In order to avoid any misunderstanding, we should state at the onset that here are (at least) two axes along which specialists can look at similarities or differences in these kinds of research. The first one concerns the remote sensing methodologies employed to gather the data on which various Artificial Intelligence techniques can work. Using passive or active approaches, satellites or aircrafts, radar or LiDAR or any other typology of sensors emitting their own signals, or a combination of some of them, constitutes a relevant difference that extends till the point of a distinction (or divergence) in the meaning of the results which can be obtained, irrespective of the type of data, since working with new rather than old (e.g., CORONA, in our specific case) high resolution imagery represents another important source of differentiation. The second axis is that of the distinction between Machine Learning (ML) and Deep Learning (DL). ML are algorithms that learn from structured data to predict outputs and discover patterns in that data. DL, instead, is always based on highly complex neural networks that mimic the way a human brain works to detect patterns in large unstructured data (like images). A traditional ML algorithm can be something as simple as linear regression or a search in a decisional tree, the driving force behind being often that of ordinary statistics. DL algorithms, instead, should be regarded as a sophisticated and mathematically complex evolution of ML. To achieve this result, DL mechanisms use a layered structure of algorithms, called artificial neural networks, with a specific design based on a cascade of several different computational blocks, inspired by the biological neural network of the human brain, and leading to a process of learning that is far more capable than that of standard ML models. It should be also considered that with DL one can often fall into an excess of inference to which it is difficult (even not possible) to give a formal explanation. An extension of this discussion, tailored to the archaeological field, has been reported elsewhere <ref type="bibr" target="#b14">[15]</ref>. Consequently, applying either ML or DL makes an important difference, being often unfair (or nonsensical), in the light of the explanation above, a comparison between studies that adopt different approaches. Given these premises, we look at the wealth of researches that have investigated how well AI techniques can work in the archaeological field, not with the aim of conducting one-to-one comparisons with specific papers that could have followed different approaches, but rather with the responsibility of witnessing the level of productivity of the entire community in this specific field.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Our previous work</head><p>Building on a long-term scientific collaboration between AI-ers and archaeologists at the University of Bologna, Italy <ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref><ref type="bibr" target="#b18">[19]</ref>, a deep learning model was recently proposed, enhanced with segmentation and self-attention mechanisms, which was able to detect mounded archaeological sites in the Mesopotamian floodplain in southern Iraq. A set of modern (Bing-based) georeferenced vector shapes were used as data source, corresponding to the outlines of the previously mentioned tells and surrounding areas, totaling 4934 shapefiles in the southern Mesopotamian floodplain, which constitute the entirety of the surveyed and published sites in the area <ref type="bibr">[Floodplains Project,</ref><ref type="bibr" target="#b14">15]</ref>. Each image in that dataset was subjected to a variety of image manipulation techniques (including, for example, random rotation, mirroring, brightness and contrast correction) and it was then given as an input to train a convolutional neural network, augmented with segmentation and self-attention mechanisms. In the end, the result of this activity was a deep learning model able to detect archaeological sites in the area of interest, which achieved during a test on a set of already known sites an Intersection Over Union (IoU) score of 0.81, with a general accuracy in the neighborhood of 80%. This first work had, nonetheless, two important limitations. First, an initial attempt to exploit CORONA satellite imagery was unsuccessful, probably due to our inability to integrate this panchromatic imagery with full color pictures. Second, the entire testing activity was conducted on hundreds of already known archaeological sites, without the possibility of challenging the machine predictions on sites not already groundtruthed. Computer scientists' wish, instead, would have been to make those automatic predictions on sites not already certified as tells and, upon confirmation by the archaeologists, subjecting them to a process of groundtruthing, to understand in reality whether those predictions were accurate or not.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>New developments</head><p>The study area selected for this research is the district of Abu Ghraib, located in central Iraq within the Baghdad Governorate. This region, which had never been the subject of systematic archaeological investigations, except for its easternmost edge explored by Robert McCormick Adams <ref type="bibr" target="#b21">[22]</ref>, was also chosen due to the observed high degree of landscape transformation over recent decades. This contribution is part of a broader landscape archaeology project grounded in well-established traditional methodologies, including conventional remote sensing <ref type="bibr" target="#b19">[20,</ref><ref type="bibr" target="#b20">21]</ref>, field validation with collection and study of associated archaeological evidence, spatial analysis, integrated with AI-based approaches. Between 2023 and 2024, a systematic field survey was carried out with the aim of verifying on the ground all potential sites first identified through remote sensing, both by conventional analysis and by AI-based predictive models. The field investigations confirmed the presence or absence of archaeological remains and allowed, when necessary, for the refinement of site boundaries.</p><p>Since the inception of the project, a central role was played by the assessment of threats to the archaeological heritage. This analysis, a key component of the traditional methodological framework, was conducted by comparing recent satellite imagery with historical CORONA images acquired between 1960 and 1972 through the U.S. reconnaissance program <ref type="bibr" target="#b23">[24]</ref><ref type="bibr" target="#b24">[25]</ref><ref type="bibr" target="#b25">[26]</ref><ref type="bibr" target="#b26">[27]</ref><ref type="bibr" target="#b27">[28]</ref>. The remote sensing analysis systematically documented landscape transformations, identifying major causes of site damage such as agricultural expansion, canal digging, and urban encroachment. These preliminary findings were subsequently validated and further investigated through fieldwork, which allowed for a more precise assessment of the current condition of each site. The results revealed that 38% of sites had been completely destroyed, 23% had lost more than half of their original extent, and only 38% retained more than half of their surface area, as it will be detailed in the final Section of this manuscript.</p><p>As a direct consequence of these findings, a methodological decision was made to focus the training of AI-based predictive models on CORONA imagery, as the only source capable of capturing the archaeological landscape before extensive modern transformations. In essence, the study presented here thus focuses on the use of CORONA imagery to improve the performance of AI-based predictive models. Our previous convolutional neural network was retrained using transfer learning techniques and subjected to a two-stage fine-tuning process, resulting in three distinct configurations: (1) one based exclusively on Bing imagery, (2) one using only CORONA imagery, and (3) a combined configuration.</p><p>The validation of results was carried out in two phases: the first on known sites and areas without archaeological evidence, and the second on new predictions generated by the models, which were also verified through fieldwork. The findings demonstrate that the integration of historical imagery significantly enhances the ability of AI models to detect archaeological sites, confirming the effectiveness of an approach that combines historical sources, technological innovation, and traditional archaeological methods in the reconstruction of historical Mesopotamian landscapes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and Methods</head><p>We first describe the data used in our study, and then we illustrate the methods employed to build our AI models (for accessing all the developed software and the data used in this study, see the Section: Data Availability Statement).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data</head><p>We begin by noticing that all the remote sensing operations we carried out to identify archaeological evidence and to extract the usable data were conducted on the basis of various publicly available basemaps, specifically: current (Google, Bing, and Esri) and historical satellite imagery (CORONA), and topographic maps (US Army 1:100,000 from 1942). During this phase, 88 potential tells were identified, recorded as vector shapefiles and classified with the abbreviation GHR (i.e., the initials of the geographical district of interest: Abu Ghraib) and a sequential number. Starting from that information, the image creation process was based on the following five steps: i) all the shapefiles of the area of interest were imported from Bing and CORONA basemaps into an open-source GIS software [QGIS; 29], ii) sample squares each 2000 meters long, centered on the centroid of any given shapefile, were extracted from those images using a Python script developed by us (this was done in the same way both for Bing, through the QuickMapService plugin, and for the CORONA imagery, via the free services provided by the University of Arkansas' Center for Advanced Spatial Technologies). At that point, iii) we generated the truth masks, that is the masks that put in evidence, at a pixel level, the points either included in a tell or not. After that phase, we were in the obvious situation of having an unbalanced dataset, with a prevalence of non-empty truth masks. To fill this gap, additional images, with an empty truth mask, were generated, to balance the dataset. This was done, iv) by choosing 120 random points in the area of interest (with relative surrounding images, not containing any tell). The final dataset consisted of 88 images (around 41%) each including a tell, and 120 images (almost 59%) not portraying any tell or its parts, totaling a final amount of 208 pictures, on which a training activity could be conducted. Nonetheless, given the relatively small size of this dataset, v) an aggressive data augmentation procedure was exploited that has prevented the overfitting phenomenon. In particular, using the Albumentations library <ref type="bibr" target="#b29">[30]</ref>, three subsequent transformations (geometric, color space and kernel filters) were applied to all the images (Bing, CORONA and truth masks), where each transformation was chosen, in turn, from one of the three separate groups shown in Table <ref type="table" target="#tab_0">1</ref>, with a given probability. Fig. <ref type="figure" target="#fig_0">1</ref> provides three examples of such a pipelined image augmentation process, where the transformations (RandomCrop, Flip, RandomRotate90, GaussNoise, Sharpen, Resize), (RandomCrop, Flip, RandomRotate90, CLAHE, GaussNoise, Sharpen, Resize) and (RandomCrop, Flip, RandomRotate90, RandomBrightnessContrast, MotionBlur, Sharpen, Resize) were applied in the reported cases following that exact sequence.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Methods</head><p>The type of convolutional neural network and the method used to train it were similar to those adopted in our previous works <ref type="bibr" target="#b17">[18,</ref><ref type="bibr" target="#b18">19]</ref>. Nevertheless, while a detailed description may be found there, for the benefit of readers one may remind as follows: our work started by using the PyTorch Segmentation Models library and by defining a Deep Convolutional Neural Network (DCNN) model, called MANet. Its complex architecture is summarized in Fig. <ref type="figure" target="#fig_1">2</ref>. MANets (Multi-scale Attention Networks) are deeplearning neural network tailored to learn robust and discriminative features from high resolution (remote sensing) images. They stacks various multi-scale attention blocks, aiming at reducing spatial and channel redundancy to accelerate convolution. As shown in Fig. <ref type="figure" target="#fig_1">2</ref>, a MANet is composed of three main blocks that act in sequence, one after another: an encoder, a decoder and a segmentation head. The encoder, represented by the leftmost block in the central box of Fig. <ref type="figure" target="#fig_1">2</ref>, constitutes a proper convolutional architecture, based on the well-known Efficientnet-b3 model <ref type="bibr" target="#b30">[31,</ref><ref type="bibr" target="#b31">32]</ref>. Input to this encoder are high resolution images (leftmost box of Fig. <ref type="figure" target="#fig_1">2</ref>), with a given number of channels (as satellite sensors can collect images at various regions of the electromagnetic spectrum) and a corresponding spatial resolution expressed as a matrix of pixels (n x n). This imagery passes, within the encoder, through a cascade of multiple sub-blocks, which implement a convolution procedure, followed by subsequent operations of batch normalization and swish activation. Essentially, the actual image convolution procedure takes place inside the encoder, which consists in converting many pixels within their receptive field (the area of the input that influences a particular feature) into single values, aiming at reducing the number of free parameters, while allowing the network to be deeper. In the end, in our case, the final layers of the encoder return feature maps at a reduced resolution <ref type="bibr">(16 x16</ref>) over 384 channels. With a capillary flow of information from the encoder to the decoder, the latter is activated.</p><p>The decoder represents the true operational core of a MANet (the bottommost block in the central box of Fig. <ref type="figure" target="#fig_1">2</ref>). Its role is to perform a weighted recombination of the features extracted by the encoder, with the ultimate goal of returning segmentation maps (i.e., segmentation shapes). Those segmentation maps are the most-informative output of a MANet, as they can be used to highlight the sub-regions of interest (archaeological, in our case) within the original input images. Our convolutional network, as previously mentioned, implements attention mechanisms. To this end, two important sub-blocks of the decoder are dedicated, specifically a Position-wise Attention Block (or PAB) and a sequence of Multiscale Fusion Attention Blocks (or MFABs). Regarding these attention mechanisms, they allow our models to weigh various latent features within the images, effectively directing the model's attention in this latent space for improved learning <ref type="bibr" target="#b31">[32]</ref>. More precisely, the PAB incorporates a positional encoding mechanism. This mechanism produces an attention map, which effectively pinpoints pixels of greater significance, guiding our architecture to identify regions that require segmentation. Furthermore, through the cascading arrangement of several MFABs, we have implemented a multi-scale strategy.</p><p>This method aggregates features to capture inter-channel relationships, thereby enhancing the robustness of the segmentation. Finally, we have the block at the rightmost position in the central box of Fig. <ref type="figure" target="#fig_1">2</ref>, which represents the segmentation head. This is the final layer, responsible for computing the ultimate segmentation maps. It is the last step where the initial remote sensing images are partitioned into distinct regions, with their pixels homogeneously classified to identify sharper boundaries. At this point, however, as previously mentioned, the segmentation shapes are still at a low resolution. This is where the up sampling blocks come in, simply used to return output maps (rightmost box of Fig. <ref type="figure" target="#fig_1">2</ref>) with the same resolution as the input images. In closing, it is worth noticing that, at the completion of its function, the entire procedure is able to process around ten high resolution images in less than a second. Starting from the DCNN architecture discussed above, we have re-trained our models, initially pretrained on both Imagenet and on the images exploited in our previous work, with the new 208 images introduced in the previous Section, resorting to traditional transfer learning techniques <ref type="bibr" target="#b18">[19,</ref><ref type="bibr" target="#b32">33,</ref><ref type="bibr" target="#b33">34]</ref>. In essence, we aimed at obtaining three new deep learning models, that added to the three ones built during our previous study <ref type="bibr" target="#b18">[19]</ref>, where the re-training activity was based on the use of the new imagery, respectively, provided by Bing, CORONA and a combination of both. As already anticipated, after these training activities, we concluded with a further incremental step of fine-tuning, applied to all the AI models of interest, using a particular technique called two-stage fine-tuning <ref type="bibr" target="#b34">[35]</ref>. Technically speaking, this additional two-stage fine tuning activity, included, in turn, a first phase where, keeping the learning rate unchanged, the weights of the deep layers were frozen, subjecting to training only the segmentation head. In the second phase of this procedure, instead, the weights were unfrozen, reducing the learning rate by a factor of ten, and carrying out a re-training of the entire model, thus reducing the risk of both overfitting and catastrophic forgetting. We conducted this final procedure with the number of training epochs not fixed and proceeded until we detected a stagnation of the loss on the validation set, indicating a possible overfitting to avoid. For the sake of clarity, we summarize this (only apparently) complex situation providing, in the list below, all the six different models, differentiated based on the combination of the training activities to which they were subjected and the type of image dataset used:</p><p>• Bing: the deep learning model trained on Bing basemaps during our previous study <ref type="bibr" target="#b18">[19]</ref>.</p><p>• Bing_Bing: the deep learning model previously trained on Bing basemaps and now re-trained on new Bing basemaps and finally fine-tuned as explained below.</p><p>• CORONA: the deep learning model trained on CORONA basemaps during our previous study <ref type="bibr" target="#b18">[19]</ref>.</p><p>• CORONA_CORONA: the deep learning model previously trained on CORONA basemaps and now re-trained on new CORONA basemaps and finally fine-tuned as explained below.</p><p>• BingCORONA: the deep learning model trained on a combination of Bing and CORONA basemaps during our previous study <ref type="bibr" target="#b18">[19]</ref>.</p><p>• BingCORONA_BingCORONA: the deep learning model previously trained on a combination of Bing and CORONA basemaps and now re-trained on new Bing and CORONA basemaps and finally fine-tuned as explained below.</p><p>Moving to the issue of the type of metrics used to evaluate the efficacy of our system, it is worth mentioning that the accuracy returned by our models was evaluated on the basis of the consideration of two different assessment perspectives: that is, a) through the lens of the semantic segmentation to which each image was subjected (i.e. trying to evaluate the achieved accuracy only at a pixel level), and b) at a more general level, analyzing the confusion matrix, to obtain an assessment of the accuracy and recall values. In particular, to evaluate the results produced by segmentation, we have used three different metrics: i) the Intersection over Union (IoU), ii) the binary Intersection Over Union, (bIoU), and finally iii) the Matthews Correlation Coefficient (MCC). The mathematical definitions of these metrics are beyond the scope of this paper and can be easily retrieved from the specialized literature, more interesting are the motivations for this choice which are as follows. The IoU metric is largely used in similar situations, but it may present various defects as it is recognized that it can return high values that could be not directly related to a better general object recognition, but just to a more precise identification of its contours. Indeed, we used it in this study, because it allowed a comparison with previous results. Its variant, the bIoU, is instead a better candidate to measure the accuracy of detection in terms of the pixels being recognized as a part of a tell. Finally, the measurement of MCC values was added as it should represent the most appropriate metric for the problem under consideration based on findings described in recent literature <ref type="bibr" target="#b35">[36,</ref><ref type="bibr" target="#b36">37]</ref>. Coming to the final phase of our study, upon assessment of the performances of our AI models we chose the one with better accuracy: its results were plotted under the form of a corresponding heatmap, and then passed to the archaeological team on the field.</p><p>Based on these heatmaps, the latter made the final decision on which were the more promising sites deserving a visit during the field survey campaigns.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results</head><p>We must preliminarily mention that, of the 208 initial images, only 10% (i.e., 20 images) were used as subjects of the testing phase. In fact, 156 images (75%) were used for re-training our models, with 32 of them (15%) used during the validation phase. Before discussing the results achieved on the 20 images which were never shown to our models before this testing phase, we deem of interest to report also on the results obtained with the 32 images of the validation phase. Nonetheless, it should be clear that this phase (i.e., the validation phase) constitutes an integral part of the re-training activities discussed in the previous Section. As such, the corresponding results do not represent the ultimate measurement of how well our models recognize tells when new imagery is proposed. Rather, they have given a preliminary assurance that our models have learnt effectively during re-training, with a generic propensity to generalize well to new images. Obviously, monitoring this tendency during training helped us to fine-tune our models for better results. With this in mind, Table <ref type="table" target="#tab_1">2</ref> provides the results obtained with the 32 images of the validation phase. The following factors should be taken into consideration.</p><p>First, being validation a part of the re-training activity, these results are provided only for the three retrained models, namely: Bing_Bing, Bing_CORONA_BingCORONA, and CORONA_CORONA.</p><p>Second, the numerical values of Table <ref type="table" target="#tab_1">2</ref> are not given under the form of average and standard deviation, as they represent, instead, the better values the models achieved (during a specific epoch) before overfitting occurred. Third, these results only focus on the pixel-wise accuracy. The results of Table <ref type="table" target="#tab_2">3</ref> show that the re-training activity we conducted in the present study, combined with the effects of the two-stage fine tuning procedure, has had very positive effects on both the so called BingCORONA_BingCORONA and CORONA_CORONA models, also when compared with the results of our previous study, yielding a notable increase in terms of all the considered metrics. As to the BING_BING model, instead, it only improves on the IoU parameter. The following fact is of great interest: as the most notable increase in accuracy has been achieved in both models based on CORONA satellite imagery, while the simple Bing model presented no significant variation, this adds experimental evidence to the intuition that the combination of the two stage fine tuning procedure with the activities of transfer learning becomes really effective (with more accurate results) only when the corresponding model was built on top of the CORONA imagery. While it is true that in other researches, including the one we conducted previously, the integration of CORONA satellite imagery into generic AI models had produced inconclusive results (with motivations ranging from low resolution up to environmental factors, like cloud cover for example), the present study supports the hypothesis that the inclusion of CORONA imagery has the potential to enhance an AI model's performance that has the task of recognizing tells from satellite imagery. In other words, the improvement we have measured, at a pixel level, substantiates the thesis that transfer learning and complex fine-tuning activities may benefit from the additional contextual information provided by these kinds of imagery, thus corroborating long-established archaeological insights of the same sign. Nonetheless, the results of Table <ref type="table" target="#tab_2">3</ref> have (simply) informed us about the ability of our models to recognize if a given pixel is either comprised within a tell or not. We are, obviously, also interested in elevating our comprehension about the ability of our AI models to recognize a tell as a whole. Table <ref type="table" target="#tab_4">4</ref> gives an answer to this question by providing the results we achieved in terms of the general accuracy in detecting tells, as emerging from the testing activities conducted with the same 20 images mentioned before. The used metrics, here, were those of accuracy and recall (the mathematical definitions of which can be easily retrieved from the specialized literature), while TP stands for true positives, TN: true negatives, FP: false positives and FN: false negatives. Table <ref type="table" target="#tab_2">3</ref>, again, highlights the increased ability of the BingCORONA_BingCORONA model in detecting tells, reaching a detection accuracy in the neighborhood of 90% (while our previous results hardly surpassed 80% <ref type="bibr" target="#b18">[19]</ref>), with a very low percentage of both false positives and negatives. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>New discoveries</head><p>Beyond the positive results reported in Tables <ref type="table" target="#tab_1">2,</ref><ref type="table" target="#tab_2">3</ref>, and 4, the novelty of our work lies in the idea to use machine predictions (upon approval of the domain experts) to decide to extend the set of archaeological sites to be inspected during field survey campaigns, which we did. As already anticipated, our best AI model (i.e., BingCORONA_BingCORONA) produced prediction heatmaps, like that shown in Fig. <ref type="figure" target="#fig_2">3</ref>. These heatmaps were analyzed by the archaeologists who compared them with the list of sites of potential interest identified through standard remote sensing operations. In our case, of which the heatmap in Fig. <ref type="figure" target="#fig_2">3</ref> is an example, our attention was mainly attracted by machine predictions for a number of specific sites that were not previously recognized as potential tells before through traditional methods.</p><p>Of  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Geographical coordinates</head><p>All the coordinates of the above four sites of archaeological interest discovered with the AI mechanism described in this paper follow, indicated using EPSG:3857 as reference system.</p><p>• GHR.079 (point): 4910150.9, 3931922. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion</head><p>In this research, the use of AI techniques has been of great help in support to a process which remains, nonetheless, guided by the archaeologist's knowledge and expertise. Deep learning models have helped towards the aim to identify areas potentially containing archaeological sites, albeit neglected during normal remote sensing operations. It has remained an archaeologists' task to take the final decision about the precise locations of the sites to visit, based on their professional experience. In this sense, our proposed AI-based approach to archaeology has been conceived just to provide additional support to the archaeologists, rather than to replace them. Beyond the impact of the AI, in some sense already documented in a previous study of ours <ref type="bibr" target="#b18">[19]</ref>, it has emerged here also the fundamental role played by the CORONA imagery dataset, and its versatility, especially when used in combination with a deep learning model. This consideration derives not only from our direct experience on the four archaeological sites which were not detectable using the Bing imagery alone, thereby highlighting the substantive impact of incorporating the CORONA satellite imagery into the process, but also considering the state of preservation of the sites which were the subject of the on-field campaigns of 2023 and 2024. To better illustrate this point, Fig. <ref type="figure" target="#fig_5">9</ref> shows that, of the 81 archaeological sites discovered during those campaigns, almost all had been destroyed over the past decades: either completely <ref type="bibr" target="#b30">(31)</ref> or largely <ref type="bibr" target="#b18">(19)</ref> or partially <ref type="bibr" target="#b30">(31)</ref>; where completely means a destruction of almost 100%, largely means over the threshold of 50% and finally partially means below 50%. In this context, the inclusion of CORONA satellite imagery has been fundamental because many of the destroyed sites were no longer visible from modern basemaps (like Bing maps). The CORONA satellite imagery, from the 1960s and early 1970s, has the ability to document a world that has almost disappeared: in the specific case of Abu Ghraib, the loss of the possibility to identify sites with modern basemaps, in fact, would range from 40% to 55%, if totally destroyed sites alone, or totally plus largely destroyed ones, were considered.</p><p>Thus, the development of an automatic process that is able to identify disappearing sites, by including historical imagery, allows everyone to start a fundamental reflection for the protection of the existing/remaining archaeological evidence. To conclude this Section, we would like to add that, while we have documented that an AI-based identification process has the potential to make unexpected discoveries, nonetheless, what should not be forgotten is the awareness that we still do not know how this happens. Precisely, this should be the reason that pushes towards the integration of AI with human experts, through collaborative processes, aimed at mitigating classification errors and incorrect interpretations <ref type="bibr" target="#b37">[38]</ref><ref type="bibr" target="#b38">[39]</ref><ref type="bibr" target="#b39">[40]</ref><ref type="bibr" target="#b40">[41]</ref><ref type="bibr" target="#b41">[42]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>We have described a deep learning model designed to identify sites of potential archaeological interest in the Abu Ghraib district, West of Baghdad in the Mesopotamian floodplain. This AI model has been built incrementally over the past years, using transfer learning techniques and a final two stage fine tuning procedure that has elevated the level of detection accuracy up to 90% (while previous results did not surpass the threshold of 80%). The role played by the CORONA imagery dataset has been fundamental in this context of vanishing archaeological evidence, as it has allowed the AI to see sites no longer visible due to the process of anthropization. Surprisingly, this process has also led to the identification of unexpected archaeological sites, which thus far had not been identified in standard remote sensing operations. In particular, our archaeological team visited the eight new sites suggested by the AI model, also because they had the appropriate morphological characteristics. During our field survey campaign, four of these eight sites have been confirmed as positive cases. In fact, even if they were totally destroyed and no longer visible on the ground, some ceramic sherds could still be collected, making it possible to confirm their existence and date them. It must be acknowledged that without the AI's suggestions, the areas where the sites were confirmed would not have been investigated during routinary field surveys. In the end, the development of AI models able to automatically identify potential sites, no more visible from current basemaps, represents a real breakthrough which could be further extended exploring the possibility of adding other technologies and methods like, for example, LIDAR and super-resolution ones <ref type="bibr" target="#b42">[43]</ref><ref type="bibr" target="#b43">[44]</ref><ref type="bibr" target="#b44">[45]</ref><ref type="bibr" target="#b45">[46]</ref><ref type="bibr" target="#b46">[47]</ref><ref type="bibr" target="#b47">[48]</ref><ref type="bibr" target="#b48">[49]</ref>. While our work has focused on tell-based sites-characterized by distinctive morphologies well-suited to automatic segmentation-it is worth noting that extending this approach to non-mounded contexts would represent a theoretically significant development. However, the lack of recurrent morphological features, the semantic heterogeneity of archaeological traces, and the current scarcity of annotated datasets make such a direction presently difficult to pursue. Advancing in this area would require fundamentally different classification strategies, substantial refinement of source data, and a methodological rethinking that goes beyond the aims and operational scope of the present study.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Fig. 1. Image augmentation pipeline: an example.</figDesc><graphic coords="7,72.00,396.95,451.30,120.65" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig 2 .</head><label>2</label><figDesc>Fig 2. Stylized diagram of the reference architecture for the DCNN with Attention used in this study (with input and output).</figDesc><graphic coords="9,72.00,324.98,427.30,244.43" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 .</head><label>3</label><figDesc>Fig. 3. Example of an AI-generated heatmap used to predict the presence of archaeological sites.</figDesc><graphic coords="14,72.00,284.56,451.30,319.30" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>these sites, eight were accompanied with very high values of probability of being positive cases as returned by the AI model, which led to one of the key results presented in this paper. Subsequently, two field reconnaissance campaigns were conducted in January 2023 and January 2024, covering the Iraqi district of Abu Ghraib at the northwestern apex of the Mesopotamian floodplain. Field activities were directed at verifying sites identified using the CORONA imagery (both those identified with standard remote sensing procedures and those suggested by the AI model described above). During these two campaigns, a total of 96 potential sites were investigated (including the eight suggested by the AI). Of these 96, only 15 showed no signs of ancient anthropogenic activity and were thus false positives. The field survey results revealed, in fact, that 81 turned out to be positively confirmed sites. Of the eight sites suggested by the AI, four were among the 81 confirmed sites of archaeological relevance. To be noticed, again, is the fact that all the 81 sites were discovered by virtue of the analyses conducted on the CORONA satellite imagery, being based either on remote sensing or through AI. The validation of these sites was achieved through the collection and subsequent study of superficial ancient ceramics, which also enabled their dating. Fig.4summarizes these field-survey results, showing the entire survey area inside which both remote sensing-and AI-based predicted sites are shown using dots of different colors (also based on the fact they were confirmed as either positive or negative cases).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 4 .</head><label>4</label><figDesc>Fig. 4. Sites discovered during the Abu Ghraib archaeological survey campaigns. Red: positive cases discovered by AI. Blue: positive cases discovered with remote sensing.</figDesc><graphic coords="16,72.00,95.00,451.30,319.30" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 9 :</head><label>9</label><figDesc>Fig. 9: State of preservation of the 81 archaeological sites discovered during the 2023-2024 onfield campaigns.</figDesc><graphic coords="20,72.00,186.99,451.30,319.30" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Data augmentation pipeline.</head><label>1</label><figDesc></figDesc><table><row><cell>Group</cell><cell>Technique</cell><cell>Probability of use</cell></row><row><cell></cell><cell>RandomCrop</cell><cell>1</cell></row><row><cell></cell><cell>Flip</cell><cell>0.5</cell></row><row><cell></cell><cell>RandomRotate90</cell><cell>0.5</cell></row><row><cell>Geometric</cell><cell></cell><cell>0.2</cell></row><row><cell></cell><cell>GridDistorsion</cell><cell>0.4</cell></row><row><cell></cell><cell>RandomGridShuffle</cell><cell>0.6</cell></row><row><cell>Color space</cell><cell></cell><cell>0.5</cell></row><row><cell></cell><cell>CLAHE</cell><cell>0.4</cell></row><row><cell></cell><cell>RandomBrightnessContrast</cell><cell>0.8</cell></row><row><cell></cell><cell>ChannelShuffle</cell><cell>0.1</cell></row><row><cell></cell><cell>ColorJitter</cell><cell>0.2</cell></row><row><cell></cell><cell>HueSaturationValue</cell><cell>0.2</cell></row><row><cell>Kernel filters</cell><cell></cell><cell>0.5</cell></row><row><cell></cell><cell>Blur</cell><cell>0.4</cell></row><row><cell></cell><cell>GaussNoise</cell><cell>0.4</cell></row><row><cell></cell><cell>MotionBlur</cell><cell>0.2</cell></row><row><cell></cell><cell>Sharpen</cell><cell>0.1</cell></row><row><cell></cell><cell>Resize</cell><cell>1</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 . Validation: pixel-wise accuracy for the three re-trained models.</head><label>2</label><figDesc></figDesc><table><row><cell>Model</cell><cell>IoU</cell><cell>MCC</cell><cell>bIoU</cell><cell>Epoch</cell></row><row><cell>Bing_Bing</cell><cell>83.07</cell><cell>55.25</cell><cell>37.00</cell><cell>15</cell></row><row><cell cols="2">Bing_CORONA_BingCORONA 84.42</cell><cell>69.99</cell><cell>56.86</cell><cell>9</cell></row><row><cell>CORONA_CORONA</cell><cell>82.25</cell><cell>59.30</cell><cell>43.70</cell><cell>27</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3</head><label>3</label><figDesc></figDesc><table /><note><p>reports, instead, the average results (plus standard deviation) we achieved with our testing activity conducted with the 20 images our models have never seen before. These results are based on the metrics that we have already indicated being the most appropriate to recognize a tell at a pixel level (that is: IoU, bIoU and MCC). Each test was repeated ten times.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 . Testing: pixel-wise accuracy for all models (average values with standard deviation).</head><label>3</label><figDesc></figDesc><table><row><cell>Model</cell><cell>IoU</cell><cell>St.d.</cell><cell>MCC</cell><cell>St.d.</cell><cell>bIoU</cell><cell>St.d.</cell></row><row><cell>Bing (previous)</cell><cell>82.24</cell><cell>2.88</cell><cell>35.24</cell><cell>6.36</cell><cell>22.70</cell><cell>5.55</cell></row><row><cell>Bing_Bing</cell><cell>86.12</cell><cell>2.77</cell><cell>34.03</cell><cell>9.95</cell><cell>21.53</cell><cell>8.67</cell></row><row><cell>Bing_CORONA (previous)</cell><cell>84.30</cell><cell>1.56</cell><cell>45.76</cell><cell>7.93</cell><cell>28.80</cell><cell>6.45</cell></row><row><cell cols="2">Bing_CORONA_BingCORONA 85.77</cell><cell>2.03</cell><cell>55.63</cell><cell>5.88</cell><cell>39.23</cell><cell>6.37</cell></row><row><cell>CORONA (previous)</cell><cell>83.54</cell><cell>2.02</cell><cell>31.98</cell><cell>8.57</cell><cell>18.80</cell><cell>5.91</cell></row><row><cell>CORONA_CORONA</cell><cell>85.09</cell><cell>3.32</cell><cell>47.27</cell><cell>9.84</cell><cell>33.19</cell><cell>8.84</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 . Testing: tell detection (accuracy and recall).</head><label>4</label><figDesc></figDesc><table><row><cell>Model</cell><cell>Accuracy</cell><cell>Recall</cell><cell>TP</cell><cell>TN</cell><cell>FP</cell><cell>FN</cell></row><row><cell>Bing_Bing</cell><cell>0.75</cell><cell>0.50</cell><cell>4</cell><cell>11</cell><cell>1</cell><cell>4</cell></row><row><cell>BingCORONA_BingCORONA</cell><cell>0.90</cell><cell>0.88</cell><cell>7</cell><cell>11</cell><cell>1</cell><cell>1</cell></row><row><cell>CORONA_CORONA</cell><cell>0.70</cell><cell>0.67</cell><cell>4</cell><cell>10</cell><cell>4</cell><cell>2</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement</head><p>All results were obtained using open-source software and models, as well as publicly available data (images, annotations) and computational resources (Google Colab), making this type of work highly accessible and replicable even in resource-limited research environments. In addition to the specific information provided within the document, all the code, data, archeological annotations and various resources are available on GitHub (https://github.com/alepistola/AI_floodplains). Moreover, all the geographical data displayed in this paper falls within the conditions of correct use of geographical data for academic purposes. The use of the satellite imagery for developing our study took place respecting the terms of use of: i) the Microsoft Bing Maps API, falling under the "Education and Non-Profit Use" category (https://www.bingmapsportal.com/terms Product-specific Tems, Section 3-b), extended to all scientific research initiatives at academic institutions, contingent upon the content being freely accessible and used strictly for non-commercial objectives, and ii) the CORONA satellite imagery, freely available through the United States Geological Survey (USGS) under its Open Data Policy (https://www.usgs.gov/faqs/are-usgs-reportspublications-copyrighted). The visualization of the related maps was made possible via an open-source software regulated by the GNU licenses of QGIS (https://qgis.org/en/site/) and QuickMapsServices (https://github.com/nextgis/quickmapservices). The final processing of the maps was obtained instead through the software we developed and made available on Github at the address above. As to the satellite imagery used in all the Figures present in this manuscript, they are provided by Copernicus Sentinel-2 data, freely available under the European Union's open data policy (https://www.copernicus.eu/en/access-data/copernicus-open-access-hub), as well as under the Planet Labs Open Data programme (https://www.planet.com/data/stac/browser) and Sentinel-2 cloudless (https://s2maps.eu) by EOX IT Services GmbH, all available under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0" />			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Archaeological landscapes of the Near East</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Wilkinson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2003">2003</date>
+			<publisher>University of Arizona Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Machine Learning Arrives in Archaeology</title>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">H</forename><surname>Bickler</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/aap.2021.6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Archaeological Practice</title>
+		<title level="j" type="abbrev">Adv. archaeol. pract.</title>
+		<idno type="ISSNe">2326-3768</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="186" to="191" />
+			<date type="published" when="2021-05">2021</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+	<note>Advances in Archaeological Practice</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">The Computerization of Archaeology: Survey on Artificial Intelligence Techniques</title>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Mantovan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Loris</forename><surname>Nanni</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s42979-020-00286-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SN Computer Science</title>
+		<title level="j" type="abbrev">SN COMPUT. SCI.</title>
+		<idno type="ISSN">2662-995X</idno>
+		<idno type="ISSNe">2661-8907</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1" to="32" />
+			<date type="published" when="2020-08-14">2020</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Debating AI in Archaeology: applications, implications, and ethical considerations</title>
+		<author>
+			<persName><forename type="first">Martina</forename><surname>Tenzer</surname></persName>
+			<idno type="ORCID">0000-0003-1898-5277</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Giada</forename><surname>Pistilli</surname></persName>
+			<idno type="ORCID">0000-0003-4941-0505</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Bransden</surname></persName>
+			<idno type="ORCID">0000-0003-1623-1340</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Shenfield</surname></persName>
+			<idno type="ORCID">0000-0002-2931-8077</idno>
+		</author>
+		<idno type="DOI">10.11141/ia.67.8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Internet Archaeology</title>
+		<title level="j" type="abbrev">Internet Archaeol.</title>
+		<idno type="ISSNe">1363-5387</idno>
+		<imprint>
+			<biblScope unit="volume">67</biblScope>
+			<biblScope unit="issue">67</biblScope>
+			<date type="published" when="2024-03">2024</date>
+			<publisher>Council for British Archaeology</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Aerial remote sensing techniques in archeology. 2</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">R</forename><surname>Lyons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">K</forename><surname>Hitchcock</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1977">1977</date>
+			<pubPlace>Chaco Center</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Photogrammetry and remote sensing in archeology</title>
+		<author>
+			<persName><forename type="first">Ayse</forename><forename type="middle">G</forename><surname>Kucukkaya</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jqsrt.2003.12.030</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Quantitative Spectroscopy and Radiative Transfer</title>
+		<title level="j" type="abbrev">Journal of Quantitative Spectroscopy and Radiative Transfer</title>
+		<idno type="ISSN">0022-4073</idno>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="issue">1-3</biblScope>
+			<biblScope unit="page" from="83" to="88" />
+			<date type="published" when="2004-09">2004</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Automated detection of archaeological mounds using machine-learning classification of multisensor and multitemporal satellite data</title>
+		<author>
+			<persName><forename type="first">Hector</forename><forename type="middle">A</forename><surname>Orengo</surname></persName>
+			<idno type="ORCID">0000-0002-9385-2370</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francesc</forename><forename type="middle">C</forename><surname>Conesa</surname></persName>
+			<idno type="ORCID">0000-0002-4026-7266</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Arnau</forename><surname>Garcia-Molsosa</surname></persName>
+			<idno type="ORCID">0000-0001-5416-2986</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Agustín</forename><surname>Lobo</surname></persName>
+			<idno type="ORCID">0000-0002-6689-2908</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">S</forename><surname>Green</surname></persName>
+			<idno type="ORCID">0000-0002-3324-5165</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Madella</surname></persName>
+			<idno type="ORCID">0000-0002-9324-1545</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cameron</forename><forename type="middle">A</forename><surname>Petrie</surname></persName>
+			<idno type="ORCID">0000-0002-2926-7230</idno>
+		</author>
+		<idno type="DOI">10.1073/pnas.2005583117</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">117</biblScope>
+			<biblScope unit="issue">31</biblScope>
+			<biblScope unit="page" from="18240" to="18250" />
+			<date type="published" when="2020-07-20">2020</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Combined detection and segmentation of archeological structures from LiDAR data using a deep learning approach</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Guyot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lennon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lorho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hubert-Moy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computer Applications in Archaeology</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A Review of Artificial Intelligence and Remote Sensing for Archaeological Research</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Argyrou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Agapiou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page">6000</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Convolutional neural networks for archaeological site detection – Finding “princely” tombs</title>
+		<author>
+			<persName><forename type="first">Gino</forename><surname>Caspari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pablo</forename><surname>Crespo</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jas.2019.104998</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Archaeological Science</title>
+		<title level="j" type="abbrev">Journal of Archaeological Science</title>
+		<idno type="ISSN">0305-4403</idno>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="page">104998</biblScope>
+			<date type="published" when="2019-10">2019</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Detecting Neolithic Burial Mounds from LiDAR-Derived Elevation Data Using a Multi-Scale Approach and Machine Learning Techniques</title>
+		<author>
+			<persName><forename type="first">Alexandre</forename><surname>Guyot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurence</forename><surname>Hubert-Moy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thierry</forename><surname>Lorho</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/rs10020225</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<title level="j" type="abbrev">Remote Sensing</title>
+		<idno type="ISSNe">2072-4292</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">225</biblScope>
+			<date type="published" when="2018-02-01">2018</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Deep Learning in Archaeological Remote Sensing: Automated Qanat Detection in the Kurdistan Region of Iraq</title>
+		<author>
+			<persName><forename type="first">Mehrnoush</forename><surname>Soroush</surname></persName>
+			<idno type="ORCID">0000-0002-9420-7824</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alireza</forename><surname>Mehrtash</surname></persName>
+			<idno type="ORCID">0000-0003-3703-5330</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Emad</forename><surname>Khazraee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><forename type="middle">A</forename><surname>Ur</surname></persName>
+			<idno type="ORCID">0000-0003-1806-6385</idno>
+		</author>
+		<idno type="DOI">10.3390/rs12030500</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<title level="j" type="abbrev">Remote Sensing</title>
+		<idno type="ISSNe">2072-4292</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">500</biblScope>
+			<date type="published" when="2020-02-04">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">THE ERBIL PLAIN ARCHAEOLOGICAL SURVEY: PRELIMINARY RESULTS, 2012–2020</title>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Ur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nader</forename><surname>Babakr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rocco</forename><surname>Palermo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Petra</forename><surname>Creamer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehrnoush</forename><surname>Soroush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shilan</forename><surname>Ramand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karel</forename><surname>Nováček</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/irq.2021.2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Iraq</title>
+		<title level="j" type="abbrev">Iraq</title>
+		<idno type="ISSN">0021-0889</idno>
+		<idno type="ISSNe">2053-4744</idno>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="205" to="243" />
+			<date type="published" when="2012">2012-2020. 2021</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Beyond the Greater Angkor Region: Automatic large-scale mapping of Angkorian-period reservoirs in satellite imagery using deep learning</title>
+		<author>
+			<persName><forename type="first">Jürgen</forename><surname>Landauer</surname></persName>
+			<idno type="ORCID">0000-0002-4426-2657</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Klassen</surname></persName>
+			<idno type="ORCID">0000-0001-5110-713X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">P</forename><surname>Wijker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Josine</forename><surname>Van Der Kroon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexis</forename><surname>Jaszkowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wouter</forename><forename type="middle">Baernd</forename><surname>Verschoof-Van Der Vaart</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0320452</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">e0320452</biblScope>
+			<date type="published" when="2025-03-26">2025</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Managing Artificial Intelligence in Archeology. An overview</title>
+		<author>
+			<persName><forename type="first">Gabriele</forename><surname>Gattiglia</surname></persName>
+			<idno type="ORCID">0000-0002-4245-8939</idno>
+		</author>
+		<idno type="DOI">10.1016/j.culher.2024.11.020</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Cultural Heritage</title>
+		<title level="j" type="abbrev">Journal of Cultural Heritage</title>
+		<idno type="ISSN">1296-2074</idno>
+		<imprint>
+			<biblScope unit="volume">71</biblScope>
+			<biblScope unit="page" from="225" to="233" />
+			<date type="published" when="2025-01">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Potential and limitations of designing a deep learning model for discovering new archaeological sites: A case with the Mesopotamian floodplain</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Roccetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Casini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Delnevo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Orrù</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Marchetti</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 6th EAI International Conference on Smart Objects and Technologies for Social Good</title>
+		<meeting>the 6th EAI International Conference on Smart Objects and Technologies for Social Good</meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="216" to="221" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">A human–AI collaboration workflow for archaeological sites detection</title>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Casini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolò</forename><surname>Marchetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Montanucci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valentina</forename><surname>Orrù</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Roccetti</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-023-36015-5</idno>
+		<idno>arXiv:210206022. 2021</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2023-05-29" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">When Machines Find Sites for the Archaeologists: A Preliminary Study with Semantic Segmentation applied on Satellite Imagery of the Mesopotamian Floodplain</title>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Casini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valentina</forename><surname>Orrù</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Roccetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolò</forename><surname>Marchetti</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3524458.3547121</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2022 ACM Conference on Information Technology for Social Good</title>
+		<meeting>the 2022 ACM Conference on Information Technology for Social Good</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2022-09-07">2022</date>
+			<biblScope unit="page" from="378" to="383" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A human–AI collaboration workflow for archaeological sites detection</title>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Casini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolò</forename><surname>Marchetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Montanucci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valentina</forename><surname>Orrù</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Roccetti</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-023-36015-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">8699</biblScope>
+			<date type="published" when="2023-05-29">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Long-Term Urban and Population Trends in the Southern Mesopotamian Floodplains</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Marchetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bortolini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Menghi</forename><surname>Sartorio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Orrù</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Zaina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Archaeological Research</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Finding common ground: Human and computer vision in archaeological prospection</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Traviglia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cowley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lambers</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">AARGnews</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="11" to="24" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Settlement and Irrigation Patterns in Ancient Akkad</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Adams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">The City and Area of Kish. Field Research Projects</title>
+		<editor>
+			<persName><forename type="first">Mcg</forename><surname>Gibson</surname></persName>
+		</editor>
+		<imprint>
+			<biblScope unit="page" from="182" to="208" />
+			<date type="published" when="1972">1972</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<title level="m" type="main">The CORONA atlas project: Orthorectification of CORONA satellite imagery and regional-scale archaeological exploration in the Near East. Mapping archaeological landscapes from space</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Comer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Harrower</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Casana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cothren</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<biblScope unit="page" from="33" to="43" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Declassified satellite photographs and archaeology in the Middle East: case studies from Turkey</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kennedy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Antiquity</title>
+		<imprint>
+			<biblScope unit="volume">72</biblScope>
+			<biblScope unit="issue">277</biblScope>
+			<biblScope unit="page" from="553" to="561" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Satellite images and Near Eastern landscapes</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kouchoukos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Near Eastern Archaeology</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="80" to="91" />
+			<date type="published" when="2001">2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">CORONA satellite photography: an archaeological application from the Middle East</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Philip</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Donoghue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Galiatsatos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Antiquity</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="issue">291</biblScope>
+			<biblScope unit="page" from="109" to="118" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Settlement and landscape in northern Mesopotamia: the Tell Hamoukar survey 2000-2001</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Ur</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Akkadica</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="57" to="88" />
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Settlement and landscapes in the Amuq region. The Amuq Valley Regional Projects</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Casana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">J</forename><surname>Wilkinson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1995" to="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Development Team. Quantum GIS geographic information system</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Quantum</surname></persName>
+		</author>
+		<ptr target="http://qgisosgeoorg" />
+		<imprint>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Albumentations: Fast and Flexible Image Augmentations</title>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Buslaev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vladimir</forename><forename type="middle">I</forename><surname>Iglovikov</surname></persName>
+			<idno type="ORCID">0000-0003-2946-5525</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Eugene</forename><surname>Khvedchenya</surname></persName>
+			<idno type="ORCID">0000-0002-2363-3850</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Parinov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mikhail</forename><surname>Druzhinin</surname></persName>
+			<idno type="ORCID">0000-0002-4213-9954</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandr</forename><forename type="middle">A</forename><surname>Kalinin</surname></persName>
+			<idno type="ORCID">0000-0003-4563-3226</idno>
+		</author>
+		<idno type="DOI">10.3390/info11020125</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information</title>
+		<title level="j" type="abbrev">Information</title>
+		<idno type="ISSNe">2078-2489</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">125</biblScope>
+			<date type="published" when="2020-02-24">2020</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><surname>Iakubovskii</surname></persName>
+		</author>
+		<ptr target="https://smpreadthedocsio/en/latest/.2020" />
+		<title level="m">Segmentation Models Pytorch</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Multiattention Network for Semantic Segmentation of Fine-Resolution Remote Sensing Images</title>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0001-7858-3160</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shunyi</forename><surname>Zheng</surname></persName>
+			<idno type="ORCID">0000-0001-5594-3493</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ce</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0001-5100-3584</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Chenxi</forename><surname>Duan</surname></persName>
+			<idno type="ORCID">0000-0003-0056-3295</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jianlin</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Libo</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-8096-6531</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">M</forename><surname>Atkinson</surname></persName>
+			<idno type="ORCID">0000-0002-5489-6880</idno>
+		</author>
+		<idno type="DOI">10.1109/tgrs.2021.3093977</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Geoscience and Remote Sensing</title>
+		<title level="j" type="abbrev">IEEE Trans. Geosci. Remote Sensing</title>
+		<idno type="ISSN">0196-2892</idno>
+		<idno type="ISSNe">1558-0644</idno>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Transfer Learning</title>
+		<author>
+			<persName><forename type="first">Lisa</forename><surname>Torrey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jude</forename><surname>Shavlik</surname></persName>
+		</author>
+		<idno type="DOI">10.4018/978-1-60566-766-9.ch011</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Handbook of Research on Machine Learning Applications and Trends</title>
+		<imprint>
+			<publisher>IGI Global</publisher>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="page" from="242" to="264" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">A large-scale hierarchical image database</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Fei-Fei</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Imagenet</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page" from="248" to="255" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<author>
+			<persName><forename type="first">T</forename><surname>Valizadeh Aslani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hu</surname></persName>
+		</author>
+		<idno>arXiv:220710858. 2022</idno>
+		<title level="m">Two-stage fine-tuning: A novel strategy for learning class-imbalanced data</title>
+		<imprint/>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The Matthews correlation coefficient (MCC) should replace the ROC AUC as the standard metric for assessing binary classification</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chicco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Jurman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BioData Mining</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="23" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Tranfer Learning of Semantic Segmentation Methods for Identifying Buried Archaeological Structures on Lidar Data</title>
+		<author>
+			<persName><forename type="first">Gregory</forename><surname>Sech</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paolo</forename><surname>Soleni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wouter</forename><forename type="middle">B</forename><surname>Verschoof-Van Der Vaart</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Žiga</forename><surname>Kokalj</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arianna</forename><surname>Traviglia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Fiorucci</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/igarss52108.2023.10282694</idno>
+	</analytic>
+	<monogr>
+		<title level="m">IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-07-16">2023</date>
+			<biblScope unit="page" from="6987" to="6990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">The relevance of non-human errors in machine learning</title>
+		<author>
+			<persName><forename type="first">Baeza</forename><surname>Yates</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Estevez</forename><surname>Almenzar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hernandez-Orallo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cheke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Tenebaum</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ullman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Martınez-Plumed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Rutar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Burden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Burnell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Schellaert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Workshop on AI Evaluation Beyond Metrics</title>
+		<meeting>the Workshop on AI Evaluation Beyond Metrics<address><addrLine>Vienna, Austria</addrLine></address></meeting>
+		<imprint>
+			<publisher>CEUR-WS</publisher>
+			<date type="published" when="2022-07-25">EBeM 2022. 2022 Jul 25. 2022. 2022</date>
+			<biblScope unit="page">6</biblScope>
+		</imprint>
+	</monogr>
+	<note>CEUR Workshop Proceedings</note>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">On monitorability of AI</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">V</forename><surname>Yampolskiy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">AI and Ethics</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="19" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Prescient Perspectives on Football Tactics: A Case with Liverpool FC, Corners and AI</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Roccetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tenace</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Cappiello</surname></persName>
+		</author>
+		<idno type="DOI">10.13140/RG.2.2.27842.59847/16</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Interpretability of Machine Learning: Recent Advances and Future Prospects</title>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Gao</surname></persName>
+			<idno type="ORCID">0000-0001-5583-713X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>Guan</surname></persName>
+			<idno type="ORCID">0000-0002-2681-2504</idno>
+		</author>
+		<idno type="DOI">10.1109/mmul.2023.3272513</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE MultiMedia</title>
+		<title level="j" type="abbrev">IEEE MultiMedia</title>
+		<idno type="ISSN">1070-986X</idno>
+		<idno type="ISSNe">1941-0166</idno>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="105" to="118" />
+			<date type="published" when="2023-10">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Artificial intelligence and illusions of understanding in scientific research</title>
+		<author>
+			<persName><forename type="first">Lisa</forename><surname>Messeri</surname></persName>
+			<idno type="ORCID">0000-0002-0964-123X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Crockett</surname></persName>
+			<idno type="ORCID">0000-0001-8800-410X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-024-07146-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">627</biblScope>
+			<biblScope unit="issue">8002</biblScope>
+			<biblScope unit="page" from="49" to="58" />
+			<date type="published" when="2024-03-06">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<idno>arXiv:231019852. 2023</idno>
+		<title level="m">Ai alignment: A comprehensive survey</title>
+		<imprint/>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Evaluating the Performance of Geographic Object-Based Image Analysis in Mapping Archaeological Landscapes Previously Occupied by Farming Communities: A Case of Shashi–Limpopo Confluence Area</title>
+		<author>
+			<persName><forename type="first">Olaotse</forename><forename type="middle">Lokwalo</forename><surname>Thabeng</surname></persName>
+			<idno type="ORCID">0000-0002-4964-2085</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elhadi</forename><surname>Adam</surname></persName>
+			<idno type="ORCID">0000-0003-3626-5839</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefania</forename><surname>Merlo</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/rs15235491</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<title level="j" type="abbrev">Remote Sensing</title>
+		<idno type="ISSNe">2072-4292</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">23</biblScope>
+			<biblScope unit="page">5491</biblScope>
+			<date type="published" when="2023-11-24">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">The Synergy between Artificial Intelligence, Remote Sensing, and Archaeological Fieldwork Validation</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Canedo</surname></persName>
+			<idno type="ORCID">0000-0002-5184-3265</idno>
+		</author>
+		<author>
+			<persName><forename type="first">João</forename><surname>Hipólito</surname></persName>
+			<idno type="ORCID">0009-0001-6362-4633</idno>
+		</author>
+		<author>
+			<persName><forename type="first">João</forename><surname>Fonte</surname></persName>
+			<idno type="ORCID">0000-0003-0367-0598</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rita</forename><surname>Dias</surname></persName>
+			<idno type="ORCID">0000-0003-2999-3133</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tiago</forename><surname>Do Pereiro</surname></persName>
+			<idno type="ORCID">0000-0003-2691-4583</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Petia</forename><surname>Georgieva</surname></persName>
+			<idno type="ORCID">0000-0002-6424-6590</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luís</forename><surname>Gonçalves-Seco</surname></persName>
+			<idno type="ORCID">0000-0002-8950-5499</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marta</forename><surname>Vázquez</surname></persName>
+			<idno type="ORCID">0000-0001-5261-4926</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nelson</forename><surname>Pires</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pastor</forename><surname>Fábrega-Álvarez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fernando</forename><surname>Menéndez-Marsh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">António</forename><forename type="middle">J R</forename><surname>Neves</surname></persName>
+			<idno type="ORCID">0000-0001-5433-6667</idno>
+		</author>
+		<idno type="DOI">10.3390/rs16111933</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing</title>
+		<title level="j" type="abbrev">Remote Sensing</title>
+		<idno type="ISSNe">2072-4292</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">1933</biblScope>
+			<date type="published" when="2024-05-28">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Image super-resolution: A comprehensive review, recent trends, challenges and applications</title>
+		<author>
+			<persName><forename type="first">Dawa</forename><forename type="middle">Chyophel</forename><surname>Lepcha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bhawna</forename><surname>Goyal</surname></persName>
+			<idno type="ORCID">0000-0003-0111-9612</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ayush</forename><surname>Dogra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vishal</forename><surname>Goyal</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.inffus.2022.10.007</idno>
+		<ptr target="https://doi.org/10.1016/j.inffus.2022.10.007" />
+	</analytic>
+	<monogr>
+		<title level="j">Information Fusion</title>
+		<title level="j" type="abbrev">Information Fusion</title>
+		<idno type="ISSN">1566-2535</idno>
+		<imprint>
+			<biblScope unit="volume">91</biblScope>
+			<biblScope unit="page" from="230" to="260" />
+			<date type="published" when="2023-03">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">Multi-image super resolution of remotely sensed images using residual attention deep neural networks. Remote Sensing</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Salvetti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Mazzia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Khaliq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chiaberge</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">2207</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Small object detection in satellite remote sensing images based on super-resolution enhanced DETR</title>
+		<author>
+			<persName><forename type="first">Zikang</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shu</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/12.3029687</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Remote Sensing, Mapping, and Image Processing (RSMIP 2024)</title>
+		<imprint>
+			<publisher>SPIE</publisher>
+			<date type="published" when="2024-06-21">2024. 2024</date>
+			<biblScope unit="volume">13167</biblScope>
+			<biblScope unit="page">50</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Evaluating the contribution of Tianwen-4 mission to Jupiter&apos;s gravity field estimation using inter-satellite tracking</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Afzal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J-P</forename><surname>Barriot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Haider</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202554439</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; AstroPhysics</title>
+		<imprint>
+			<biblScope unit="page">2025</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

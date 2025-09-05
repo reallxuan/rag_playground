@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">The potential applications of muography to revealing sea shipwrecks</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-09-04">4 Sep 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Anzori</forename><surname>Sh</surname></persName>
+						</author>
+						<author role="corresp">
+							<persName><surname>Georgadze</surname></persName>
+							<email>a.sh.georgadze@gmail.com</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="institution">Kyiv Institute for Nuclear Research</orgName>
+								<address>
+									<addrLine>Prospekt Nauky 47</addrLine>
+									<postCode>03680</postCode>
+									<settlement>Kyiv</settlement>
+									<country key="UA">Ukraine</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Tartu</orgName>
+								<address>
+									<addrLine>Ülikooli 18</addrLine>
+									<postCode>50090</postCode>
+									<settlement>Tartu</settlement>
+									<country key="EE">Estonia</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">The potential applications of muography to revealing sea shipwrecks</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-09-04">4 Sep 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">871C965E13E7F31F58E98DA45724005B</idno>
+					<idno type="arXiv">arXiv:2509.00164v3[physics.ins-det]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Muon imaging</term>
+					<term>underwater archaeology</term>
+					<term>shipwrecks</term>
+					<term>Baltic Sea</term>
+					<term>non-invasive imaging</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Muon imaging, a non-invasive technique leveraging naturally occurring cosmic muons, has emerged as a promising tool for exploring underwater objects, including shipwrecks. This article examines the potential of muon imaging to investigate the contents of wrecked ships in the Baltic Sea and other marine environments. By analyzing the principles of muon tomography, its applications in underwater archaeology, and its advantages over traditional methods, we highlight its potential to reveal hidden details within shipwrecks while addressing challenges posed by the marine environment. These wrecks pose significant environmental risks due to their hazardous contents, such as explosives and crude oil products, making their detection and monitoring a matter of environmental and safety concern.</p><p>Accurate modeling and imaging of such wrecks are therefore crucial for assessing potential dangers and mitigating environmental impacts. In this work, we adopted an approach similar to that used in underground muon experiments.</p><p>Cosmic muons were propagated through 35 m of seawater using GEANT4. The muons were tracked from the sea surface to a depth of 35 m, where their kinematics and energy deposition were recorded in a virtual detector. The resulting distributions were then tabulated and used as input for the PrimaryGeneratorAction module. This approach enabled the generation of a realistic underwater muon flux over a 20 × 20 m 2 surface at 35 meters depth, which was subsequently employed to simulate different shipwreck filling scenarios. Assuming an exposure time of one week for a wreck located at a depth of 50 meters, our simulations demonstrate that muon imaging can resolve density contrasts sufficiently to distinguish between water, oil, and high-density materials, underscoring its feasibility as a practical tool for underwater hazard assessment.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>The deep sea holds countless shipwrecks, fragile time capsules that preserve traces of past civilizations. Yet investigating their contents is difficult: direct access risks both damage to the wreck and the loss of valuable archaeological context.</p><p>A promising, non-invasive solution comes from particle physics: muon imaging. Also known as muon tomography or radiography, this technique exploits naturally occurring cosmic-ray muons, highly penetrating particles that can reveal the internal structure of large, dense objects. Initially developed for applications such as scanning pyramids and monitoring nuclear reactors, muon imaging has since expanded to geophysics, archaeology, and civil engineering <ref type="bibr" target="#b0">[1]</ref><ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref><ref type="bibr" target="#b6">[7]</ref><ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref><ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref>.</p><p>Here, we consider its application to underwater environments. By imaging shipwrecks with muons, researchers may identify and study their internal structures and contents without excavation, offering a new way to preserve cultural heritage while unlocking historical and scientific insights.</p><p>The Baltic Sea has served as a strategic maritime corridor for centuries, linking Northern and Eastern Europe through trade, exploration, and conflict. This long history has left behind a dense concentration of shipwrecks, with estimates ranging from 10,000 to over 100,000 vessels lost beneath its waters <ref type="bibr" target="#b14">[15]</ref>. These wrecks span diverse historical periods, from the Middle Ages and Hanseatic League to both World Wars, reflecting the region's pivotal role in European naval and commercial history <ref type="bibr" target="#b15">[16]</ref>.</p><p>Underwater shipwrecks pose unique challenges for radiographic detection, particularly when hazardous materials are involved. crude oil and diesel fuel, stored in tanks, show moderate muon attenuation with relatively little scattering, making them relatively straightforward to detect. Explosives cause stronger attenuation combined with moderate scattering, complicating imaging. Steel-cased bombs, by contrast, create significant scattering and attenuation due to their high density. Voids or collapsed compartments appear as bright, low-density anomalies. Well-known examples of wrecks with hazardous cargo include the World War II ammunition ship S.S. Richard Montgomery, the crude oil tanker Montebello, and the Lusitania, long rumored to have carried munitions. In the Baltic region, many wrecks are suspected to contain either crude oil or chemical munitions, but their internal condition remains uncertain. crude oil leakage from shipwrecks poses severe environmental and economic risks. Released crude oil contaminates seawater, impairs reproduction and respiration in marine organisms, and damages sensitive ecosystems such as reefs, seagrass beds, and wetlands. These effects cascade into fisheries and tourism, creating long-term economic losses. Cleanup operations require specialized equipment, trained personnel, and prolonged efforts, often costing millions to billions of dollars. Preventing leaks and implementing effective monitoring and response strategies are therefore essential for safeguarding marine ecosystems and local economies.</p><p>Traditional Methods for Shipwreck Exploration Shipwreck exploration traditionally relies on a combination of archival research, diver surveys, controlled underwater excavations, geophysical surveys, robotic platforms, and non-invasive analyses. Historical documents and naval records guide the initial identification of candidate sites, while divers, when conditions and depth allow, provide direct inspection and sampling.</p><p>Geophysical methods such as side-scan sonar, multibeam echo sounding, magnetometry, and sub-bottom profiling are widely used to map wreck structures and surrounding sediments. Remotely Operated Vehicles (ROVs) and Autonomous Underwater Vehicles (AUVs), equipped with cameras and sonar, extend surveys to greater depths or hazardous environments. Photogrammetry and 3D modeling techniques enable detailed reconstructions of wreck morphology, while non-invasive laboratory analyses, including wood identification, dendrochronology, isotopic analysis, and corrosion studies, provide valuable insights into age, origin, and preservation state.</p><p>Despite their successes, these techniques have several shortcomings. Optical and acoustic methods primarily reveal external structures and are limited in their ability to probe internal compartments or distinguish materials of different densities. Sub-bottom profilers can penetrate sediments but only resolve large-scale features, while magnetometry detects metallic objects but cannot unambiguously characterize their composition or content. Diver surveys are restricted to relatively shallow depths, and underwater excavations are invasive, expensive, and risk damaging fragile cultural heritage. Furthermore, turbidity, biofouling, sediment cover, and corrosion often obscure or distort measurements, reducing accuracy.</p><p>As a result, traditional approaches can document external morphology and site context, but they remain limited when it comes to non-invasively mapping the internal structure, cargo, or hazardous materials of wrecks. This motivates the exploration of complementary approaches such as muon tomography, which can image density distributions through thick sediment and metallic hulls without physical disturbance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Underwater Muon Imaging for Shipwreck Exploration</head><p>The method is particularly suited to scanning large dense objects. Muon attenuation signatures when passing through this objects can reveal crude oil and fuel tanks, explosives, or steel-cased munitions <ref type="bibr" target="#b16">[17]</ref><ref type="bibr" target="#b17">[18]</ref><ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref>. Feasibility has already been demonstrated in Tokyo Bay, where detectors imaged through tens of metres of water and sediment <ref type="bibr" target="#b20">[21,</ref><ref type="bibr" target="#b21">22]</ref>. Similar deployments could be adapted for Baltic wrecks, generating either 2D transmission maps or full 3D tomographic reconstructions. Advances in compact scintillator arrays, readout electronics, and pressure housings make such sys-tems increasingly feasible <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24]</ref>, while simulations with Geant4 provide guidance for geometry optimization and exposure time <ref type="bibr" target="#b24">[25]</ref>.</p><p>Since muon flux decreases with depth, practical underwater muography is expected to be effective at depths up to approximately 100 m. Within this range, several examples of crude oil-carrying wrecks illustrate the potential applications:</p><p>Shipwrecks with crude oil: -The SS Montebello (sunk 1941 off California) lies in 270 m of water and still contains thousands of tonnes of crude crude oil, making it a well-studied case of environmental risk. Although deeper than typical muographic range, it demonstrates the scale of the problem. -The SS Richard Montgomery (1944), though located in shallow waters of the Thames Estuary, is loaded with munitions that pose an ongoing hazard and highlight the value of non-invasive imaging. -In the Baltic, numerous World War II-era tankers and freighters are suspected to retain significant crude oil or chemical munitions. Many lie in depths of 50-100 m, placing them within the feasible operating range of underwater muography.</p><p>Shipwrecks with munitions: SS Richard Montgomery (1944) -A U.S. Army cargo ship laden with munitions, sunk off the coast of England near Kent. The wreck is at approximately 30-70 meters, but parts or related sites could be near 100 meters. The German WWII ships (various) -Many sank with munitions, some around 100 meters depth in the North Sea or Baltic Sea.</p><p>Shipwrecks with archaeological artifacts, gold and treasures: Another potential application of underwater muography is the investigation of treasure-laden wrecks. Historical Spanish galleons, such as the Nuestra Señora de Atocha (sunk in 1622 off the Florida Keys), carried large quantities of gold and silver coins, jewelry, and other precious cargo. While the Atocha itself lies at a depth of about 40-50 meters, other galleons and treasure ships are reported at depths approaching 100 meters, where conventional diving surveys are challenging and sonar imaging provides limited information on buried or sediment-covered structures. In such cases, muon radiography could provide unique non-invasive insights by distinguishing high-density metallic inclusions (e.g., gold or silver coins) from surrounding sediments and hull remains.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Methods and tools</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Monte Carlo simulations</head><p>In GEANT4 <ref type="bibr" target="#b25">[26]</ref>, the detector is modeled as a set of three planes, each measuring 1 × 1 m 2 , with a typical vertical spacing of 0.5 m. This configuration functions as a muon telescope for tracking muons and reconstructing internal density via muon tomography. Each detector plane consists of two adjacent modules, totaling 64 plastic scintillator bars with triangular cross-sections and central holes for wavelength-shifting (WLS) fibers. The triangular geometry enables compact, crack-free arrays, while combining signals from adjacent bars improves spatial resolution through weighted position averaging. WLS fibers collect scintillation light and transmit it to silicon photomultipliers (SiPMs). Each plane provides one spatial coordinate (X or Y) of the muon hit. Two planes with orthogonal bars form an X-Y station, and the complete muon telescope consists of three such stations (Figure <ref type="figure" target="#fig_0">1(a)</ref>). Muon trajectories are reconstructed by fitting straight lines through the recorded X-Y-Z hit positions across the three stations. The three-layer redundancy enhances track accuracy, reduces accidental triggers from SiPM noise, and improves cosmic-ray shower rejection. Future upgrades may include time-of-flight measurements to determine muon direction. The schematic drawing illustrates muography imaging of an underwater shipwreck, simulated as a trapezoidal shape, with a muon detector positioned on the seabed and oriented toward the shipwreck.</p><p>Although this detector concept has been successfully applied in terrestrial settings, such as imaging pyramids and inspecting cargo containers, it is now being adapted for underwater deployment. In marine environments, detectors are positioned near or within wrecks to detect muons passing through structures, enabling noninvasive 3D imaging of internal components. To enhance detection efficiency, the detector is inclined at a 10-degree angle relative to the wreck.</p><p>In this study, we simulated a shipwreck as a trapezoidal object approximately 30 meters long, 15 meters high, and 15 meters wide, submerged at a depth of 50 meters to mimic the marine environment (see Figure <ref type="figure" target="#fig_0">1(b)</ref>). The wreck was filled with either crude oil (density = 0.92 g/cm 3 ) or hexogen (RDX) explosive (density = 1.82 g/cm 3 ), depending on the scenario.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Modeling muon transport underwater</head><p>To analyze the contents of shipwrecks, such as determining whether they are filled with water, hazardous crude oil, or explosives, the muon flux transmission through the target can be measured. By examining the attenuation of muon flux as it passes through different materials, the muon transmission (MT) technique enables the creation of two-and three-dimensional average transmission and density maps of the studied object, providing valuable insights into internal relative densities. Achieving a well-defined muographic image of large targets, such as underwater shipwrecks, often requires data acquisition periods extending to weeks or even months. This extended duration is necessary to accumulate sufficient muon statistics across various viewing angles, ensuring adequate resolution and contrast in the resulting density maps.</p><p>The required exposure time depends on several factors, including the depth of the shipwreck, the size and density of the target, the detector's acceptance and efficiency, and the desired spatial resolution.</p><p>The GEANT4 package was used to simulate muon propagation through water, from the sea surface down to the shipwreck location. Muons were generated at sea level with the CRY event generator <ref type="bibr" target="#b26">[27]</ref>, sampled over a 50×50 m 2 surface. Muons were propagated 35 meters underwater and detected by a virtual detector with dimensions of 20 × 20 m 2 . To optimize computational resources, we adopted a strategy similar to that used for modeling underground muon fluxes, where the MUSIC code is employed to calculate muon transport through rock and the resulting distributions are then used by MUSUN to simulate muon flux in the underground laboratory and detector interactions. In our approach, GEANT4 was used to propagate muons through water, and the detector recorded only essential information: particle type (PDG code), kinetic energy, interaction position, and angular directions (𝑥, 𝑦, 𝑧). These data provided tabulated underwater muon energy and angular distributions, which were then supplied to the PrimaryGeneratorAction.cc in GEANT4 to generate muons directly at a depth of 35 meters. The regenerated muons served as primary particles in different filling scenarios to model their interactions with a parameterized shipwreck geometry, enabling systematic studies of muon attenuation, scattering, and transmission imaging for internal structure reconstruction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Muon imaging of the underwater objects</head><p>As described in the previous section, the detector is positioned on the seabed, oriented toward the shipwreck with a slight inclination of approximately 10 degrees from the vertical. A detailed detector model was implemented to simulate muon hits for flux measurements. Each of three detector modules records the position of a passing muon, providing three spatial points for each event. Muon tracks are reconstructed by fitting a straight line through these three hit positions, from which the incident direction of each muon is determined. The reconstructed track yields the zenith and azimuth angles (𝜃, 𝜑), defining the muon's trajectory through the target. Accumulating many such tracks over time allows the detector to measure the angular distribution of the muon flux, which can then be used to calculate transmission and infer the internal density structure of the shipwreck.</p><p>The MT technique involves two measurement configurations: with target and free-water (no target). The target configuration involves measuring the muon flux near or beneath the object of interest, where the water or material thickness between the detector and the surface constitutes the target. Angular fluxes are computed from reconstructed tracks, implicitly including acceptance and efficiency via the identical selection. The simulated transmission for a given column density 𝑋 along each line of sight is</p><formula xml:id="formula_0">𝑡 (𝜑, 𝜃; 𝑋) = Φ 𝑡 𝑎𝑟 𝑔𝑒𝑡 (𝜑, 𝜃; 𝑋) Φ 𝑛𝑜𝑡 𝑎𝑟 𝑔𝑒𝑡 (𝜑, 𝜃)</formula><p>where no-target (free-water) configuration consists of ship filled with water extending to a depth of D meters, while the target configuration includes a ship filled with either crude oil or RDX. The result is a lookup table that maps column density 𝑋 to the corresponding simulated transmission 𝑡 (𝜑, 𝜃; 𝑋) for each angular bin. Finally, the measured transmission values are associated with their corresponding lines of sight and projected onto a 2D image plane, yielding a two-dimensional density map of the shipwreck. In practice, the detector is positioned on the seabed, oriented toward the target, and muon counts 𝑁 target (𝜑, 𝜃) are accumulated over the acquisition time 𝑡 acq for each directional bin. For each angular bin (𝜑, 𝜃), invert the simulated model to determine the estimated column density: X (𝜑, 𝜃) such that 𝑡 (𝜑, 𝜃; X) ≈ 𝑡 (𝜑, 𝜃).</p><p>(2.1)</p><p>Subtracting the water baseline yields the excess or deficit in column density attributable to the shipwreck's internal structure.</p><p>To deriving material density we assume knowledge of the chord length through the wreck 𝐿 𝑤𝑟 𝑒𝑐𝑘 (𝜑, 𝜃), obtained via sonar scans or hull models, the average material density along each line of sight is:</p><formula xml:id="formula_1">ρ(𝜑, 𝜃) = Δ X (𝜑, 𝜃) 𝐿 wreck (𝜑, 𝜃) . (2.2)</formula><p>For the projection onto a 2D image plane we treating the detector as a pinhole camera, the intersection point p 𝑘𝑙 on the target plane for a muon arriving from direction (𝜑 𝑘 , 𝜃 𝑙 ) is:</p><formula xml:id="formula_2">p 𝑘𝑙 = o + 𝑅 r(𝜑 𝑘 , 𝜃 𝑙 ),<label>(2.3)</label></formula><p>where o is the detector position. These points are projected onto the 2D image plane to assign Δ X or ρ values to each pixel, creating a spatial density map. The spatial resolution depends on the detector's angular resolution 𝜎 𝑑𝑒𝑡 and the multiple scattering angle 𝜃 0 , which broadens the point spread function (PSF):</p><formula xml:id="formula_3">𝜎 psf ≈ 𝑅 × √︃ 𝜎 2 𝑑𝑒𝑡 + 𝜃 2 0 ,<label>(2.4)</label></formula><p>with</p><formula xml:id="formula_4">𝜃 0 ≈ 13.6 MeV 𝛽𝑝𝑐 √︂ 𝑥 𝑋 0 1 + 0.038 ln 𝑥 𝑋 0 ,<label>(2.5)</label></formula><p>where 𝑥 is the material thickness traversed, 𝑋 0 is the radiation length, and 𝑝 is the muon momentum.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Results</head><p>The simulated two-dimensional transmission maps for different scenarios, a shipwreck filled with water, crude oil, and RDX, are presented in Figures <ref type="figure" target="#fig_1">2</ref><ref type="figure" target="#fig_2">3</ref><ref type="figure" target="#fig_3">4</ref>, assuming an exposure time of one week. Interpolation between angular bins is applied to produce a smooth density map. Figure <ref type="figure" target="#fig_1">2</ref>(a) shows the angular distribution of muon counts simulated in the free-water configuration, with the shipwreck filled with water and the detector deployed at an underwater depth of 50 m. Figure <ref type="figure" target="#fig_1">2</ref>(b) presents the difference in angular distribution of muons between two configurations where the shipwreck is filled with water in both cases. Figure <ref type="figure" target="#fig_1">2(c</ref>) displays the one-dimensional projection of the difference histograms between these water-filled configurations. Figures <ref type="figure" target="#fig_1">2(b</ref>) and (c) exhibit a uniform distribution, as both images correspond to the same configuration of the shipwreck filled with water, resulting in negligible differences. Figure <ref type="figure" target="#fig_2">3(a)</ref> shows the angular distribution of muon counts simulated in the water-target configuration, with the shipwreck filled with crude oil. Figure <ref type="figure" target="#fig_2">3</ref>(b) presents the difference (subtraction) of the angular distribution of muons between the water and crude oil configurations. Figure <ref type="figure" target="#fig_2">3(c</ref>) displays the one-dimensional projection of the difference histograms between the water and crude oil configurations, highlighting the muon excess corresponding to the crude oil-filled region due to less absorption from its lower density. Figure <ref type="figure" target="#fig_3">4</ref>(a) shows the angular distribution of muon counts simulated in the water-target configuration, with the shipwreck filled with RDX. Figure <ref type="figure" target="#fig_3">4</ref>(b) presents the difference (subtraction) of the angular distribution of muons between the water and RDX configurations. Figure <ref type="figure" target="#fig_3">4(c</ref>) displays the one-dimensional projection of the difference histograms between the water and RDX configurations, highlighting the muon deficit corresponding to the RDX-filled region due to greater absorption from its higher density.   The observed excess in muon flux in the x-projection of difference histograms (Figure <ref type="figure" target="#fig_2">3</ref>), particularly at tangent values between -0.5 and 0.5, suggests a localized change in material density, here, a shipwreck filled with crude oil, which has a lower density than water.</p><p>The significant increase in muon flux observed in the x-projection of the difference histograms (water -crude oil configurations, Figure <ref type="figure" target="#fig_2">3</ref>(c)) at tan(𝜃) values of -0.5 ÷ 0.5 can be attributed to the lower density of crude oil (≈ 0.92 g/cm 3 ) compared to sea water (≈ 1.03 g/cm 3 ), resulting in reduced muon attenuation and higher transmitted flux. The significant deficit in muon flux observed in the x-projection of the difference histograms (water -RDX configurations, Figure <ref type="figure" target="#fig_3">4</ref>(c)) at tan(𝜃) values of -0.5 ÷ 0.5 can be attributed to the lower density of RDX (≈ 1.82 g/cm 3 ) compared to sea water ), resulting in reduced muon flux.</p><p>With sufficient angular coverage and longer exposure times, such 2D projections can be combined from multiple viewing positions to reconstruct a full three-dimensional tomographic model. For 3D reconstruction of shipwreck measurements in 4-8 positions around shipwreck are required.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion</head><p>While muon imaging is still in its infancy for underwater applications, pilot studies show considerable promise. For instance, researchers at the University of Tokyo have successfully used muon tomography to image underwater volcanic structures, demonstrating its feasibility in marine environments. In the Baltic Sea, where wrecks such as the Som submarine or the so-called Baltic Sea Anomaly have attracted attention, muon imaging could help clarify the nature of obscured objects.</p><p>A particularly exciting application of underwater muon tomography is the study of ancient shipwrecks in the search for archaeological artifacts, such as gold or silver coins. Another potential motivation is the recovery of ancient lead, which has unique value as radiation shielding in lowbackground physics experiments of dark matter search due to its extremely low content of radioactive 210 Pb. For these reasons, more detailed studies are needed to evaluate the performance of muon imaging in marine archaeology, with the goal of producing high-resolution 3D reconstructions of the internal structure of shipwrecks.</p><p>Advancements in compact, submersible muon detectors and AI-driven data analysis could make muon imaging more accessible for underwater archaeology. Integrating these technologies with existing systems, such as SeaTerra's ScanFish or multibeam radar, could enhance wreck mapping efficiency. Collaborations between physicists, marine archaeologists, and exploration teams like Ocean X could further accelerate the adoption of muon imaging for investigating wrecks in the Baltic Sea and beyond, including the Mediterranean, North Sea, and Pacific Ocean, where similar preservation conditions exist.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Conclusion</head><p>In this study, we assess the feasibility of muon tomography as a non-invasive technique for detecting and characterizing submerged structures and hazardous materials within shipwrecks. Using Monte Carlo simulations, we modeled a simplified scenario of muon imaging of a trapezoidal shipwreck approximately 30 meters long, 15 meters high, and 15 meters wide, located at a depth of 50 meters. We considered three filling scenarios: the wreck fully filled with water, crude oil, or explosive RDX.</p><p>Assuming an exposure time of one week for a wreck located at a depth of 50 meters, our simulations demonstrate that muon imaging can resolve density contrasts sufficiently to distinguish between water, oil, and high-density materials, underscoring its feasibility as a practical tool for underwater hazard assessment.</p><p>To generate the underwater muon flux, we developed a muon generator that utilizes tabulated data simulated with GEANT4 and the CRY muon generator. Muons sampled over a 50 m × 50 m surface area using CRY were propagated through water to a depth of 35 meters with GEANT4, where they were detected by a sensitive detector that recorded event IDs, particle types (via PDG codes), kinetic energies, positions, and angular distributions. This tabulated data was then read by PrimaryGenerationAction.cc to generate muons originating from a 20 m × 20 surface area underwater, facilitating the imaging of the shipwreck. The simulation results demonstrate that, with a measurement time of one week, oil and RDX can be definitively discriminated from water. Specifically, by subtracting histograms of angular distributions of detected muons for the water-oil scenario, an excess of muons due to the lower density of oil is observed. Conversely, a deficit of muons is detected in the case of the shipwreck filled with high-density RDX. These preliminary simulation results demonstrate the feasibility of applying muon tomography as a non-invasive tool for identifying and characterizing the internal contents of shipwrecks, including potentially hazardous materials, in challenging underwater environments such as the Baltic Sea.</p><p>Underwater muon radiography adapts muography principles to marine environments by accounting for seawater attenuation and employing detectors specifically designed for underwater operation. The integration of GEANT4-based underwater muon flux simulations with detector modeling enables realistic performance assessments, including expected track reconstruction rates for multi-module muon telescopes. By measuring the angular dependence of muon transmission, correcting for water depth, and comparing results with detailed simulations, it becomes possible to reconstruct 2D density maps of submerged structures. To reconstruct the ship's structure and material distribution, the use of multiple muon detector locations on both sides is necessary. This configuration enables the creation of a 3D tomographic image of the interior structure, similar to what has been achieved in previous applications of muon imaging to old nuclear reactor <ref type="bibr" target="#b27">[28]</ref>. This approach opens new opportunities for advancements in marine archaeology, geology, and underwater cultural heritage research.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. (a) Illustration of the tracking principle in muon telescope as simulated using GEANT4 code. (b)The schematic drawing illustrates muography imaging of an underwater shipwreck, simulated as a trapezoidal shape, with a muon detector positioned on the seabed and oriented toward the shipwreck.</figDesc><graphic coords="5,262.57,84.19,248.59,197.46" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Muon count distributions and differences for water -water-filled shipwreck configurations.</figDesc><graphic coords="8,85.48,313.31,424.31,134.83" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Muon count distributions and differences for water and crude oil-filled shipwreck configurations.</figDesc><graphic coords="8,85.48,488.90,424.31,134.83" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Muon count distributions and differences for water and RDX-filled shipwreck configurations.</figDesc></figure>
+		</body>
+		<back>
+
+			
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgments</head><p>This research did not receive any funding.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">High resolution imaging in the inhomogeneous crust with cosmic-ray muon radiography: The density structure below the volcanic crater floor of Mt. Asama, Japan</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Tanaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nakano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Takahashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yoshida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Takeo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Oikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ohminato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Aoki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Koyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tsuji</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.epsl.2007.09.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Earth and Planetary Science Letters</title>
+		<title level="j" type="abbrev">Earth and Planetary Science Letters</title>
+		<idno type="ISSN">0012-821X</idno>
+		<imprint>
+			<biblScope unit="volume">263</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="104" to="113" />
+			<date type="published" when="2007-11-15">2007</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Density muon radiography of La Soufrière of Guadeloupe volcano: comparison with geological, electrical resistivity and gravity data</title>
+		<author>
+			<persName><forename type="first">Nolwenn</forename><surname>Lesparre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Gibert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jacques</forename><surname>Marteau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Christophe</forename><surname>Komorowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Florence</forename><surname>Nicollin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olivier</forename><surname>Coutant</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-246x.2012.05546.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Geophysical Journal International</title>
+		<idno type="ISSN">0956-540X</idno>
+		<idno type="ISSNe">1365-246X</idno>
+		<imprint>
+			<biblScope unit="volume">190</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1008" to="1019" />
+			<date type="published" when="2012-08-01">2012</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Discovery of a big void in Khufu’s Pyramid by observation of cosmic-ray muons</title>
+		<author>
+			<persName><forename type="first">Kunihiro</forename><surname>Morishima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitsuaki</forename><surname>Kuno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akira</forename><surname>Nishio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nobuko</forename><surname>Kitagawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuta</forename><surname>Manabe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masaki</forename><surname>Moto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fumihiko</forename><surname>Takasaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hirofumi</forename><surname>Fujii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kotaro</forename><surname>Satoh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hideyo</forename><surname>Kodama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kohei</forename><surname>Hayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shigeru</forename><surname>Odaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sébastien</forename><surname>Procureur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Attié</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Bouteille</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Denis</forename><surname>Calvet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Filosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Magnier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Irakli</forename><surname>Mandjavidze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Riallot</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benoit</forename><surname>Marini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Gable</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshikatsu</forename><surname>Date</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Makiko</forename><surname>Sugiura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasser</forename><surname>Elshayeb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tamer</forename><surname>Elnady</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mustapha</forename><surname>Ezzy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><surname>Guerriero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Steiger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Serikoff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean-Baptiste</forename><surname>Mouret</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bernard</forename><surname>Charlès</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hany</forename><surname>Helal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mehdi</forename><surname>Tayoubi</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nature24647</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">552</biblScope>
+			<biblScope unit="issue">7685</biblScope>
+			<biblScope unit="page" from="386" to="390" />
+			<date type="published" when="2017-11-02">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Imaging of underground cavities with cosmic-ray muons from observations at Mt. Echia (Naples)</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Saracino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Amato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Ambrosino</surname></persName>
+			<idno type="ORCID">0000-0001-5577-1820</idno>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Antonucci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bonechi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Cimmino</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Consiglio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">D ’</forename><surname>Alessandro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">De</forename><surname>Luzio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Minin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Noli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Scognamiglio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Strolin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Varriale</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-017-01277-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1181</biblScope>
+			<date type="published" when="2017-04-26">2017</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">First measurement of ice‐bedrock interface of alpine glaciers by cosmic muon radiography</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nishiyama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ariga</surname></persName>
+			<idno type="ORCID">0000-0002-6832-2466</idno>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ariga</surname></persName>
+			<idno type="ORCID">0000-0001-9880-3562</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Käser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Lechmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Mair</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Scampoli</surname></persName>
+			<idno type="ORCID">0000-0001-7500-2535</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Vladymyrov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ereditato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Schlunegger</surname></persName>
+			<idno type="ORCID">0000-0002-2955-4440</idno>
+		</author>
+		<idno type="DOI">10.1002/2017gl073599</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Geophysical Research Letters</title>
+		<title level="j" type="abbrev">Geophysical Research Letters</title>
+		<idno type="ISSN">0094-8276</idno>
+		<idno type="ISSNe">1944-8007</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="6244" to="6251" />
+			<date type="published" when="2017-06-28">2017</date>
+			<publisher>American Geophysical Union (AGU)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Numerical evaluation of a muon tomography system for imaging defects in concrete structures</title>
+		<author>
+			<persName><forename type="first">Sridhar</forename><surname>Tripathy</surname></persName>
+			<idno type="ORCID">0000-0002-2577-0250</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jaydeep</forename><surname>Datta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nayana</forename><surname>Majumdar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Supratik</forename><surname>Mukhopadhyay</surname></persName>
+		</author>
+		<idno type="DOI">10.1140/epjp/s13360-021-01809-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The European Physical Journal Plus</title>
+		<title level="j" type="abbrev">Eur. Phys. J. Plus</title>
+		<idno type="ISSNe">2190-5444</idno>
+		<imprint>
+			<biblScope unit="volume">136</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page">824</biblScope>
+			<date type="published" when="2021-08">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Muon tomography for railway tunnel imaging</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Thompson</surname></persName>
+			<idno type="ORCID">0000-0001-6911-4776</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Stowell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Fargher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">A</forename><surname>Steer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Loughney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">M</forename><surname>O'sullivan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Gluyas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">W</forename><surname>Blaney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Pidcock</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/physrevresearch.2.023017</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physical Review Research</title>
+		<title level="j" type="abbrev">Phys. Rev. Research</title>
+		<idno type="ISSNe">2643-1564</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">23017</biblScope>
+			<date type="published" when="2020-04-08">2020</date>
+			<publisher>American Physical Society (APS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">F</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">J</forename><surname>Rhodes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Tapper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Taylor</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1906.05814</idno>
+		<title level="m">Cosmic-ray muon tomography in civil engineering</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pallav</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sykes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Morris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Thompson</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2503.23558</idno>
+		<title level="m">Muon attenuation radiography system for engineering &amp; civil structures (mars)</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Towards a muon scattering tomography system for both low-Z and high-Z materials</title>
+		<author>
+			<persName><forename type="first">Jiahui</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huiling</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiyue</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pingcheng</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1748-0221/18/08/p08008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Instrumentation</title>
+		<title level="j" type="abbrev">J. Inst.</title>
+		<idno type="ISSNe">1748-0221</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">08</biblScope>
+			<biblScope unit="page">P08008</biblScope>
+			<date type="published" when="2023-08-01">2023</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Geant4 simulation study of low-Z material detection using muon tomography</title>
+		<author>
+			<persName><forename type="first">Anzori</forename><forename type="middle">Sh. </forename><surname>Georgadze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vitaly</forename><forename type="middle">A</forename><surname>Kudryavtsev</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1748-0221/18/12/c12014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Instrumentation</title>
+		<title level="j" type="abbrev">J. Inst.</title>
+		<idno type="ISSNe">1748-0221</idno>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page">C12014</biblScope>
+			<date type="published" when="2023-12-01">2023</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Automated object detection for muon tomography data analysis</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Georgadze</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1748-0221/19/07/C07004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Instrumentation</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page">7004</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A Simulation of a Cosmic Ray Tomography Scanner for Trucks and Shipping Containers</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Georgadze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Giammanco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Kudryavtsev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lagrange</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Turkoglu</surname></persName>
+		</author>
+		<idno type="DOI">10.31526/jais.2024.482</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Advanced Instrumentation in Science</title>
+		<title level="j" type="abbrev">JAIS</title>
+		<imprint>
+			<biblScope unit="volume">2024</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024">2024</date>
+			<publisher>Andromeda Publishing and Education Services</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Simulation Study into the Detection of Low- and High-\(Z\) Materials in Cargo Containers Using Cosmic Ray Muons</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Georgadze</surname></persName>
+		</author>
+		<idno type="DOI">10.5506/aphyspolbsupp.17.1-a2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Physica Polonica B Proceedings Supplement</title>
+		<title level="j" type="abbrev">Acta Phys. Pol. B Proc. Suppl.</title>
+		<idno type="ISSN">1899-2358</idno>
+		<idno type="ISSNe">2082-7865</idno>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2024">2024</date>
+			<publisher>Jagiellonian University</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">The Protection of the Underwater Cultural Heritage</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">M</forename><surname>Organization</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9781315091952-22</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Law of the Sea</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="497" to="522" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The maritime cultural landscape</title>
+		<author>
+			<persName><forename type="first">Christer</forename><surname>Westerdahl</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1095-9270.1992.tb00336.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Nautical Archaeology</title>
+		<idno type="ISSN">1057-2414</idno>
+		<idno type="ISSNe">1095-9270</idno>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="5" to="14" />
+			<date type="published" when="1992-02">1992</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Thematic assessment on hazardous submerged objects in the baltic sea: Potentially polluting shipwrecks</title>
+		<author>
+			<persName><surname>Helcom</surname></persName>
+		</author>
+		<ptr target="https://helcom.fi/wp-content/uploads/2025/06/Thematic-assessment-on-" />
+		<imprint>
+			<date type="published" when="2025">2025</date>
+			<publisher>Baltic Marine Environment Protection Commission</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">Tech. Rep</note>
+	<note>hazardous-submerged-objects-in-the-Baltic-Sea-potentially-polluting-shipwrecks.pdf</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">REMOVAL OF WRECKS AND DUMPING AT SEA</title>
+		<idno type="DOI">10.4324/9781315673325-46</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Shipping and the Environment</title>
+		<imprint>
+			<publisher>Informa Law from Routledge</publisher>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="1099" to="1124" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Contributors</title>
+		<idno type="DOI">10.3998/mpub.11778416.contributors.en</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Wikipedia and Academic Libraries</title>
+		<imprint>
+			<publisher>Michigan Publishing</publisher>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Principles and perspectives of radiographic imaging with muons</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bonechi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Giammanco</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fphy.2021.795609</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Frontiers in Physics</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">795609</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">First results of undersea muography with the Tokyo-Bay Seafloor Hyper-Kilometric Submarine Deep Detector</title>
+		<author>
+			<persName><forename type="first">Hiroyuki</forename><forename type="middle">K M</forename><surname>Tanaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masaatsu</forename><surname>Aichi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cristiano</forename><surname>Bozza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rosa</forename><surname>Coniglione</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jon</forename><surname>Gluyas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Naoto</forename><surname>Hayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marko</forename><surname>Holma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Osamu</forename><surname>Kamoshida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasuhiro</forename><surname>Kato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tadahiro</forename><surname>Kin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pasi</forename><surname>Kuusiniemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giovanni</forename><surname>Leone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Domenico</forename><forename type="middle">Lo</forename><surname>Presti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Matsushima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hideaki</forename><surname>Miyamoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hirohisa</forename><surname>Mori</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yukihiro</forename><surname>Nomura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">László</forename><surname>Oláh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><surname>Steigerwald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenji</forename><surname>Shimazoe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenji</forename><surname>Sumiya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hiroyuki</forename><surname>Takahashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lee</forename><forename type="middle">F</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yusuke</forename><surname>Yokota</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><surname>Paling</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dezső</forename><surname>Varga</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-021-98559-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Reports</title>
+		<title level="j" type="abbrev">Sci Rep</title>
+		<idno type="ISSNe">2045-2322</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">19605</biblScope>
+			<date type="published" when="2021-09-30">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Multiple and early hyperbaric oxygen treatments enhance muscle healing after muscle contusion injury: a pilot study</title>
+		<author>
+			<persName><forename type="first">Naoki</forename><surname>Yamamoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takuya</forename><surname>Oyaizu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kazuyoshi</forename><surname>Yagishita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitsuhiro</forename><surname>Enomoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masaki</forename><surname>Horie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atsushi</forename><surname>Okawa</surname></persName>
+		</author>
+		<idno type="DOI">10.22462/05.06.2021.3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Undersea and Hyperbaric Medicine</title>
+		<title level="j" type="abbrev">UHM</title>
+		<idno type="ISSN">1066-2936</idno>
+		<imprint>
+			<biblScope unit="page" from="227" to="239c" />
+			<date type="published" when="2021-05-01">2021</date>
+			<publisher>Undersea and Hyperbaric Medical Society (UHMS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Unknown</surname></persName>
+		</author>
+		<title level="m">A new method for structural diagnostics with muon tomography and its applications</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Non-invasive scanning with cosmic particles</title>
+		<author>
+			<persName><surname>Cern Indico</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Muon radiography experiments on the subway overburden structure</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Unknown</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Geant4—a simulation toolkit</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Agostinelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Allison</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Amako</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Apostolakis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Araujo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Arce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Asai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Axen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Barrand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Behner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Bellagamba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Boudreau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Broglia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Brunengo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Burkhardt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chauvie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chuma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chytracek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Cooperman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Cosmo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Degtyarenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dell'acqua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Depaola</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Dietrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Enami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Feliciello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ferguson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Fesefeldt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Folger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Foppiano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Forti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Garelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Giani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Giannitrapani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gibin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Gómez Cadenas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>González</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gracia Abril</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Greeniaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Greiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Grichine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Grossheim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Guatelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Gumplinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hamatsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hashimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hasui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Heikkinen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Howard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Ivanchenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">W</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kallenbach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kanaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kawabata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kawabata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kawaguti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kelner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kimura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kodama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kokoulin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kossov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Kurashige</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Lamanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Lampén</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Lefebure</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Lei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liendl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Lockman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Longo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Magni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Maire</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Medernach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Minamimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mora De Freitas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Morita</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Murakami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nagamatu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nartallo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Nieminen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nishimura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ohtsubo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Okamura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>O'neale</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Oohata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Paech</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Perl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pfeiffer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Pia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Ranjard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Rybin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sadilov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Di Salvo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Santin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sasaki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Savvas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sawada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Scherer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Sirotenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Starkov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Stoecker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sulkimo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Takahata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Tanaka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Tcherniaev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Safai Tehrani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tropeano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Truscott</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Uno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Urban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Urban</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Verderi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Walkden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Weber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Wellisch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wenaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">C</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Yamada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yoshida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zschiesche</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0168-9002(03)01368-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<title level="j" type="abbrev">Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment</title>
+		<idno type="ISSN">0168-9002</idno>
+		<imprint>
+			<biblScope unit="volume">506</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="250" to="303" />
+			<date type="published" when="2003-07">2003</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Cosmic-ray shower generator (CRY) for Monte Carlo transport codes</title>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Hagmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Lange</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Douglas</forename><surname>Wright</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/nssmic.2007.4437209</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2007 IEEE Nuclear Science Symposium Conference Record</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2007">2007</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="1143" to="1146" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">3D imaging of a nuclear reactor using muography measurements</title>
+		<author>
+			<persName><forename type="first">Sébastien</forename><surname>Procureur</surname></persName>
+			<idno type="ORCID">0000-0002-5994-4132</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Attié</surname></persName>
+			<idno type="ORCID">0000-0003-2627-6032</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Laurent</forename><surname>Gallego</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hector</forename><surname>Gomez</surname></persName>
+			<idno type="ORCID">0000-0002-1770-8940</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Gonzales</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baptiste</forename><surname>Lefèvre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marion</forename><surname>Lehuraux</surname></persName>
+			<idno type="ORCID">0000-0001-7600-7039</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bertrand</forename><surname>Lesage</surname></persName>
+			<idno type="ORCID">0000-0001-6170-3584</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Irakli</forename><surname>Mandjavidze</surname></persName>
+			<idno type="ORCID">0000-0001-6664-9062</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>Mas</surname></persName>
+			<idno type="ORCID">0000-0002-5758-521X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Pomarède</surname></persName>
+			<idno type="ORCID">0000-0003-2038-0488</idno>
+		</author>
+		<idno type="DOI">10.1126/sciadv.abq8431</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science Advances</title>
+		<title level="j" type="abbrev">Sci. Adv.</title>
+		<idno type="ISSNe">2375-2548</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">8431</biblScope>
+			<date type="published" when="2023-02-03">2023</date>
+			<publisher>American Association for the Advancement of Science (AAAS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

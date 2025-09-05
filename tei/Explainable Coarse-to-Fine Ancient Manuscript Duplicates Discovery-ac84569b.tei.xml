@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Explainable Coarse-to-Fine Ancient Manuscript Duplicates Discovery</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-07-05">5 Jul 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Chongsheng</forename><surname>Zhang</surname></persName>
+							<email>cszhang@henu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Henan University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Shuwen</forename><surname>Wu</surname></persName>
+							<email>shuwenwu@henu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Henan University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yingqi</forename><surname>Chen</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Henan University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yi</forename><surname>Men</surname></persName>
+							<email>yi.men@henu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Henan University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Gaojuan</forename><surname>Fan</surname></persName>
+							<email>fangaojuan@henu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Henan University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Matthias</forename><surname>Aßenmacher</surname></persName>
+							<email>matthias@stat.uni-muenchen.de</email>
+							<affiliation key="aff1">
+								<orgName type="institution">LMU Munich</orgName>
+								<address>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Christian</forename><surname>Heumann</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">LMU Munich</orgName>
+								<address>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">João</forename><surname>Gama</surname></persName>
+							<email>jgama@fep.up.pt</email>
+							<affiliation key="aff2">
+								<orgName type="institution">University of Porto</orgName>
+								<address>
+									<country key="PT">Portugal</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Explainable Coarse-to-Fine Ancient Manuscript Duplicates Discovery</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-07-05">5 Jul 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">5B506AD05269621E5F3093AD70A10079</idno>
+					<idno type="arXiv">arXiv:2505.03836v2[cs.IR]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:31+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Ancient manuscripts are the primary source of ancient linguistic corpora. However, many ancient manuscripts exhibit duplications due to unintentional repeated publication or deliberate forgery. The Dead Sea Scrolls, for example, include counterfeit fragments, whereas Oracle Bones (OB) contain both republished materials and fabricated specimens. Identifying ancient manuscript duplicates is of great significance for both archaeological curation and ancient history study. In this work, we design a progressive OB duplicate discovery framework that combines unsupervised lowlevel keypoints matching with high-level textcentric content-based matching to refine and rank the candidate OB duplicates with semantic awareness and interpretability. We compare our model with state-of-the-art content-based image retrieval and image matching methods, showing that our model yields comparable recall performance and the highest simplified mean reciprocal rank scores for both Top-5 and Top-15 retrieval results, and with significantly accelerated computation efficiency. We have discovered over 60 pairs of new OB duplicates in real-world deployment, which were missed by domain experts for decades. Code, model and real-world results are available at: https: //github.com/cszhangLMU/OBD-Finder/.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Ancient manuscripts are the key source for ancient language corpora. However, many ancient manuscripts contain duplicates, due to unintentional repeated publication or deliberate forgery. For instance, the Dead Sea Scrolls contain forged fragments <ref type="bibr" target="#b4">(Greshko, 2020)</ref>, while Oracle Bones (OB) contain both repeated publications and forged ones. Finding ancient manuscript duplicates can help identify forgeries, eliminate duplicate fragments and prevent redundant research, while offering the potential to correct erroneous fragment rejoinings. Moreover, it facilitates empirical study on the damage and deterioration of ancient manuscripts during their circulation.</p><p>In particular, the identification of Oracle Bone duplicates has been a fundamental research issue in Oracle Bone Inscription (OBI) research. OBI was used in the late Shang Dynasty more than 3000 years ago for divination and recording purposes. But from then on, these Oracle Bones had been buried underground for thousands of years, until they were rediscovered in the year of 1899 for containing inscribed ancient Chinese characters. Due to drilling and burning before and during divination, and the long-term underground corrosion, as well as excavation, transportation, and circulation after their excavation, about 90% of the OBs have been fragmented and are now scattered in different collections around the world <ref type="bibr" target="#b15">(Zhang et al., 2022)</ref>.</p><p>As precious cultural relics, many Oracle Bones were circulated among various collectors and antique dealers in the initial period after their discovery in 1899. Limited by communication and dissemination methods at that time, the same OBs might have been repeatedly published in different publications at different times in different locations, which led to the phenomenon of OB duplicates, denoting that the fragments were repeatedly published. Some OBs further fragmented during circulation; on the other hand, as OBI research advances, some fragmentary OBs might have been rejoined by OBI domain experts and republished again (e.g., the right group of duplicates in Figure <ref type="figure">1</ref>). As such, OB duplicates exhibit both one-to-one and oneto-many image matching relationships. Although domain experts have manually found many duplicates in their research, given the huge cardinality of OB fragments (more than 160,000), AI-enabled OB duplicates discovery becomes imperative.</p><p>Oracle Bone Inscription is carved writing, its main research materials and publication formats are rubbings and manual copies. For rubbing materials, people place papers onto the surface of the Oracle Figure <ref type="figure">1</ref>: Three groups of new Oracle Bone duplicates discovered by our model, which have been missed by domain experts for decades. For each group of duplicate, we provide both the manual copies and rubbings of the Oracle Bones. We can see that, finding Oracle Bone duplicate is similarity-based matching, rather than exact matching, and there exists both one-to-one (e.g.the bottom left pair) and one-to-many matchings (e.g.the top left pair and the right pair). Note that, in our implementation, we only use the manual copies of the Oracle Bones.</p><p>Bones, then use Rubbing (with inks) to copy the carved inscriptions. Domain experts can also reproduce (copy) the carved inscriptions by hand, which is named Manual Oracle Bone Inscriptions Copy, referred to as OB manual copies for short. Figure <ref type="figure">1</ref> presents examples for both formats, which are actually cases of the new OB duplicates discovered by our model. Comparing the two formats, manual OBI copies rely on domain knowledge but has no background noises, whereas OBI rubbings often contains substantial noise disturbance, although domain knowledge is not required. Both formats can keep the original sizes of the Oracle Bones, which is not possible when using cameras. In 2022, the largest collection of manual OBI copies was published <ref type="bibr" target="#b6">(Huang, 2022)</ref>, for which a large team of OBI researchers invested 10 years to create highquality manual OBI copies for around 60,000 OBs.</p><p>With this new collection at hand, in this work we aim to devise a comprehensive framework for discovering OB duplicates at large-scale. Since different domain experts have slightly different copying styles for the same OBIs (such as variations in pen movement, stroke thickness, brush pressure), finding OB duplicates can be essentially formulated as a content-based image retrieval (CBIR) <ref type="bibr" target="#b0">(Brown et al., 2020;</ref><ref type="bibr" target="#b8">Kim et al., 2020;</ref><ref type="bibr" target="#b5">He and Wei, 2024)</ref> or image matching <ref type="bibr" target="#b13">(Sun et al., 2021;</ref><ref type="bibr" target="#b7">Jiang et al., 2024;</ref><ref type="bibr" target="#b11">Ren et al., 2025)</ref> task.</p><p>Contributions. To our knowledge, this work is among the first technical efforts that investigate AI-enabled Oracle Bone duplicates discovery. We design OBD-Finder, an explainable coarse-tofine text-centric Oracle Bone duplicates discovery framework that successively utilizes unsupervised low-level key feature points matching and highlevel content/character similarity for ranking the OB duplicate candidates. We have deployed our model in real-world applications, where we have successfully identified 63 pairs of new Oracle Bone duplicates, which have been verified by OBI community. Figure <ref type="figure">1</ref> presents three groups of new OB duplicates discovered by our model.</p><p>We also conduct extensive experiments on a large dataset of OB copies from <ref type="bibr" target="#b6">(Huang, 2022)</ref>. We compare our model with state-of-the-art CBIR and image matching methods, showing that our model achieves Top-K recall performance comparable to state-of-the-art methods, but with significantly accelerated computational efficiency and substantially reduced GPU memory consumption. Our model also attains the highest simplified mean reciprocal rank scores for both Top-5 and Top-15 retrieval results, demonstrating that it excels at prioritizing correct matches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Related Work</head><p>AI-enabled ancient manuscript fragments retrieval and rejoining have very important real-world applications <ref type="bibr" target="#b12">(Seuret et al., 2020;</ref><ref type="bibr" target="#b15">Zhang et al., 2022</ref><ref type="bibr" target="#b16">Zhang et al., , 2024))</ref>. Our domain-specific Oracle Bone (OB) duplicates discovery problem can be essentially formulated as a image retrieval or image matching task. In the following, we provide a brief overview of the content-based image retrieval (CBIR) and image matching techniques assessed in this study.</p><p>Content-based image retrieval. The Smooth-AP loss <ref type="bibr" target="#b0">(Brown et al., 2020)</ref> provides a differentiable approximation for Average Precision to enable end-to-end training for ranking-based CBIR tasks. HashNet <ref type="bibr" target="#b1">(Cao et al., 2017)</ref> adopts a sign activation function for binarizing the K-dimensional deep feature representation into K-bit binary hash code for retrieval In this paper, we use latest transformer-based implementation of HashNet <ref type="bibr" target="#b3">(Dubey et al., 2022)</ref>. HybridHash <ref type="bibr" target="#b5">(He and Wei, 2024</ref>) is a hybrid deep hashing architecture combining self-attention and convolutional layers for enhancing image retrieval performance. Note that, since there also exists one-to-many mapping relationship in OB duplicates, contour-based retrieval methods are not applicable in our task.</p><p>Image matching. Image matching, also known as feature/keypoint matching, aims to establish correspondences between points in two images depicting the same scene or object. SIFT (Scale-Invariant Feature Transform) (Lowe, 2004) is a classic algorithm for image matching. In recent years, deep learning based techniques have substantially improved the state-of-the-art in this field. LoFTR <ref type="bibr" target="#b13">(Sun et al., 2021)</ref> utilizes Transformer selfattention and cross-attention mechanisms to establish coarse-level matches of the keypoints, followed by fine-level match on the cropped local windows for each coarse match. OmniGlue <ref type="bibr" target="#b7">(Jiang et al., 2024)</ref> leverages vision foundation models for boosting generalization to unseen domains. It also uses self-and cross-attention for establishing intra-and inter-image connectivity graphs to enhance correspondence estimation. MINIMA <ref type="bibr" target="#b11">(Ren et al., 2025)</ref> is a latest image matching technique that contains a simple data engine for freely generating multiple modalities for images to pre-train modality invariant image matching model, achieving state-of-theart performance.</p><p>Despite their technical advancement and substantial performance improvement, OmniGlue essentially depends on foundation models for accurate image matching, while MINIMA relies on "heavy" pre-training on generated multi-modal data, and both of them have significantly slower infer-ence speed, compared to our proposed framework. Moreover, all the above image matching methods depend on low-level feature matching, but lack high-level semantic guidance. In comparison, in this work we seamlessly integrate unsupervised low-level feature matching and high-level character-centric semantic-aware content matching, offering outstanding retrieval and matching performance, fast inference speed, and strong interpretability for OB duplicates discovery.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Methodology</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Framework</head><p>As can be seen from Figure <ref type="figure" target="#fig_0">2</ref>, we propose a progressive coarse-to-fine Oracle Bone duplicate discovery framework, namely OBD-Finder, which combines unsupervised low-level keypoint matching with high-level, character-centric content-based image matching. Keypoint matching operates at low-level visual feature scale, which can prune out candidates with low degree of match in the initial stage, but lacks explicit semantic supervision and interpretability. Our framework bridges this gap by first grouping the keypoints based on their association with the character regions, then assesses the global matching degree between the two groups of keypoints via character-level visual content similarity computation. This dual matching mechanism enhances Oracle Bone duplicates discovery accuracy through a progressive coarse-to-fine refinement manner, by effectively and seamlessly integrating both low-level keypoint and high-level character-based semantic cues, resulting in more accurate and semantic-aware image matching. Our framework consists of four subsequent steps:</p><p>1. Feature Extraction. We perform unsupervised keypoints extraction on the OBs using a pre-trained model <ref type="bibr" target="#b2">(DeTone et al., 2018)</ref>.</p><p>2. Feature Matching. We next apply unsupervised keypoints mapping between the two OB images using a pre-trained model <ref type="bibr" target="#b9">(Lindenberger et al., 2023)</ref>. Candidate with low overall matching degrees will be filtered out.</p><p>3. Coordinate Alignment. After obtaining the correspondence between the keypoints in feature matching, we apply affine transformations for each image pair, in which we map the coordinates of the image with fewer feature points to the other image. 4. Character-level Content Similarity. we then localize the Oracle Bone characters in each image, using a text detector <ref type="bibr" target="#b17">(Zhou et al., 2017)</ref>.</p><p>Given that the coordinate systems of two images are aligned, for each character in the smaller image, we search for the overlapped characters in the counterpart image, next compute the content similarity between them, using a simple Siamese network model <ref type="bibr" target="#b14">(Taigman et al., 2014)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Key Features</head><p>OBD-Finder for ancient manuscript duplicates discovery has four primary characteristics:</p><p>1. It is progressive coarse-to-fine framework that seamlessly proceeds from low-level keypoints matching to high-level semantic-aware content similarity computation, resulting in very accurate OB duplicates discovery.</p><p>2. It is a transparent framework with strong interpretability. Dataset. We use the 60,000 manual Oracle Bone copies from the Oracle Bone Inscription Copy Series <ref type="bibr" target="#b6">(Huang, 2022)</ref> as the retrieval database, which have been divided into 25 OB groups by the OBI community based on dating and writing style. Two OBI domain experts who are co-authors of this work (Prof. Yi Men and Ms. Yingqi Chen) have manually collected 150 pairs of OB duplicates published in the OBI literature, which belong to different OB groups and are used the query images (with ground-truths). For each pair of images, we perform OB duplicate checking in the corresponding OBI group. For OBI character localization using EAST <ref type="bibr" target="#b17">(Zhou et al., 2017)</ref> and character-level content matching using Siamese network <ref type="bibr" target="#b14">(Taigman et al., 2014)</ref>, OBI domain experts have manually annotated the character regions and categorization for 500 OBs.</p><p>Table <ref type="table">1</ref>: Comparing OBD-Finder with CBIR methods (Recall@K performance).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head><p>Recall@1 Recall@5 Recall@10 Recall@15 Recall@20 Smooth-AP <ref type="bibr" target="#b0">(Brown et al., 2020)</ref> 34.1 62.9 73.8 78.8 82.8 Proxy-Anchor <ref type="bibr" target="#b8">(Kim et al., 2020)</ref> 71 </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head><p>Recall@1 Recall@5 Recall@10 Recall@15 Recall@20 Recall@25 SIFT <ref type="bibr" target="#b10">(Lowe, 2004)</ref> 33 Evaluation Metrics. We use two evaluation metrics: Recall@K and a simplified mean reciprocal rank measure MRR@K. Recall@K measures how many relevant items were successfully retrieved in the Top-K results, but doesn't consider their rankings. To address this limitation, we also adopt a modified version of MRR@K, since our dataset only contains one correct match per query, we simply average the rank position of the correct answer in the Top-K results across all query images, abbreviated as Rank@K.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Results</head><p>We first compare our model with content-based image retrieval (CBIR) methods. As reported in Table <ref type="table">1</ref>, OBD-Finder consistently obtains the best recall performance than the CBIR methods.</p><p>We next compare our model with state-of-the-art image matching techniques. As shown in Table <ref type="table" target="#tab_0">2</ref>, OBD-Finder exhibits recall performance on par with latest image matching methods. In Figure <ref type="figure" target="#fig_2">3</ref>, we showcase image matching results of different methods. Moreover, as reported in Tables 3, our model obtains the best Rank@K scores in the Top-5 and Top-15 retrieval results, demonstrating that it excels at prioritizing correct matches.</p><p>In Tables 4, we observe that OBD-Finder has significantly faster inference speed than state-ofthe-art image matching algorithms (40 times faster), but with substantially less GPU consumption (1/3 of their GPU usages). Therefore, our model is accurate and efficient at prioritizing correct matches.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Real-world Deployment</head><p>Besides empirical study, we also perform OB duplicate discovery for other OBs in each category, where we have successfully discovered 63 groups of new OB duplicates, which have been verified by OBI domain experts (Prof. Yi Men and Ms. Yingqi Chen, who are also co-authors of this work). Besides Figure <ref type="figure">1</ref>, in Figure <ref type="figure">4</ref>, we showcase ten more pairs of new Oracle Bone duplicates discovered in real-world deployment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Conclusion</head><p>Identifying duplicates in ancient manuscripts is an important real-world problem. For AI-enabled Oracle Bone duplicates discovery, we integrate unsupervised low-level feature matching with high-level character-based visual content matching for accurately and efficiently identifying the correct OB duplicates. We have discovered over 60 pairs of new OB duplicates in real-world deployment. In future work, we will jointly use the dual modalities of rubbing and manual copies to conduct multimodal OB duplicates discovery. We will also utilize our framework to discover duplicates in other ancient manuscripts, including Bamboo slips, Turfan Manuscripts, Dead Sea Scrolls, etc. Table <ref type="table">3</ref>: Comparing OBD-Finder with image matching methods (Rank@K).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method</head><p>Rank@5 Rank@10 Rank@15 Rank@20 Rank@25 SIFT <ref type="bibr" target="#b10">(Lowe, 2004)</ref> 1.6 2.70 4.16 6.15 7.74 LoFTR <ref type="bibr" target="#b13">(Sun et al., 2021)</ref> 1.09 1.88 2.74 3.76 5.22 OmniGlue <ref type="bibr" target="#b7">(Jiang et al., 2024)</ref> 1 </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: The overall framework of OBD-Finder for Oracle Bone duplicates discovery.</figDesc><graphic coords="4,89.66,67.29,414.96,321.61" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Case studies for image matching results of different methods.</figDesc><graphic coords="6,70.87,94.01,453.57,337.94" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="2,70.87,70.87,453.54,195.91" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="7,70.87,70.87,453.54,222.36" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 2 :</head><label>2</label><figDesc>Comparing OBD-Finder with image matching methods (Recall@K).</figDesc><table><row><cell></cell><cell>.5</cell><cell>77.0</cell><cell>84.1</cell><cell>86.6</cell><cell>91.9</cell></row><row><cell>HashNet (Dubey et al., 2022)</cell><cell>57.6</cell><cell>63.8</cell><cell>69.3</cell><cell>78.4</cell><cell>85.8</cell></row><row><cell>HybridHash (He and Wei, 2024)</cell><cell>60.8</cell><cell>66.8</cell><cell>73.2</cell><cell>79.3</cell><cell>88.3</cell></row><row><cell>Ours (OBD-Finder)</cell><cell>80.0</cell><cell>85.3</cell><cell>90.4</cell><cell>94.3</cell><cell>98.0</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 4 :</head><label>4</label><figDesc>Comparisons on Inference speed, FPS, and GPU memory consumption.</figDesc><table><row><cell></cell><cell>.13</cell><cell>1.51</cell><cell>2.05</cell><cell>2.52</cell><cell>2.89</cell></row><row><cell>MINIMA (Ren et al., 2025)</cell><cell>1.36</cell><cell>1.66</cell><cell>2.07</cell><cell>2.38</cell><cell>2.38</cell></row><row><cell>Ours (OBD-Finder)</cell><cell>1.06</cell><cell>1.63</cell><cell>2.00</cell><cell>2.61</cell><cell>2.93</cell></row><row><cell>Method</cell><cell cols="4">Recall@20 Inf. Speed (s/pair) FPS (pair/s) GPU (MiB)</cell><cell></cell></row><row><cell>SIFT (Lowe, 2004)</cell><cell>66.6</cell><cell>0.017</cell><cell>59</cell><cell>N/A</cell><cell></cell></row><row><cell>LoFTR (Sun et al., 2021)</cell><cell>92.3</cell><cell>3.6</cell><cell>0.28</cell><cell>3502</cell><cell></cell></row><row><cell>OmniGlue (Jiang et al., 2024)</cell><cell>98.2</cell><cell>45</cell><cell>0.02</cell><cell>23612</cell><cell></cell></row><row><cell>MINIMA (Ren et al., 2025)</cell><cell>100</cell><cell>1</cell><cell>1</cell><cell>14890</cell><cell></cell></row><row><cell>Ours (OBD-Finder)</cell><cell>98</cell><cell>0.021</cell><cell>47.62</cell><cell>5215</cell><cell></cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_0"><p>It is unsupervised and almost training-free, only requiring little annotation effort.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_1"><p>It is highly efficient, compared to state-of-theart image matching methods, which we will demonstrate in the empirical studies.</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Smooth-AP: Smoothing the Path Towards Large-Scale Image Retrieval</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Brown</surname></persName>
+			<idno type="ORCID">0000-0002-9556-2633</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weidi</forename><surname>Xie</surname></persName>
+			<idno type="ORCID">0000-0003-3804-2639</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vicky</forename><surname>Kalogeiton</surname></persName>
+			<idno type="ORCID">0000-0002-7368-6993</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Zisserman</surname></persName>
+			<idno type="ORCID">0000-0002-8945-8573</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58545-7_39</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="677" to="694" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">HashNet: Deep Learning to Hash by Continuation</title>
+		<author>
+			<persName><forename type="first">Zhangjie</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingsheng</forename><surname>Long</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianmin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><forename type="middle">S</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv.2017.598</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-10">2017. 2017</date>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="5609" to="5618" />
+		</imprint>
+	</monogr>
+	<note>HashNet: Deep learning to hash by continuation</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">SuperPoint: Self-supervised interest point detection and description</title>
+		<author>
+			<persName><forename type="first">Tomasz</forename><surname>Daniel Detone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Malisiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Rabinovich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR Workshops 2018</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="224" to="236" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Vision transformer hashing for image retrieval</title>
+		<author>
+			<persName><forename type="first">Ram</forename><surname>Shiv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satish</forename><forename type="middle">Kumar</forename><surname>Dubey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei-Ta</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Chu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ICME 2022</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Dead sea scrolls at the museum of the bible are all forgeries</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Greshko</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">HybridHash: Hybrid Convolutional and Self-Attention Deep Hashing for Image Retrieval</title>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>He</surname></persName>
+			<idno type="ORCID">0009-0008-0678-8616</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hongxi</forename><surname>Wei</surname></persName>
+			<idno type="ORCID">0000-0002-2570-4544</idno>
+		</author>
+		<idno type="DOI">10.1145/3652583.3658014</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2024 International Conference on Multimedia Retrieval</title>
+		<meeting>the 2024 International Conference on Multimedia Retrieval</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2024-05-30">2024</date>
+			<biblScope unit="page" from="824" to="832" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Oracle Bone Inscription Copy Series</title>
+		<author>
+			<persName><forename type="first">Tianshu</forename><surname>Huang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<publisher>Peking University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">OmniGlue: Generalizable Feature Matching with Foundation Model Guidance</title>
+		<author>
+			<persName><forename type="first">Hanwen</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Arjun</forename><surname>Karpur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bingyi</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qixing</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andre</forename><surname>Araujo</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52733.2024.01878</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-06-16">2024</date>
+			<biblScope unit="page" from="19865" to="19875" />
+		</imprint>
+	</monogr>
+	<note>Qixing Huang, and André Araújo</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Proxy Anchor Loss for Deep Metric Learning</title>
+		<author>
+			<persName><forename type="first">Sungyeon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongwon</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Minsu</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suha</forename><surname>Kwak</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr42600.2020.00330</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06">2020</date>
+			<biblScope unit="page" from="3235" to="3244" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">LightGlue: Local Feature Matching at Light Speed</title>
+		<author>
+			<persName><forename type="first">Philipp</forename><surname>Lindenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul-Edouard</forename><surname>Sarlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pollefeys</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv51070.2023.01616</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-01">2023</date>
+			<biblScope unit="page" from="17581" to="17592" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Distinctive image features from scale-invariant keypoints</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Lowe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International journal of computer vision</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="91" to="110" />
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">MINIMA: Modality invariant image matching</title>
+		<author>
+			<persName><forename type="first">Xingyu</forename><surname>Jiangwei Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zizhuo</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dingkang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Bai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR 2025</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="23059" to="23068" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">ICFHR 2020 Competition on Image Retrieval for Historical Handwritten Fragments</title>
+		<author>
+			<persName><forename type="first">Mathias</forename><surname>Seuret</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anguelos</forename><surname>Nicolaou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dominique</forename><surname>Stutzmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andreas</forename><surname>Maier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vincent</forename><surname>Christlein</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icfhr2020.2020.00048</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 17th International Conference on Frontiers in Handwriting Recognition (ICFHR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-09">2020</date>
+			<biblScope unit="page" from="216" to="221" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">LoFTR: Detector-Free Local Feature Matching with Transformers</title>
+		<author>
+			<persName><forename type="first">Jiaming</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zehong</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hujun</forename><surname>Bao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaowei</forename><surname>Zhou</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr46437.2021.00881</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-06">2021</date>
+			<biblScope unit="page" from="8918" to="8927" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">DeepFace: Closing the Gap to Human-Level Performance in Face Verification</title>
+		<author>
+			<persName><forename type="first">Yaniv</forename><surname>Taigman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ming</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc'aurelio</forename><surname>Ranzato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lior</forename><surname>Wolf</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2014.220</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2014 IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2014-06">2014</date>
+			<biblScope unit="page" from="1701" to="1708" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Data-Driven Oracle Bone Rejoining: A Dataset and Practical Self-Supervised Learning Scheme</title>
+		<author>
+			<persName><forename type="first">Chongsheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ke</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruixing</forename><surname>Zong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo-Feng</forename><surname>Mo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Men</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Almpanidis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shanxiong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangliang</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3534678.3539050</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</title>
+		<meeting>the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2022-08-14">2022</date>
+			<biblScope unit="page" from="4482" to="4492" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">LLMCO4MR: LLMs-Aided Neural Combinatorial Optimization for Ancient Manuscript Restoration from Fragments with Case Studies on Dunhuang</title>
+		<author>
+			<persName><forename type="first">Yuqing</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0009-0004-7205-761X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hangqi</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0009-0003-8348-2331</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shengyu</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-0030-8289</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Runzhong</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-9566-738X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Baoyi</forename><surname>He</surname></persName>
+			<idno type="ORCID">0000-0001-7404-2009</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Huaiyong</forename><surname>Dou</surname></persName>
+			<idno type="ORCID">0000-0002-9499-3394</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Junchi</forename><surname>Yan</surname></persName>
+			<idno type="ORCID">0000-0001-9639-7679</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yongquan</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-3065-7199</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fei</forename><surname>Wu</surname></persName>
+			<idno type="ORCID">0000-0003-2139-8807</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-73226-3_15</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024-11-01">2024</date>
+			<biblScope unit="page" from="253" to="269" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">EAST: An Efficient and Accurate Scene Text Detector</title>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cong</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">He</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuzhi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuchang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiran</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiajun</forename><surname>Liang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2017.283</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-07">2017</date>
+			<biblScope unit="page" from="2642" to="2651" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

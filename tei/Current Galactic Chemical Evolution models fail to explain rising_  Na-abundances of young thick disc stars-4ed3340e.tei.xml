@@ -1,0 +1,3605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Current Galactic Chemical Evolution models fail to explain rising Na-abundances of young thick disc stars</title>
+				<funder ref="#_JzA2cwJ">
+					<orgName type="full">Australian Research Council</orgName>
+				</funder>
+				<funder ref="#_pNGBYKq #_QncCqU8">
+					<orgName type="full">AJR&apos;s Australia Research Council Future</orgName>
+				</funder>
+				<funder ref="#_RmHbSMd">
+					<orgName type="full">unknown</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-06-21">21 Jun 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Evans</forename><forename type="middle">K</forename><surname>Owusu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Science</orgName>
+								<orgName type="institution">University of New South Wales Canberra</orgName>
+								<address>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="laboratory">ARC Centre of Excellence for All-Sky Astrophysics in</orgName>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Dimensions (ASTRO-3D</orgName>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Max-Planck-Institut für Astronomie</orgName>
+								<address>
+									<addrLine>Königstuhl 17</addrLine>
+									<postCode>D-69117</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<orgName type="department">Heidelberger Institut für Theoretische Studien</orgName>
+								<address>
+									<addrLine>Schloss-Wolfsbrunnenweg 35</addrLine>
+									<postCode>69118</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ashley</forename><forename type="middle">J</forename><surname>Ruiter</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Science</orgName>
+								<orgName type="institution">University of New South Wales Canberra</orgName>
+								<address>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="laboratory">ARC Centre of Excellence for All-Sky Astrophysics in</orgName>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Dimensions (ASTRO-3D</orgName>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Max-Planck-Institut für Astronomie</orgName>
+								<address>
+									<addrLine>Königstuhl 17</addrLine>
+									<postCode>D-69117</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<orgName type="department">Heidelberger Institut für Theoretische Studien</orgName>
+								<address>
+									<addrLine>Schloss-Wolfsbrunnenweg 35</addrLine>
+									<postCode>69118</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff6">
+								<orgName type="laboratory">The ARC Centre of Excellence for Gravitational Wave Discovery</orgName>
+								<orgName type="institution">OzGrav</orgName>
+								<address>
+									<postCode>3122</postCode>
+									<settlement>Hawthorn</settlement>
+									<region>VIC</region>
+									<country>Australia;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Alex</forename><forename type="middle">J</forename><surname>Kemp</surname></persName>
+							<affiliation key="aff7">
+								<orgName type="department">Institute of Astronomy (IvS)</orgName>
+								<orgName type="institution">KU Leuven</orgName>
+								<address>
+									<addrLine>Celestĳnenlaan 200D</addrLine>
+									<postCode>3001</postCode>
+									<settlement>Leuven</settlement>
+									<country>Belgium;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Sven</forename><surname>Buder</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="laboratory">ARC Centre of Excellence for All-Sky Astrophysics in</orgName>
+							</affiliation>
+							<affiliation key="aff8">
+								<orgName type="department">Research School of Astronomy and Astrophysics</orgName>
+								<orgName type="institution">Australian National University</orgName>
+								<address>
+									<addrLine>ACT 2611</addrLine>
+									<country>Australia;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ivo</forename><forename type="middle">R</forename><surname>Seitenzahl</surname></persName>
+							<affiliation key="aff5">
+								<orgName type="department">Heidelberger Institut für Theoretische Studien</orgName>
+								<address>
+									<addrLine>Schloss-Wolfsbrunnenweg 35</addrLine>
+									<postCode>69118</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Nicolas</forename><surname>Rodriguez-Segovia</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Science</orgName>
+								<orgName type="institution">University of New South Wales Canberra</orgName>
+								<address>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">R</forename><surname>Pakmor</surname></persName>
+							<affiliation key="aff9">
+								<orgName type="department">Max Planck Institute for Astrophysics</orgName>
+								<address>
+									<addrLine>Karl-Schwarzschild-Str. 1</addrLine>
+									<postCode>D-85748</postCode>
+									<settlement>Garching</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Giulia</forename><forename type="middle">C</forename><surname>Cinquegrana</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="laboratory">ARC Centre of Excellence for All-Sky Astrophysics in</orgName>
+							</affiliation>
+							<affiliation key="aff10">
+								<orgName type="department">School of Physics &amp; Astronomy</orgName>
+								<orgName type="institution">Monash University</orgName>
+								<address>
+									<postCode>3800</postCode>
+									<settlement>Clayton</settlement>
+									<region>VIC</region>
+									<country>Australia;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Nicholas</forename><surname>Storm</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Dimensions (ASTRO-3D</orgName>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Max-Planck-Institut für Astronomie</orgName>
+								<address>
+									<addrLine>Königstuhl 17</addrLine>
+									<postCode>D-69117</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff11">
+								<orgName type="institution">Heidelberg University</orgName>
+								<address>
+									<addrLine>Grabengasse 1</addrLine>
+									<postCode>69117</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Philipp</forename><surname>Eitner</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Dimensions (ASTRO-3D</orgName>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Max-Planck-Institut für Astronomie</orgName>
+								<address>
+									<addrLine>Königstuhl 17</addrLine>
+									<postCode>D-69117</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff11">
+								<orgName type="institution">Heidelberg University</orgName>
+								<address>
+									<addrLine>Grabengasse 1</addrLine>
+									<postCode>69117</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Maria</forename><surname>Bergemann</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="department">Dimensions (ASTRO-3D</orgName>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Max-Planck-Institut für Astronomie</orgName>
+								<address>
+									<addrLine>Königstuhl 17</addrLine>
+									<postCode>D-69117</postCode>
+									<settlement>Heidelberg</settlement>
+									<country>Germany;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">Defence Force Academy</orgName>
+								<address>
+									<addrLine>ACT 2600</addrLine>
+									<country>Australia;</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Current Galactic Chemical Evolution models fail to explain rising Na-abundances of young thick disc stars</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-06-21">21 Jun 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">86B3412DAF8B4A3F88748CE69093E394</idno>
+					<idno type="arXiv">arXiv:2506.17711v1[astro-ph.GA]</idno>
+					<note type="submission">Accepted XXX. Received YYY; in original form 2025 June 21</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:50+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Galaxy</term>
+					<term>abundances -Galaxy</term>
+					<term>evolution -Stars</term>
+					<term>abundances -Nucleosynthesis</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We recently identified an upturn in [Na/Fe] for the population of Solar-type stars in the Galactic thick disc (-0.3 &lt; [Fe/H] &lt; +0.3 dex) at super-Solar metallicity in GALactic Archaeology with HERMES (GALAH) data. Here, we investigate the cause of this unexplained Na enrichment between ([Fe/H] ≈ 0 -0.6 dex) using the OMEGA+ galactic chemical evolution code. We investigate the increase of [Na/Fe] with four combinations of nucleosynthetic yields from the literature, with source contributions from core-collapse supernovae, asymptotic giant branch stars, and Type Ia supernovae. We focus on two possible causes for the Na-enhancement: the 'metallicity effect' resulting from core-collapse supernovae at super-Solar metallicity and the contribution of metal-rich AGB stars. We adopt two sets of Type Ia supernova yields with one model assuming only Chandrasekhar-mass explosions, and another assuming only sub-Chandrasekhar-mass explosions. We find that the assumed Type Ia explosion has little effect on the [Na/Fe] Galactic Chemical Evolution modelling, and all Galactic chemical evolution models tested fail to reproduce the observed [Na/Fe] enrichment in the young thick disc population at super-Solar metallicities. Our study indicates a possible 'under-pollution effect' by SNe Ia, which are the dominant producers of iron, in the Galactic disc's Solar-type star population. These findings provide a step forward toward understanding the origin of the unexplained sodium enrichment at super-Solar metallicities in the Galactic disc.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="782.362"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>Stellar evolution is mainly determined by the initial chemical composition and mass of the star at birth (see e.g., <ref type="bibr" target="#b2">Appenzeller 1982;</ref><ref type="bibr" target="#b9">Beccari &amp; Carraro 2015;</ref><ref type="bibr" target="#b36">Hayden et al. 2017;</ref><ref type="bibr" target="#b87">Sellwood &amp; Binney 2002;</ref><ref type="bibr" target="#b90">Steinhardt et al. 2023)</ref>. In turn, the chemical composition of stellar nurseries is influenced by astrophysical processes such as stellar and galactic winds, supernovae (SNe), infalling gas and/or satellite galaxies, and star formation processes <ref type="bibr" target="#b34">(Gibson et al. 2003;</ref><ref type="bibr" target="#b84">Schoettler &amp; Owen 2024)</ref>. Consequently, Galactic Chemical Evolution (GCE) studies have been developed to trace the history and evolution of galaxies, as stellar abundances preserve the chemical signature of their birth environment and provide a crucial observational window into their evolution.</p><p>All elements heavier than He and Li, from light elements like carbon to heavier ones like barium, are synthesised by one or more astrophysical channels: For example core-collapse supernovae (CC SNe), which synthesise large amounts of 𝛼-elements such as Mg, Si, Ca, Ti; <ref type="bibr">(Arnett 1978;</ref><ref type="bibr" target="#b71">Nomoto et al. 1997;</ref><ref type="bibr">Kobayashi et al. 2020a,b)</ref>, Type Ia supernovae (SNe Ia), the dominant source of iron-peak elements such as Cr, Mn, Fe, Co, Ni; e.g., <ref type="bibr" target="#b17">(Chiappini 2009;</ref><ref type="bibr" target="#b37">Howell 2011;</ref><ref type="bibr" target="#b72">Nomoto et al. 2013;</ref><ref type="bibr">Seitenzahl et al. 2013b;</ref><ref type="bibr" target="#b57">Leung &amp; Nomoto 2017;</ref><ref type="bibr" target="#b68">McWilliam et al. 2018;</ref><ref type="bibr" target="#b13">Bravo et al. 2024)</ref>, and asymptotic giant branch (AGB) stars, which produce most 𝑠-process elements, such as Ba, Sr, Y, and Zr; e.g, <ref type="bibr" target="#b43">(Karakas &amp; Lattanzio 2007;</ref><ref type="bibr" target="#b24">Cseh et al. 2022;</ref><ref type="bibr" target="#b104">den Hartogh et al. 2023)</ref>. These three sites are some of the principal astrophysical sources driving GCE and are typically accounted for in GCE models. Additional (and more complex) sources include various types of interacting stars, in many cases undergoing one or more common envelope event(s), such as novae <ref type="bibr" target="#b45">(Kemp et al. 2024)</ref> and kilonovae <ref type="bibr" target="#b51">(Kobayashi et al. 2023;</ref><ref type="bibr" target="#b64">Matteucci 2023)</ref>.</p><p>Examining the contributions of different astrophysical phenomena toward the chemical enrichment of a galaxy over a wide range of metallicities provides insight into how Galactic processes shape enrichment of elements -such as Na. The analysis of the enrichment pattern helps us trace how each channel influences the build-up of elements (e.g., Na) over time, ultimately shaping its present-day abundance relative to the Solar ratio. An analysis of the logarithmic abundance ratios of elements (X) relative to iron (Fe), expressed as [X/Fe] 1 , can provide valuable insights into the chemical evolution history of the Galaxy <ref type="bibr" target="#b32">(Francois 1986;</ref><ref type="bibr" target="#b101">Wheeler et al. 1989;</ref><ref type="bibr" target="#b33">Freeman &amp; Bland-Hawthorn 2002;</ref><ref type="bibr" target="#b77">Ratcliffe et al. 2022)</ref>. Iron is chosen as the reference element because its abundance increases steadily with time in the Universe, and it is relatively straightforward to determine its spectroscopic stellar abundances, particularly compared to elements whose gas-phase abundances are more challenging to measure directly. Furthermore, iron is produced and expelled back into the interstellar medium (ISM) by both CC SNe and SNe Ia <ref type="bibr" target="#b96">(Tsujimoto et al. 1995;</ref><ref type="bibr" target="#b39">Iwamoto et al. 1999;</ref><ref type="bibr" target="#b47">Kobayashi et al. 2006;</ref><ref type="bibr" target="#b78">Recio-Blanco et al. 2014)</ref>, making it an excellent tracer of overall metallicity and GCE <ref type="bibr" target="#b67">(McWilliam 1997;</ref><ref type="bibr" target="#b40">Jha et al. 2019</ref>). This study focuses on Na, which is synthesised during hydrostatic carbon burning in massive stars (i.e., 𝑀 ZAMS ≥ 8 𝑀 ⊙ ; <ref type="bibr">Woosley &amp; Weaver 1995;</ref><ref type="bibr" target="#b72">Nomoto et al. 2013;</ref><ref type="bibr">Kobayashi et al. 2020b;</ref><ref type="bibr" target="#b3">Arcones &amp; Thielemann 2023)</ref>. Na is an element with one stable isotope (i.e., monoisotopic), and the next lightest element after Be and F.</p><p>In massive stars, during the nucleosynthesis processes, Na is expelled into the ISM before CC SNe through stellar winds, or if kept until the supernova. Factors like stellar mass, mass-loss rates and explosion energies favour Na's explosion <ref type="bibr" target="#b98">(Vink 2018)</ref>. Further, the amount of Na produced is sensitive to progenitor metallicity <ref type="bibr">(Arnould &amp; Norgaard 1978, i.e</ref>., there is a 'metallicity effect'). Na's monoisotopic feature, that is, the isotope 23 Na, which produces more neutrons than protons (11p,12n), makes its nucleosynthetic yields more sensitive to the neutron surplus existing in the progenitor star. Specifically, 23 Na production in massive stars during hydrostatic carbon and neon burning depends on the availability of free neutrons, which in turn is set by the initial metallicity of the star <ref type="bibr" target="#b4">(Arnett 1971;</ref><ref type="bibr">Arnould &amp; Norgaard 1978;</ref><ref type="bibr" target="#b6">Arnett 1996;</ref><ref type="bibr" target="#b47">Kobayashi et al. 2006)</ref>. At higher metallicity (Z), there is a greater abundance of 22 Ne -produced from 14 N left over from the carbon-nitrogen-oxygen (CNO) cycle. The CNO chain requires these elements as catalysts, meaning that a higher initial Z results in a more efficient hydrogen burning, which then enhances the 14 N to 22 Ne reaction. 22 Ne, being neutron-rich, acts as a reservoir and favours the production of 23 Na. Thus, the sensitivity of Na yields to metallicity arises from the specific nucleosynthetic pathway of 23 Na and the metallicity-dependent production of 22 Ne, rather than it being a general property of all monoisotopic elements. Comparatively, neighbouring even-Z elements like Mg do not posses this property because of their multiple stable isotopes -their yields are less sensitive to the neutron excess (and hence progenitor metallicity) as production can shift from e.g. 24 Mg to 25 Mg or 26 Mg when metallicity changes. This dependence on progenitor metallicity allows Na to serve as an effective tracer of Galactic chemical evolution. In contrast, at lower metallicity, the initial abundances of CNO elements are reduced, leading to less 14 N and consequently less 22 Ne and neutron excess. This results in lower yields of 23 Na <ref type="bibr" target="#b93">(Timmes et al. 1995;</ref><ref type="bibr">Kobayashi et al. 2020a)</ref>.</p><p>Similarly, intermediate-mass-mass stars on the AGB play a significant role in Na synthesis, with their contribution strongly dependent 1 [X/Fe] ≡ log 10 ( 𝑁 X /𝑁 Fe ) ★log 10 ( 𝑁 X /𝑁 Fe ) ⊙ on metallicity. At high metallicity, the second dredge-up efficiently mixes CNO -processed material, particularly 14 N, to the stellar surface early in the AGB phase. This process leads to increased secondary production of both nitrogen and Na as metallicity rises, and remains robust across a range of metallicities <ref type="bibr" target="#b97">(Ventura et al. 2013;</ref><ref type="bibr" target="#b44">Karakas &amp; Lattanzio 2014;</ref><ref type="bibr" target="#b23">Cristallo et al. 2015)</ref>. In contrast, Na production is dominated by hot bottom burning (HBB) at lower metallicity. Here, the third dredge-up brings freshly synthesised carbon into the envelope, which is converted to Na via the Ne-Na cycle during HBB. Because HBB operates at higher temperatures in metalpoor stars, this pathway enables efficient primary 23 Na production even when the initial metal content is low. Recent AGB models by <ref type="bibr" target="#b18">Cinquegrana &amp; Karakas (2022)</ref> confirm these trends: They show that 23 Na yields increase with metallicity due to secondary production at high Z, while primary production via HBB remains significant at low Z (see their fig. <ref type="figure">4</ref>). The usefulness of Na in the context of the 'metallicity effect' has been discussed before; for a detailed discussion of the metallicity effect associated with Na abundance, see <ref type="bibr">Arnould &amp; Norgaard (1978)</ref>; <ref type="bibr" target="#b88">Shi et al. (2004)</ref> and section 4.1 of <ref type="bibr">(Owusu et al. 2024, hereafter O24)</ref>.</p><p>Historically, Cayrel de <ref type="bibr" target="#b16">Strobel et al. (1970)</ref> first reported evidence of Na enrichment in dwarf and giant stars. Subsequent studies (e.g., <ref type="bibr" target="#b32">Francois 1986;</ref><ref type="bibr" target="#b65">Matteucci &amp; Greggio 1986;</ref><ref type="bibr" target="#b26">Edvardsson et al. 1993;</ref><ref type="bibr" target="#b69">Mowlavi 1999;</ref><ref type="bibr" target="#b88">Shi et al. 2004</ref>) have confirmed a Na upturn and enrichment with increasing metallicity across various stellar populations (halo, bulge and disc). Cayrel de <ref type="bibr" target="#b16">Strobel et al. (1970)</ref> laid the essential groundwork for understanding Na production in massive stars. Later on, <ref type="bibr" target="#b32">Francois (1986)</ref> underscored the critical role AGB star progenitors play in Na enrichment, thereby expanding our understanding of Na's nucleosynthetic contribution across different stellar populations. Additionally, <ref type="bibr" target="#b91">Takeda &amp; Takada-Hidai (1994)</ref> found that A -F supergiant stars exhibit an excess in Na with [Na/H] having values ranging from 0.0 ≤ [Na/H] ≤ 0.5 in F supergiants and 0.7 ≤ [Na/H] ≤ 0.8 in A supergiants. This enhancement is credited to the Ne-Na cycle during hydrogen burning. More recent highresolution spectroscopic surveys have demonstrated that this trend is particularly pronounced at super-Solar metallicities ([Fe/H] &gt; 0), where [Na/Fe] shows a clear increase in both old and young Milky Way disc stars (O24). The Na enrichment at super Solar [Fe/H] is especially notable in the metal-rich, dynamically cold youngerthick disc population, a trend that has been reported in other studies <ref type="bibr" target="#b10">(Bensby et al. 2014</ref><ref type="bibr" target="#b11">(Bensby et al. , 2017;;</ref><ref type="bibr" target="#b70">Nissen et al. 2020;</ref><ref type="bibr" target="#b35">Griffith et al. 2022)</ref>. In particular, <ref type="bibr" target="#b10">Bensby et al. (2014)</ref> documented an increase in [Na/Fe] with [Fe/H] &gt; 0 for a sample of 714 dwarf stars in the Solar neighbourhood (see their fig. <ref type="figure" target="#fig_1">16</ref>). Despite these reports of an upturn in Na enrichment at high metallicity, a universally accepted explanation remains elusive. These differing interpretations for the observed increase in Na, as well as contributions from different nucleosynthesis channels, motivated us to study the observed progressive rise in [Na/Fe] at high metallicity. It presents important implications for understanding nucleosynthesis sources and GCE. This paper is organised into five sections. In Section 2, we describe the data and the processing of yield tables for the various theoretical stellar yields employed in this study. Additionally, we outline the choice of GCE code used. Section 3 presents the results of this work, while Section 4 discusses these results and their implications for broader nucleosynthesis processes. Finally, Section 5 concludes with a summary of our findings and highlights opportunities for future research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">CHEMICAL EVOLUTION DATA AND MODELLING METHODOLOGY</head><p>In the third data release of the GALactic Archaeology with HERMES spectrograph (GALAH DR3, <ref type="bibr" target="#b14">Buder et al. 2021)</ref>, Na is one of the 30 elemental abundances analysed. The dataset includes Na lines at 𝜆4751.82Å, 𝜆5682.63Å and 𝜆5688.21Å, with abundances derived using one-dimensional, non-local thermodynamic equilibrium (1D NLTE) modelling <ref type="bibr" target="#b0">(Amarsi et al. 2020)</ref>. In Figure <ref type="figure" target="#fig_1">1</ref>, we show the GALAH DR3 [Na/Fe] abundances for a sample of 5 148 Solar-type stars (thick disc only), similar to what was discussed in O24, but with a higher metallicity range in the sample up to +0.6 dex to incorporate an extended population in metallicity-space. The reason for the observed [Na/Fe] upturn in the GALAH data is currently unknown and is the focus of this paper. This work aims to investigate the underlying cause of Na abundance enrichment at super-Solar metallicities (up to 0.6 dex) among the younger population of the old (thick) disc stars of the Galaxy. We create four GCE models (see Table <ref type="table">1</ref>) that incorporate different stellar yield predictions from theoretical nucleosynthesis calculations of CC SNe, SNe Ia, and AGB stars and compare these with observational data. We explore two possibilities for the Na enhancement: the 'metallicity effect' from CC SNe at high metallicity and AGB stars at super-Solar metallicity, as possible solutions for explaining the observed Na enhancement. Firstly, the metallicity effect from CC SNe motivated us to examine normalised Na production ratios using data from <ref type="bibr">Woosley &amp; Weaver (1995)</ref>. A preliminary check into those models (see Figure <ref type="figure" target="#fig_2">2</ref>) seemed to support the idea that the metallicity effect plays an important role in Na production. We therefore expand our yield table sets (see Table <ref type="table">1</ref>) to include massive star yields from <ref type="bibr">Woosley &amp; Weaver (1995)</ref> in addition to existing massive star yield tables in OMEGA+ (i.e., <ref type="bibr" target="#b47">Kobayashi et al. 2006;</ref><ref type="bibr" target="#b59">Limongi &amp; Chieffi 2018)</ref>. Secondly, we include <ref type="bibr" target="#b18">Cinquegrana &amp; Karakas (2022)</ref> massand metallicity-dependent AGB yields, which cover a broad range of super-solar metallicities (0.04 ≤ Z ≤ 0.1), into our chemical evolution models (see Section 2.2.2 and Table <ref type="table">1</ref> for model K10C22K06). The super-Solar metallicity AGB models clearly show an increasing 23 Na yield with increasing metallicity (see their fig. <ref type="figure">8</ref>). By incorporating both of these additional yield sets, we account for Na enrichment from both CC SNe and AGB channels.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Sample selection</head><p>Similar to O24, we selected a sample of Solar-type (G spectral type) thick disc stars from the GALAH DR3 catalogue with quality cuts based on the following criteria:</p><formula xml:id="formula_0">flag_sp == 0, flag_fe_h == 0, flag_Na_fe == 0, (1) e_age_bstep/age_bstep &lt; 0.2 or e_age_bstep &lt; 2, (2) snr_c2_iraf &gt; 50, (3) 5600 &lt; 𝑇 eff &lt; 5950, log 𝑔 &gt; 4.15, (4) -0.3 &lt; [Fe/H] &lt; +0.6.</formula><p>(5)</p><p>Equation 1 describes the basic quality criteria applied to our sample. Equation 2 selects stars with a reliable age estimate, specifically those with uncertainties below 20% or less than 2 Gyr. Equation 3 ensures high-quality spectra by requiring a signal-to-noise ratio greater than 50 per pixel in the green CCD <ref type="bibr" target="#b53">(Kos et al. 2017)</ref>. Finally, in Equation <ref type="formula">4</ref>and 5, we place additional constraints to select only Solar-type stars.</p><p>In addition, we also apply the standard O24 selection criterion for thick disc stars only. Old stars : [Na/Fe] old &gt; 0.55 -(0.5/5.5) × 𝜏;</p><p>where 𝜏 is the stellar age in Gyr. However, compared to O24, we extended the metallicity range beyond [Fe/H] = +0.3 to capture a broader abundance distribution (see Equation <ref type="formula">5</ref>). This wider range enables us to gain insights into Na enhancement trends. Following these criteria, our final sample consists of 5 148 Solar-type thick disc stars, as illustrated in Figure <ref type="figure" target="#fig_1">1</ref>, which displays the resultant sample on a [Fe/H] vs [Na/Fe] plane. Significantly, we observe a persistent rising trend commencing at [Fe/H] &gt; 0.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Chemical evolution with OMEGA+</head><p>We used the two-zone GCE code OMEGA+<ref type="foot" target="#foot_2">foot_2</ref>  <ref type="bibr">(Côté et al. 2018)</ref>, an extended version of the One-zone Model for the Evolution of Galaxies <ref type="bibr" target="#b21">(Côté et al. 2017;</ref><ref type="bibr">Côté &amp; Ritter 2018, OMEGA)</ref>. OMEGA+ simulates a central, cold, star-forming region surrounded by a hot gas reservoir, enabling detailed modelling of Galactic processes, their timescales, and the formation history of the Galaxy <ref type="bibr">(Côté et al. 2018)</ref>. The two-zone structure of OMEGA+ consists of a galaxy and a circumgalactic medium (CGM), which offers the following advantages:</p><p>• Self-consistent star formation rate (SFR): OMEGA+ computes the SFR by balancing galactic inflows against stellar feedback without requiring external input.</p><p>• Recycling of metals: Metals ejected from the central galaxy are retained within the CGM rather than lost. These metals can later be reintroduced to the star-forming region via galactic inflows, allowing for a more realistic simulation of the Galaxy's chemical evolution.</p><p>• Key parameters of the model include the initial mass function (IMF), adopted from the prescription of <ref type="bibr" target="#b54">Kroupa (2001)</ref>, the star formation rate (SFR), (calculated using the Kennicutt-Schmidt law, Kennicutt 1998), gas flows (inflow/outflow) and the initial mass of gas (mgal).</p><p>While our observational data only represent a sub-component of the Galaxy's thick disc and not the entire Galaxy, the goal of the study is to determine if the observed Na-enhancement at super-Solar metallicity is, to first order, able to be reproduced with a GCE code. OMEGA+ shares similarities with other GCE codes, such as the Versatile Integrator for Chemical Evolution (VICE, <ref type="bibr" target="#b41">Johnson et al. 2021</ref>), the flexible one-zone chemical evolution code <ref type="bibr">(FlexCE, Andrews et al. 2017)</ref>, the Bayesian chemical evolution code ChemPy <ref type="bibr" target="#b81">(Rybizki et al. 2017)</ref>, and the Galactic Evolution tool <ref type="bibr">(GETool, Fenner et al. 2002)</ref>. In OMEGA+, gas flows are treated with two key assumptions. First, we assume that inflows are predominantly primordial in composition. Second, we model outflows as metal-enriched, allowing their metallicity to vary over time. These assumptions directly impact the predicted chemical evolution of the stimulated galaxy, shaping the enrichment history and the metallicity distribution of stars. OMEGA+ can better reproduce observed features such as the metallicity distribution function (MDF) and abundance patterns in stellar populations <ref type="bibr" target="#b20">(Côté et al. 2016</ref>) by allowing the metal loading of outflows to change with time. In contrast, assuming constant metal loading or ignoring enriched outflows would result in significant discrepancies between the model predictions and observed chemical signatures. Table <ref type="table" target="#tab_1">2</ref> outlines our adjusted physical parameters. The GCE model was evolved for 13 Gyr.</p><p>Type Ia supernovae (SNe Ia) are crucial in GCE models as they dominate the production of iron-peak elements (e.g., Fe, Mn, Ni), contributing ∼ 70% of the Milky Way's iron inventory <ref type="bibr" target="#b66">(Matteucci et al. 2009;</ref><ref type="bibr" target="#b30">Fink et al. 2012;</ref><ref type="bibr" target="#b12">Bovy 2015;</ref><ref type="bibr" target="#b62">Maoz et al. 2018</ref>; Jha 0.4 0.2 0.0 0.2 0.4 0.6 [Fe/H] 0.2 0.1 0.0 0.1 0.2 0.3 0.4 0.5 [Na/Fe] (a) Sun 0.4 0.2 0.0 0.2 0.4 0.6 [Fe/H] (b) 4 6 8 10 12 Median BSTEP Age [Gyr] 0.0 0.5 1.0 1.5 2.0 2.5 Standard deviation BSTEP Age [Gyr]  ). The normalised production ratio (y-axis: Normalised 23 Na Production Ratio) is calculated for each model by dividing the raw 23 Na yield at each metallicity by the minimum 23 Na obtained across all metallicities for that specific model. This normalisation highlights the relative change in Na production as a function of metallicity for each set of stellar models. et al. 2019). Unlike CC SNe, which primarily enrich the ISM with 𝛼-elements such as O and Mg on short timescales (∼Myr), SNe Ia inject iron with a delay time spanning ∼ 50 Myr to a Hubble time. This delay creates the observed downturn in [𝛼/Fe] ratios as Table 1. Yield tables used and the resulting models. The 'model' reflects the combined selections of AGB and massive stars in each nucleosynthesis yield table (see Section 2.2.2 for details of each model). Chandrasekhar-mass (M Ch ) Type Ia supernovae yields are adopted from S13 and sub-Chandrasekharmass (sub-M Ch ) Type Ia supernova yields are adopted from P22. Models are explained in the footnote. AGB Massive star SN Ia Model K10 LC18 S13/P22 K10LC18 K10 WW95 S13/P22 K10WW95 K10 K06 S13/P22 K10K06 K10, C22 K06 S13/P22 K10C22K06 1 LC18: Limongi &amp; Chieffi (2018); WW95: Woosley &amp; Weaver (1995); K06: Kobayashi et al. (2006); K10: Karakas (2010); C22: Cinquegrana &amp; Karakas (2022); S13: Seitenzahl et al. (2013a) and P22: Pakmor et al. (2022).</p><p>[Fe/H] &gt; -1 in stellar populations, distinguishing chemically distinct Galactic components (e.g., thick vs. thin disc, <ref type="bibr" target="#b66">Matteucci et al. 2009;</ref><ref type="bibr" target="#b25">Dubay et al. 2024;</ref><ref type="bibr" target="#b15">Cavichia et al. 2024)</ref>. SNe Ia also produce more iron per event than CC SNe, making them indispensable for reproducing the G-dwarf metallicity distribution and explaining Solar abundance patterns <ref type="bibr">(Kobayashi et al. 2020a</ref>). To first order, SNe Ia can be split into two categories when considering their nuclear yields: Chandrasekhar-and sub-Chandrasekhar-mass explosions. Given that both categories of SNe produce distinct elemental yields in varying amounts and often with different injection timescales, and given the ongoing uncertainty surrounding the nature of SN Ia progenitors, we incorporate yields from one of each broad category into our GCE models. Though it is widely agreed that various formation channels For the Chandrasekhar mass explosions, we use the N100 model yields from <ref type="bibr">Seitenzahl et al. (2013a)</ref> for 4 metallicities (Z = 0.0002, 0.002, 0.01 and 0.02). For the sub-Chandrasekhar mass explosions, we use yields from the two-explosion double white dwarf merger model of <ref type="bibr" target="#b75">Pakmor et al. (2022)</ref>, currently one of the most favoured scenarios for SNe Ia (see <ref type="bibr" target="#b79">Ruiter &amp; Seitenzahl 2025</ref>, for a recent review). Since only Solar metallicity yields are available for the merger model, we adopt these for the entire metallicity range sampled in our GCE study when the sub-Chandrasekhar mass scenario is assumed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.1">Parameters for the GCE code</head><p>Table <ref type="table" target="#tab_1">2</ref> presents both default and adjusted stellar parameters used in OMEGA+ for this study. The default settings of OMEGA+ produce [Fe/H] values only up to approximately 0.2 dex. To model higher metallicities, we modified these default parameters (see Section 3.1), allowing the machinery to reach [Fe/H] values at higher super-Solar metallicities (i.e., [Fe/H] ∼0.6 dex), which overlaps the AGB star yields in one of our models (see K10C22K06 in Table <ref type="table">1</ref>), enabling the models to overlap with the observations. In addition, the upper bound of the initial mass function (IMF) is increased to allow sampling from the high mass (M = 120 M ⊙ ) model of LC18. These updated parameters allow the OMEGA+ code to reach a metallicity of [Fe/H]∼ 0.6 dex, ensuring our GCE models encompass the full metallicity range observed in the thick disc sample.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.2">Stellar Nucleosythesis Yields</head><p>For all GCE simulations, nucleosynthetic yields constitute an integral ingredient. The yields consist of materials expelled by each isotope from the different nucleosynthesis channels. The nucleosynthesis yields adopted in our GCE models represent the total mass of chemical species expelled by a star over its lifetime. These yields are computed following the methodology presented in <ref type="bibr" target="#b43">Karakas &amp; Lattanzio (2007)</ref>, using the equation:</p><formula xml:id="formula_1">𝑀 𝑖 = ∫ 𝜏 0 [𝑋 (𝑖) -𝑋 0 (𝑖)] 𝑑𝑀 𝑑𝑡 𝑑𝑡,<label>(6)</label></formula><p>where 𝑀 𝑖 denotes the yield of a given species, 𝑑 𝑀 𝑑𝑡 is the stellar mass loss rate at time 𝑡, 𝑋 (𝑖) and 𝑋 0 (𝑖) are the current and total mass fractions of the species, respectively, and 𝜏 is the total lifetime of the stellar model. A positive yield indicates the net production of the species during the star's evolution, whereas a negative yield signifies destruction relative to the star's initial abundance.</p><p>Our study incorporates several yield datasets covering various stellar masses and metallicities. For low-to intermediate-mass stars (AGB stars) with metallicities up to Solar (Z ⊙ = 0.02, Lodders et al. 2009), we adopt yields from <ref type="bibr">Karakas (2010, hereafter K10)</ref>, covering masses between 1.0 and 6.0 𝑀 ⊙ and metallicities at Solar and below-Solar (i.e., Z = 0.0001, 0.008, 0.004 and 0.02). Additionally, new high-metallicity (𝑍) AGB yields from Cinquegrana &amp; Karakas (2022, hereafter C22) have been included, spanning metallicities in the range 0.04 ≤ Z ≤ 0.1 and stellar masses from 1.0 to 8.0 𝑀 ⊙ in increments of 0.5 𝑀 ⊙ . Using the relation [Fe/H] ≈ log 10 𝑍 𝑍 ⊙ , the metallicity range from C22 corresponds approximately to 0.3 ≤ [Fe/H] ≤ 0.7.</p><p>For massive stellar yields (from CC SNe), we use yield data from three different studies: <ref type="bibr">Woosley &amp; Weaver (1995, hereafter WW95)</ref>, <ref type="bibr">Kobayashi et al. (2006, hereafter K06)</ref>, and <ref type="bibr">Limongi &amp; Chieffi (2018, hereafter LC18)</ref>. Each CC SN model listed in Table <ref type="table">1</ref> adopts a distinct explosion mechanism, significantly influencing GCE predictions. Specifically, the K06 model assumes a piston-driven explosion with a fixed explosion energy, typically around 1.2 × 10 51 erg. The WW95 model employs the KEPLER hydrodynamic code, also using a piston-driven mechanism, but explores a wider range of explosion energies (0.3 -3.0 × 10 51 erg) without including mixing processes. Finally, the LC18 model utilises hydrodynamic simulations with a kinetic bomb mechanism, incorporating variable explosion energies, variable remnant mass cuts, and feedback effects. The WW95 yields, which specifically cover stellar masses of 13, 15, 18, 20, 25, 30, and 40 Solar masses, have been included because our preliminary results from Figure <ref type="figure" target="#fig_2">2</ref> suggest that these yields produce enhanced Na abundances at higher metallicities. We observe that the mass range for WW95 is capped at 40 solar masses, in contrast to the IMF adjusted value of 130 Solar masses. This discrepancy will likely lead to potential underrepresentation of Na nucleosynthesis contributions from CC SNe from very high-mass stars.</p><p>Lastly, for Type Ia supernovae (SNe Ia), we use yields from (Pakmor et al. 2022, , P22), computed at Solar metallicity (Z = 0.02) based on their 'two-explosion' model of two merging white dwarfs and <ref type="bibr">(Seitenzahl et al. 2013a, S13)</ref> Chandrasekhar-mass explosion. Although the choice between the single and double explosion models has minimal impact on the overall GCE results (see Figure <ref type="figure" target="#fig_1">A1</ref>), we consistently apply either the S13 Chandrasekhar-mass or the P22 sub-Chandrasekhar-mass explosion model in our simulations. Table <ref type="table">1</ref> summarises the adjusted values used for the GCE prediction for each model label in this study, and Table <ref type="table" target="#tab_3">3</ref> lists the raw Na and iron yield for the different categories of SNe Ia and CC SNe used in this study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">RESULTS</head><p>In this Section, we compare the GALAH DR3 observational data for thick-disc Solar-type stars with our GCE model predictions obtained using OMEGA+ and adjusted stellar yields. In short, we find that none of our GCE models reproduce the upturn in [Na/Fe], with this ratio instead declining for [Fe/H] &gt; 0.   <ref type="table" target="#tab_1">2</ref>). Each panel presents model predictions for specific Galactic parameters, with vertical shaded bands (pink) representing observational constraints from <ref type="bibr" target="#b56">Kubryk et al. (2015)</ref>. For calibration purposes only, the Chandrasekhar-mass Type Ia supernovae of <ref type="bibr">Seitenzahl et al. (2013a)</ref> were adopted for both default and adjusted models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Milky Way model comparison</head><p>10 0 10 1 Inflow rate [M yr 1 ] Obs K10WW95_default K10K06_default K10LC18_default K10C22K06_default 10 0 10 1 Inflow rate [M yr 1 ] Obs K10WW95_custom K10K06_custom K10LC18_custom K10C22K06_custom 10 3 10 2 10 1 10 0 SN rate [yr 1 ] CC obs Ia obs 10 3 10 2 10 1 10 0 SN rate [yr 1 ] CC obs Ia obs 0 2 4 6 8 10 12 Galactic age [Gyr] 10 4 10 3 10 2 Z (mass fraction) 0 2 4 6 8 10 12 Galactic age [Gyr] 10 4 10 3 10 2 Z (mass fraction) (b) Comparison between default and adjusted calibration of the MW using parameters from Table 2. Model labels follow those defined in Table 1 across various diagnostic parameters. MNRAS 000, 1-11 ( <ref type="formula">2025</ref>) 2. The outcome as a result of the adjustment in SFE and mgal resulted in higher SFR as seen in Figure <ref type="figure" target="#fig_5">3a</ref> -with the adjusted parameters having a higher SFR at earlier epochs (≈ 60 M ⊙ yr -1 ) compared to the default parameters (≈ 9 M ⊙ yr -1 ). The increase in star formation creates greater metal production, which contributes to greater [Fe/H] values over time. The substantial initial gas mass promotes vigorous early star formation, accelerating chemical enrichment <ref type="bibr" target="#b55">(Krumholz &amp; Dekel 2012)</ref>. The elevated SFRs from the adjusted initial gas conditions align with the equilibrium frameworks of <ref type="bibr" target="#b55">Krumholz &amp; Dekel (2012)</ref>, showing that excess gas accretion can temporarily boost SFRs until equilibrium is reached <ref type="bibr" target="#b94">(Tinsley &amp; Larson 1978)</ref>.</p><p>The adjusted configuration shows higher [Fe/H] as a function of stellar age, reflecting a universal relationship between metallicity and the stellar-to-gas mass ratio. <ref type="bibr" target="#b103">Zahid et al. (2014)</ref> demonstrated that higher initial gas masses accelerated metal production, directly raising [Fe/H] over time. This supports the concept of 'gas processing equilibrium,' where metal yields are governed by the balance between gas accretion and star formation <ref type="bibr" target="#b94">(Tinsley &amp; Larson 1978;</ref><ref type="bibr" target="#b52">Köppen &amp; Edmunds 1999)</ref>. Consequently, it is expected that the adjusted parameters produce higher metallicity environments at 'modern' galaxy ages. In the upper panels of Figure <ref type="figure" target="#fig_5">3b</ref>, the inflow rates for both default and adjusted models remained unchanged. The inflow rates span roughly 1 -10 M ⊙ /yr, reflecting standard assumptions regarding gas accretion from the circumgalactic medium for Milky Way-like galaxies (Sánchez <ref type="bibr" target="#b83">Almeida et al. 2014</ref>). For SNe rates as a function of Galactic age, the CC SNe rates display pronounced initial peaks at early Galactic ages (around 1 -4 Gyr) in both default and adjusted models, with the adjusted model displaying enhanced rates, a consequence of the larger mass and SFR. In addition, all models (default and adjusted) agree reasonably well with the observational data at ∼ 13 Gyr. Finally, the metallicity evolution (i.e., mass fraction, 𝑍) as a function of age for all models demonstrated the expected monotonic increase in 𝑍. The default parameters achieve modest metallicity enrichment, rising gradually.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Abundance, age, metallicity plane</head><p>Here, we describe the different results based on Figure <ref type="figure">4</ref>. In all panels, the data are those described in Section 2.</p><p>• [Fe/H] vs Age (panel a): All models show a general trend of increasing [Fe/H] with decreasing stellar age. In particular, the K10C22K06 and K10K06 models closely follow each other, reaching higher [Fe/H] values at younger ages compared to the K10LC18 and K10WW95 models. This hints at CC SNe being the key ingredient in these simulations. The observational data show a spread in [Fe/H] across all ages, with a slight trend of higher [Fe/H] at younger ages. The observed trend (spread) in the observational data is corroborated with the age metallicity relation (AMR) previously reported in other works (e.g., <ref type="bibr" target="#b87">Sellwood &amp; Binney 2002)</ref>.</p><p>• Age vs. [Fe/H] (panel b): This panel presents the same information as panel (a) but with axes swapped. The data indicate a large scatter in [Fe/H] for stars of similar age.</p><p>• [Fe/H] vs [Na/Fe] (panel c): All models exhibit an initial increase in [Na/Fe] as [Fe/H] increases, followed by a general decline beyond solar metallicity, with the decrease occurring at different [Fe/H] values for each model. The K10WW95 model best matches the [Na/Fe] and [Fe/H] parameter space, but it does not display the observed enrichment trend at [Fe/H] &gt; 0.</p><p>• Age vs [Na/Fe] (panel d): Depending on the model, there is a general trend of decreasing [Na/Fe] with stellar ages older than around 9 Gyr or so. The K10C22K06 model predicts higher [Na/Fe] values for younger stars compared to other models. The observational data show a flat trend in older stars until around 6.5 Gyr, after which there is a slight increase in [Na/Fe] in younger stars. The increasing [Na/Fe] with decreasing stellar age is less obvious in these data than in the [Na/Fe] vs. metallicity parameter space (panel c).</p><p>• [Fe/H] vs [Na/H] (panel e): Both models and observational data display a continued rise in the [Na/H] vs. [Fe/H] plane. The two models with CC SNe from K06 have a higher [Na/H] than the other two models with different CC SNe yields. For instance, the model with CC SNe from LC18 lies below the data, while WW95 more closely matches the data.</p><p>• Age vs [Na/H] (panel f): Models predict decreasing [Na/H] with increasing stellar age. The K10C22K06 and K10K06 models show higher [Na/H] values for younger stars compared to K10LC18 and K10WW95. Also, observational data show a weak trend of decreasing [Na/H] with age, with considerable scatter.</p><p>We note that the contribution of sub-Mch SNe Ia from <ref type="bibr" target="#b75">Pakmor et al. (2022)</ref> resulted in higher [Na/Fe] abundances across all models for the various age, metallicity and [Na/Fe] planes explored as shown in Figure <ref type="figure">4</ref>. In this sub-Chandrasekhar mass model, Na yields from SNe Ia are 5 times higher than in the Chandrasekhar mass model of <ref type="bibr">Seitenzahl et al. (2013a)</ref>, while iron production is ∼ 22 per cent lower.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">DISCUSSION</head><p>The adjustment to the IMF in Table <ref type="table" target="#tab_1">2</ref> affects how much Na is produced in the Galaxy, mainly because of the different amounts produced by CC SNe and SNe Ia. Specifically, CC SNe contribute on average ∼ 10 -5 -10 -4 𝑀 ⊙ per event, while some SN Ia make on average 2 × 10 -4 𝑀 ⊙ Na per event. From Table <ref type="table" target="#tab_3">3</ref>, CC SN yields are typically lower, ranging from ∼ 0.8 to 1 × 10 -4 𝑀 ⊙ per event. On the other hand, SNe Ia exhibit more varied yields, with MCh explosions releasing about 3.74 × 10 -5 𝑀 ⊙ per event and sub-MCh explosions producing significantly more, around 1.99 × 10 -4 𝑀 ⊙ per event. Although individual sub-MCh SNe Ia can release comparable or even greater amounts of Na than single CC SNe (see GCE line predictions in Figure <ref type="figure">4</ref>) per event, their overall Galactic contribution remains comparatively small due to their lower occurrence rates relative to CC SNe <ref type="bibr" target="#b58">(Li et al. 2011)</ref>. This frequency disparity ensures that, cumulatively, CC SNe dominate Na enrichment in the Galaxy, despite their lower per-event yields. However, because SNe Ia are primary contributors of iron (Fe), their metallicity-dependent yields, currently modelled predominantly at Solar metallicty, could disproportionately influence [Na/Fe] ratios at [Fe/H] &gt; 0.</p><p>Even though our current models can show the overall pattern in <ref type="bibr">[Na/Fe]</ref> for values between about -0.4 and 0, none of the models</p><p>0.4 0.2 0.0 0.2 0.4 0.6 [Fe/H] 4 6 8 10 12 Age [Gyr] (a) 4 5 6 7 8 9 10 11 12 Age [Gyr] 0.4 0.2 0.0 0.2 0.4 0.6 [Fe/H] (b) 0.4 0.2 0.0 0.2 0.4 0.6 [Fe/H] 0.2 0.0 0.2 0.4 [Na/Fe] (c) 4 5 6 7 8 9 10 11 12 Age [Gyr] 0.2 0.1 0.0 0.1 0.2 0.3 0.4 0.5 [Na/Fe] (d) 0.4 0.2 0.0 0.2 0.4 0.6 [Fe/H] 0.4 0.2 0.0 0.2 0.4 0.6 0.8 [Na/H] (e) 4 5 6 7 8 9 10 11 12 Age [Gyr] 0.4 0.2 0.0 0.2 0.4 0.6 0.8 [Na/H] (f) Explosion Type MCh SNe Ia: Single WD explosion (Seitenzahl et al. 2013) sub-MCh SNe Ia: 2 exploding WDs (Pakmor et al. 2022) GALAH thick disc stars Model K10C22K06 K10K06 K10LC18 K10WW95 Model K10C22K06 K10K06 K10LC18 K10WW95 Figure 4. Panels (a)-(f) are the [Fe/H]-age, age-[Fe/H], [Fe/H]-[Na/Fe], age-[Na/Fe], [Fe/H]-[Na/H] and age-[Na/H] planes, produced by our adjusted GCE code parameters for this study. 'Age' here refers to stellar ages. The grey bins are Solar-type thick disc stars selected from the GALAH DR3 catalogue using Equation <ref type="formula">5</ref>, with the yellower area having a higher concentration of stars. Solid lines represent GCE models in which all SN Ia explosions are assumed to be from Chandrasekhar mass WDs, while for the dashed lines, sub-Chandrasekhar mass explosions from WD mergers are assumed. We defined the model label in Table <ref type="table">1</ref>. SN Ia contribution is based on the two-exploding white dwarf from <ref type="bibr" target="#b75">(Pakmor et al. 2022</ref>) and delayed detonation for Chandrasekhar-mass white dwarfs, as described in <ref type="bibr">(Seitenzahl et al. 2013a)</ref>.</p><p>can explain the increase in [Na/Fe] that we see in the data (Figure <ref type="figure">4c</ref>). Although both K10K06 and K10C22K06 models share the same CC SNe yield tables, the K10C22K06 model includes additional yields from AGB stars with higher metallicity. Hence, as expected, both models behave similarly, with the K10C22K06 scaling higher [Na/Fe] as a function of [Fe/H] compared to the other models. Both of these models predict significantly higher [Na/Fe] across the whole metallicity range explored, while the K10LC18 model predicts sub-Solar [Na/Fe] values throughout. We note, however, that the K10LC10 model shows a promising upturn in [Na/Fe], though its value begins to flatten out and then decrease at around [Fe/H] ∼0.2 dex.</p><p>The K10WW95 model matches the observed trend of [Na/Fe] correctly in the lower metallicity range, but it shows a decrease in [Na/Fe] at higher metallicities compared to what we see in the data. A previous study by <ref type="bibr" target="#b27">Eitner et al. (2020)</ref> examining manganese abundances ([Mn/Fe] vs. [Fe/H]; see their fig. <ref type="figure" target="#fig_2">2</ref>) highlighted differences in the explosion mechanisms of core-collapse supernovae as a likely explanation for the discrepancies between their NLTE data (i.e., 42 stars including red giants and FG dwarf stars taken from different studies) and model predictions. Similarly, we attribute differences in our GCE model behaviour to the different CC explosion mechanisms used in <ref type="bibr">Woosley &amp; Weaver (1995)</ref>; <ref type="bibr" target="#b47">Kobayashi et al. (2006)</ref> and <ref type="bibr" target="#b59">Limongi &amp; Chieffi (2018)</ref>.</p><p>Prior work using massive star yields by <ref type="bibr" target="#b48">Kobayashi et al. (2011</ref><ref type="bibr">Kobayashi et al. ( , 2020b) )</ref> indicated a plateau around Solar metallicity with a slight bump increase at sub-Solar metallicities. In a similar study of Gdwarf stars, Matteucci (2014) used massive star yields from <ref type="bibr">Woosley &amp; Weaver (1995)</ref> but also looked at low-and intermediate-mass stellar yields from van den <ref type="bibr" target="#b105">Hoek &amp; Groenewegen (1997)</ref> for values between -3.5 and 0.2 in [Fe/H]. This resulted in a GCE prediction that appeared rather flat at Solar metallicity (see their fig. <ref type="figure" target="#fig_2">2</ref></p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>.22).</head><p>Comparing their result to our findings, our GCE prediction flattens briefly at Solar metallicities and then decreases. This difference is probably due to the different amounts of elements produced, the ways stars explode, how AGB stars are considered, and the different assumptions made in the GCE codes used in each study. In addition, we note that:</p><p>• Our observational sample represents only a portion of the Galaxy's stellar disc population and does not fully capture the diversity of chemical evolution across the entire Galaxy. Note that our GCE modelling uses OMEGA+, which is calibrated to the Milky Way Galaxy as a whole.</p><p>• The discrepancies also stem from the assumptions inherent in the GCE models, particularly in the treatment of nucleosynthesis yields and stellar feedback processes at high metallicities. For instance, we increased the initial mass of gas in the simulation from the default values. While this approach enables us to extend the model to higher [Fe/H] values, it somewhat diverges from a truly realistic representation of our Galaxy (see Figure <ref type="figure" target="#fig_5">3a</ref>).</p><p>• The failure of our models to reproduce the observed Na enhancement relative to iron at super-Solar metallicities implies a potential lack of iron enrichment in these stars. In other words, the younger old thick disc Solar-like stars may have experienced a chemical evolution in which the progenitor 'pre-stellar' cloud was under-abundant in pollutants expelled by Type Ia supernovae (e.g., iron).</p><p>Among the models examined, the K10WW95 model most closely passes through the observational data until Solar values and then declines from around [Fe/H] ∼ 0.1 dex instead of continuing the observed upturn in the data. In contrast, the K10K06 and K10C22K06 models tend to predict higher [Na/Fe] values at all metallicities sampled by the data. A key factor in the [Na/Fe] enrichment is the contribution from AGB stars, which produce Na through the Ne-Na cycle during HBB at low metallicity and second dredge-up at higher metallicities <ref type="bibr" target="#b69">(Mowlavi 1999;</ref><ref type="bibr" target="#b97">Ventura et al. 2013;</ref><ref type="bibr" target="#b44">Karakas &amp; Lattanzio 2014)</ref>. The efficiency of this process increases at higher metallicities due to enhanced neon abundances <ref type="bibr" target="#b44">(Karakas &amp; Lattanzio 2014;</ref><ref type="bibr" target="#b23">Cristallo et al. 2015)</ref>. We note that the K10C22K06 model displays the most prominent increase in [Na/Fe] as a function of [Fe/H], though with our current GCE set-up, the overall [Na/Fe] values are well below those of the observations (Figure <ref type="figure">4</ref>, <ref type="figure">panel c</ref>). However, one could envisage a scenario in which SNe Ia played a lesser role in polluting the interstellar gas that gave rise to forming stars in our sample. In such a case, iron would be under-abundant, which would naturally lead to an increase in the absolute abundance of [Na/Fe], plausibly bringing the models into better agreement with observations.</p><p>Notably, none of our tested models that combine massive and AGB stars and either Chandrasekhar-or sub-Chandrasekhar-mass SNe Ia successfully replicate the observed [Na/Fe] upturn at super Solar metallicities (see Figure <ref type="figure">4c</ref>). As a test, we tried two sets of SN Ia yields from WD mergers: either the two-explosion model as already discussed, in addition to the single-explosion model of <ref type="bibr" target="#b75">Pakmor et al. (2022)</ref> in which only the primary WD explodes. The models show no observable differences in [Na/Fe] predictions (Figure <ref type="figure" target="#fig_1">5A1</ref>). Collectively, these results suggest that the nature of the SN Ia progenitor does not explain the discrepancy between the models and the observations in metal-rich disc stars in this work. The physical mechanism behind this suppression remains unclear, though potential drivers include delayed chemical mixing in the thick disc or environmental factors altering (suppressing) SNe Ia progenitor evolution. While speculative, this last line of inquiry aligns most closely with observational trends and requires prioritising these in future GCE studies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">CONCLUSIONS</head><p>In this paper, we have examined Na enrichment in Solar-type Galactic thick disc stars at super Solar metallicities, utilising observational data from the GALAH DR3 survey and testing GCE models that incorporate nucleosynthetic yields from massive stars, AGB stars (1.0 ≤ 𝑀 ⊙ ≤ 8.0) and two explosion mechanisms of SNe Ia (Chandrasekhar-and sub-Chandrasekhar mass explosions). At the time of writing, nucleosynthetic yields for sub-Chandrasekhar mass SNe Ia from WD mergers were only available for Solar metallicity and one set of WD merger masses. We acknowledge that future studies should aim to incorporate SN Ia yields at a variety of metallicities (and masses in the case of sub-Chandrasekhar-mass scenarios) once they become more readily available.</p><p>Critically, our analysis demonstrates that all four models incorporated in this study fail to replicate the [Na/Fe] enrichment at super-Solar metallicities. These findings suggest that our understanding of Na enrichment in metal-rich, thick-disc, Solar-type stars remains insufficient, potentially reflecting gaps in the assumptions underpinning state-of-the-art nucleosynthesis prescriptions. The inability of these models to reproduce the observed trend -despite their calibration with modern stellar physics -implies that key processes, such as metallicity-dependent mass-loss rates in AGB stars, proton-capture reactions efficiencies in CC SNe, or the role of binary interactions.</p><p>While the K10WW95 model using WW95 massive stars initially appears promising -in terms of matching the [Na/Fe] level up to Solar metallicity (see Figure <ref type="figure" target="#fig_2">2</ref>), it too deviates significantly at super Solar regimes (see panel (c) of Figure <ref type="figure">4</ref>). These findings indicate that attributing the super Solar [Na/Fe] upturn primarily to metallicitydependent CC SNe yields (e.g. Arnould &amp; Norgaard 1978) reveals a challenging puzzle that remains unsolved. In addition, although SNe Ia produce more 56 Fe compared to CC SNe, the result of the GCE prediction still fails to correctly replicate the Na enrichment in the Solar-type sample used in this study. The enrichment of Na at super-Solar metallicity caused by the secondary dredge-up effect in AGB star models was unable to account for the observed increase in [Na/Fe] in the data, despite including high-Z AGB yields in the K10C22K06 model. As a result, future research should focus on enhancing nucleosynthesis models over various metallicities from all sources to better align theoretical predictions with the observed [Na/Fe] trends in the Galactic disc and other stellar populations. In this sense, some discrepancies between GCE models and observational data for a sub-sample of nearby Galactic disc stars might even be expected and can provide valuable insights into the complexities of stellar evolution and chemical enrichment. Specifically, metallicity-dependent SN Ia yields -including sub-Chadrasekhar mergers across the mass and metallicity range should be explored, although we acknowledge that this can be a computationally intensive exercise. However, these systems exhibit isotopic sensitivities, e.g., 𝛼-elements and neutron-rich isotopes <ref type="bibr" target="#b95">Travaglio et al. (2005)</ref>, but can be explored further.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. [Na/Fe] as a function of metallicity [Fe/H] for the sample of Solar-type stars from GALAH DR3 used in this work (see Section 2). The left panel (a) shows the distribution coloured by stellar age, illustrating the median stellar age in (Gyr) at each ([Fe/H], [Na/Fe]) bin. The right panel displays the same distribution, highlighting the standard deviation in stellar age within the corresponding bins. The Bayesian Stellar Parameters Estimator (BSTEP) was used to compute the stellar ages. The Solar abundance position is marked by the symbol (⊙) at [Fe/H], [Na/Fe] = (0, 0).</figDesc><graphic coords="4,78.20,91.50,224.06,199.79" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Normalised Na ( 23 Na) production ratios as a function of stellar metallicity (Z) for massive stars with initial masses 15 and 20 M ⊙ . The models shown are massive star yields from Woosley &amp; Weaver (1995, WW95, blue triangles), Nomoto et al. (2013, Nomoto13, red circles) and Limongi &amp; Chieffi (2018, LC18, orange squares). The normalised production ratio (y-axis: Normalised 23 Na Production Ratio) is calculated for each model by dividing the raw 23 Na yield at each metallicity by the minimum 23 Na obtained across all metallicities for that specific model. This normalisation highlights the relative change in Na production as a function of metallicity for each set of stellar models.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3</head><label>3</label><figDesc>Figure 3 (i.e., 3a and 3b) illustrates the Galactic properties used to validate our baseline Milky Way model, based on the values in Table</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><figDesc>Calibration diagnostics for the Milky Way (MW) Galaxy model, using both default and adjusted input parameters (see Table</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Bulk galactic properties of our model Galaxy based on adjusted model parameters.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 2 .</head><label>2</label><figDesc>Default and adjusted stellar parameters used in this work for the OMEGA+ GCE model. The star formation efficiency is a dimensionless scaling quantity and a free parameter (see Equations 13 and 14 ofCôté et al.   of Type Ia supernovae are predicted to have different delay time distributions (DTD, see<ref type="bibr" target="#b80">Ruiter et al. 2011;</ref><ref type="bibr" target="#b28">Eitner et al. 2023)</ref>, as a first step, we adopt the DTD from<ref type="bibr" target="#b61">Maoz et al. (2012)</ref>, which is the default implementation in OMEGA+.For simplicity, we assume either Chandrasekhar-mass delayed detonations or sub-Chandrasekhar-mass prompt detonations in white dwarf mergers, and apply the<ref type="bibr" target="#b61">Maoz et al. (2012)</ref> DTD for both cases.</figDesc><table><row><cell>2018)</cell><cell></cell><cell></cell></row><row><cell>Stellar parameters</cell><cell>Default values</cell><cell>Adjusted values</cell></row><row><cell>Initial mass function (IMF)</cell><cell>1 -30 M ⊙</cell><cell>1 -130 M ⊙</cell></row><row><cell>Star formation efficiency (SFE; 𝜖 ★ )</cell><cell>3.0 × 10 -9</cell><cell>3.0 × 10 -10</cell></row><row><cell cols="2">Initial mass of gas in simulation (mgal) 1.0 × 10 10 M ⊙</cell><cell>2.0 × 10 11 M ⊙</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 .</head><label>3</label><figDesc>Yields in 𝑀 ⊙ of Na-23 and Fe-56 isotopes for CC SNe and the two Type Ia supernova explosion models used in this work: Chandrasekhar-mass (𝑀Ch) model from S13 and sub-Chandrasekhar-mass (sub-𝑀Ch) model from P22 (see Table1). Note: Solar metallicity yields are shown, although yield values for additional metallicities are included from S13 in our GCE modelling (i.e., 𝑍 = 0.0002, 0.002, and 0.01). The integrated yield per solar mass for different massive star yields used in this work has been computed and normalised using the<ref type="bibr" target="#b82">Salpeter (1955)</ref> IMF (𝛼 = 2.35, at Z = 0.02).</figDesc><table><row><cell>Model</cell><cell cols="2">Mass Range (𝑀⊙) 23 Na (𝑀⊙ per event)</cell><cell>56 Fe (𝑀⊙ per event)</cell></row><row><cell>WW995</cell><cell>11-40</cell><cell>8.454 × 10 -5</cell><cell>1.941 × 10 -3</cell></row><row><cell>K06</cell><cell>13-40</cell><cell>1.049 × 10 -4</cell><cell>1.742 × 10 -3</cell></row><row><cell>LC18</cell><cell>13-120</cell><cell>8.406 × 10 -5</cell><cell>1.603 × 10 -3</cell></row><row><cell>SN Ia (𝑀Ch)</cell><cell>-</cell><cell>3.74 × 10 -5</cell><cell>6.22 × 10 -1</cell></row><row><cell>SN Ia (sub-𝑀Ch)</cell><cell>-</cell><cell>1.99 × 10 -4</cell><cell>4.87 × 10 -1</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>© 2025 The Authors</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>MNRAS 000,1-11 (2025)   </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="2" xml:id="foot_2"><p>Publicly available at https://github.com/becot85/JINAPyCEE MNRAS 000,1-11 (2025)   </p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>ACKNOWLEDGEMENTS</head><p>This work was supported by the <rs type="funder">Australian Research Council</rs> <rs type="projectName">Centre of Excellence for All-Sky Astrophysics in 3 Dimensions</rs> (<rs type="grantNumber">ASTRO 3D</rs>) through project number <rs type="grantNumber">CE170100013</rs>. Part of it was funded through <rs type="funder">AJR's Australia Research Council Future</rs> Fellowship award number <rs type="grantNumber">FT170100243</rs>. EKO, AJR and IRS also acknowledge the support of the <rs type="grantName">Australia-Germany Joint Research Cooperation Scheme</rs> (Funding Application ID: <rs type="grantNumber">57654415</rs>), which facilitated our collaboration with Researchers from the <rs type="institution">Max Planck Institute for Astronomy in Heidelberg, Germany</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funded-project" xml:id="_JzA2cwJ">
+					<idno type="grant-number">ASTRO 3D</idno>
+					<orgName type="project" subtype="full">Centre of Excellence for All-Sky Astrophysics in 3 Dimensions</orgName>
+				</org>
+				<org type="funding" xml:id="_pNGBYKq">
+					<idno type="grant-number">CE170100013</idno>
+				</org>
+				<org type="funding" xml:id="_QncCqU8">
+					<idno type="grant-number">FT170100243</idno>
+					<orgName type="grant-name">Australia-Germany Joint Research Cooperation Scheme</orgName>
+				</org>
+				<org type="funding" xml:id="_RmHbSMd">
+					<idno type="grant-number">57654415</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DATA AVAILABILITY</head><p>The data used for this study is published by <ref type="bibr" target="#b14">Buder et al. (2021)</ref> and can be accessed publicly via <ref type="url" target="https://docs.datacentral.org.au/galah/dr3/overview/">https://docs.datacentral.org.  au/galah/dr3/overview/</ref> </p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FACILITIES</head><p>AAT with 2df-HERMES at Siding Spring Observatory: The GALAH Survey is based on data acquired through the Australian Astronomical Observatory, under programs: A/2013B/13 (The GALAH pilot survey); A/2014A/25, A/2015A/19, A2017A/18 (The GALAH survey phase 1), A2018 A/18 (Open clusters with HERMES), A2019A/1 (Hierarchical star formation in Ori OB1), A2019A/15 (The GALAH survey phase 2), A/2015B/19, A/2016A/22, A/2016B/10, A/2017B/16, A/2018B/15 (The HERMES-TESS program), and A/2015A/3, A/2015B/1, A/2015B/19, A/2016A/22, A/2016B/12, A/2017A/14, (The HERMES K2-follow-up program). This paper includes data provided by <ref type="bibr">AAO Data Central (datacentral.aao.gov.au)</ref>. Gaia: This work has made use of data from the European Space Agency (ESA) mission Gaia (<ref type="url" target="http://www.cosmos.esa.int/gaia">http://www.  cosmos.esa.int/gaia</ref>), processed by the Gaia Data Processing and Analysis Consortium (DPAC, <ref type="url" target="http://www.cosmos.esa.int/web/gaia/dpac/consortium">http://www.cosmos.esa.int/  web/gaia/dpac/consortium</ref>). Funding for the DPAC has been provided by national institutions, particularly the institutions participating in the Gaia Multilateral Agreement. Other facilities: This publication makes use of data products from the Two Micron All Sky Survey <ref type="bibr" target="#b89">(Skrutskie et al. 2006</ref>) and the CDS VizieR catalogue access tool <ref type="bibr" target="#b73">(Ochsenbein et al. 2000)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SOFTWARE</head><p>The research for this publication was coded in python (version 3.7.4) and included its packages astropy (v. 3.2.2; Astropy <ref type="bibr">Collaboration et al. 2013</ref><ref type="bibr">Collaboration et al. , 2018))</ref>, corner (v. 2.0.1; Foreman-Mackey 2016), <ref type="bibr">IPython (v. 7.8.0;</ref><ref type="bibr">Pérez &amp; Granger 2007), matplotlib (v. 3.1.3;</ref><ref type="bibr" target="#b38">Hunter 2007</ref>), NumPy (v. 1.17.  <ref type="formula">2022</ref>) SNe Ia sub-Chandrasekhar (1 and 2 explosion). For the GALAH data, yellower regions reflect a higher number density of stars.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The GALAH Survey: non-LTE departure coefficients for large spectroscopic surveys</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Amarsi</surname></persName>
+			<idno type="ORCID">0000-0002-3181-3413</idno>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lind</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Osorio</surname></persName>
+			<idno type="ORCID">0000-0001-5832-6933</idno>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Nordlander</surname></persName>
+			<idno type="ORCID">0000-0001-5344-8069</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bergemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Reggiani</surname></persName>
+			<idno type="ORCID">0000-0001-6533-6179</idno>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">X</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-8493-2873</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Buder</surname></persName>
+			<idno type="ORCID">0000-0002-4031-8553</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Asplund</surname></persName>
+			<idno type="ORCID">0000-0002-5804-3682</idno>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Barklem</surname></persName>
+			<idno type="ORCID">0000-0003-2415-9836</idno>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wehrhahn</surname></persName>
+			<idno type="ORCID">0000-0002-1241-8557</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Á</forename><surname>Skúladóttir</surname></persName>
+			<idno type="ORCID">0000-0001-9155-9018</idno>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kobayashi</surname></persName>
+			<idno type="ORCID">0000-0002-4343-0487</idno>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Karakas</surname></persName>
+			<idno type="ORCID">0000-0002-3625-6951</idno>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">D</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bland-Hawthorn</surname></persName>
+			<idno type="ORCID">0000-0001-7516-4016</idno>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">M</forename><surname>De Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">F</forename><surname>Lewis</surname></persName>
+			<idno type="ORCID">0000-0003-3081-9319</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">L</forename><surname>Martell</surname></persName>
+			<idno type="ORCID">0000-0002-3430-4163</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Simpson</surname></persName>
+			<idno type="ORCID">0000-0002-8165-2507</idno>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Zucker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Čotar</surname></persName>
+			<idno type="ORCID">0000-0002-3439-0858</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Horner</surname></persName>
+			<idno type="ORCID">0000-0002-1160-7970</idno>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202038650</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">642</biblScope>
+			<biblScope unit="page">A62</biblScope>
+			<date type="published" when="2020-10">2020</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Inflow, Outflow, Yields, and Stellar Population Mixing in Chemical Evolution Models</title>
+		<author>
+			<persName><forename type="first">Brett</forename><forename type="middle">H</forename><surname>Andrews</surname></persName>
+			<idno type="ORCID">0000-0001-8085-5890</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">H</forename><surname>Weinberg</surname></persName>
+			<idno type="ORCID">0000-0001-7775-7261</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ralph</forename><surname>Schönrich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+			<idno type="ORCID">0000-0001-7258-1834</idno>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/835/2/224</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<title level="j" type="abbrev">ApJ</title>
+		<idno type="ISSN">0004-637X</idno>
+		<idno type="ISSNe">1538-4357</idno>
+		<imprint>
+			<biblScope unit="volume">835</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">224</biblScope>
+			<date type="published" when="2017-01-31">2017</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A cold move …</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Appenzeller</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0031-9112/33/9/011</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Physics Bulletin</title>
+		<title level="j" type="abbrev">Phys. Bull.</title>
+		<idno type="ISSN">0031-9112</idno>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="313" to="313" />
+			<date type="published" when="1982-09">1982</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Origin of the elements</title>
+		<author>
+			<persName><forename type="first">Almudena</forename><surname>Arcones</surname></persName>
+			<idno type="ORCID">0000-0002-6995-3032</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Friedrich-Karl</forename><surname>Thielemann</surname></persName>
+			<idno type="ORCID">0000-0002-7256-9330</idno>
+		</author>
+		<idno type="DOI">10.1007/s00159-022-00146-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astronomy and Astrophysics Review</title>
+		<title level="j" type="abbrev">Astron Astrophys Rev</title>
+		<idno type="ISSN">0935-4956</idno>
+		<idno type="ISSNe">1432-0754</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2023">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Galactic Evolution and Nucleosynthesis</title>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">D</forename><surname>Arnett</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/150947</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<title level="j" type="abbrev">ApJ</title>
+		<idno type="ISSN">0004-637X</idno>
+		<idno type="ISSNe">1538-4357</idno>
+		<imprint>
+			<biblScope unit="volume">166</biblScope>
+			<biblScope unit="page">153</biblScope>
+			<date type="published" when="1971-05">1971</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">D</forename><surname>Arnett</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/155865</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">219</biblScope>
+			<biblScope unit="page">1008</biblScope>
+			<date type="published" when="1978">1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Supernovae and Nucleosynthesis: An Investigation of the History of Matter from the Big Bang to the Present Arnould M</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Arnett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page">195</biblScope>
+			<date type="published" when="1978">1996. 1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title/>
+		<author>
+			<orgName type="collaboration">Astropy Collaboration et al.</orgName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201322068</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">558</biblScope>
+			<biblScope unit="page">33</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title/>
+		<author>
+			<orgName type="collaboration">Astropy Collaboration et al.</orgName>
+		</author>
+		<idno type="DOI">10.3847/1538-3881/aabc4f</idno>
+	</analytic>
+	<monogr>
+		<title level="j">AJ</title>
+		<imprint>
+			<biblScope unit="volume">156</biblScope>
+			<biblScope unit="page">123</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">G</forename><surname>Beccari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Carraro</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-662-44434-4_1</idno>
+		<idno type="arXiv">arXiv:1406.3462</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astrophysics and Space Science Library. p</title>
+		<editor>
+			<persName><forename type="first">H</forename><forename type="middle">M J</forename><surname>Boffin</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">G</forename><surname>Carraro</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">G</forename><surname>Beccari</surname></persName>
+		</editor>
+		<imprint>
+			<biblScope unit="volume">413</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">T</forename><surname>Bensby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Feltzing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Oey</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201322631</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">562</biblScope>
+			<biblScope unit="page">71</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Chemical evolution of the Galactic bulge as traced by microlensed dwarf and subgiant stars</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Bensby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Feltzing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gould</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Yee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Asplund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Meléndez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Lucatello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Howes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcwilliam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Udalski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Szymański</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Soszyński</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Poleski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ł</forename><surname>Wyrzykowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ulaczyk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kozłowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Pietrukowicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Skowron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mróz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pawlak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Abe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Asakura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bhattacharya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">A</forename><surname>Bond</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">P</forename><surname>Bennett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Hirao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nagakane</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Koshimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sumi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Suzuki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Tristram</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201730560</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">605</biblScope>
+			<biblScope unit="page">A89</biblScope>
+			<date type="published" when="2017-09">2017</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">galpy: A python LIBRARY FOR GALACTIC DYNAMICS</title>
+		<author>
+			<persName><forename type="first">Jo</forename><surname>Bovy</surname></persName>
+			<idno type="ORCID">0000-0001-6855-442X</idno>
+		</author>
+		<idno type="DOI">10.1088/0067-0049/216/2/29</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal Supplement Series</title>
+		<title level="j" type="abbrev">ApJS</title>
+		<idno type="ISSNe">1538-4365</idno>
+		<imprint>
+			<biblScope unit="volume">216</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">29</biblScope>
+			<date type="published" when="2015-02-03">2015</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Type Ia supernovae from chemically segregated white dwarfs</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bravo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Isern</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Piersanti</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202348187</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">683</biblScope>
+			<biblScope unit="page">A237</biblScope>
+			<date type="published" when="2024-03">2024</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">The GALAH+ survey: Third data release</title>
+		<author>
+			<persName><forename type="first">Sven</forename><surname>Buder</surname></persName>
+			<idno type="ORCID">0000-0002-4031-8553</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sanjib</forename><surname>Sharma</surname></persName>
+			<idno type="ORCID">0000-0002-0920-809X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Janez</forename><surname>Kos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anish</forename><forename type="middle">M</forename><surname>Amarsi</surname></persName>
+			<idno type="ORCID">0000-0002-3181-3413</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Nordlander</surname></persName>
+			<idno type="ORCID">0000-0001-5344-8069</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Karin</forename><surname>Lind</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">L</forename><surname>Martell</surname></persName>
+			<idno type="ORCID">0000-0002-3430-4163</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Asplund</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joss</forename><surname>Bland-Hawthorn</surname></persName>
+			<idno type="ORCID">0000-0001-7516-4016</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">R</forename><surname>Casey</surname></persName>
+			<idno type="ORCID">0000-0003-0174-0564</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gayandhi</forename><forename type="middle">M</forename><surname>De silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valentina</forename><surname>D’orazi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ken</forename><forename type="middle">C</forename><surname>Freeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">R</forename><surname>Hayden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geraint</forename><forename type="middle">F</forename><surname>Lewis</surname></persName>
+			<idno type="ORCID">0000-0003-3081-9319</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jane</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katharine</forename><forename type="middle">J</forename><surname>Schlesinger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">D</forename><surname>Simpson</surname></persName>
+			<idno type="ORCID">0000-0002-8165-2507</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dennis</forename><surname>Stello</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">B</forename><surname>Zucker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tomaž</forename><surname>Zwitter</surname></persName>
+			<idno type="ORCID">0000-0002-2325-8763</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">L</forename><surname>Beeson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tobias</forename><surname>Buck</surname></persName>
+			<idno type="ORCID">0000-0003-2027-399X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Casagrande</surname></persName>
+			<idno type="ORCID">0000-0003-2688-7511</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jake</forename><forename type="middle">T</forename><surname>Clark</surname></persName>
+			<idno type="ORCID">0000-0003-3964-4658</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Klemen</forename><surname>Čotar</surname></persName>
+			<idno type="ORCID">0000-0002-3439-0858</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gary</forename><forename type="middle">S</forename><surname>Da costa</surname></persName>
+			<idno type="ORCID">0000-0001-7019-649X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>De grijs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diane</forename><surname>Feuillet</surname></persName>
+			<idno type="ORCID">0000-0002-3101-5921</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Horner</surname></persName>
+			<idno type="ORCID">0000-0002-1160-7970</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Prajwal</forename><forename type="middle">R</forename><surname>Kafle</surname></persName>
+			<idno type="ORCID">0000-0002-3625-9546</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shourya</forename><surname>Khanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chiaki</forename><surname>Kobayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0003-4794-6074</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><forename type="middle">T</forename><surname>Montet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Govind</forename><surname>Nandakumar</surname></persName>
+			<idno type="ORCID">0000-0002-6077-2059</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">M</forename><surname>Nataf</surname></persName>
+			<idno type="ORCID">0000-0001-5825-4431</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Melissa</forename><forename type="middle">K</forename><surname>Ness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lorenzo</forename><surname>Spina</surname></persName>
+			<idno type="ORCID">0000-0002-9760-6249</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thor</forename><surname>Tepper-García</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuan-Sen</forename><surname>Ting(丁源森)</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregor</forename><surname>Traven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rok</forename><surname>Vogrinčič</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">A</forename><surname>Wittenmyer</surname></persName>
+			<idno type="ORCID">0000-0001-9957-9304</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rosemary</forename><forename type="middle">F G</forename><surname>Wyse</surname></persName>
+			<idno type="ORCID">0000-0002-4013-1799</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maruša</forename><surname>Žerjal</surname></persName>
+			<idno type="ORCID">0000-0001-6023-4974</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stab1242</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">506</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="150" to="201" />
+			<date type="published" when="2021-05-06">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">O</forename><surname>Cavichia</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stae1626</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">532</biblScope>
+			<biblScope unit="page">2331</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">G</forename><surname>Cayrel De Strobel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chauve-Godard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Vaziaga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">408</biblScope>
+			<date type="published" when="1970">1970</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Chiappini</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/S1743921308027580</idno>
+		<title level="m">The Galaxy Disk in Cosmological Context. pp 191-196</title>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Andersen</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">B</forename><surname>Nordströara</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Bland-Hawthorn</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="volume">254</biblScope>
+		</imprint>
+	</monogr>
+	<note>IAU Symposium</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">C</forename><surname>Cinquegrana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Karakas</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stab3379</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">510</biblScope>
+			<biblScope unit="page">1557</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">OMEGA: One-zone Model for the Evolution of GAlaxies</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Côté</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ritter</surname></persName>
+		</author>
+		<idno>1806.018</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astrophysics Source Code Library</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><surname>Côté</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>West</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Heger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ritter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">W</forename><surname>O'shea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Herwig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Travaglio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bisterzo</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stw2244</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">463</biblScope>
+			<biblScope unit="page">3755</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><surname>Côté</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">W</forename><surname>O'shea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ritter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Herwig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">A</forename><surname>Venn</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/835/2/128</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">835</biblScope>
+			<biblScope unit="page">128</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Validating Semi-analytic Models of High-redshift Galaxy Formation Using Radiation Hydrodynamical Simulations</title>
+		<author>
+			<persName><forename type="first">Benoit</forename><surname>Côté</surname></persName>
+			<idno type="ORCID">0000-0002-9986-8816</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Devin</forename><forename type="middle">W</forename><surname>Silvia</surname></persName>
+			<idno type="ORCID">0000-0002-4109-9313</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">W</forename><surname>O’shea</surname></persName>
+			<idno type="ORCID">0000-0002-2786-0348</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Britton</forename><surname>Smith</surname></persName>
+			<idno type="ORCID">0000-0002-6804-630X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">H</forename><surname>Wise</surname></persName>
+			<idno type="ORCID">0000-0003-1173-8847</idno>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/aabe8f</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<title level="j" type="abbrev">ApJ</title>
+		<idno type="ISSN">0004-637X</idno>
+		<idno type="ISSNe">1538-4357</idno>
+		<imprint>
+			<biblScope unit="volume">859</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">67</biblScope>
+			<date type="published" when="2018-05-20">2018</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">EVOLUTION, NUCLEOSYNTHESIS, AND YIELDS OF AGB STARS AT DIFFERENT METALLICITIES. III. INTERMEDIATE-MASS MODELS, REVISED LOW-MASS MODELS, AND THE pH-FRUITY INTERFACE</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cristallo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Straniero</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Piersanti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gobrecht</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0067-0049/219/2/40</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal Supplement Series</title>
+		<title level="j" type="abbrev">ApJS</title>
+		<idno type="ISSNe">1538-4365</idno>
+		<imprint>
+			<biblScope unit="volume">219</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">40</biblScope>
+			<date type="published" when="2015-08-24">2015</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><surname>Cseh</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202142468</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">660</biblScope>
+			<biblScope unit="page">128</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">O</forename><surname>Dubay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Johnson</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/ad61df</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">973</biblScope>
+			<biblScope unit="page">55</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><surname>Edvardsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Andersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Gustafsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Lambert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">E</forename><surname>Nissen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tomkin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">275</biblScope>
+			<biblScope unit="page">101</biblScope>
+			<date type="published" when="1993">1993</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><surname>Eitner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bergemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">J</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Cescutti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">R</forename><surname>Seitenzahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Larsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Plez</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201936603</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">635</biblScope>
+			<biblScope unit="page">38</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Observational constraints on the origin of the elements</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Eitner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bergemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Ruiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Avril</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">R</forename><surname>Seitenzahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Gent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Côté</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202244286</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">677</biblScope>
+			<biblScope unit="page">A151</biblScope>
+			<date type="published" when="2023-09">2023</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Galaxy Evolution tool: Construction and Applications</title>
+		<author>
+			<persName><forename type="first">Yeshe</forename><surname>Fenner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brad</forename><forename type="middle">K</forename><surname>Gibson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Limongi</surname></persName>
+		</author>
+		<idno type="DOI">10.1023/a:1019598212397</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astrophysics and Space Science</title>
+		<title level="j" type="abbrev">Astrophysics and Space Science</title>
+		<idno type="ISSN">0004-640X</idno>
+		<idno type="ISSNe">1572-946X</idno>
+		<imprint>
+			<biblScope unit="volume">281</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="537" to="538" />
+			<date type="published" when="2002-07">2002</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Sub-Chandrasekhar models for Type Ia supernovae and astrophysical transients</title>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Fink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Friedrich</forename><surname>Roepke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><forename type="middle">A</forename><surname>Sim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><surname>Kromer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivo</forename><surname>Seitenzahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashley</forename><forename type="middle">J</forename><surname>Ruiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Hillebrandt</surname></persName>
+		</author>
+		<idno type="DOI">10.22323/1.146.0050</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of XII International Symposium on Nuclei in the Cosmos — PoS(NIC XII)</title>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Lattanzio</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Karakas</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Lugaro</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">G</forename><surname>Dracoulis</surname></persName>
+		</editor>
+		<meeting>XII International Symposium on Nuclei in the Cosmos — PoS(NIC XII)</meeting>
+		<imprint>
+			<publisher>Sissa Medialab</publisher>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page">050</biblScope>
+		</imprint>
+		<respStmt>
+			<orgName>NIC XII</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><surname>Foreman-Mackey</surname></persName>
+		</author>
+		<idno type="DOI">10.21105/joss.00024</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Open Source Software</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page">24</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><surname>Francois</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">165</biblScope>
+			<biblScope unit="page">183</biblScope>
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">The New Galaxy: Signatures of Its Formation</title>
+		<author>
+			<persName><forename type="first">Ken</forename><surname>Freeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joss</forename><surname>Bland-Hawthorn</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.astro.40.060401.093840</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Astronomy and Astrophysics</title>
+		<title level="j" type="abbrev">Annu. Rev. Astron. Astrophys.</title>
+		<idno type="ISSN">0066-4146</idno>
+		<idno type="ISSNe">1545-4282</idno>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="487" to="537" />
+			<date type="published" when="2002-09">2002</date>
+			<publisher>Annual Reviews</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">K</forename><surname>Gibson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Fenner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Renda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kawata</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1071/AS03052</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Publ. Astron. Soc. Australia</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page">401</biblScope>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Griffith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Weinberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Buder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Vincenzo</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/ac5826</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">931</biblScope>
+			<biblScope unit="page">23</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Hayden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Recio-Blanco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>De Laverny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mikolaitis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">C</forename><surname>Worley</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201731494</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">608</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Type Ia supernovae as stellar endpoints and cosmological tools</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Howell</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/ncomms1344</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<title level="j" type="abbrev">Nat Commun</title>
+		<idno type="ISSNe">2041-1723</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">350</biblScope>
+			<date type="published" when="2011-06-14">2011</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Hunter</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/MCSE.2007.55</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Comput Sci Eng</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">90</biblScope>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">K</forename><surname>Iwamoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Brachwitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nomoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kishimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Umeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">R</forename><surname>Hix</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F.-K</forename><surname>Thielemann</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/313278</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJS</title>
+		<imprint>
+			<biblScope unit="volume">125</biblScope>
+			<biblScope unit="page">439</biblScope>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Observational properties of thermonuclear supernovae</title>
+		<author>
+			<persName><forename type="first">Saurabh</forename><forename type="middle">W</forename><surname>Jha</surname></persName>
+			<idno type="ORCID">0000-0001-8738-6011</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kate</forename><surname>Maguire</surname></persName>
+			<idno type="ORCID">0000-0002-9770-3508</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Sullivan</surname></persName>
+			<idno type="ORCID">0000-0001-9053-4820</idno>
+		</author>
+		<idno type="DOI">10.1038/s41550-019-0858-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Astronomy</title>
+		<title level="j" type="abbrev">Nat Astron</title>
+		<idno type="ISSNe">2397-3366</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="706" to="716" />
+			<date type="published" when="2019-08-07">2019</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Stellar migration and chemical enrichment in the milky way disc: a hybrid model</title>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">W</forename><surname>Johnson</surname></persName>
+			<idno type="ORCID">0000-0002-6534-8783</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">H</forename><surname>Weinberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fiorenzo</forename><surname>Vincenzo</surname></persName>
+			<idno type="ORCID">0000-0002-0743-9994</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">C</forename><surname>Bird</surname></persName>
+			<idno type="ORCID">0000-0001-5838-5212</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">R</forename><surname>Loebman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alyson</forename><forename type="middle">M</forename><surname>Brooks</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">R</forename><surname>Quinn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Charlotte</forename><forename type="middle">R</forename><surname>Christensen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><forename type="middle">J</forename><surname>Griffith</surname></persName>
+			<idno type="ORCID">0000-0001-9345-9977</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stab2718</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">508</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="4484" to="4511" />
+			<date type="published" when="2021-10-02">2021</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Updated stellar yields from asymptotic giant branch models</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Karakas</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2966.2009.16198.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">403</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1413" to="1425" />
+			<date type="published" when="2010-04-11">2010</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Stellar Models and Yields of Asymptotic Giant Branch Stars</title>
+		<author>
+			<persName><forename type="first">Amanda</forename><surname>Karakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">C</forename><surname>Lattanzio</surname></persName>
+		</author>
+		<idno type="DOI">10.1071/as07021</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Publications of the Astronomical Society of Australia</title>
+		<title level="j" type="abbrev">Publ. &amp;#x0096; Astron. Soc. Aust</title>
+		<idno type="ISSN">1323-3580</idno>
+		<idno type="ISSNe">1448-6083</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="103" to="117" />
+			<date type="published" when="2007">2007</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">The Dawes Review 2: Nucleosynthesis and Stellar Yields of Low- and Intermediate-Mass Single Stars</title>
+		<author>
+			<persName><forename type="first">Amanda</forename><forename type="middle">I</forename><surname>Karakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">C</forename><surname>Lattanzio</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/pasa.2014.21</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Publications of the Astronomical Society of Australia</title>
+		<title level="j" type="abbrev">Publ. Astron. Soc. Aust.</title>
+		<idno type="ISSN">1323-3580</idno>
+		<idno type="ISSNe">1448-6083</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page">30</biblScope>
+			<date type="published" when="2014-07-22">2014</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Nova contributions to the chemical evolution of the Milky Way</title>
+		<author>
+			<persName><forename type="first">Alex</forename><forename type="middle">J</forename><surname>Kemp</surname></persName>
+			<idno type="ORCID">0000-0003-2059-5841</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><forename type="middle">I</forename><surname>Karakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">R</forename><surname>Casey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benoit</forename><surname>Côté</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">G</forename><surname>Izzard</surname></persName>
+			<idno type="ORCID">0000-0003-0378-4843</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zara</forename><surname>Osborn</surname></persName>
+			<idno type="ORCID">0000-0001-5546-6869</idno>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202450800</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">689</biblScope>
+			<biblScope unit="page">A222</biblScope>
+			<date type="published" when="2024-09">2024</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="middle">R C</forename><surname>Kennicutt</surname><genName>Jr</genName></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.astro.36.1.189</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ARA&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page">189</biblScope>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kobayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Umeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nomoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Tominaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ohkubo</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/508914</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">653</biblScope>
+			<biblScope unit="page">1145</biblScope>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">The evolution of isotope ratios in the Milky Way Galaxy</title>
+		<author>
+			<persName><forename type="first">Chiaki</forename><surname>Kobayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><forename type="middle">I</forename><surname>Karakas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hideyuki</forename><surname>Umeda</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2966.2011.18621.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<imprint>
+			<biblScope unit="volume">414</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="3231" to="3250" />
+			<date type="published" when="2011-05-17">2011</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kobayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S.-C</forename><surname>Leung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nomoto</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/ab8e44</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">895</biblScope>
+			<biblScope unit="page">138</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">The Origin of Elements from Carbon to Uranium</title>
+		<author>
+			<persName><forename type="first">Chiaki</forename><surname>Kobayashi</surname></persName>
+			<idno type="ORCID">0000-0002-4343-0487</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Amanda</forename><forename type="middle">I</forename><surname>Karakas</surname></persName>
+			<idno type="ORCID">0000-0002-3625-6951</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Lugaro</surname></persName>
+			<idno type="ORCID">0000-0002-6972-3958</idno>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/abae65</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<title level="j" type="abbrev">ApJ</title>
+		<idno type="ISSN">0004-637X</idno>
+		<idno type="ISSNe">1538-4357</idno>
+		<imprint>
+			<biblScope unit="volume">900</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">179</biblScope>
+			<date type="published" when="2020-09-01">2020</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Can Neutron Star Mergers Alone Explain the r-process Enrichment of the Milky Way?</title>
+		<author>
+			<persName><forename type="first">Chiaki</forename><surname>Kobayashi</surname></persName>
+			<idno type="ORCID">0000-0002-4343-0487</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ilya</forename><surname>Mandel</surname></persName>
+			<idno type="ORCID">0000-0002-6134-8946</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Krzysztof</forename><surname>Belczynski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephane</forename><surname>Goriely</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">H</forename><surname>Janka</surname></persName>
+			<idno type="ORCID">0000-0002-0831-3330</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Just</surname></persName>
+			<idno type="ORCID">0000-0002-3126-9913</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ashley</forename><forename type="middle">J</forename><surname>Ruiter</surname></persName>
+			<idno type="ORCID">0000-0002-4794-6835</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dany</forename><surname>Vanbeveren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><forename type="middle">U</forename><surname>Kruckow</surname></persName>
+			<idno type="ORCID">0000-0001-9331-0400</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Max</forename><forename type="middle">M</forename><surname>Briel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><forename type="middle">J</forename><surname>Eldridge</surname></persName>
+			<idno type="ORCID">0000-0002-1722-6343</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elizabeth</forename><surname>Stanway</surname></persName>
+			<idno type="ORCID">0000-0002-8770-809X</idno>
+		</author>
+		<idno type="DOI">10.3847/2041-8213/acad82</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal Letters</title>
+		<title level="j" type="abbrev">ApJL</title>
+		<idno type="ISSN">2041-8205</idno>
+		<idno type="ISSNe">2041-8213</idno>
+		<imprint>
+			<biblScope unit="volume">943</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">L12</biblScope>
+			<date type="published" when="2023-01-30">2023</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Gas flows and the chemical evolution of galaxies - III. Graphical analysis and secondary elements</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Köppen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">G</forename><surname>Edmunds</surname></persName>
+		</author>
+		<idno type="DOI">10.1046/j.1365-8711.1999.02584.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">306</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="317" to="326" />
+			<date type="published" when="1999-06-21">1999</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kos</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stw2064</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">464</biblScope>
+			<biblScope unit="page">1259</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">On the variation of the initial mass function</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kroupa</surname></persName>
+		</author>
+		<idno type="DOI">10.1046/j.1365-8711.2001.04022.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<title level="j" type="abbrev">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">322</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="231" to="246" />
+			<date type="published" when="2001-04-01">2001</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Krumholz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dekel</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0004-637X/753/1/16</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">753</biblScope>
+			<biblScope unit="page">16</biblScope>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kubryk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Prantzos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Athanassoula</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201424171</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">580</biblScope>
+			<biblScope unit="page">126</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<monogr>
+		<author>
+			<persName><forename type="first">S.-C</forename><surname>Leung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nomoto</surname></persName>
+		</author>
+		<idno type="DOI">10.7566/JPSCP.14.020506</idno>
+		<title level="m">14th International Symposium on Nuclei in the Cosmos</title>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Kubono</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><surname>Kajino</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Nishimura</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><surname>Isobe</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Nagataki</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><surname>Shima</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Y</forename><surname>Takeda</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2016">2017. 2016</date>
+			<biblScope unit="page">20506</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chornock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Leaman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">V</forename><surname>Filippenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Poznanski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ganeshalingam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Mannucci</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2966.2011.18162.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">412</biblScope>
+			<biblScope unit="page">1473</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>Limongi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chieffi</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4365/aacb24</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJS</title>
+		<imprint>
+			<biblScope unit="volume">237</biblScope>
+			<biblScope unit="page">13</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lodders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Palme</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">P</forename><surname>Gail</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-540-88055-4_34</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Landolt Börnstein</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><surname>Maoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Mannucci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">D</forename><surname>Brandt</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2966.2012.21871.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">426</biblScope>
+			<biblScope unit="page">3282</biblScope>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">The separation distribution and merger rate of double white dwarfs: improved constraints</title>
+		<author>
+			<persName><forename type="first">Dan</forename><surname>Maoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Na'ama</forename><surname>Hallakoun</surname></persName>
+			<idno type="ORCID">0000-0002-0430-7793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carles</forename><surname>Badenes</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/sty339</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">476</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="2584" to="2590" />
+			<date type="published" when="2018-03-16">2018</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<author>
+			<persName><forename type="first">F</forename><surname>Matteucci</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-642-41720-7_2</idno>
+		<title level="m">Saas-Fee Advanced Course</title>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page">145</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<author>
+			<persName><forename type="first">F</forename><surname>Matteucci</surname></persName>
+		</author>
+		<idno type="DOI">10.36116/MEMSAIT_94N2.2023.127</idno>
+		<title level="m">Memorie della Societa Astronomica Italiana</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page">127</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">F</forename><surname>Matteucci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Greggio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">154</biblScope>
+			<biblScope unit="page">279</biblScope>
+			<date type="published" when="1986">1986</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">The effect of different type Ia supernova progenitors on Galactic chemical evolution</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Matteucci</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Spitoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Recchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Valiante</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/200911869</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">501</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="531" to="538" />
+			<date type="published" when="2009-05-19">2009</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcwilliam</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.astro.35.1.503</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ARA&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page">503</biblScope>
+			<date type="published" when="1997">1997</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mcwilliam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">L</forename><surname>Piro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Badenes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bravo</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/aab772</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">857</biblScope>
+			<biblScope unit="page">97</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">N</forename><surname>Mowlavi</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.astro-ph/9910542</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">350</biblScope>
+			<biblScope unit="page">73</biblScope>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">E</forename><surname>Nissen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Christensen-Dalsgaard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Mosumgaard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Silva</forename><surname>Aguirre</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Spitoni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202038300</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">640</biblScope>
+			<biblScope unit="page">81</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Nucleosynthesis in type Ia supernovae</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nomoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Iwamoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Nakasato</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F-K</forename><surname>Thielemann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Brachwitz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tsujimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Kubo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Kishimoto</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/s0375-9474(97)00291-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Physics A</title>
+		<title level="j" type="abbrev">Nuclear Physics A</title>
+		<idno type="ISSN">0375-9474</idno>
+		<imprint>
+			<biblScope unit="volume">621</biblScope>
+			<biblScope unit="issue">1-2</biblScope>
+			<biblScope unit="page" from="467" to="476" />
+			<date type="published" when="1997-08">1997</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Nucleosynthesis in Stars and the Chemical Enrichment of Galaxies</title>
+		<author>
+			<persName><forename type="first">Ken'ichi</forename><surname>Nomoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chiaki</forename><surname>Kobayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nozomu</forename><surname>Tominaga</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev-astro-082812-140956</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Astronomy and Astrophysics</title>
+		<title level="j" type="abbrev">Annu. Rev. Astron. Astrophys.</title>
+		<idno type="ISSN">0066-4146</idno>
+		<idno type="ISSNe">1545-4282</idno>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="457" to="509" />
+			<date type="published" when="2013-08-18">2013</date>
+			<publisher>Annual Reviews</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">F</forename><surname>Ochsenbein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bauer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Marcout</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/aas:2000169</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;AS</title>
+		<imprint>
+			<biblScope unit="volume">143</biblScope>
+			<biblScope unit="page">23</biblScope>
+			<date type="published" when="2000">2000</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Owusu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Buder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Ruiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">R</forename><surname>Seitenzahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Rodriguez-Segovia</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/pasa.2024.85</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PASA</title>
+		<imprint>
+			<biblScope unit="page">92</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">R</forename><surname>Pakmor</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stac3107</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">517</biblScope>
+			<biblScope unit="page">5260</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">F</forename><surname>Pérez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">E</forename><surname>Granger</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/MCSE.2007.53</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Comput Sci Eng</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">21</biblScope>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">L</forename><surname>Ratcliffe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Ness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Buck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">V</forename><surname>Johnston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Sen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Beraldo E Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">P</forename><surname>Debattista</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/ac3481</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">924</biblScope>
+			<biblScope unit="page">60</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><surname>Recio-Blanco</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201322944</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">567</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Ruiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">R</forename><surname>Seitenzahl</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00159-024-00158-9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;ARv</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Ruiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Belczynski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">A</forename><surname>Sim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hillebrandt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">L</forename><surname>Fryer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Fink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kromer</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2966.2011.19276.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">417</biblScope>
+			<biblScope unit="page">408</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><surname>Rybizki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Just</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-W</forename><surname>Rix</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201730522</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="page">59</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Salpeter</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/145971</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page">161</biblScope>
+			<date type="published" when="1955">1955</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">Sánchez</forename><surname>Almeida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Elmegreen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">G</forename><surname>Muñoz-Tuñón</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Elmegreen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M</forename></persName>
+		</author>
+		<idno type="DOI">10.1007/s00159-014-0071-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;ARv</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page">71</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Schoettler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Owen</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stae1900</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">533</biblScope>
+			<biblScope unit="page">3484</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">Three-dimensional delayed-detonation models with nucleosynthesis for Type Ia supernovae</title>
+		<author>
+			<persName><forename type="first">Ivo</forename><forename type="middle">R</forename><surname>Seitenzahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Franco</forename><surname>Ciaraldi-Schoolmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Friedrich</forename><forename type="middle">K</forename><surname>Röpke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Fink</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wolfgang</forename><surname>Hillebrandt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Markus</forename><surname>Kromer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rüdiger</forename><surname>Pakmor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashley</forename><forename type="middle">J</forename><surname>Ruiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><forename type="middle">A</forename><surname>Sim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefan</forename><surname>Taubenberger</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/sts402</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">429</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1156" to="1172" />
+			<date type="published" when="2013">2013</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">Solar abundance of manganese: a case for near Chandrasekhar-mass Type Ia supernova progenitors</title>
+		<author>
+			<persName><forename type="first">Ivo</forename><forename type="middle">R</forename><surname>Seitenzahl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriele</forename><surname>Cescutti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Friedrich</forename><forename type="middle">K</forename><surname>Röpke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ashley</forename><forename type="middle">J</forename><surname>Ruiter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rüdiger</forename><surname>Pakmor</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201322599</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">559</biblScope>
+			<biblScope unit="page">L5</biblScope>
+			<date type="published" when="2013-11">2013</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b87">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Sellwood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Binney</surname></persName>
+		</author>
+		<idno type="DOI">10.1046/j.1365-8711.2002.05806.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">336</biblScope>
+			<biblScope unit="page">785</biblScope>
+			<date type="published" when="2002">2002</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b88">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Gehren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361:20040203</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">423</biblScope>
+			<biblScope unit="page">683</biblScope>
+			<date type="published" when="2004">2004</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b89">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Skrutskie</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/498708</idno>
+	</analytic>
+	<monogr>
+		<title level="j">AJ</title>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="page">1163</biblScope>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b90">
+	<analytic>
+		<title level="a" type="main">The Earliest Stage of Galactic Star Formation</title>
+		<author>
+			<persName><forename type="first">Charles</forename><forename type="middle">L</forename><surname>Steinhardt</surname></persName>
+			<idno type="ORCID">0000-0003-3780-6801</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vadim</forename><surname>Rusakov</surname></persName>
+			<idno type="ORCID">0000-0001-7633-3985</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">H</forename><surname>Clark</surname></persName>
+			<idno type="ORCID">0000-0003-3873-968X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrei</forename><surname>Diaconu</surname></persName>
+			<idno type="ORCID">0000-0002-6459-8772</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Forbes</surname></persName>
+			<idno type="ORCID">0000-0002-1975-4449</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Conor</forename><surname>Mcpartland</surname></persName>
+			<idno type="ORCID">0000-0003-0639-025X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><surname>Sneppen</surname></persName>
+			<idno type="ORCID">0000-0002-5460-6126</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Weaver</surname></persName>
+			<idno type="ORCID">0000-0003-1614-196X</idno>
+		</author>
+		<idno type="DOI">10.3847/2041-8213/acd447</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal Letters</title>
+		<title level="j" type="abbrev">ApJL</title>
+		<idno type="ISSN">2041-8205</idno>
+		<idno type="ISSNe">2041-8213</idno>
+		<imprint>
+			<biblScope unit="volume">949</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">L38</biblScope>
+			<date type="published" when="2023-06-01">2023</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b91">
+	<analytic>
+		<title level="a" type="main">On the Abundance of Sodium in A-F Supergiants</title>
+		<author>
+			<persName><forename type="first">Yoichi</forename><surname>Takeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masahide</forename><surname>Takada-Hidai</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/pasj/46.4.395</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Publications of the Astronomical Society of Japan</title>
+		<idno type="ISSNe">2053-051X</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="395" to="413" />
+			<date type="published" when="1994-08-25">1994</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b92">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Taylor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="s">Astronomical Data Analysis Software and Systems XIV</title>
+		<editor>
+			<persName><forename type="first">P</forename><surname>Shopbell</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Britton</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">R</forename><surname>Ebert</surname></persName>
+		</editor>
+		<imprint>
+			<biblScope unit="volume">347</biblScope>
+			<biblScope unit="page">29</biblScope>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b93">
+	<analytic>
+		<title level="a" type="main">Galacti chemical evolution: Hygrogen through zinc</title>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">X</forename><surname>Timmes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Woosley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">A</forename><surname>Weaver</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/192172</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal Supplement Series</title>
+		<title level="j" type="abbrev">ApJS</title>
+		<idno type="ISSN">0067-0049</idno>
+		<idno type="ISSNe">1538-4365</idno>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="page">617</biblScope>
+			<date type="published" when="1995-06">1995</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b94">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Tinsley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">B</forename><surname>Larson</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/156056</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">221</biblScope>
+			<biblScope unit="page">554</biblScope>
+			<date type="published" when="1978">1978</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b95">
+	<analytic>
+		<title level="a" type="main">Metallicity effect in multi-dimensional SNIa nucleosynthesis</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Travaglio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Hillebrandt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Reinecke</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361:20052883</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">443</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1007" to="1011" />
+			<date type="published" when="2005-11-15">2005</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b96">
+	<analytic>
+		<title level="a" type="main">Relative frequencies of Type Ia and Type II supernovae in the chemical evolution of the Galaxy, LMC and SMC</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tsujimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nomoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yoshii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hashimoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yanagida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F-K</forename><surname>Thielemann</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/277.3.945</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<title level="j" type="abbrev">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">277</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="945" to="958" />
+			<date type="published" when="1995-12-01">1995</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b97">
+	<analytic>
+		<title level="a" type="main">Yields of AGB and SAGB models with chemistry of low- and high-metallicity globular clusters</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Ventura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Di Criscienzo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Carini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>D’antona</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stt444</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">431</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="3642" to="3653" />
+			<date type="published" when="2013-04-10">2013</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b98">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Vink</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201832773</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="page">119</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b99">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><surname>Virtanen</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41592-019-0686-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Methods</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page">261</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b100">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">V D</forename><surname>Walt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">C</forename><surname>Colbert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Varoquaux</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/MCSE.2011.37</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Comput Sci Eng</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">22</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b101">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Wheeler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Sneden</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="middle">J W</forename><surname>Truran</surname><genName>Jr</genName></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.aa.27.090189.001431</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ARA&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page">279</biblScope>
+			<date type="published" when="1989">1989</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b102">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">E</forename><surname>Woosley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">A</forename><surname>Weaver</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/192237</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJS</title>
+		<imprint>
+			<biblScope unit="volume">101</biblScope>
+			<biblScope unit="page">181</biblScope>
+			<date type="published" when="1995">1995</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b103">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">J</forename><surname>Zahid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">I</forename><surname>Dima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R.-P</forename><surname>Kudritzki</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Kewley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Geller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">S</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Silverman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kashino</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0004-637X/791/2/130</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">791</biblScope>
+			<biblScope unit="page">130</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b104">
+	<analytic>
+		<title level="a" type="main">Barium stars as tracers of&lt;i&gt;s&lt;/i&gt;-process nucleosynthesis in AGB stars</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">W</forename><surname>Den Hartogh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Yagüe López</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Cseh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pignatari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Világos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Roriz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">B</forename><surname>Pereira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">A</forename><surname>Drake</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Junqueira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Lugaro</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202244189</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">672</biblScope>
+			<biblScope unit="page">A143</biblScope>
+			<date type="published" when="2023-04">2023</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b105">
+	<analytic>
+		<title level="a" type="main">New theoretical yields of intermediate mass stars</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">B</forename><surname>Van Den Hoek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A T</forename><surname>Groenewegen</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/aas:1997162</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy and Astrophysics Supplement Series</title>
+		<title level="j" type="abbrev">Astron. Astrophys. Suppl. Ser.</title>
+		<idno type="ISSN">0365-0138</idno>
+		<idno type="ISSNe">1286-4846</idno>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="305" to="328" />
+			<date type="published" when="1997-06">1997</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

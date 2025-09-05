@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Formalizing Informal Communication: An Archaeology of the Early Pre-Web Preprint Infrastructure at CERN</title>
+				<funder>
+					<orgName type="full">German Ministry of Research, Technology, and Space (BMFTR)</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Käte Hamburger Kolleg: Cultures of Research, RWTH Aachen University</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Phillip</forename><forename type="middle">H</forename><surname>Roth</surname></persName>
+							<email>phillip.roth@khk.rwth-aachen.de</email>
+							<affiliation key="aff0">
+								<orgName type="institution">RWTH Aachen University Käte Hamburger Kolleg: Cultures of Research</orgName>
+								<address>
+									<addrLine>Theaterstr. 75</addrLine>
+									<postCode>52066</postCode>
+									<settlement>Aachen</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Formalizing Informal Communication: An Archaeology of the Early Pre-Web Preprint Infrastructure at CERN</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">9626AAB6BC3BF487391A5BB53A199819</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:50+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Preprints</term>
+					<term>CERN</term>
+					<term>infrastructure</term>
+					<term>libraries</term>
+					<term>scientific communication</term>
+					<term>physics</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>This article deals with the early development of preprint communication in high-energy physics (HEP), specifically with how preprint communication was formalized in the early 1960s at European Organization for Nuclear Research (CERN). It employs a sociological conception of infrastructures to ask which practices and technologies of communication structured the use of preprints in HEP at the time and subsequently solidified into the research community's communication and information infrastructure. The investigation conducts a media archaeology of the uses and understandings of the preprint medium in three historical layers to explore the sociocultural specificities that became inscribed into the preprint infrastructure at CERN: 1) the use of preprints as separate copies of papers accepted for publication and distributed informally to members of societies and academies in the early-20 th century to make the content immediately available without delay of publication; 2) the use of preprints in postwar physics as media to privately and informally share practical instructions and theoretical tools in the fast-moving current of theoretical physics; and 3) as a formalized information system developed at the CERN library in the early 1960s, which treated preprints as public "current awareness tools" for the benefit of the whole HEP community to inform its members of recent progress in the field. The article concludes with a discussion of the infrastructural regimes that shaped the early pre-Web history of preprint communication as well as an outlook to the research program to comprehensively study the infrastructuring of preprint communication in HEP.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="595.2" lry="841.92"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Preprints have received quite some attention as a subject of analysis in recent years, especially in relation to online repositories. In common understanding, preprints are preliminary versions of scientific papers made available to peers, sometimes in the form of articles accepted for publication in an academic journal and sometimes in the form of texts not submitted for publication. Networked communication technologies and the emergence of the World Wide Web in the early 1990s have allowed researchers to share findings with colleagues through practices of so-called "self-archiving," where papers are made freely available on platforms for others to download and read <ref type="bibr" target="#b8">(Bohlin 2004</ref><ref type="bibr" target="#b10">, Borrelli 2022</ref><ref type="bibr">, Gunnarsdóttir 2005</ref><ref type="bibr" target="#b34">, Taubert 2021</ref>).<ref type="foot" target="#foot_0">foot_0</ref> Such practices gained widespread attention within academia when during the Covid-19 pandemic biomedical scientists, epidemiologists, and clinicians shared their discoveries through preprints at an "unprecedented pace" <ref type="bibr" target="#b37">(Watson 2022</ref>). Close to one hundred dieerent preprint servers exist today -some institution-led, some owned by commercial publishers, some covering special disciplines, and some open to any field for self-archiving. 2   In social studies of science, scholars have analyzed how preprint communication infrastructures like that of the online repository arXiv.org have complemented "traditional publication practices" <ref type="bibr">(Gunnarsdóttir 2005)</ref>. In physics, astronomy, and mathematics, where the repository has been employed by researchers since the 1990s, the routines of scientific authors and readers are organized around the arXiv infrastructure and researchers are included in the disciplinary communication system through practices of self-archiving. Providing important epistemic and social resources to pursue their day-to-day work, in mathematics and astronomy, for instance, "repositories register claims for new results and findings" <ref type="bibr">(Taubert 2021: 190)</ref>, while in high-energy physics, "preprint archives have assumed a central role within the field as the space where belonging and credit are constructed and confirmed." <ref type="bibr">(Delfanti 2016: 642)</ref> Moreover, as Reyes-Galindo (2016: 600) explains, the "sophisticated combination of software filtering, moderator scrutiny and peer-exposure in arXiv" has led to the emergence of gate-keeping functions comparable to that of journal editing. This paper examines how the preprint infrastructure originated from informal forms of communication in science, using the case of high-energy physics (HEP). Informal communication serves practical purposes of research, such as informing peers about progress and innovations in research, and has been shown to play an important role in HEP <ref type="bibr" target="#b17">(Gaston 1973</ref><ref type="bibr" target="#b28">, Libbey &amp; Zaltman 1967</ref><ref type="bibr" target="#b36">, Traweek 1988)</ref>. Additionally, HEP has depended on the circulation of preprints since at least the mid-20 th century, although the pre-Web history of the preprint infrastructure remains sketchy <ref type="bibr" target="#b9">(Borgman 2007</ref><ref type="bibr" target="#b10">, Borrelli 2022</ref><ref type="bibr" target="#b15">, Delfanti 2016</ref><ref type="bibr">, Gunnarsdóttir 2005</ref><ref type="bibr" target="#b23">, Kling 2004</ref><ref type="bibr" target="#b35">, Till 2001</ref><ref type="bibr" target="#b38">, Wykle 2014)</ref>.</p><p>Scholars have thus pointed to how the use of arXiv.org in physics is closely linked to the pre-existence of a "preprint culture," which emerged in the 1960s, consolidated in the 1970s, and in which researchers posted copies of their papers to colleagues <ref type="bibr">(Bohlin 2004: 379)</ref>. The reliance of HEP on online preprint repositories as their communication infrastructure thus reveals that "these instruments [i.e., preprint servers] are connected to specific ways of circulating scientific writing and structuring the scientific community." <ref type="bibr">(Delfanti 2016: 630)</ref> In an early statement, Paul <ref type="bibr">Ginsparg (1994: 157)</ref>, arXiv's initiator, explained how the repository was tied to the specific communication culture of high-energy physicists:</p><p>"The rapid acceptance of electronic communication of research information in my own community of high-energy theoretical physics was facilitated by a pre-existing 'preprint culture,' in which the irrelevance of refereed journals to ongoing research has long been recognized. Since the mid-1970s the primary means of communicating new research ideas and results has been a preprint distribution system in which printed copies of papers were sent through the ordinary mail to large distribution lists at the same time that they were submitted to journals for publication."</p><p>This article investigates the development of preprint communication in HEP as a process of "infrastructuring" <ref type="bibr" target="#b3">(Barlösius 2016</ref><ref type="bibr" target="#b4">, 2019</ref><ref type="bibr" target="#b12">, Bowker &amp; Star 1999</ref><ref type="bibr" target="#b32">, Star &amp; Ruhleder 1996)</ref> the socio-cultural specificities of the indicated "preprint culture." It conducts a media archaeology that asks which practices and technologies structured the use of preprints in HEP and solidified into the research community's communication infrastructure. In my case, media archaeology is meant as the description of media objects (i.e., preprints) in specific historical contexts to ask how they worked and what cultural practices and sort of sociality they facilitated <ref type="bibr">(Roth et al. 2024)</ref>. The investigation proceeds along three historical layers, which all revealed dieerent understandings and uses of the medium: 1) in scientific societies and academies in the early 20 th century, preprints were separate copies of papers that had been accepted for publication, but were distributed informally to circumvent delays in production to make their content available to its members already before oeicial publication; 2) in postwar physics, preprints were used as media to informally share practical instructions and theoretical tools in the fast-moving current of theoretical physics; and 3) in the early 1960s, through the formalization of the preprint infrastructure at the European Organization for Nuclear Research (CERN), preprints were understood as "current awareness tools," which through centralized documentation and organization served as a public good to inform all of the HEP community rapidly of recent progress in the field.</p><p>The text uses a sociological conception of infrastructures <ref type="bibr" target="#b3">(Barlösius, 2016;</ref><ref type="bibr" target="#b4">2019;</ref><ref type="bibr">s. also van Laak, 2023)</ref> to explore the infrastructuring of preprint communication as the result of socio-cultural processes and to understand how it in turn socially structured communication and community in HEP. Such an infrastructure conception is useful, because it avoids understanding preprint communication as functionally and technologically predetermined. That is, it can explain how infrastructures became used for purposes wholly unintended by their originators and rather emphasizes their moorings in the social and cultural <ref type="bibr" target="#b3">(Barlösius 2016</ref>). In the literature, the focus on selfarchiving as a purely Web-based technology tends to disregard the longer pre-Web history of using preprints and takes the digital environment of the internet as the medium's "natural" infrastructure for granted. I argue, though, that the formal properties of the preprint infrastructure are materializations of specific ways of achieving communication via preprints in HEP, which are not native to the Web or the internet. Essentially, I will show how the library at CERN formalized the originally informal communication of physicists that existed in private networks until the 1960s <ref type="bibr" target="#b21">(Kaiser 2005</ref><ref type="bibr" target="#b28">, Libbey &amp; Zaltman 1967</ref><ref type="bibr" target="#b19">, Goldschmidt-Clermont 2002</ref><ref type="bibr" target="#b19">[1965]</ref>).</p><p>A sociological conception of infrastructures furthermore allows decentering notions of scientific communication from popular sociological models of academic publishing, which tend to emphasize functional purposes. In the sociological literature, scientific communication is largely understood in formal terms as the publication system organizing reward and fulfilling gatekeeping functions (e.g., <ref type="bibr" target="#b11">Bourdieu 1975</ref><ref type="bibr" target="#b27">, Latour &amp; Woolgar 1982</ref><ref type="bibr">, Merton 1973</ref><ref type="bibr">, Stichweh 1994</ref><ref type="bibr" target="#b39">, Zuckerman &amp; Merton 1971)</ref>. Preprints constituted an informal means of quickly sharing information on research tools and approaches. The crucial dieerence to formal publication was the speed at which they could be circulated, which was especially necessary for theorists in HEP, who were scattered at dieerent research sites and could not wait for such resources to become available through publication <ref type="bibr" target="#b21">(Kaiser 2005)</ref>.</p><p>Finally, sociological models have largely ignored the role of service organizations for scientific communication. Instead, "The common understanding focuses on social mechanisms like peer review, the recognition of merit or the attribution of reputation," while the "technical facilities and infrastructures" of publication and communication are "merely treated as preconditions that allow the dissemination of new research and findings." <ref type="bibr">(Taubert 2021: 176)</ref> However, these infrastructures oeer services needed for the operation of science, which are not generated by the social field itself. Whereas scientists and scholars in their roles as authors, editors, referees, and readers provide and control the "content" of communication, so to speak, it requires a vast infrastructure to organize, archive, and transmit these communications to the respective research communities. These infrastructures are usually maintained and updated by organizations such as publishing houses, libraries, or information service providers. According to <ref type="bibr">Taubert (2021: 178)</ref>, "The type of organization often shapes the resources provided by the infrastructure and the rules that have to be followed by them." The early development of the preprint infrastructure will furthermore illustrate how an organization like CERN's library exerts considerable power over the shape of a scientific community. The logistical and bibliographical innovations to document, gather, and distribute preprint communication globally not only turned the private and informal communication networks into a public and formal communication infrastructure. The system set up by the library at CERN also contributed to socioculturally structuring the field by introducing formal and informal rules of inclusions as well as determining the subject boundaries of HEP research. This paper builds on my ongoing research into the history of the preprint infrastructure in HEP. It draws on archival sources as well as on historical literature pertaining to the history of physics and of scientific communication. In the next section, I will unpack the sociological conception of infrastructure that guides my archaeological investigation of infrastructuring scientific communication. After that, a section for each of the historical layers follows: First, I look at the general understanding of preprints at societies in the early 20 th century through exemplary discussions of the matter at the Royal Society Information Conference in 1948. Then I sketch the informal use of preprints among a group of theorists in postwar physics to understand the socio-cultural specificities of preprint communication that became inscribed into the infrastructure, before I turn to the formalization of the preprint infrastructure at CERN in the early 1960s. The article concludes with a discussion of what we can learn from the pre-Web history of preprints and an outlook to the research program to comprehensively study the infrastructuring of preprint communication in HEP.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Toward A Sociology of Scientific Communication Infrastructures</head><p>The conception of infrastructure employed here emphasizes how socio-cultural aspects, such as routines, expectations, or forms of sociality, are inscribed into infrastructures; and how infrastructures in turn produce forms of social structuration or solidify existing social structures that shape a social field. In other words, I try to understand how the postwar field of HEP in its social and cultural constitution influenced the organizational and technical arrangements of the preprint communication infrastructure; and how these, in turn, subsequently structured the field socially through rules and classifications. <ref type="bibr">Barlösius (2019: 62e.)</ref> summarizes these factors into the concept of an "infrastructural regime." Such a regime derives from a society's "dominant [forms of] infrastructural structuration" and is geared towards the realization of a "certain socio-spatial order." (ibid.: 63). She oeers four categories or features of infrastructural regimes that can guide sociological analysis, which I will unpack shortly: "infrastructural provisions" (infrastrukturelle Vorleistungen), "infrastructural sociality" (infrastrukturelle Sozialität), "infrastructural regulations" (infrastrukturelles Regelwerk), and "infrastructural spatialization" (infrastrukturelle Verräumlichung) <ref type="bibr" target="#b3">(Barlösius 2016;</ref><ref type="bibr" target="#b4">2019)</ref>.</p><p>Barlösius is thus interested in the socio-theoretical relevance of infrastructures, in how society is structured through what infrastructures accomplish for individual social fields.<ref type="foot" target="#foot_2">foot_2</ref> My investigation is driven by similar socio-theoretical interests: the purpose is to understand the infrastructuring of preprint communication in HEP through a historicalsystematic archaeology the dieerent infrastructural regimes, guided by the four analytical categories proposed by Barlösius. The overall goal is to reveal the forms of sociality and social mechanisms inscribed into the preprint communication infrastructure, which remain latent in discussions of preprints from the point of view of formal publishing.</p><p>Barlösius's notion of "infrastructural provisions" denotes a central characteristic of infrastructures, namely how the coordination of practices does not need to be continuously renewed, but is rather settled through established standards, protocols, norms, and routines that allow infrastructures to move into the background <ref type="bibr" target="#b12">(Bowker &amp; Star 1999</ref><ref type="bibr" target="#b32">, Star &amp; Ruhleder 1996)</ref>. In the case discussed below, for instance, the initially private and uncoordinated sharing of research information with the community became settled through a system that solicited preprint papers from researchers and announced them publicly via regular newsletters distributed by the CERN library. However, infrastructures also specify pathways for the type of actions that are supported and thereby also privilege certain practices and impede others. In HEP, for example, sharing preprints through private networks gradually became less common as a practice, because this form of communication lacked the exposure to the community needed to register progress in the field and the role of individuals or groups in it <ref type="bibr">(Traweek, 1988, 122)</ref>.</p><p>The second feature of infrastructural regimes that <ref type="bibr">Barlösius (2019: 53e.)</ref> suggests focusing on is that of "infrastructural sociality." She argues that infrastructures contain within themselves specific understandings of sociality that are produced by the supported repertoire of practices. It was already indicated above how the adoption of arXiv as a communication infrastructure was linked to the pre-existence of a specific "culture" of circulating scientific papers. As <ref type="bibr">Star and Ruhleder (1996: 113)</ref> have stated, infrastructures are tied to membership, whereby they are linked "with conventions of practice" of day-to-day use that are learned as part of the socialization into an organization or group. Thus, according to <ref type="bibr">Barlösius (2019: 54)</ref>, infrastructural sociality is borne by shared values and interests, i.e., the commonality of conceptions about what services an infrastructure should provide and how to provide them. The manifestation of dieerent forms of sociality supported by infrastructures thus depends on the social interactions that are promoted, encouraged, inhibited, or impeded by them. Infrastructures "channel" these interactions in a way that leads to specific forms of sociality, which determine who can profit from infrastructural provisions and who is excluded <ref type="bibr">(Barlösius: 2016: 216)</ref>. For instance, <ref type="bibr" target="#b24">Kohler (1994)</ref> has suggested that the exchange of information among early-20 th century Drosophila geneticists in the USA depended on a "moral economy" of reciprocal sharing and collective ownership of tools for genetic research. In a similar vein, the sociality inscribed into the preprint infrastructure through HEP theorists in the postwar era was initially based on values of mutual learning through sharing theoretical tools, while only secondarily concerned with formally assigning credit for innovations.</p><p>"Infrastructural regulations" constitutes a third feature to understand infrastructures sociologically, according to <ref type="bibr">Barlösius (2019: 56e.)</ref>. It comprises formal and informal rules of use and can include access rules, rules of creation and provision, as well as codes of conduct. Access rules document the forms of sociality inherent to an infrastructure, she argues, which can be inclusive or exclusive. While platforms like arXiv.org, for example, allow virtually anyone to download their content, posting on the site, as already mentioned above, follows specific rules and vetting processes, which factually limits access to members of a clearly defined research community.<ref type="foot" target="#foot_4">foot_4</ref> As Reyes-Galindo (2016: 600) observes, "success of being included can be highly dependent on access to institutional resources and on strong adherence to mainstream research programmes." The platform's informal rules furthermore emphasize a specific form of sociality, so that "authors' lack of contact with a research community's form of life, or their choice to work on unorthodox topics slightly outside mainstream interests, may cause [the platform's] filters to flag and moderators to reject or reclassify their submissions." (ibid.) <ref type="bibr">Barlösius (2019, 59e.)</ref> describes "infrastructural spatialization" as a fourth feature of infrastructural regimes. She distinguishes three forms of infrastructure that produce and encode space in dieerent ways: space-generating infrastructures create space by generating centers for exchange, transfer, and communication processes, while infrastructures can help overcome spatial limitations by connecting such centers through roads, canals, pipelines, or wires. Additionally, there are "super-spatial" (überräumliche) infrastructures, which enable exchange and communication that span across space uniformly and simultaneously. But despite a large part of scientific communication taking place through the internet today, the communication infrastructures of the mid-20 th century were marked by logistical means to overcome spatial limitations of a community dispersed around the globe and concentrated at a dozen or so large research centers. An important aspect is that preprint communication defined the spatial boundaries of this community by facilitating a flow of information that was centered on these larger organizations and disadvantaged those not in proximity to them.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Preprints and Exclusivity at Early-20 th Century Academic Societies</head><p>The first historical layer of my archaeology of the infrastructuration of preprint communication concerns the general understanding of preprints in the first half of the 20 th century. The issue of preprints came up rather prominently in discussions at the Royal Society Information Conference, held from 21 June to 2 July 1948 in London. The debate was initiated because of a controversial paper submitted by the influential Irish socialist scientist and historian J. D. Bernal, which proposed a new scheme to organize the logistics of scientific communication <ref type="bibr" target="#b13">(Coblans 1966)</ref>. The proposal drew considerable backlash from conference attendants as well as outside observers, so that Bernal had to withdraw the paper outlining the scheme <ref type="bibr" target="#b16">(East 1998)</ref>. Rather than continuing to rely on societies and their journals to organize scientific communication, he proposed setting up a limited number of "National Distributing Authorities (N.D.A.)," which would coordinate the submission, distribution, and announcement of scientific papers centrally, while leaving selection and assessment of contributions largely to the panels and review boards of the appropriate academic societies <ref type="bibr">(Bernal 1948b: 254)</ref>. He had devised a similar scheme in his influential book The Social Function of Science <ref type="bibr" target="#b7">(Bernal 1967</ref><ref type="bibr" target="#b7">(Bernal [1939]]</ref>: 292e.), published in 1939, just a few months before the outbreak of World War II. Historians have likened Bernal's proposal to an "informational socialism," which is "based on the principles of centralized planning and equal access" (Aronova 2021: 134). Indeed, Bernal's ideas for the centralized organization of scientific communication influenced the All-Union Institute for Scientific and Technical Information (VINITI), which was set up by the Soviet Union's Academy of Science in 1952 <ref type="bibr" target="#b20">(Hammarfelt &amp; Dahlin 2023)</ref>.</p><p>The role of preprints in his scheme was less controversial than his plan for centralization and for essentially depriving academies and societies of their selfdetermination as publishers. His proposal drew on existing practices known, for example, from the Faraday Society, where it was customary to circulate papers, which had been accepted for publication by the society's journal, as separate copies to all participants before a meeting to facilitate discussion of its content <ref type="bibr">(Bernal 1948a: 67)</ref>. Such practices were common since the 19 th century. As <ref type="bibr" target="#b14">Csiszar (2018)</ref> shows in his history of the scientific journal, authors often acquired separate print copies of their papers accepted for publication before the actual volume in which it was published came out. Publishing papers "separately allowed authors to circulate their work more quickly," since the publications of academies and societies appeared infrequently <ref type="bibr">(Csiszar 2018: 54)</ref>. Framed in terms of an "infrastructural provision," this means that the practice was meant to overcome that scientific communication was bound to specific journal release dates, and that the discovery or innovation of an author become available more immediately. And as an "infrastructural sociality," these separate publications or "preprints" point to the exclusivity of those who would benefit from the, as they were privately distributed to "particular friends" (ibid.: 56).</p><p>Building on the idea that papers accepted could be sent for production in a publication and simultaneously be produced for separate circulation, Bernal saw that preprints could constitute part of an information system to better keep colleagues in a field up to date. According to his plan, after having gone through the appropriate editorial stations, papers "would be at once printed by the N.D.A." and then "be published in the first place as a preprint," which would be "distributed immediately" to individuals who subscribed to papers from a certain field or requested papers announced previously, as well as be included on "a weekly list of notices of titles of forthcoming papers." <ref type="bibr">(Bernal 1948b: 254)</ref> In this regard, Bernal merely aimed at systematizing and generalizing the already existing practice and to extend it beyond the confines of an exclusive club; a motif that would reoccur with the formalization of preprint communication at CERN. Consequently, many representatives of societies and academies present at the conference in London concurred with that part of Bernal's proposal, which dealt with preprints. Members of the British Institute of Electrical Engineers stated that the "I.E.E. has always issued preprints prior to discussion of a paper; the system could probably be extended apart from limitation of paper;" while the Biochemical Society suggested that "there seems to be no reason why the system should not be made general and made to apply to all papers accepted for publication." <ref type="bibr">(The Royal Society 1948: 60, 62)</ref>. Members of the Chemical Society saw some value in a generalized preprint scheme under certain conditions: "Some form of service for the supply of preprints or reprints might prove valuable provided that the additional cost could be met and that it caused no delay of complete publication of the society's journal." (ibid.: 61) Preprints had been deemed inadequate, though, by societies representing biological sciences and had been explicitly condemned by the zoologists, particularly on grounds that they tended to conflict with dates registering claims to priority, which was highly relevant in issues of classification and taxonomy (ibid.: 517f.).</p><p>What can be gathered from these discussions is that such communication practices provided early access to content intended for journal publication. Preprints were papers informally distributed to a select group of peers, who would discuss their merits for ongoing and future research. However, the sociality that this practice implied was exclusive and tied to formal membership in a society or academy. Moreover, this form of exchange had implied rules that deemed circulating papers accepted for publication appropriate only if they were distributed privately <ref type="bibr">(Csiszar 2018: 56)</ref>. Preprints constituted a basis for internal discussion and had no real public value. That papers had to be accepted for publication before being allowed to circulate informally also implies that preprints did not interfere in the regular business of formal publishing, which issued claims to priority and organized reward. Finally, in terms of spatial encoding, this early practice of preprint exchange confirmed societies and academies as centers of scientific communication. However, the social space they generated was not congruent with that reached through their journals, indicating that they reached publics dieerent that they formed dieerent readerships than the general scientific public.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Preprints, Pedagogy, and the Circulation of Postdocs in Postwar HEP</head><p>The second time layer of my media-archaeological investigation concerns the use of preprints among members of an elite group of theoretical physicists in the late 1940s and early 1950s, drawing on <ref type="bibr" target="#b21">Kaiser's (2005)</ref> book on the dispersion of Feynman diagrams in postwar physics. His study looks at the group of researchers that formed around Richard Feynman at Princeton's Institute for Advanced Study and then spread throughout the US, Europe, and the world (including the Soviet Union and Japan), bringing with them the use of the diagrams in nuclear physics, particle physics, and beyond. Whereas receiving and sending preprints was previously tied to formal membership in an academic society, membership and thus the right to participate in preprint communication in postwar physics was conferred through active participation. Additionally, the formal qualification of being accepted for publication no longer determined whether a paper could be sent out or not. Instead, preprints came to be used to defy the process of formal publishing.</p><p>Kaiser emphasizes the role of personal contacts and informal communication in the spread of Feynman diagrams, which relates personal interaction and oral communication to the infrastructuring of preprints. <ref type="bibr" target="#b7">Bernal (1967</ref><ref type="bibr" target="#b7">Bernal ( [1939]]</ref>: 303) had already emphasized the importance of personal contacts in science in his 1939 book: "To an extent much larger than is realized, the transference of scientific ideas from one set of scientific workers to another is eeected by means of visits, personal contacts, and letters. <ref type="bibr">" Traweek (1988: 117)</ref> notes, too, that "Oral communication is fundamental to the operation of the particle physics community." She explains that through talk "the boundaries of this dispersed but close-knit community" are maintained and that oral communication articulates and aeirms "the shared moral code about the proper way to conduct scientific inquiry." (ibid.: 122) The main scientific work is, furthermore, done through discussions, according to Traweek, while she likens "written materials, articles and preprints," to "record-keeping device[s]," whose main role it is to stake claims to priority and assign credit for discoveries or innovations (ibid.: 122; s. also <ref type="bibr">Gaston 1973: 131)</ref>.</p><p>However, Kaiser's case of Feynman diagrams in postwar physics reveals that the distinction between oral and preprint communication was not as clear cut. Rather, preprints were part of a pedagogical culture in physics in the late 1940s and early 1950s that relied simultaneously on personal contact, oral communication and direct instruction in using the diagrams, as well as on the distribution of preprints over far distances to compensate for the lack of face-to-face interaction and to keep up with what the group was doing. I want to argue that the distribution of preprints among members of the community was thus as much a confirmation of shared codes conduct. Therefore, at least at this point in the development of the preprint infrastructure, it is questionable whether oral and written communication were as clearly distinguished into "current, more advanced knowledge" and information that is "established, uncontested, and hence uninteresting." <ref type="bibr">(Traweek 1988: 121)</ref> Kaiser (2005: 6) makes the initial observation that "Everything about physicists' patterns of work came in for reevaluation after the war, from methods of training young theorists, to the means of communicating new results and techniques, to decisions about what topics merited study and by what means." His study critically confronts conceptions of theoretical work as removed from skill and activity by emphasizing the tacit dimensions and learned proficiency that were vital to mastering Feynman diagrams as theoretical tools (ibid.: 7e.). This means considering the social, technical, material, and cultural conditions of theoretical work in a similar way as authors have explored these dimensions regarding laboratory tools and instruments (s. <ref type="bibr">Roth et al. 2024</ref>). Thus, instead of treating Feynman diagrams as transcendent and abstracted from local cultures and forms of socialization, Kaiser suggests that "theoretical physicists do not enter the field on the basis of correspondence courses, sending and receiving written instructions in the absence of any face-to-face interaction." (ibid.: 11)</p><p>The circulation of postdocs among dieerent institutes was an important factor in spreading Feynman diagrams to various sites, Kaiser shows, which helped instruct their usage in the field. Postdoctoral training was one of the institutions of physics to have undergone considerable transformation after the war, giving the postdoc phase new significance for the field's development. In general, this change in postdoctoral training was part of larger institutional changes and of the growth of formal knowledge since the beginning of the 20 th century, which had only been accelerated by the employment of science in the war eeort <ref type="bibr">(Roth 2025: 156)</ref>. <ref type="bibr">Kaiser (2005: 64f.)</ref> highlights two factors in particular: first, "rather than focusing further on 'book learning' or formal coursework […] postdoctoral fellowships were supposed to enable young physicists to acquire those tacit skills, not codified within textbooks or quizzed on final examinations, that were essential for research." Second, he states that the nature of postdoctoral appointments, which were usually short term and at places dieerent from their doctoral training, had them circulate between dieerent groups over time: "As they traveled, they picked up new skills and helped to transfer them from one place to another." (ibid.: 65) Under these circumstances, users of Feynman diagrams learned how to employ the tools similar to how apprenticeship and practical training are needed to understand how to employ research instruments in the laboratory. "Feynman diagrams are practices, and as such they must be practiced. Reading about the diagrams was one thing; practicing how to use them as research tools quite another." (ibid.: 110) Kaiser documents how many of the early diagram adopters "interacted directly with Feynman" (ibid.: 56) to either see him perform work with the theoretical tools or receive direct help in their own diagrammatic calculations.</p><p>The postdocs who studied with Feynman and his immediate "diagrammatic ambassadors" were soon scattered throughout the US and the world. Thus, given the high mobility of the community and how its members circulated between dieerent sites, wherever face-to-face contact with the leading diagram users was not possible, they resorted to personal correspondence through the mail as well as other means of informal distribution (ibid.: 65e.). Keeping in contact over long distances was vital for diagram users. This indicates how a steady stream of incoming and outgoing researchers at dieerent sites was part of the larger communication infrastructure in physics, which included the stream of research papers between institutes and laboratories. Since it was important to keep abreast of the newest developments in the field, especially the newest advances in how to apply the diagrams and to learn for what purposes to use them, the circulation of preprints was adopted to compensate for the dispersion of the community and the lack of direct contact with other practitioners. Kaiser notes that in the late 1940s and early 1950s, "more and more physicists began to demand preprints in order to keep up with the fast-moving research currents." (ibid.: 80) Theoretical physicists at this stage maintained personal mailing lists to know exactly whom to send their papers to and with whom to inquire about the latest developments. Kaiser illustrates nicely how a leading diagram ambassador, Freeman Dyson, began soliciting from "the Institute [for Advanced Study] stae to prepare one hundred copies of the manuscript" of one of his diagram papers, "to have them ready to distribute at the New York American Physical Society meeting [in January 1949]," and how "[Robert] Oppenheimer likewise sent oe preprints of Dyson's paper to a number of colleagues." (ibid.)</p><p>In this way, the first-hand encounters with diagrammatic praxis, complemented by the distribution of preprints, materialized into a network of informal exchange between diagram users. Moreover, codifying an infrastructural spatiality that revolved around highly dynamic centers of practice, this formation was clearly intended to transcend the spatial limitations that characterized the local use of preprints at the Institute for Advanced Study and other institutes. The rapidly changing aeiliation of researchers also indicates that formal membership was not the crucial mark to benefit from the emerging preprint infrastructure. Instead, active participation in the circulation of tools and things useful for practical instruction in using the diagrams was what included theorists in the system. In this regard, the private sharing of preprints among theoretical physicists shared some resemblance with the informal exchange networks in early-20 th century US genetics <ref type="bibr" target="#b24">(Kohler 1994</ref><ref type="bibr" target="#b22">, Kelty 2012</ref>), which I will elaborate on in the discussion.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Formalizing and Generalizing Preprint Exchange at CERN</head><p>The incredible growth of scientific research since the beginning of the 20 th century, and of the information relating to it, as well as new technologies to record, store, and organize the literature, had given the centuries-old issue of so-called "information overload" new relevance in the postwar period, not least accelerated by the role of science during the war <ref type="bibr" target="#b31">(Roth 2025)</ref>. As the case of Feynman diagrams showed, the main problem plaguing mid-20 th century researchers was getting at the information most relevant to his or her work quickly. In his opening plenary at the Royal Society Conference in 1948, <ref type="bibr">Bernal (1948a: 54)</ref> summarized the problem as follows:</p><p>"What is wrong with the present system is that the growing abundance of primary scientific publication and the confusion in which it is set out acts as a continuous break, as an element of friction to the progress of science. We are not so much maintaining that scientific information is lost, though it may be, but that the scientific worker wastes time and eeort in finding what information there is, and as a result we may be getting a far more limited and slower progress of research than we would under a better arranged system of publication." Societies and private communication networks of scattered researchers could only lead so far in providing scientists with exactly the papers they needed for their work. Accordingly, Bernal understood that the main objectives of "scientific publication and distribution" were "the satisfaction of the user" qua scientists and "the advance of science." (ibid.) Accordingly, he wanted to turn the existing form of sharing separate copies or preprints of papers into a system that would benefit all researchers equally, no matter their location or aeiliation <ref type="bibr" target="#b13">(Coblans 1966</ref>).</p><p>The CERN system for registering and distributing preprints turned the originally private communication networks, as they existed, for instance, in theoretical physics, into a public good for all of HEP, comprising not only theorists, but also experimental physicists, engineers, detector and accelerator constructors, and others. Much of the credit for the pioneering work of systematically registering, categorizing, and publicly announcing preprints needs to be given to Luisella Goldschmidt-Clermont, who was a librarian at CERN from after its founding in 1954 until the late 1960s, when she went on to pursue a PhD in social sciences at the Free University of Brussels. 5 Beginning in the late 1950s, the library at CERN had begun collecting and noting the circulation of preprints, however, not yet in an elaborate systematic scheme. <ref type="foot" target="#foot_6">6</ref> In the annual internal report of the CERN library for the year 1960, it reads: "The weekly display of pre-prints in the Library continues to be much appreciated by readers: in fact, the extent to which such single copies are requested on loan has posed problems of ensuring rapid circulation." 7 At the end of the year, Goldschmidt-Clermont began developing a project to formalize preprint exchange at CERN, which was based on the idea of systematically documenting and categorizing preprint submissions and making the list available in a regular newsletter that would announce the latest preprints in circulation to the local community as well as to HEP research sites around the globe. When funds became available to potentially support the project in 1961, she seized the opportunity and proposed the idea to both the library administration and the CERN directorate. The rationale was as follows:</p><p>"The project under consideration aims at improving communications among highenergy physicists <ref type="bibr">[…]</ref>. A list giving author, title and abstract of papers in high energy physics and related fields received at CERN would be prepared and reproduced by oeset; this list would be made widely available to scientists and laboratories doing research in high-energy physics." <ref type="formula">8</ref>In contrast to the proposal made by Bernal at the 1948 Scientific Information Conference, the CERN library would thus not act as a central distribution oeice for preprints per se, but rather as a sort of contact exchange for interested readers and authors. Based on this list, "all those interested would know of the existence of papers being circulated on a certain subject" within one or two weeks, "and could request from the author a copy of specific papers in which they have an urgent interest." The system thus did not comprise the logistics of duplicating and distributing preprints -only a few copies were made available for display and loan at the CERN library -but only of informing the community publicly about where to request papers of interest individually. Moreover, the list was meant to include abstracts of each preprint submission, which for some members of the community could prove sueicient. <ref type="bibr">Traweek (1988: 86)</ref> notes that written material like preprints was scanned by physicists "primarily to find out who to talk to." Theorists, though, required whole papers to reconstruct the documented research processes <ref type="bibr">(Gaston 1973: 139)</ref>.</p><p>The project idea was based on <ref type="bibr" target="#b19">Goldschmidt-Clermont's (2002</ref><ref type="bibr" target="#b19">[1965]</ref>) own informal empirical observations of "communication patterns" in HEP.<ref type="foot" target="#foot_7">foot_7</ref> On the one hand, she saw that a general desire existed for rapid information about what was going on in the field at other sites, but that in the current situation that desire was not met satisfactorily. On the other, she argued that the moral commitments of CERN as a publicly funded and international organization demanded that this desire be realized through a publicly and openly accessible system. "Because the field is developing rapidly and because it requires large capital investments, speed is an important factor in communication. Delays occurring in the process of transmitting information may cause a waste of experimental eeort." At present, "letter-journals have become the most popular journals in high-energy physics," since they often had publication delays of only "five to six weeks." (ibid.)</p><p>Letter-journals were an oespring of the "Letters to the Editors" section, which was introduced in Physical Review in 1932, the leading physics journal at the time <ref type="bibr" target="#b26">(Lalli 2016)</ref>. <ref type="foot" target="#foot_8">10</ref> The section soon took on a life of its own, expanding greatly until the mid-20 th century, and later, in 1958, spawning its own publication medium Physical Review Letters. Already before World War II, nuclear and quantum physics were fast moving research areas and journals had tried to adapt to the quick pace of new discoveries with the introduction of the new genre of letters. The "Letters to the Editors" were meant to announce findings, which would later be backed up by full journal articles. Although the innovation was also framed as providing better access to the literature for readers, to keep colleagues up to date with the latest work, historians show how this publication format primarily constituted "a reward to the author rather than […] a method for the readers to increase their knowledge." (ibid.: 164) Thus, while letters were meant as short announcements to be updated by full papers, <ref type="bibr" target="#b19">Goldschmidt-Clermont (2002</ref><ref type="bibr" target="#b19">[1965]</ref>) observed in 1965 that "two out of three letters in elementary particle physics have not been followed by a full paper more than two years after publication." Additionally, editors often found that letter-journals were "being misused as a channel for half-baked results or even for results that later prove <ref type="bibr">[d]</ref> wrong."</p><p>Although letter-journals had been frequently employed for making fast priority claims, among HEP researchers, the format nevertheless enjoyed great popularity at the time because of the speed of publication and the concise nature of the information it contained. For Goldschmidt-Clermont this meant that, rather than understanding it as a formal publication, "the readers use <ref type="bibr">[d]</ref> the letter-journals as a current-awareness tool, that is as a communication tool." (ibid.) From the way that researchers in HEP were utilizing the publication format she concluded that they "crave[d] a current awareness communication tool." (ibid.) In a preliminary draft of her "Proposal for the Development of Communication among High-Energy Physicists," she noted that in the prevailing situation, "the 'communication' aspect is being empirically met by distributing preprints."<ref type="foot" target="#foot_9">foot_9</ref> However, as the example of Feynman and his diagram users shows, preprint communication was not an open system at the time. Although those who belonged to the close circle of diagram users had access to the newest developments, anyone outside this circle remained virtually oblivious to what was going on until he or she could read about it, months later in a journal publication. According to Goldschmidt-Clermont, the circulation of preprints tended to "create a privileged class: the set of scientists whose names appear on mailing lists." (ibid.) Personal mailing lists were still the primary means of distribution for preprints in the mid-1960s, with more than two thirds of papers shared via such lists <ref type="bibr">(Libbey &amp; Zaltman, 1967, 36)</ref>. Accordingly, the main intention of Goldschmidt-Clermont and her preprint newsletter project was to "extend to all [researchers in HEP] the privilege which is, at present, enjoyed by the few who receive preprints." <ref type="formula">12</ref>Moreover, private communication networks conflicted with the oeicial policies of CERN, according to Goldschmidt-Clermont, which prohibited any forms of secrecy as a lesson from the role of science, especially physics, during World War II. She invoked the organization's Convention in a January 1961 memorandum, stating that "CERN is bound to contribute to 'international cooperation in nuclear research, … This cooperation may include … the promotion of contacts between … scientists, the dissemination of information, …' (CERN Convention, Article II, para 3 c)." Rather than continuing the private and privileged system of preprints as private current awareness communication tools, she conceived of her project as inclusive of all researchers in the global community and as a public good for all of HEP. Goldschmidt-Clermont explained that she was of "the opinion about the [preprint] project of high-energy physicists belonging to as many countries as possible; some of these physicists are stae members [at CERN]; some were only on a short visit to CERN; a few of the latter are responsible physics leaders in their countries." 13 Thus, the main service realized through the preprint infrastructure set up by Goldschmidt-Clermont at CERN was the reliable and regular provision of "current awareness communication tools" to the entire HEP community. Goldschmidt-Clermont had begun requesting that, instead of sending copies of manuscripts to their personal networks, authors should send them to the library instead, where the entries would be catalogued and put on public display for the local research community as well as included in a newsletter. That the library treated preprints as "communication tools" meant that "No attempt would be made to select the papers according to the scientific value of the work presented therein." Instead, criteria for inclusion were tied to formal rules, which defined what had to be included in the submission ("the full paper should be supplied with the abstract; the abstract should be in English; the full paper could be in any language.") as well as the categorization of a paper.</p><p>Feynman diagrams became used beyond the realms of nuclear and particle physics through the ambassadorship and preprint exchange described by <ref type="bibr" target="#b21">Kaiser (2005)</ref>. But the library at CERN set clear criteria for the categorization of submissions: Preprints dealing with "theoretical particle physics" and "high energy experimental physics" were always included. "Experimental techniques" related to HEP, "accelerators," "mathematics," "cosmic rays," and "computer programmes" constituted subjects that would be "considered for inclusion in the newsletter," depending "on the case." "Low energy physics," "chemistry," and "plasma physics" were, in turn, never included. 15 The enforcement of these strict boundaries already foreshadowed the rigid categorizing that the sorting software and moderators of arXiv.org perform today (Reyes-Galindo 2016). Additionally, though these categories appear as neutral classifications of the field and its boundaries, they were slanted towards the interests of the local community. As Goldschmidt-Clermont explained, the CERN community at the time served as a proxy for determining the relevance of submitted papers: "The guiding principle is that the [preprints] list should only include 'hot' material, that is material for which it pays to use this exceptional procedure. In order to determine if it 'pays,' one has to consider the number of stae members [i.e., researchers at CERN] interested in the subject <ref type="bibr">[…]</ref>." 16   It is thus already possible to glimpse at how the infrastructure moved from providing current information to structuring the community socially: Through its public preprints announcement CERN became the center of gravity in the organization of preprint communication as its newsletter constituted an (incomplete) representation of research in the field. Inclusion in the list was therefore a badge of membership as well as an opportunity to expose one's work to the global HEP community. However, the success of one's exposure and the chances to receive credit hinged on conforming with the subject classifications and thus with the research interests define at CERN. This social incentive seems to have predetermined a reward system, which later became institutionalized in the online repository: "The archive is a detector that HEP physicists need to hit with their beams of papers, at the right time and with the right objects, in order to signal their existence and claim credit for what they have done." <ref type="bibr">(Delfanti, 2016, 642)</ref> At CERN, it was not "the archive" but the library's preprints list that had to be hit with paper beams. Furthermore, while the CERN library formalized preprint communication in terms of rules for submission and subject classification, it at the same time did not formalize the format or genre through which inclusions in the preprint newsletter could be made, echoing the practice of Feynman's diagram group, which subordinated the precise form of the communication to the question of practical relevance. Goldschmidt-Clermont declared: "No discretion would be made between what is currently called preprints, reports, internal reports, private communication, etc <ref type="bibr">[.]</ref>," as long as the criteria for inclusion were met. 17 All submissions as preprints would be cataloged uniformly with a unique preprint number, regardless of what precise format they were.</p><p>Finally, Goldschmidt-Clermont noted that the "general reaction is one of enthusiasm, with no doubt about the usefulness of such a project." The main reason why virtually all physicists gladly complied with the new procedure was because it rectified some crucial issues in the current communication infrastructure: "The physicists I have spoken to feel that our project may help clarify -rather than deteriorate -the sensitive matters of priorities, adequate quotations, etc." 18 In the issue of priorities, Goldschmidt-Clermont reported about the divergence between the date of submission and of publication of a journal article. While the latter was naturally taken as the date to establish priority, the factual date of priority was that of submission. 19 The submission of preprints to the CERN library and registration through the list of entries in a public newsletter "would help to disclose reals issuance dates." Additionally, she noted, it was customary in the current system "to refer to other people's work still available only in preprint form." 20 Consequently, a system, which would not only register issuance dates, but also identified submissions according to a formal registry would essentially make preprints citable as "publications," even though their primary function was that of a communication tool and they were distinguished from the genre of scientific article. 17 Luisella Goldschmidt-Clermont memorandum to Lew Kowarski, January 5 th , 1961, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137. 18 Luisella Goldschmidt Clermont letter to Viktor Weisskopf, January 4 th , 1961, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137. 19 Csiszar discusses how in the mid-19 th century conflicts persisted over whether the data at which a paper was presented to a society (and accepted for publication) or whether the publication date of a journal issue constituted the proper coverage of priorities: "Until mid-century, it was not regularly asserted that priority claims depended directly on putting those claims into print." <ref type="bibr">(2018,</ref><ref type="bibr">161)</ref> 20 Luisella Goldschmidt Clermont letter to Viktor Weisskopf, January 4 th , 1961, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Infrastructuring Scientific Communication: Discussion and Outlook</head><p>The paper sketched the early pre-Web development of the preprint communication infrastructure as an infrastructuring of socio-cultural specifies, which included a desire for the rapid dissemination of research papers as well as the informal and often private practices of doing so. In the early 20 th century, preprints were understood as separate copies of papers accepted for publication in a journal. The service that the informal practices of sharing preprints at societies and academies provided was that of making certified knowledge available to colleagues in a specialized field as soon as possible, without having to wait for an oeicial publication to be produced. In this situation, the sociality was rather exclusive and regulated by the formal membership in a society or academy. Rules of participation were clear: while preprints were separate copies of articles, their distribution could not interfere with the regular publishing process overseen by societies. This implied that all matters of credit and priority had to be settled before, and the circulation of a paper had to be an informal and non-public action. <ref type="foot" target="#foot_12">21</ref> In terms of spatiality, it can be assumed that the sharing of preprints encoded a space of discourse that did not coincide with the spatial dimensions of formal publications. These were sent to libraries, research institutes, and other subscribers that formed a general academic public, whereas the circulation of preprints created a space that comprised an actively working specialized community.</p><p>That preprints encoded a social space for interaction in a specialized working community becomes particularly visible in the case of Feynman diagrams in postwar physics. Here, the medium provided the necessary tools for the community to conduct research and complemented practical instruction whenever direct interaction with others was not possible. Accordingly, rules and membership were geared towards the requirement of sharing tools, knowledge, and information freely within the community. Feynman's diagram group thus shows some resemblance to the communication practices of Drosophila geneticists between the 1910s and 1930s, which originated with Thomas Morgan at Caltech. <ref type="bibr">Kohler (1994: 133)</ref> describes how the active sharing of tools among members -in this case, physical tools, namely fly stocks -as well as information about how to use them formed an infrastructure that helped standardize practices and "integrate geographically dispersed practitioners into a working community." At the heart of this community was the rule of reciprocity, which demanded "the unrestricted sharing of flies, techniques, results and other information within the community." <ref type="bibr">(Kelty 2012: 142</ref>) Thus, the sociality in both Morgan's fly group and Feynman's diagram group was determined by the sharing and receiving of relevant resources, which could only be done by those actively engaged in the community's work and goals <ref type="bibr" target="#b22">(Kelty 2012)</ref>. In terms of spatiality, Morgan's group and genetics laboratory constituted the practical center of the Drosophila research community, while the center of gravity constantly shifted with where Feynman and his ambassadors were in the case of postwar physics. Additionally, no formal rules of provision existed like those at societies requiring that preprints were texts accepted for publication. Instead, <ref type="bibr">Kaiser and Kohler (1994: 133)</ref> thus make similar observations regarding the distinction between written and practical knowledge: "Formal scientific publications spread the word, but personal exchange of working tools was probably more eeective than publications, with all their elisions of craft methods, in spreading the work of the fly people." We can infer, therefore, that in both cases the informal circulation of tools was more radically distinguished from formal publication than in the case of early-20 th century societies and academies, meaning that the content could diverge from that of formal publications if it served practical research purposes.</p><p>The communication infrastructures of both the Morgan and the Feynman groups did not rely on formal publications to overcame spatial restrictions of sharing tools and information with the rest of the community. Instead, Drosophila researchers formalized their exchange through a technical newsletter, the Drosophila Information Service, which <ref type="bibr">Kohler (1994: 162)</ref> calls, "in eeect, an informal trade journal." In HEP, the originally private exchange networks exemplified by the Feynman group were formalized through the introduction of a preprint accession list and newsletter at the CERN library. This system introduced formal rules of provision as well as categorical regulations. In contrast to how preprints were understood until the 1960s, the newsletter project developed by Goldschmidt-Clermont at CERN was designed to treat preprints as a public good and thus extended an originally exclusive right to the whole HEP community. It was aimed at addressing a larger public of researchers in HEP, who did not all share the same specialized research interests.</p><p>My archaeological investigation showed how socio-cultural specificities of communication in postwar physics were inscribed into an emerging infrastructure that had its origins in political and social values determining the actions and orientations of the organization of CERN. It thus retained a sense of sociality that defined itself through the active participation in research and communication but framed it as participation in an open and egalitarian public (although this participation was largely predetermined by proximity to an accelerator laboratory and structured by criteria that defined the sort of research that was deemed a legitimate contribution to the field). This constellation also changed the status of the information and knowledge that circulated within the community. While social criteria of communication, such as assigning credit or claiming priority, had been secondary in the private exchange networks of postwar physics, the CERN system explicitly set out to provide a means to settle claims to priority and make preprints citable through the documentation of papers with unique registration numbers.</p><p>In early-20 th century fly genetics as well as postwar physics, newsletters and preprints did not ascribe credit or register claims to priority. This shows how in both examples these informal communication tools were closely linked to a larger infrastructure that included verbal communication and other forms of direct interaction. In this context, informal rules applied for ascribing credit to individuals for progress made in the field, which were usually fulfilled by word-of-mouth that let every member of the community know who the inventor of a specific tool or procedure was. More, this form did not seem to interfere with formal publications. In some cases, within the Drosophila community "unpublished work" was considered as "public knowledge," meaning that it could be written up by a member other than who had composed it originally <ref type="bibr">(Kohler 1994: 145)</ref> Similarly, Kaiser remarks that it was Dyson who first published a scientific article on the diagrams in Physical Review, even before Feynman. However, the community had already acknowledged Feynman for the invention, so that the main credit for the tools remained with Feynman, although Dyson was recognized for making them widely accessible to researchers <ref type="bibr">(Kaiser 2005: 78f.)</ref>.</p><p>The CERN newsletter formalized these mechanisms, giving preprints as part of a public discourse publication-like features. Rather than complementing existing publication practices it formed an alternative to the tradition of journal publishing. That it allows circumventing traditional institutions of academic publishing is what makes the idea of preprint communication so appealing today. Accordingly, commentators have described preprint communication as "scientists taking the dissemination process and the ownership of papers into their own hands" <ref type="bibr">(Gunnarsdóttir 2005: 556)</ref>.</p><p>However, my study could show how the early pre-Web preprint infrastructure developed from the specific habits and practices of a specialized community, which would seem to limit the ability of implementing preprint infrastructures only to fields exhibiting similar socio-cultural specificities as HEP. Additionally, while the practice of selfarchiving on online platforms is likened to boosting the autonomy of scientific authors, my study supports research that has shown how power over scientific communication is exerted by its infrastructures, whether maintained by libraries or by online platforms (Reyes-Galindo 2016). A future research program that comprehensively investigates the infrastructuring of preprint communication would therefore need to examine more closely how this power is exerted. This could be done through the lens of a sociology of professions that investigates what the professional roles were that maintained and controlled the preprint communication infrastructure. As <ref type="bibr">Barlösius (2019: 58)</ref> notes, the development of infrastructures has often been accompanied by the emergence of new professions that maintain and engineer them. In the case of the preprint infrastructure, Scientific Information Oeicers fit this role. These oeicers were usually trained scientists who refrained from active research and who were instead employed in the library, responsible for deciding over the inclusion and exclusion of contributions in the preprint registry as well as the classification of contributions to the field.</p><p>Another research trajectory would have to investigate the role of technologies for categorizing submissions more closely based on a sociology of classification and valuation. The physical card catalog and newsletter system at CERN was soon superseded by computerized information systems developed at the German Electron Synchrotron (DESY) and the Stanford Linear Accelerator (SLAC). With a view to the social consequences of arXiv's sorting mechanisms it would require an archaeology of how the systems at CERN, DESY, and SLAC exerted power over members of the community by not only categorizing their submissions but also classifying them socially according to topic, aeiliation, or other criteria.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>14</head><figDesc>Luisella Goldschmidt-Clermont memorandum to Lew Kowarski, January 5 th , 1961, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137. 15 Luisella Goldschmidt-Clermont memorandum to Herbert Coblans, January 11 th , 1963, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137. 16 Luisella Goldschmidt-Clermont memorandum to Herbert Coblans, January 11 th , 1963, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137.</figDesc></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="1" xml:id="foot_0"><p>This practice is also referred to as "green open access" (s. Taubert</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>2021).2 https://doapr.coar-repositories.org/repositories/ (accessed 21 May 2025).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="3" xml:id="foot_2"><p><ref type="bibr" target="#b4">Barlösius (2019:</ref> </p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_3"><p>43f.) is particularly interested in exploring in whether the sociological study of infrastructure can contribute to discourses about the diagnosis of today's society as a "knowledge society."</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="4" xml:id="foot_4"><p>arXiv.org additionally requires the endorsement of an author on the platform in order to be allowed to submit a paper, s. https://info.arxiv.org/help/endorsement.html (accessed 21 May 2025).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="5" xml:id="foot_5"><p>https://cds.cern.ch/record/1527102?ln=en (accessed 23 June 2025).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="6" xml:id="foot_6"><p>The earlies records date form October 1958, documenting the receipt of 51 preprints that month. The number of monthly preprints would average around 34 the following months; "CERN Information Service, monthly reports," CERN Archives Box CERN-ARCH-SIS-057.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="9" xml:id="foot_7"><p>S. also Luisella Goldschmidt Clermont letter to Viktor Weisskopf, January 4 th , 1961, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="10" xml:id="foot_8"><p>The idea came from the British journal Nature, where "the 'Letters to the editor' column" had been established earlier in the century "as a major venue for priority claims"(Baldwin 2014: 270).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="11" xml:id="foot_9"><p>Luisella Goldschmidt-Clermont memorandum to Viktor Weisskopf, January 24 th , 1961, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="12" xml:id="foot_10"><p>Luisella Goldschmidt-Clermont memorandum to Lew Kowarski, January 5 th , 1961, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="13" xml:id="foot_11"><p>Luisella Goldschmidt Clermont letter to Viktor Weisskopf, January 4 th , 1961, CERN Archives Box CERN-ARCH-DIR-ADM-01-DIV-DD-07 to 09, Folder CERN-ARCH-DG-FILES-137.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="21" xml:id="foot_12"><p>Csiszar (2018: 55f.)  reports how in the 19 th century, authors used their separate copies to boost their publication lists by including the once as part of a journal issue and again as a separate publication.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements:</head><p>The author wishes to express his gratitude to <rs type="person">David Dallman</rs>, <rs type="person">Salomé Rohr</rs>, and <rs type="person">Jens Vigen</rs> at the <rs type="institution" subtype="infrastructure">CERN library</rs> and archive for their generous help and genuine interest in the project. Further thanks go to <rs type="person">Arianna Borrelli</rs>, <rs type="person">Stefan Böschen</rs>, and <rs type="person">Matthew Eisler</rs> for useful comments on an earlier version of the paper. The research for this paper was supported by the <rs type="funder">Käte Hamburger Kolleg: Cultures of Research, RWTH Aachen University</rs>, funded by the <rs type="funder">German Ministry of Research, Technology, and Space (BMFTR)</rs>.</p></div>
+			</div>
+			<listOrg type="funding">
+			</listOrg>
+
+			<listOrg type="infrastructure">
+				<org type="infrastructure">					<orgName type="extracted">CERN library</orgName>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">CERN annual report for 1960</title>
+		<author>
+			<persName><forename type="first">Herbert</forename><surname>Coblans</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0029-5582(61)91089-6</idno>
+		<idno>CERN-ARCH-DG-FILES-137</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nuclear Physics</title>
+		<title level="j" type="abbrev">Nuclear Physics</title>
+		<idno type="ISSN">0029-5582</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">682</biblScope>
+			<date type="published" when="1961-02-27">February 27 th , 1961</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Elena Aronova. &lt;i&gt;Scientific History: Experiments in History and Politics from the Bolshevik Revolution to the End of the Cold War&lt;/i&gt;. 256 pp., notes, index. Chicago/London: University of Chicago Press, 2021. $45 (cloth); ISBN 9780226761381. E-book available.</title>
+		<author>
+			<persName><forename type="first">Ksenia</forename><surname>Tatarchenko</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/721243</idno>
+		<idno>DIR-ADM-01-DIV-DD-07 to 09</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Isis</title>
+		<title level="j" type="abbrev">Isis</title>
+		<idno type="ISSN">0021-1753</idno>
+		<idno type="ISSNe">1545-6994</idno>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="682" to="684" />
+			<date type="published" when="1961-01-05">January 5 th. 1961. January 11 th , 1963</date>
+			<publisher>University of Chicago Press</publisher>
+			<pubPlace>Chicago &amp; London</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Luisella Goldschmidt-Clermont memorandum to Lew Kowarski</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">‘Keeping in the race’: physics, publication speed and national publishing strategies in&lt;i&gt;Nature&lt;/i&gt;, 1895–1939</title>
+		<author>
+			<persName><forename type="first">Melinda</forename><surname>Baldwin</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0007087413000381</idno>
+		<ptr target="https://doi.org/10.1017/S0007087413000381" />
+	</analytic>
+	<monogr>
+		<title level="j">The British Journal for the History of Science</title>
+		<title level="j" type="abbrev">Br J Hist Sci</title>
+		<idno type="ISSN">0007-0874</idno>
+		<idno type="ISSNe">1474-001X</idno>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="257" to="279" />
+			<date type="published" when="2018">2018</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Verschiebungen der Makro-, Meso-und Mikro-Ebene</title>
+		<author>
+			<persName><forename type="first">Eva</forename><surname>Barlösius</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Wissen -Organisation -Forschungspraxis. Der Makro-Meso-Mikro-Link in der Wissenschaft</title>
+		<editor>
+			<persName><forename type="first">Nina</forename><surname>Baur</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Cristina</forename><surname>Besio</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Maria</forename><surname>Norkus</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Grit</forename><surname>Petschick</surname></persName>
+		</editor>
+		<meeting><address><addrLine>Weinheim Basel</addrLine></address></meeting>
+		<imprint>
+			<publisher>Beltz Verlag</publisher>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="page" from="206" to="236" />
+		</imprint>
+	</monogr>
+	<note>Wissenschaftliche Infrastrukturen</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Infrastrukturen als soziale Ordnungsdienste. Ein Beitrag zur Gesellschaftsdiagnose</title>
+		<author>
+			<persName><forename type="first">Eva</forename><surname>Barlösius</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<publisher>Campus Verlag</publisher>
+			<pubPlace>Frankfurt &amp; New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The Royal Society: Scientific Information Conference, 21 June-2 July, 1948</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Bernal</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0025557200030187</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Mathematical Gazette</title>
+		<title level="j" type="abbrev">Math. Gaz.</title>
+		<idno type="ISSN">0025-5572</idno>
+		<idno type="ISSNe">2056-6328</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">298</biblScope>
+			<biblScope unit="page" from="36" to="36" />
+			<date type="published" when="1948-07-02">21 June-2 July 1948</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">The Royal Society: Scientific Information Conference, 21 June-2 July, 1948</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Bernal</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0025557200030187</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Mathematical Gazette</title>
+		<title level="j" type="abbrev">Math. Gaz.</title>
+		<idno type="ISSN">0025-5572</idno>
+		<idno type="ISSNe">2056-6328</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">298</biblScope>
+			<biblScope unit="page" from="36" to="36" />
+			<date type="published" when="1948-06-21">1948. 21 June-2 July 1948</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Bernal</surname></persName>
+		</author>
+		<title level="m">The Social Function of Science</title>
+		<meeting><address><addrLine>Cambridge, MA &amp; London</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="1939">1967. 1939</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Communication Regimes in Competition</title>
+		<author>
+			<persName><forename type="first">Ingemar</forename><surname>Bohlin</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0306312704041522</idno>
+		<ptr target="https://doi.org/10.1177/0306312704041522" />
+	</analytic>
+	<monogr>
+		<title level="j">Social Studies of Science</title>
+		<title level="j" type="abbrev">Soc Stud Sci</title>
+		<idno type="ISSN">0306-3127</idno>
+		<idno type="ISSNe">1460-3659</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="365" to="391" />
+			<date type="published" when="2004-06">2004</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Scholarship in the Digital Age</title>
+		<author>
+			<persName><forename type="first">Christina</forename><surname>Borgman</surname></persName>
+		</author>
+		<idno type="DOI">10.7551/mitpress/7434.001.0001</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Scholarship in the Digital Age. Information Infrastructure, and the Internet</title>
+		<meeting><address><addrLine>Cambridge, MA &amp; London</addrLine></address></meeting>
+		<imprint>
+			<publisher>The MIT Press</publisher>
+			<date type="published" when="2007-10-12">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Der Aufstieg von arXiv: Netzwerkeffekte und wissenschaftliche Kommunikation</title>
+		<author>
+			<persName><forename type="first">Arianna</forename><surname>Borrelli</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-658-34506-8_9</idno>
+		<ptr target="https://doi.org/10.1007/978-3-658-34506-8_9" />
+	</analytic>
+	<monogr>
+		<title level="m">Geschichte des digitalen Zeitalters</title>
+		<meeting><address><addrLine>Wiesbaden</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Fachmedien Wiesbaden</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="165" to="183" />
+		</imprint>
+	</monogr>
+	<note>Wichum und Daniela Zetti</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The specificity of the scientific field and the social conditions of the progress of reason</title>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Bourdieu</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/053901847501400602</idno>
+		<ptr target="https://doi.org/10.1177/053901847501400602" />
+	</analytic>
+	<monogr>
+		<title level="j">Social Science Information</title>
+		<title level="j" type="abbrev">Social Science Information</title>
+		<idno type="ISSN">0539-0184</idno>
+		<idno type="ISSNe">1461-7412</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="19" to="47" />
+			<date type="published" when="1975-12">1975</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<author>
+			<persName><forename type="first">Geoerey</forename><surname>Bowker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><surname>Leigh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Star</forename></persName>
+		</author>
+		<title level="m">Sorting Things Out. Classification and its Consequences</title>
+		<meeting><address><addrLine>Cambridge, MA &amp; London</addrLine></address></meeting>
+		<imprint>
+			<publisher>MIT Press</publisher>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">The Pelican Freud Library. Edited by A. Richards. 1. &lt;i&gt;Introductory Lectures on Psychoanalysis&lt;/i&gt; (£2.25). Penguin Books: Harmondsworth. 1979 and 1980. - The Pelican Freud Library. Edited by A. Richards. 2. &lt;i&gt;New Introductory Lectures on Psychoanalysis&lt;/i&gt; (£1.50). Penguin Books: Harmondsworth. 1979 and 1980. - The Pelican Freud Library. Edited by A. Richards. 3. &lt;i&gt;Studies on Hysteria&lt;/i&gt; (£2.25). Penguin Books: Harmondsworth. 1979 and 1980. - The Pelican Freud Library. Edited by A. Richards. 4. &lt;i&gt;Interpretation of Dreams&lt;/i&gt; (£3.75). Penguin Books: Harmondsworth. 1979 and 1980. - The Pelican Freud Library. Edited by A. Richards. 5. &lt;i&gt;Psychopathology of Everyday Life&lt;/i&gt; (£1.95). Penguin Books: Harmondsworth. 1979 and 1980. - The Pelican Freud Library. Edited by A. Richards. 6. &lt;i&gt;Jokes and Their Relation to the Unconscious&lt;/i&gt; (£1.25). Penguin Books: Harmondsworth. 1979 and 1980. - The Pelican Freud Library. Edited by A. Richards. 7. &lt;i&gt;On Sexuality&lt;/i&gt; (£1.75). Penguin Books: Harmondsworth. 1979 and 1980. - The Pelican Freud Library. Edited by A. Richards. 8. &lt;i&gt;Case Histories I&lt;/i&gt; (£1.,75). Penguin Books: Harmondsworth. 1979 and 1980. - The Pelican Freud Library. Edited by A. Richards. 9. &lt;i&gt;Case Histories II&lt;/i&gt; (£2.50). Penguin Books: Harmondsworth. 1979 and 1980. - The Pelican Freud Library. Edited by A. Richards. 10. &lt;i&gt;On Psychopathology&lt;/i&gt; (£2.25). Penguin Books: Harmondsworth. 1979 and 1980.</title>
+		<author>
+			<persName><forename type="first">Herbert</forename><surname>Coblans</surname></persName>
+		</author>
+		<idno type="DOI">10.1017/s0033291700052491</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Psychological Medicine</title>
+		<title level="j" type="abbrev">Psychol. Med.</title>
+		<editor>
+			<persName><forename type="first">Maurice</forename><surname>Goldsmith</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Alan</forename><surname>Mackay</surname></persName>
+		</editor>
+		<idno type="ISSN">0033-2917</idno>
+		<idno type="ISSNe">1469-8978</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="435" to="436" />
+			<date type="published" when="1966">1966</date>
+			<publisher>Cambridge University Press (CUP)</publisher>
+			<pubPlace>Harmondsworth</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Csiszar</surname></persName>
+		</author>
+		<title level="m">The Scientific Journal: Authorship and the Politics of Knowledge in the Nineteenth Century</title>
+		<meeting><address><addrLine>Chicago &amp; London</addrLine></address></meeting>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Beams of particles and papers: How digital preprint archives shape authorship and credit</title>
+		<author>
+			<persName><forename type="first">Alessandro</forename><surname>Delfanti</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0306312716659373</idno>
+		<ptr target="https://doi.org/10.1177/0306312716659373" />
+	</analytic>
+	<monogr>
+		<title level="j">Social Studies of Science</title>
+		<title level="j" type="abbrev">Soc Stud Sci</title>
+		<idno type="ISSN">0306-3127</idno>
+		<idno type="ISSNe">1460-3659</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="629" to="645" />
+			<date type="published" when="2016-08">2016</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Professor Bernal’s ‘insidious and cavalier proposals’: the Royal Society scientific information conference, 1948</title>
+		<author>
+			<persName><forename type="first">Harry</forename><surname>East</surname></persName>
+		</author>
+		<idno type="DOI">10.1108/eum0000000007172</idno>
+		<ptr target="https://doi.org/10.1108/EUM0000000007172" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Documentation</title>
+		<idno type="ISSN">0022-0418</idno>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="294" to="302" />
+			<date type="published" when="1948">1998. 1948</date>
+			<publisher>Emerald</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Originality and Competition in Science. A Study of the British High Energy Physics Community</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Gaston</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1973">1973</date>
+			<publisher>University of Chicago Press</publisher>
+			<pubPlace>Chicago &amp; London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">First Steps Towards Electronic Research Communication</title>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Ginsparg</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/1.4823313</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Computers in Physics</title>
+		<idno type="ISSN">0894-1866</idno>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="390" to="396" />
+			<date type="published" when="1994-07-01">1994</date>
+			<publisher>AIP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<author>
+			<persName><forename type="first">Luisella</forename><surname>Goldschmidt-Clermont</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0306312705052358</idno>
+		<ptr target="https://doi.org/10.1177/0306312705052358" />
+	</analytic>
+	<monogr>
+		<title level="m">Gunnarsdóttir, Kristrún. 2005. Scientific Journal Publications. On the Role of Electronic Preprint Exchange in the Distribution of Scientific Literature</title>
+		<title level="s">Communication Patterns in High-Energy Physics. Libraries Webzine</title>
+		<imprint>
+			<date type="published" when="1965">2002. 1965</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="549" to="579" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Abstracting It All: The Soviet Institute of Scientific Information (VINITI) and the Promise of Centralisation, 1952–1977</title>
+		<author>
+			<persName><forename type="first">Björn</forename><surname>Hammarfelt</surname></persName>
+			<idno type="ORCID">0000-0002-1504-8395</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Johanna</forename><surname>Dahlin</surname></persName>
+			<idno type="ORCID">0000-0003-2040-913X</idno>
+		</author>
+		<idno type="DOI">10.1007/s11024-024-09545-z</idno>
+		<ptr target="https://doi.org/10.1007/s11024-024-09545-z" />
+	</analytic>
+	<monogr>
+		<title level="j">Minerva</title>
+		<title level="j" type="abbrev">Minerva</title>
+		<idno type="ISSN">0026-4695</idno>
+		<idno type="ISSNe">1573-1871</idno>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="115" to="133" />
+			<date type="published" when="2023">Dahlin 2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title level="m" type="main">Drawing Theories Apart. The Dispersion of Feynman Diagrams in Postwar Physics</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>Kaiser</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2005">2005</date>
+			<publisher>University of Chicago Press</publisher>
+			<pubPlace>Chicago &amp; London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">This is not an article: Model organism newsletters and the question of ‘open science’</title>
+		<author>
+			<persName><forename type="first">Christopher</forename><forename type="middle">M</forename><surname>Kelty</surname></persName>
+		</author>
+		<idno type="DOI">10.1057/biosoc.2012.8</idno>
+		<ptr target="https://doi.org/10.1057/biosoc.2012.8" />
+	</analytic>
+	<monogr>
+		<title level="j">BioSocieties</title>
+		<title level="j" type="abbrev">BioSocieties</title>
+		<idno type="ISSN">1745-8552</idno>
+		<idno type="ISSNe">1745-8560</idno>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="140" to="168" />
+			<date type="published" when="2012-06">2012</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The internet and unrefereed scholarly publishing</title>
+		<author>
+			<persName><forename type="first">Rob</forename><surname>Kling</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/aris.1440380113</idno>
+		<ptr target="https://doi.org/10.1002/aris.1440380113" />
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Information Science and Technology</title>
+		<title level="j" type="abbrev">Annual Review Info Sci &amp; Tec</title>
+		<idno type="ISSN">0066-4200</idno>
+		<idno type="ISSNe">1550-8382</idno>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="591" to="631" />
+			<date type="published" when="2004-01">2004</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Lords of the Fly. Drosophila Genetics and the Experimental Life</title>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Kohler</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1994">1994</date>
+			<publisher>University of Chicago Press</publisher>
+			<pubPlace>Chicago &amp; London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Lifelines of Our Society</title>
+		<author>
+			<persName><forename type="first">Dirk</forename><surname>Van Laak</surname></persName>
+		</author>
+		<idno type="DOI">10.7551/mitpress/14693.001.0001</idno>
+		<imprint>
+			<date type="published" when="2023-08-01">2023</date>
+			<publisher>The MIT Press</publisher>
+			<pubPlace>Cambridge, MA &amp; London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">‘Dirty work’, but someone has to do it: Howard P. Robertson and the refereeing practices of &lt;i&gt;Physical Review&lt;/i&gt; in the 1930s</title>
+		<author>
+			<persName><forename type="first">Roberto</forename><surname>Lalli</surname></persName>
+		</author>
+		<idno type="DOI">10.1098/rsnr.2015.0022</idno>
+		<ptr target="https://doi.org/10.1098/rsnr.2015.0022" />
+	</analytic>
+	<monogr>
+		<title level="j">Notes and Records: the Royal Society Journal of the History of Science</title>
+		<title level="j" type="abbrev">Notes Rec.</title>
+		<idno type="ISSN">0035-9149</idno>
+		<idno type="ISSNe">1743-0178</idno>
+		<imprint>
+			<biblScope unit="volume">70</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="151" to="174" />
+			<date type="published" when="2016-01-27">2016</date>
+			<publisher>The Royal Society</publisher>
+		</imprint>
+	</monogr>
+	<note>Dirty Work</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<author>
+			<persName><forename type="first">Latour</forename><surname>Bruno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steve</forename><surname>Woolgar</surname></persName>
+		</author>
+		<title level="m">Laboratory Life. The Construction of Scientific Facts</title>
+		<meeting><address><addrLine>Princeton, NJ</addrLine></address></meeting>
+		<imprint>
+			<publisher>Princeton University Press</publisher>
+			<date type="published" when="1982">1982</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The Role and Distribution of Written Informal Communication in Theoretical High Energy Physics</title>
+		<author>
+			<persName><forename type="first">Libbey</forename><surname>Miles</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerald</forename><surname>Zaltman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Sociology of Science. Theoretical and Empirical Investigations</title>
+		<meeting><address><addrLine>New York; Merton, Robert; Chicago &amp; London</addrLine></address></meeting>
+		<imprint>
+			<publisher>University of Chicago Press</publisher>
+			<date type="published" when="1967">1967. 1973</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Automating the Horae: Boundary-work in the age of computers</title>
+		<author>
+			<persName><forename type="first">Luis</forename><surname>Reyes-Galindo</surname></persName>
+		</author>
+		<idno type="DOI">10.1177/0306312716642317</idno>
+		<ptr target="https://doi.org/10.1177/0306312716642317" />
+	</analytic>
+	<monogr>
+		<title level="j">Social Studies of Science</title>
+		<title level="j" type="abbrev">Soc Stud Sci</title>
+		<idno type="ISSN">0306-3127</idno>
+		<idno type="ISSNe">1460-3659</idno>
+		<imprint>
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="586" to="606" />
+			<date type="published" when="2016-07-07">2016</date>
+			<publisher>SAGE Publications</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Alexandre Hocquet, and Alin Olteanu. 2024. Juggling Molecules. Toward An Archaeology of Computational Tools in Chemistry</title>
+		<author>
+			<persName><forename type="first">Phillip</forename><forename type="middle">H</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frédéric</forename><surname>Wieber</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cybernetics &amp; Human Knowing</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">3-4</biblScope>
+			<biblScope unit="page" from="129" to="144" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Reorganizing the Postwar Scientific Record. Vannevar Bush&apos;s Vision of &quot;Memex</title>
+		<author>
+			<persName><forename type="first">Roth</forename><surname>Phillip</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Making Media Futures. Machine Visions and Technological Imaginations</title>
+		<editor>
+			<persName><forename type="first">Phillip</forename><forename type="middle">H</forename><surname>Roth</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Ana</forename><surname>María Guzmán</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Alin</forename><surname>Olmos</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">Stefan</forename><surname>Olteanu</surname></persName>
+		</editor>
+		<editor>
+			<persName><surname>Böschen</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="154" to="175" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Steps Towards and Ecology of Infrastructure. Design and Access for Large Information Spaces</title>
+		<author>
+			<persName><forename type="first">Burling</forename><surname>House</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Star</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Susan</forename><surname>Leigh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Ruhleder</surname></persName>
+		</author>
+		<idno type="DOI">10.1287/isre.7.1.111</idno>
+		<ptr target="https://doi.org/10.1287/isre.7.1.111" />
+	</analytic>
+	<monogr>
+		<title level="m">The Royal Society Scientific Information Conference</title>
+		<meeting><address><addrLine>London</addrLine></address></meeting>
+		<imprint>
+			<publisher>The Royal Society</publisher>
+			<date type="published" when="1948-06-21">1948. 21 June-2 July 1948. 1996</date>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="111" to="134" />
+		</imprint>
+	</monogr>
+	<note>Reports and Papers</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Wissenschaft, Universität, Professionen</title>
+		<author>
+			<persName><forename type="first">Rudolf</forename><surname>Stichweh</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/transcript.9783839423004</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Wissenschaft, Universität, Profession. Soziologische Analysen</title>
+		<meeting><address><addrLine>Frankfurt</addrLine></address></meeting>
+		<imprint>
+			<publisher>transcript Verlag</publisher>
+			<date type="published" when="1992">1992</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Green Open Access in Astronomy and Mathematics: The Complementarity of Routines Among Authors and Readers</title>
+		<author>
+			<persName><forename type="first">Niels</forename><surname>Taubert</surname></persName>
+			<idno type="ORCID">0000-0002-2357-2648</idno>
+		</author>
+		<idno type="DOI">10.1007/s11024-020-09424-3</idno>
+		<ptr target="https://doi.org/10.1007/s11024-020-09424-3" />
+	</analytic>
+	<monogr>
+		<title level="j">Minerva</title>
+		<title level="j" type="abbrev">Minerva</title>
+		<idno type="ISSN">0026-4695</idno>
+		<idno type="ISSNe">1573-1871</idno>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="173" to="194" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Predecessors of preprint servers</title>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">E</forename><surname>Till</surname></persName>
+		</author>
+		<idno type="DOI">10.1087/09531510125100214</idno>
+		<ptr target="https://doi.org/10.1087/09531510125100214" />
+	</analytic>
+	<monogr>
+		<title level="j">Learned Publishing</title>
+		<title level="j" type="abbrev">Learned Publishing</title>
+		<idno type="ISSN">0953-1513</idno>
+		<idno type="ISSNe">1741-4857</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="7" to="13" />
+			<date type="published" when="2001-01">2001</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+		<author>
+			<persName><forename type="first">Sharon</forename><surname>Traweek</surname></persName>
+		</author>
+		<title level="m">Beamtimes and Lifetimes. The World of High Energy Physics</title>
+		<meeting><address><addrLine>Cambridge, MA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Harvard University Press</publisher>
+			<date type="published" when="1988">1988</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Rise of the preprint: how rapid data sharing during COVID-19 has changed science forever</title>
+		<author>
+			<persName><forename type="first">Clare</forename><surname>Watson</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41591-021-01654-6</idno>
+		<idno>41591- 021-01654-6</idno>
+		<ptr target="https://doi.org/10.1038/s" />
+	</analytic>
+	<monogr>
+		<title level="j">Nature Medicine</title>
+		<title level="j" type="abbrev">Nat Med</title>
+		<idno type="ISSN">1078-8956</idno>
+		<idno type="ISSNe">1546-170X</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="2" to="5" />
+			<date type="published" when="2022-01">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Enclaves of anarchy: Preprint sharing, 1940‐1990</title>
+		<author>
+			<persName><forename type="first">Stacy</forename><forename type="middle">S</forename><surname>Wykle</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/meet.2014.14505101036</idno>
+		<ptr target="https://doi.org/10.1002/meet.2014.14505101036" />
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the American Society for Information Science and Technology</title>
+		<title level="j" type="abbrev">Proc of Assoc for Info</title>
+		<idno type="ISSN">0044-7870</idno>
+		<idno type="ISSNe">1550-8390</idno>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="10" />
+			<date type="published" when="2014-01">2014</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint Sharing</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Patterns of evaluation in science: Institutionalisation, structure and functions of the referee system</title>
+		<author>
+			<persName><forename type="first">Harriet</forename><surname>Zuckerman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">K</forename><surname>Merton</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/bf01553188</idno>
+		<ptr target="https://doi.org/10.1007/BF01553188" />
+	</analytic>
+	<monogr>
+		<title level="j">Minerva</title>
+		<title level="j" type="abbrev">Minerva</title>
+		<idno type="ISSN">0026-4695</idno>
+		<idno type="ISSNe">1573-1871</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="66" to="100" />
+			<date type="published" when="1971-01">1971</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

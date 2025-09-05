@@ -1,0 +1,1878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">ON PATH TO MULTIMODAL HISTORICAL REASONING: HISTBENCH AND HISTAGENT Organizing Team</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-06-19">19 Jun 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Jiahao</forename><surname>Qiu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">AI Lab</orgName>
+								<orgName type="institution">Princeton University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Fulian</forename><surname>Xiao</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of History</orgName>
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yimin</forename><surname>Wang</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">University of Michigan</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yuchen</forename><surname>Mao</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="institution">Shanghai Jiao Tong University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yijia</forename><surname>Chen</surname></persName>
+							<affiliation key="aff4">
+								<orgName type="department">School of Philosophy</orgName>
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xinzhe</forename><surname>Juan</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="institution">University of Michigan</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Shu</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff9">
+								<orgName type="institution">Theta Health Inc</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Siran</forename><surname>Wang</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of History</orgName>
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xuan</forename><surname>Qi</surname></persName>
+							<affiliation key="aff5">
+								<orgName type="laboratory">IIIS</orgName>
+								<orgName type="institution">Tsinghua University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tongcheng</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="institution">Shanghai Jiao Tong University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zixin</forename><surname>Yao</surname></persName>
+							<affiliation key="aff6">
+								<orgName type="department">Department of Philosophy</orgName>
+								<orgName type="institution">Columbia University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jiacheng</forename><surname>Guo</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">AI Lab</orgName>
+								<orgName type="institution">Princeton University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yifu</forename><surname>Lu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">AI Lab</orgName>
+								<orgName type="institution">Princeton University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Charles</forename><surname>Argon</surname></persName>
+							<affiliation key="aff7">
+								<orgName type="department">Department of History</orgName>
+								<orgName type="institution">Princeton University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jundi</forename><surname>Cui</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of History</orgName>
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Daixin</forename><surname>Chen</surname></persName>
+							<affiliation key="aff4">
+								<orgName type="department">School of Philosophy</orgName>
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Junran</forename><surname>Zhou</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of History</orgName>
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Shuyao</forename><surname>Zhou</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">AI Lab</orgName>
+								<orgName type="institution">Princeton University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Zhanpeng</forename><surname>Zhou</surname></persName>
+							<affiliation key="aff3">
+								<orgName type="institution">Shanghai Jiao Tong University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ling</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">AI Lab</orgName>
+								<orgName type="institution">Princeton University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Shilong</forename><surname>Liu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">AI Lab</orgName>
+								<orgName type="institution">Princeton University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hongru</forename><surname>Wang</surname></persName>
+							<affiliation key="aff8">
+								<orgName type="institution">Chinese University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Kaixuan</forename><surname>Huang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="laboratory">AI Lab</orgName>
+								<orgName type="institution">Princeton University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xun</forename><surname>Jiang</surname></persName>
+							<affiliation key="aff9">
+								<orgName type="institution">Theta Health Inc</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xiaoyu</forename><surname>Gao</surname></persName>
+							<email>gaoxi@fudan.edu.cn</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of History</orgName>
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Mengdi</forename><surname>Wang</surname></persName>
+							<email>mengdiw@princeton.edu</email>
+							<affiliation key="aff0">
+								<orgName type="laboratory">AI Lab</orgName>
+								<orgName type="institution">Princeton University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hong</forename><surname>Kong</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Chrissy</forename><forename type="middle">Chen</forename><surname>Institute</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yuming</forename><surname>Cao</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yue</forename><surname>Chen</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yunfei</forename><surname>Chen</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zhengyi</forename><surname>Chen</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ruowei</forename><surname>Dai</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Mengqiu</forename><surname>Deng</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Jiye</forename><surname>Fu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yunting</forename><surname>Gu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zijie</forename><surname>Guan</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zirui</forename><surname>Huang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Xiaoyan</forename><surname>Ji</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yumeng</forename><surname>Jiang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Delong</forename><surname>Kong</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Haolong</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Jiaqi</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ruipeng</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Tianze</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zhuoran</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Haixia</forename><surname>Lian</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Mengyue</forename><surname>Lin</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Xudong</forename><surname>Liu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Jiayi</forename><surname>Lu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Jinghan</forename><surname>Lu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Wanyu</forename><surname>Luo</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ziyue</forename><surname>Luo</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zihao</forename><surname>Pu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zhi</forename><surname>Qiao</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ruihuan</forename><surname>Ren</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Liang</forename><surname>Wan</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ruixiang</forename><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Tianhui</forename><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yang</forename><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zeyu</forename><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zihua</forename><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yujia</forename><surname>Wu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zhaoyi</forename><surname>Wu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Hao</forename><surname>Xin</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Weiao</forename><surname>Xing</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ruojun</forename><surname>Xiong</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Weijie</forename><surname>Xu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yao</forename><surname>Shu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yao</forename><surname>Xiao</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Xiaorui</forename><surname>Yang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yuchen</forename><surname>Yang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Nan</forename><surname>Yi</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Jiadong</forename><surname>Yu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yangyuxuan</forename><surname>Yu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Huiting</forename><surname>Zeng</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Danni</forename><surname>Zhang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yunjie</forename><surname>Zhang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zhaoyu</forename><surname>Zhang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zhiheng</forename><surname>Zhang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Xiaofeng</forename><surname>Zheng</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Peirong</forename><surname>Zhou</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Linyan</forename><surname>Zhong</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Xiaoyin</forename><surname>Zong</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ying</forename><surname>Zhao</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Zhenxin</forename><surname>Chen</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Lin</forename><surname>Ding</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Bingbing</forename><surname>Gong</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yichao</forename><surname>Li</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yang</forename><surname>Liao</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Guang</forename><surname>Ma</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Tianyuan</forename><surname>Ma</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Xinrui</forename><surname>Sun</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Tianyi</forename><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Han</forename><surname>Xia</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Ruobing</forename><surname>Xian</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Gen</forename><surname>Ye</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Tengfei</forename><surname>Yu</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Wentao</forename><surname>Zhang</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Yuxi</forename><surname>Wang</surname></persName>
+						</author>
+						<title level="a" type="main">ON PATH TO MULTIMODAL HISTORICAL REASONING: HISTBENCH AND HISTAGENT Organizing Team</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-06-19">19 Jun 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">CC408E3188559963C1E9042EF6231A6A</idno>
+					<idno type="arXiv">arXiv:2505.20246v3[cs.AI]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:50+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Recent advances in large language models (LLMs) have led to remarkable progress across various domains, yet their capabilities in the humanities, particularly history, remain underexplored. Historical reasoning poses unique challenges for AI, involving multimodal source interpretation, temporal inference, and cross-linguistic analysis. While general-purpose agents perform well on many existing benchmarks, they lack the domain-specific expertise required to engage with historical materials and historical questions. To address this gap, we introduce HistBench, a new benchmark of 414 high-quality questions designed to evaluate AI's capacity for historical reasoning and authored by more than 40 expert contributors. The tasks span a wide range of historical problems-from factual retrieval based on primary sources to interpretive analysis of manuscripts and images, to interdisciplinary challenges involving archaeology, linguistics, or cultural history. Furthermore, the benchmark dataset spans 29 ancient and modern languages and covers a wide range of historical periods and world regions. Finding the poor performance of LLMs and other agents on HistBench, we further present HistAgent, a history-specific agent equipped with carefully designed tools for OCR, translation, archival search, and image understanding in History. On HistBench, HistAgent based on GPT-4o achieves an accuracy of 27.54% pass@1 and 36.47% pass@2, significantly outperforming LLMs with online search and generalist agents, including GPT-4o (18.60% ), DeepSeek-R1(14.49% ), Grok 3(17.63%) and Open Deep Research-smolagents(20.29% pass@1 and 25.12% pass@2). These results highlight the limitations of existing LLMs and generalist agents and demonstrate the advantages of HistAgent for historical reasoning. Notably, HistAgent also achieves 60.00% pass@1 accuracy on GAIA, showing that domain-specific customization doesn't hinder HistAgent's competitive performance on real-world general tasks.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="24" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="25" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="26" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Recent advances in large language models (LLMs) have led to AI agents capable of impressive performance across a range of complex tasks. Although significant progress has been made in general-purpose and AI4Science agents, such as OpenAI's Deep Research <ref type="bibr" target="#b0">[1]</ref> and agents for chemistry and biology <ref type="bibr" target="#b1">[2,</ref><ref type="bibr" target="#b2">3]</ref>, the humanities remain critically underexplored. This imbalance risks narrowing both the scope of artificial intelligence and our understanding of intelligence itself. If AI is to become truly general, it must also engage with the complex and underexplored challenges posed by the humanities.</p><p>Among the humanities, history holds a uniquely central role. It addresses fundamental questions of human identity, continuity, and transformation, while exemplifying the interpretive complexity of humanistic scholarship. Historical reasoning requires navigating incomplete, heterogeneous sources-ranging from manuscripts and inscriptions to maps and visual records-and demands cross-linguistic, cross-modal, and cross-cultural interpretation. Unlike factual recall, it involves temporal reasoning, contextualization, and the reconciliation of conflicting narratives. As both epistemically rich and methodologically demanding, history encapsulates many of the core challenges that characterize reasoning in the humanities. In addition to its disciplinary significance, history is also the most computationally tractable field among the humanities. It generates and consumes large-scale textual and visual data, far exceeding most other humanities domains in volume, structure, and annotation potential. Moreover, historical research is inherently global and multilingual, shaped by regionally specific contexts. These features make history an ideal testbed for evaluating AI systems under real-world challenges such as cross-lingual retrieval, multi-modal reasoning, and cultural alignment. For these reasons, history is not only methodologically appropriate but also strategically positioned as the first point of engagement for AI-humanities research.</p><p>Despite the proliferation of AI benchmarks, there remains no rigorous evaluation suite specifically designed to assess historical reasoning. Most existing benchmarks either focus on general capabilities or are tailored to domains like science and mathematics. For example, the GAIA benchmark evaluates real-world tasks across broad domains, but does not target any single discipline in depth <ref type="bibr" target="#b3">[4]</ref>. Humanity's Last Exam (HLE), a large-scale human-written test covering over 2,500 questions, includes only 56 history-related problems <ref type="bibr" target="#b4">[5]</ref>-far too few to evaluate the interpretive, evidentiary, and temporal reasoning skills central to historical reasoning. Meanwhile, discipline-specific benchmarks such as PhyBench <ref type="bibr" target="#b5">[6]</ref> demonstrate the importance of domain-adapted evaluation in fields like physics, but no equivalent exists for history. As a result, there is currently no benchmark that captures the unique methodological demands of historical research and historical reasoning, leaving a critical gap in evaluating LLM and agent performance in this foundational area of the humanities.</p><p>To address this gap, we introduce HistBench, the first comprehensive benchmark dedicated to evaluating historical reasoning in AI systems. The dataset contains 414 high-quality and carefully-reviewed questions, contributed by history professors, PhD students, and research assistants. Each question simulates a realistic research task and is annotated with difficulty level, question type, and reasoning dimension. The tasks span a wide range of historical problems-from factual retrieval based on primary sources to interpretive analysis of manuscripts and images, to interdisciplinary challenges involving archaeology, linguistics, or cultural history. HistBench questions are categorized into three difficulty levels-Level 1 (Basic), Level 2 (Intermediate), and Level 3 (Challenging)-based on six structured criteria: rarity of source knowledge, linguistic complexity, format heterogeneity, perceptual accessibility, interdisciplinary scope, and reasoning depth. The benchmark covers 29 languages and all major world regions, and all questions are carefully designed to resist resolution through retrieval-based answering or shallow prompting. By combining topical breadth with rigorous, source-grounded construction, HistBench enables domain-specific evaluation of LLMs under expert-defined historical reasoning constraints.</p><p>With the introduction of HistBench, we can now systematically evaluate how well LLMs and generalist agents perform on historical tasks. Our findings reveal a consistent gap: current large language models and agents lack the capabilities required for historical reasoning. Unlike other tasks, historical research involves interpreting fragmented, multimodal sources across languages, formats, and time periods. However, today's models and agents fall short in meeting the demand for historical reasoning. Their OCR tools fail on handwritten manuscripts, damaged archives, and early print formats; their translation capabilities are limited to high-resource modern languages, with poor support for classical and minority languages; and their visual understanding of historical materials-such as annotated maps, marginalia, or iconography-is minimal. These limitations are not only technical but methodological: historical analysis demands multi-step reasoning, cross-source synthesis, and epistemic grounding that current general-purpose systems do not support. This performance gap underscores the need for dedicated agents equipped with domain-specific tools and workflows aligned with historical practice.</p><p>To overcome the limitations of large language models and generalist agents, we introduce HistAgent, a domainspecialized AI agent tailored for historical reasoning. Built on top of an advanced LLM, HistAgent integrates a set of modular tools designed to address the epistemic and technical challenges unique to historical inquiry. These include OCR modules for handwritten manuscripts (Transkribus, Asian-script OCR), multilingual translators with provenance preservation, reverse image search for historical visuals, and peer-reviewed literature retrieval mimicking history researchers. HistAgent spans multiple modalities-text, image, audio, manuscript, video-and applies source-aware workflows for extraction, parsing, and reasoning.</p><p>On HistBench, HistAgent based on GPT-4o achieves an accuracy of 27.54% pass@1 and 36.47% pass@2, significantly outperforming LLMs with online search and generalist agents, including GPT-4o (18.60% ), DeepSeek-R1 (14.49% ), Grok 3(17.63%) and open Deep Research by smolagents(20.29% pass@1 and 25.12% pass@2). These results highlight the limitations of existing LLMs and generalist agents and demonstrate the advantages of HistAgent for historical reasoning. Notably, HistAgent also achieves 60.00% pass@1 accuracy on the GAIA benchmark, showing that domain-specific customization doesn't hinder HistAgent's competitive performance on real-world general tasks.</p><p>In summary, this paper makes the following contributions:</p><p>• HistBench: We present HistBench, the first large-scale and comprehensive benchmark involving 414 highquality and carefully-reviewed questions for evaluating historical reasoning in AI systems. • HistAgent: We present HistAgent, an agent specialized for the history domain. HistAgent integrates multimodal perception, web browsing, and a suite of modular tools-including OCR for manuscripts, image provenance retrieval, multilingual translation, literature parsing, and document analysis-into a cohesive framework for historical research. It is designed to mirror the interpretive workflow of human historians, enabling document-level reasoning, multimodal synthesis, and context-aware analysis across languages and source formats. By combining general LLM capabilities with domain-specific customization, HistAgent overcomes key limitations of existing LLMs and generalist agents in handling historical tasks while maintaining competitive performance on general tasks. • Comprehensive Empirical Validation: We provide an extensive evaluation of HistAgent on both domainspecific and general benchmarks. HistAgent significantly outperforms base LLMs with online search on HistBench and the history subset of Humanity's Last Exam, demonstrating superior historical reasoning. Furthermore, HistAgent achieves high performance on real-world general-purpose benchmarks like GAIA, highlighting that a history-focused agent can maintain broad capabilities and excel in complex, multi-step reasoning tasks beyond its core domain.</p><p>By introducing HistBench and HistAgent, this work lays a concrete foundation for the path toward multi-modal historical reasoning in AI. Our benchmark captures the complexity of historical inquiry across languages, media, and reasoning styles, while our agent demonstrates how agents can begin to emulate the interpretive workflows of human historians. We hope this effort not only advances AI for history, but also inspires broader exploration of LLMs and domain-specific agents across other underrepresented areas of human knowledge and marks a broader step toward AI for the Humanities.</p><p>2 Related Works</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Generalist Agent</head><p>Generalist agent is for solving general real-world tasks such as GAIA <ref type="bibr" target="#b3">[4]</ref>. OMNE <ref type="bibr" target="#b6">[7]</ref> introduces a column-structured long-term memory that agents update during inference to refine policies without retraining. AutoAgent <ref type="bibr" target="#b7">[8]</ref> compiles natural-language workflow descriptions into executable multi-agent pipelines. OWL <ref type="bibr" target="#b8">[9]</ref> adds structured orchestration using a CAMEL-based Orchestrator-Worker pattern, where the orchestrator delegates subtasks to specialists via explicit transfer actions. For information-dense tasks, OpenAI Deep Research <ref type="bibr" target="#b0">[1]</ref> combines web browsing, document parsing, and grounded synthesis to produce cited reports, while open Deep Research by Smolagents <ref type="bibr" target="#b9">[10]</ref> reproduces the same workflow in the open-source domain using a Python-driven CodeAgent that reduces communication overhead. They jointly define today's design space for scalable generalist multi-agent solutions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Domain-specific Agent</head><p>Domain-specific agents address the limitations of general-purpose LLMs in tasks requiring deep expertise. A primary approach to imbue such specificity is parametric adaptation through fine-tuning on domain-centric corpora, enabling models to learn specialized terminology, data patterns, and reasoning pathways. Notable examples include CRISPR-GPT <ref type="bibr" target="#b1">[2]</ref>, an agent designed to automate and enhance the design of CRISPR-based gene-editing experiments by leveraging domain knowledge and external tools, BrainGPT <ref type="bibr" target="#b10">[11]</ref>, a model clinically visual instruction-tuned for 3D brain CT radiology report generation , and DeepSeekMath <ref type="bibr" target="#b11">[12]</ref>, which demonstrates advanced mathematical reasoning after extensive training on mathematical texts. These methodologies are crucial for creating agents that are not only knowledgeable but also more reliable and effective within their specific operational contexts.</p><p>Beyond foundational knowledge embedding, the efficacy of domain-specific agents is significantly amplified by their ability to interact with and act upon their environment through tool integration. ChemCrow <ref type="bibr" target="#b2">[3]</ref>, for instance, leverages a suite of 18 expert-designed chemistry tools to perform complex tasks in organic synthesis, drug discovery, and materials design, showcasing enhanced performance in chemistry-related problem-solving. Other advanced approaches include Case-Based Reasoning (CBR), enabling agents such as DS-Agent <ref type="bibr" target="#b12">[13]</ref> to learn from past expert solutions in fields like automated data science. WarAgent <ref type="bibr" target="#b13">[14]</ref> exemplifies domain-specific simulation of macro-scale historical conflicts using LLM-based multi-agent systems, allowing country agents to reenact international relations dynamics and explore war triggers and outcomes. Similarly, BattleAgent <ref type="bibr" target="#b14">[15]</ref> extends this line of work by incorporating multimodal inputs and fine-grained modeling of individual soldiers in historical combat, demonstrating how agent-based frameworks can reconstruct both strategic decisions and personal experiences in complex environments. These approaches collectively aim to produce agents that are not only competent in their domain but also robust and trustworthy in real-world settings.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Domain-specific Benchmarks</head><p>The evaluation of large language models (LLMs) is moving from broad assessments toward domain-specific benchmarks (DSBs). General-purpose tests often miss the detailed strengths and weaknesses of LLMs when applied in real-world settings. Common issues with standard benchmarks include limited coverage of field knowledge, poor alignment with practical tasks, vulnerability to data contamination that encourages memorization, and simple question formats that do not test multi-step or advanced reasoning <ref type="bibr" target="#b15">[16,</ref><ref type="bibr" target="#b16">17,</ref><ref type="bibr" target="#b17">18,</ref><ref type="bibr" target="#b18">19]</ref>. Questions about data quality and contamination have led to efforts such as HLE, which invests in carefully curated, contamination-resistant items <ref type="bibr" target="#b4">[5]</ref>. As a result, the number of DSBs has grown rapidly. These new tests help guide model improvements, set realistic expectations for deployment, and pinpoint specific model capabilities in different areas <ref type="bibr" target="#b19">[20,</ref><ref type="bibr" target="#b20">21]</ref>.</p><p>This trend towards specialization is evident across numerous domains. In software engineering, benchmarks like SWE-Bench <ref type="bibr" target="#b21">[22]</ref> evaluate LLMs on resolving real-world GitHub issues, moving beyond simpler code generation tasks assessed by benchmarks like HumanEval or MBPP <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24,</ref><ref type="bibr" target="#b21">22,</ref><ref type="bibr" target="#b4">5]</ref>. The medical domain utilizes benchmarks such as PubMedQA <ref type="bibr" target="#b24">[25]</ref> and the MultiMedQA suite <ref type="bibr" target="#b25">[26]</ref> to assess medical knowledge and reasoning, although ongoing research seeks to improve alignment with clinical practice and address benchmark saturation <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b16">17]</ref>. Legal AI evaluation employs benchmarks like LegalBench <ref type="bibr" target="#b19">[20]</ref> for diverse legal reasoning tasks and specialized versions like LegalBench-RAG <ref type="bibr" target="#b20">[21]</ref> focusing on retrieval-augmented generation crucial for fact-intensive legal work. For scientific and mathematical reasoning, SciBench <ref type="bibr" target="#b15">[16]</ref> presents collegiate-level problems , RV-Bench <ref type="bibr" target="#b17">[18]</ref> targets genuine mathematical understanding , and PHYBench <ref type="bibr" target="#b5">[6]</ref> specifically assesses complex physics reasoning using problems from global exams and competitions. Finance has seen the development of benchmarks like FinanceQA <ref type="bibr" target="#b26">[27]</ref>, tailored to evaluate performance on tasks mirroring real-world financial analysis. Collectively, these domain-specific evaluations are crucial for probing deeper LLM capabilities and fostering the development of models suitable for specialized professional deployment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">History Benchmarks</head><p>In the domain of history, based on a subset of the Seshat Global History Databank, HiST-LLM evaluates the possession of expert historical knowledge of Seven Models. <ref type="bibr" target="#b27">[28]</ref> However,there is a discrepancy between historical knowledge and historical research.HLE can be regarded as a combination of many domain-specific benchmarks. In terms of the historical questions in HLE, although the capabilities of LLMs in historical research is indeed evaluated (as opposed to the benchmarks mainly focused on historical knowledge), the total number of questions is only 56. <ref type="bibr" target="#b4">[5]</ref> For existing benchmarks, there are limitations in both the scope of the questions and the disciplinary characteristics.</p><p>We need to detail several limitations in these benchmarks. The creators of Gaia <ref type="bibr" target="#b3">[4]</ref> indicate that Gaia has three limitations-Missing evaluations: Shortage of evaluation of trace leading to the answer; On the cost of designing unambiguous questions: Shortage of ambiguous questions that may appear in the daily usage scenario; Lack of linguistic and cultural diversity: Shortage of questions in languages other than standard English.The creators of HiST-LLM also indicate the limitations of the database they use (the subset of the Seshat Gloval History Databank). First, their data are mostly from sources in English;Second, the expertise and background of the research assistants may influence the definition of variables. Third, the benchmark is only the reflection of the current recognition. In addition to these limitations, it is necessary to repeat that HiST-LLM is a benchmark designed for the evaluation of the possession of historical knowledge instead of the capabilities of historical research such as literature retrieval, historical source retrieval, historical analysis, historical source processing, and interdisciplinary.</p><p>Compared to the comprehensive benchmark like HLE, an independent domain-specific benchmark can be designed more suitable for a specific domain without the requirement of consistency and inclusiveness of different domains. To evaluate the capabilities of LLMs in the domain of historical research more adequately, creating a larger and more systemic dataset is necessary. If we take historical questions in HLE as an independent historical benchmark, there will be more space for improvement. First, the temporal and spatial scope of topics should be expanded with more questions. Second, the types and depth of functions to be evaluated should be richer. For example, we cannot find historical materials in the form of audios or video in historical questions of HLE. Third, in the context of the history discipline, the questions can be divided further in different groups according to their difficulty levels, thematic categories and evaluation criteria, which helps to constructing a more diverse but clear database.</p><p>Considering these limitations, the lack of independent domain-specific benchmarks suitable for historical research provides us with vast space for exploration.</p><p>3 HistBench Benchmark</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Overview</head><p>HistBench is the first benchmark specifically designed to evaluate the capabilities of LLMs in historical reasoning. In the benchmark,two question types (exact match and multiple choice), six academic dimensions (e.g., source processing, interdisciplinary synthesis), and a three-tiered difficulty stratification based on task complexity are adopted. The benchmark contains 414 questions authored by more than 40 contributors, including Ph.D. students and domain experts. All questions are grounded in real historical sources and methods and follow a standardized protocol that ensures academic rigor and traceability. Each question is annotated with metadata including answer explanation,data required,source material, targeted capability, and thematic category and is subjected to a three-stage review: preliminary screening (format and semantic check), LLM-based pre-evaluation and professional review (history of rigor and validity of reasoning) to ensure the quality of these questions in terms of both form and content,especially their academic value and challenges to current LLMs.</p><p>In terms of coverage, HistBench spans 29 ancient and modern languages, over 20 historical regions, and at least 36 subfields. The questions are grounded in multimodal data, including printed texts, manuscripts, images, inscriptions, audio, and video. The benchmark also spans five major historical epoch, ranging from ancient history to the contemporary history, supporting diachronic analysis in diverse historiographic contexts. In all, these design criteria and dataset characteristics enable HistBench to serve as a robust diagnostic tool for evaluating LLMs in the humanities, with particular emphasis on capabilities of historical research like language mastery, historical materials processing and the understanding of historical analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ID Dimension</head><p>Description 1</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Bibliographic Retrieval</head><p>The capability to locate information embedded in scholarly texts, monographs, or journal articles using digital or library-based search strategies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Source Identification</head><p>The capability to recognize or locate specific historical sources, including manuscripts, digitized archives, or visual primary materials.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Source Processing</head><p>The capability to extract and interpret information from non-textual formats such as handwritten documents, historical images, audio, or video. 4</p><p>Historical Analysis</p><p>The capability to engage in historically grounded reasoning, including causal inference, ideological analysis, and interpretation of events or institutions. 5</p><p>Interdisciplinary Integration The capability to draw upon methods and frameworks from adjacent disciplines (e.g., archaeology, linguistics, religious studies) to support historical understanding. 6</p><p>Cultural Contextualization</p><p>The capability to interpret cultural cues, metaphors, sentiment, and identity markers within historically situated discourse.</p><p>Table <ref type="table">1</ref>: Evaluation dimensions for historical reasoning tasks in HistBench.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Question Design and Structure</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.1">Question Types</head><p>HistBench, including two primary question types, is designed to evaluate both systematic historical research skills and in-depth historical reasoning:</p><p>Multiple-choice questions: These questions adopt a several-option format, where some of the options are designated as correct based on current scholarly consensus. The remaining distractors are carefully designed to be plausible yet incorrect, often reflecting common misconceptions or subtle historical variations. This type is suited to evaluate interpretive precision, historical knowledge, and the ability to differentiate between nuanced alternatives.</p><p>Exact match questions: These questions adopt a single precise answer, such as a date, name, location, or keyword. The LLMs needs to provide this precise answer. This type is suited to evaluate factual investigation, temporal reasoning, or targeted source analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.2">Question Format and Submission Protocol</head><p>All questions in HistBench are submitted using a standardized format developed by the project team to ensure scholarly rigor and traceability. Contributors are required to provide not only the question and answer, but also support metadata such as difficulty level, source materials, answer explanation, and bibliographic references. A detailed breakdown of the submission fields and formatting requirements is provided in Appendix A.1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.3">Evaluation Dimensions</head><p>As shown in Table1, Each question in the dataset is designed to evaluate specific dimensions of AI capabilities in historical research. These dimensions are modeled on the core challenges encountered by human researchers in historical research and embody key aspects of the research processes that characterize professional historical scholarship.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Difficulty Stratification</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.1">Difficulty Stratification Criteria</head><p>To support layered evaluation and targeted analysis, all questions in HistBench are categorized into three difficulty levels-Level 1 (Basic), Level 2 (Intermediate), and Level 3 (Challenging)-based on a structured rubric comprising six academic dimensions. Difficulty levels are determined based on six dimensions: (1) rarity of source knowledge, (2) linguistic complexity, (3) format heterogeneity, (4) perceptual accessibility, (5) interdisciplinary scope, and (6) reasoning complexity These dimensions inform both the formulation of questions and the assignment of difficulty levels.</p><p>This stratification provides a principled framework for evaluating how model performance differs with task complexity. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.2">Questions assignment in difficulty levels</head><p>By dividing contributors into different groups according to their different knowledge reserves, material processing capabilities, and reasoning capabilities, we assign contributors to formulate questions in different difficulty levels based on their groups. Our assignment plan is detailed as follows:</p><p>Level 1 (Basic): Authored by Research Assistants A total of 166 Level 1 questions are mainly formulated by research assistants with academic backgrounds in history. They are focused on extracting verifiable historical facts from historical materials or literature, interpreting well-documented primary sources to formulate questions. Tasks at this level emphasize factual investigation and basic material interpretation.</p><p>Level 2 (Intermediate): Authored by Graduate Researchers and Domain Experts The 172 Level 2 questions are mainly formulated by graduate students (MA and PhD level) and early-career researchers in history. Contributors are selected based on their specialization in particular subfields and are invited to design questions grounded in their areas of expertise. These tasks typically require source interpretation, basic causal or temporal research, and engagement with narrower but academically meaningful materials.</p><p>Level 3 (Challenging): Authored by Professors and Senior Scholars The 76 Level 3 questions are mainly contributed by senior scholars and university faculty with demonstrated experience in interpreting obscure sources, handling multi-lingual materials, and conducting interdisciplinary research. These tasks are designed to push the limits of LLM capabilities, drawing on rare texts, underdigitized archives, and cross-modal information integration.</p><p>In practice, we adjust difficulty levels of these questions according to both the inherent complexity of the tasks and a structured rubric. By involving contributors with varying levels of expertise-including research assistants, graduate students, and domain scholars-HistBench ensures that each question reflects a human-authored path of historical research appropriate to its level of difficulty. This multi-tiered design allows the benchmark to evaluate the capabilities of LLMs across a spectrum of historical tasks aligned with real-world scholarly practices. A selection of representative questions from each difficulty level is provided in Appendix A.2, offering concrete illustrations of the benchmark's structure and intended reasoning depth.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.3">Question Review Protocol</head><p>All questions in HistBench undergo a three-stage review pipeline combining human oversight and automated evaluation, designed to ensure academic rigor, task clarity, and model discriminability. A question is only admitted into the final release if it passed all three stages described below.</p><p>Stage 1: Preliminary Screening (Format and Semantic Check)</p><p>The first round of review is conducted by the project team and trained research volunteers. This phase focuses on verifying structural completeness, semantic clarity, and question originality. Questions that are ambiguous, duplicated, or noncompliant with submission standards are flagged for revision, with detailed feedback sent back to the authors.</p><p>Stage 2: LLM-Based Pre-Evaluation Preliminary Screening LLM-Based Pre-Evaluation Expert Review Format and Semantic Check Ambiguous Duplicate Non-Compliant Stage 1 Stage 2 Stage 3 LLM Solvability Filtering Historical Rigor and Reasoning Validity Easily-Solved Low-Difficulty Historically Inaccurate Weak Reasoning Non-Rigorous Before professional review, all questions are tested using multiple strong LLMs, including GPT-4o, GPT-o4mini, and DeepSeek-R1. Questions that are solved by more than two existing models without access to supporting materials are excluded from the dataset. This stage ensures that retained questions pose challenges beyond the capabilities of frontier general models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Raw Data HistBench</head><p>Stage 3: Professional Review (Historical Rigor and Reasoning Validity)</p><p>Reviewers with academic backgrounds in history conduct the final round of review. The focus at this stage is on evaluating historical relevance of these questions, academic rigor, and reasoning quality. Reviewers assess whether the questions reflect valid historical methodologies, appropriate use of evidence, and internal logical coherence. Only questions deem to have academic value were accepted into the final benchmark.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Dataset Characteristics and Coverage</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.1">Quantitative Overview</head><p>HistBench contains a total of 414 questions, spanning diverse historical domains, periods, and geographic regions.</p><p>The dataset includes two question formats: 306 exact match questions, which require precise, fact-based responses such as names, dates, or locations; and 108 multiple-choice questions, each consisting of one correct answer and three plausible distractors grounded in historical reasoning. The predominance of exact match tasks reflects an emphasis on fine-grained factual precision, while multiple-choice questions are designed to assess interpretive discrimination and the ability to reason across structured alternatives. This composition supports multi-faceted evaluation of both retrieval and inference capabilities in historical question answering.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.2">Language Diversity</head><p>As shown in Figure <ref type="figure" target="#fig_2">4</ref>, HistBench questions are grounded in materials written or originally produced in 29 modern and ancient languages, capturing the multilingual nature of historical scholarship and the linguistic complexity of primary source analysis. The dataset includes widely used academic languages such as English, Chinese, Russian, Japanese, French, and German, as well as historically significant but less commonly used languages including Classical Chinese, Latin, Ancient Greek, and Tibetan.</p><p>This linguistic diversity presents substantive challenges for AI systems. It enables evaluation of multilingual retrieval, cross-lingual historical reasoning, and OCR robustness-addressing a core limitation of existing benchmarks that predominantly rely on English-language content. A complete list of languages and their frequencies is provided in Appendix A.</p><p>3. 55.1 12.3 5.3 11.4 5.3 Languages English Chinese Russian Japanese French Latin German Classical Chinese Dutch Others  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.3">Data Source Modalities</head><p>The questions in HistBench are grounded in a diverse set of material sources, including printed texts, manuscript scans, visual materials, audio and video recordings, inscriptions, and multimodal combinations. Table 2: Distribution of source modalities in HistBench.</p><p>These sources are drawn from digitized archives, unpublished manuscripts, early print editions, and degraded or fragmentary artifacts. Many questions involve non-standard formats such as cursive handwriting, damaged inscriptions, or multilingual marginalia. Several questions combine multiple modalities, including text-image pairings or audiovisual content.</p><p>Crucially, many of these materials remain inaccessible to existing OCR tools and frontier LLMs, either due to visual complexity, symbolic ambiguity, or contextual dependence. By incorporating such cases, HistBench evaluates not only recognition and parsing but also a model's ability to reconstruct historical meaning from incomplete or opaque data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.4">Domain and Geographic Coverage</head><p>HistBench includes coverage of at least 36 historical subdomains, over 20 national or civilizational areas, and multiple cross-cultural comparative themes, which ensures that HistBench covers a large temporal and spatial scope of topics. At the domain level, the dataset encompasses:</p><p>• Political, social, and cultural history, including diplomatic history, gender studies, intellectual history, and identity politics;</p><p>• Classics and ancient civilizations, covering Greco-Roman studies, philology, epigraphy, and early textual traditions;</p><p>• Art and visual culture, including art history, iconography, visual semiotics, and historical image interpretation;</p><p>• Material culture and archaeology, including material artifact studies, heritage reconstruction, and excavationbased historiography;</p><p>• Environmental and climate history, such as the historical study of climate shifts, ecological regimes, and resource management;</p><p>• History of science and medicine, including early scientific institutions, cross-cultural scientific exchange, botany, astronomy, and traditional medicine;</p><p>• Economic and institutional history, such as labor systems, taxation, urban planning, bureaucratic organization, and legal codification;</p><p>• Interdisciplinary and comparative studies, including global history, translation history, mythology, and civilizational entanglements.</p><p>Geographically, HistBench draws from nearly all inhabited continents, including East Asia, Europe, North America, Latin America, the Middle East, and Africa, as shown in Fig. <ref type="figure" target="#fig_3">5</ref>. It includes questions grounded in region-specific expertise (e.g., Dunhuang studies, Slavic paleography) as well as underrepresented areas such as papyrology and Siberian ethnography, ensuring broad civilizational and epistemic representation.</p><p>In addition to thematic and regional diversity, HistBench evaluates the capabilities of historical research across the full temporal arc of human history. To capture both general historical literacy and specialized period knowledge, we adopt a five-part periodization commonly used in Western and global historiography: Prehistory, Ancient History, the Middle Ages, Modern History, and Contemporary History. <ref type="bibr">[29] [30]</ref>This framework reflects canonical divisions in comparative history and supports systematic coverage of distinct epistemic contexts. Table <ref type="table" target="#tab_4">3</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">HistAgent</head><p>HistAgent is a complex agent system designed to enhance LLM-based historical reasoning by integrating specialized agents and external tools. Unlike basic retrieval systems, it supports academic search, multimodal input (e.g., manuscripts, images, audio), and outputs fully cited responses grounded in both primary and secondary sources (see Fig. <ref type="figure">6</ref>).</p><p>HistAgent consists of two core components. A central Manager Agent orchestrates the pipeline: it decomposes queries, dispatches subtasks, verifies evidence, and assembles the final cited response. Surrounding it is a set of specialized agents, each handling a specific task such as web search, literature retrieval, OCR, translation, image or audio analysis.</p><p>Among them, the Literature Search Agent is key for scholarly retrieval and citation. It follows a multi-stage protocol focused on academic databases and bibliographic validation. We detail its design and workflow in the following section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Agent Architecture and Roles</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.1">Manager Agent</head><p>The Manager Agent parses the user request to identify required modalities, and then runs a CodeAct-style loop as a Smolagents CodeAgent. In each iteration, the LLM emits a Python code snippet that calls sub-agent functions or tools; the snippet executes in a secure sandbox and writes its output to shared memory. The Agent then validates each result (checking exact quotes and bibliographic data) and repeats until task completion criteria are met. In the final step, the agent synthesizes all validated outputs into a structured, citation-complete response.</p><p>Image Information Agent Literature Search Agent Speech Recognition Agent Translator Agent File Processing Agent Video Agent Manager Agent OCR Agent Text WebBrowser Agent User Input Final Output Summary Process Final Answer</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CodeReAct Loop</head><p>Figure <ref type="figure">6</ref>: The architecture of HistAgent, an agent for historical reasoning. The system takes multimodal user inputs (e.g., text, audio, video, images, documents) and coordinates specialized agents through a centralized Manager Agent. Each agent is responsible for dedicated tasks such as OCR, speech recognition, literature search, translation, and file processing. The Manager Agent orchestrates these agents within a CodeAct loop to iteratively refine reasoning and evidence validation, ultimately generating summarized, processed, and fully cited academic answers.</p><p>Agent Modality Core Tools Text WebBrowser Text Multi-step web search and page parsing (LocalGoogleSearchTool, VisitTool). Image Information Image Reverse image search and provenance analysis (GoogleLensSearchTool with SSIM filtering). Literature Search Scholarly text Peer-review retrieval and PDF parsing (Scholar websites, SpringerDownloadAndParseTool). File Processing Documents Typed file parsing: PDFTool, DOCXTool, XLSXTool, PPTXTool. OCR Image text Manuscript transcription (Transkribus, Asian-script OCR). Speech Recognition Audio Whisper-based transcription with LLM correction. Translator Multilingual text Bidirectional translation with provenance preservation. Video Video Frame extraction (yt-dlp, OpenCV).</p><p>Table <ref type="table">4</ref>: Function Overview of HistAgent Specialist Agents.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.2">Specialist Agents</head><p>An overview of all agents and their primary toolkits is presented in Table <ref type="table">4</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Manager Agent</head><p>The Manager Agent is the central coordinator. It parses user requests, selects which agent to invoke, gathers their outputs, checks completeness, and synthesizes a final response.</p><p>Functionality. The Manager Agent parses the user request to identify required modalities, then runs a ReAct-style loop as a Smolagents CodeAgent. In each iteration, the LLM emits a Python code snippet that calls sub-agent functions or tools; the snippet executes in a secure sandbox and writes its output to shared memory. The Agent then validates each result (checking exact quotes and bibliographic data) and repeats until a final_answer(...) call. At that point, it merges all verified outputs into a single, citation-ready response.</p><p>Text WebBrowser Agent The Text WebBrowser Agent handles open-domain web searches and browsing. It simulates a multi-step search and extracts structured content from web pages using a suite of navigation and inspection tools.</p><p>Functionality. The agent starts by refining the user's query via LocalGoogleSearchTool into an optimized search prompt. It can also perform standard queries via SearchInformationTool. For each target, it invokes VisitTool to load the page, DownloadTool to save binary files when needed, and ArchiveSearchTool to retrieve historical snapshots. When encountering long pages, it scrolls with PageUpTool and PageDownTool, and it locates specific terms using FinderTool and FindNextTool. Non-HTML content, like plain text files, PDFs, or video transcripts, is converted to text through TextInspectorTool. All outputs are recorded to shared memory for downstream integration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Image Information Agent</head><p>The Image Information Agent focuses on visual inputs. It performs reverse image search and follows up with targeted page visits to uncover context and provenance of the visual input.</p><p>Functionality The Image Information Agent is selectively invoked when the task involves image content that may offer contextual or evidential value. Upon receiving an image, the Image Information Agent uploads it to a public host and runs a reverse search using GoogleLensSearchTool. The system extracts associated links, titles, and descriptions from matched pages to identify how the image is used online, e.g., in auction listings, academic articles, or museum databases. To improve match quality, the agent optionally computes similarity scores (e.g., SSIM) between the original image and search results to highlight high-confidence matches.</p><p>To gather in-depth metadata, it visits selected pages with VisitTool_Image. By grounding image interpretation in its real-world usage context, the agent enables accurate and verifiable historical reasoning over visual inputs. Literature Search Agent The Literature Search Agent is a specialized module for retrieving and grounding answers in peer-reviewed academic sources. It combines an LLM-driven browser workflow with multiple tool wrappers, covering Google Books, Google Scholar, general web searches, and Springer Nature's API, to locate exact phrases, download accessible PDFs, and extract verbatim quotes along with full citation metadata. Functionality. The agent issues a multi-stage search: it first queries Google Books (with random domain rotation and robots.txt compliance) via BookMatchExtractorTool and DirectGoogleBooksCrawlerTool, extracting highlighted snippets and page numbers; if needed, it proceeds to Google Scholar using LiteratureSearchingTool and RelevantLiteratureFinderTool for broader article discovery; it falls back on GeneralBrowserTool for additional context. Freely accessible PDFs are downloaded and parsed with SpringerDownloadAndParseTool (via LlamaParse) or SpringerSearchTool/SpringerStructuredSearchTool for structured Springer Nature queries. Throughout, it preserves exact wording, records source URLs, citation counts, publication details, and assembles all findings into a coherent, verifiable response. it can locate sources that support factual claims, provide historical context, or contain exact wording required for exactMatch tasks. It returns full bibliographic metadata, quoted excerpts, and links to original publications, thereby ensuring academic-level faithfulness and verifiability.</p><p>File Processing Agent This agent manages non-HTML files-documents, spreadsheets, presentations, and images-by routing them to the appropriate tool.</p><p>Functionality. When a file is received, the file processing Agent automatically detects its type and selects the corresponding tool: PDFTool for PDFs, DOCXTool for Word documents, XLSXTool for spreadsheets, and PPTXTool for presentations. For images that require analysis beyond OCR, it uses ImageAnalysisTool to extract charts or figures. All extracted text or structured data is returned in a format that downstream agents or the Manager Agent can incorporate into their reasoning.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>OCR Agent</head><p>The OCR Agent specializes in extracting textual information from images using optical character recognition. It is invoked for screenshots, scanned documents, historical manuscripts, or photos containing embedded text. The agent supports multiple languages and detects the language in the image. Upon invocation, it returns the raw text content detected, enabling HistAgent to convert unstructured visual inputs into machine-readable text for further processing.</p><p>Functionality. When given an image path, the agent loads and encodes the file and uses an LLM to determine whether the content is best handled by a specialized OCR model for Asian scripts or by a Transkribus-based OCR service for Western-language manuscripts. For Western texts, it publishes the image to a public URL, submits it to the Transkribus engine, waits for a PAGE XML transcription, and extracts the detected lines. For Asian scripts, it sends the image data directly to the dedicated OCR model. The resulting raw transcription is then passed through an LLM prompt that repairs recognition errors and preserves historical or stylistic features. Both the original and refined transcripts are saved to a .txt file and returned. If no valid text is extracted, the agent falls back to generating a detailed visual description via the LLM, highlighting any readable text, symbols, or key visual elements.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Speech Recognition Agent</head><p>The Speech Recognition Agent converts audio files (MP3, WAV, etc.) into text using Whisper for transcription and an LLM for error correction, summary, and key-point extraction, enabling HistAgent to incorporate oral historical sources.</p><p>Literature Search Tool Task Priority Search Springer Nature Springer Tools Google Scholar Google Books Refine Irrelevant Insuf. LlamaParse Sufficient Web Search Tool o.w Functionality. When given an audio file path, the agent verifies its existence and measures its size; if the file exceeds 25 MB, it divides the recording into equal segments; otherwise, it uses the file as a whole. Each segment is sent to Whisper for transcription, and the concatenated raw transcript is submitted to an LLM prompt that preserves all content while correcting recognition errors and generating an "Optimized Transcription" section, a brief "Summary," and a "Key Points" list. Both original and refined texts are saved to a .txt file in the output directory for humans' reference, and a formatted string containing both versions is returned, with any errors caught and reported.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PDFformatted</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Output with Metadata</head><p>Translator Agent The Translator Agent converts text into a specified target language, including support for both widely spoken and less common languages like Armenian and Sanskrit, and delivers a clear, formatted output showing the original and translated text.</p><p>Functionality. The Translator Agent handles automatic translation of textual content between multiple languages. It automatically detects the source language and supports both widely used and lower-resource languages. In historical tasks, it is particularly useful for translating foreign-language sources such as Armenian manuscripts, Sanskrit inscriptions, or early regional documents in Latin or Classical Arabic. The translated output allows HistAgent to reason across linguistic boundaries and integrate multilingual content into its historical analysis pipeline.</p><p>Video Agent The Video Agent downloads the video from the given link and extracts still frames at a user-specified rate to support visual analysis.</p><p>Functionality. When given a video URL, the agent downloads the best-quality video with yt-dlp, uses OpenCV to extract frames at the specified rate, saving each as a timestamped JPEG, and writes a summary file containing the video's title, duration, resolution, frame count, and output directory. It then returns a brief report with those key details and file locations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Literature Search Agent</head><p>The Literature Search Agent is a highly specialized component within the HistAgent framework, engineered as a ReAct-based agent driven by a large language model (LLM). Its core architectural design focuses on emulating a meticulous academic research process through a structured, multi-stage interaction with a curated set of web-based tools, primarily implemented through browser-use <ref type="bibr" target="#b30">[31]</ref>, which can connect the agent to the real Chrome browser instance. This setup allows the agent to operate within the user's active browser profile, inheriting authentication states and personalized settings for seamless access to academic resources. Its internal architecture is centered around a protocol-driven retrieval engine that ensures the reliability, interpretability, and academic integrity of the information it gathers. The agent prioritizes scholarly sources such as Google Scholar and Springer Nature, employs a modular toolkit for interfacing with both academic databases and general-purpose web sources, and allows users to configure search depth and behavior via interpretable parameters. Retrieved content is enriched with bibliographic metadata, quoted evidence, and full traceability links to support verification and integration into downstream workflows.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.1">Priority Search Protocol</head><p>A core challenge in automating academic research is ensuring that retrieved information aligns with scholarly standards. To address this, our system introduces a priority-based retrieval mechanism that favors academically reputable sources over general-purpose content. This design choice reflects the distinct requirements of academic tasks, where the reliability of information is critical. The protocol acts as a persistent control signal for the agent, influencing both the decision to invoke tools and the interpretation of retrieved results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.2">Toolkits for Literature Search</head><p>Efficient execution of the academic-first retrieval strategy requires structured tool use. To this end, our system integrates a suite of specialized retrieval tools, each targeting different tiers of source quality. All source queries, are first conducted via the LiteratureSearchingTool to search from scholarly databases, and then to GeneralBrowserTool interface for general search. The queries will also use more specialized APIs when needed. For example, Springer-specific queries are handled using the SpringerSearchTool, and focused access to Google Books is enabled through the DirectGoogleBooksCrawlerTool. Most of the retrieved documents can be extracted directly, while pdfs could be parsed via the Llama-Parse API for structured processing. This modular architecture ensures that each retrieval action is consistent with the source prioritization strategy established earlier.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.3">Human-controllable Agent Customization</head><p>Autonomous retrieval must adapt to varying task demands and resource limitations. Our system provides users with explicit control over agent behavior through a small set of interpretable parameters. These include limits on reasoning steps and re-planning intervals, which allow users to trade off between search depth and computational cost. Such configurability is critical for real-world deployment, where users may need to enforce practical constraints while preserving the academic quality of the output.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.4">Clearly labeled Sources</head><p>Trust and traceability are essential in academic applications. To meet these needs, our system ensures that all retrieved content is accompanied by clearly labeled source metadata. This includes bibliographic information, retrieval URLs, and quoted evidence, all linked to the reasoning trace. These annotations allow users and downstream systems to verify claims, reproduce retrieval steps, and integrate results into formal academic workflows.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Experiment</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Experiment Setup and Datasets</head><p>We evaluate HistAgent on three benchmarks covering challenging historical and real-world general tasks. Also, we have extensive baselines.</p><p>HistBench. HistBench is a history-specific benchmark we construct, containing 414 history questions categorized into three difficulty levels (Level 1-3). GAIA. To test the generalization of our framework, we also test our HistAgent on the validation set of GAIA benchmark <ref type="bibr" target="#b3">[4]</ref>, which includes 165 tasks. HLE History Subset. We consider the HLE history subset of 56 questions from the Humanity's Last Exam benchmark <ref type="bibr" target="#b4">[5]</ref>.</p><p>We compare our HistAgent against open Deep Research (ODR-smolagents) <ref type="bibr" target="#b9">[10]</ref>, an open-source reproduction of OpenAI's Deep Research agent by HuggingFace/smolagents. It uses a Manager agent and a Text Web Browser Agent with a visualizer tool and a file processing tool. Both systems are run under identical environments for fairness. We use the same underlying language model (GPT-4o) for both HistAgent and ODR-smolagents, ensuring that differences in performance stem from the agent architecture rather than the base model. Each question is posed to the agent in a fresh session. We limit the total number of tool invocations (agent calls) per question to a fixed budget to prevent infinite loops and to enforce a fair comparison. Both systems output a final answer for each question, which we compare to the ground-truth answer. Additionally, we compare our results with DeepSeek-R1 <ref type="bibr" target="#b31">[32]</ref>, GPT-4o <ref type="bibr" target="#b32">[33]</ref>, o4-mini-high <ref type="bibr" target="#b33">[34]</ref>, o3 <ref type="bibr" target="#b33">[34]</ref>, and Grok 3 <ref type="bibr" target="#b34">[35]</ref> on HistBench for a thorough comparison. All these LLMs are equipped with online search capabilities, enabling them to be very strong baselines.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Evaluation Metrics for Different Benchmarks</head><p>We use accuracy as the primary evaluation metric, defined as the percentage of questions answered correctly by the agents or LLMs.</p><p>Metric for HistBench. For the HistBench benchmark, we measure accuracy as the percentage of the 414 questions for which the agent's response is judged correct by both the LLM judge and professtional validation. The evaluation proceeds in three steps:</p><p>• Structured Output: Each response is composed of a concise final answer and a structured reasoning summary (shown in Appendix E.3) that logs tools used, information sources, and step-by-step logic.</p><p>• LLM Judging: We run LLM as a judge to issue a binary judgment ("Correct"/"Incorrect") based on semantic equivalence, completeness of key facts, and logical coherence. The prompt template is an adaptation of the evaluation prompt of HLE, which is shown in Appendix E.2.</p><p>• Human Expert Validation: To validate the LLM's judgment quality, we randomly sample 100 examples across Level 1, Level 2, and Level 3 tasks. Each sample includes both the final answer and its reasoning summary. These are reviewed by the original authors of the questions, who assess whether the correct answer could have been obtained merely by coincidence, verify the reliability and factual accuracy of every cited source, and confirm that the sequence of reasoning steps genuinely supports the final answer. An answer is labeled "Correct" only if it satisfies all of these criteria; otherwise, it is marked "Incorrect". This human expert evaluation not only provides an external check on model-assigned labels but also reveals edge cases and ambiguities in question phrasing or evaluation criteria, allowing us to iteratively refine and improve the overall quality and consistency of our HistBench.</p><p>We define accuracy on HistBench as the percentage of the 414 questions for which the response is both "Correct" by the LLM judge and "Correct" by the author (100 samples selected). We report this metric overall and separately for Level 1, Level 2, and Level 3.</p><p>Metric for GAIA. We employ the official scoring function published on Hugging Face. Each GAIA question has a standard answer key; the scoring function handles normalization (e.g., case, punctuation) and computes an exact-match score. We report the overall GAIA accuracy as defined by that function.</p><p>Metric for HLE History Subset. For the 56 expert-level questions in the HLE History Subset (curated from Humanity's Last Exam), evaluation mirrors the initial stages of the main HLE benchmark protocol. Each response must first provide a Structured Output, comprising a concise final answer and a detailed reasoning summary (as described for the HLE benchmark before). Subsequently, we employ LLM-based Judging, where an LLM assesses the response for semantic equivalence to the ground truth, factual completeness, and logical coherence, issuing a binary judgment ("Correct"/"Incorrect") as the HLE official scoring function released on github. Accuracy for this subset is then calculated as the percentage of questions deemed "Correct" by the LLM judge.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Results and Analysis</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.1">Performance on HistBench</head><p>Table <ref type="table" target="#tab_8">5</ref> shows that HistAgent, based on GPT-4o, achieves 36.47% pass@2 on HistBench, outperforming all baselines, including those with web search.</p><p>Compared to the open-source agent ODR-smolagents (also using GPT-4o), HistAgent improves by 11.35 points (a 45.2% relative gain), demonstrating the impact of its enhanced tools, search mechanisms, and file handling. Against GPT-4o with web search, HistAgent improves by 17.87 points, indicating that its performance stems not just from tool access, but from better tool selection, sequencing, and integration. Interestingly, while ODR-smolagents slightly outperforms GPT-4o with web search (25.12% pass@2 vs. 18.60% ), gains are limited, emphasizing that domain-specific agent is essential. HistAgent meets this need through components like handwriting OCR, multimodal analysis, translation, and a scholar search agent with query optimization.</p><p>Despite using a weaker base model, HistAgent also matches or outperforms stronger closed-source models like o3 and o4-mini-high. This highlights the value of its reasoning structure and tool design. Inference cost further makes HistAgent suitable for cost-sensitive scenarios where models like o3 are impractical.</p><p>Future work will explore applying HistAgent to stronger foundation models (e.g., o3, o4-mini-high) to assess the upper bounds enabled by its architecture. Focusing on these 56 expert-level history questions in HLE History Subset, we observe that HistAgent markedly outperforms both baselines. HistAgent achieves a Pass@1 accuracy of 28.6% (16 out of 56 questions), whereas the ODR-smolagents baseline reaches 17.9% (10 out of 56 questions), and the GPT-4o baseline achieves 8.9% (5 out of 56 questions). This subset is exceptionally difficult-indeed, even state-of-the-art models have been reported to achieve less than 20% accuracy on comparable expert-level history questions-so all systems understandably struggle on many of these prompts. However, HistAgent answers 60% more questions correctly at Pass@1 than the ODR-smolagents baseline and more than triples the performance of the direct GPT-4o baseline. More details are provided in Table <ref type="table" target="#tab_9">6</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Agent/Model</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>System</head><p>Pass@1 Pass@2 Pass@3 HistAgent (GPT-4o) </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3.3">Performance on GAIA Validation</head><p>We also test HistAgent on GAIA benchmark, which achieves 60.00% pass@1 accuracy, showing that our domainspecific adaptations don't hinder HistAgent's competitive performance on real-world general tasks.</p><p>We evaluate our HistAgent on the 165-question validation subset, using the accuracy as the main metric. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Conclusion</head><p>In summary, we introduce HistBench, which is a benchmark for evaluating historical reasoning in AI, and HistAgent, which is a specialized AI agent that outperforms LLMs and other agents on historical tasks by using domain-specific tools and workflows.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.2 Sample Questions Across Difficulty Levels</head><p>To illustrate the scope and structure of questions in HistBench, we present three annotated examples-one for each difficulty level. These samples highlight variation in required source processing, historical reasoning, and interdisciplinary complexity.</p><p>• Level 1 (Basic) -Source verification and factual retrieval Table 9: Languages represented in HistBench questions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B Limitations</head><p>Our HistBench has two limitations. First, all the questions are closed questions with an only exact answer to simplify the evaluation criteria, which lead to a monotony in the types of questions. In fact, handling of questions with an open answer is a critical part of historical research. The evaluation of questions with an open answer needs an intricate and dynamic evaluation criterion. The determination of this evaluation criterion is difficult and requires further exploration. Second, although contributors are required to formulate questions with objective answers, the design of questions is still inevitably influenced by the contributors' cognition and the current research limitations. For example, due to differences in material selection and interpretation,the academic world may have different answers to an objective question, while the contributors may choose the information they have accessed and believe to provide the answers for the questions. This appears to be an inevitable drawback.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C Broader Impacts D Declaration of LLM Usage</head><p>This research involves the use of large language models (LLMs) as core components of the experimental framework. Specifically, the HistAgent (our method) and ODR-smolagents (baseline) both rely on GPT-4o as the underlying language model. The purpose of our experiments is to isolate and compare the performance impact of different agent architectures, with the LLM held constant across systems to ensure a fair comparison. The differences in outcome are therefore attributed to the design of the agent frameworks, not the underlying model capabilities.</p><p>Each agent operates in a fresh session per question. We impose a fixed budget on the number of tool invocations (agent calls) to avoid infinite loops and normalize the computational cost across runs. The output of each agent is a final answer that we compare against ground-truth responses.</p><p>In addition to GPT-4o-based systems, we also benchmark against DeepSeek-R1, GPT-4o, o4-mini-high, o3, and Grok 3 on HistBench. These models are used in their native agentic or search-augmented setups, consistent with how they are deployed in real-world scenarios. All these models have online search capabilities and demonstrate strong reasoning abilities in open-domain tasks.</p><p>The LLMs are strictly part of the technical comparison and evaluation of agent performance, which forms the core contribution of the work. [question]: {question} [response]: {response} [correct_answer]: {correct_answer} When you judge, consider only whether the core meaning and all necessary key points in the response match the correct answer. Even if wording or format differs, treat equivalent semantics as correct. Treat missing key points or any substantive error or omission as incorrect. For numerical answers, a small rounding difference is acceptable. Tolerate substantive deviations from the correct answer. If the extracted_final_answer is a more specific instance of the correct_answer (for example, "Pieter Schenk II" vs "Pieter Schenk"), and it still contains the core string of the correct_answer, treat it as correct. Please output exactly in the format and criteria specified below: extracted_final_answer: The final exact answer extracted from the [response]. Put the extracted answer as 'None' if there is no exact, final answer to extract from the response. reasoning: Explain why the extracted_final_answer is correct or incorrect based on [correct_answer], focusing only on if there are meaningful differences between [correct_answer] and the extracted_final_answer. Do not comment on any background to the problem, do not attempt to solve the problem, do not argue for any answer different than [correct_answer], focus only on whether the answers match. correct: Answer 'yes' if extracted_final_answer matches the [correct_answer] given above, or is within a small margin of error for numerical problems. Answer 'no' otherwise, i.e. if there is any inconsistency, ambiguity, non-equivalency, or if the extracted answer is incorrect. confidence: The extracted confidence score between 0% and 100% from [response]. Put 100 if there is no confidence score available.""" -Cross-verification: -Multiple sources including books and academic papers were consulted to confirm Speckle's work as an engraver for Leonhart Fuchs' book "De Historia Stirpium." -Exclusion of Other Answers: -The reverse image search did not present any alternative credible identity, leading to a focused inquiry on Speckle which was consistently supported by scholarly resources. 4. Answer Quality and Reliability Analysis: -Reliability: High -Given the cross-corroboration from reliable academic texts and reputable databases (Google Scholar, academic books), the reliability is high.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E Details in Experiment</head><p>-Assumptions, Weaknesses, Uncertainties: -Assumptions largely relied on the historical accuracy maintained by sources. Lack of web search limits alternative verifications.</p><p>-Sufficiency and Consistency: -The evidence gathered was sufficient, consistent, and convergent from independent, reliable sources, affirming the credibility of the information.</p><p>-Suggestions for Improvement: -Include a broader web search to capture any contemporary assessments or potential misattributions regarding this artwork or engraver. Suggested keywords: "Veit Rudolph Speckle", "Leonhart Fuchs botanical engravings".</p><p>-Web Search Observation: -Although literature and specific academic sources provided strong backing, the integration of broader web search could improve the reliability by encompassing wider perspectives or additional public domain resources.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: Difficulty level definitions across six structured evaluation dimensions.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Multi-Stage Question Review Pipeline for HistBench</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Language distribution in HistBench. The dataset covers 29 modern and ancient languages, including both widely used academic languages and historically significant lower-resource ones.</figDesc><graphic coords="9,300.50,69.35,249.00,160.81" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Geographic coverage of HistBench. Blue regions mark areas from which historical questions are drawn, spanning all inhabited continents and supporting both mainstream and underrepresented fields.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Overview of Literature Search Agent. It is specifically designed for academic searching, including a priority search module and web search tools.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>E. 1</head><label>1</label><figDesc>Experiment Compute ResourcesM1 chips, 512 MB, 20 minutes for 1 question.E.2 Prompt TemplateJUDGE_PROMPT Template JUDGE_PROMPT = """You are a fair evaluator. Judge whether the following [response] to [question] is semantically consistent with the [correct_answer] below.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2</head><label>2</label><figDesc>summarizes the number of questions associated with each type of source.</figDesc><table><row><cell>Material Type</cell><cell>Number of Questions</cell></row><row><cell>Visual materials (illustrations, photos)</cell><cell>96</cell></row><row><cell>Maps and schematics</cell><cell>18</cell></row><row><cell>Charts, diagrams, or tables</cell><cell>10</cell></row><row><cell>Manuscripts and handwritten sources</cell><cell>88</cell></row><row><cell>Audio recordings</cell><cell>9</cell></row><row><cell>Video content</cell><cell>5</cell></row><row><cell>Inscriptions or stone rubbings</cell><cell>14</cell></row><row><cell>Text-based questions (narrative excerpts)</cell><cell>64</cell></row><row><cell>Mixed text + image sources</cell><cell>10</cell></row><row><cell>Ancient or undeciphered scripts</cell><cell>22</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 3 :</head><label>3</label><figDesc>summarizes the distribution of questions across historical periods.Chronological coverage of questions in HistBench.</figDesc><table><row><cell>Historical Period</cell><cell>Number of Questions</cell></row><row><cell>Ancient History (to ∼500 CE)</cell><cell>90</cell></row><row><cell>Medieval History (500-1500)</cell><cell>85</cell></row><row><cell>Early Modern History (1500-1800)</cell><cell>95</cell></row><row><cell>Modern History (1800-1945)</cell><cell>80</cell></row><row><cell>Contemporary History (1945-present)</cell><cell>64</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 5 :</head><label>5</label><figDesc>All standalone large language models are used with web search capabilities. The best value in each column is highlighted with darker blue , and the second-best score with lighter blue .Performance accuracy (%) on HistBench5.3.2 Performance on the HLE History Subset</figDesc><table><row><cell></cell><cell></cell><cell>Level 1</cell><cell>Level 2</cell><cell>Level 3</cell><cell>Average</cell></row><row><cell>HistAgent(gpt-4o)</cell><cell>pass@1 pass@2</cell><cell>28.92 36.14</cell><cell>23.84 35.47</cell><cell>32.89 39.47</cell><cell>27.54 36.47</cell></row><row><cell>ODR-smolagents(gpt-4o)</cell><cell>pass@1 pass@2</cell><cell>16.27 20.48</cell><cell>23.26 28.49</cell><cell>22.37 27.63</cell><cell>20.29 25.12</cell></row><row><cell>Deepseek-R1:online</cell><cell></cell><cell>11.45</cell><cell>18.60</cell><cell>11.84</cell><cell>14.49</cell></row><row><cell>GPT-4o:online</cell><cell></cell><cell>13.86</cell><cell>21.51</cell><cell>22.37</cell><cell>18.60</cell></row><row><cell>o4-mini-high:online</cell><cell></cell><cell>28.92</cell><cell>31.98</cell><cell>31.58</cell><cell>30.68</cell></row><row><cell>o3:online</cell><cell></cell><cell>18.07</cell><cell>41.28</cell><cell>43.42</cell><cell>32.37</cell></row><row><cell>Grok 3:online</cell><cell></cell><cell>13.25</cell><cell>19.77</cell><cell>22.37</cell><cell>17.63</cell></row><row><cell>Note:</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 6 :</head><label>6</label><figDesc>Performance on the HLE History Subset (56 Questions, LLM Judged, %). To ensure fair comparison, both HistAgent and ODR-smolagents are based on GPT-4o.</figDesc><table><row><cell></cell><cell>28.57</cell><cell>39.29</cell><cell>42.86</cell></row><row><cell>ODR-smolagents (GPT-4o)</cell><cell>17.86</cell><cell>25.00</cell><cell>28.57</cell></row><row><cell>GPT-4o + web search</cell><cell>8.93</cell><cell>19.64</cell><cell>25.00</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10"><head>Table 7 :</head><label>7</label><figDesc>The split includes 53 Level 1, 86 Level 2, and 26 Level 3 questions, covering open-book fact finding, tool use, and multimodal reasoning. Our HistAgent, based on the GPT-4o, answers 99 questions correctly and reaches an overall accuracy of 60.00% pass@1. The baseline, open Deep Research by HuggingFace/smolagents, records 55.15% on the same split. These results show that HistAgent, as a domain-specific agent, can generalise reliably beyond its original scope. More details are provided in Table7, which presents the complete level-wise breakdown.</figDesc><table><row><cell>Agent</cell><cell>Model</cell><cell cols="4">Average Level 1 Level 2 Level 3</cell></row><row><cell>HistAgent</cell><cell>Claude 3.7 Sonnet</cell><cell>60.00</cell><cell>69.81</cell><cell>61.63</cell><cell>34.62</cell></row><row><cell>ODR-smolagents</cell><cell>o1</cell><cell>55.15</cell><cell>67.92</cell><cell>53.49</cell><cell>34.62</cell></row></table><note><p>Performance accuracy (%) on the GAIA validation set (pass@1)</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11"><head>Table 9</head><label>9</label><figDesc>provides the full list of languages represented in the HistBench dataset, along with their frequencies. These include both modern languages and historical scripts, reflecting the multilingual nature of historical research tasks. This diversity supports the evaluation of cross-lingual capabilities in AI systems, including translation, OCR, and historical reasoning across languages.</figDesc><table><row><cell>• Level 2 (Intermediate) -Text-image synthesis and temporal reasoning</cell></row><row><cell>• Level 3 (Challenging) -Multilingual, multimodal, and interdisciplinary integration</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p><ref type="url" target="https://github.com/CharlesQ9/HistAgent">https://github.com/CharlesQ9/HistAgent</ref> Dataset: <ref type="url" target="https://huggingface.co/datasets/jiahaoq/HistBench">https://huggingface.co/datasets/jiahaoq/HistBench</ref> </p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A HistBench Benchmark A.1 Submission Template Format</head><p>To illustrate how these elements are applied in practice, Table <ref type="table">8</ref> provides two sample entries from different difficulty levels.</p><p>• (a) Difficulty Level: Assigned as Level 1, 2, or 3 based on rubric criteria (see Section 4.3). • (b) Question Prompt: A clear and concise question targeting a specific historical issue requiring domain expertise. • (c) Required Data: Source materials referenced or used (e.g., documents, images, audio/video). • (d) Answer: A definitive, validated response-either as a selected option or short text span.</p><p>• (e) Answer Explanation: A concise justification based on evidence and reasoning. • (f) Source References: URLs or bibliographic citations supporting the answer. • (g) Topic/Methodology: Thematic or methodological classification (e.g., diplomatic history, material culture). • (h) Contributor Name: Full name of the author. • (i) Contributor Affiliation: Institutional affiliation at the time of contribution. This format ensured each question adhered to standards of academic transparency and could be independently reviewed and validated.   -Google Scholar Sources:</p><p>-Quotes: "Veit Rudolph Speckle was responsible for the woodcut engravings in Leonhart Fuchs' herbal." and "Recognized as 'by far the best engraver in Strasbourg...".</p><p>-URLs: Retrieved through exploratory searches within Google Scholar.</p><p>-Credibility: Google's academic resource is known for aggregating reputable, peer-reviewed materials.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Reasoning Process and Logic Steps:</head><p>-Identification:</p><p>-Initial determination of the man in the image was made through reverse image search, identifying him as Veit Rudolph Speckle.</p><p>-Verification:</p><p>-Utilized literature searches on academic databases (Google Scholar, books) to verify Speckle's role in creating illustrations for Fuchs' botanical book.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Introducing deep research</title>
+		<author>
+			<persName><surname>Openai</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Crispr-gpt: An llm agent for automated design of gene-editing experiments</title>
+		<author>
+			<persName><forename type="first">Kaixuan</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanhao</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Cousins</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Di</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mihir</forename><surname>Shah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Denny</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Russ</forename><surname>Altman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengdi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Le</forename><surname>Cong</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2404.18021</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<author>
+			<persName><forename type="first">Sam</forename><surname>Andres M Bran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Oliver</forename><surname>Cox</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlo</forename><surname>Schilter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">D</forename><surname>Baldassari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philippe</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Schwaller</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Chemcrow</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2304.05376</idno>
+		<title level="m">Augmenting large-language models with chemistry tools</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Gaia: a benchmark for general ai assistants</title>
+		<author>
+			<persName><forename type="first">Grégoire</forename><surname>Mialon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Clémentine</forename><surname>Fourrier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yann</forename><surname>Lecun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Scialom</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Twelfth International Conference on Learning Representations</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Humanity&apos;s Last Exam</title>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Phan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alice</forename><surname>Gatti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziwen</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathaniel</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.70777/si.v2i1.13973</idno>
+		<idno type="arXiv">arXiv:2501.14249</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SuperIntelligence - Robotics - Safety &amp; Alignment</title>
+		<title level="j" type="abbrev">SI</title>
+		<idno type="ISSNe">3067-2627</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2025-03-16">2025</date>
+			<publisher>Carlson Research LLC</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Phybench: Holistic evaluation of physical perception and reasoning in large language models</title>
+		<author>
+			<persName><forename type="first">Shaoyang</forename><surname>Shi Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhuo-Yang</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunbo</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zeyu</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiashen</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyu</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixuan</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haoxu</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2504.16074</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Long term memory: The foundation of ai self</title>
+		<author>
+			<persName><forename type="first">Xun</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaying</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shihao</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiling</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xavier</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yize</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2410.15665</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Autoagent: A fully-automated and zero-code framework for llm agents</title>
+		<author>
+			<persName><forename type="first">Jiabin</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyu</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao</forename><surname>Huang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page">2502</biblScope>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Owl: Optimized workforce learning for general multi-agent assistance in real-world task automation</title>
+		<author>
+			<persName><forename type="first">Mengkang</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuhang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wendong</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuzhou</forename><surname>Nie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowei</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziyu</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhaoxuan</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingru</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zeyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yifeng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qianshuo</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ping</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guohao</forename><surname>Li</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Leandro von Werra, and Erik Kaunismäki. &apos;smolagents&apos;: a smol library to build great agentic systems</title>
+		<author>
+			<persName><forename type="first">Aymeric</forename><surname>Roucher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><surname>Villanova Del Moral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Wolf</surname></persName>
+		</author>
+		<ptr target="https://github.com/huggingface/smolagents" />
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Towards a holistic framework for multimodal llm in 3d brain ct radiology report generation</title>
+		<author>
+			<persName><forename type="first">Cheng-Yi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kao-Jung</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Fu</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hsin-Yu</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenting</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hritik</forename><surname>Bansal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ling</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi-Ping</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Chun</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shih-Pin</forename><surname>Chen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Communications</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2258</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Deepseekmath: Pushing the limits of mathematical reasoning in open language models</title>
+		<author>
+			<persName><forename type="first">Zhihong</forename><surname>Shao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peiyi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qihao</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Runxin</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junxiao</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haowei</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingchuan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">K</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daya</forename><surname>Guo</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Optimizing Case-Based Reasoning System for Functional Test Script Generation with Large Language Models</title>
+		<author>
+			<persName><forename type="first">Siyuan</forename><surname>Guo</surname></persName>
+			<idno type="ORCID">0000-0002-9304-5405</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Huiwu</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0009-0001-1266-511X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaolong</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0003-1708-0505</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yuming</forename><surname>Xie</surname></persName>
+			<idno type="ORCID">0009-0000-2835-7499</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Liang</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-2035-6157</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Han</surname></persName>
+			<idno type="ORCID">0009-0006-3701-8636</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hechang</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-7835-9556</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Chang</surname></persName>
+			<idno type="ORCID">0000-0003-2697-8093</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-4021-4228</idno>
+		</author>
+		<idno type="DOI">10.1145/3711896.3737254</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2</title>
+		<meeting>the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="4487" to="4498" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">War and peace (waragent): Large language model-based multi-agent simulation of world wars</title>
+		<author>
+			<persName><forename type="first">Wenyue</forename><surname>Hua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lizhou</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingyao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Mei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianchao</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingqiang</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Libby</forename><surname>Hemphill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongfeng</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2311.17227</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">BattleAgent: Multi-modal Dynamic Emulation on Historical Battles to Complement Historical Analysis</title>
+		<author>
+			<persName><forename type="first">Shuhang</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenyue</forename><surname>Hua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lingyao</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Che-Jui</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lizhou</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianchao</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hang</forename><surname>Hua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mingyu</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiebo</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongfeng</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.emnlp-demo.18</idno>
+		<idno type="arXiv">arXiv:2404.15532</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: System Demonstrations</title>
+		<meeting>the 2024 Conference on Empirical Methods in Natural Language Processing: System Demonstrations</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="172" to="181" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Scibench: Evaluating college-level scientific problem-solving abilities of large language models</title>
+		<author>
+			<persName><forename type="first">Xiaoxuan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziniu</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pan</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yanqiao</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jieyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Satyen</forename><surname>Subramaniam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shichang</forename><surname>Arjun R Loomba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yizhou</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Wang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2307.10635</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<author>
+			<persName><forename type="first">Ahmed</forename><surname>Alaa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Hartvigsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niloufar</forename><surname>Golchini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiladitya</forename><surname>Dutta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frances</forename><surname>Dean</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Inioluwa</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Deborah</forename><surname>Raji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Travis</forename><surname>Zack</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2503.10694</idno>
+		<title level="m">Medical large language model benchmarks should prioritize construct validity</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<author>
+			<persName><forename type="first">Zijin</forename><surname>Hong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Su</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junnan</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yilin</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yujing</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feiran</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linyi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongxia</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2501.11790</idno>
+		<title level="m">Benchmarking large language models via random variables</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Unveiling challenges for llms in enterprise data engineering</title>
+		<author>
+			<persName><forename type="first">Jan-Micha</forename><surname>Bodensohn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ulf</forename><surname>Brackmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liane</forename><surname>Vogel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Anupam</forename><surname>Sanghi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carsten</forename><surname>Binnig</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2504.10950</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Legalbench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models</title>
+		<author>
+			<persName><forename type="first">Neel</forename><surname>Guha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julian</forename><surname>Nyarko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">E</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Ré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Chilton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Narayana</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alex</forename><surname>Chohlas-Wood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Austin</forename><surname>Peters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brandon</forename><surname>Waldon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Rockmore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diego</forename><surname>Zambrano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitry</forename><surname>Talisman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enam</forename><surname>Hoque</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Faiz</forename><surname>Surani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><surname>Fagan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Galit</forename><surname>Sarfaty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregory</forename><forename type="middle">M</forename><surname>Dickinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haggai</forename><surname>Porat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Hegland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jessica</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joe</forename><surname>Nudell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><surname>Niklaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Nay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><forename type="middle">H</forename><surname>Choi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Tobia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Margaret</forename><surname>Hagan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Megan</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">A</forename><surname>Livermore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nikon</forename><surname>Rasumov-Rahe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nils</forename><surname>Holzenberger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Kolt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Henderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><surname>Rehaag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sharad</forename><surname>Goel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shang</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Spencer</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sunny</forename><surname>Gandhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Zur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Varun</forename><surname>Iyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zehua</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.2139/ssrn.4583531</idno>
+	</analytic>
+	<monogr>
+		<title level="j">SSRN Electronic Journal</title>
+		<title level="j" type="abbrev">SSRN Journal</title>
+		<idno type="ISSNe">1556-5068</idno>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="44123" to="44279" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<monogr>
+		<title level="m" type="main">Legalbench-rag: A benchmark for retrieval-augmented generation in the legal domain</title>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Pipitone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ghita</forename><surname>Houir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alami</forename></persName>
+		</author>
+		<idno type="arXiv">arXiv:2408.10343</idno>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">E</forename><surname>Jimenez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Wettig</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shunyu</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kexin</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ofir</forename><surname>Press</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karthik</forename><surname>Narasimhan</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2310.06770</idno>
+		<title level="m">Swe-bench: Can language models resolve real-world github issues? arXiv preprint</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<monogr>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerry</forename><surname>Tworek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heewoo</forename><surname>Jun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiming</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henrique</forename><surname>Ponde De Oliveira Pinto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jared</forename><surname>Kaplan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Harri</forename><surname>Edwards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuri</forename><surname>Burda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Joseph</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Greg</forename><surname>Brockman</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2107.03374</idno>
+		<title level="m">Evaluating large language models trained on code</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<monogr>
+		<title level="m" type="main">Program synthesis with large language models</title>
+		<author>
+			<persName><forename type="first">Jacob</forename><surname>Austin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Augustus</forename><surname>Odena</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maxwell</forename><surname>Nye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maarten</forename><surname>Bosma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henryk</forename><surname>Michalewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Dohan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ellen</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carrie</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Terry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quoc</forename><surname>Le</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2108.07732</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">PubMedQA: A Dataset for Biomedical Research Question Answering</title>
+		<author>
+			<persName><forename type="first">Qiao</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bhuwan</forename><surname>Dhingra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhengping</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><forename type="middle">W</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinghua</forename><surname>Lu</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/d19-1259</idno>
+		<idno type="arXiv">arXiv:1909.06146</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</title>
+		<meeting>the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Large language models encode clinical knowledge</title>
+		<author>
+			<persName><forename type="first">Karan</forename><surname>Singhal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shekoofeh</forename><surname>Azizi</surname></persName>
+			<idno type="ORCID">0000-0002-7447-6031</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sara</forename><forename type="middle">Sara</forename><surname>Mahdavi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hyung</forename><forename type="middle">Won</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathan</forename><surname>Scales</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Tanwani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Heather</forename><surname>Cole-Lewis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Pfohl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Perry</forename><surname>Payne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Martin</forename><surname>Seneviratne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Gamble</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Kelly</surname></persName>
+			<idno type="ORCID">0000-0002-1246-844X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Abubakr</forename><surname>Babiker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathanael</forename><surname>Schärli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aakanksha</forename><surname>Chowdhery</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><surname>Mansfield</surname></persName>
+			<idno type="ORCID">0000-0003-4969-0543</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dina</forename><surname>Demner-Fushman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Blaise</forename><surname>Agüera Y Arcas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dale</forename><surname>Webster</surname></persName>
+			<idno type="ORCID">0000-0002-3023-8824</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Greg</forename><forename type="middle">S</forename><surname>Corrado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yossi</forename><surname>Matias</surname></persName>
+			<idno type="ORCID">0000-0003-3960-6002</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Katherine</forename><surname>Chou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juraj</forename><surname>Gottweis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nenad</forename><surname>Tomasev</surname></persName>
+			<idno type="ORCID">0000-0003-1624-0220</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yun</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0003-4079-8275</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alvin</forename><surname>Rajkomar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joelle</forename><surname>Barral</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Semturs</surname></persName>
+			<idno type="ORCID">0000-0001-6108-2773</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Karthikesalingam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vivek</forename><surname>Natarajan</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41586-023-06291-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">620</biblScope>
+			<biblScope unit="issue">7972</biblScope>
+			<biblScope unit="page" from="172" to="180" />
+			<date type="published" when="2023-07-12">2023</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Financeqa: A benchmark for evaluating financial analysis capabilities of large language models</title>
+		<author>
+			<persName><forename type="first">Spencer</forename><surname>Mateega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Georgescu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danny</forename><surname>Tang</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2501.18062</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Large language models&apos; expert-level global history knowledge benchmark (hist-llm)</title>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Hauser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Kondor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jenny</forename><surname>Reddish</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Majid</forename><surname>Benam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enrico</forename><surname>Cioni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Federica</forename><surname>Villa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Bennett</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Hoyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pieter</forename><surname>Francois</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Turchin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="32336" to="32369" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">A Global History of History</title>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Woolf</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011">2011</date>
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<title level="m" type="main">History: A Very Short Introduction</title>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">H</forename><surname>Arnold</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Visualising your own data in the Ensembl genome browser</title>
+		<author>
+			<persName><forename type="first">Magnus</forename><surname>Müller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gregor</forename><surname>Žunič</surname></persName>
+		</author>
+		<idno type="DOI">10.6019/tol.ens_vis-w.2020.00001.1</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Browser use: Enable ai to control your browser</title>
+		<imprint>
+			<publisher>EMBL-EBI</publisher>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Deepseek-r1: Incentivizing reasoning capability in llms via reinforcement learning</title>
+		<author>
+			<persName><forename type="first">Dejian</forename><surname>Daya Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haowei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junxiao</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruoyu</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Runxin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qihao</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shirong</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peiyi</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Bi</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2501.12948</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<monogr>
+		<author>
+			<persName><forename type="first">Aaron</forename><surname>Hurst</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Lerer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><forename type="middle">P</forename><surname>Goucher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Perelman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aditya</forename><surname>Ramesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aidan</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akila</forename><surname>Ostrow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Welihinda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alec</forename><surname>Hayes</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Radford</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2410.21276</idno>
+		<title level="m">Gpt-4o system card</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<title level="m" type="main">Introducing openai o3 and o4-mini</title>
+		<author>
+			<persName><surname>Openai</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025-05-15">2025. 15 May 2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Grok 3 beta -the age of reasoning agents</title>
+		<imprint>
+			<date type="published" when="2025-05-15">2025. 15 May 2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

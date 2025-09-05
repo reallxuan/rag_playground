@@ -1,0 +1,1684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Clustering-based Feature Representation Learning for Oracle Bone Inscriptions Detection</title>
+				<funder ref="#_SK4jAyP">
+					<orgName type="full">&quot;Ancient Chinese Script and Chinese Civilization Inheritance and Development Project&quot;</orgName>
+				</funder>
+				<funder ref="#_35CbzdJ">
+					<orgName type="full">Young Scientists Fund of the National Natural Science Foundation of China</orgName>
+				</funder>
+				<funder ref="#_xamsENe">
+					<orgName type="full">National Social Science Foundation</orgName>
+				</funder>
+				<funder ref="#_xgfKbDT">
+					<orgName type="full">Graduate Work Department of Jilin University</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-08-26">26 Aug 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Ye</forename><surname>Tao</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Artificial Intelligence</orgName>
+								<orgName type="institution">Jilin University</orgName>
+								<address>
+									<addrLine>Qianjin Street</addrLine>
+									<postCode>130000</postCode>
+									<settlement>Changchun, Jilin</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xinran</forename><surname>Fu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Artificial Intelligence</orgName>
+								<orgName type="institution">Jilin University</orgName>
+								<address>
+									<addrLine>Qianjin Street</addrLine>
+									<postCode>130000</postCode>
+									<settlement>Changchun, Jilin</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Honglin</forename><surname>Pang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Artificial Intelligence</orgName>
+								<orgName type="institution">Jilin University</orgName>
+								<address>
+									<addrLine>Qianjin Street</addrLine>
+									<postCode>130000</postCode>
+									<settlement>Changchun, Jilin</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Xi</forename><surname>Yang</surname></persName>
+							<email>yangxi21@jlu.edu.cn</email>
+							<affiliation key="aff0">
+								<orgName type="department">School of Artificial Intelligence</orgName>
+								<orgName type="institution">Jilin University</orgName>
+								<address>
+									<addrLine>Qianjin Street</addrLine>
+									<postCode>130000</postCode>
+									<settlement>Changchun, Jilin</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Engineering Research Center of Knowledge-Driven Human-Machine Intelligence</orgName>
+								<address>
+									<postCode>130000</postCode>
+									<settlement>MoE, Changchun, Jilin</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="laboratory">Key Laboratory of Ancient Chinese Script, Cultural Relics and Artificial Intelligence</orgName>
+								<orgName type="institution">Jilin University</orgName>
+								<address>
+									<postCode>130000</postCode>
+									<settlement>Changchun, Jilin</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Chuntao</forename><surname>Li</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">School of Archaeology</orgName>
+								<orgName type="institution">Jilin University</orgName>
+								<address>
+									<addrLine>Qianjin Street</addrLine>
+									<postCode>130000</postCode>
+									<settlement>Changchun, Jilin</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="laboratory">Key Laboratory of Ancient Chinese Script, Cultural Relics and Artificial Intelligence</orgName>
+								<orgName type="institution">Jilin University</orgName>
+								<address>
+									<postCode>130000</postCode>
+									<settlement>Changchun, Jilin</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Clustering-based Feature Representation Learning for Oracle Bone Inscriptions Detection</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-08-26">26 Aug 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">0C2F2352262F88B07A7D5EDCF257999F</idno>
+					<idno type="arXiv">arXiv:2508.18641v1[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:33+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Oracle Bone Inscriptions (OBIs), play a crucial role in understanding ancient Chinese civilization. The automated detection of OBIs from rubbing images represents a fundamental yet challenging task in digital archaeology, primarily due to various degradation factors including noise and cracks that limit the effectiveness of conventional detection networks. To address these challenges, we propose a novel clustering-based feature space representation learning method. Our approach uniquely leverages the Oracle Bones Character (OBC) font library dataset as prior knowledge to enhance feature extraction in the detection network through clustering-based representation learning. The method incorporates a specialized loss function derived from clustering results to optimize feature representation, which is then integrated into the total network loss. We validate the effectiveness of our method by conducting experiments on two OBIs detection dataset using three mainstream detection frameworks: Faster R-CNN, DETR, and Sparse R-CNN. Through extensive experimentation, all frameworks demonstrate significant performance improvements.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="19" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="20" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="21" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="22" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="23" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Fig. <ref type="figure">1</ref>: Idea of our proposed method. The features of OBIs and noise, cracks were originally mixed together, and when the features of OBC font library were added, the distance between them was pulled apart.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Oracle Bone Inscriptions (OBIs), as the earliest mature writing system in East Asia, represent an invaluable cultural heritage that provides crucial insights into ancient Chinese civilization. Rubbing images, created by placing paper over raised, incised, or textured surfaces and rubbing it with a colored substance, have been used to preserve and study these inscriptions without damaging the original artifacts. Hence the automated detection of OBIs from rubbing images serves as a fundamental prerequisite for character decoding and subsequent historical research, contributing significantly to various fields including traditional Chinese philosophy, astronomy, calendar studies, and historical geography. While traditional methods relied heavily on manual expertise, which was both time-consuming and resource-intensive, modern deep learning approaches have revolutionized this process by offering more efficient and cost-effective solutions. <ref type="bibr" target="#b0">[1]</ref><ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref> However, the detection of OBIs from rubbing images presents several unique challenges: <ref type="bibr" target="#b0">(1)</ref> The rubbing images are often contaminated with substantial background noise. <ref type="bibr" target="#b1">(2)</ref> The presence of cracks in the rubbing images, which share similar textural properties with OBIs, makes differentiation particularly challenging.</p><p>To address these limitations, we propose a novel clustering-based feature space representation learning method that leverages the Oracle Bones Character (OBC) font library dataset <ref type="bibr" target="#b3">[4]</ref> as prior knowledge, as shown in Fig. <ref type="figure">1</ref>. Our approach is founded on the intuition that OBIs and non-OBIs (such as cracks and noise) should occupy distinct regions in the deep feature space. By utilizing the OBC font library as a clean, expert-curated reference point, we guide the model to learn more discriminative feature representations that better distinguish between authentic characters and artifacts.</p><p>Previous research in this domain has primarily developed along three key trajectories. The first line of work focuses on OBIs detection.</p><p>Previous work has focused on applying deep learning networks to OBIs detection and proposing improved modules for OBIs dataset difficulties. Wang et al. <ref type="bibr" target="#b4">[5]</ref> proposed a dynamic augmentation algorithm based on font dataset and an identification auxiliary detection algorithm, and improved the accuracy of compound graphs detection. Xing et al. <ref type="bibr" target="#b5">[6]</ref> used the mainstream object detection models to carry out experiments on an OBIs detection dataset and proposed a data augmentation algorithm based on several kinds of noises extracted from the OBIs. Chen et al. <ref type="bibr" target="#b6">[7]</ref> proposed a method where shape-adaptive Gaussian kernels are employed to represent the spatial regions of different OBIs. <ref type="bibr">Fu et al.</ref> proposed two algorithms to improve the performance of OBIs detection, namely feature fusion based on cross-attention mechanism method <ref type="bibr" target="#b7">[8]</ref> and pseudo-category labels prediction method <ref type="bibr" target="#b8">[9]</ref>. The above methods can be mainly divided into two categories. The first is to increase the number of difficult samples such as noise and compound graphs utilizing data augmentation to improve the detection effect on difficult samples. The second type is to improve the detection effect by introducing prior knowledge related to OBIs location information, which is obtained through a trained supervised model in advance. The differences between the methods we proposed and others are as follows: <ref type="bibr" target="#b0">(1)</ref> The method we proposed is end-to-end, and the introduction of prior knowledge does not need to train other networks in advance.</p><p>(2) Our method lengthens the distance between OBIs and non-OBIs at the feature space, which improves the detection model's ability to distinguish them from the data structure, thus improving the detection effect.</p><p>A second significant research stream addresses text detection challenges. Previous works in scene text detection can be broadly categorized into regression-based and segmentation-based methods.</p><p>Regression-based Methods use the anchor to generate lots of candidate boxes, then NMS <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b10">11]</ref> is used to obtain the detection results. Firstly, there are methods inspired by object detection. At this stage, the scene text detection method directly locates text by modifying the region proposal of the object detector and the bounding box regression module. TextBoxes <ref type="bibr" target="#b11">[12]</ref> define the default box as a quadrilateral with different aspect ratio specifications and use SSD <ref type="bibr" target="#b12">[13]</ref> to adapt to different directions and aspect ratios of the text. TextBoxes++ <ref type="bibr" target="#b13">[14]</ref> extended horizontal text detection to arbitrary orientations. EAST <ref type="bibr" target="#b14">[15]</ref> simplified the detection pipeline by directly predicting text coordinates and angles. Secondly, there are methods based on sub-text components. CTPN <ref type="bibr" target="#b15">[16]</ref> introduced vertical anchor regression to localize text lines accurately. SegLink <ref type="bibr" target="#b16">[17]</ref> extends CTPN by considering multi-directional links between fragments. There are other methods to improve specific problems. LOMO <ref type="bibr" target="#b17">[18]</ref> addressed challenging cases such as long text through iterative refinement, while SBD <ref type="bibr" target="#b18">[19]</ref> improved robustness by discretizing quadrilateral boxes into key edges.</p><p>Segmentation-based Methods approach text detection through pixel-level semantic segmentation. The Mask-TextSpotter series is An End-to-End Trainable Neural Network for Spotting Text with Arbitrary Shapes. The V1 version <ref type="bibr" target="#b19">[20]</ref> used Mask R-CNN as baseline, and can perform end-to-end text spotting. Its mask branch can generate the text instance segmentation maps and the character segmentation maps. The V2 version <ref type="bibr" target="#b20">[21]</ref> proposed a spatial attention module to enhance the performance and universality. The V3 version <ref type="bibr" target="#b21">[22]</ref> adopts a Segmentation Proposal Network (SPN) instead of the region proposal network (RPN), which gives accurate representations of arbitrary-shape proposals. To address the difficulty when recognize curved, irregular text, CRAFT <ref type="bibr" target="#b22">[23]</ref> detected individual characters and combined them using affinity scores, but it needs complex training. DBNet <ref type="bibr" target="#b23">[24]</ref> introduced differentiable binarization to adaptively set thresholds, reducing dependency on post-processing.</p><p>The last key research direction centers on cluster-based representation learning. Self-supervised learning <ref type="bibr" target="#b24">[25]</ref><ref type="bibr" target="#b25">[26]</ref><ref type="bibr" target="#b26">[27]</ref><ref type="bibr" target="#b27">[28]</ref><ref type="bibr" target="#b28">[29]</ref><ref type="bibr" target="#b29">[30]</ref> means that for unlabeled data, the pretext task is designed to mine its own representation features as supervised information to improve the feature extraction ability of the model. In this field, clustering-based representation learning methods have emerged as a particularly promising approach. DEC <ref type="bibr" target="#b30">[31]</ref> operates by iteratively optimizing a clustering objective based on KL divergence, using a self-training target distribution. JULE <ref type="bibr" target="#b31">[32]</ref> integrates agglomerative clustering with CNNs and frames this combination as a recurrent process. DeepCluster <ref type="bibr" target="#b32">[33]</ref> iteratively clusters deep features and utilizes the resulting cluster assignments as pseudo-labels to train the convolutional neural network. DeeperCluster <ref type="bibr" target="#b33">[34]</ref> is designed to handle large volumes of uncurated data. Tuo et al. proposed a clustering-based supervised learning scheme for point cloud analysis <ref type="bibr" target="#b34">[35]</ref>. They conducted within-class clustering to learn an appropriate point embedding space that is aware of both discriminative semantics and challenging variations. In order to solve the problem that autoencoder is sensitive to noise data in multi-view clustering research, Fatemeh Daneshfar et al. proposed an Elastic Deep Multi-view Autoencoder with Diversity Embedding (EDMVAE-DE) method <ref type="bibr" target="#b35">[36]</ref>, which has adaptable elastic loss, diversity constraint and Graph regularization to be capable of handling noisy data, it can also make full use of multi-view data.</p><p>Specifically, our method integrates both the OBIs detection dataset <ref type="bibr" target="#b36">[37]</ref> and the OBC font library dataset during the training process. Through a specialized loss function derived from clustering results, we optimize the feature representation to maximize the separation between true characters and noise while maintaining consistency with the standard forms from the font library. This approach offers several key advantages: 1) It introduces a novel methodology for incorporating expert knowledge through the OBC font library dataset, using pristine character features as anchors for feature space organization.</p><p>2) It provides a simple yet effective enhancement that can be readily integrated into existing detection frameworks without requiring complex architectural modifications. 3) It directly addresses the core challenges of OBIs detection by improving the model's ability to discriminate between authentic characters and various forms of interference.</p><p>To validate our approach, we conducted extensive experiments using three mainstream detection frameworks: Faster R-CNN <ref type="bibr" target="#b37">[38]</ref>, DETR <ref type="bibr" target="#b38">[39]</ref>, and Sparse R-CNN <ref type="bibr" target="#b39">[40]</ref>. The results demonstrate consistent performance improvements across all frameworks, with significant gains in detection accuracy and robustness. Through feature visualization and detailed analysis of detection results, we confirm that our method effectively enhances character feature discrimination while maintaining resilience against various forms of interference. We make several contributions to the field of automated OBIs analysis and digital preservation of ancient writing systems, offering a novel approach that combines traditional expertise with modern deep learning techniques to achieve superior detection performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Methods 2.1 Dataset</head><p>There are the introductions of the datasets used in our experiment.</p><p>OBIs Detection Dataset. We conducted experiments on two datasets. Firstly, we use an open-access OBIs dataset provided by the Key Laboratory of the Ministry of Education for Oracle Information Processing, Anyang Normal University <ref type="bibr" target="#b36">[37]</ref>. It has collected 9500 OBI rubbings (up to now) by a high-resolution scanner and then labeled every character with the upper left and lower right coordinates. Notably, this work only focuses on the detection task, so the number of classes in this dataset is all regarded as one.</p><p>Secondly, we use OBIMD alse provided by the Key Laboratory of the Ministry of Education for Oracle Information Processing, Anyang Normal University <ref type="bibr" target="#b40">[41]</ref>. It is the world's first comprehensive dataset encompassing multi-view information for OBI research, which has collected 10077 OBI rubbings. They are our original input datasets, which are used to train the model for the OBIs detection task.In the following sections, we will refer to the former and the latter as OBIs detection dataset and OBIMD respectively.</p><p>OBC font library Dataset. Besides, we use another dataset also provided by the Key Laboratory of the Ministry of Education for Oracle Information Processing, Anyang Normal University. It is OBC font library dataset called AYJGW <ref type="bibr" target="#b3">[4]</ref>, which is used as prior knowledge to enhance feature extraction. With the efforts of authoritative OBI experts, the glyph of every character in AYJGW is confirmed by its inherent meaning. Besides, the font models in the font library are all written by the calligraphy expert. In AYJGW, there are 3,881 character images which have uncontroversial font shapes, and it doesn't contain any noise. The dataset contains only images but not the annotation information of images, but our work requires the annotation information of its bounding box. Since our task is to detect the OBIs, and each image in this dataset is an independent OBC, the bounding box information of the image can be regarded as the bounding box annotation information of its object. The annotation information of the bounding box for each image in the dataset is formed by the above method.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Overview</head><p>The overall pipeline of our method is shown in Fig. <ref type="figure" target="#fig_1">2</ref>. Firstly, the OBIs dataset images and the OBC font library images are sent as inputs to the feature extraction network in the detection network at the same time. We will obtain feature maps after the forward propagation of the feature extraction network. We will get anchor boxes based on the feature map respectively, and extract the features of the mapped region of the anchor boxes on the feature map. After the above operations, we will obtain sample features and negative features from the OBIs dataset images, and positive features from the OBC font library images. These features are then flattened into feature vectors, and ...  we will perform contrastive learning on these feature vectors. In contrastive learning, we will calculate a loss based on the sample and its positive and negative samples, and add this loss to the total loss of the network during training to adjust the model parameters by gradient feedback.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Acquisition of RoI Features</head><p>Object detection networks usually first pass the image through a convolutional neural network to extract its feature map. For example, we have applied our method on Faster R-CNN <ref type="bibr" target="#b37">[38]</ref>, DETR <ref type="bibr" target="#b38">[39]</ref>, and Sparse R-CNN <ref type="bibr" target="#b39">[40]</ref>, which all use ResNet <ref type="bibr" target="#b41">[42]</ref> as their feature extraction network. First, the OBIs dataset images and the OBC font library images are sent as inputs to the feature extraction network in the detection network at the same time. Let's assume that the image from the OBIs dataset is I 1 ∈ R H1×W1×3 , the image from the OBC font library dataset is I 2 ∈ R H2×W2×3 . We will obtain feature map F 1 = E(I 1 ) ∈ R H1×W1×C1 and feature map F 2 = E(I 2 ) ∈ R H2×W2×C2 respectively after the forward propagation of the feature extraction network. We will get anchor boxes based on the feature map, and we will set an Intersection over union(IoU) threshold to judge whether it is a positive anchor box or a negative anchor box according to whether the IoU values of the anchor box and ground truth bounding box are larger or smaller than it. The setting of the threshold is related to whether the original detection model contains sparse box property. If the original detection model contains sparse box property, the threshold will be set relatively small. On the contrary, if the original model does not contain sparse box property, that is, it contains dense box property, then the threshold will be set relatively large. We use the RoI Align layer to extract the features framed by coordinates on the feature map and scale them to a uniform size, and then flatten them to the feature vectors. At this time, the two groups of features to be clustered are the features of OBIs detection dataset images and the OBC font library images, and the next step is to perform cluster analysis.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Clustering-based Contrastive Learning</head><p>Our method uses the K-Means clustering algorithm in the training phase to cluster the feature vectors corresponding to the negative anchor boxes in the OBIs detection dataset images and the positive anchor boxes in the OBC font library images respectively. We assume that the number of clusters of the features of the negative anchor boxes in the OBIs dataset is set to be N, we will get cluster centers {C N } by using the following formula after K-Means clustering.</p><formula xml:id="formula_0">C N = 1 |M N | xi∈M N x i (1)</formula><p>where M N is the set of feature points belonging to the cluster C N .</p><p>Similarly, we assume that the number of clusters of the features of the positive anchor boxes in the OBC font library dataset is set to be M, we will get cluster centers {C M } after K-Means clustering, then we will take the average at these cluster centers to obtain an average point C M mean . We'll conduct a contrastive learning of point and centers of clustering based on the clustering results, in order to achieve intra-cluster compactness and inter-cluster separation. In our method, the samples are the features of the positive anchor boxes in the OBIs images, and their positive samples is C M mean , they will form positive sample pairs. Their negative samples are the cluster centers {C N }. We do this by using the following formula such that each feature point is close to its own cluster center and far away from other cluster centers.</p><formula xml:id="formula_1">L clus (p n ) = -log exp (p n • C M mean /τ ) n exp (p n • C N /τ ) ,<label>(2)</label></formula><p>where τ &gt; 0 is a scalar temperature parameter, C M mean refers to the average point of positive sample cluster center of feature point p n , which is from cluster centers {C M }. C N refers to the negative sample cluster centers of feature point p n , which is from cluster centers {C N }. The numerator is the similarity of the feature point and its positive sample cluster center, the denominator is the similarity of the feature point and all of its positive sample cluster centers. At training time, we update the parameters in the direction of the descending gradient of the L clus , to decrease the distance between p n and C ′ , while increasing the distance between p n and C n . The L clus will guide the model to train a feature network that makes different features more separate. In the case of our particular task are increasing the distance between the features of OBIs and the features of noise, cracks, and compound graphs. Compared with high-level semantic supervision information, it provides more effective and direct supervision from the aspect of data structure.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">Loss function</head><p>The input of our method has two image datasets, namely the OBIs detection dataset images and the OBC font library images. During the forward propagation of the network, OBIs images will generate L class and L box . The total loss function can be expressed as a weighted sum of L class , L box and L clus :</p><formula xml:id="formula_2">L = λ 1 L clus + λ 2 L class + λ 3 L box<label>(3)</label></formula><p>The OBC font library images are treated as prior knowledge to be introduced to guide the learning process of the model, which should only be used when calculating the L clus , and other losses they generate are not included in the final total loss. The weight parameters λ 1 , λ 2 , λ 3 are set differently according to the characteristics of each model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Implementation Details and Evaluation Metrics</head><p>We applied our method to three detection models: Faster R-CNN, DETR, and Sparse R-CNN, and they are all implemented based on Python and PyTorch. We trained these models on four NVIDIA RTX A6000. We will introduce the details of experimental implementation for each of the three models.</p><p>Faster R-CNN and Sparse R-CNN both used ResNet-50 as feature extraction network, then used Feature Pyramid Networks (FPN) <ref type="bibr" target="#b42">[43]</ref> to achieve better feature map fusion. We initialized the parameters of ResNet-50 with weights pre-trained on the ImageNet dataset Torchvision officially provided, and the other parameters were initialized randomly. We employed the SGD optimizer for training Faster R-CNN <ref type="bibr" target="#b43">[44]</ref>, with a momentum parameter set to 0.9 and a weight decay parameter set to 1 × 10 -4 .</p><p>DETR used ResNet-101 as the feature extraction network. We initialized the parameters of our DETR model with weights pre-trained on the COCO 2017 dataset Facebook officially provided. DETR and Sparse R-CNN both employed the AdamW <ref type="bibr" target="#b44">[45]</ref> optimizer for training, with a weight decay parameter set to 1 × 10 -4 .</p><p>The remaining parameter settings of the three models are shown in the table <ref type="table" target="#tab_0">1</ref>. Before introducing the evaluation metrics of the method, we first introduce the concept of confusion matrix. The sample is a very important concept in the evaluation of object detection methods. Positive sample is the object that needs to be detected, and negative sample is the object that does not need to be detected. When the model is predicting, there are usually four situations: TP, FP, TN, and FN. In object detection, the final bounding boxes predicted by the model are regarded as positive samples, while whether the prediction belongs to TP or FP depends on the value of IoU. IoU calculates the ratio between the intersection area of the predicted bounding box and the ground truth bounding box and the merging area, and we will set a threshold value, which is 0.5 in this study. If the value of IoU of the predicted bounding box and ground truth bounding box is greater than this threshold, the predicted case of this bounding box is TP. Conversely, if the value of IoU of the predicted bounding box and any ground truth bounding box is less than this threshold, then the prediction of this bounding box is FP. If the IoU value of a ground truth bounding box and any predicted bounding box is less than this threshold, it is FN.</p><p>We use three evaluation metrics <ref type="bibr" target="#b45">[46]</ref> commonly used in object detection models based on confusion matrix, namely Precision, defined as is the proportion of TP in all prediction numbers; Recall, defined as is the proportion of TP in all object numbers; F1-score, defined as is the harmonic mean of precision and recall, which is based on the comprehensive evaluation model of precision and recall.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Main results</head><p>To prove the performance improvement of our method for detection models, we conducted a series of comparative experiments on the two OBIs detection datasets mentioned in Section 2.1, Precision, Recall, and F1-socre were used to evaluate and compare the performance of the Faster R-CNN, DETR, DENO <ref type="bibr" target="#b46">[47]</ref> and Sparse R-CNN model and the improved Faster R-CNN, DETR, DENO, and Sparse R-CNN model, as shown in Table <ref type="table">2</ref> and Table <ref type="table" target="#tab_2">3</ref>. The model without special marking means that its backbone is ResNet.</p><p>Table <ref type="table">2</ref>: Comparison results on OBIs detection dataset <ref type="bibr" target="#b36">[37]</ref> between existing models and our proposed method. AP is averaged over multiple loU values. Specifically we use 10 loU thresholds of .50:.05:.95. AP 50 is computed the average precision at a single loU of 0.50. AR 50 is computed the average recall at a single loU of 0.50.   As shown in Table <ref type="table">2</ref> and Table <ref type="table" target="#tab_2">3</ref>, Considering transformer based approaches like Swin Transformer can provide deeper insights into the advantages of clustering based representation learning, we added the experiment of replacing the backbone of the three models with Swin Transformer <ref type="bibr" target="#b47">[48]</ref>. Among them, because DETR replaced the backbone with the Swin Transformer and there was no global pre-training weight, the model failed to converge during training. So we replaced DETR with DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection <ref type="bibr" target="#b46">[47]</ref>. It is an improved version of DETR and can converge better during training. From the numerical point of view, after the application of our proposed method in these three models, the precision, recall, and F1-score have been improved to some extent compared with the baseline model, only the accuracy rate on Faster R-CNN-Swin has slightly decreased. so our proposed method is meaningful for the improvement of the detection effect of the models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model</head><p>As shown in Table <ref type="table" target="#tab_3">4</ref>, from the numerical point of view, after the application of our proposed method in these three models, the consumption in terms of both training time and memory usage have increased to a certain extent, but it is all within an acceptable range.</p><p>As is well known, there are some high-performance and most popular detection frameworks such as YOLO <ref type="bibr" target="#b48">[49]</ref>. However, our method is not suitable for application to models of the YOLO class. Because YOLO ultimately uses global features to predict categories and regression box coordinates, while the method we use takes out each feature in the box to predict categories and regression box coordinates, and our clustering algorithm improves for each feature, it has no effect on global features.</p><p>In addition to the comparison of numerical results, we also did visualization experiments, namely the visualization of features and the visualization of detection results.</p><p>Detection results. We visualized the detection results of the three models. As shown in Fig. <ref type="figure" target="#fig_2">3</ref> and Fig. <ref type="figure" target="#fig_3">4</ref>, it can be obviously seen that our method has significantly improved the detection effect of the three models.</p><p>Features. The feature vectors for comparison learning were sample features, positive features, and negative features, which were reduced to two dimensions using t-SNE <ref type="bibr" target="#b49">[50]</ref> dimensionality reduction method, and these points were presented in an image. We can use these visualizations to further visualize the role of contrast learning in our method.</p><p>As shown in Fig. <ref type="figure" target="#fig_4">5</ref>, we observe the visualization of the evolution process of the Faster R-CNN model using our proposed method first. With the epoch number increased, the sample features, which were initially scattered and unordered, mixed with negative features, are gradually guided by positive features to concentrate at the bottom and linearly separate from negative features. Throughout the process, the number of sample features increases gradually, while the number of negative features decreases. The visualization results of this evolution indicate that the features from OBC font library dataset are effective in guiding the features from OBIs dataset to be away from those of non-characters. Furthermore, as shown in Fig. <ref type="figure" target="#fig_5">6</ref>, by directly comparing the feature point visualization image of the baseline Faster R-CNN model and the Faster R-CNN model using our proposed method, it can be seen that the sample features and negative features in the baseline Faster R-CNN model are mixed together and linearly inseparable. In contrast, the sample features and negative features in the Faster R-CNN model using our method are separated and linearly separable. Moreover, the number of sample features in the latter is much greater than that in the former, and the number of negative features in the latter is much smaller than that in the former, which indicates that applying our method can guide the model to output more anchor boxes containing characters, while reducing the output of anchor boxes containing cracks, noise, etc. This has a certain significance for improving the detection performance of the model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Hyperparameter and Result analysis</head><p>Firstly, we analyze the different effects of the setting of four hyper-parameters, namely the number of OBC from OBC font library dataset used as prior knowledge, the setting of temperature parameter τ , the setting of λ 1 , λ 2 , λ 3 , and the setting of clustering technique on the model detection effect. Secondly, we analyze whether the results are reproducible.    . Number of OBC used as prior knowledge. We applied our method on the Faster R-CNN, DETR and Sparse R-CNN models with the number of OBC used as prior knowledge sets of 10, 20, and 50 respectively, and the results obtained are shown in Table <ref type="table" target="#tab_4">5</ref>.</p><p>Firstly, we present the experimental results of different numbers of OBC used as prior knowledge on the Faster R-CNN model. When the number of OBC used as prior knowledge is set to 10 and 20, the performance on AP, AP 50 , and AP 75 is improved compared to the baseline Faster R-CNN model. The improvement effect of the number of OBC used as prior knowledge set to 20 is better than that of the number of OBC used as prior knowledge set to 10. When the number of OBC used as prior knowledge is set to 50, the performance on AP and AP 50 is slightly decreased compared to the baseline Faster R-CNN model, and the performance on AP 75 is basically the same. Therefore, after the number of OBC used as prior knowledge is set to 50, our method has a negative effect on the Faster R-CNN model, resulting in lower accuracy than the baseline Faster R-CNN model.</p><p>We perform a visual analysis of this experimental result by visualizing the distribution of sample features, positive features, and negative features when the number of OBC used as prior knowledge is set to 10, 20, and 50. As shown in Fig. <ref type="figure" target="#fig_6">7</ref>, when the number of OBC used as prior knowledge is set to 10 and 20, the positive features are concentrated on the right side, providing effective guidance for the distribution of sample features, and finally, sample features and negative features can be linearly separated. When the number of OBC used as prior knowledge is set to 50, the positive features are distributed relatively randomly, providing negative guidance for the distribution of sample features, and finally, sample features and negative features cannot be linearly separated.</p><p>Secondly, we look at the experimental results of different number of OBC used as prior knowledge on the DETR model. When the number of OBC used as prior knowledge is set to 10, there is a decrease in the performance compared with baseline DETR model on AP, AP 50 and AP 75 . When the number of OBC used as prior knowledge is set to 20 and 50, the effect on AP, AP 50 and AP 75 is improved compared with baseline DETR model. In terms of overall improvement effect, the number of OBC used as prior knowledge set to 50 is better than the set to 20.</p><p>The experimental results of different numbers of OBC used as prior knowledge on the Sparse R-CNN model are similar to that for the DETR model. The best setting is 20.  Setting of temperature parameter τ . Our method was experimented on three models and proved to improve the detection performance of all three models compared to the original baseline model. However, it can be observed that the improvement in the sparse detection method is not as significant as that in the dense detection method. The reason for this result is that in the contrastive learning process of the dense detection method in our method, each sample has more negative samples available for learning, while the number of negative samples corresponding to each sample in the sparse detection method is relatively smaller. In contrastive learning, the temperature plays a role in controlling the strength of penalties on the hard negative samples. Specifically, contrastive loss with small temperature tends to penalize much more on the hardest negative samples. On the other hand, contrastive loss with large temperatures is less sensitive to the hard negative samples. In our method, there is a problem that the number of negative samples corresponding to samples is small in the sparse detection model, so the distinction between positive and negative samples should be enhanced, and the smaller the corresponding temperature should be set, the better the experimental results will be. We did the following experiment. From Table <ref type="table" target="#tab_5">6</ref>, it can be seen that when the number of OBC used as prior knowledge is set to 10, the temperature parameter τ decreased from 0.1 to 0.05 and 0.01, the performance on AP, AP 50 , and AP 75 is improved compared to the baseline DETR and Sparse R-CNN model. The best setting of the temperature parameter τ for the DETR and Sparse R-CNN model are both 0.05 when the number of OBC used as prior knowledge is set to 10. When the number of OBC used as prior knowledge is set to 20, the temperature parameter τ decreased from 0.1 to 0.05, the performance on AP, AP 50 , and AP 75 is improved compared to the baseline DETR model. The best setting of the temperature parameter τ for the DETR and Sparse R-CNN model are respectively 0.05 and 0.1 when the number of OBC used as prior knowledge is set to 20. When the number of OBC used as prior knowledge is set to 50, the temperature parameter τ decreased from 0.1 to 0.01, the performance on AP, AP 50 , and AP 75 is improved compared to the baseline DETR and Sparse R-CNN models. The best setting of the temperature parameter τ for the DETR and Sparse R-CNN model are both 0.01 when the number of OBC used as prior knowledge is set to 50. Therefore, when our method is applied to the sparse detection model, the temperature should be set smaller to compensate for the problem that when the sparse detection models use our method, they will have fewer negative samples corresponding to the samples in the contrastive learning process. This will enable our method to achieve better performance when applied to the sparse detection model.</p><p>To further optimize our method performance, we use Bayesian Optimization technique to tune our hyperparameters, and the results obtained were shown in Table <ref type="table" target="#tab_6">7</ref>. Setting of λ 1 , λ 2 , λ 3 . The total loss function of our method can be expressed as a weighted sum of L class , L box and L clus :</p><formula xml:id="formula_3">L = λ 1 L clus + λ 2 L class + λ 3 L box<label>(4)</label></formula><p>Among them, λ 2 and λ 3 are set based on the default parameters of the original model, while λ 1 is set according to the rule that the loss we add is of the same order of magnitude as the other losses. We applied our method on the Faster R-CNN, DETR and Sparse R-CNN models with different setting of λ 1 , λ 2 , λ 3 , and the results obtained were shown in Table <ref type="table" target="#tab_7">8</ref>. As shown in Table <ref type="table" target="#tab_7">8</ref>, We attempted to set the sum of λ 1 , λ 2 , λ 3 to equal 1, or keep the values of λ 2 , λ 3 and only increase λ 1 . However, the results were not better than keeping λ 2 and λ 3 in the original model set and then ensuring that λ 1 is of the same order of magnitude as them.</p><p>Setting of clustering technique. We applied our method on the Faster R-CNN, DETR and Sparse R-CNN models with different setting of clustering technique, namely K-Means and DBSCAN, and the results obtained were shown in Table <ref type="table">9</ref>.</p><p>Table <ref type="table">9</ref>: Effect of setting of clustering technique on different models. We use the parameters eps=12, min samples=5 and eps=5, min samples=2 and eps=5, min sam-ples=2 for DBSCAN respectively. The performance of the None means the baseline performance. As shown in Table <ref type="table">9</ref>, after changing the clustering method to DBSCAN, the detection effect of the model has decreased. The reason might be that: DBSCAN marks the points in the low-density area as noise, and our method precisely requires these points determined as noise as negative samples in contrastive learning.</p><p>The reproducibility of result. In our method, we use random initialization for K-means. Considering the potential sensitivity of K-means to initialization, we conducted three experiments respectively on three models with the same parameters, and the results are as shown in Table <ref type="table" target="#tab_8">10</ref>. As shown in Table <ref type="table" target="#tab_8">10</ref>, each experiment was repeated 5 times with different random initializations. We report the mean and standard deviation of the precision and recall. The results are reproducible when rerunning the code.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion</head><p>We propose a novel clustering-based feature space representation learning method to address the unique challenges of the detection of OBIs. The idea of our method is to guide the model to learn more discriminative feature representations by utilizing the OBC font library as a clean, expert-curated reference point. We conducted experiments on three main-stream detection frameworks: Faster R-CNN, DETR, and Sparse R-CNN on two OBIs detection datasets. Both numerical and visual experimental results prove that our method can improve the detection effect of the three models to some extent. Our method offers an idea: how to use font libraries as the prior knowledge of the network to guide the learning of the network and improve the effect of the network, which is generalizable, particularly with the advancements of character databases and font libraries.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FFNFig. 2 :</head><label>2</label><figDesc>Fig. 2: The pipeline of our proposed method. Our method takes an OBIs detection dataset and the OBC font library dataset as the inputs. The sample features and negative features are the features extracted in the positive and negative sample boxes on the OBIs images. The positive features are the features extracted in the positive sample boxes on the OBC font library dataset.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3 :</head><label>3</label><figDesc>Fig. 3: Comparative detection results on three models, the partially enlarged image at the bottom is the baseline model, and the one at the top is with our method.</figDesc><graphic coords="12,283.95,567.28,51.90,71.89" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 4 :</head><label>4</label><figDesc>Fig. 4: Comparative detection results on three models, the partially enlarged image at the bottom is the baseline model, and the one at the top is with our method.</figDesc><graphic coords="13,102.55,477.91,143.35,158.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 5 :</head><label>5</label><figDesc>Fig. 5: Comparison of visualization results of the distribution of positive features, negative features and sample features generated from the Faster R-CNN+ours model which uses weight from epoch=0, 3, 6, 9.</figDesc><graphic coords="14,130.16,80.46,66.19,55.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>FasterFig. 6 :</head><label>6</label><figDesc>Fig. 6: Comparison of visualization results of the distribution of positive features, negative features and sample features generated from the baseline Faster R-CNN model which uses weight that reaches the highest AP 50 and positive features, negative features and sample features generated from the Faster R-CNN+ours model which uses weight that reaches the highest AP 50 .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 7 :</head><label>7</label><figDesc>Fig. 7: Comparison of visualization results of the distribution of positive features, negative features and sample features generated from the Faster R-CNN+ours model with the number of OBC used as prior knowledge is set to 10, 20, 50.</figDesc><graphic coords="15,105.92,421.36,65.17,54.90" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Faster</head><label></label><figDesc><ref type="bibr" target="#b47">48</ref>.1(+1.1) 86.4(+2.7) 48.7(+0.8) 36.0(+0.3) 76.7(+0.9) 28.9(+0.5) 37.2(+0.7) 73.4(+1.1) 34.1(+1.0</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 :</head><label>1</label><figDesc>The setting of learning rate, λ 1 , λ 2 , λ 3 , and Batchsize of Faster R-CNN+ours, DETR+ours and Sparse R-CNN+ours.</figDesc><table><row><cell>Model</cell><cell>Learning Rate</cell><cell>λ 1 , λ 2 , λ 3</cell><cell>Batchsize</cell></row><row><cell>Ours (Faster R-CNN)</cell><cell>1 × 10 -2</cell><cell>1, 1, 1</cell><cell>2</cell></row><row><cell>Ours (DETR)</cell><cell>1 × 10 -4</cell><cell>1, 5, 1</cell><cell>2</cell></row><row><cell>Ours (Sparse R-CNN)</cell><cell>2.5 × 10 -5</cell><cell>0.1, 1, 1</cell><cell>4</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 3 :</head><label>3</label><figDesc>Comparison results on OBIMD<ref type="bibr" target="#b40">[41]</ref> between existing models and our proposed method.</figDesc><table><row><cell>Model</cell><cell>AP</cell><cell>AP 50</cell><cell>AP 75</cell><cell>AR 50</cell><cell>F1-Score 50</cell></row><row><cell>Faster R-CNN-R50</cell><cell>33.2</cell><cell>70.9</cell><cell>26.2</cell><cell>79.8</cell><cell>75.1</cell></row><row><cell>DETR-R101</cell><cell>29.3</cell><cell>66.4</cell><cell>21.0</cell><cell>75.7</cell><cell>70.7</cell></row><row><cell>Sparse R-CNN-R50</cell><cell>29.2</cell><cell>60.1</cell><cell>23.3</cell><cell>77.7</cell><cell>67.7</cell></row><row><cell>Ours (Faster R-CNN-R50)</cell><cell cols="5">34.3(+1.1) 73.4(+2.5) 26.6(+0.4) 81.4(+1.6) 77.2(+2.1)</cell></row><row><cell>Ours (DETR-R101)</cell><cell cols="5">30.0(+0.7) 68.0(+1.6) 22.0(+1.0) 76.1(+0.4) 71.8(+1.1)</cell></row><row><cell>Ours (Sparse R-CNN-R50)</cell><cell cols="5">30.1(+0.9) 62.6(+2.5) 24.7(+1.4) 78.7(+1.0) 69.7(+2.0)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 :</head><label>4</label><figDesc>Comparison Training time and Memory usage on OBIs detection dataset<ref type="bibr" target="#b36">[37]</ref> and OBIMD<ref type="bibr" target="#b40">[41]</ref> between existing models and our proposed method.</figDesc><table><row><cell>Dataset</cell><cell>Model</cell><cell cols="2">Training time Memory usage(GiB)</cell></row><row><cell>OBIs detection dataset</cell><cell>Faster R-CNN</cell><cell>10h56min</cell><cell>18.77</cell></row><row><cell></cell><cell>Ours (Faster R-CNN)</cell><cell>13h23min</cell><cell>20.57</cell></row><row><cell></cell><cell>DETR</cell><cell>13h12min</cell><cell>10.50</cell></row><row><cell></cell><cell>Ours (DETR)</cell><cell>17h33min</cell><cell>13.01</cell></row><row><cell></cell><cell>Sparse R-CNN</cell><cell>7h32min</cell><cell>12.31</cell></row><row><cell></cell><cell>Ours (Sparse R-CNN)</cell><cell>9h42min</cell><cell>16.14</cell></row><row><cell>OBIMD</cell><cell>Faster R-CNN</cell><cell>14h1min</cell><cell>18.89</cell></row><row><cell></cell><cell>Ours (Faster R-CNN)</cell><cell>16h27min</cell><cell>20.90</cell></row><row><cell></cell><cell>DETR</cell><cell>15h8min</cell><cell>10.62</cell></row><row><cell></cell><cell>Ours (DETR)</cell><cell>20h25min</cell><cell>13.23</cell></row><row><cell></cell><cell>Sparse R-CNN</cell><cell>9h35min</cell><cell>12.50</cell></row><row><cell></cell><cell>Ours (Sparse R-CNN)</cell><cell>11h45min</cell><cell>16.24</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 :</head><label>5</label><figDesc>Effect of number of OBC used as prior knowledge on different models. The performance of the number of OBC used as prior knowledge set to 0 means the baseline performance.</figDesc><table><row><cell>OBC</cell><cell></cell><cell>Faster R-CNN</cell><cell></cell><cell></cell><cell>DETR</cell><cell></cell><cell></cell><cell>Sparse R-CNN</cell><cell></cell></row><row><cell></cell><cell>AP</cell><cell>AP50</cell><cell>AP75</cell><cell>AP</cell><cell>AP50</cell><cell>AP75</cell><cell>AP</cell><cell>AP50</cell><cell>AP75</cell></row><row><cell>0</cell><cell>47.0</cell><cell>83.7</cell><cell>47.9</cell><cell>35.7</cell><cell>75.8</cell><cell>28.4</cell><cell>36.5</cell><cell>72.3</cell><cell>33.1</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 6 :</head><label>6</label><figDesc>Effect of Setting of temperature parameter τ on different models. The performance of temperature parameter τ set to 0.1 is viewed as the baseline performance.</figDesc><table><row><cell>OBC</cell><cell>τ</cell><cell></cell><cell>Ours (DETR)</cell><cell></cell><cell cols="3">Ours (Sparse R-CNN)</cell></row><row><cell></cell><cell></cell><cell>AP</cell><cell>AP 50</cell><cell>AP 75</cell><cell>AP</cell><cell>AP 50</cell><cell>AP 75</cell></row><row><cell>10</cell><cell>0.1</cell><cell>35.2</cell><cell>75.5</cell><cell>27.8</cell><cell>36.3</cell><cell>71.7</cell><cell>33.1</cell></row><row><cell>10</cell><cell cols="7">0.05 36.7(+1.5) 77.0(+1.5) 30.7(+2.9) 37.3(+1.0) 72.8(+1.1) 34.7(+1.6)</cell></row><row><cell>10</cell><cell cols="7">0.01 36.5(+1.3) 76.1(+0.6) 30.8(+3.0) 36.5(+0.2) 72.0(+0.3) 33.4(+0.3)</cell></row><row><cell>10</cell><cell cols="7">0.005 34.6(-0.6) 75.1(-0.4) 27.7(-0.1) 36.6(+0.3) 72.2(+0.5) 33.8(+0.7)</cell></row><row><cell>20</cell><cell>0.1</cell><cell>36.0</cell><cell>76.7</cell><cell>28.9</cell><cell>37.2</cell><cell>73.4</cell><cell>34.1</cell></row><row><cell>20</cell><cell cols="7">0.05 37.4(+1.4) 76.8(+0.2) 32.4(+3.5) 36.9(-0.3) 72.7(-0.7) 33.1(-1.0)</cell></row><row><cell>20</cell><cell>0.01</cell><cell>36.0</cell><cell cols="5">74.9(-1.8) 30.3(+1.4) 37.0(-0.2) 72.9(-0.5) 33.4(-0.7)</cell></row><row><cell>20</cell><cell cols="3">0.005 35.2(-0.8) 75.2(-1.5)</cell><cell>28.9</cell><cell cols="3">36.6(-0.6) 72.1(-1.3) 33.4(-0.7)</cell></row><row><cell>50</cell><cell>0.1</cell><cell>36.8</cell><cell>76.5</cell><cell>31.1</cell><cell>36.7</cell><cell>72.4</cell><cell>33.4</cell></row><row><cell>50</cell><cell>0.05</cell><cell cols="6">35.3(-1.5) 75.8(-0.7) 27.5(-3.6) 35.9(-0.8) 71.4(-1.0) 32.5(-0.9)</cell></row><row><cell>50</cell><cell cols="7">0.01 38.5(+1.7) 76.8(+0.3) 33.7(+2.6) 37.3(+0.6) 73.0(+0.6) 34.5(+1.1)</cell></row><row><cell>50</cell><cell cols="7">0.005 34.3(-2.5) 75.3(-1.2) 26.2(-4.9) 36.3(-0.4) 71.7(-0.7) 33.2(-0.2)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 7 :</head><label>7</label><figDesc>Use Bayesian Optimization technique to tune our hyperparameters. The M and N are the number of clusters of negative samples and the number of clusters of positive samples mentioned in Section 2.4.</figDesc><table><row><cell>Model</cell><cell>OBC</cell><cell>τ</cell><cell>M,N</cell><cell>AP</cell><cell>AP 50</cell><cell>AP 75</cell><cell>AR 50</cell><cell>F1-Score 50</cell></row><row><cell>Faster R-CNN</cell><cell></cell><cell></cell><cell></cell><cell>47.0</cell><cell>83.7</cell><cell>47.9</cell><cell>89.1</cell><cell>86.3</cell></row><row><cell>DETR</cell><cell></cell><cell></cell><cell></cell><cell>35.7</cell><cell>75.8</cell><cell>28.4</cell><cell>88.2</cell><cell>81.5</cell></row><row><cell>Sparse R-CNN</cell><cell></cell><cell></cell><cell></cell><cell>36.5</cell><cell>72.3</cell><cell>33.1</cell><cell>89.0</cell><cell>79.7</cell></row><row><cell>Ours (Faster R-CNN)</cell><cell>27</cell><cell cols="7">0.099 63,3 48.5(+1.5) 86.6(+2.9) 48.7(+0.8) 92.6(+1.5) 89.5(+2.2)</cell></row><row><cell>Ours (DETR)</cell><cell>40</cell><cell cols="7">0.069 41,2 36.7(+1.0) 77.1(+1.3) 31.0(+2.6) 88.5(+0.3) 82.4(+0.9)</cell></row><row><cell>Ours (Sparse R-CNN)</cell><cell>34</cell><cell cols="5">0.073 48,4 37.3(+0.8) 73.4(+1.1) 34.2(+1.1)</cell><cell>89.0</cell><cell>80.4(+0.7)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 8 :</head><label>8</label><figDesc>Effect of different setting of λ 1 , λ 2 , λ 3 on different models. The performance of None means the baseline performance.</figDesc><table><row><cell>λ1, λ2, λ3</cell><cell></cell><cell cols="2">Ours (Faster R-CNN)</cell><cell>λ1, λ2, λ3</cell><cell></cell><cell>Ours (DETR)</cell><cell></cell><cell>λ1, λ2, λ3</cell><cell>Ours (Sparse R-CNN)</cell></row><row><cell></cell><cell>AP</cell><cell>AP50</cell><cell>AP75</cell><cell></cell><cell>AP</cell><cell>AP50</cell><cell>AP75</cell><cell></cell><cell>AP</cell><cell>AP50</cell><cell>AP75</cell></row><row><cell></cell><cell>47.0</cell><cell>83.7</cell><cell>47.9</cell><cell></cell><cell>35.7</cell><cell>75.8</cell><cell>28.4</cell><cell></cell><cell>36.5</cell><cell>72.3</cell><cell>33.1</cell></row><row><cell>1,1,1</cell><cell cols="3">48.1(+1.1) 86.4(+2.7) 48.7(+0.8)</cell><cell>1,5,1</cell><cell cols="3">36.7(+1.0) 77.0(+1.2) 30.7(+2.3)</cell><cell>0.1,1,1</cell><cell>37.2(+0.7) 72.4(+0.1) 34.6(+1.5)</cell></row><row><cell cols="6">0.33,0.33,0.33 47.5(+0.5) 85.8(+2.1) 48.5(+0.6) 0.14,0.71,0.14 34.8(-0.9)</cell><cell>75.2(-0.6)</cell><cell cols="3">28.3(-0.1) 0.05,0.48,0.48 36.8(+0.3) 72.1(-0.3) 34.2(+0.9)</cell></row><row><cell>2,1,1</cell><cell cols="3">47.2(+0.2) 85.4(+1.7) 48.3(+0.4)</cell><cell>2,5,1</cell><cell>35.0(-0.7)</cell><cell cols="2">75.0(-0.8) 30.1(+1.6)</cell><cell>0.2,1,1</cell><cell>36.2(-0.3)</cell><cell>72.0(-0.3) 34.0(+0.9)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 10 :</head><label>10</label><figDesc>Effect of different random initializations on different models. We repeated 5 times with different random initializations on different models. Ours (Faster R-CNN) 48.1 ± 0.1 86.0 ± 0.2 49.6 ± 1.1 91.8 ± 0.5 88.8 ± 0.3 Ours (DETR) 36.6 ± 0.2 76.7 ± 0.2 30.5 ± 0.2 88.4 ± 0.3 82.2 ± 0.2 Ours (Sparse R-CNN) 37.2 ± 0.1 73.2 ± 0.1 34.4 ± 0.2 88.9 ± 0.1 80.3 ± 0.1</figDesc><table><row><cell>Model</cell><cell>AP</cell><cell>AP 50</cell><cell>AP 75</cell><cell>AR 50</cell><cell>F1-Score 50</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><p>Acknowledgements. This work is supported by the <rs type="funder">Young Scientists Fund of the National Natural Science Foundation of China</rs> (Grant No.<rs type="grantNumber">62206106</rs>), and is a phased achievement of the <rs type="funder">National Social Science Foundation</rs> project "<rs type="projectName">Research on Chinese Pre Qin Language and Culture Based on Jinwen Data</rs>" (No. <rs type="grantNumber">23VRC033</rs>), and has also received funding from the interdisciplinary cultivation project for young teachers and students at <rs type="institution">Jilin University</rs>, "<rs type="projectName">Research on Jinwen Data Based on Artificial Intelligence</rs>" (No. <rs type="grantNumber">2024-JCXK-04</rs>), and is funded by the <rs type="funder">"Ancient Chinese Script and Chinese Civilization Inheritance and Development Project"</rs> under the project "<rs type="projectName">Construction of Ancient Chinese Script Artificial Intelligence Recognition System</rs>" (Project No. <rs type="grantNumber">G3829</rs>), and is supported by <rs type="funder">Graduate Work Department of Jilin University</rs>.</p><p>Author contributions. XY developed the research idea and provided valuable suggestions for this manuscript. YT conducted the experiments in this manuscript. YT, HP, and XF wrote this manuscript. CL provided specialized knowledge of ancient writing.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_35CbzdJ">
+					<idno type="grant-number">62206106</idno>
+				</org>
+				<org type="funded-project" xml:id="_xamsENe">
+					<idno type="grant-number">23VRC033</idno>
+					<orgName type="project" subtype="full">Research on Chinese Pre Qin Language and Culture Based on Jinwen Data</orgName>
+				</org>
+				<org type="funded-project" xml:id="_SK4jAyP">
+					<idno type="grant-number">2024-JCXK-04</idno>
+					<orgName type="project" subtype="full">Research on Jinwen Data Based on Artificial Intelligence</orgName>
+				</org>
+				<org type="funded-project" xml:id="_xgfKbDT">
+					<idno type="grant-number">G3829</idno>
+					<orgName type="project" subtype="full">Construction of Ancient Chinese Script Artificial Intelligence Recognition System</orgName>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Data availability. The data are available at https://jgw.aynu.edu.cn and https: //www.jgwlbq.org.cn/home respectively.</p><p>Code availability. The code are available at https://github.com/biscuit030/ Clustering-based-Feature-Representation-Learning-for-Oracle-Bone-Inscriptions-Detection</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Competing Interests. The authors declare no competing interests.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Detecting text in natural scenes with stroke width transform</title>
+		<author>
+			<persName><forename type="first">Boris</forename><surname>Epshtein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eyal</forename><surname>Ofek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yonatan</forename><surname>Wexler</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2010.5540041</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2010-06">2010. 2010</date>
+			<biblScope unit="page" from="2963" to="2970" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">AdaBoost for Text Detection in Natural Scene</title>
+		<author>
+			<persName><forename type="first">Jung-Jin</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pyoung-Hean</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Seong-Whan</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Yuille</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christof</forename><surname>Koch</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icdar.2011.93</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2011 International Conference on Document Analysis and Recognition</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2011-09">2011</date>
+			<biblScope unit="page" from="429" to="434" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Automatic text location in images and video frames</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern recognition</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="2055" to="2076" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Hwobc-a handwriting oracle bone character recognition database</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Physics: Conference Series</title>
+		<imprint>
+			<biblScope unit="volume">1651</biblScope>
+			<biblScope unit="page">12050</biblScope>
+			<date type="published" when="2020">2020</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">OBC306: A Large-Scale Oracle Bone Character Recognition Dataset</title>
+		<author>
+			<persName><forename type="first">Shuangping</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haobin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaosong</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icdar.2019.00114</idno>
+		<ptr target="https://doi.org/10.1109/ICDAR.2019.00114" />
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-09">2019</date>
+			<biblScope unit="page" from="681" to="688" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Spatial Pyramid Block for Oracle Bone Inscription Detection</title>
+		<author>
+			<persName><forename type="first">Guoying</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jici</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Xiong</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3384544.3384561</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2020 9th International Conference on Software and Computer Applications</title>
+		<meeting>the 2020 9th International Conference on Software and Computer Applications</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2020-02-18">2020</date>
+			<biblScope unit="page" from="133" to="140" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">An Oracle Bone Inscription Detector Based on Multi-Scale Gaussian Kernels</title>
+		<author>
+			<persName><forename type="first">Guoying</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuanghao</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingju</forename><surname>Jiao</surname></persName>
+		</author>
+		<idno type="DOI">10.4236/am.2021.123014</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Mathematics</title>
+		<title level="j" type="abbrev">AM</title>
+		<idno type="ISSN">2152-7385</idno>
+		<idno type="ISSNe">2152-7393</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">03</biblScope>
+			<biblScope unit="page" from="224" to="239" />
+			<date type="published" when="2021">2021</date>
+			<publisher>Scientific Research Publishing, Inc.</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Shape prior fusion for oracle bone inscriptions detection</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2024 7th International Conference on Image and Graphics Processing</title>
+		<meeting>the 2024 7th International Conference on Image and Graphics Processing</meeting>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="394" to="401" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Detecting oracle bone inscriptions via pseudocategory labels</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Heritage Science</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">107</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Soft-nms-improving object detection with one line of code</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Bodla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chellappa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">S</forename><surname>Davis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE International Conference on Computer Vision</title>
+		<meeting>the IEEE International Conference on Computer Vision</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="5561" to="5569" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Inception single shot multibox detector for object detection</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ning</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICMEW.2017.8026312</idno>
+		<ptr target="https://doi.org/10.1109/ICMEW.2017.8026312" />
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE International Conference on Multimedia &amp; Expo Workshops (ICMEW)</title>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="549" to="554" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Textboxes: A fast text detector with a single deep neural network</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<meeting>the AAAI Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">31</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">SSD: Single Shot MultiBox Detector</title>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dragomir</forename><surname>Anguelov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dumitru</forename><surname>Erhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Szegedy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Scott</forename><surname>Reed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Yang</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><forename type="middle">C</forename><surname>Berg</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-46448-0_2</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Amsterdam, The Netherlands</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2016">October 11-14, 2016. 2016</date>
+			<biblScope unit="page" from="21" to="37" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part I 14</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">TextBoxes++: A Single-Shot Oriented Scene Text Detector</title>
+		<author>
+			<persName><forename type="first">Minghui</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baoguang</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+			<idno type="ORCID">0000-0002-3449-5940</idno>
+		</author>
+		<idno type="DOI">10.1109/tip.2018.2825107</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Image Processing</title>
+		<title level="j" type="abbrev">IEEE Trans. on Image Process.</title>
+		<idno type="ISSN">1057-7149</idno>
+		<idno type="ISSNe">1941-0042</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="3676" to="3690" />
+			<date type="published" when="2018-08">2018</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">EAST: An Efficient and Accurate Scene Text Detector</title>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cong</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">He</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuzhi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuchang</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiran</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiajun</forename><surname>Liang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2017.283</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-07">2017</date>
+			<biblScope unit="page" from="2642" to="2651" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Detecting Text in Natural Image with Connectionist Text Proposal Network</title>
+		<author>
+			<persName><forename type="first">Zhi</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weilin</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tong</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pan</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Qiao</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-46484-8_4</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Amsterdam, The Netherlands</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2016">October 11-14, 2016. 2016</date>
+			<biblScope unit="page" from="56" to="72" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part VIII 14</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Detecting oriented text in natural images by linking segments</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Belongie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<meeting>the IEEE Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="2550" to="2558" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Look More Than Once: An Accurate Detector for Text of Arbitrary Shapes</title>
+		<author>
+			<persName><forename type="first">Chengquan</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Borong</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zuming</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengyi</forename><surname>En</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junyu</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Errui</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinghao</forename><surname>Ding</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2019.01080</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-06">2019</date>
+			<biblScope unit="page" from="10544" to="10553" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Omnidirectional Scene Text Detection with Sequential-free Box Discretization</title>
+		<author>
+			<persName><forename type="first">Yuliang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lele</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaqiang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhepeng</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.24963/ijcai.2019/423</idno>
+		<idno type="arXiv">arXiv:1912.09629</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence</title>
+		<meeting>the Twenty-Eighth International Joint Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<publisher>International Joint Conferences on Artificial Intelligence Organization</publisher>
+			<date type="published" when="2019-08">2019</date>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="3052" to="3058" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Mask textspotter: An end-to-end trainable neural network for spotting text with arbitrary shapes</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Lyu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Bai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the European Conference on Computer Vision (ECCV)</title>
+		<meeting>the European Conference on Computer Vision (ECCV)</meeting>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="67" to="83" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Mask TextSpotter: An End-to-End Trainable Neural Network for Spotting Text with Arbitrary Shapes</title>
+		<author>
+			<persName><forename type="first">Minghui</forename><surname>Liao</surname></persName>
+			<idno type="ORCID">0000-0002-2583-4314</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pengyuan</forename><surname>Lyu</surname></persName>
+			<idno type="ORCID">0000-0003-3153-8519</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Minghang</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cong</forename><surname>Yao</surname></persName>
+			<idno type="ORCID">0000-0001-6564-4796</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wenhao</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+			<idno type="ORCID">0000-0002-3449-5940</idno>
+		</author>
+		<idno type="DOI">10.1109/tpami.2019.2937086</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="532" to="548" />
+			<date type="published" when="2021-02-01">2021</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Mask TextSpotter v3: Segmentation Proposal Network for Robust Scene Text Spotting</title>
+		<author>
+			<persName><forename type="first">Minghui</forename><surname>Liao</surname></persName>
+			<idno type="ORCID">0000-0002-2583-4314</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guan</forename><surname>Pang</surname></persName>
+			<idno type="ORCID">0000-0002-9922-7074</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-3488-3641</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Tal</forename><surname>Hassner</surname></persName>
+			<idno type="ORCID">0000-0003-2275-1406</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+			<idno type="ORCID">0000-0002-3449-5940</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58621-8_41</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Glasgow, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">August 23-28, 2020. 2020</date>
+			<biblScope unit="page" from="706" to="722" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part XI 16</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Character Region Awareness for Text Detection</title>
+		<author>
+			<persName><forename type="first">Youngmin</forename><surname>Baek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bado</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dongyoon</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sangdoo</forename><surname>Yun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hwalsuk</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2019.00959</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-06">2019</date>
+			<biblScope unit="page" from="9357" to="9366" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Real-Time Scene Text Detection with Differentiable Binarization</title>
+		<author>
+			<persName><forename type="first">Minghui</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhaoyi</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cong</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v34i07.6812</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="issue">07</biblScope>
+			<biblScope unit="page" from="11474" to="11481" />
+			<date type="published" when="2020-04-03">2020</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Momentum Contrast for Unsupervised Visual Representation Learning</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haoqi</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxin</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saining</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ross</forename><surname>Girshick</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr42600.2020.00975</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2020-06">2020</date>
+			<biblScope unit="page" from="9729" to="9738" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Improved Baselines with Momentum Contrastive Learning</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Girshick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>He</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/2003.04297" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<monogr>
+		<title level="m" type="main">An Empirical Study of Training Self-Supervised Vision Transformers</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>He</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/2104.02057" />
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">A Simple Framework for Contrastive Learning of Visual Representations</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kornblith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Norouzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/2002.05709" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Big Self-Supervised Models are Strong Semi-Supervised Learners</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kornblith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Swersky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Norouzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/2006.10029" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Misra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mairal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Goyal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Joulin</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/2006.09882" />
+		<title level="m">Unsupervised Learning of Visual Features by Contrasting Cluster Assignments</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Unsupervised Deep Embedding for Clustering Analysis</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Girshick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Farhadi</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1511.06335" />
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Joint Unsupervised Learning of Deep Representations and Image Clusters</title>
+		<author>
+			<persName><forename type="first">Jianwei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Devi</forename><surname>Parikh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dhruv</forename><surname>Batra</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2016.556</idno>
+		<ptr target="https://arxiv.org/abs/1604.03628" />
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-06">2016</date>
+			<biblScope unit="page" from="5147" to="5156" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Deep Clustering for Unsupervised Learning of Visual Features</title>
+		<author>
+			<persName><forename type="first">Mathilde</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Bojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Armand</forename><surname>Joulin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthijs</forename><surname>Douze</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-01264-9_9</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="139" to="156" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<monogr>
+		<author>
+			<persName><forename type="first">M</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Bojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Mairal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Joulin</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1905.01278" />
+		<title level="m">Unsupervised Pre-Training of Image Features on Non-Curated Data</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Clustering based Point Cloud Representation Learning for 3D Analysis</title>
+		<author>
+			<persName><forename type="first">Tuo</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenguan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaohan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qinghua</forename><surname>Zheng</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv51070.2023.00761</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-01">2023</date>
+			<biblScope unit="page" from="8283" to="8294" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Elastic deep multi-view autoencoder with diversity embedding</title>
+		<author>
+			<persName><forename type="first">Fatemeh</forename><surname>Daneshfar</surname></persName>
+			<idno type="ORCID">0000-0003-3150-3527</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bahar</forename><forename type="middle">Sar</forename><surname>Saifee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sayvan</forename><surname>Soleymanbaigi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Aeini</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ins.2024.121482</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Information Sciences</title>
+		<title level="j" type="abbrev">Information Sciences</title>
+		<idno type="ISSN">0020-0255</idno>
+		<imprint>
+			<biblScope unit="volume">689</biblScope>
+			<biblScope unit="page">121482</biblScope>
+			<date type="published" when="2025-01">2025</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Oracle bone inscription detection: a survey of oracle bone inscription detection based on deep learning algorithm</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Xiong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Artificial Intelligence, Information Processing and Cloud Computing</title>
+		<meeting>the International Conference on Artificial Intelligence, Information Processing and Cloud Computing</meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Faster r-cnn: Towards real-time object detection with region proposal networks</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Girshick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE transactions on pattern analysis and machine intelligence</title>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1137" to="1149" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">End-to-End Object Detection with Transformers</title>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Carion</surname></persName>
+			<idno type="ORCID">0000-0002-2308-9680</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Francisco</forename><surname>Massa</surname></persName>
+			<idno type="ORCID">0000-0003-0697-6664</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Synnaeve</surname></persName>
+			<idno type="ORCID">0000-0003-1715-3356</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nicolas</forename><surname>Usunier</surname></persName>
+			<idno type="ORCID">0000-0002-9324-1457</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Kirillov</surname></persName>
+			<idno type="ORCID">0000-0003-3169-3199</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sergey</forename><surname>Zagoruyko</surname></persName>
+			<idno type="ORCID">0000-0001-9684-5240</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58452-8_13</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="213" to="229" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Sparse r-cnn: End-to-end object detection with learnable proposals</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tomizuka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+		<meeting>the IEEE/CVF Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="14454" to="14463" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Qin</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2407.03900</idno>
+		<title level="m">Oracle bone inscriptions multi-modal dataset</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Deep Residual Learning for Image Recognition</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+		<ptr target="https://arxiv.org/abs/1512.03385" />
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Feature Pyramid Networks for Object Detection</title>
+		<author>
+			<persName><forename type="first">Tsung-Yi</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Dollar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ross</forename><surname>Girshick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bharath</forename><surname>Hariharan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Serge</forename><surname>Belongie</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2017.106</idno>
+		<ptr target="https://doi.org/10.1109/CVPR.2017.106" />
+	</analytic>
+	<monogr>
+		<title level="m">2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-07">2017</date>
+			<biblScope unit="page" from="936" to="944" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Optimization Methods for Large-Scale Machine Learning</title>
+		<author>
+			<persName><forename type="first">Léon</forename><surname>Bottou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frank</forename><forename type="middle">E</forename><surname>Curtis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><surname>Nocedal</surname></persName>
+		</author>
+		<idno type="DOI">10.1137/16m1080173</idno>
+		<ptr target="https://arxiv.org/abs/1606.04838" />
+	</analytic>
+	<monogr>
+		<title level="j">SIAM Review</title>
+		<title level="j" type="abbrev">SIAM Rev.</title>
+		<idno type="ISSN">0036-1445</idno>
+		<idno type="ISSNe">1095-7200</idno>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="223" to="311" />
+			<date type="published" when="2018-01-01">2018</date>
+			<publisher>Society for Industrial &amp; Applied Mathematics (SIAM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<monogr>
+		<title level="m" type="main">Fixing weight decay regularization in adam</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Loshchilov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hutter</surname></persName>
+		</author>
+		<idno>ArXiv abs/1711.05101</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">Figure 6: Markedness, informedness, and Matthews correlation as preeminent metrics, plus F1-measure highlighting the hybrid monitoring for (A) ML100K and (B) ML1M.</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">M W</forename><surname>Powers</surname></persName>
+		</author>
+		<idno type="DOI">10.7717/peerj-cs.784/fig-6</idno>
+		<ptr target="https://arxiv.org/abs/2010.16061" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<publisher>PeerJ</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Ni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-Y</forename><surname>Shum</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2203.03605</idno>
+		<title level="m">Dino: Detr with improved denoising anchor boxes for end-to-end object detection</title>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Swin Transformer: Hierarchical Vision Transformer using Shifted Windows</title>
+		<author>
+			<persName><forename type="first">Ze</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yutong</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yue</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixuan</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baining</forename><surname>Guo</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv48922.2021.00986</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-10">2021</date>
+			<biblScope unit="page" from="9992" to="10002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">You Only Look Once: Unified, Real-Time Object Detection</title>
+		<author>
+			<persName><forename type="first">Joseph</forename><surname>Redmon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Santosh</forename><surname>Divvala</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ross</forename><surname>Girshick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ali</forename><surname>Farhadi</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2016.91</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-06">2016</date>
+			<biblScope unit="page" from="779" to="788" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Visualizing data using t-sne</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Maaten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hinton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">86</biblScope>
+			<biblScope unit="page" from="2579" to="2605" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

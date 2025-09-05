@@ -1,0 +1,2301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Revealing the Origins of Galactic Globular Clusters via Their Mg-Al Abundances</title>
+				<funder ref="#_kvuW2ss">
+					<orgName type="full">Fondecyt</orgName>
+				</funder>
+				<funder ref="#_nNgB5Fw">
+					<orgName type="full">Dirección de Investigación y Desarrollo de la Universidad de La Serena</orgName>
+				</funder>
+				<funder ref="#_UJs6NEw #_xFaeRUM">
+					<orgName type="full">National Natural Science Foundation of China</orgName>
+				</funder>
+				<funder ref="#_G9wCjM6">
+					<orgName type="full">ANID Fondecyt Iniciación</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Programa de Incentivo a la Investigación de Académicos (PIA-DIDULS)</orgName>
+				</funder>
+				<funder ref="#_pagpRG7 #_SXeN4nM">
+					<orgName type="full">unknown</orgName>
+				</funder>
+				<funder ref="#_ckzB2q4">
+					<orgName type="full">Joint Committee ESO-Government of Chile</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-08-18">August 18, 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Shihui</forename><surname>Lin</surname></persName>
+							<idno type="ORCID">0009-0006-5216-7648</idno>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics and Astronomy</orgName>
+								<orgName type="institution">Sun Yat-sen University</orgName>
+								<address>
+									<postCode>519082</postCode>
+									<settlement>Zhuhai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">CSST Science Center for the Guangdong-Hong Kong-Macau Greater Bay Area</orgName>
+								<address>
+									<postCode>519082</postCode>
+									<settlement>Zhuhai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Baitian</forename><surname>Tang</surname></persName>
+							<idno type="ORCID">0000-0002-0066-0346</idno>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics and Astronomy</orgName>
+								<orgName type="institution">Sun Yat-sen University</orgName>
+								<address>
+									<postCode>519082</postCode>
+									<settlement>Zhuhai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">CSST Science Center for the Guangdong-Hong Kong-Macau Greater Bay Area</orgName>
+								<address>
+									<postCode>519082</postCode>
+									<settlement>Zhuhai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Genghao</forename><surname>Liu</surname></persName>
+							<idno type="ORCID">0009-0007-4049-127X</idno>
+							<affiliation key="aff0">
+								<orgName type="department">School of Physics and Astronomy</orgName>
+								<orgName type="institution">Sun Yat-sen University</orgName>
+								<address>
+									<postCode>519082</postCode>
+									<settlement>Zhuhai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">CSST Science Center for the Guangdong-Hong Kong-Macau Greater Bay Area</orgName>
+								<address>
+									<postCode>519082</postCode>
+									<settlement>Zhuhai</settlement>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">José</forename><forename type="middle">G</forename><surname>Fernández-Trincado</surname></persName>
+							<idno type="ORCID">0000-0003-3526-5052</idno>
+							<affiliation key="aff2">
+								<orgName type="department">Instituto de Astronomía</orgName>
+								<orgName type="institution">Universidad Católica del Norte</orgName>
+								<address>
+									<addrLine>Av. Angamos 0610</addrLine>
+									<settlement>Antofagasta</settlement>
+									<country key="CL">Chile</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Douglas</forename><surname>Geisler</surname></persName>
+							<idno type="ORCID">0000-0002-3900-8208</idno>
+							<affiliation key="aff3">
+								<orgName type="department">Departamento de Astronomía</orgName>
+								<orgName type="institution">Universidad de Concepción</orgName>
+								<address>
+									<addrLine>Casilla 160-C</addrLine>
+									<settlement>Concepción</settlement>
+									<country key="CL">Chile</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department" key="dep1">Departamento de Astronomía</orgName>
+								<orgName type="department" key="dep2">Facultad de Ciencias</orgName>
+								<orgName type="institution">Universidad de La Serena. Av. Raúl Bitrán 1305</orgName>
+								<address>
+									<addrLine>La Serena</addrLine>
+									<country key="CL">Chile</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Guy</forename><surname>Worthey</surname></persName>
+							<idno type="ORCID">0000-0003-1388-5525</idno>
+							<affiliation key="aff5">
+								<orgName type="department">Department of Physics and Astronomy</orgName>
+								<orgName type="institution">Washington State University</orgName>
+								<address>
+									<postCode>99163-2814</postCode>
+									<settlement>Pullman</settlement>
+									<region>WA</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Dante</forename><surname>Minniti</surname></persName>
+							<idno type="ORCID">0000-0002-7064-099X</idno>
+							<affiliation key="aff6">
+								<orgName type="department" key="dep1">Depto. de Cs. Físicas</orgName>
+								<orgName type="department" key="dep2">Facultad de Ciencias Exactas</orgName>
+								<orgName type="institution">Universidad Andrés Bello</orgName>
+								<address>
+									<addrLine>Av. Fernández Concha 700</addrLine>
+								</address>
+							</affiliation>
+							<affiliation key="aff8">
+								<orgName type="institution">Vatican Observatory</orgName>
+								<address>
+									<postCode>V00120</postCode>
+									<settlement>Vatican City State</settlement>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff7">
+								<orgName type="institution">Las Condes</orgName>
+								<address>
+									<settlement>Santiago</settlement>
+									<country key="CL">Chile</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Revealing the Origins of Galactic Globular Clusters via Their Mg-Al Abundances</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-08-18">August 18, 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">17891D9753EBC54E0E4F9C6067B368A3</idno>
+					<idno type="arXiv">arXiv:2508.00526v2[astro-ph.GA]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:52+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Galaxies (573) -Globular star clusters (656) -Chemical abundances (224)</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Many Galactic globular clusters (GCs) originated in diverse host galaxies before being subsequently incorporated into the Milky Way through hierarchical galaxy assembly. Identifying their origins is crucial for revealing galaxy properties at early times. Traditional classification methods relying on dynamical properties face inherent uncertainties stemming from the evolving Galactic potential and complex merger histories. Chemically driven classification confronts a distinct obstacle: multiple populations -abundance variations in light elements of GC members. In this Letter, we identify primordial populations exhibiting lower [Al/Fe] as reliable tracers of their birth environments' chemical evolution. A clear chemical dichotomy emerges between in-situ and accreted GC populations at [Fe/H] &gt; -1.5, particularly in the [Mg/Fe]-[Al/Fe] plane, indicating that their progenitor galaxies have experienced fundamentally different enrichment histories. While our chemically driven classification demonstrates general consistency with dynamically driven classifications, notable discrepancies emerge: NGC 288 and M4 are reclassified as in-situ, and Terzan 9 as accreted. This chemically driven GC classification provides promising application for Galactic archaeology.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>According to the Lambda cold dark matter model, galaxies in our Universe formed hierarchically. Our Milky Way (MW) aligns with this cosmological framework, having undergone successive mergers and accretions of smaller dwarf galaxies (R. <ref type="bibr">A. Ibata et al. 1994</ref>; M. <ref type="bibr" target="#b36">Unavane et al. 1996)</ref>. Globular clusters (GCs), among the oldest stellar systems in galaxies, exhibit ages comparable to their host galaxies (M. A. <ref type="bibr" target="#b0">Beasley et al. 2002</ref>; J. P. <ref type="bibr" target="#b4">Brodie &amp; J. Strader 2006)</ref>. While dwarf galaxies were predominantly disrupted during merger events, their high-density GCs could survive these interactions. Consequently, the present-day Galactic GC system consists of clusters originating from various progenitor galaxies. (D. A. <ref type="bibr" target="#b12">Forbes &amp; T. Bridges 2010;</ref><ref type="bibr">D.</ref> Email: tangbt@sysu.edu.cn <ref type="bibr" target="#b22">Massari et al. 2019;</ref><ref type="bibr" target="#b9">Y. Chen &amp; O. Y. Gnedin 2024)</ref>. These ancient stellar systems therefore serve as valuable tracers for reconstructing galactic evolution and merger histories.</p><p>If the progenitor galaxy of each GC can be identified, we can decode the detailed evolution of individual progenitor galaxies through their age-metallicity relation (e.g., D. R. Law &amp; S. R. <ref type="bibr" target="#b19">Majewski 2010)</ref>, or chemical evolution. Thanks to the precise proper motions of GCs provided by the Gaia mission, the clustering in their orbital parameter space links present-day Galactic GCs to their possible progenitor galaxies (e.g., T. M. <ref type="bibr" target="#b5">Callingham et al. 2022)</ref>. In a recent update of D. <ref type="bibr" target="#b22">Massari et al. (2019)</ref> based on Gaia eDR3 data (hereafter MKH), Galactic GCs are linked to 10 progenitors: main bulge, main disk, Sagittarius (Sag), Helmi stream (H99), Gaia-Enceladus (GE), Sequoia (Seq), Low-energy group, Elqui, Cetus, and High-energy group. Only the first two groups are considered in-situ, while other groups are classified as accreted.</p><p>However, the assumption of invariant orbital parameters becomes tenuous when considering the Galaxy's complex merger history and long-term dynamical evolution. Simulations that include realistic ISM prescriptions also suggest that dynamical criteria alone may be problematic (e.g., G. <ref type="bibr" target="#b30">Pagnini et al. 2023)</ref>. For instance, based on chemical similarities to other in-situ GCs, E. <ref type="bibr" target="#b8">Ceccarelli et al. (2025)</ref> argued that NGC 288 formed within the Galactic proto-disk, and was later dynamically heated during the GE merger. Unlike dynamical properties, chemical abundances remain largely unaffected by galaxy evolution or merger events. Consequently, they serve as robust tracers for identifying the origins of Galactic field stars. The [Mg/Mn]-[Al/Fe] plane is widely used for this purpose (e.g., <ref type="bibr">K. Hawkins et al. 2015;</ref><ref type="bibr" target="#b10">P. Das et al. 2020)</ref>, particularly as D. Horta et al. ( <ref type="formula">2021</ref>) demonstrated distinct evolutionary tracks for MW-like and GE-like galaxies within it, providing a theoretical basis for empirical division lines. However, categorizing early formed metal-poor stars remains challenging, as they predominantly occupy overlapping regions (specifically the upper left) in this plane.</p><p>Chemically tagging the origins of Galactic GCs faces a further complication: multiple populations (MPs). MPs alter light-element abundances (e.g., C, N, O, Na, Mg, Al, Si) within metal-poor/compact stellar systems (E. <ref type="bibr" target="#b7">Carretta et al. 2009;</ref><ref type="bibr">B. Tang et al. 2017;</ref><ref type="bibr" target="#b27">S. Mészáros et al. 2020;</ref><ref type="bibr">R. Huang et al. 2024)</ref>. A GC forms from a natal cloud inheriting its parent galaxy's chemistry. However, after massive stars (∼ 8 -1 × 10 4 M ⊙ ) are born, their strong winds eject processed material. This enriched gas mixes with primordial gas, altering the composition of subsequently formed stars. Retaining this enriched gas against expulsion by stellar feedback requires a compact gas/stellar environment (M. G. H. <ref type="bibr" target="#b18">Krause et al. 2016;</ref><ref type="bibr">R. Huang et al. 2024)</ref>. To mitigate MP effects when chemically tagging the Galactic GCs, studies typically employ average chemical abundances. In this Letter, we aim to disentangle the distinct chemical abundance contributions from a GC's progenitor galaxy and its internal MP enrichment. Crucially, primordial populations genuinely reflect the progenitor galaxy's chemistry, enabling a bona f ide, chemically driven classification of GCs. This Letter is structured as follows. Section 2 details our selection criteria for GC member stars. Section 3 presents our GC classification results based on their locations in the [Al/Fe]-[Fe/H] and [Mg/Fe]-[Al/Fe] planes. In Section 4, we discuss the physics behind and robustness of this classification; we further expand our GC sample to the latest data release. Section 5 provides a brief summary and outlines future perspectives.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">DATA</head><p>The Apache Point Observatory Galactic Evolution Experiment (APOGEE, S. R. <ref type="bibr" target="#b20">Majewski et al. 2017</ref>) delivers high-resolution (R ∼22,500) H-band spectra (λ = 1.51 -1.69 µm) from both the SDSS 2.5 m telescope at Apache Point Observatory (J. E. <ref type="bibr">Gunn et al. 2006</ref>) and the 2.5 m du Pont telescope at Las Campanas Observatory (I. S. <ref type="bibr" target="#b3">Bowen &amp; J. Vaughan 1973)</ref>. APOGEE data reduction software was applied to reduce multiple 3D raw data cubes into calibrated, wellsampled, combined 1D spectra (D. L. <ref type="bibr" target="#b28">Nidever et al. 2015)</ref>. When observing GC stars, targets were selected and prioritized using a combination of preexisting information (i.e., stellar parameters, abundances, radial velocities, proper motions, and location in the colormagnitude diagram) and observing constraints imposed by APOGEE magnitude and fiber collision limits (G. <ref type="bibr" target="#b38">Zasowski et al. 2017)</ref>. Such target selection is insensitive to MP. Given the typically weaker spectral lines at low metallicity (e.g., [Fe/H] = -2) and possible large variations of elemental feature lines (e.g., Al) in GC members, a line-by-line analysis for individual chemical species is preferred (e.g., Brussels Automatic Code for Characterizing High-accuracy Spectra, BACCHUS, T. <ref type="bibr" target="#b23">Masseron et al. 2016</ref>) over abundance analysis based on a set of spectral windows (e.g., APOGEE Stellar Parameter and Chemical Abundance Pipeline, ASPCAP, H. <ref type="bibr" target="#b16">Jönsson et al. 2020)</ref>. We therefore adopt the homogeneous chemical abundances derived by S. <ref type="bibr" target="#b27">Mészáros et al. (2020)</ref> using BACCHUS for 2283 red giant stars in 31 Galactic GCs. These authors select GC members based on their similarities in radial velocities, metallicities, and spatial locations (i.e., inside the GC tidal radius). We selected accurate Fe, Mg, Al, and Si abundances meeting the following criteria: (1) spectral signal-to-noise ratio (SNR) &gt; 70; (2) effective temperature (T eff ) &lt; 5500 K; and (3) abundance uncertainties &lt; 0.2 dex. Addition-ally, we require clusters to have at least six member stars to ensure statistically robust separation of primordial and enriched populations in subsequent analysis. Our final sample comprises 27 Galactic GCs with 2,142 stars (Table <ref type="table" target="#tab_1">1</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">RESULTS</head><p>Among the elements analyzed, Al abundances exhibit the most significant variations, making them ideal for population separation. Since Al is strongly enhanced by GC enrichment, revealing the progenitor galaxy's chemistry necessitates identifying the less Al-enhanced subpopulation. In line with the literature, we term this subpopulation "primordial populations" (or "first generation stars"), adopting slightly different definition (see Section 4.1 for more discussions). Specifically, we define them as follows. Stars within each GC are sorted by their [Al/Fe] in ascending order. The primordial population is defined as the first N/n stars, where N is the sample size of the GC members (Table <ref type="table" target="#tab_1">1</ref>) and n is the fixed number of subpopulations assigned to each GC. We apply the same n value for all studied GCs. When N/n is non-integer, we use its floor value (greatest integer less than or equal to N/n). As n increases, both the subsample size and mean [Al/Fe] value of the primordial population decrease. We adopt n = 3 for subsequent analysis and further discuss this choice in Section 4.1.</p><p>At [Fe/H] &gt; -1.5, a clear separation emerges (at [Al/Fe] ∼ 0) between in-situ ([Al/Fe] &gt; 0.04 dex) and accreted GCs ([Al/Fe] &lt; 0.04 dex) in the [Al/Fe]-[Fe/H] plane (Figure <ref type="figure">1</ref>). These two groups also occupy distinct regions in the [Mg/Fe]-[Al/Fe] plane (Figure <ref type="figure">2</ref>). We therefore focus our origin analysis on relatively metalrich GCs. The metallicity limit ([Fe/H] = -1.5) will be further discussed in Section 4.2. To validate our classification, we compare it with the dynamically driven MKH classification. The agreement is generally good, except for NGC 288 and M4. Although classified as accreted by MKH, their primordial populations exhibit elevated [Al/Fe] abundances comparable to other in-situ GCs. As noted in Section 1, E. <ref type="bibr" target="#b8">Ceccarelli et al. (2025)</ref> proposed an in-situ origin for NGC 288, suggesting subsequent dynamical heating. Similarly, M4 was classified as insitu based on its mean [Si/Fe] (D. <ref type="bibr">Horta et al. 2020)</ref>. Given that chemical abundances remain unaffected by changes in the galactic potential, we conclude that our chemically based classification provides a more robust indicator of GC origin. See Section 4.2 for more discussions about their implications.</p><p>The [Mg/Fe]-[Al/Fe] plane is frequently used to investigate MPs in GCs (E. <ref type="bibr" target="#b31">Pancino et al. 2017;</ref><ref type="bibr" target="#b27">S. Mészáros et al. 2020)</ref>. In this Letter, we propose a novel frame-work to disentangle galactic chemical enrichment from GC self-enrichment, illustrated conceptually in Figure <ref type="figure" target="#fig_2">3</ref>. This separation is achieved by analyzing chemical abundances exclusively within GC primordial populations. We first exclude GCs exhibiting significant iron spreads, (e.g., ω Cen, which shows complex star formation histories; P. <ref type="bibr" target="#b15">Jofré et al. 2025;</ref><ref type="bibr" target="#b21">A. C. Mason et al. 2025)</ref>. Our analysis reveals distinct evolutionary pathways for in-situ and accreted GCs:</p><formula xml:id="formula_0">• Low metallicity GCs [Fe/H] &lt; -1.5: Both in-</formula><p>situ and accreted GCs occupy a similar region ([Mg/Fe] ∼ 0.3 -0.4 and [Al/Fe] ∼ 0.1), indicating indistinguishable chemical evolution between the early MW and its accreted dwarf galaxies at these metallicities. • Accreted GCs ([Fe/H] &gt; -1.5): Progenitor galaxies show a pronounced decrease in [Mg/Fe] but only a mild decrease in [Al/Fe] with increasing metallicity. • In-situ GCs ([Fe/H] &gt; -1.5): The MW progenitor exhibits more complex evolution. Between [Fe/H] = -1.5 and -1.0, [Mg/Fe] remains nearly constant while [Al/Fe] rises significantly to ∼ 0.5. Notably, NGC 288 and M4 within this metallicity range are chemically classified as in-situ. Above [Fe/H] = -1.0, both [Mg/Fe] and [Al/Fe] decrease with metallicity.</p><p>Crucially, the chemical evolution patterns revealed by GC primordial populations align remarkably with those observed in field stars of their progenitor galaxies (e.g., B. <ref type="bibr" target="#b33">Tang et al. 2023)</ref>. The physics behind measured chemical abundances is further discussed in Section 4.2.</p><p>To illustrate the complexity of the [Mg/Fe]-[Al/Fe] plane for GC member stars, Figure <ref type="figure" target="#fig_2">3</ref> presents Mg-Al (anti-)correlations for three representative in-situ GCs (M68, NGC 3201, NGC 2808), and three accreted GCs (NGC 6397, NGC 6752, M107). These GCs range from metal poor to metal rich (Figure <ref type="figure">1</ref>). Al variations in GCs depend on both metallicity and cluster mass (E. <ref type="bibr" target="#b31">Pancino et al. 2017;</ref><ref type="bibr" target="#b27">S. Mészáros et al. 2020)</ref>. 0.2 0.0 0.2 0.4 0.6 [Al/Fe] 0.20 0.25 0.30 0.35 0.40 0.45 0.50 0.55 [Mg/Fe] M79 N6752 M13 M2 M3 M10 N3201 N288 M5 M12 N1851 N362 M4 N2808 M107 47TUC M71 Figure 2. Mean [Mg/Fe] versus mean [Al/Fe] of primordial populations in Galactic GCs. Their associated standard deviations are shown as error bars. Small purple (red) dots represent the in-situ (accreted) GCs based on our classification. Filled purple (red) squares mark the in-situ (accreted) GCs based on MKH classification. Two GCs (NGC 288 and M4) with inconsistent classification between the two works are properly labeled.</p><p>and enriched populations. Consequently, our primor-dial population refers to "stars not strongly enriched in Al by the polluters responsible for GC MP". The primordial population is defined as the first N/n stars with lower [Al/Fe], and we adopt n = 3 in Section 3. In principle, a larger n yields a less Al-enhanced subpopulation, thereby better reflecting the true progenitor galaxy's chemistry. However, smaller subsamples are prone to statistical fluctuations and are less viable for GCs with few confirmed members. Testing values of n = 3, 4, 6, 8 revealed that the [Al/Fe] distinction between in-situ and accreted GCs at [Fe/H] &gt; -1.5 is most pronounced when n = 3 (Figure <ref type="figure">1</ref>). This choice also provides comparatively larger sample sizes of primordial populations, reducing statistical fluctuations in their mean abundances. We therefore adopt n = 3 in this Letter.</p><p>Since APOGEE targeting is insensitive to MP, one might be concerned that all observed stars in a given GC could belong to the enriched population, leaving no primordial stars. The probability (p) of this occurring is ( <ref type="formula">1</ref>2 ) N , where N is the number of stars observed in the GC. For Our minimum sample size (N=6), p = 0.0156. This probability quickly drops to &lt; 10 -3 for N ⩾ 10.</p><p>[Al/Fe] = 0.3 has been proposed to separate primordial and enriched populations in GCs when Na lines are inaccessible (e.g., S. <ref type="bibr" target="#b27">Mészáros et al. 2020</ref>). However, the clear distinction in primordial [Al/Fe] between insitu and accreted GCs at [Fe/H] &gt; -1.5 necessitates caution. Applying this fixed threshold risks underestimating primordial populations, particularly in in-situ systems where primordial [Al/Fe] is typically higher.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Underlying Physics</head><p>Theoretical models by D. <ref type="bibr">Horta et al. (2021)</ref> indicate that the chemical evolution tracks of MW-like and GE-like galaxies in the [Mg/Mn]-[Al/Fe] plane are clearly separated at [Fe/H] = -0.8 (black crosses in their Figure <ref type="figure">2</ref>). However, these two tracks start diverging at lower metallicity, specifically during the 0.3-1 Gyr evolution phase of the GE-like system. Unfortunately, precise metallicities along these tracks cannot be robustly constrained. Based on GC's mean [Si/Fe] distribution (D. Horta et al. 2020) and primordial [Al/Fe] distribution (our Figure <ref type="figure">1</ref>), in-situ and accreted GCs are observationally indistinguishable below [Fe/H] = -1.5. Interestingly, such limit may also be identified in other α-elements. For example, D. Horta &amp; M. K. Ness (2025) derive the hex ratios for Galactic GCs -ratios between hydrostatic α-elements (namely, ([Mg/Fe]+[O/Fe])/2) and explosive α-elements (namely, ([Si/Fe]+[Ca/Fe]+[Ti/Fe])/3). In-situ and accreted GCs are also indistinguishable below [Fe/H] = -1.5, but in-situ GCs generally show larger hex ratios than accreted GCs at [Fe/H] ≳ -1.5 (their Figure <ref type="figure" target="#fig_4">4</ref>). Current theoretical models explain the different evolution tracks between MW (thick disk and in-situ halo) and its accreted dwarf galaxies at [Fe/H] &gt; -1.5 as follows: The MW's deep potential well draws large amounts of gas, sustaining a high star formation rate and rapid enrichment. This increases the fraction of massive stars formed (T. <ref type="bibr" target="#b14">Jeřábková et al. 2018)</ref>, which produce large yields of C, N, O, Ne, and Mg due to their massive mantles (C. <ref type="bibr" target="#b17">Kobayashi et al. 2006</ref>). The higher fraction of massive stars is further confirmed by their hex ratios: in-situ GCs generally show larger hex ratios than accreted GCs at [Fe/H] ≳ -1.5 (Figure <ref type="figure" target="#fig_4">4</ref> of D. Horta &amp; M. K. Ness 2025). Higher hex ratios indicate an initial mass function (IMF) with a larger amount of most massive stars (J. L. <ref type="bibr" target="#b6">Carlin et al. 2018;</ref><ref type="bibr" target="#b24">A. McWilliam et al. 2013)</ref>. As one of the odd-Z elements, Al is enhanced by the surplus of neutrons in 22 Ne, and 22 Ne is transformed from 14 N by the CNO cycle during He burning. Consequently, Al yield correlates with the abundances of CNO elements, making it metallicity-dependent (e.g., Fig. <ref type="figure">5</ref> of C. <ref type="bibr" target="#b17">Kobayashi et al. 2006)</ref>. Conversely, due to slow chemical enrichment in GE-like galaxies, Type Ia supernova (SNe Ia) -which produce substantial amounts of Fe -begin to significantly influence galactic chemical evolution at comparatively low metallicities ([Fe/H] ∼ -1.5). Given the distinct evolutionary pathways of Mg, Al, and Fe, we expect higher [Mg/Fe] and [Al/Fe] ratios in MW insitu stars than in accreted halo stars ([Fe/H] &gt; -1.5), matching observations by K. <ref type="bibr">Hawkins et al. (2015)</ref>.</p><p>Recently, M. <ref type="bibr" target="#b37">Xiang &amp; H.-W. Rix (2022)</ref> suggested the MW's old disk began forming ∼ 13 Gyr ago, only 0.8 Gyr after the Big Bang. Most stars in this component formed about 11 Gyr ago. Consequently, in-situ stars and GCs born in this old (thick) disk may have experienced the "Splash" phase (V. <ref type="bibr" target="#b2">Belokurov et al. 2020)</ref> induced by the GE merger. In this context, the two misclassified GCs -NGC 288 and M4 -may not be coincidental. More "Splash" GCs are likely to exist.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Robustness</head><p>The [Mg/Fe]-[Al/Fe] plane was also employed to discuss GC origins in V. <ref type="bibr" target="#b1">Belokurov &amp; A. Kravtsov (2024)</ref>, albeit with a distinct classification methodology. They first established a boundary in E -L z space separating in-situ and accreted objects using stars with robust [Al/Fe]-based classification (-1.4 &lt; [Fe/H] &lt; -1.0), then classified GCs dynamically based on their E -L z positions. Their work showed that the mean [Mg/Fe]-[Al/Fe] plane cannot clearly distinguish in-situ from accreted GCs, effectively constituting a chemically inf ormed dynamical classification. Comparing classifications for GCs with [Fe/H] &gt; -1.5, we identify four discrepancies: NGC 288 (classified accreted by <ref type="bibr">Belokurov et al.)</ref> versus M13, M10, and NGC 6544 (classified in-situ). As Figure <ref type="figure">1</ref> shows, the primordial populations of M13, M10, and NGC 6544 exhibit low [Al/Fe] -a signature typical of less massive dwarf galaxies at [Fe/H] &gt; -1.5. Our classification aligns with MKH for these three GCs.</p><p>Given that Si may also vary substantially within GCs, we repeat our classification replacing Mg with Si. The classification results remain unchanged. More importantly, the primordial [Al/Fe] exhibits a significantly larger difference between in-situ and accreted GCs com-  4.4. Expanding the Sample Since the homogeneous study by S. Mészáros et al. (2020), the APOGEE survey has observed additional GCs, particularly in the bulge region (D. Geisler et al. 2021; J. G. Fernández-Trincado et al. 2021). The valueadded catalog by R. P. Schiavon et al. (2024) provides stellar abundances for 72 Galactic GCs derived through the APOGEE Stellar Parameter and Chemical Abundance Pipeline (ASPCAP, H. Jönsson et al. 2020). While ASPCAP may struggle with weak spectral features, it remains robust for studying Mg, Al, Si abundances in GCs with [Fe/H] &gt; -1.5. We are left with 28 GCs after applying the following criteria: (1) GC mean [Fe/H] &gt; -1.5; (2) no STAR BAD flag; (3) element flags of Mg, Al, and Si equal zero; (4) sample size larger than 5 (Table <ref type="table" target="#tab_2">2</ref>). Figure <ref type="figure" target="#fig_4">4</ref> shows the primordial population abundances for these GCs alongside two classification schemes. Our chemically driven classification generally agrees with the MKH classification, except for NGC 288, M4 and Terzan 9. The first two GCs have been discussed in Section 3. Terzan 9, a bulge GC traditionally classified as in-situ (e.g., S. <ref type="bibr">Ortolani et al. 1999, MKH)</ref>, exhibits an accreted signature in the [Mg/Fe]-[Al/Fe] plane. This interpretation is reinforced by its Si abundances. Its 11 member stars yield mean [Fe/H] = -1.37 and mean [Si/Fe] = 0.18. For bulge GCs with -1.5 &lt; [Fe/H] &lt; -1.0, both D. <ref type="bibr">Horta et al. (2020) and</ref><ref type="bibr">D. Geisler et al. (2021)</ref> report higher mean [Si/Fe] in in-situ GCs (∼ 0.25 -0.26) versus accreted GCs (∼ 0.17 -0.18). Terzan 9's low mean [Si/Fe] thus supports an accreted origin. Chemodynamical evidence indicates it formed ex-situ and was later accreted into the bulge. The complex dynamical evolution inside the bulge may change its orbits. In contrast, bona f ide Bulge GCs near mean [Mg/Fe] ∼ 0.13, [Al/Fe] ∼ 0 (i.e., NGC 6553, Terzan 5 and NGC 6388) follow the in-situ chemical trend (blue arrow, Figure <ref type="figure" target="#fig_2">3</ref>).</p><formula xml:id="formula_1">pared to primordial [Si/Fe]. Specifically, ∆[Al/Fe] is ∼ 0.25 dex, while ∆[Si/Fe] is only ∼ 0.08 dex in the range -1.5 &lt; [Fe/H] &lt; -1.0,</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">CONCLUSION</head><p>In this Letter, we present a novel approach to identify GC origins using their Mg-Al distributions. This work is part of our ongoing research initiative, "Scrutinizing GAlaxy-STaR cluster coevolutiON with chemOdynaMIcs (GASTRONOMI)", which leverages multi-wavelength photometric and spectroscopic data to unravel the coevolutionary relationships between the MW, its satellite dwarf galaxies, and their stellar clusters. We demonstrate that the chemistry of a GC's progenitor galaxy is encoded within its primordial population. The in-situ and accreted GCs at [Fe/H] &gt; -1.5 are clearly distinguished by their primordial [Mg/Fe] and <ref type="bibr">[Al/Fe]</ref>. This chemically driven classification is robust against dynamical changes induced by Galactic po-tential evolution and merger history. In this scheme, NGC 288 and M4 are reclassified as in-situ, while Terzan 9 as accreted. The future of this classification scheme is highly promising, as more metal-rich GCs are identified and observed spectroscopically within the bulge (e.g., D. <ref type="bibr" target="#b26">Minniti et al. 2017;</ref><ref type="bibr" target="#b13">E. R. Garro et al. 2022)</ref>. Huang, R., <ref type="bibr">Tang, B., Li, C., et al. 2024</ref><ref type="bibr">, Science China Physics, Mechanics, and Astronomy, 67, 259513, doi: 10.1007</ref><ref type="bibr">/s11433-023-2332</ref><ref type="bibr">-5 Ibata, R. A., Gilmore, G., &amp; Irwin, M. J. 1994, Nature, 370, 194, doi: 10</ref>.1038/370194a0 Note-a : total sample sizes of every GCs, and sample sizes of primordial populations in parentheses. b : mean abundances of primordial populations. c : the associated standard deviations.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><figDesc>For example, D. Horta et al. (2020) distinguished insitu from accreted origins among relatively metal-rich GCs ([Fe/H] &gt; -1.5) using mean [Si/Fe]. Conversely, V. Belokurov &amp; A. Kravtsov (2024) showed that the mean [Mg/Fe]-[Al/Fe] plane fails to clearly separate insitu and accreted GCs defined by their E -L z (orbital energy vs. vertical angular momentum) location. This difficulty arises because Mg, Al, and Si exhibit significant variations within individual GCs (e.g., B. Tang et al. 2018; A. P. Milone &amp; A. F. Marino 2022), complicating classification in certain cases.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .Figure 2 .</head><label>12</label><figDesc>Figure 1. Mean [Al/Fe] versus mean [Fe/H] of primordial populations in Galactic GCs. Their associated standard deviations are shown as error bars. The black dotted line indicates the metallicity of [Fe/H] = -1.5. GCs with [Fe/H] &lt; -1.5 are not suitable for our chemically based classification (grey region). The black dashed line separates chemically classified in-situ and accreted clusters. In comparison, MKH classification is also shown (in-situ: purple, accreted: red).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Our conceptual diagram showing mean [Mg/Fe] versus mean [Al/Fe] of primordial populations in Galactic GCs. The Blue (red) star symbols mark the in-situ (accreted) GCs classified by MKH. The blue (red) arrowed line shows the empirical evolutionary path of in-situ (accreted) GC primordial populations, with increasing metallicity. The Mg-Al (anti-)correlations of in-situ GCs are shown as: blue dotted line -NGC 6397 ([Fe/H] = -1.88), blue dash-dotted line -NGC 6752 ([Fe/H] = -1.46), blue dashed line -M107 ([Fe/H] = -0.85), respectively. Meanwhile, The Mg-Al (anti-)correlations of accreted GCs are shown as: red dotted line -M86 ([Fe/H] = -2.16), red dash-dotted line -NGC 3201 ([Fe/H] = -1.22), red dashed line -NGC 2808 ([Fe/H] = -0.93), respectively.</figDesc><graphic coords="5,126.08,61.43,360.51,245.77" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><figDesc>The [Si/Fe] difference here is consistent with D.Horta et al. (2020) and D.  Geisler et al. (2021). In the higher metallicity range (-1.0 &lt; [Fe/H] &lt; -0.7), ∆[Al/Fe] reaches ∼ 0.5 dex compared to ∆[Si/Fe] ∼ 0.15 dex. These differentials align with the ∆[Al/Fe] and ∆[Si/Fe] values distinguishing in-situ halo and thick disk stars from accreted halo stars reported by K.Hawkins et al. (2015). Consequently, the enhanced discrepancy in primordial [Al/Fe] provides a more robust basis for classification.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Mean [Mg/Fe] versus mean [Al/Fe] of primordial populations in APOGEE GCs. Their associated standard deviations are shown as error bars. Small purple (red) dots represent the in-situ (accreted) GCs based on our classification. Filled purple (red) squares mark the in-situ (accreted) GCs based on MKH classification. Three GCs (Terzan 9, NGC 288 and M4) with inconsistent classification between the two works are properly labeled.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 .</head><label>1</label><figDesc>Globular Clusters selected from S.<ref type="bibr" target="#b27">Mészáros et al. (2020)</ref> GC name sample size a [Fe/H] b</figDesc><table><row><cell></cell><cell></cell><cell>prim</cell><cell>σ c Fe</cell><cell>[Al/Fe] b prim</cell><cell>σ c Al</cell><cell>[Mg/Fe] b prim</cell><cell>σ c Mg</cell><cell>MKH classification</cell></row><row><cell></cell><cell cols="6">GCs with origins that cannot be identified chemically</cell><cell></cell><cell></cell></row><row><cell>M15</cell><cell>51(17)</cell><cell>-2.24</cell><cell>0.13</cell><cell>-0.11</cell><cell>0.12</cell><cell>0.38</cell><cell>0.09</cell><cell>main disk</cell></row><row><cell>M92</cell><cell>34(11)</cell><cell>-2.21</cell><cell>0.08</cell><cell>-0.11</cell><cell>0.15</cell><cell>0.40</cell><cell>0.09</cell><cell>GE</cell></row><row><cell>M68</cell><cell>25(8)</cell><cell>-2.13</cell><cell>0.07</cell><cell>-0.15</cell><cell>0.09</cell><cell>0.32</cell><cell>0.09</cell><cell>H99</cell></row><row><cell>NGC 5053</cell><cell>11(3)</cell><cell>-2.04</cell><cell>0.08</cell><cell>-0.14</cell><cell>0.08</cell><cell>0.20</cell><cell>0.09</cell><cell>H99</cell></row><row><cell>NGC 6397</cell><cell>94(31)</cell><cell>-1.88</cell><cell>0.09</cell><cell>-0.11</cell><cell>0.15</cell><cell>0.40</cell><cell>0.10</cell><cell>main disk</cell></row><row><cell>M53</cell><cell>31(10)</cell><cell>-1.84</cell><cell>0.10</cell><cell>-0.17</cell><cell>0.06</cell><cell>0.38</cell><cell>0.04</cell><cell>H99</cell></row><row><cell>NGC 5466</cell><cell>7(2)</cell><cell>-1.80</cell><cell>0.00</cell><cell>-0.30</cell><cell>0.00</cell><cell>0.18</cell><cell>0.02</cell><cell>Seq</cell></row><row><cell>M55</cell><cell>54(18)</cell><cell>-1.78</cell><cell>0.09</cell><cell>-0.15</cell><cell>0.07</cell><cell>0.49</cell><cell>0.07</cell><cell>Low-energy</cell></row><row><cell>M22</cell><cell>15(5)</cell><cell>-1.62</cell><cell>0.13</cell><cell>-0.10</cell><cell>0.17</cell><cell>0.33</cell><cell>0.15</cell><cell>main disk</cell></row><row><cell>ω Cen</cell><cell>665(221)</cell><cell>-1.61</cell><cell>0.17</cell><cell>-0.06</cell><cell>0.11</cell><cell>0.46</cell><cell>0.11</cell><cell>GE/Seq</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell cols="2">accreted GCs</cell><cell></cell><cell></cell><cell></cell></row><row><cell>M79</cell><cell>21(7)</cell><cell>-1.48</cell><cell>0.11</cell><cell>-0.17</cell><cell>0.09</cell><cell>0.39</cell><cell>0.07</cell><cell>GE</cell></row><row><cell>M13</cell><cell>60(20)</cell><cell>-1.42</cell><cell>0.08</cell><cell>-0.09</cell><cell>0.15</cell><cell>0.34</cell><cell>0.09</cell><cell>GE</cell></row><row><cell>M2</cell><cell>21(7)</cell><cell>-1.41</cell><cell>0.05</cell><cell>-0.16</cell><cell>0.08</cell><cell>0.35</cell><cell>0.07</cell><cell>GE</cell></row><row><cell>M3</cell><cell>132(44)</cell><cell>-1.41</cell><cell>0.13</cell><cell>-0.12</cell><cell>0.05</cell><cell>0.27</cell><cell>0.06</cell><cell>H99</cell></row><row><cell>M10</cell><cell>73(24)</cell><cell>-1.31</cell><cell>0.10</cell><cell>-0.09</cell><cell>0.05</cell><cell>0.36</cell><cell>0.07</cell><cell>Low-energy</cell></row><row><cell>NGC 3201</cell><cell>35(11)</cell><cell>-1.19</cell><cell>0.08</cell><cell>-0.19</cell><cell>0.05</cell><cell>0.26</cell><cell>0.06</cell><cell>Seq/GE</cell></row><row><cell>M5</cell><cell>180(60)</cell><cell>-1.17</cell><cell>0.10</cell><cell>-0.09</cell><cell>0.10</cell><cell>0.28</cell><cell>0.09</cell><cell>GE/H99</cell></row><row><cell>NGC 1851</cell><cell>27(9)</cell><cell>-1.05</cell><cell>0.08</cell><cell>-0.07</cell><cell>0.08</cell><cell>0.30</cell><cell>0.02</cell><cell>GE</cell></row><row><cell>NGC 362</cell><cell>37(12)</cell><cell>-1.02</cell><cell>0.06</cell><cell>-0.02</cell><cell>0.08</cell><cell>0.27</cell><cell>0.06</cell><cell>GE</cell></row><row><cell>NGC 2808</cell><cell>57(19)</cell><cell>-0.94</cell><cell>0.08</cell><cell>-0.08</cell><cell>0.07</cell><cell>0.23</cell><cell>0.06</cell><cell>GE</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>in-situ GCs</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>NGC 6752</cell><cell>124(41)</cell><cell>-1.46</cell><cell>0.08</cell><cell>0.11</cell><cell>0.18</cell><cell>0.45</cell><cell>0.07</cell><cell>main disk</cell></row><row><cell>NGC 288</cell><cell>36(12)</cell><cell>-1.23</cell><cell>0.17</cell><cell>0.18</cell><cell>0.10</cell><cell>0.48</cell><cell>0.07</cell><cell>GE</cell></row><row><cell>M12</cell><cell>49(16)</cell><cell>-1.21</cell><cell>0.12</cell><cell>0.10</cell><cell>0.07</cell><cell>0.47</cell><cell>0.08</cell><cell>main disk</cell></row><row><cell>M4</cell><cell>123(41)</cell><cell>-1.04</cell><cell>0.10</cell><cell>0.58</cell><cell>0.10</cell><cell>0.48</cell><cell>0.07</cell><cell>Low-energy</cell></row><row><cell>M107</cell><cell>41(13)</cell><cell>-0.83</cell><cell>0.11</cell><cell>0.43</cell><cell>0.03</cell><cell>0.36</cell><cell>0.15</cell><cell>main bulge</cell></row><row><cell>47 Tuc</cell><cell>111(37)</cell><cell>-0.61</cell><cell>0.12</cell><cell>0.44</cell><cell>0.06</cell><cell>0.39</cell><cell>0.07</cell><cell>main disk</cell></row><row><cell>M71</cell><cell>28(9)</cell><cell>-0.48</cell><cell>0.08</cell><cell>0.37</cell><cell>0.05</cell><cell>0.28</cell><cell>0.05</cell><cell>main disk</cell></row><row><cell cols="4">Note-Geisler, D., Villanova, S., O'Connell, J. E., et al. 2021,</cell><cell cols="5">Horta, D., Schiavon, R. P., Mackereth, J. T., et al. 2020,</cell></row><row><cell cols="3">Astronomy &amp; Astrophysics, 652, A157,</cell><cell></cell><cell></cell><cell cols="4">MNRAS, 493, 3363, doi: 10.1093/mnras/staa478</cell></row><row><cell cols="2">doi: 10.1051/0004-6361/202140436</cell><cell></cell><cell></cell><cell cols="5">Horta, D., Schiavon, R. P., Mackereth, J. T., et al. 2021,</cell></row><row><cell cols="5">Gunn, J. E., Siegmund, W. A., Mannery, E. J., et al. 2006,</cell><cell cols="4">MNRAS, 500, 1385, doi: 10.1093/mnras/staa2987</cell></row><row><cell cols="2">AJ, 131, 2332, doi: 10.1086/500975</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="5">Hawkins, K., Jofré, P., Masseron, T., &amp; Gilmore, G. 2015,</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">Mon. Not. R. Astron. Soc., 453, 758,</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="2">doi: 10.1093/mnras/stv1586</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="3">Horta, D., &amp; Ness, M. K. 2025, arXiv e-prints,</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="4">arXiv:2506.08079, doi: 10.48550/arXiv.2506.08079</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>a : total sample sizes of every GCs, and sample sizes of primordial populations in parentheses. b : mean abundances of primordial populations. c : the associated standard deviations.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>GCs selected from ASPCAP GC name sample size a [Fe/H] b</figDesc><table><row><cell></cell><cell></cell><cell>prim</cell><cell>σ c Fe</cell><cell>[Al/Fe] b prim</cell><cell>σ c Al</cell><cell>[Mg/Fe] b prim</cell><cell>σ c Mg</cell><cell>MKH classification</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>accreted GCs</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>M3</cell><cell>261(87)</cell><cell>-1.48</cell><cell>0.11</cell><cell>-0.32</cell><cell>0.04</cell><cell>0.16</cell><cell>0.06</cell><cell>H99</cell></row><row><cell>NGC 3201</cell><cell>165(55)</cell><cell>-1.40</cell><cell>0.09</cell><cell>-0.35</cell><cell>0.04</cell><cell>0.20</cell><cell>0.05</cell><cell>Seq/GE</cell></row><row><cell>Terzan 9</cell><cell>11(3)</cell><cell>-1.37</cell><cell>0.10</cell><cell>-0.31</cell><cell>0.06</cell><cell>0.22</cell><cell>0.06</cell><cell>main bulge</cell></row><row><cell>NGC 6229</cell><cell>8(2)</cell><cell>-1.37</cell><cell>0.01</cell><cell>-0.30</cell><cell>0.03</cell><cell>0.16</cell><cell>0.02</cell><cell>GE</cell></row><row><cell>M5</cell><cell>216(72)</cell><cell>-1.25</cell><cell>0.09</cell><cell>-0.25</cell><cell>0.10</cell><cell>0.20</cell><cell>0.04</cell><cell>GE/H99</cell></row><row><cell>NGC 1851</cell><cell>49(16)</cell><cell>-1.16</cell><cell>0.05</cell><cell>-0.27</cell><cell>0.06</cell><cell>0.19</cell><cell>0.04</cell><cell>GE</cell></row><row><cell>NGC 362</cell><cell>65(21)</cell><cell>-1.14</cell><cell>0.07</cell><cell>-0.27</cell><cell>0.07</cell><cell>0.11</cell><cell>0.07</cell><cell>GE</cell></row><row><cell>NGC 2808</cell><cell>124(41)</cell><cell>-1.11</cell><cell>0.05</cell><cell>-0.22</cell><cell>0.04</cell><cell>0.16</cell><cell>0.05</cell><cell>GE</cell></row><row><cell>M54</cell><cell>863(287)</cell><cell>-0.69</cell><cell>0.23</cell><cell>-0.55</cell><cell>0.05</cell><cell>-0.07</cell><cell>0.07</cell><cell>Sag</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell>in-situ GCs</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>NGC 6752</cell><cell>138(46)</cell><cell>-1.48</cell><cell>0.23</cell><cell>-0.11</cell><cell>0.19</cell><cell>0.29</cell><cell>0.05</cell><cell>main disk</cell></row><row><cell>NGC 288</cell><cell>40(13)</cell><cell>-1.33</cell><cell>0.06</cell><cell>-0.01</cell><cell>0.05</cell><cell>0.28</cell><cell>0.05</cell><cell>GE</cell></row><row><cell>M12</cell><cell>78(26)</cell><cell>-1.32</cell><cell>0.06</cell><cell>-0.11</cell><cell>0.07</cell><cell>0.31</cell><cell>0.04</cell><cell>main disk</cell></row><row><cell>HP 1</cell><cell>12(4)</cell><cell>-1.24</cell><cell>0.06</cell><cell>-0.01</cell><cell>0.10</cell><cell>0.23</cell><cell>0.05</cell><cell>main bulge</cell></row><row><cell>Djorg 2</cell><cell>8(2)</cell><cell>-1.15</cell><cell>0.05</cell><cell>-0.01</cell><cell>0.08</cell><cell>0.33</cell><cell>0.03</cell><cell>main bulge</cell></row><row><cell>M4</cell><cell>205(68)</cell><cell>-1.13</cell><cell>0.10</cell><cell>0.29</cell><cell>0.10</cell><cell>0.33</cell><cell>0.05</cell><cell>Low-energy</cell></row><row><cell>M107</cell><cell>52(17)</cell><cell>-1.12</cell><cell>0.11</cell><cell>0.13</cell><cell>0.06</cell><cell>0.26</cell><cell>0.07</cell><cell>main bulge</cell></row><row><cell>NGC 6723</cell><cell>9(3)</cell><cell>-1.07</cell><cell>0.05</cell><cell>0.05</cell><cell>0.02</cell><cell>0.30</cell><cell>0.04</cell><cell>main bulge</cell></row><row><cell>NGC 6316</cell><cell>8(2)</cell><cell>-0.89</cell><cell>0.01</cell><cell>-0.08</cell><cell>0.11</cell><cell>0.28</cell><cell>0.02</cell><cell>main bulge</cell></row><row><cell>NGC 6760</cell><cell>9(3)</cell><cell>-0.78</cell><cell>0.02</cell><cell>0.09</cell><cell>0.03</cell><cell>0.32</cell><cell>0.04</cell><cell>main disk</cell></row><row><cell>47 Tuc</cell><cell>270(90)</cell><cell>-0.78</cell><cell>0.05</cell><cell>0.22</cell><cell>0.04</cell><cell>0.34</cell><cell>0.03</cell><cell>main disk</cell></row><row><cell>M71</cell><cell>108(36)</cell><cell>-0.77</cell><cell>0.05</cell><cell>0.15</cell><cell>0.04</cell><cell>0.32</cell><cell>0.03</cell><cell>main disk</cell></row><row><cell>NGC 6642</cell><cell>11(3)</cell><cell>-0.64</cell><cell>0.69</cell><cell>0.04</cell><cell>0.06</cell><cell>0.22</cell><cell>0.14</cell><cell>main bulge</cell></row><row><cell>NGC 6380</cell><cell>18(6)</cell><cell>-0.63</cell><cell>0.29</cell><cell>0.13</cell><cell>0.06</cell><cell>0.29</cell><cell>0.09</cell><cell>main bulge</cell></row><row><cell>NGC 6388</cell><cell>34(11)</cell><cell>-0.54</cell><cell>0.28</cell><cell>-0.09</cell><cell>0.09</cell><cell>0.08</cell><cell>0.04</cell><cell>main bulge</cell></row><row><cell>NGC 6569</cell><cell>9(3)</cell><cell>-0.53</cell><cell>0.67</cell><cell>0.09</cell><cell>0.04</cell><cell>0.24</cell><cell>0.12</cell><cell>main bulge</cell></row><row><cell>NGC 6304</cell><cell>13(4)</cell><cell>-0.51</cell><cell>0.09</cell><cell>0.14</cell><cell>0.07</cell><cell>0.28</cell><cell>0.06</cell><cell>main bulge</cell></row><row><cell>NGC 6553</cell><cell>8(2)</cell><cell>-0.17</cell><cell>0.00</cell><cell>0.05</cell><cell>0.04</cell><cell>0.15</cell><cell>0.01</cell><cell>main bulge</cell></row><row><cell>Terzan 5</cell><cell>9(3)</cell><cell>-0.09</cell><cell>0.47</cell><cell>-0.02</cell><cell>0.03</cell><cell>0.12</cell><cell>0.13</cell><cell>main bulge</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>ACKNOWLEDGEMENTS</head><p>We thank <rs type="person">Jianhui Lian</rs>, <rs type="person">Jianrong Shi</rs>, and <rs type="person">Ruoyun Huang</rs> for helpful discussions. We thank the anonymous referee for insightful comments. S.L. and B.T. gratefully acknowledge support from the <rs type="funder">National Natural Science Foundation of China</rs> through grants NOs. <rs type="grantNumber">12473035</rs> and <rs type="grantNumber">12233013</rs>, China Manned Space Project under grant <rs type="grantNumber">NO. CMS-CSST-2025-A13</rs> and <rs type="grantNumber">CMS-CSST-2021-A08</rs>. J.G.F.-T. gratefully acknowledges the grant support provided by <rs type="funder">ANID Fondecyt Iniciación</rs> No. <rs type="grantNumber">11220340</rs>, <rs type="grantNumber">ANID Fondecyt Postdoc No. 3230001</rs>, and from the <rs type="funder">Joint Committee ESO-Government of Chile</rs> under the agreement <rs type="grantNumber">2023 ORP 062/2023</rs>. D.G. gratefully acknowledges the support provided by <rs type="funder">Fondecyt</rs> regular no. <rs type="grantNumber">1220264</rs>. D.G. also acknowledges financial support from the <rs type="funder">Dirección de Investigación y Desarrollo de la Universidad de La Serena</rs> through the <rs type="funder">Programa de Incentivo a la Investigación de Académicos (PIA-DIDULS)</rs>.</p><p>APPENDIX</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_UJs6NEw">
+					<idno type="grant-number">12473035</idno>
+				</org>
+				<org type="funding" xml:id="_xFaeRUM">
+					<idno type="grant-number">12233013</idno>
+				</org>
+				<org type="funding" xml:id="_pagpRG7">
+					<idno type="grant-number">NO. CMS-CSST-2025-A13</idno>
+				</org>
+				<org type="funding" xml:id="_G9wCjM6">
+					<idno type="grant-number">CMS-CSST-2021-A08</idno>
+				</org>
+				<org type="funding" xml:id="_SXeN4nM">
+					<idno type="grant-number">11220340</idno>
+				</org>
+				<org type="funding" xml:id="_ckzB2q4">
+					<idno type="grant-number">ANID Fondecyt Postdoc No. 3230001</idno>
+				</org>
+				<org type="funding" xml:id="_kvuW2ss">
+					<idno type="grant-number">2023 ORP 062/2023</idno>
+				</org>
+				<org type="funding" xml:id="_nNgB5Fw">
+					<idno type="grant-number">1220264</idno>
+				</org>
+			</listOrg>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">On the formation of globular cluster systems in a hierarchical Universe</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Beasley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Baugh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Duncan</forename><forename type="middle">A</forename><surname>Forbes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">M</forename><surname>Sharples</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">S</forename><surname>Frenk</surname></persName>
+		</author>
+		<idno type="DOI">10.1046/j.1365-8711.2002.05402.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">333</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="383" to="399" />
+			<date type="published" when="2002-06">2002</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">&lt;i&gt;In-situ&lt;/i&gt; versus accreted Milky Way globular clusters: a new classification method and implications for cluster formation</title>
+		<author>
+			<persName><forename type="first">Vasily</forename><surname>Belokurov</surname></persName>
+			<idno type="ORCID">0000-0002-0038-9584</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andrey</forename><surname>Kravtsov</surname></persName>
+			<idno type="ORCID">0000-0003-4307-634X</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stad3920</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">528</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="3198" to="3216" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">V</forename><surname>Belokurov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Sanders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Fattahi</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/staa876</idno>
+	</analytic>
+	<monogr>
+		<title level="j">MNRAS</title>
+		<imprint>
+			<biblScope unit="volume">494</biblScope>
+			<biblScope unit="page">3880</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The Optical Design of the 40-in Telescope and of the Irenee DuPont Telescope at Las Campanas Observatory, Chile</title>
+		<author>
+			<persName><forename type="first">I</forename><forename type="middle">S</forename><surname>Bowen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Vaughan</surname></persName>
+		</author>
+		<idno type="DOI">10.1364/ao.12.001430</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Applied Optics</title>
+		<title level="j" type="abbrev">Appl. Opt.</title>
+		<idno type="ISSN">0003-6935</idno>
+		<idno type="ISSNe">1539-4522</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">1430</biblScope>
+			<date type="published" when="1973-07-01">1973</date>
+			<publisher>Optica Publishing Group</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Extragalactic Globular Clusters and Galaxy Formation</title>
+		<author>
+			<persName><forename type="first">Jean</forename><forename type="middle">P</forename><surname>Brodie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jay</forename><surname>Strader</surname></persName>
+		</author>
+		<idno type="DOI">10.1146/annurev.astro.44.051905.092441</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annual Review of Astronomy and Astrophysics</title>
+		<title level="j" type="abbrev">Annu. Rev. Astron. Astrophys.</title>
+		<idno type="ISSN">0066-4146</idno>
+		<idno type="ISSNe">1545-4282</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="193" to="267" />
+			<date type="published" when="2006-09-01">2006</date>
+			<publisher>Annual Reviews</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The chemo-dynamical groups of Galactic globular clusters</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><forename type="middle">M</forename><surname>Callingham</surname></persName>
+			<idno type="ORCID">0000-0003-4952-1299</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marius</forename><surname>Cautun</surname></persName>
+			<idno type="ORCID">0000-0003-1625-6126</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alis</forename><forename type="middle">J</forename><surname>Deason</surname></persName>
+			<idno type="ORCID">0000-0001-6146-2645</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">S</forename><surname>Frenk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">J J</forename><surname>Grand</surname></persName>
+			<idno type="ORCID">0000-0001-9667-1340</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Federico</forename><surname>Marinacci</surname></persName>
+			<idno type="ORCID">0000-0003-3816-7028</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stac1145</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">513</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="4107" to="4129" />
+			<date type="published" when="2022-04-29">2022</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Chemical Abundances of Hydrostatic and Explosive Alpha-elements in Sagittarius Stream Stars</title>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">L</forename><surname>Carlin</surname></persName>
+			<idno type="ORCID">0000-0002-3936-9628</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Allyson</forename><forename type="middle">A</forename><surname>Sheffield</surname></persName>
+			<idno type="ORCID">0000-0003-2178-8792</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Katia</forename><surname>Cunha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Verne</forename><forename type="middle">V</forename><surname>Smith</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/2041-8213/aac3d8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal Letters</title>
+		<title level="j" type="abbrev">ApJL</title>
+		<idno type="ISSN">2041-8205</idno>
+		<idno type="ISSNe">2041-8213</idno>
+		<imprint>
+			<biblScope unit="volume">859</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">L10</biblScope>
+			<date type="published" when="2018-05-20">2018</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+	<note>L</note>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><surname>Carretta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bragaglia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Gratton</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/200912096</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">505</biblScope>
+			<biblScope unit="page">117</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">E</forename><surname>Ceccarelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Massari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Aguado-Agelet</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2503.02939</idno>
+	</analytic>
+	<monogr>
+		<title level="j">arXiv</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">Y</forename><surname>Gnedin</surname></persName>
+		</author>
+		<idno type="DOI">10.33232/001c.116169</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Open Journal of Astrophysics</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Ages and kinematics of chemically selected, accreted Milky Way halo stars</title>
+		<author>
+			<persName><forename type="first">Payel</forename><surname>Das</surname></persName>
+			<idno type="ORCID">0000-0002-3239-4222</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Keith</forename><surname>Hawkins</surname></persName>
+			<idno type="ORCID">0000-0002-1423-2174</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paula</forename><surname>Jofré</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stz3537</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">493</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="5195" to="5207" />
+			<date type="published" when="2020-02-03">2020</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">VVV CL001: Likely the Most Metal-poor Surviving Globular Cluster in the Inner Galaxy</title>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">G</forename><surname>Fernández-Trincado</surname></persName>
+			<idno type="ORCID">0000-0003-3526-5052</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dante</forename><surname>Minniti</surname></persName>
+			<idno type="ORCID">0000-0002-7064-099X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><forename type="middle">O</forename><surname>Souza</surname></persName>
+			<idno type="ORCID">0000-0001-8052-969X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">C</forename><surname>Beers</surname></persName>
+			<idno type="ORCID">0000-0003-4573-6233</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Doug</forename><surname>Geisler</surname></persName>
+			<idno type="ORCID">0000-0002-3900-8208</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><forename type="middle">Moni</forename><surname>Bidin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandro</forename><surname>Villanova</surname></persName>
+			<idno type="ORCID">0000-0001-6205-1493</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+			<idno type="ORCID">0000-0003-2025-3147</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Beatriz</forename><surname>Barbuy</surname></persName>
+			<idno type="ORCID">0000-0001-9264-4417</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Angeles</forename><surname>Pérez-Villegas</surname></persName>
+			<idno type="ORCID">0000-0002-5974-3998</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lady</forename><surname>Henao</surname></persName>
+			<idno type="ORCID">0000-0002-2036-2944</idno>
+		</author>
+		<author>
+			<persName><forename type="first">María</forename><surname>Romero-Colmenares</surname></persName>
+			<idno type="ORCID">0000-0001-6515-5036</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandre</forename><surname>Roman-Lopes</surname></persName>
+			<idno type="ORCID">0000-0002-1379-4204</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">R</forename><surname>Lane</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/2041-8213/abdf47</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal Letters</title>
+		<title level="j" type="abbrev">ApJL</title>
+		<idno type="ISSN">2041-8205</idno>
+		<idno type="ISSNe">2041-8213</idno>
+		<imprint>
+			<biblScope unit="volume">908</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">L42</biblScope>
+			<date type="published" when="2021-02-01">2021</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+	<note>L</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Accreted versus&lt;i&gt;in situ&lt;/i&gt;Milky Way globular clusters</title>
+		<author>
+			<persName><forename type="first">Duncan</forename><forename type="middle">A</forename><surname>Forbes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Terry</forename><surname>Bridges</surname></persName>
+		</author>
+		<idno type="DOI">10.1111/j.1365-2966.2010.16373.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">404</biblScope>
+			<biblScope unit="page">1203</biblScope>
+			<date type="published" when="2010-02">2010</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Inspection of 19 globular cluster candidates in the Galactic bulge with the VVV survey</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">R</forename><surname>Garro</surname></persName>
+			<idno type="ORCID">0000-0002-4014-1591</idno>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Minniti</surname></persName>
+			<idno type="ORCID">0000-0002-7064-099X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gómez</surname></persName>
+			<idno type="ORCID">0000-0002-4430-9427</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Alonso-García</surname></persName>
+			<idno type="ORCID">0000-0003-3496-3772</idno>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Ripepi</surname></persName>
+			<idno type="ORCID">0000-0003-1801-426X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Fernández-Trincado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Vivanco Cádiz</surname></persName>
+			<idno type="ORCID">0000-0001-9352-2286</idno>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202141819</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">658</biblScope>
+			<biblScope unit="page">A120</biblScope>
+			<date type="published" when="2022-02">2022</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">T</forename><surname>Jeřábková</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">H</forename><surname>Zonoozi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kroupa</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201833055</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">620</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note>A</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">P</forename><surname>Jofré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Aguilera-Gómez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Villarreal</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2504.01813</idno>
+		<idno type="arXiv">arXiv:2504.01813</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">APOGEE Data and Spectral Analysis from SDSS Data Release 16: Seven Years of Observations Including First Results from APOGEE-South</title>
+		<author>
+			<persName><forename type="first">Henrik</forename><surname>Jönsson</surname></persName>
+			<idno type="ORCID">0000-0002-4912-8609</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jon</forename><forename type="middle">A</forename><surname>Holtzman</surname></persName>
+			<idno type="ORCID">0000-0002-9771-9622</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">Allende</forename><surname>Prieto</surname></persName>
+			<idno type="ORCID">0000-0002-0084-572X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Katia</forename><surname>Cunha</surname></persName>
+			<idno type="ORCID">0000-0001-6476-0576</idno>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>García-Hernández</surname></persName>
+			<idno type="ORCID">0000-0002-1693-2721</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sten</forename><surname>Hasselquist</surname></persName>
+			<idno type="ORCID">0000-0001-5388-0994</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Masseron</surname></persName>
+			<idno type="ORCID">0000-0002-6939-0831</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yeisson</forename><surname>Osorio</surname></persName>
+			<idno type="ORCID">0000-0001-5832-6933</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Shetrone</surname></persName>
+			<idno type="ORCID">0000-0003-0509-2656</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Verne</forename><surname>Smith</surname></persName>
+			<idno type="ORCID">0000-0002-0134-2024</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Guy</forename><forename type="middle">S</forename><surname>Stringfellow</surname></persName>
+			<idno type="ORCID">0000-0003-1479-3059</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitry</forename><surname>Bizyaev</surname></persName>
+			<idno type="ORCID">0000-0002-3601-133X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bengt</forename><surname>Edvardsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+			<idno type="ORCID">0000-0003-2025-3147</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Szabolcs</forename><surname>Mészáros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diogo</forename><surname>Souto</surname></persName>
+			<idno type="ORCID">0000-0002-7883-5425</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olga</forename><surname>Zamora</surname></persName>
+			<idno type="ORCID">0000-0003-2100-1638</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rachael</forename><forename type="middle">L</forename><surname>Beaton</surname></persName>
+			<idno type="ORCID">0000-0002-1691-8217</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jo</forename><surname>Bovy</surname></persName>
+			<idno type="ORCID">0000-0001-6855-442X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Donor</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><forename type="middle">H</forename><surname>Pinsonneault</surname></persName>
+			<idno type="ORCID">0000-0002-7549-7766</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Vijith</forename><forename type="middle">Jacob</forename><surname>Poovelil</surname></persName>
+			<idno type="ORCID">0000-0002-9831-3501</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Sobeck</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-3881/aba592</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astronomical Journal</title>
+		<title level="j" type="abbrev">AJ</title>
+		<idno type="ISSN">0004-6256</idno>
+		<idno type="ISSNe">1538-3881</idno>
+		<imprint>
+			<biblScope unit="volume">160</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">120</biblScope>
+			<date type="published" when="2020-08-17">2020</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kobayashi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Umeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Nomoto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Tominaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ohkubo</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/508914</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ApJ</title>
+		<imprint>
+			<biblScope unit="volume">653</biblScope>
+			<biblScope unit="page">1145</biblScope>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Gas expulsion in massive star clusters?</title>
+		<author>
+			<persName><forename type="first">Martin</forename><forename type="middle">G H</forename><surname>Krause</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corinne</forename><surname>Charbonnel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nate</forename><surname>Bastian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roland</forename><surname>Diehl</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201526685</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">587</biblScope>
+			<biblScope unit="page">A53</biblScope>
+			<date type="published" when="2016-02-16">2016</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">ASSESSING THE MILKY WAY SATELLITES ASSOCIATED WITH THE SAGITTARIUS DWARF SPHEROIDAL GALAXY</title>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">R</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0004-637x/718/2/1128</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<title level="j" type="abbrev">ApJ</title>
+		<idno type="ISSN">0004-637X</idno>
+		<idno type="ISSNe">1538-4357</idno>
+		<imprint>
+			<biblScope unit="volume">718</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1128" to="1150" />
+			<date type="published" when="2010-07-13">2010</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">The Apache Point Observatory Galactic Evolution Experiment (APOGEE)</title>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+			<idno type="ORCID">0000-0003-2025-3147</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">P</forename><surname>Schiavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">M</forename><surname>Frinchaboy</surname></persName>
+			<idno type="ORCID">0000-0002-0740-8346</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><forename type="middle">Allende</forename><surname>Prieto</surname></persName>
+			<idno type="ORCID">0000-0002-0084-572X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Barkhouser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitry</forename><surname>Bizyaev</surname></persName>
+			<idno type="ORCID">0000-0002-3601-133X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Basil</forename><surname>Blank</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sophia</forename><surname>Brunner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Burton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><surname>Carrera</surname></persName>
+			<idno type="ORCID">0000-0001-6143-8151</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Drew</forename><surname>Chojnowski</surname></persName>
+			<idno type="ORCID">0000-0001-9984-0891</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kátia</forename><surname>Cunha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Courtney</forename><surname>Epstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Greg</forename><surname>Fitzgerald</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ana</forename><forename type="middle">E García</forename><surname>Pérez</surname></persName>
+			<idno type="ORCID">0000-0003-2184-6198</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fred</forename><forename type="middle">R</forename><surname>Hearty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuck</forename><surname>Henderson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jon</forename><forename type="middle">A</forename><surname>Holtzman</surname></persName>
+			<idno type="ORCID">0000-0002-9771-9622</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+			<idno type="ORCID">0000-0001-7258-1834</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Charles</forename><forename type="middle">R</forename><surname>Lam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">E</forename><surname>Lawler</surname></persName>
+			<idno type="ORCID">0000-0001-5579-9233</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><surname>Maseman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szabolcs</forename><surname>Mészáros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Nelson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Duy</forename><forename type="middle">Coung</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Nidever</surname></persName>
+			<idno type="ORCID">0000-0002-1793-3689</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Pinsonneault</surname></persName>
+			<idno type="ORCID">0000-0002-7549-7766</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Shetrone</surname></persName>
+			<idno type="ORCID">0000-0003-0509-2656</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stephen</forename><surname>Smee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Verne</forename><forename type="middle">V</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Todd</forename><surname>Stolberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">F</forename><surname>Skrutskie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Walker</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">C</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gail</forename><surname>Zasowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Friedrich</forename><surname>Anders</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarbani</forename><surname>Basu</surname></persName>
+			<idno type="ORCID">0000-0002-6163-3472</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stephane</forename><surname>Beland</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">R</forename><surname>Blanton</surname></persName>
+			<idno type="ORCID">0000-0003-1641-6222</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jo</forename><surname>Bovy</surname></persName>
+			<idno type="ORCID">0000-0001-6855-442X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">R</forename><surname>Brownstein</surname></persName>
+			<idno type="ORCID">0000-0002-8725-1069</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Joleen</forename><surname>Carlberg</surname></persName>
+			<idno type="ORCID">0000-0001-5926-4471</idno>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Chaplin</surname></persName>
+			<idno type="ORCID">0000-0002-5714-8618</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Cristina</forename><surname>Chiappini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><forename type="middle">J</forename><surname>Eisenstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yvonne</forename><surname>Elsworth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Diane</forename><surname>Feuillet</surname></persName>
+			<idno type="ORCID">0000-0002-3101-5921</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Scott</forename><forename type="middle">W</forename><surname>Fleming</surname></persName>
+			<idno type="ORCID">0000-0003-0556-027X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jessica</forename><surname>Galbraith-Frew</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rafael</forename><forename type="middle">A</forename><surname>García</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Aníbal</forename><surname>García-Hernández</surname></persName>
+			<idno type="ORCID">0000-0002-1693-2721</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Bruce</forename><forename type="middle">A</forename><surname>Gillespie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Léo</forename><surname>Girardi</surname></persName>
+			<idno type="ORCID">0000-0002-6301-3269</idno>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">E</forename><surname>Gunn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sten</forename><surname>Hasselquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">R</forename><surname>Hayden</surname></persName>
+			<idno type="ORCID">0000-0001-7294-9766</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Saskia</forename><surname>Hekker</surname></persName>
+			<idno type="ORCID">0000-0002-1463-726X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Inese</forename><surname>Ivans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Karen</forename><surname>Kinemuchi</surname></persName>
+			<idno type="ORCID">0000-0001-7908-7724</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Klaene</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suvrath</forename><surname>Mahadevan</surname></persName>
+			<idno type="ORCID">0000-0001-9596-7983</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Savita</forename><surname>Mathur</surname></persName>
+			<idno type="ORCID">0000-0002-0129-0316</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Benoît</forename><surname>Mosser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Demitri</forename><surname>Muna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeffrey</forename><forename type="middle">A</forename><surname>Munn</surname></persName>
+			<idno type="ORCID">0000-0002-4603-4834</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">C</forename><surname>Nichol</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">W</forename><surname>O’connell</surname></persName>
+			<idno type="ORCID">0000-0002-8190-7573</idno>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">K</forename><surname>Parejko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Robin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Helio</forename><surname>Rocha-Pinto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthias</forename><surname>Schultheis</surname></persName>
+			<idno type="ORCID">0000-0002-6590-1657</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Aldo</forename><forename type="middle">M</forename><surname>Serenelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neville</forename><surname>Shane</surname></persName>
+			<idno type="ORCID">0000-0003-1024-7739</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><forename type="middle">Silva</forename><surname>Aguirre</surname></persName>
+			<idno type="ORCID">0000-0002-6137-903X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">S</forename><surname>Sobeck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Thompson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nicholas</forename><forename type="middle">W</forename><surname>Troup</surname></persName>
+			<idno type="ORCID">0000-0003-3248-3097</idno>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">H</forename><surname>Weinberg</surname></persName>
+			<idno type="ORCID">0000-0001-7775-7261</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olga</forename><surname>Zamora</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-3881/aa784d</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astronomical Journal</title>
+		<title level="j" type="abbrev">AJ</title>
+		<idno type="ISSN">0004-6256</idno>
+		<idno type="ISSNe">1538-3881</idno>
+		<imprint>
+			<biblScope unit="volume">154</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">94</biblScope>
+			<date type="published" when="2017-08-14">2017</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Schiavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kamann</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2504.06341</idno>
+		<idno type="arXiv">arXiv:2504.06341</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv e-prints</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Origin of the system of globular clusters in the Milky Way</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Massari</surname></persName>
+			<idno type="ORCID">0000-0001-8892-4301</idno>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">H</forename><surname>Koppelman</surname></persName>
+			<idno type="ORCID">0000-0003-1857-3766</idno>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Helmi</surname></persName>
+			<idno type="ORCID">0000-0003-3937-7641</idno>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201936135</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">630</biblScope>
+			<biblScope unit="page">L4</biblScope>
+			<date type="published" when="2019-09-23">2019</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+	<note>L4</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">The spectroscopic indistinguishability of red giant branch and red clump stars</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Masseron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hawkins</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201629938</idno>
+		<ptr target="http://ascl.net/1605.004" />
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">597</biblScope>
+			<biblScope unit="page">L3</biblScope>
+			<date type="published" when="2016-12-22">2016</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">CHEMISTRY OF THE SAGITTARIUS DWARF GALAXY: A TOP-LIGHT INITIAL MASS FUNCTION, OUTFLOWS, AND THE&lt;i&gt;R&lt;/i&gt;-PROCESS</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Mcwilliam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Wallerstein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marta</forename><surname>Mottini</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0004-637x/778/2/149</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<title level="j" type="abbrev">ApJ</title>
+		<idno type="ISSN">0004-637X</idno>
+		<idno type="ISSNe">1538-4357</idno>
+		<imprint>
+			<biblScope unit="volume">778</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">149</biblScope>
+			<date type="published" when="2013-11-12">2013</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Milone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">F</forename><surname>Marino</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/universe8070359</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">359</biblScope>
+		</imprint>
+		<respStmt>
+			<orgName>Universe</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">New VVV Survey Globular Cluster Candidates in the Milky Way Bulge*</title>
+		<author>
+			<persName><forename type="first">Dante</forename><surname>Minniti</surname></persName>
+			<idno type="ORCID">0000-0002-7064-099X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Douglas</forename><surname>Geisler</surname></persName>
+			<idno type="ORCID">0000-0002-3900-8208</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Javier</forename><surname>Alonso-García</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tali</forename><surname>Palma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">Carlos</forename><surname>Beamín</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jura</forename><surname>Borissova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcio</forename><surname>Catelan</surname></persName>
+			<idno type="ORCID">0000-0001-6003-8877</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Juan</forename><forename type="middle">J</forename><surname>Clariá</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><forename type="middle">E</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rodrigo</forename><forename type="middle">Contreras</forename><surname>Ramos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bruno</forename><surname>Dias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jose</forename><forename type="middle">G</forename><surname>Fernández-Trincado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matías</forename><surname>Gómez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maren</forename><surname>Hempel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Valentin</forename><forename type="middle">D</forename><surname>Ivanov</surname></persName>
+			<idno type="ORCID">0000-0002-5963-1283</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Radostin</forename><surname>Kurtev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Phillip</forename><forename type="middle">W</forename><surname>Lucas</surname></persName>
+			<idno type="ORCID">0000-0002-8872-4462</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Moni-Bidin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joyce</forename><surname>Pullen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sebastian</forename><forename type="middle">Ramírez</forename><surname>Alegría</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roberto</forename><forename type="middle">K</forename><surname>Saito</surname></persName>
+			<idno type="ORCID">0000-0001-6878-8648</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><surname>Valenti</surname></persName>
+			<idno type="ORCID">0000-0002-6092-7145</idno>
+		</author>
+		<idno type="DOI">10.3847/2041-8213/aa95b8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal Letters</title>
+		<title level="j" type="abbrev">ApJL</title>
+		<idno type="ISSN">2041-8205</idno>
+		<idno type="ISSNe">2041-8213</idno>
+		<imprint>
+			<biblScope unit="volume">849</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">L24</biblScope>
+			<date type="published" when="2017-11-03">2017</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+	<note>L24</note>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Homogeneous analysis of globular clusters from the APOGEE survey with the BACCHUS code – II. The Southern clusters and overview</title>
+		<author>
+			<persName><forename type="first">Szabolcs</forename><surname>Mészáros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Masseron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>García-Hernández</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Allende prieto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">C</forename><surname>Beers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitry</forename><surname>Bizyaev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Drew</forename><surname>Chojnowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><forename type="middle">E</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katia</forename><surname>Cunha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Flavia</forename><surname>Dell’agli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Garrett</forename><surname>Ebelke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">G</forename><surname>Fernández-Trincado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Frinchaboy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doug</forename><surname>Geisler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sten</forename><surname>Hasselquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fred</forename><surname>Hearty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jon</forename><surname>Holtzman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">R</forename><surname>Lane</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Lacerna</surname></persName>
+			<idno type="ORCID">0000-0002-7802-7356</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Penelopé</forename><surname>Longa-Peña</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><forename type="middle">L</forename><surname>Martell</surname></persName>
+			<idno type="ORCID">0000-0002-3430-4163</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dante</forename><surname>Minniti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Nataf</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">L</forename><surname>Nidever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaike</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">P</forename><surname>Schiavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Shetrone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Verne</forename><forename type="middle">V</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jennifer</forename><forename type="middle">S</forename><surname>Sobeck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guy</forename><forename type="middle">S</forename><surname>Stringfellow</surname></persName>
+			<idno type="ORCID">0000-0003-1479-3059</idno>
+		</author>
+		<author>
+			<persName><forename type="first">László</forename><surname>Szigeti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Baitian</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><forename type="middle">C</forename><surname>Wilson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olga</forename><surname>Zamora</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stz3496</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">492</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1641" to="1670" />
+			<date type="published" when="2020">2020</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Nidever</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Holtzman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Prieto</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0004-6256/150/6/173</idno>
+	</analytic>
+	<monogr>
+		<title level="j">AJ</title>
+		<imprint>
+			<biblScope unit="volume">150</biblScope>
+			<biblScope unit="page">173</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ortolani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bica</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Barbuy</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/aas:1999275</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy and Astrophysics Supplement</title>
+		<imprint>
+			<biblScope unit="volume">138</biblScope>
+			<biblScope unit="page">267</biblScope>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">G</forename><surname>Pagnini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Di Matteo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Khoperskov</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202245128</idno>
+	</analytic>
+	<monogr>
+		<title level="j">A&amp;A</title>
+		<imprint>
+			<biblScope unit="volume">673</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">The&lt;i&gt;Gaia&lt;/i&gt;-ESO Survey</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Pancino</surname></persName>
+			<idno type="ORCID">0000-0003-0788-5879</idno>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Romano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Tautvaišienė</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Casey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Gruyters</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Geisler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>San Roman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Randich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">J</forename><surname>Alfaro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bragaglia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Flaccomio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Korn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Recio-Blanco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Smiljanic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Carraro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Bayo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">T</forename><surname>Costado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Damiani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Jofré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Lardo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>De Laverny</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Monaco</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Morbidelli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sbordone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">G</forename><surname>Sousa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Villanova</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/201730474</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">601</biblScope>
+			<biblScope unit="page">A112</biblScope>
+			<date type="published" when="2017-05">2017</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">The APOGEE value-added catalogue of Galactic globular cluster stars</title>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">P</forename><surname>Schiavon</surname></persName>
+			<idno type="ORCID">0000-0002-2244-0897</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Siân</forename><forename type="middle">G</forename><surname>Phillips</surname></persName>
+			<idno type="ORCID">0000-0003-4652-1090</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Natalie</forename><surname>Myers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Danny</forename><surname>Horta</surname></persName>
+			<idno type="ORCID">0000-0003-1856-2151</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dante</forename><surname>Minniti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Allende prieto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Borja</forename><surname>Anguiano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rachael</forename><forename type="middle">L</forename><surname>Beaton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">C</forename><surname>Beers</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joel</forename><forename type="middle">R</forename><surname>Brownstein</surname></persName>
+			<idno type="ORCID">0000-0002-8725-1069</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><forename type="middle">E</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">G</forename><surname>Fernández-Trincado</surname></persName>
+			<idno type="ORCID">0000-0003-3526-5052</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><forename type="middle">M</forename><surname>Frinchaboy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henrik</forename><surname>Jönsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shobhit</forename><surname>Kisku</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">R</forename><surname>Lane</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrew</forename><forename type="middle">C</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szabolcs</forename><surname>Mészáros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guy</forename><forename type="middle">S</forename><surname>Stringfellow</surname></persName>
+			<idno type="ORCID">0000-0003-1479-3059</idno>
+		</author>
+		<idno type="DOI">10.1093/mnras/stad3020</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">528</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1393" to="1407" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Near-infrared chemical abundances of stars in the Sculptor dwarf galaxy</title>
+		<author>
+			<persName><forename type="first">Baitian</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiajun</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiqiang</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhiyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Leticia</forename><surname>Carigi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">José</forename><forename type="middle">G</forename><surname>Fernández-Trincado</surname></persName>
+		</author>
+		<idno type="DOI">10.1051/0004-6361/202244052</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Astronomy &amp; Astrophysics</title>
+		<title level="j" type="abbrev">A&amp;A</title>
+		<idno type="ISSN">0004-6361</idno>
+		<idno type="ISSNe">1432-0746</idno>
+		<imprint>
+			<biblScope unit="volume">669</biblScope>
+			<biblScope unit="page">A125</biblScope>
+			<date type="published" when="2023-01">2023</date>
+			<publisher>EDP Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Two groups of red giants with distinct chemical abundances in the bulge globular cluster NGC 6553 through the eyes of APOGEE</title>
+		<author>
+			<persName><forename type="first">Baitian</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><forename type="middle">E</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doug</forename><surname>Geisler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">P</forename><surname>Schiavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sandro</forename><surname>Villanova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><surname>Carrera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Olga</forename><surname>Zamora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Garcia-Hernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Shetrone</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Frinchaboy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andres</forename><surname>Meza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Fernández-Trincado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">R</forename><surname>Muñoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chien-Cheng</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">R</forename><surname>Lane</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christian</forename><surname>Nitschelm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaike</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dmitry</forename><surname>Bizyaev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Oravetz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Audrey</forename><surname>Simmons</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/stw2739</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<title level="j" type="abbrev">Mon. Not. R. Astron. Soc.</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">465</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="19" to="31" />
+			<date type="published" when="2017">2017</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">The Metal-poor non-Sagittarius (?) Globular Cluster NGC 5053: Orbit and Mg, Al, and Si Abundances</title>
+		<author>
+			<persName><forename type="first">Baitian</forename><surname>Tang</surname></persName>
+			<idno type="ORCID">0000-0002-0066-0346</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Fernández-Trincado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Doug</forename><surname>Geisler</surname></persName>
+			<idno type="ORCID">0000-0002-3900-8208</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Olga</forename><surname>Zamora</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szabolcs</forename><surname>Mészáros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Masseron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Roger</forename><forename type="middle">E</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>García-Hernández</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Flavia</forename><surname>Dell’agli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothy</forename><forename type="middle">C</forename><surname>Beers</surname></persName>
+			<idno type="ORCID">0000-0003-4573-6233</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">P</forename><surname>Schiavon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sangmo</forename><forename type="middle">Tony</forename><surname>Sohn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sten</forename><surname>Hasselquist</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annie</forename><forename type="middle">C</forename><surname>Robin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Shetrone</surname></persName>
+			<idno type="ORCID">0000-0003-0509-2656</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+			<idno type="ORCID">0000-0003-2025-3147</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Sandro</forename><surname>Villanova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jose</forename><forename type="middle">Schiappacasse</forename><surname>Ulloa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">R</forename><surname>Lane</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dante</forename><surname>Minnti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandre</forename><surname>Roman-Lopes</surname></persName>
+			<idno type="ORCID">0000-0002-1379-4204</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Andres</forename><surname>Almeida</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Moreno</surname></persName>
+		</author>
+		<idno type="DOI">10.3847/1538-4357/aaaaea</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astrophysical Journal</title>
+		<title level="j" type="abbrev">ApJ</title>
+		<idno type="ISSN">0004-637X</idno>
+		<idno type="ISSNe">1538-4357</idno>
+		<imprint>
+			<biblScope unit="volume">855</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">38</biblScope>
+			<date type="published" when="2018-03-01">2018</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">The merging history of the Milky Way</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Unavane</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">F G</forename><surname>Wyse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Gilmore</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/mnras/278.3.727</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Notices of the Royal Astronomical Society</title>
+		<title level="j" type="abbrev">Monthly Notices of the Royal Astronomical Society</title>
+		<idno type="ISSN">0035-8711</idno>
+		<idno type="ISSNe">1365-2966</idno>
+		<imprint>
+			<biblScope unit="volume">278</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="727" to="736" />
+			<date type="published" when="1996-02-01">1996</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">A time-resolved picture of our Milky Way’s early formation history</title>
+		<author>
+			<persName><forename type="first">Maosheng</forename><surname>Xiang</surname></persName>
+			<idno type="ORCID">0000-0002-5818-8769</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hans-Walter</forename><surname>Rix</surname></persName>
+			<idno type="ORCID">0000-0003-4996-9069</idno>
+		</author>
+		<idno type="DOI">10.1038/s41586-022-04496-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">603</biblScope>
+			<biblScope unit="issue">7902</biblScope>
+			<biblScope unit="page" from="599" to="603" />
+			<date type="published" when="2022-03-23">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Target Selection for the SDSS-IV APOGEE-2 Survey</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zasowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Cohen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Chojnowski</surname></persName>
+			<idno type="ORCID">0000-0001-9984-0891</idno>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Santana</surname></persName>
+			<idno type="ORCID">0000-0002-4023-7649</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Oelkers</surname></persName>
+			<idno type="ORCID">0000-0002-0582-1751</idno>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Andrews</surname></persName>
+			<idno type="ORCID">0000-0001-8085-5890</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">L</forename><surname>Beaton</surname></persName>
+			<idno type="ORCID">0000-0002-1691-8217</idno>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Bender</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Bird</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bovy</surname></persName>
+			<idno type="ORCID">0000-0001-6855-442X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">K</forename><surname>Carlberg</surname></persName>
+			<idno type="ORCID">0000-0001-5926-4471</idno>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Covey</surname></persName>
+			<idno type="ORCID">0000-0001-6914-7797</idno>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Cunha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Dell’agli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Scott</forename><forename type="middle">W</forename><surname>Fleming</surname></persName>
+			<idno type="ORCID">0000-0003-0556-027X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">M</forename><surname>Frinchaboy</surname></persName>
+			<idno type="ORCID">0000-0002-0740-8346</idno>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>García-Hernández</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Harding</surname></persName>
+			<idno type="ORCID">0000-0003-3442-6248</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Holtzman</surname></persName>
+			<idno type="ORCID">0000-0002-9771-9622</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Kollmeier</surname></persName>
+			<idno type="ORCID">0000-0001-9852-1610</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Majewski</surname></persName>
+			<idno type="ORCID">0000-0003-2025-3147</idno>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Z</forename><surname>Mészáros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Munn</surname></persName>
+			<idno type="ORCID">0000-0002-4603-4834</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Muñoz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Ness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">L</forename><surname>Nidever</surname></persName>
+			<idno type="ORCID">0000-0002-1793-3689</idno>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Poleski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Román-Zúñiga</surname></persName>
+			<idno type="ORCID">0000-0001-8600-4798</idno>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Shetrone</surname></persName>
+			<idno type="ORCID">0000-0003-0509-2656</idno>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">D</forename><surname>Simon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">V</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Sobeck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">S</forename><surname>Stringfellow</surname></persName>
+			<idno type="ORCID">0000-0003-1479-3059</idno>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Szigetiáros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tayar</surname></persName>
+			<idno type="ORCID">0000-0002-4818-7885</idno>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Troup</surname></persName>
+			<idno type="ORCID">0000-0003-3248-3097</idno>
+		</author>
+		<idno type="DOI">10.3847/1538-3881/aa8df9</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Astronomical Journal</title>
+		<title level="j" type="abbrev">AJ</title>
+		<idno type="ISSN">0004-6256</idno>
+		<idno type="ISSNe">1538-3881</idno>
+		<imprint>
+			<biblScope unit="volume">154</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">198</biblScope>
+			<date type="published" when="2017-10-25">2017</date>
+			<publisher>American Astronomical Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

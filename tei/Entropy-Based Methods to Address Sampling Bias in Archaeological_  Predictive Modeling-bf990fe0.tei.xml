@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Entropy-Based Methods to Address Sampling Bias in Archaeological Predictive Modeling</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-08-04">4 Aug 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Mehmet</forename><forename type="middle">Sıddık</forename><surname>Çadırcı</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Faculty of Science</orgName>
+								<orgName type="department" key="dep2">Department of Statistics</orgName>
+								<orgName type="institution">Cumhuriyet University</orgName>
+								<address>
+									<settlement>Sivas</settlement>
+									<country key="TR">Turkey</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Golnaz</forename><surname>Shahtahmassebi</surname></persName>
+							<email>golnaz.shahtahmassebi@ntu.ac.uk</email>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Computer Science</orgName>
+								<orgName type="institution">Nottingham Trent University</orgName>
+								<address>
+									<postCode>NG11 8NS</postCode>
+									<settlement>Nottingham</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Entropy-Based Methods to Address Sampling Bias in Archaeological Predictive Modeling</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-08-04">4 Aug 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">4D6A7573045DD9CA0D675F8B13D78110</idno>
+					<idno type="arXiv">arXiv:2508.02272v1[stat.AP]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:34+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Predictive modeling in archaeology is essential for the understanding of people's behavior in the past and for guiding heritage conservation. However, spatial sampling bias caused by uneven research effort can severely limit model reliability. This research describes a novel new framework that integrates entropy-based corrections to measure and minimize such biases in archaeological modeling of foresight. Leveraging the open access data of the Grand Staircase-Escalante National Monument, we employ Shannon entropy to determine survey coverage and assign appropriate weights to pseudo-absence points. We combine these weights with predictive models such as Bayesian Spatial Logistic Regression (via R-INLA), Generalized Additive Models, Maximum Entropy and Random Forests. Our findings prove that entropy-aware models exhibit improved accuracy and robustness, especially for under-surveyed regions. This approach not only advances methodological transparency, but also improves the interpretation of archaeological prediction under conditions of data uncertainty. The proposed framework offers a scalable, theoretically grounded strategy for addressing spatial bias in archaeological datasets.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="595.276" lry="841.89"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">INTRODUCTION</head><p>Predictive modeling to predict where archaeological sites may be depending on environmental and spatial variables has become an increasingly indispensable tool in archaeological research and cultural heritage management. It supports the prioritization of research activities, provides guidance for identifying mitigation strategies, and illustrates comprehensive patterns of past human activity across large and various landscapes. Planning at a regional scale or academic research are activities in which today's archaeologists employ predictive modeling of the location of sites in an increasingly predictive approach. Today, these models essentially become tools for balancing heritage conservation and economic development, given increasing development threats and limited resources for fieldwork.</p><p>This unpredictability in archaeological predictive models arises from spatial sampling bias. However, unlike ecological or remote sensing surveys, which rely on a defined sampling design, archaeological surveys are normally determined by practical considerations -accessibility of land, subdivision of the landscape into plots, construction of infrastructure, etc. This creates the result of uneven coverage: Some sites are fully explored, while others are virtually undisturbed. Operating on biased observations for model training means that models tend to sell on over-explored areas and underestimate the presence of sites in remote or under-studied areas. Bias, in another form, tends to create a more damaging feedback cycle: According to the model, certain researched fields may be represented as high-probability sites (because they have yielded the most known sites), resulting in more research in the same areas, while neglecting hard-to-access areas. Although researchers have been recognizing these problems for decades, addressing survey bias has largely been done in a haphazard ways (through spatial filtering of data, weighting of background samples and the like) and without integrating such methods into the traditional practice, suggesting that a more principled approach is needed.</p><p>Compounding these issues, many archaeological predictive models rely on presence/pseudoabsence data rather than true absence data. In practice, genuine absence points are rarely available in archaeology <ref type="bibr" target="#b16">[17]</ref>, so researchers generate pseudo-absence points by assuming no sites exist in unsurveyed locations. These pseudo-absences can inadvertently mirror survey gaps rather than actual site absences, further skewing model outcomes by essentially marking poorly surveyed areas as "site-free." For example, an algorithm may erroneously conclude that an uninvestigated valley contains no archaeological sites simply because none have been recorded there, engendering a false sense of certainty about an area never properly examined. The persistent combination of sampling bias and uncertain absences has prompted calls for predictive frameworks that explicitly account for survey effort and spatial uncertainty, ensuring that model predictions are not simply reproducing survey imbalances.</p><p>In this paper, we introduce a novel methodology in the field of archaeological predictive modeling that combines random sampling concepts with statistical entropy <ref type="bibr" target="#b14">[15]</ref> and is applied as a diagnostic and correction tools for sampling bias. The entropy measure is based on information theory and provides a quantitative uncertainty about the spatial distribution of the research effort. By examining the entropy of research on the study area, we can determine our undersampled regions and characterize where our knowledge of site distribution is most precarious. Alternatively, these entropy values are included in the model-training process by weighting the pseudo-absence data according to their estimated reliability -training points in low-entropy (well-surveyed) regions are implicitly favored, while those in high-entropy (poorly-surveyed) locations receive no preference. This mechanism of weighting is a proper way to decrease the weighting of data coming from high uncertainty areas, thus compensating for the uneven research effort during the modeling.</p><p>There is no doubt that the entropy approach works effectively on this large public dataset from the Grand Staircase-Escalante National Monument in Utah. It is a particularly abundant dataset previously used for testing between competing Varietal models <ref type="bibr" target="#b16">[17]</ref>, enabling us to assess how taking survey bias accounting can improve forecasting performance. For analysis, we consider several popular forecasting models, including Bayesian spatial logistic regression, generalized additive models (GAMs), maximum entropy (MaxEnt), and random forests (RF), and we weight the training data with an entropy measure in some versions and leave the data unweighted in others. These experiments will provide insights into the extent to which more accurate predictions and robustness resulting from deploying entropy-based weights may be available, especially in unexplored or under-explored areas and thus a source of complications for traditional modeling.</p><p>This study aims to improve the interpret-ability, generalisability and fairness of archaeological site predictions by combining entropy analysis with state-of-the-art predictive modeling techniques. The proposed framework therefore strengthens the methodological rigour of spatial modeling in archaeology, providing a replicable approach to solving sampling bias issues in other disciplines that depend on incomplete or opportunistic data collection, such as ecology and paleontology. The structure of the paper is as follows: Section 2 discusses relevant contributions to archaeological predictive modelling, with a particular focus on presence-only modelling, entropy-based approaches and spatial statistics. Section 3 presents the methodology, including data pre-processing steps, the construction of entropy-based weights, and the application of four modelling frameworks: Bayesian spatial logistic regression, generalised additive models (GAMs), MaxEnt and Random Forests. The results and analyses from the comparative experiments are presented in Section 4 with particular attention paid to the effect of entropy correction on predictive accuracy, generalisation and overall model behaviour. The wider methodological and practical implications of entropic bias correction in archaeological modelling workflows are then reflected on in Section 5.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">LITERATURE REVIEW</head><p>The application of Maximum Entropy (MaxEnt) modeling and statistical entropy has become prominent in archaeology and ecology over recent years. The literature review synthesizes the contemporary uses of MaxEnt and statistical entropy, stressing their strengths and weaknesses, including sampling bias and data non-representability. MaxEnt has been the go-to solution for predictive models in archaeology and ecology, mainly because of its ability to process presenceonly data. Thus, Rafuse showed the use of MaxEnt to predict hunter-gatherer sites in Southern Pampas, Argentina, despite problems related to non-representative sampling and environmental conditions (Rafuse, 2021) <ref type="bibr" target="#b13">[14]</ref>. In the same vein, Wang et al. showed that MaxEnt provides good predictions for archaeological sites in Japan and China, adding to the idea that these sites are not randomly distributed but instead somehow related to environmental characteristics <ref type="bibr" target="#b15">(Wang, 2023)</ref>  <ref type="bibr" target="#b15">[16]</ref>. This is supported by the study of <ref type="bibr">Mcmichael et al.</ref>, who observed that Max-Ent models are those most commonly used to predict species distributions in ecological studies, thereby indicating that the model is highly relevant in studies across disciplines <ref type="bibr" target="#b10">(McMichael et al., 2017)</ref>  <ref type="bibr" target="#b10">[11]</ref>. MaxEnt has therefore been used effectively to model archaeological sites, ancient human activity, and settlement. For example, Howey et al. used MaxEnt to investigate monument construction over time in Michigan, enabling it to address complex societal developments <ref type="bibr" target="#b9">(Howey et al., 2016)</ref>  <ref type="bibr" target="#b9">[10]</ref>. Furthermore, Yaworsky et al. evaluated various statistical approaches, including MaxEnt, to predict archaeological site locations, thus underscoring the importance of rigorous statistics in archaeology (Yaworsky et al., 2020) <ref type="bibr" target="#b16">[17]</ref>. However, such models suffer in practice due to data limitations, mainly when training datasets are small or biased towards certain domains (Yaworsky et al., 2020). Despite its advantages, MaxEnt and similar types of modeling raise issues related to sampling bias and representativeness of the data. Research has demonstrated that forecasting models based on presence data can be heavily affected by sampling bias and spatial autocorrelation, and can provide inaccurate forecasts (Souza et al., 2018) <ref type="bibr" target="#b4">[5]</ref>. For example, Guedes et al. ephasized the need for spatial filtering to counteract the effects of biased occurrence datasets in archaeological modeling, since they suspected traditional background point manipulation in MaxEnt may not fully resolve that (Souza et al., 2018) <ref type="bibr" target="#b4">[5]</ref>. Likewise, Cano et al. posited that to ensure greater precision, ecological niche modeling with MaxEnt ought to factor in data constraints <ref type="bibr" target="#b11">(Cano et al., 2023)</ref> <ref type="bibr" target="#b11">[12]</ref>. Yet, entropy-related techniques in ecology have further complicated the matter. Although this maximum entropy principle has been put to use for analyzing species distribution and abundance, the utility of the principle depends on the nature of the data sets available-favorability and completeness <ref type="bibr" target="#b5">(Favretti, 2017;</ref><ref type="bibr" target="#b7">Haegeman &amp; Etienne, 2010)</ref>  <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b7">8]</ref>. Upon examination, according to Favretti, the Maximum Entropy Principle tends to be used to infer distributions from macroscopic information, and its use is complicated when the dataset is incomplete <ref type="bibr" target="#b5">(Favretti, 2017)</ref>  <ref type="bibr" target="#b5">[6]</ref>. This issue is even more relevant within archaeological settings, where the archaeo-logical data are sometimes scarce and unevenly distributed across landscapes. In conclusion, while MaxEnt and statistical entropy remain valuable tools, entropy theories in archaeology and ecology need to address significant issues such as sampling bias and unrepresentative data. Furthermore, future research should seek to develop methodologies that improve both the quality and representativeness of a dataset to improve the reliability of predictive models. This could include being able to combine different data sources, utilizing diverse and sophisticated statistical techniques, and testing models very well to discover whether they are truly representative of historical and ecological realities.</p><p>MaxEnt and Presence-Only Predictive Modeling The MaxEnt method has been a distinctive tool in archaeological and ecological cases, given that it allowed interaction with presenceonly data. Likewise, Rafuse (2021) <ref type="bibr" target="#b13">[14]</ref> illustrates the power of MaxEnt modeling to identify hunter-gatherer locations in Argentina, even when facing problems of environmental bias and heterogeneous sampling. Sampling Bias and Spatial Autocorrelation. MaxEnt is exclusively an asset-based datadriven modeling tool; hence, it is subject to spatial sampling bias. Souza et al. ( <ref type="formula">2018</ref>) <ref type="bibr" target="#b4">[5]</ref> emphasize that survey bias and autocorrelation can lead to distortion of model outputs and propose spatial filtering and bias correction methods to mitigate it. Similarly, <ref type="bibr" target="#b11">Cano et al. (2023)</ref> highlight that <ref type="bibr" target="#b11">[12]</ref> It cautioned that MaxEnt is optimal only when the occurrence data is representative. Studies such as Fourcade et al. (2014) <ref type="bibr" target="#b6">[7]</ref> address spatial sampling bias in asset-only forecasting modeling (MaxEnt). They have consistently demonstrated that systematic spatial sampling (filtering) of occurrence records is among the best methods to reduce geographic sampling bias. These insights highlight the continuing need for models that incorporate spatial structure and research effort directly into the modeling process.</p><p>Entropy-Based Modeling and Information Theory. The term "entropy" has recently been used to describe the uncertainty or variability associated with data distributions. To mention two examples from entropy, the Maximum Entropy Principle describes the abundance and spatial distribution of species <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b7">8]</ref>. These authors show that entropy-based modeling strongly depends on the quality of input data and equilibrium assumptions. At the same time, entropies remain an underutilized tool in archaeology; here, a test of the use of entropy to measure the inequality of research coverage.</p><p>Developments in Bayesian and Spatial Statistical Methods To address the limitations of classical approaches, modern analysis has turned to the Bayesian spatial paradigm, which explicitly addresses spatial autocorrelation and uncertainty. Gelfand and Banerjee (2003) <ref type="bibr" target="#b1">[2]</ref> It addresses the utility of hierarchical spatial models in geographic applications, including CAR priorities. <ref type="bibr" target="#b0">Bakka et al. (2018)</ref>  <ref type="bibr" target="#b0">[1]</ref> describe how the R-INLA framework can be leveraged to perform fast Bayesian inference for spatial GLMs, including logistic regression with structured priors. These approaches are particularly well adapted to archaeological situations, given that research data is often highly spatially structured and heterogeneous. While MaxEnt, statistical entropy, and some spatial techniques have each targeted components of the modeling and prediction problem, studies that present a more systematic integration of entropy-based bias correction into machine learning and Bayesian spatial frameworks are uncommon. This paper accomplishes this integration by evaluating entropy-weighted models under a wide range of statistical paradigms and testing the membership of such models under known conditions of sample selection bias.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">METHODOLOGY Data Collection and Preprocessing</head><p>We compiled a dataset containing a list of known archaeological sites from the study area and environmental determinants. Site occurrence data were collected from systematic surveys and historical sources and each site was assigned a geographic coordinate. Landform configuration, hydrology and other landscape factors served as environmental covariates in the study; indices of elevation, slope, distance to water surfaces, soil type and vegetation cover were included. These were retrieved from GIS databases and resampled at a common spatial resolution. The data was then pre-processed to prepare it for modeling. Pre-processing of field coordinates involved cleaning and georeferencing them, while environmental variables involved processing missing and outliers and standardizing continuous predictors to comparable scales.</p><p>Pseudo-absences (background points) were created for models that require negative samples to validate the method without true absence data (locations known to be investigated with no findings). Background points were randomly sampled over the entire field of study, although the sampling probability was adjusted according to the research effort extracted to avoid introducing further bias (see below). Thus, these pseudo-absence points are more likely to be selected in well-surveyed areas and less likely in un-surveyed areas, which aligns with the detection process. Such pseudo-absence points were assigned a response value of 0 (absence) and combined with existing ones (value 1) to train logistic regressions, GAMs and random forest models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Entropy Based Bias Measurement and Weighting</head><p>Archaeological and survey data often suffer from spatial biases, with some areas being the subject of more research than others. We characterized the unbiased survey effort through an entropy-based measure of sampling distribution. The study region was divided into spatial units (which could be grid cells or administrative districts) to assess survey coverage. For each i unit, we calculate the proportion p i of all known sites (or total survey observations) located in that unit. A measure of how dispersed the survey work is is summarized by the Shannon entropy of the distribution P = {p i } given by</p><formula xml:id="formula_0">H(P) = -∑ i p i ln p i ,</formula><p>low entropy means that only a few locations dominate the survey data (high bias) and higher entropy with upper bound ln N for N units means that they are surveyed more or less equally (low bias) <ref type="bibr" target="#b14">[15]</ref>. In this way, by applying a measure of bias, weights were derived to correct the sampling effort estimate during modeling. Each presence record was assigned a weight inversely proportional to the probability of the survey taking place in that region. The practical effect is, therefore, as follows: p i sites in regions with a high contribution to p i were assigned smaller weights, whereas sites in regions with a low level of surveys were assigned larger weights. Weights were therefore used in the final model to balance the effect of training samples: logistic regression, GAM and random forest were equipped with sample weights in the presence and pseudo-absence cases. At the same time, a bias grid (sampling probability surface) was provided to the MaxEnt Model so that background points were placed according to the survey effort. By using these entropy-based weights, we reduced model bias due to survey density, giving us predictions more representative of site fidelity.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Predictive Modeling Approaches</head><p>Predictive modeling was attempted through four different methods applied to predict the occurrence of archaeological sites, as discussed in detail below. Each method provides a different trade-off in interpretability and flexibility, and our results should prove robust to all methods.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Perform Bayesian Spatial Logistic Regression with CAR Prior</head><p>For the analysis, we employed a Bayesian spatial logistic regression model with CAR before discussing spatial autocorrelation of sites. The model assumes the log-odds of site availability at location i as a linear estimator with a random effect specific to each site:</p><formula xml:id="formula_1">logit P(Y i = 1) = β 0 + p ∑ j=1 β j x i j + φ i ,</formula><p>where Y i is the presence indicator, x i j is the value of predictor j for location i, and φ i is the spatial random effect term. The random effects are given an intrinsic CAR prior {φ i }, which creates spatial smoothing by encouraging neighboring locations to have similar φ i values <ref type="bibr" target="#b2">[3]</ref>. The authors therefore adapt this hierarchical model from a Bayesian perspective (using Markov Chain Monte Carlo sampling) to obtain posterior distributions of regression coefficients and spatial random effects. Applying the CAR prior absorbs the remaining spatial structure from the data and thus improves the prediction performance when sites are spatially clustered.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Generalized Additive Models (GAMs)</head><p>GAM capture the nonlinear relationships between environmental variables and field presence <ref type="bibr" target="#b8">[9]</ref>. A GAM extends a generalized linear model and provides a smooth non-parametric introduction of estimators into the model <ref type="bibr" target="#b8">[9]</ref>. For a binary presence/absence outcome, a logistic GAM is determined with probability logit as the connection function. The general expression can be formalized as follows</p><formula xml:id="formula_2">logit P(Y = 1 | x) = β 0 + f 1 (x 1 ) + f 2 (x 2 ) + • • • + f k (x k ),</formula><p>where x = (x 1 , . . . , x k ) is a set of environmental estimators and the j-th spline function f j (x j ) is learned from the data. GAMs can capture complex nonlinear effects (such as unimodal ones encountered with distance from water) while maintaining the summability of terms for interpretation. Penalized regression splines are used for f j with smoothing parameters chosen through generalized cross-validation <ref type="bibr" target="#b8">[9]</ref> to eliminate overfitting.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Maximum Entropy Modeling</head><p>Maximum Entropy (MaxEnt) modeling, proposed as an availability-only method for estimating site suitability across the landscape, searches for the probability distribution of the availability of sites with maximum entropy (i.e., closest to uniform), subject to the condition that the expected values of environmental attributes under this distribution match their empirical averages at known site locations <ref type="bibr" target="#b12">[13]</ref>. The problem solution presented in an optimization framework is in the form of a Gibbs distribution:</p><formula xml:id="formula_3">p(x) = 1 Z exp λ 1 f 1 (x) + λ 2 f 2 (x) + • • • + λ m f m (x) ,</formula><p>where f 1 , . . . , f m are the feature functions, environmental covariates, or derived features. λ 1 , . . . , λ m are the parameters estimated by the model, and Z is a normalizing constant that ensures that the probability function is one over the entire region of interest. In the actual implementation, the MaxEnt software compares asset locations against a large sample of background points, essentially obeying a regularized logistic model to distinguish utilized regions from available ones <ref type="bibr" target="#b12">[13]</ref>. We employed the default regularization setting to avoid overfitting. Also, we provided the bias correction surface output from the previous step to ensure that the background sampling reflects the spatial bias in the survey.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Random Forests</head><p>Random forests, a non-linear ensemble method, were used for classification. A random forest, an ensemble of hundreds of trees, uses the following methods: <ref type="bibr" target="#b3">[4]</ref>, each built on a bootstrap dataset resampled from the original training data and randomly samples a subset of predictors at each split. Bagging and random feature selection reduce overfitting by diversifying the views of individual trees. For a region characterized by the feature vector x, each tree gives b votes or predicted probabilities Pb (Y = 1 | x). The estimate of the forest is obtained by averaging these votes or probabilities:</p><formula xml:id="formula_4">P(Y = 1 | x) = 1 B B ∑ b=1 Pb (Y = 1 | x),</formula><p>where B represents the total number of trees in the forest. It was decided to grow a sufficiently large forest (e.g. B = 500 trees) to stabilize the aggregate estimates. The adjustment attempts to strike a balance between bias and variance such that each tree can achieve a large complexity (each is grown to a minimum node size to attempt to capture subtle interactions). At the same time, the ensemble mean will smooth out the noise and produce robust estimates of the presence of <ref type="bibr" target="#b3">[4]</ref> area.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model evaluation</head><p>The model performance was evaluated using a cross-validation construct and multiple accuracy metrics. We have organized the k-fold cross-validation process as follows: The data was randomly divided into k equal folds, and for every k iteration, we trained the models with k -1 folds and kept the skipped fold for testing only. Repeating the same procedure so that each fold is tested once provides a single measure of how efficiently the models generalize over unseen data while efficiently using the limited data available. We evaluated the average predictive accuracy of model fitting by applying an approach independent of how a region was labelled, i.e. using the area under the Receiver Operating Characteristic (ROC) curve; the AUC was calculated for each fold, and the average AUC across all cross-validation folds was reported, indicating the average performance of the models without deviation from any probability threshold. Performance was then evaluated using the optimal classification threshold: for each fold, the training dataset was used to determine the cutoff probability that maximizes the sum of sensitivity and specificity (Youden's J statistic). This cutoff was then applied to the model's predictions to calculate the usual measures: overall accuracy, sensitivity (true positive rate), specificity (true negative rate) and True Skill Statistic (TSS, defined as sensitivity + specificity -1). These measures were calculated for each test fold and then.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">RESULTS AND DISCUSSION</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Entropy Weighting to Address Sampling Bias</head><p>To understand the challenge of entropy weighting on model performance under spatial sampling bias, we implemented a Random Forest classifier in two ways: (i) standard training on the unweighted dataset and (ii) training where samples were entropy weighted. Both configurations were subjected to 5-fold cross-validation to properly evaluate the model between presence and pseudo-presence distributions. Overall, the weighted model performed significantly better in undersampled areas, suggesting its potential to mitigate bias caused by uneven survey coverage.</p><p>As a notable example, Figure <ref type="figure" target="#fig_2">1</ref> provides a spatial visualization of the probability of predictions for comparison with the entropy weighting surface. The first panel informs us that the unweighted model provided predictions with higher confidence in clusters in areas that were likely overrepresented in the training data; in other words, it was overfitting well-studied areas. In contrast, the entropy-weighted model distributed probabilities more widely and conservatively, especially in previously poorly sampled areas, thus performing a better generalization.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Model Discrimination Performance (AUC and Kappa)</head><p>The comparative box plots for the two main performance criteria are presented in Figure <ref type="figure" target="#fig_3">2</ref>. The area under the ROC Curve (AUC) in the left panel indicates consistently better results for the entropy-weighted model, demonstrating greater discriminative power between folds. The right panel provides Cohen's Kappa, which measures the agreement in classification beyond what would be expected by random chance. Thus, the weighted model outperforms the unweighted model, resulting in a classification that improves reliability. Together, these results prove that entropy weighting can reduce spatial sampling bias and thus better generalize from particularly undersampled regions that traditional models often misrepresent. Figure <ref type="figure" target="#fig_4">3</ref> presents paired comparisons of AUC scores obtained in 10-fold cross-validation to determine the effects of entropy correction on Random Forest performance in terms of discrimination. Each line in the plot represents a fold and connects the AUC of the unweighted model to the AUC of the entropy-weighted model for that fold. In Virtually all situations, the entropy-weighted model has larger AUC values, indicating a consistent increase in performance. This advantage is statistically supported by the Wilcoxon signed-rank test (p = 0.0020) and invalidates the null hypothesis that entropy correction would not significantly improve the discriminative capacity of the model. To further emphasize how entropy weighting guarantees a higher average AUC and a reduction in variability, the standard deviations and point estimates are superimposed, showing that the process is more robust on folds. In summary, these findings provide further evidence that entropy weighting does indeed work to produce better estimates under sampling bias.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Calibration and Classification Metrics</head><p>Entropy weighting is another approach that influences model calibration and classification performance. Figure <ref type="figure" target="#fig_5">4</ref> provides calibration curves for entropy-weighted and unweighted Random Forest models. The plot represents the predicted probabilities against the observed field frequencies in ten boxes of equal width. The curve of the entropy-weighted model aligns much closer to the ideal 45 • diagonal (perfect calibration) in the middle range of values from 0.4 to 0.7, indicating that the predicted probabilities of the entropy-weighted model correspond well to the actual frequency of site occurrence when sampling bias is considered. In contrast, the curve of the unweighted model demonstrates a systematic deviation from the diagonal, thus becoming overconfident in some prediction intervals (possibly where there is disproportionate survey coverage). The results indicate that entropy-based weighting improves accuracy and probabilistic reliability with better-calibrated estimates for archaeological decision-making processes.</p><p>Figure <ref type="figure" target="#fig_6">5</ref> compares classification results for entropy-weighted and unweighted trained Random Forest models. The two confusion matrices (left: unweighted, center: weighted) represent the actual and predicted classifications for field presence (1) and absence (0). The unweighted model achieves a perfect classification (no false positives or false negatives). However, such a classification level should be regarded with suspicion as it could indicate overfitting in highly researched areas. Entropy weighting produces a few errors, with five false positives and 27 false negatives. This will slightly reduce the overall accuracy but more accurately represent the uncertainty and heterogeneity in the data. The right panel of Figure <ref type="figure" target="#fig_6">5</ref> provides a comparison of class-specific metrics: Precision, Recall and F1-score for the asset class. Entropy weighting yields slightly worse values in these metrics, but this slight decrease is accompanied by a significant increase in generalizability and robustness. Most importantly, the slight decrease in recall (from 1.00 to 0.98) was considered an acceptable trade-off to mitigate overconfidence in the model and prevent an overly optimistic model. These results support the idea that entropy weighting provides a moderating influence that modifies predictions in a more cautious and contextually consistent manner. This is an absolute necessity in archaeology, where false certainty can determine a field survey and conservation decisions incorrectly.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Feature Importance and Model Insights</head><p>Some potential changes in the model representation are possible if the entropy weighting of the data is taken into consideration, which can impact the prioritization of features and the estimation of uncertainties in the model. Figure <ref type="figure" target="#fig_7">6</ref> illustrates the feature rankings for Random Forests with and without entropy weighting. Key predictors (e.g., slope, vegetation productivity (NPP), proximity to streams) significantly impact the models. However, with some weighting of entropy, the model tends to emphasize certain hydrological and climatic features (especially variables such as wetlands_cd and springs_cd) to a greater extent than unweighted ones. This change in the perceptual environment corresponds to a superior sensitivity to environmental components that define undersampled regions (components that have so far been underweighted due to survey bias). Because this distortion of environmental signals occurs, we realize that Model uncertainty is also affected by entropy weighting. Figure <ref type="figure" target="#fig_8">7</ref> presents a violin plot of the posterior variance distributions from simulated Bayesian spatial models under entropybased weighting and unweighted runs. The unweighted model presents a wider spread in their variances and a higher median, introducing more uncertainty in prediction in under-examined areas. In contrast, entropy weighting led to some concentration of variance with less central tendency and, thus, an increase in the epistemic confidence and stability of the model. This suggests that entropy bias correction leads to some regularization of the model's uncertainty estimates. As a result, the Bayesian model can generalize reasonably well in well-studied and undersampled regions. Therefore, the resulting improvement in variance structure would justify entropy weighting as a valuable tool in making archaeological prediction models more robust and interpretable.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Generalizability, robustness and practical implications</head><p>Finally, we determine the impact of entropy weighting with other modeling approaches in terms of generalization and robustness and the practical implications of these results. Figure <ref type="figure" target="#fig_9">8</ref> illustrates the cross-validated AUC values of four predictive modeling techniques (Random Forest, MaxEnt, GAM and Bayesian spatial logistic regression) under entropy-weighted bias correction. Random Forest is, in fact, the best-performing technique with the median AUC (just above 0.915) and the least variance, which implies consistently good performance across different validation folds. MaxEnt and the Bayesian model follow next with slightly lower median AUCs (0.87-0.88), representing robust but slightly more variable results. GAM reports the low-  est median AUC for the set, indicating an even more limited capacity than machine learning and spatially explicit models to account for complex non-linear relationships. Overall, the results confirm the superiority of ensemble learning methods such as Random Forest in suspecting a high-dimensional prediction space and complex interactions while also showing that entropy is a bias adjustment technique that can be applied in various modeling frameworks.</p><p>From a practical point of view, the improved generalizability and reliability of a method with weighting by entropy has important implications for archaeological predictive modeling. By reducing overfitting in over-surveyed areas and increasing confidence in predictions in relatively under-surveyed areas, these models can provide better assistance to actual research and conservation efforts. Robustness of this nature across multiple models and across all layers of validation assures the practitioner that gains in performance are not inherent properties of an algorithm or idiosyncrasies of the data. In other words, not only do entropy-based corrections improve predictive accuracy, but integrating these corrections into a predictive workflow en-  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">CONCLUSION</head><p>This study, therefore, provides evidence that incorporating entropy-derived weights into archaeological prediction models consistently improves their accuracy and generalization. The entropy-weighted models evaluated under cross-validation achieved better AUC and better-fit scores than the unweighted ones, thus supporting that robust predictions can be achieved by correcting spatial sampling bias. It has been shown previously that the size of the dataset and the algorithm employed tend to dominate performance; in contrast, our findings argue that explicit bias correction measures always yield a material improvement in performance. Therefore, Entropy weights can be seen as a form of regularization: down-weighting pseudo-absences in less researched areas to prevent overfitting in well-sampled areas to produce more conservative (and hence better calibrated) probability estimates.</p><p>Random Forests discriminates best among the other modeling methods, achieving the highest median AUC with the lowest variance. GAMs are ranked at the bottom because of their rigidity and inability to model more complex multidimensional patterns. In the middle, MaxEnt and Bayesian spatial logistic regression perform quite robustly. This is consistent with previous findings confirming that pseudo-absences and explicit bias control make MaxEnt extremely useful for archaeological data. In our studies, Random Forests improves accuracy after correcting sampling bias, while MaxEnt and the Bayesian approach stand near the top. The strengths offered by each method differ; for example, ensemble methods such as RF rank highest in terms of raw predictive ability, while GAMs and Bayesian methods benefit from interpretable effect estimates and uncertainty quantification.</p><p>The entropy weighting scheme provides a counterbalancing role in the treatment of different instances: by reweighting samples according to spatial uncertainty, areas that were underrepresented during training are given a fairer chance to have a voice. In practice, this means much more balanced estimates across the landscape, rather than an unbalanced focus on more easily explored locations. We have found that entropy-weighted models give the fairest probability estimates (closer to true prevalence) and provide a more appropriate degree of uncertainty in areas with fewer samples. So, essentially, through this practice we maintain balance so that the model emphasizes a location in relation to how much we are confident in that data. The practical value of these results is enormous. For archaeological survey planning, entropy correction area prediction maps better highlight target areas with really high probability (as opposed to sampling artifacts) and thus prioritize field efforts accordingly. More generally, any scientific modeling effort in the sparse data space can benefit from entropy-based weighting: it offers a theoretically grounded, scalable way to counter bias and improve the fairness and calibration of the model when data are distributed unevenly.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc><ref type="bibr" target="#b15">Wang et al. (2023)</ref> <ref type="bibr" target="#b15">[16]</ref> also employed MaxEnt in East Asia to validate the idea that archaeological sites correspond to specific environmental characteristics and thus are not randomly distributed. Similarly, McMichael et al. (2017) and Howey et al. (2016) [11, 10] used MaxEnt to investigate ancient land use and monument construction in ecological and cultural settings. Yaworsky et al. (2020) [17] represents a comparative field modeling of MaxEnt and other statistical tools and highlights the value of machine learning techniques in field forecasting.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>The final panel is the entropy surface plotted against sampling bias, where bright areas indicate high uncertainty (low research effort) and dark areas indicate well-researched regions. Together, these maps demonstrate that spatial estimates adjusted by entropy weighting are improved in robustness and fairness concerning varying research intensities.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Spatial prediction maps derived from RF models with and without entropy surface as well as entropy weighting. Entropy smoothing reduces overfitting in well-researched areas and improves generalization in undersampled regions by redistributing forecast confidence more evenly.</figDesc><graphic coords="8,70.87,451.99,453.54,125.17" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: A comparison of Random Forest model results with and without entropy-based weighting. The entropy-weighted model exhibits improved AUC and Cohen's Kappa scores, verifying improved accuracy and fit under conditions of spatial bias.</figDesc><graphic coords="9,116.22,128.25,362.85,154.47" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Pairwise comparison of AUC scores across cross-validation folds. Entropy-weighted models consistently outperform unweighted models (Wilcoxon p = 0.0020) with higher and more consistent prediction accuracy.</figDesc><graphic coords="10,116.22,70.87,362.85,250.07" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: The calibration curves for RF models. The entropy-weighted model becomes more closely aligned with the perfect calibration, indicating increased reliability and decreased overconfidence in biased regions.</figDesc><graphic coords="11,116.22,70.87,362.84,279.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Mixing matrices and classification metrics for RF models. Entropy weighting reduces overfitting by offering realistic misclassification and improves generalization, especially in undersampled domains.</figDesc><graphic coords="12,70.87,70.87,453.54,124.70" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Comparison of the feature importance in unweighted and entropy-weighted RF models. Entropy weighting enhances the influence of underrepresented environmental variables, resulting in a more balanced and bias-sensitive predictor profile.</figDesc><graphic coords="12,116.22,260.83,362.83,238.57" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 7 :</head><label>7</label><figDesc>Figure 7: Violin plot of the posterior variances from Bayesian spatial models. The entropyweighted model displays less and more dense uncertainty, reflecting improved forecast confidence.</figDesc><graphic coords="13,116.22,70.87,362.85,250.07" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure 8 :</head><label>8</label><figDesc>Figure 8: Cross-validated AUC distributions by model type. RF outperforms MaxEnt, Bayesian and GAM in prediction accuracy.</figDesc><graphic coords="14,116.22,276.48,362.85,250.07" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Spatial modeling with R‐INLA: A review</title>
+		<author>
+			<persName><forename type="first">Haakon</forename><surname>Bakka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Håvard</forename><surname>Rue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geir‐arne</forename><surname>Fuglstad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Andrea</forename><surname>Riebler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Bolin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Janine</forename><surname>Illian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elias</forename><surname>Krainski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Simpson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Finn</forename><surname>Lindgren</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/wics.1443</idno>
+	</analytic>
+	<monogr>
+		<title level="j">WIREs Computational Statistics</title>
+		<title level="j" type="abbrev">WIREs Computational Stats</title>
+		<idno type="ISSN">1939-5108</idno>
+		<idno type="ISSNe">1939-0068</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">1443</biblScope>
+			<date type="published" when="2018-07-05">2018</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Hierarchical Modeling and Analysis for Spatial Data</title>
+		<author>
+			<persName><forename type="first">Sudipto</forename><surname>Banerjee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bradley</forename><forename type="middle">P</forename><surname>Carlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><forename type="middle">E</forename><surname>Gelfand</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sudipto</forename><surname>Banerjee</surname></persName>
+		</author>
+		<idno type="DOI">10.1201/9780203487808</idno>
+		<imprint>
+			<date type="published" when="2003-12-17">2003</date>
+			<publisher>Chapman and Hall/CRC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Bayesian image restoration, with two applications in spatial statistics</title>
+		<author>
+			<persName><forename type="first">Julian</forename><surname>Besag</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeremy</forename><surname>York</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Annie</forename><surname>Molli�</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/bf00116466</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of the Institute of Statistical Mathematics</title>
+		<title level="j" type="abbrev">Ann Inst Stat Math</title>
+		<idno type="ISSN">0020-3157</idno>
+		<idno type="ISSNe">1572-9052</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="1" to="20" />
+			<date type="published" when="1991-03">1991</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">The Triumph of Expediency: The Impact of Google Scholar on Library Instruction</title>
+		<author>
+			<persName><forename type="first">Leo</forename><surname>Breiman</surname></persName>
+		</author>
+		<idno type="DOI">10.4324/9781315877549-10</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Google Scholar and More</title>
+		<imprint>
+			<publisher>Routledge</publisher>
+			<date type="published" when="2001">2001</date>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="71" to="78" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Pre-columbian earthbuilders settled along the entire southern rim of the amazon</title>
+		<author>
+			<persName><forename type="first">Jonas</forename><surname>Gregorio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">De</forename><surname>Souza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Denise</forename><surname>Pahl Schaan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mark</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonia</forename><forename type="middle">Damasceno</forename><surname>Barbosa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eoc</forename><surname>Luiz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ben</forename><surname>Aragão</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hur Marimon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Beatriz</forename><surname>Jr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Izaias</forename><surname>Schwantes Marimon</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Brasil Da</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Salman</forename><forename type="middle">Saeed</forename><surname>Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francisco</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ruji Nakahara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Nature communications</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1125</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Remarks on the Maximum Entropy Principle with Application to the Maximum Entropy Theory of Ecology</title>
+		<author>
+			<persName><forename type="first">Marco</forename><surname>Favretti</surname></persName>
+			<idno type="ORCID">0000-0002-9507-9131</idno>
+		</author>
+		<idno type="DOI">10.3390/e20010011</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Entropy</title>
+		<title level="j" type="abbrev">Entropy</title>
+		<idno type="ISSNe">1099-4300</idno>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">11</biblScope>
+			<date type="published" when="2017-12-27">2017</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Mapping Species Distributions with MAXENT Using a Geographically Biased Sample of Presence Data: A Performance Assessment of Methods for Correcting Sampling Bias</title>
+		<author>
+			<persName><forename type="first">Yoan</forename><surname>Fourcade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jan</forename><forename type="middle">O</forename><surname>Engler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dennis</forename><surname>Rödder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jean</forename><surname>Secondi</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0097122</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">e97122</biblScope>
+			<date type="published" when="2014-05-12">2014</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Entropy Maximization and the Spatial Distribution of Species</title>
+		<author>
+			<persName><forename type="first">Bart</forename><surname>Haegeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rampal</forename><forename type="middle">S</forename><surname>Etienne</surname></persName>
+		</author>
+		<idno type="DOI">10.1086/650718</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The American Naturalist</title>
+		<title level="j" type="abbrev">The American Naturalist</title>
+		<idno type="ISSN">0003-0147</idno>
+		<idno type="ISSNe">1537-5323</idno>
+		<imprint>
+			<biblScope unit="volume">175</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="E74" to="E90" />
+			<date type="published" when="2010-04">2010</date>
+			<publisher>University of Chicago Press</publisher>
+		</imprint>
+	</monogr>
+	<note>E74-E90</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Generalized Additive Models</title>
+		<author>
+			<persName><forename type="first">Trevor</forename><surname>Hastie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Tibshirani</surname></persName>
+		</author>
+		<idno type="DOI">10.1214/ss/1177013604</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Statistical Science</title>
+		<title level="j" type="abbrev">Statist. Sci.</title>
+		<idno type="ISSN">0883-4237</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="297" to="310" />
+			<date type="published" when="1986-08-01">1986</date>
+			<publisher>Institute of Mathematical Statistics</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Geospatial modeling approach to monument construction using Michigan from A.D. 1000–1600 as a case study</title>
+		<author>
+			<persName><forename type="first">Meghan</forename><forename type="middle">C L</forename><surname>Howey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">W</forename><surname>Palace</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Crystal</forename><forename type="middle">H</forename><surname>Mcmichael</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.1603450113</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">27</biblScope>
+			<biblScope unit="page" from="7443" to="7448" />
+			<date type="published" when="2016-06-21">2016</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Ancient human disturbances may be skewing our understanding of Amazonian forests</title>
+		<author>
+			<persName><forename type="first">Crystal</forename><forename type="middle">N H</forename><surname>Mcmichael</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Frazer</forename><surname>Matthews-Bird</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">William</forename><surname>Farfan-Rios</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">J</forename><surname>Feeley</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.1614577114</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the National Academy of Sciences</title>
+		<title level="j" type="abbrev">Proc. Natl. Acad. Sci. U.S.A.</title>
+		<idno type="ISSN">0027-8424</idno>
+		<idno type="ISSNe">1091-6490</idno>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="522" to="527" />
+			<date type="published" when="2017-01-03">2017</date>
+			<publisher>Proceedings of the National Academy of Sciences</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Ecological-niche modeling reveals current opportunities for agave dryland farming in sonora, mexico and arizona, usa</title>
+		<author>
+			<persName><forename type="first">Hector G Ortiz</forename><surname>Cano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><surname>Hadfield</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Teresa</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Hultine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ricardo</forename><forename type="middle">Mata</forename><surname>Gonzalez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">L</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neil</forename><forename type="middle">C</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">T</forename><surname>Searcy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jason</forename><surname>Stetler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Teodoro</forename><surname>Cervantes Mendívil</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS One</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">279877</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Maximum entropy modeling of species geographic distributions</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Steven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">P</forename><surname>Phillips</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Robert</forename><forename type="middle">E</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Schapire</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ecological modelling</title>
+		<imprint>
+			<biblScope unit="volume">190</biblScope>
+			<biblScope unit="issue">3-4</biblScope>
+			<biblScope unit="page" from="231" to="259" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A maxent predictive model for hunter-gatherer sites in the southern pampas</title>
+		<author>
+			<persName><forename type="first">Rafuse</forename><surname>Daniel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">argentina. Open Quaternary</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">2021</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">A Mathematical Theory of Communication</title>
+		<author>
+			<persName><forename type="first">Claude</forename><forename type="middle">E</forename><surname>Shannon</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/j.1538-7305.1948.tb01338.x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bell System Technical Journal</title>
+		<idno type="ISSN">0005-8580</idno>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="379" to="423" />
+			<date type="published" when="1948-07">1948</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Archaeological Predictive Modeling Using Machine Learning and Statistical Methods for Japan and China</title>
+		<author>
+			<persName><forename type="first">Yuan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaodan</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Takashi</forename><surname>Oguchi</surname></persName>
+			<idno type="ORCID">0000-0001-8340-6994</idno>
+		</author>
+		<idno type="DOI">10.3390/ijgi12060238</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ISPRS International Journal of Geo-Information</title>
+		<title level="j" type="abbrev">IJGI</title>
+		<idno type="ISSNe">2220-9964</idno>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">238</biblScope>
+			<date type="published" when="2023-06-07">2023</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Advancing predictive modeling in archaeology: An evaluation of regression and machine learning methods on the grand staircase-escalante national monument</title>
+		<author>
+			<persName><forename type="first">Kenneth</forename><forename type="middle">B</forename><surname>Peter M Yaworsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jerry</forename><forename type="middle">D</forename><surname>Vernon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><forename type="middle">C</forename><surname>Spangler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><forename type="middle">F</forename><surname>Brewer</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Codding</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PloS one</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">239424</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

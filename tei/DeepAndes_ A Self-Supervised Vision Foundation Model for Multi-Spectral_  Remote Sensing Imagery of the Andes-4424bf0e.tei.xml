@@ -1,0 +1,2530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">DeepAndes: A Self-Supervised Vision Foundation Model for Multi-Spectral Remote Sensing Imagery of the Andes</title>
+				<funder ref="#_BfYjKCm">
+					<orgName type="full">National Endowment for the Humanities Level III</orgName>
+				</funder>
+				<funder ref="#_dtTNpmV">
+					<orgName type="full">National Science Foundation IIS-III: Medium: Collaborative Research</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Vanderbilt University HLRB Lab</orgName>
+				</funder>
+				<funder ref="#_SrrhjBM #_FPScH2f">
+					<orgName type="full">Vanderbilt University</orgName>
+				</funder>
+				<funder ref="#_r5Sy3GZ">
+					<orgName type="full">Vanderbilt University Data Science Institute</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-04-28">28 Apr 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Junlin</forename><surname>Guo</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Anthropology</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">James</forename><forename type="middle">R</forename><surname>Zimmer-Dauphinee</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Data Science Institute</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jordan</forename><forename type="middle">M</forename><surname>Nieusma</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Department of Computer Science</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Siqi</forename><surname>Lu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Anthropology</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Quan</forename><surname>Liu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Ruining</forename><surname>Deng</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Can</forename><surname>Cui</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jialin</forename><surname>Yue</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Anthropology</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yizhe</forename><surname>Lin</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff5">
+								<orgName type="laboratory">is with Oak Ridge National Laboratory</orgName>
+								<address>
+									<settlement>Oak Ridge</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tianyuan</forename><surname>Yao</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Juming</forename><surname>Xiong</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Anthropology</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Junchao</forename><surname>Zhu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Chongyu</forename><surname>Qu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Anthropology</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yuechen</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Mitchell</forename><surname>Wilkes</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Anthropology</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xiao</forename><surname>Wang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff6">
+								<orgName type="department">Department of Anthropology</orgName>
+								<orgName type="institution">Brown University</orgName>
+								<address>
+									<settlement>Providence</settlement>
+									<region>RI</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Parker</forename><surname>Vanvalkenburgh</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff7">
+								<orgName type="department">Department of Radiology</orgName>
+								<address>
+									<addrLine>Weill Cornell Medicine</addrLine>
+									<settlement>New York</settlement>
+									<region>NY</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Steven</forename><forename type="middle">A</forename><surname>Wernke</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Data Science Institute</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yuankai</forename><surname>Huo</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electri-cal and Computer Engineering</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Anthropology</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Department of Computer Science</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff4">
+								<orgName type="department">Department of Mathematics</orgName>
+								<orgName type="institution">Vanderbilt University</orgName>
+								<address>
+									<settlement>Nashville</settlement>
+									<region>TN</region>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">DeepAndes: A Self-Supervised Vision Foundation Model for Multi-Spectral Remote Sensing Imagery of the Andes</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-04-28">28 Apr 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">0A32F8BCF46F9CFBAE5728B106EC164B</idno>
+					<idno type="arXiv">arXiv:2504.20303v1[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Foundation Model</term>
+					<term>Self-supervised Learning</term>
+					<term>DINOv2</term>
+					<term>Multi-Spectral Imaging</term>
+					<term>Remote Sensing</term>
+					<term>Andean Archaeology</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>By mapping sites at large scales using remotely sensed data, archaeologists can generate unique insights into long-term demographic trends, inter-regional social networks, and past adaptations to climate change. Remote sensing surveys complement field-based approaches, and their reach can be especially great when combined with deep learning and computer vision techniques. However, conventional supervised deep learning methods face challenges in annotating fine-grained archaeological features at scale. While recent vision foundation models have shown remarkable success in learning large-scale remote sensing data with minimal annotations, most off-the-shelf solutions are designed for RGB images rather than multi-spectral satellite imagery, such as the 8-band data used in our study. In this paper, we introduce DeepAndes, a transformerbased vision foundation model trained on three million multi-spectral satellite images, specifically tailored for Andean archaeology. DeepAndes incorporates a customized DINOv2 self-supervised learning algorithm optimized for 8band multi-spectral imagery, marking the first foundation model designed explicitly for the Andes region. We evaluate its image understanding performance through imbalanced image classification, image instance retrieval, and pixellevel semantic segmentation tasks. Our experiments show that DeepAndes achieves superior F1 scores, mean average precision, and Dice scores in few-shot learning scenarios, significantly outperforming models trained from scratch or pre-trained on smaller datasets.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="14" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="15" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="16" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="17" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="18" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>O NE of the most vexing and persistent challenges for field-based sciences such as archaeology, population biology, demography, environmental monitoring, and field geology is conducting analyses at large scales. At the level of small regions, conventional field-based survey methods have proven to be highly effective. Through such surveys, field scientists reconstruct and analyze populations, environments, and resources at regional levels and provide crucial data for modeling them at larger scales <ref type="bibr" target="#b1">[2]</ref>, <ref type="bibr" target="#b2">[3]</ref>, <ref type="bibr" target="#b5">[6]</ref>, <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b17">[18]</ref>, <ref type="bibr" target="#b19">[20]</ref>, <ref type="bibr" target="#b40">[41]</ref>, <ref type="bibr" target="#b46">[47]</ref>. However, generating accurate datasets that record continuous distributions (particularly of highly variable cultural phenomena, such as archaeological sites and the distribution of modern urban areas) has proven difficult to achieve at inter-regional and continental scales without large resource outlays to fund multi-year field campaigns. <ref type="bibr" target="#b16">[17]</ref>, <ref type="bibr" target="#b36">[37]</ref>, <ref type="bibr" target="#b41">[42]</ref>, <ref type="bibr" target="#b47">[48]</ref>. These problems are especially notable in Andean South America, where the the topography and inaccessibility of many areas make field surveys challenging. Since the early 2000s, field scientists have used high-resolution remote sensing satellite imagery to analyze the distribution of archaeological features, natural resources, and modern populations at larger scales. However, such "brute force" manual imagery surveys remain labor intensive, time consuming, and prone to observational fatigue and inter-observer variability in feature detection <ref type="bibr" target="#b8">[9]</ref>. Developing effective AI-assisted approaches for autonomous information extraction will enable us to expand survey coverage at scale, providing new insights into human adaptation, settlement patterns, landscapes, and networks in the Andes.</p><p>With the rapid advancement of artificial intelligence, deep learning has made significant contributions in a diverse series of domains <ref type="bibr" target="#b28">[29]</ref>, <ref type="bibr" target="#b29">[30]</ref>, <ref type="bibr" target="#b39">[40]</ref>, <ref type="bibr" target="#b48">[49]</ref>, <ref type="bibr" target="#b49">[50]</ref>, <ref type="bibr" target="#b52">[53]</ref>. Recently, the emergence of "foundation models" (FMs) has further expanded the scope of deep learning applications <ref type="bibr" target="#b3">[4]</ref>, <ref type="bibr" target="#b11">[12]</ref>, <ref type="bibr" target="#b12">[13]</ref>, <ref type="bibr" target="#b21">[22]</ref>, <ref type="bibr" target="#b22">[23]</ref>, <ref type="bibr" target="#b50">[51]</ref>, including remote sensing <ref type="bibr" target="#b30">[31]</ref>- <ref type="bibr" target="#b32">[33]</ref>. As summarized in <ref type="bibr" target="#b32">[33]</ref>, foundation models pretrained on massive remote sensing datasets demonstrate strong adaptability across a wide range of downstream tasks in both earth and social sciences. As a domain-specific application, archaeological remote sensing has particularly benefited from foundation models, which have shown promise in tasks such as artifact recognition <ref type="bibr" target="#b4">[5]</ref>, detection of archaeological structures <ref type="bibr" target="#b18">[19]</ref>, and texture analysis <ref type="bibr" target="#b0">[1]</ref>, offering new opportunities for large-scale archaeological analysis. Despite these advances, most of the earth's surface has yet to be systematically surveyed, and vast regions are underrepresented in archaeological research, including the Andes region. High levels of inter-regional variability in land cover and the diversity of archaeological features themselves have proven to be major barriers to achieving such coverage. To the best of our knowledge, no foundation model has been specifically developed for Andean archaeology using 8-channel hyperspectral satellite imagery. Thus, developing a new AI foundation model with broad utility across the social and earth sciences in the Andes would be highly valuable, enabling experts to contribute where they are most effective-as observers and analysts in the archaeological workflow.</p><p>To bridge this gap, this paper proposes DeepAndes, the first vision foundation model for remote sensing of the Andean region. As shown in Fig. <ref type="figure" target="#fig_0">1</ref>, the multispectral training dataset, sourced from the central Andes (Figs. <ref type="figure" target="#fig_0">1a-c</ref>), covers 488,640 km 2 and encompasses 8 distinct land cover types (Fig. <ref type="figure" target="#fig_0">1c</ref>). DeepAndes, a 307Mparameter vision transformer (ViT) model, is trained on 3 million satellite image patches. A key challenge in developing a novel vision foundation model learning framework for high-dimensional multi-spectral remote sensing images is that most off-the-shelf vision foundation models are primarily designed for natural images with only RGB bands (red, green, and blue). To address this problem, we customize the DINOv2 <ref type="bibr" target="#b35">[36]</ref> self-supervised learning (SSL) pipelines to support our 8-band multispectral imagery. During pre-training, we also adjusted the scale of global-local image views to align with the size of architectural and archaeological features in the dataset. As shown in Fig. <ref type="figure" target="#fig_0">1e</ref>, to evaluate DeepAndes, we investigated its image pattern recognition and fewshot learning capabilities through three key vision-based remote sensing tasks: imbalanced image classification, image instance retrieval, and image segmentation. These downstream tasks are crucial for large-scale remote sensing datasets, where data are often highly heterogeneous and features are sparsely distributed. Similarly to <ref type="bibr" target="#b38">[39]</ref>, DeepAndes-based image instance retrieval can help identify patterns in the distribution of cultural and natural features within vast datasets, improving the efficiency of large-scale archaeological analysis.</p><p>Through extensive experiments employing archaeological features as a test case, our results demonstrate that self-supervised pre-training enhances DeepAndes's performance in both image-level and pixel-level downstream tasks. Among the imbalanced archaeological loci (discrete archaeological features of interest) classification task, DeepAndes achieves an F1 score of 0.886. Even when fine-tuned on only 10% of the original classification data, it maintains a strong F1 score of 0.83, substantially outperforming models trained from scratch using supervised methods. For the archaeological image instance retrieval task, features extracted from the frozen DeepAndes backbone achieve a mean average precision (mAP) of 0.869 within the top-k retrieved samples (mAP@k, k=5), demonstrating the effectiveness of the feature representations. For pixel-level dense feature recognition, we evaluated three challenging archaeological loci segmentation tasks, where the diversity of locus objects adds complexity. Our few-shot learning results show that DeepAndes excels in both transfer learning and fine-tuning settings when using a simple linear segmentation head. Interestingly, the scaling law is observed from the DeepAndes model as depicted in Fig. <ref type="figure">2</ref>. In short, DeepAndes, pre-trained on 3 million diverse remote sensing satellite image patches, outperforms the same ViT models pre-trained on smaller-scale datasets (e.g., 30K and 300K images) across all downstream tasks, underscoring the effectiveness of large-scale selfsupervised learning in this work.</p><p>The contributions of this paper are three-fold:</p><p>• We propose DeepAndes, the first AI-driven vision foundation model for the Andean region, leveraging large-scale pre-training on multi-spectral highresolution satellite images for downstream analysis in field sciences.</p><p>• We revise the DINOv2 framework for multispectral pre-training using 8-band WorldView-2 and Worldview-3 satellite imagery. This modified framework leverages the flexibility of DINOv2 with data preprocessing, data augmentation, and network architecture, enabling seamless adaptation to other multi-channel remote sensing data in the future, regardless of the number of input channels.</p><p>• We demonstrate the few-shot adaptability of DeepAndes to downstream applications, showcasing its effectiveness across three prevalent archaeological remote sensing tasks: imbalanced image classification, image instance retrieval, and pixel- </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. RELATED WORK</head><p>In this section, we describe the background of this study, covering foundation models in remote sensing and summarizing two major SSL strategies for foundation model pre-training.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Foundation Models For Remote Sensing</head><p>The emergence of foundation models has revolutionized the field of remote sensing through their capacity to serve as versatile pre-trained frameworks for various downstream applications <ref type="bibr" target="#b32">[33]</ref>. These models excel in processing complex remote sensing data, including multi-spectral and multi-temporal imagery, by leveraging extensive pre-training on large-scale datasets <ref type="bibr" target="#b26">[27]</ref>. The integration of SSL approaches <ref type="bibr" target="#b27">[28]</ref> and transformer architectures <ref type="bibr" target="#b42">[43]</ref> has substantially improved performance across tasks such as image classification and change detection <ref type="bibr" target="#b14">[15]</ref>. A distinctive advantage of FMs in remote sensing lies in their capability to extract meaningful representations from unlabeled data through SSL techniques Fig. <ref type="figure">2</ref>: Scaling law is observed in DeepAndes. This figure illustrates the model's performance across three key downstream tasks: site classification, image retrieval, and building segmentation. The results are presented for models trained with no pretraining (w/o), 30K, 300K, and 3 million images. The findings highlight the scalability of DeepAndes, indicating that its performance can be further improved with larger training datasets. <ref type="bibr" target="#b50">[51]</ref>. The incorporation of transformer architectures <ref type="bibr" target="#b42">[43]</ref> enables these models to effectively process geospatial data's unique characteristics, including variable spatial resolutions and temporal patterns, building upon earlier findings <ref type="bibr" target="#b32">[33]</ref>. The development trajectory of FMs has been shaped by both deep learning advances and data availability. While early progress centered on CNN architectures like ResNet <ref type="bibr" target="#b25">[26]</ref> for image analysis tasks <ref type="bibr" target="#b33">[34]</ref>, the advent of transformer models has significantly enhanced the processing of large-scale imagery <ref type="bibr" target="#b10">[11]</ref>. ViT models have particularly advanced the field by processing images as sequences of patches, enabling comprehensive analysis of both local details and global patterns. Recent advancements in FMs are transforming remote sensing by improving representation learning for diverse geospatial tasks. Notable examples include SatMAE <ref type="bibr" target="#b10">[11]</ref>, designed for temporal and multi-spectral satellite imagery analysis; Scale-MAE <ref type="bibr" target="#b37">[38]</ref>, which focuses on multiscale geospatial representation learning; SkySense <ref type="bibr" target="#b23">[24]</ref>, a billion-scale pre-trained universal model for earth observation imagery; and DINO-MC <ref type="bibr" target="#b44">[45]</ref>, which enhances SSL capabilities for remote sensing applications. However, these advances face ongoing challenges, including data quality requirements, computational demands, and domain adaptation needs <ref type="bibr" target="#b34">[35]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Self-Supervised Representation Learning Strategies</head><p>In the field of remote sensing and computer vision, self-supervised learning represents a fundamental component in foundation model pre-training <ref type="bibr" target="#b32">[33]</ref>. During the pre-training stage, SSL allows models to learn meaningful representations without relying on labeled datasets. This capability is particularly beneficial in remote sensing, where labeled data is often scarce. Models pretrained using SSL are adept at identifying patterns and features in large volumes of unlabeled remote sensing data, making them highly effective for various downstream applications. As summarized in <ref type="bibr" target="#b32">[33]</ref>, some commonly used SSL techniques in remote sensing FMs can be categorized into two main types: contrastive learning and predictive coding.</p><p>Contrastive Learning. Contrastive learning method focuses on learning data representations by comparing different augmented versions of the same data point. It pulls similar (positive) pairs closer and push dissimilar (negative) pairs apart in the representation space. The methodology depends on advanced data augmentation techniques, such as random cropping, rotation, and color jittering, to create diverse views of the same image. Notable implementations that have shown success in remote sensing applications include DINO <ref type="bibr" target="#b7">[8]</ref>, which employs self-distillation, SimCLR <ref type="bibr" target="#b9">[10]</ref>, which uses a simple contrastive framework, and MOCO (Momentum Contrast) <ref type="bibr" target="#b24">[25]</ref>, which leverages a dynamic dictionary approach <ref type="bibr" target="#b32">[33]</ref>.</p><p>Predictive Coding. Predictive coding approaches, as discussed in <ref type="bibr" target="#b32">[33]</ref>, focus on training models to reconstruct missing input data components from available observations. This methodology has proven particularly effective in capturing both spatial and temporal relationships within remote sensing data, especially when dealing with multi-spectral imagery and cloud-covered regions <ref type="bibr" target="#b32">[33]</ref>. The strategy commonly employs architectures such as autoencoders (AE), which learn compressed representations through encoding-decoding processes, and masked autoencoders (MAE), which specifically focus on reconstructing masked portions of input data <ref type="bibr" target="#b32">[33]</ref>. These approaches have demonstrated significant success in developing robust internal representations of complex remote sensing data structures.</p><p>This work employs one of the SOTA SSL pre-training strategies, DINOv2 <ref type="bibr" target="#b35">[36]</ref>, on million-scale satellite image datasets from the Central Andes. The DINOv2 algorithm leverages contrastive learning concepts with knowledge distillation. Additionally, the "masking" concept is utilized with iBOT <ref type="bibr" target="#b51">[52]</ref> loss to further encourage patchlevel representation learning.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. METHODOLOGIES</head><p>This section details the methodologies employed in this work. It begins with the construction of the millionscale pre-training dataset, followed by an overview of the DINOv2 framework and our pre-training strategies. Finally, it presents the downstream analysis using the pre-trained DeepAndes backbone.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Million-Scale Training Dataset Construction</head><p>As described previously in Figure <ref type="figure" target="#fig_0">1</ref>, the dataset used for SSL pre-training was sourced from the entire Peruvian Andes, surveyed from 6 teams, spanning 488,640 km 2 , and including 8 distinct land cover types. Our high-resolution satellite imagery is from the WorldView-2 (WV-2) and WorldView-3 (WV-3) satellites, both of which are composed of eight multi-spectral bands, plus a panchromatic band. After pansharpening (fusing the panchromatic band with other spectral bands), WV-2 imagery is of a Ground Sample Distance (GSD) of 0.46 m (at nadir), while WV-3 imagery provides 0.31 m (at nadir) GSD resolution. Our imagery processing pipeline includes steps for image orthorectification, cloud removal, and GSD commensuration. Image processing includes upsampling WV-2 imagery to match the GSD of WV-3 imagery. To construct a diverse, large-scale pre-training dataset, we randomly sampled the Central Andean area (encompassing western Peru and parts of northern Chile and northwestern Bolivia) into nonoverlapping 256 × 256 image patches (shown as the red box in Fig. <ref type="figure" target="#fig_0">1</ref>). Featureless images with entirely dark or bright pixels, such as those containing only water or clouds, were removed. This process yielded a total of 3 million 256 × 256 image patches for pre-training DeepAndes.</p><p>B. DeepAndes 1) DINOv2 Architecture: DINOv2 (and its earlier variant DINO <ref type="bibr" target="#b7">[8]</ref>) employs a contrastive learning framework with knowledge distillation, aiming to maximize the similarity of feature representations between two sets of augmented views of the same input image. Figure <ref type="figure" target="#fig_1">3A</ref> illustrates the main architecture of DINOv2. The student network and teacher network use the same network architecture g, a vision transformer, but with different weights θ s and θ t . During pre-training, the student network g θs is trained to match the representation of the teacher network g θt . As shown, for an input image x, two sets of augmented views are generated and sent to g θs and g θt . Compared to g θt , the student network is information-limited because the augmented views sent to g θs are more noisy <ref type="bibr" target="#b7">[8]</ref>. Unlike conventional knowledge distillation, the teacher's weights are dynamically updated using exponential moving average (EMA) of past student weights. Depending on the image views (global or local views) matched between the student and teacher, the corresponding feature representations (class tokens and patch tokens) are further projected to obtain imagelevel and patch-level cross-entropy loss objectives. More details on the model design and derivation can be found in <ref type="bibr" target="#b7">[8]</ref>, <ref type="bibr" target="#b35">[36]</ref>.</p><p>2) SSL Pre-training: Similar to <ref type="bibr" target="#b43">[44]</ref>, Figure <ref type="figure" target="#fig_1">3B</ref> shows the detail of the training paradigm of DINOv2based SSL pre-training. As shown in Figure <ref type="figure" target="#fig_1">3B</ref>, two sets of augmented views are sent to the student and teacher, respectively. The student network receives both global and local crops as inputs, while the teacher network is only provided with global crops. Specifically, The global crop encompasses most of the original image, whereas the local crop focuses on a small portion of it. As shown, during training, different augmented crops of the same image are fed into the networks to obtain the image-level and patch-level loss objectives.</p><p>• DINO Loss: Image-level objective. For global crops, the student attempts to generate the class token to match the teacher class token. The local crops are fed only to the student which tries to produce a representation that matches the teacher class token generated from the global crops, helping the model learn the local-global representations.</p><p>• iBOT Loss: Patch-level objective. The global crops are randomly masked given to the student network. iBOT head is applied to match the (un-  <ref type="figure"></ref>and<ref type="figure" target="#fig_0">(s, 1</ref>) for global views. In our study, we applied the scaling range (0.2, 0.5) for the local view and (0.5, 1) for the global view, due to the sparse image feature distribution and noise present in our remote sensing images. The other default hyperparameters for DINOv2 training algorithm were used for DeepAndes, as detailed in <ref type="bibr" target="#b35">[36]</ref> with the following modifications: a base learning rate of 0.0002, and the entire training process covering approximately 40 times passes over the 3-million-image dataset. DeepAndes was trained using AdamW (β 1 = 0.9, β 2 = 0.999) with float16 precision. For ViT-L, we used 65,536 prototypes, resulting in 65,536-dimensional projection heads. Distributed data parallel (DDP) training was employed across 8 NVIDIA DGX-A100 nodes, with a batch size of 64 per GPU node. To implement complex augmentation pipelines, we adapted the default augmentation modules for 8-band image data with minor modifications.</p><p>3) Feature Embeddings: For an input image of size 256 × 256, it is resized to 224 × 224 before being input to the model, in accordance with the default settings of DINOv2. Using ViT-L with a patch size of 14 × 14, the pre-trained DeepAndes projects the input image into vector representations (tokens) of dimension 1,024 in the feature space. With the default settings, this includes one class token and 256 image patch tokens.</p><p>These vectors generated by foundation models present meaningful feature information of the input images with a reduced dimension can be further utilized for diverse downstream tasks <ref type="bibr" target="#b23">[24]</ref>, <ref type="bibr" target="#b43">[44]</ref>, <ref type="bibr" target="#b44">[45]</ref>. In our case, the class token can be used for downstream tasks such as image classification by concatenating a simple linear classifier. The patch tokens can be utilized for pixel-level image recognition tasks, such as semantic segmentation, by connecting them to a segmentation head.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Archaeological Downstream Analysis 1) Handling Imbalance in Archaeological Data:</head><p>Another major challenge in archaeological remote sensing is the inherent imbalance in archaeological data, particularly in our remote sensing satellite imagery. One of the previous studies <ref type="bibr" target="#b48">[49]</ref> shows that the proportion of our satellite imagery that include archaeological settlement features is typically low, at less than 7% in the surveyed areas. For example, in a manually labeled dataset consisting of 5,830 labeled images sourced from a 4,000 km 2 survey area, the ratio of "positive" (containing settlement features) to "negative" (not containing settlement features) images can be as low as 1:100. The pre-trained model can be adapted and fine-tuned to improve performance in minority classes when the downstream task is bottlenecked by data imbalance and scarcity.</p><p>2) Archaeological Downstream Tasks: To support the motivation above, we evaluate DeepAndes on three image understanding downstream tasks in archaeology: image-level classification and retrieval, and pixel-level segmentation, as shown in the Figure <ref type="figure">4</ref>.</p><p>Imbalanced Loci Classification. As described in the previous section, archaeological loci, such as settlement buildings and corrals, are sparsely distributed across the Andes area. Thus, we determine the first imagelevel downstream task as imbalanced loci classification. Specifically, images of the classification dataset are categorized into two classes: "positive" (i.e., the presence of loci) and "negative" (i.e., no presence of loci), denoted as background images. The class token of the pre-trained ViT-L backbone was connected to a simpler linear classifier with two fully connected layers. Given an input image, the fine-tuned classifier predicts either "positive" or "negative." To represent the data imbalance in this task, the ratio of "positive" to "negative" images was set to 1:10. Additionally, to evaluate the few-shot learning capability of the pre-trained transformer backbones, we assess the classification task at different downstream dataset scales (10%, 30%, 50%, and 100% of the original classification dataset).</p><p>Image Instance Retrieval. Another image-level downstream task we perform is the image instance retrieval task. Unlike classification, image retrieval does Fig. <ref type="figure">4</ref>: Image Understanding Downstream Analysis. Both image-level tasks (e.g., image classification and retrieval) and pixel-level tasks (e.g., segmentation) are included.</p><p>not require fine-tuning on DeepAndes. Instead, we use an archaeological loci image as the input query and retrieve the top-k most similar images from the database, ranking them based on their cosine similarity to the query loci image (via the class token). The performance of the model is then evaluated by the mean average precision of the matched image class ("positive" or "negative") in the retrieved results.</p><p>Few-shot Loci Segmentation In this work, we also consider the task of recognizing dense features, such as semantic segmentation at the pixel level. Specifically, we perform few-shot semantic segmentation tasks for three types of loci: active buildings, active corrals, and archaeological corrals. Patch-level features are extracted from the images via patch tokens and then concatenated with a simple linear segmentation head. Unlike the loci classification task, pixel-level semantic segmentation enables more precise localization of archaeological features within the image. As described in <ref type="bibr" target="#b35">[36]</ref>, we freeze the pre-trained transformer backbone and only fine-tune the linear segmentation head to generate output logits from the patch tokens.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. DATA AND EXPERIMENTS</head><p>A. Data Pre-processing Firstly, the raw satellite imagery is pre-processed into digitized archaeological images for the computer system in preparation for training deep learning models. The remote sensing satellite images used in this work are collected by the WV-2 and WV-3 satellites provided by the Digital Globe Foundation, following color correction and orthographic correction using a coarse digital elevation model (DEM). The data are then pan-sharpened using the Bayesian fusion algorithm from Orfeo-Toolbox <ref type="bibr" target="#b20">[21]</ref> to increase the spatial resolution of the multi-spectral imagery to 0.31 m for WV-2 imagery to match the native resolution of WV-3 imagery. In this work, all 8 spectral bands (four standard colors-red, green, blue, and nearinfrared 1-and four new bands-coastal, yellow, red edge, and near-infrared 2) are used. Lastly, the imagery is re-sampled from 32 bits to 8 bits to reduce storage size and computational load.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. SSL with Different Pre-training Scales</head><p>As introduced in Section III-A, after data preprocessing, we construct the self-supervised pre-training dataset sourced from the entire Peruvian Andes. In total, the imagery covers survey regions of approximately 488,640 km 2 and includes 8 distinct land cover types. We densely sample 3 million image patches of size 256 × 256 from all surveyed regions to ensure a diverse, large-scale pre-training dataset. In this work, we perform SSL on pre-training datasets of varying scales to robustly evaluate the impact of pre-training on downstream tasks. Specifically, the ViT-L backbone is pre-trained using 30K, 300K, and 3 million image patches, and the corresponding pre-trained models are then evaluated respectively. The same procedure is followed to create these pre-training datasets, with the only difference being the number of patches sampled from each land cover type.</p><p>C. Archaeological Downstream Tasks 1) Imbalanced Loci Classification: For the archaeological loci classification task, the dataset is imbalanced, with a 1:10 ratio of "positive" (containing loci) to "negative" (not containing loci) images. Due to this imbalance and limited labeled data, we employ K-fold cross-validation (K=5) for robust evaluation. Specifically, for each train-test split, four folds (positive: 729, negative: 7,290) are used for training, and one fold (positive: 183, negative: 1,830) is used for testing. A simple linear classifier with two fully connected layers is concatenated to the DeepAndes backbone. Prior to the five-fold crossvalidation experiments, we ran several random seed trials to identify optimized hyperparameters for model finetuning. Additionally, to evaluate the few-shot learning capability of the pre-trained transformer backbones, we assess the classification task at different downstream dataset scales (10%, 30%, 50%, and 100% of the original classification dataset).</p><p>Evaluation Metric. The F1 score is used as the evaluation metric for this imbalanced classification task, as it combines both sensitivity and precision, F 1 score = 2 * P recision * Sensitivity P recision + Sensitivity where the Sensitivity (or Recall) determines the accuracy of the minority class classification and Precision indicates the probability of its correct detection. Particularly, the Precision is calculated as the ratio of true positives (TP) to the total number of positive predictions, which is the sum of true positives and false positives (FP):</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>P recision = T P T P + F P</head><p>The Recall is the ratio of TP to the total number of actual positive samples, which is the sum of true positives and false negatives (FN): Recall = T P T P + F N 2) Image Instance Retrieval: For the image instance retrieval task, we use all available labeled data (both training and testing) from the loci classification task and probe the frozen backbones through the class token to form a database. This can be implemented using FAISS library <ref type="bibr" target="#b15">[16]</ref>. In our database, for each positive sample, we use it as the input query and retrieve the top k most similar instances from the database, ranking them based on their cosine similarity to the query image. The precision of retrieving image instances from the same class as the query image (positive samples) is then evaluated for different pre-trained backbones.</p><p>Evaluation Metric. To evaluate the performance of image instance retrieval task, we use mAP@k (mean Average Precision within top-k retrieved samples). The derivation is following. When performing image retrieval, we rank the images based on their similarity to the query image, where rank 1 corresponds to the most similar image, rank 2 to the second most similar image, and so on. The precision at a given rank is defined as the proportion of relevant images (those belonging to the same class as the query image) retrieved up to that rank: P recision@i = Number of images retrieved at rank i i Then, the Average Precision (AP) for a given query is the average of precision values at different ranks (up to k) where relevant images are retrieved:</p><formula xml:id="formula_0">AP = 1 N N ∑ i=1 P recision@i</formula><p>where N is the number of relevant images for that query. Finally, mAP@k is calculated by averaging the AP over all queries in the dataset:</p><formula xml:id="formula_1">mAP @k = 1 Q Q ∑ q=1 AP q</formula><p>where Q is the total number of queries (number of positive samples in the database). In this work, we use multiple k values for evaluation, ranging from 5, 20, and 50, to 100.</p><p>3) Few-shot Loci Segmentation: To evaluate the foundation model's few-shot learning performance on pixel-level feature recognition, we focus on the semantic segmentation of three specific types of loci (i.e., active buildings, active corrals, and archaeological corrals) in this study. Three small-scale binary semantic segmentation datasets are constructed: the Active Buildings dataset contains 48 images, the Active Corrals dataset contains 55 images, and the Archaeological Corrals dataset contains 46 images. K-fold crossvalidation (K=5) is employed for robust evaluation. The segmentation head is simple and directly utilizes the learned features from pre-training. Specifically, patchlevel features are extracted from the images using patch tokens and concatenated with a simple one-layer linear segmentation head. Prior to the five-fold cross-validation experiments, we conducted several random seed trials to identify optimized hyperparameters for model training. Similar to the few-shot loci classification, we also evaluate the pre-trained model's segmentation performance at different downstream dataset scales, including 10, 20, and 30 images.</p><p>Evaluation Metric. The Dice Similarity Coefficient (DSC) is used to evaluate the precision of loci segmentation in this work. This metric ensures precise pixel-level overlap between the predicted and ground truth masks. It emphasizes the importance of accurate segmentation in smaller, localized areas, which aligns with our segmentation datasets, where loci objects (foreground) are typically much smaller than the background areas.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DSC =</head><p>2 × T P 2 × T P + F P + F N</p><p>• T P represents the number of pixels correctly classified as the loci in both the predicted and ground truth masks.</p><p>• F P represents the number of pixels incorrectly classified as loci in the predicted mask but not in the ground truth mask.</p><p>• F N represents the number of pixels incorrectly classified as background in the predicted mask but actually belonging to the loci in the ground truth mask.</p><p>V. RESULTS</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Imbalanced Loci Classification</head><p>Both Table <ref type="table" target="#tab_1">I</ref> and Figure <ref type="figure" target="#fig_3">5</ref> display the five-fold cross-validation results for imbalanced loci classification. Specifically, Table <ref type="table" target="#tab_1">I</ref> details the mean F1 scores, Precision (P), and Recall (R). Figure <ref type="figure" target="#fig_3">5a</ref> illustrates the Precision-Recall (PR) curves, while Figure <ref type="figure" target="#fig_3">5b</ref> presents the confusion matrices for each model, highlighted using a representative hold-out fold.</p><p>As shown in Table <ref type="table" target="#tab_1">I</ref>, the Scratch model struggles with limited and imbalanced data, converging only at N train = 729 (F1 = 0.544) and N train = 365 (F1 = 0.402), while failing entirely at smaller datasets. In contrast, DeepAndes models with SSL pre-training improve consistently across all dataset sizes. At N train = 72, FM3M achieves F1 = 0.83, Recall = 0.825, and Precision = 0.837, effectively balancing false positives and false negatives. Smaller pre-trained models decline in performance, with FM300K dropping to F1 = 0.728, R = 0.671, P = 0.812 and FM30K to F1 = 0.418, R = 0.342, P = 0.556, reflecting higher false negatives due to class imbalance. The same pattern can also be observed in Figure <ref type="figure" target="#fig_3">5a</ref> and<ref type="figure">b</ref>, where the highlighted blue PR curve has the highest PR-AUC and seemingly fewer false negatives compared to the other models.    Additionally, as Table . I indicated, FM3M maintains strong results with few labels; at N train = 72, the larger pre-trained FM3M emerges as a better few-shot learner, achieving performance comparable to FM300K at N train = 729. These results underscore the advantages of largescale SSL pre-training in managing imbalanced data and enhancing few-shot learning.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Image Instance Retrieval</head><p>For loci image instance retrieval task, the performance of four frozen ViT-L backbones (Scratch, FM30K, FM300K, and FM3M) is compared in Table <ref type="table" target="#tab_3">II</ref>. As demonstrated, for the image retrieval task, larger k values result in lower mAP@k scores, indicating that retrieving more samples from the database also introduces more irrelevant ones relative to the query image class. It is also evident that pre-training improves retrieval performance. The Scratch model, without any pre-training, achieves the lowest mAP@k scores across all choices of k for this evaluation, with mAP@5 starting at 0.444. In contrast, pre-trained DeepAndes models-FM30K, FM300K, and FM3M-show progressively higher mAP values, with FM3M achieving the highest performance, with mAP@5 of 0.869.   </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Few-shot Loci Segmentation</head><p>For few-shot loci segmentation tasks, Table <ref type="table" target="#tab_5">III</ref> summarizes the models' performance on three loci types (i.e., active buildings, active corrals, and archaeological corrals). It is evident that as the pre-training scales increase-from 30K to 300K, and then to 3M-the model's performance in both transfer learning (frozen) and fine-tuning improves compared to training from scratch. As highlighted in Table <ref type="table" target="#tab_5">III</ref>, the best model performance across all few-shot datasets and tasks comes from the FM3M. For active/archaeological corrals segmentation tasks, simply training the linear segmentation head on top of the frozen FM3M backbone achieves the second highest DSC score across all experiments, demonstrating the benefits of our million-scale pretraining. On the other hand, models trained from scratch exhibit relatively low DSC scores, especially with small datasets. For example, at N train = 10, the DSC score for the Scratch model (frozen) on the Active Corrals dataset is only 11.6. In contrast, frozen pre-trained models show an improvement of over 30% starting from FM30K (45.4), with DSC scores continuing to rise as the pretraining scale increases. Although model performance improves with fine-tuning the entire ViT-L, transfer learning on the frozen FM3M backbone still exhibits DSC scores that are either comparable to or surpass those of models with smaller pre-training scales. This improvement is particularly noticeable when downstream data is very limited (e.g., N train = 10) across three segmentation tasks. Overall, these results highlight the effectiveness of million-scale DeepAndes in few-shot learning tasks, where the model can generalize well with limited labeled data. This makes it especially valuable in fields like archaeology, where data annotation is scarce.</p><p>Additionally, we present the qualitative visualizations, paired with the Table III results, for the three types of loci segmentation tasks in Figure <ref type="figure" target="#fig_6">7</ref>. An example patch and its segmentation results from different models are shown. As shown, segmenting archaeological corrals (bottom panel) is the most challenging, as there is little to no difference between the inside and outside, except for the boundary pixels. Segmenting active corrals (top panel) is the easiest, as the animals' evidence is consistently darker. Active building segmentation (middle panel) shows medium performance overall. The variability in building colors and their small size makes it difficult for the model to converge. As shown, even for the best-performing task (top panel), transfer learning failed for the scratch model and less pre-trained backbones when the labels were limited (N train = 10, 20, 30). Fine-tuning FT-FM3M, which uses the DeepAndes (3M) backbone, effectively captures foreground pixels and achieves higher precision with a simple linear segmentation head. A similar pattern is observed in active building segmentation (middle panel), where transfer learning with FM3M outperforms the remaining frozen backbones and is comparable to FT-FM300K. For the most challenging task (bottom panel), archaeological corral segmentation, FM3M and FT-FM3M clearly outperform other models, which struggle to capture the foreground pixels and produce many false positives.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. DeepAndes Training and Fine-tuning Summary</head><p>Lastly, this section provides a summary of the pretraining and fine-tuning of DeepAndes (0.3B parameters vision transformer) in Figure <ref type="figure" target="#fig_7">8</ref>. Particularly, it includes training data, model, environmental impact, and evaluation strategies utilized in this work. To observe finetuning efficiency, we selected the imbalanced loci image classification task as representative. The first 10 epochs of the training log are displayed because the model tends to overfit beyond this point. As demonstrated, an increased pre-training scale promotes faster training convergence by monitoring the running loss and running loss AUC (the smaller, the better). This aligns with the foundation model's purpose to accommodate a broad range of tasks through few-shot or zero-shot learning.     The evaluation of downstream tasks indicates that DeepAndes enhances visual feature representations, which improve as pre-training scales increase. With the 3-million scale pre-training, DeepAndes achieves over 83% accuracy in few-shot imbalance classification, surpassing other models, including those trained from scratch in a supervised manner, across various fine-tuning scales. Similar patterns are evident in image retrieval and segmentation tasks, where the feature embeddings from the pre-trained backbone show potential for both image-level and pixel-level remote sensing tasks when labeled data is limited.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DeepAndes Summary</head><note type="other">Environment Impact Downstream Evaluation Training Hardware</note><p>There are also some limitations to this work. First, the data for self-supervised pre-training should undergo more thorough data curation. In <ref type="bibr" target="#b35">[36]</ref>, the training data undergo a comprehensive data de-duplication process and employ image retrieval to refine the uncurated data source with curated sources such as ImageNet-22 <ref type="bibr" target="#b13">[14]</ref>. In our work, we try to sample from diverse archaeological regions while scaling up the datasets, yet we lack curated datasets and detailed prior knowledge of the survey regions, unlike established benchmarks. The archaeological regions are not as distinct as these natural imaging datasets, suggesting a need for further de-duplication beyond excluding featureless samples. Additionally, as we refine the DeepAndes model, it could be utilized to analyze and help reduce duplicate samples in the pretraining dataset.</p><p>For the future and in progress work, the DeepAndes will be integrated into the the GeoPACHA geospatial platform <ref type="bibr" target="#b45">[46]</ref> as a web application, collaborating regional experts and their teams. Meanwhile, depending on the remote sensing tasks, the human-in-the-loop is also included as experts will also verify and compare the autonomous model prediction with their data annotations. The curated data will be used for next round of foundation model fine-tuning to acquire more a specialized model, DeepAndesArch, for remote sensing tasks. From a model perspective, the proposed foundation model offers broad utility and can be further fine-tuned for advanced object detection tasks. By incorporating complex transformer heads, such as Co-DETR <ref type="bibr" target="#b53">[54]</ref>, it can provide valuable support to archaeological survey teams.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VII. CONCLUSION</head><p>In this work, we present DeepAndes, the first AI vision foundation model for multi-spectral remote sensing data for social and earth science applications, utilizing the SOTA DINOv2 framework. DeepAndes is pre-trained on 3 million WorldView-2 and WorldView-3 satellite images with eight spectral bands. Through extensive downstream experiments on three prevalent computer vision tasks in archaeology-imbalanced image classification, image instance retrieval, and semantic segmentation-DeepAndes demonstrates its effectiveness in both image-level and pixel-level feature representation, as well as in few-shot learning capabilities. The pre-trained DeepAndes will be integrated into the GeoPACHA web app to expand the scale of our archaeological surveys in the Andes with human-in-the-loop verification. The broad utility of the proposed foundation model can be further fine-tuned for more advanced object detection tasks using complex transformer heads, such as Co-DETR. As we collect more data with the AI-assisted GeoPACHA tool, experts will be able to contribute more effectively as observers and analysts in the archaeological workflow.</p><p>Chongyu Qu (chongyu.qu@vanderbilt.edu) is a PhD student with the Biomedical Data Representation and Learning Lab (HRLB) at Vanderbilt University. His research interests include medical image analysis, deep learning, computer vision and post-training model quantization for large scale medical vision tasks.</p><p>Yuechen Yang (yuechen.yang@vanderbilt.edu) is a PhD student with the Biomedical Data Representation and Learning Lab (HRLB) at Vanderbilt University. Her research interests include medical image analysis, data science, and medical image processing, with a particular focus on Pathomics.</p><p>Mitchell Wilkes (mitch.wilkes@vanderbilt.edu) is an Associate Professor of Electrical and Computer Engineering at Vanderbilt University. Dr. Wilkes's research focuses on digital signal processing, image processing and computer vision, digital signal processing hardware, structurally adaptive systems, sonar, and signal modeling. Dr. Wilkes's intellectual neighborhoods also include Biomedical Imaging and Biophotonics, Surgery, and Engineering.</p><p>Xiao Wang (wangx2@ornl.gov) is a research staff scientist at Oak Ridge National Laboratory. His research interests include applying machine learning, medical physics, image processing, and highperformance computing to various imaging problems, including CT reconstruction, electron tomography imaging, and MRI. He was the 2022 AAPM Truth CT reconstruction challenge winner and a 2017 ACM Gordon Bell Prize finalist.</p><p>Parker VanValkenburgh (parker_vanvalkenburgh@brown.edu) is an Associate Professor of Anthropology and Archaeology at Brown University. Dr. VanValkenburgh's research focuses on the impacts of colonialism and imperialism on Indigenous people and environments in the Peruvian Andes. He utilizes diverse materials and digital methodologies, including GIS, to understand the transformation of relationships in imperial histories. Dr.VanValkenburgh co-directs the Paisajes Arqueológicos de Chachapoyas (PACha) project and GeoPACHA (Geospatial Platform for Andean Culture, History, and Archaeology).</p><p>Steven A Wernke (s.wernke@vanderbilt.edu) is Professor and Chair of Anthropology at Vanderbilt University, director of the Spatial Analysis Research Laboratory (SARL), and director of the Vanderbilt Institute for Spatial Research. Dr. Wernke is an archaeologist and historical anthropologist of the Andean region of South America. His research combines archaeology and history, prehispanic and colonial studies, as well as anthropology and cultural geography. His interests center on the lived experiences of Indigenous communities across the Spanish invasion of the Americas, and on long-term, large-scale networks, social formations, and human-environment interactions across the Andes.</p><p>Yuankai Huo (yuankai.huo@vanderbilt.edu) is an Assistant Professor of Computer Science, and Electrical and Computer Engineering, as well as the Director of the Biomedical Data Representation and Learning Lab (HRLB Lab) at Vanderbilt University. Additionally, he is an Assistant Professor of Pathology, Microbiology, and Immunology at Vanderbilt University Medical Center. Dr. Huo's current research specializes in high-dimensional multi-modal data analysis, computational pathology and radiology, and medical computer vision. Dr. Huo has received prestigious awards, including the Charles E. Ives Journal Award from the Society for Imaging Science and Technology, the Early Career Achievement Award from the Society for Imaging Informatics in Medicine, and the NAIRR Pilot award from NSF. He is a Senior Member of IEEE and a lifetime member of SPIE, contributing as an organization committee member and area chair for leading medical image analysis conferences such as MICCAI, MIDL, and ISBI. His ongoing efforts are dedicated to advancing next-generation AI algorithms for ultra-high-resolution imaging and non-imaging data analysis.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 :</head><label>1</label><figDesc>Fig. 1: Overview of DeepAndes. This figure shows the training dataset (a-d) and three domain-specific downstream tasks (e) using DeepAndes -a vision foundation model designed for multi-spectral satellite imagery in the Andes region. Particularly, (a) shows a large-scale map of the imagery used to train DeepAndes, highlighting various land cover types, with their area distribution shown in (c). (b) presents the unit sample patch (red box in a, b, d) with eight spectral bands. (d) illustrates image patching for DINOv2 training, with geospatial sampling densely covering different archaeological sites.</figDesc><graphic coords="3,72.00,75.59,468.01,402.16" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 3 :</head><label>3</label><figDesc>Fig. 3: DINOv2: the self-supervised contrastive representation learning algorithm with knowledge distillation. (A) shows an overview of the framework. (B) illustrates the details of the DINOv2 multi-crop SSL training scheme.</figDesc><graphic coords="6,72.00,75.59,468.00,384.99" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>The mean F1 scores, Recall (R), and Precision (P) from the five-fold cross-validation are presented. We compare performance of four model backbones: ViT-L trained from scratch, and DeepAndes pre-trained using 30K, 300K, and 3M images. N train represents the scale of "positive" images (containing loci) in the training dataset. The "positive" to "negative" ratio is 1:10 in both training and testing set. Entries marked with "-" indicate that the experiments do not converge or the values are not supported. For clarity, the highest metric values of each few-shot dataset evaluation are highlighted in bold.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 5 :</head><label>5</label><figDesc>Fig. 5: Performance on Imbalanced Loci Classification: Precision-Recall curves from five-fold cross-validation (a). Confusion matrices (normalized) for each model shown for a representative hold-out fold (b).</figDesc><graphic coords="10,72.00,272.25,468.01,208.49" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 6</head><label>6</label><figDesc>provides qualitative visualizations of the retrieved examples. As pre-training scales up, FM3M retrieves more relevant images (highlighted in blue boxes) that correctly match both the image class and features of the query image. In contrast, FM30K and the Scratch model retrieve incorrect image classes (highlighted in red boxes) among the top-5 retrieved ex-amples. These results clearly demonstrate that SSL pretraining, particularly at a larger scale, enhances imagelevel feature representations and improves instance retrieval accuracy.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 6 :</head><label>6</label><figDesc>Fig. 6: Examples of Retrieved Images from Different Pre-trained Models. The left column displays two example query images, with arrows pointing to key archaeological features. Both query images are from the positive class in the imbalanced loci classification dataset. The right columns show the top-5 retrieved images based on cosine similarity. The images with a red box indicate incorrect class retrieval, while the blue box highlights correct retrieval of both the image class and all archaeological features in the query image.</figDesc><graphic coords="12,95.40,99.07,421.20,525.72" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 7 :</head><label>7</label><figDesc>Fig. 7: Qualitative Results of Loci Segmentation. "FT-" denotes fine-tuning. For convenience, image patches are shown in RGB. Superior performance are from either FT-FM3M or FM3M.</figDesc><graphic coords="13,95.40,96.84,420.42,563.82" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>-Fig. 8 :</head><label>8</label><figDesc>Fig. 8: Summarization of DeepAndes Model and Fine-Tuning Efficiency Comparison. The right panel illustrates the running loss experimental logs (10 epochs) from an imbalanced loci classification experiment, highlighting DeepAndes (FM3M)'s rapid convergence</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="4,142.20,75.59,327.61,221.81" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="7,95.40,423.12,421.19,261.02" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>TABLE I :</head><label>I</label><figDesc>Performance on Imbalanced Loci Classification.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>TABLE II :</head><label>II</label><figDesc>Performance on Image Instance Retrieval. The mAP@k (mean Average Precision within top-k retrieved samples) for different choices of k (5, 20, 50, and 100) is presented. Four frozen ViT-L backbones are compared: ViT-L (scratch) and DeepAndes pre-trained using 30K, 300K, and 3M images. For clarity, the highest metric values are highlighted in bold.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head></head><label></label><figDesc>100% N train = 10 N train = 20 N train = 30 100% N train = 10 N train = 20 N train = 30 100% N train = 10 N train = 20 N train = 30 Active Buildings Dataset contains 48 images featuring modern buildings against dense forest or vegetation backgrounds. 2 Active Corrals Dataset contains 55 images, each showing corrals with visible evidence of animal use. 3 Archaeological Corrals Dataset contains 46 images showing corrals where signs of use have disappeared.</figDesc><table><row><cell cols="2">Backbone Model</cell><cell></cell><cell cols="2">Active Buildings 1</cell><cell></cell><cell></cell><cell cols="2">Active Corrals 2</cell><cell></cell><cell></cell><cell cols="2">Archaeological Corrals 3</cell></row><row><cell></cell><cell>Scratch</cell><cell>29.1</cell><cell>8.2</cell><cell>21.3</cell><cell>20.6</cell><cell>38.3</cell><cell>11.6</cell><cell>14.6</cell><cell>21.0</cell><cell>8.4</cell><cell>-</cell><cell>-</cell><cell>-</cell></row><row><cell>Frozen</cell><cell cols="2">FM30K 27.0</cell><cell>20.0</cell><cell>23.0</cell><cell>24.7</cell><cell>45.7</cell><cell>45.4</cell><cell>44.8</cell><cell>45.5</cell><cell>11.9</cell><cell>9.7</cell><cell>11.9</cell><cell>12.1</cell></row><row><cell></cell><cell cols="2">FM300K 55.2</cell><cell>41.4</cell><cell>47.3</cell><cell>51.4</cell><cell>60.9</cell><cell>55.5</cell><cell>56.5</cell><cell>59.3</cell><cell>27.8</cell><cell>19.0</cell><cell>17.8</cell><cell>24.8</cell></row><row><cell></cell><cell>FM3M</cell><cell>58.3</cell><cell>52.3</cell><cell>56.2</cell><cell>58.2</cell><cell>70.4</cell><cell>65.5</cell><cell>67.1</cell><cell>68.2</cell><cell>67.3</cell><cell>56.3</cell><cell>61.3</cell><cell>63.0</cell></row><row><cell></cell><cell>Scratch</cell><cell>47.1</cell><cell>42.1</cell><cell>47.8</cell><cell>45.9</cell><cell>64.2</cell><cell>57.9</cell><cell>62.0</cell><cell>62.5</cell><cell>11.6</cell><cell>15.1</cell><cell>15.4</cell><cell>15.4</cell></row><row><cell>Finetuned</cell><cell cols="2">FM30K 53.8</cell><cell>44.0</cell><cell>52.8</cell><cell>53.2</cell><cell>66.4</cell><cell>61.3</cell><cell>63.7</cell><cell>64.8</cell><cell>17.7</cell><cell>16.2</cell><cell>15.6</cell><cell>18.4</cell></row><row><cell></cell><cell cols="2">FM300K 59.7</cell><cell>51.4</cell><cell>57.2</cell><cell>58.8</cell><cell>69.2</cell><cell>59.3</cell><cell>64.6</cell><cell>67.8</cell><cell>33.9</cell><cell>15.3</cell><cell>17.9</cell><cell>29.4</cell></row><row><cell></cell><cell>FM3M</cell><cell>69.3</cell><cell>57.8</cell><cell>63.7</cell><cell>66.5</cell><cell>81.1</cell><cell>70.8</cell><cell>73.5</cell><cell>75.5</cell><cell>84.8</cell><cell>51.3</cell><cell>72.5</cell><cell>81.0</cell></row><row><cell>1</cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>TABLE III :</head><label>III</label><figDesc>Performance on Few-shot Segmentation of Three Loci Types. Mean DSC scores from five-fold cross-validation are presented, which include both transfer learning (frozen backbones) and fine-tuning (unfrozen backbones) across four models: Scratch, FM30K, FM300K, and FM3M. Specifically, N train indicates the scale of the training dataset. Bold entries denote the highest DSC score for each few-shot setting, while underscored entries indicate the second highest. Entries marked with "-" indicate that the experiments do not converge or the values are not supported.</figDesc><table /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>ACKNOWLEDGEMENTS</head><p>This work was supported by the following grants: <rs type="funder">National Endowment for the Humanities Level III</rs> <rs type="grantName">Digital Enhancement Grant</rs> (<rs type="person">Award ID Number</rs> <rs type="grantNumber">HAA-293452-23</rs>), <rs type="funder">National Science Foundation IIS-III: Medium: Collaborative Research</rs> (Award number <rs type="grantNumber">2106717</rs>); National Science Foundation Collaborative Research: <rs type="projectName">Research Infrastructure: HNDS-I (Award Numbers 2419793 and 2419794</rs>); <rs type="funder">Vanderbilt University</rs> <rs type="grantName">Scaling Success Grant</rs>, <rs type="funder">Vanderbilt University</rs> <rs type="grantName">Discovery Grant</rs>. The project also benefited from the infrastructural support of the <rs type="funder">Vanderbilt University Data Science Institute</rs> (<rs type="projectName">GPU computational infrastructure</rs>) and the <rs type="funder">Vanderbilt University HLRB Lab</rs> (computational infrastructure), and the <rs type="institution">Spatial Analysis Research Laboratory</rs> (geospatial computational infrastructure).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_BfYjKCm">
+					<idno type="grant-number">HAA-293452-23</idno>
+					<orgName type="grant-name">Digital Enhancement Grant</orgName>
+				</org>
+				<org type="funded-project" xml:id="_dtTNpmV">
+					<idno type="grant-number">2106717</idno>
+					<orgName type="project" subtype="full">Research Infrastructure: HNDS-I (Award Numbers 2419793 and 2419794</orgName>
+				</org>
+				<org type="funding" xml:id="_SrrhjBM">
+					<orgName type="grant-name">Scaling Success Grant</orgName>
+				</org>
+				<org type="funding" xml:id="_FPScH2f">
+					<orgName type="grant-name">Discovery Grant</orgName>
+				</org>
+				<org type="funded-project" xml:id="_r5Sy3GZ">
+					<orgName type="project" subtype="full">GPU computational infrastructure</orgName>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VIII. BIOGRAPHY SECTION</head><p>Junlin Guo (junlin.guo@vanderbilt.edu) is a PhD student with the Biomedical Data Representation and Learning Lab (HRLB) and the Spatial Analysis Research Laboratory (SARL) at Vanderbilt University. His research interests include deep learning, foundation models, and their applications in remote sensing and medical image analysis.</p><p>James R Zimmer-Dauphinee (james.r.zimmer-dauphinee@vanderbilt .edu) is a postdoctoral researcher with the Spatial Analysis Research Laboratory (SARL) at Vanderbilt University. His research interests include developing deep learning models for large-scale autonomous archaeological satellite imagery surveys, geophysical methods, and spatial modeling to understand the impact of colonization on indigenous peoples. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Self-Supervised Material and Texture Representation Learning for Remote Sensing Tasks</title>
+		<author>
+			<persName><forename type="first">Peri</forename><surname>Akiva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Purri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matthew</forename><surname>Leotta</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52688.2022.00803</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-06">2022</date>
+			<biblScope unit="page" from="8193" to="8205" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Side-by-Side Survey : Comparative Regional Studies in the Mediterranean World</title>
+		<author>
+			<persName><forename type="first">Susan</forename><surname>Alcock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">John</forename><surname>Cherry</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<publisher>Oxbow Books</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Overview of URBAN 2000: A Multiscale Field Study of Dispersion through an Urban Environment</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">J</forename><surname>Allwine</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Joseph</forename><forename type="middle">H</forename><surname>Shinn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gerald</forename><forename type="middle">E</forename><surname>Streit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kirk</forename><forename type="middle">L</forename><surname>Clawson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mike</forename><surname>Brown</surname></persName>
+		</author>
+		<idno type="DOI">10.1175/1520-0477(2002)083&lt;0521:oouamf&gt;2.3.co;2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bulletin of the American Meteorological Society</title>
+		<title level="j" type="abbrev">Bull. Amer. Meteor. Soc.</title>
+		<idno type="ISSN">0003-0007</idno>
+		<idno type="ISSNe">1520-0477</idno>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="521" to="536" />
+			<date type="published" when="2002-04">2002</date>
+			<publisher>American Meteorological Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Foundation Models Defining a New Era in Vision: A Survey and Outlook</title>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Awais</surname></persName>
+			<idno type="ORCID">0000-0003-2407-7865</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Muzammal</forename><surname>Naseer</surname></persName>
+			<idno type="ORCID">0000-0001-7663-7161</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Salman</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0002-9502-1749</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Rao</forename><forename type="middle">Muhammad</forename><surname>Anwer</surname></persName>
+			<idno type="ORCID">0000-0002-9041-2214</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hisham</forename><surname>Cholakkal</surname></persName>
+			<idno type="ORCID">0000-0002-8230-9065</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mubarak</forename><surname>Shah</surname></persName>
+			<idno type="ORCID">0000-0002-8216-1128</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ming-Hsuan</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0003-4848-2304</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fahad</forename><forename type="middle">Shahbaz</forename><surname>Khan</surname></persName>
+			<idno type="ORCID">0000-0002-4263-3143</idno>
+		</author>
+		<idno type="DOI">10.1109/tpami.2024.3506283</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="volume">47</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="2245" to="2264" />
+			<date type="published" when="2025-04">2025</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Geographyaware self-supervised learning</title>
+		<author>
+			<persName><forename type="first">Burak</forename><surname>Kumar Ayush</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenlin</forename><surname>Uzkent</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kumar</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marshall</forename><surname>Tanmay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Burke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Lobell</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ermon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF International Conference on Computer Vision</title>
+		<meeting>the IEEE/CVF International Conference on Computer Vision</meeting>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="page" from="10181" to="10190" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Mediterranean islands, fragile communities and persistent landscapes: Antikythera in long-term perspective</title>
+		<author>
+			<persName><forename type="first">Andrew</forename><surname>Bevan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Conolly</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2013">2013</date>
+			<publisher>Cambridge University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Settlement pattern studies in the americas: fifty years since virú. (No Title)</title>
+		<author>
+			<persName><surname>Brian R Billman</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Gary M Feinman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Emerging Properties in Self-Supervised Vision Transformers</title>
+		<author>
+			<persName><forename type="first">Mathilde</forename><surname>Caron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hugo</forename><surname>Touvron</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ishan</forename><surname>Misra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Herve</forename><surname>Jegou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Mairal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Piotr</forename><surname>Bojanowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Armand</forename><surname>Joulin</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv48922.2021.00951</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2021 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2021-10">2021</date>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">5</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Regional-scale archaeological remote sensing in the age of big data: Automated site discovery vs. brute force methods</title>
+		<author>
+			<persName><forename type="first">Jesse</forename><surname>Casana</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in Archaeological Practice</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="222" to="233" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">A simple framework for contrastive learning of visual representations</title>
+		<author>
+			<persName><forename type="first">Ting</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Simon</forename><surname>Kornblith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Norouzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Geoffrey</forename><surname>Hinton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Satmae: Pre-training transformers for temporal and multi-spectral satellite imagery</title>
+		<author>
+			<persName><forename type="first">Yezhen</forename><surname>Cong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samar</forename><surname>Khanna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenlin</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Patrick</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Rozi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yutong</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marshall</forename><surname>Burke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Lobell</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Ermon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Koyejo</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">S</forename><surname>Mohamed</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Agarwal</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">D</forename><surname>Belgrave</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">K</forename><surname>Cho</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Oh</surname></persName>
+		</editor>
+		<imprint>
+			<publisher>Curran Associates, Inc</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page">4</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Enhancing Physician Flexibility: Prompt-Guided Multi-class Pathological Segmentation for Diverse Outcomes</title>
+		<author>
+			<persName><forename type="first">Can</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruining</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junlin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyuan</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haichun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Huo</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/bhi62660.2024.10913563</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-11-10">2024</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Enhancing Physician Flexibility: Prompt-Guided Multi-class Pathological Segmentation for Diverse Outcomes</title>
+		<author>
+			<persName><forename type="first">Can</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruining</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junlin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyuan</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haichun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Huo</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/bhi62660.2024.10913563</idno>
+		<idno type="arXiv">arXiv:2407.09979</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE EMBS International Conference on Biomedical and Health Informatics (BHI)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-11-10">2024</date>
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Imagenet: A large-scale hierarchical image database</title>
+		<author>
+			<persName><forename type="first">Jia</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li-Jia</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Li</forename><surname>Fei-Fei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2009 IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<date type="published" when="2009">2009</date>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">An Agenda for Multimodal Foundation Models for Earth Observation</title>
+		<author>
+			<persName><forename type="first">Philipe</forename><surname>Dias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhishek</forename><surname>Potnis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sreelekha</forename><surname>Guggilam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lexie</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aristeidis</forename><surname>Tsaris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Medeiros</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dalton</forename><surname>Lunga</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/igarss52108.2023.10282966</idno>
+	</analytic>
+	<monogr>
+		<title level="m">IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-07-16">2023</date>
+			<biblScope unit="page" from="1237" to="1240" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<author>
+			<persName><forename type="first">Matthijs</forename><surname>Douze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexandr</forename><surname>Guzhva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengqi</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeff</forename><surname>Johnson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gergely</forename><surname>Szilvasy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre-Emmanuel</forename><surname>Mazaré</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maria</forename><surname>Lomeli</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lucas</forename><surname>Hosseini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hervé</forename><surname>Jégou</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2401.08281</idno>
+		<title level="m">The faiss library</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Archaeological field research in the upper mantaro, peru, 1982-1983: Investigations of inka expansion and exchange</title>
+		<author>
+			<persName><forename type="first">Timothy K</forename><surname>Earle</surname></persName>
+		</author>
+		<idno>1987. 1</idno>
+		<imprint/>
+	</monogr>
+	<note>No Title</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Long-term demographic change: A perspective from the valley of oaxaca, mexico</title>
+		<author>
+			<persName><forename type="first">Stephen</forename><forename type="middle">A</forename><surname>Gary M Feinman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laura</forename><surname>Kowalewski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Richard</forename><forename type="middle">E</forename><surname>Finsten</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linda</forename><surname>Blanton</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Nicholas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Field Archaeology</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="333" to="362" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A Self-Supervised Cross-Modal Remote Sensing Foundation Model with Multi-Domain Representation and Cross-Domain Fusion</title>
+		<author>
+			<persName><forename type="first">Yingchao</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Peijin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenhui</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qibin</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huiyang</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hanbo</forename><surname>Bi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xian</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Fu</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/igarss52108.2023.10282433</idno>
+	</analytic>
+	<monogr>
+		<title level="m">IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-07-16">2023</date>
+			<biblScope unit="page" from="2239" to="2242" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">The integration of field survey and remote sensing for biodiversity assessment: a case study in the tropical forests and wetlands of sango bay, uganda</title>
+		<author>
+			<persName><surname>Fuller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Groom</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Mugisha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ipulet</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Pomeroy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Katende</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bailey</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ogutu-Ohwayo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Biological conservation</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="379" to="391" />
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Orfeo toolbox: Open source processing of remote sensing images</title>
+		<author>
+			<persName><forename type="first">Manuel</forename><surname>Grizonnet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julien</forename><surname>Michel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Victor</forename><surname>Poughon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jordi</forename><surname>Inglada</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mickaël</forename><surname>Savinaud</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rémi</forename><surname>Cresson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Open Geospatial Data, Software and Standards</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Assessment of cell nuclei AI foundation models in kidney pathology</title>
+		<author>
+			<persName><forename type="first">Junlin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siqi</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Can</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruining</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyuan</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhewen</forename><surname>Tao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yizhe</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marilyn</forename><surname>Lionts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juming</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shilin</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catie</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitch</forename><forename type="middle">M</forename><surname>Wilkes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengmeng</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haichun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Huo</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/12.3047301</idno>
+		<idno type="arXiv">arXiv:2411.00078</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Medical Imaging 2025: Image Perception, Observer Performance, and Technology Assessment</title>
+		<imprint>
+			<publisher>SPIE</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Assessment of cell nuclei AI foundation models in kidney pathology</title>
+		<author>
+			<persName><forename type="first">Junlin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siqi</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Can</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruining</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyuan</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhewen</forename><surname>Tao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yizhe</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marilyn</forename><surname>Lionts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juming</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shilin</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Catie</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitch</forename><forename type="middle">M</forename><surname>Wilkes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengmeng</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haichun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Huo</surname></persName>
+		</author>
+		<idno type="DOI">10.1117/12.3047301</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Medical Imaging 2025: Image Perception, Observer Performance, and Technology Assessment</title>
+		<imprint>
+			<publisher>SPIE</publisher>
+			<date type="published" when="2025-04-10">2025</date>
+			<biblScope unit="volume">13409</biblScope>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Skysense: A multi-modal remote sensing foundation model towards universal interpretation for earth observation imagery</title>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiangwei</forename><surname>Lao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Dang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingying</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lei</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lixiang</forename><surname>Ru</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liheng</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziyuan</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kang</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dingxiang</forename><surname>Hu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</title>
+		<meeting>the IEEE/CVF Conference on Computer Vision and Pattern Recognition</meeting>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">7</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Saining Xie, and Ross Girshick. Momentum contrast for unsupervised visual representation learning</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haoqi</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxin</forename><surname>Wu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Deep residual learning for image recognition</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Brain-Inspired Remote Sensing Foundation Models and Open Problems: A Comprehensive Survey</title>
+		<author>
+			<persName><forename type="first">Licheng</forename><surname>Jiao</surname></persName>
+			<idno type="ORCID">0000-0003-3354-9617</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhongjian</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0003-2004-0619</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoqiang</forename><surname>Lu</surname></persName>
+			<idno type="ORCID">0000-0003-0338-7645</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xu</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-8780-5455</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yuting</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0002-6720-4134</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaxuan</forename><surname>Zhao</surname></persName>
+			<idno type="ORCID">0000-0002-2827-0681</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jinyue</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0003-2600-0044</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Biao</forename><surname>Hou</surname></persName>
+			<idno type="ORCID">0000-0002-1996-186X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shuyuan</forename><surname>Yang</surname></persName>
+			<idno type="ORCID">0000-0002-4796-5737</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Fang</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-5669-9354</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Wenping</forename><surname>Ma</surname></persName>
+			<idno type="ORCID">0000-0001-8872-2195</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Lingling</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-6130-2518</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangrong</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0003-0379-2042</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Puhua</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-5472-1426</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zhixi</forename><surname>Feng</surname></persName>
+			<idno type="ORCID">0000-0002-7372-9180</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xu</forename><surname>Tang</surname></persName>
+			<idno type="ORCID">0000-0003-1375-0778</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yuwei</forename><surname>Guo</surname></persName>
+			<idno type="ORCID">0000-0002-6095-8830</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Dou</forename><surname>Quan</surname></persName>
+			<idno type="ORCID">0000-0001-6943-4657</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shuang</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0003-4940-1211</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Weibin</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0003-0047-8955</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Bai</surname></persName>
+			<idno type="ORCID">0000-0001-5412-7793</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yangyang</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-1328-8889</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Ronghua</forename><surname>Shang</surname></persName>
+			<idno type="ORCID">0000-0001-9124-696X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jie</forename><surname>Feng</surname></persName>
+			<idno type="ORCID">0000-0002-8032-7542</idno>
+		</author>
+		<idno type="DOI">10.1109/jstars.2023.3316302</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</title>
+		<title level="j" type="abbrev">IEEE J. Sel. Top. Appl. Earth Observations Remote Sensing</title>
+		<idno type="ISSN">1939-1404</idno>
+		<idno type="ISSNe">2151-1535</idno>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="10084" to="10120" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Self-Supervised Visual Feature Learning With Deep Neural Networks: A Survey</title>
+		<author>
+			<persName><forename type="first">Longlong</forename><surname>Jing</surname></persName>
+			<idno type="ORCID">0000-0001-7115-2341</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yingli</forename><surname>Tian</surname></persName>
+			<idno type="ORCID">0000-0003-4458-360X</idno>
+		</author>
+		<idno type="DOI">10.1109/tpami.2020.2992393</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="4037" to="4058" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">TshFNA-Examiner: A Nuclei Segmentation and Cancer Assessment Framework for Thyroid Cytology Image</title>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Ke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junchao</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haolin</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxiang</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiayi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yizhou</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiqing</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sheng</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fusong</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qin</forename><surname>Huang</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12204-024-2743-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Shanghai Jiaotong University (Science)</title>
+		<title level="j" type="abbrev">J. Shanghai Jiaotong Univ. (Sci.)</title>
+		<idno type="ISSN">1007-1172</idno>
+		<idno type="ISSNe">1995-8188</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="945" to="957" />
+			<date type="published" when="2024-06-24">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">U-KAN Makes Strong Backbone for Medical Image Segmentation and Generation</title>
+		<author>
+			<persName><forename type="first">Chenxin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wuyang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hengyu</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yifan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhen</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixuan</forename><surname>Yuan</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v39i5.32491</idno>
+		<idno type="arXiv">arXiv:2406.02918</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="4652" to="4660" />
+			<date type="published" when="2024">2024</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Unleashing the potential of remote sensing foundation models via bridging data and computility islands. The Innovation</title>
+		<author>
+			<persName><forename type="first">Yansheng</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jieyi</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Dang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mang</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sergey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stanislav</forename><surname>Bartalev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linlin</forename><surname>Shinkarenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yingying</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lixiang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Ru</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Guo</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Remoteclip: A vision language foundation model for remote sensing</title>
+		<author>
+			<persName><forename type="first">Fan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Delong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhangqingyun</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaocong</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiale</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiaolin</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Liyong</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Zhou</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Geoscience and Remote Sensing</title>
+		<imprint>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Vision foundation models in remote sensing: A survey</title>
+		<author>
+			<persName><forename type="first">Siqi</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junlin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><forename type="middle">R</forename><surname>Zimmer-Dauphinee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jordan</forename><forename type="middle">M</forename><surname>Nieusma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiao</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">A</forename><surname>Wernke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Huo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Geoscience and Remote Sensing Magazine</title>
+		<imprint>
+			<date type="published" when="2005">2025. 2, 3, 4, 5</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Transfer learning in environmental remote sensing</title>
+		<author>
+			<persName><forename type="first">Yuchi</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuo</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Ermon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">B</forename><surname>Lobell</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.rse.2023.113924</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Remote Sensing of Environment</title>
+		<title level="j" type="abbrev">Remote Sensing of Environment</title>
+		<idno type="ISSN">0034-4257</idno>
+		<imprint>
+			<biblScope unit="volume">301</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page">113924</biblScope>
+			<date type="published" when="2024-02">2024</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Rethinking transformers pre-training for multi-spectral satellite imagery</title>
+		<author>
+			<persName><forename type="first">Mubashir</forename><surname>Noman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muzammal</forename><surname>Naseer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hisham</forename><surname>Cholakkal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Muhammad</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Salman</forename><surname>Anwar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fahad</forename><surname>Khan</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Shahbaz Khan</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<monogr>
+		<author>
+			<persName><forename type="first">Maxime</forename><surname>Oquab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timothée</forename><surname>Darcet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Théo</forename><surname>Moutakanni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huy</forename><surname>Vo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marc</forename><surname>Szafraniec</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Vasil</forename><surname>Khalidov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pierre</forename><surname>Fernandez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Haziza</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francisco</forename><surname>Massa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alaaeldin</forename><surname>El-Nouby</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2304.07193</idno>
+		<title level="m">Learning robust visual features without supervision</title>
+		<imprint>
+			<date type="published" when="2023">2023. 2, 5, 6, 8, 15</date>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Prehispanic Settlement Patterns in the Upper Mantaro and Tarma Drainages</title>
+		<author>
+			<persName><forename type="first">Charles</forename><forename type="middle">M</forename><surname>Jeffrey R Parsons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ramiro</forename><surname>Hastings</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Matos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Tarama-Chinchaycocha Region</title>
+		<meeting><address><addrLine>Junín, Peru</addrLine></address></meeting>
+		<imprint>
+			<publisher>U OF M MUSEUM ANTHRO ARCHAEOLOGY</publisher>
+			<date type="published" when="2000">2000</date>
+			<biblScope unit="volume">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Scale-mae: A scaleaware masked autoencoder for multiscale geospatial representation learning</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Colorado</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ritwik</forename><surname>Reed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shufan</forename><surname>Gupta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sarah</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Christopher</forename><surname>Brockman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Funk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kurt</forename><surname>Clipp</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Salvatore</forename><surname>Keutzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Matt</forename><surname>Candido</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Trevor</forename><surname>Uyttendaele</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Darrell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<monogr>
+		<title level="m" type="main">Aiaccelerated nazca survey nearly doubles the number of known figurative geoglyphs and sheds light on their purpose</title>
+		<author>
+			<persName><forename type="first">Masato</forename><surname>Sakai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Akihisa</forename><surname>Sakurai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siyuan</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jorge</forename><surname>Olano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Conrad</forename><forename type="middle">M</forename><surname>Albrecht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hendrik</forename><forename type="middle">F</forename><surname>Hamann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marcus</forename><surname>Freitag</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note>Proceedings of the National Academy of Sciences, 121(40):e2407652121</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Machine Learning and Deep Learning Applications-A Vision</title>
+		<author>
+			<persName><forename type="first">Neha</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Reecha</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neeru</forename><surname>Jindal</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.gltp.2021.01.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Global Transitions Proceedings</title>
+		<title level="j" type="abbrev">Global Transitions Proceedings</title>
+		<idno type="ISSN">2666-285X</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="24" to="28" />
+			<date type="published" when="2021-06">2021</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">On-site recording of excavation data using mobile gis</title>
+		<author>
+			<persName><forename type="first">Nicholas</forename><surname>Tripcevich</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">A</forename><surname>Wernke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Field Archaeology</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="380" to="397" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Big archaeology: Horizons and blindspots</title>
+		<author>
+			<persName><forename type="first">Parker</forename><surname>Vanvalkenburgh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Andrew Dufton</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<monogr>
+		<title level="m" type="main">and Illia Polo-sukhin. Attention is all you need</title>
+		<author>
+			<persName><forename type="first">Ashish</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niki</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Llion</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aidan</forename><forename type="middle">N</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">4</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<author>
+			<persName><forename type="first">Eugene</forename><surname>Vorontsov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alican</forename><surname>Bozkurt</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adam</forename><surname>Casson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">George</forename><surname>Shaikovski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michal</forename><surname>Zelechowski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siqi</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kristen</forename><surname>Severson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eric</forename><surname>Zimmermann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Neil</forename><surname>Tenenholtz</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2309.07778</idno>
+		<title level="m">A million-slide digital pathology foundation model</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">7</biblScope>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Extending global-local view alignment for self-supervised learning with remote sensing imagery</title>
+		<author>
+			<persName><forename type="first">Xinye</forename><surname>Wanyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sachith</forename><surname>Seneviratne</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuchang</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Kirley</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvprw63382.2024.00251</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-06-17">2024</date>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="2443" to="2453" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Large-scale, collaborative imagery survey in archaeology: the geospatial platform for andean culture, history and archaeology (geopacha)</title>
+		<author>
+			<persName><forename type="first">Parker</forename><surname>Steven A Wernke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Van Valkenburgh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bethany</forename><surname>Zimmer-Dauphinee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Giles</forename><forename type="middle">Spence</forename><surname>Whitlock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ryan</forename><surname>Morrow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Douglas</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Grecia</forename><forename type="middle">Roque</forename><surname>Smit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kevin</forename><forename type="middle">Ricci</forename><surname>Ortega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Daniel</forename><surname>Jara</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Plekhov</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Antiquity</title>
+		<imprint>
+			<biblScope unit="volume">98</biblScope>
+			<biblScope unit="issue">397</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Prehistoric settlement patterns in the virú; valley, peru</title>
+		<author>
+			<persName><surname>Gordon R Willey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Bureau of American Ethnology Bulletin</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="1953">1953</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<monogr>
+		<title level="m" type="main">Prehispanic settlement patterns in the lower santa valley, peru: a regional perspective on the origins and development of complex north coast society</title>
+		<author>
+			<persName><forename type="first">David</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wilson</forename></persName>
+		</author>
+		<idno>1988. 1</idno>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Semi-supervised contrastive learning for remote sensing: identifying ancient urbanization in the south-central Andes</title>
+		<author>
+			<persName><forename type="first">Jiachen</forename><surname>Xu</surname></persName>
+			<idno type="ORCID">0000-0001-8869-2045</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Junlin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">James</forename><surname>Zimmer-Dauphinee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuxuan</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zuhayr</forename><surname>Asad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">Mitchell</forename><surname>Wilkes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Parker</forename><surname>Vanvalkenburgh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Steven</forename><forename type="middle">A</forename><surname>Wernke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Huo</surname></persName>
+			<idno type="ORCID">0000-0002-2096-8065</idno>
+		</author>
+		<idno type="DOI">10.1080/01431161.2023.2192879</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Remote Sensing</title>
+		<title level="j" type="abbrev">International Journal of Remote Sensing</title>
+		<idno type="ISSN">0143-1161</idno>
+		<idno type="ISSNe">1366-5901</idno>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="1922" to="1938" />
+			<date type="published" when="2023-03-19">2023</date>
+			<publisher>Informa UK Limited</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Glofinder: Ai-empowered qupath plugin for wsilevel glomerular detection, visualization, and curation</title>
+		<author>
+			<persName><forename type="first">Jialin</forename><surname>Yue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyuan</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruining</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siqi</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junlin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Quan</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juming</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengmeng</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haichun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Huo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Pathology Informatics</title>
+		<imprint>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">100433</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">A comprehensive survey on pretrained foundation models: a history from BERT to ChatGPT</title>
+		<author>
+			<persName><forename type="first">Ce</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qian</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yixin</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guangjing</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kai</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng</forename><surname>Ji</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiben</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lifang</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jianxin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jia</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziwei</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengtao</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Caiming</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Pei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Philip</forename><forename type="middle">S</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lichao</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s13042-024-02443-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Machine Learning and Cybernetics</title>
+		<title level="j" type="abbrev">Int. J. Mach. Learn. &amp; Cyber.</title>
+		<idno type="ISSN">1868-8071</idno>
+		<idno type="ISSNe">1868-808X</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2024-11-24">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<monogr>
+		<author>
+			<persName><forename type="first">Jinghao</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huiyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cihang</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Yuille</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tao</forename><surname>Kong</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2111.07832</idno>
+		<title level="m">ibot: Image bert pre-training with online tokenizer</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">ASIGN: An Anatomy-aware Spatial Imputation Graphic Network for 3D Spatial Transcriptomics</title>
+		<author>
+			<persName><forename type="first">Junchao</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruining</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tianyuan</forename><surname>Yao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juming</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chongyu</forename><surname>Qu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Junlin</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Siqi</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mengmeng</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shilin</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haichun</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuankai</forename><surname>Huo</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52734.2025.02871</idno>
+		<idno type="arXiv">arXiv:2412.03026</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="30829" to="30838" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Detrs with collaborative hybrid assignments training</title>
+		<author>
+			<persName><forename type="first">Zhuofan</forename><surname>Zong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guanglu</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE/CVF international conference on computer vision</title>
+		<meeting>the IEEE/CVF international conference on computer vision</meeting>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

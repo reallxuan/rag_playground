@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Advanced Deep Learning Approaches for Automated Recognition of Cuneiform Symbols</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-05-07">7 May 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Shahad</forename><surname>Elshehaby</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Hussain</forename><surname>Al-Ahmad</surname></persName>
+							<email>halahmad@ud.ac.ae</email>
+						</author>
+						<author>
+							<persName><forename type="first">Mina</forename><surname>Al-Saad</surname></persName>
+							<email>malsaad@ud.ac.ae</email>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="department">College of Engineering and IT University of Dubai Dubai</orgName>
+								<address>
+									<country key="AE">United Arab Emirates</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="department">nd Alavikunhu Panthakkan College of Engineering and IT University of Dubai Dubai</orgName>
+								<address>
+									<country key="AE">United Arab Emirates</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="department">College of Engineering and IT University of Dubai Dubai</orgName>
+								<address>
+									<country key="AE">United Arab Emirates</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="department">College of Engineering and IT University of Dubai Dubai</orgName>
+								<address>
+									<country key="AE">United Arab Emirates</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Advanced Deep Learning Approaches for Automated Recognition of Cuneiform Symbols</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-05-07">7 May 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">B4F7F367FBACD304ACF069C043839904</idno>
+					<idno type="arXiv">arXiv:2505.04678v1[cs.CL]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:48+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Deep Learning</term>
+					<term>Cuneiform Translation</term>
+					<term>Symbol Recognition</term>
+					<term>Akkadian Language</term>
+					<term>Hammurabi Law</term>
+					<term>Automated</term>
+					<term>Hybrid Architectures</term>
+					<term>Computational Linguistics</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>This paper presents a thoroughly automated method for identifying and interpreting cuneiform characters via advanced deep-learning algorithms. Five distinct deep-learning models were trained on a comprehensive dataset of cuneiform characters and evaluated according to critical performance metrics, including accuracy and precision. Two models demonstrated outstanding performance and were subsequently assessed using cuneiform symbols from the Hammurabi law acquisition, notably Hammurabi Law 1. Each model effectively recognized the relevant Akkadian meanings of the symbols and delivered precise English translations. Future work will investigate ensemble and stacking approaches to optimize performance, utilizing hybrid architectures to improve detection accuracy and reliability. This research explores the linguistic relationships between Akkadian, an ancient Mesopotamian language, and Arabic, emphasizing their historical and cultural linkages. This study demonstrates the capability of deep learning to decipher ancient scripts by merging computational linguistics with archaeology, therefore providing significant insights for the comprehension and conservation of human history.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>Cuneiform, one of the first documented writing systems, originated in ancient Mesopotamia before 3400 BCE <ref type="bibr" target="#b0">[1]</ref>. Initially utilized by the Sumerians, it was then adopted by the Akkadians, Babylonians, Assyrians, and other civilizations. Cuneiform writing was inscribed onto clay tablets with a reed stylus and progressively evolved to encompass the Sumerian, Akkadian, and Hittite languages. The Hammurabi Code, a significant and renowned cuneiform inscription, originates from circa 1754 BCE. This Babylonian legal document, ascribed to King Hammurabi <ref type="bibr" target="#b1">[2]</ref>, has 282 rules addressing many matters and offers significant insights into the comprehension of legal systems and culture in antiquity.</p><p>The Hammurabi Code is written in Akkadian, a language of the Semitic family that is linked to Arabic. The two languages are distantly connected as they both belong to the Afro-Asiatic language family <ref type="bibr" target="#b2">[3]</ref>. It transcends mere linguistic classification, representing a political and cultural concept that originated with the Akkadian civilization and subsequently influenced Near Eastern nations, ultimately leading to the emergence of Arabic civilization. Tracing these linkages facilitates the examination of the emergence of language and civilization within society.</p><p>Notwithstanding the historical importance of cuneiform, identifying and interpreting cuneiform symbols continues to be a formidable endeavor due to the intricate nature of the writing and the deterioration of old tablets over time. Cuneiform symbols possess several meanings contingent upon their contextual usage, and the extensive array of signs-many of which remain inadequately comprehended-compounds the challenges in translation. Moreover, the interpretation of cuneiform has historically been a manual and laborious process; there exists an imperative demand for an automated and efficient methodology. The utilization of deep learning to interpret ancient writings has become a groundbreaking field of study. Recent research have shown the efficacy of deep learning models in managing the complex patterns of cuneiform characters. Convolutional neural networks (CNNs) have been utilized for symbol identification and classification applications. A work in <ref type="bibr" target="#b3">[4]</ref> introduced a CNN-based approach for detecting cuneiform signs from annotated 3D representations, utilizing lighting augmentations to enhance detection accuracy. Another study in <ref type="bibr" target="#b4">[5]</ref> investigated the application of CNNs for identifying symbols in fragmented and partial inscriptions, showcasing the model's proficiency in managing damaged artifacts. These developments represent a substantial progression beyond conventional image-processing methods, providing archaeologists and historians with formidable tools for interpreting ancient manuscripts.</p><p>In addition to detection, the translation of cuneiform into contemporary languages has also been investigated. The study in <ref type="bibr" target="#b5">[6]</ref> presented a technique for automated transliteration using parallel lines, yielding encouraging outcomes despite constrained data availability. This method constituted a major advancement in reconciling ancient and contemporary languages. In our previous work <ref type="bibr" target="#b6">[7]</ref>, the VGG16 deep learning model was utilized to recognize cuneiform symbols from digitized archeological writings. Transfer learning approaches were employed to improve the model's capacity to accurately depict historical symbols.</p><p>Furthermore, additional research has explored the extensive uses of machine learning and deep learning methodologies for the analysis of cuneiform data. For example, <ref type="bibr" target="#b7">[8]</ref> illustrated the efficacy of deep learning in the large-scale categorization of point clouds from cuneiform tablets, attaining notable enhancements in accuracy. Likewise, the research in <ref type="bibr" target="#b8">[9]</ref> utilized machine learning techniques with unigram features on a balanced dataset of cuneiform characters, yielding strong classification outcomes. Collectively, these investigations underscore the advancing function of artificial intelligence in interpreting intricate ancient manuscripts.</p><p>This research study presents a thorough methodology for cuneiform symbol recognition utilizing five distinct models: VGG16, EfficientNet, MobileNet, InceptionResNetv2, and 2D CNN models. These models were trained on a particular dataset of cuneiforms and evaluated on symbols derived from the Hammurabi Code. The main objective is to ascertain the Akkadian meaning of each sign together with its respective English translation. The linguistic relationship between Akkadian and Arabic is further examined, enhancing research in archaeology, computational linguistics, and historical studies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. DATASET</head><p>This cuneiform dataset has 14,100 representations of various cuneiform characters. The program started by loading and extracting 235 distinct cuneiforms extracted from <ref type="bibr" target="#b9">[10]</ref>, with preprocessing yielding 10 varied representations for each. The preprocessing procedures encompass standardizing symbols, shrinking them, and reducing noise to enhance clarity and uniformity. Subsequently, augmentation techniques were employed, adding five more symbols for each character to enhance the quantity and variety of the dataset. The additional dataset presents the models with varied viewpoints of each sign, hence improving their generalization skills across diverse representations.</p><p>Table I DATASET SPLITTING FOR CUNEIFORM CHARACTER RECOGNITION Counting Parameter Dataset Splitting Testing Validating Training Percentage (%) 40% 24% 36% No. of Characters 5,640 3,384 5,076</p><p>The dataset is allocated according to a 40-24-36 distribution for testing, validation, and training, respectively. Subsequently, 5,640 samples were designated for testing, 3,384 samples for validation, and 5,076 samples for training, as illustrated in Table <ref type="table">I</ref>. The models are trained on a suitably varied dataset, ensuring adequate data remains for an impartial evaluation of the models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. METHODOLOGY</head><p>This section outlines the approach employed by the proposed algorithm for finding and interpreting cuneiform characters. The methodology is designed to optimize the detection precision of cuneiform letters and ascertain their Akkadian meanings, subsequently translating them into English. The approach has multiple essential parts, incorporating the dataset preparation phase completed in the preceding section. These critical phases include model design and architecture, the training process, and assessment procedures. Each phase is crucial for developing a strong and efficient deep learning model in this research. A. Model Design and Architecture</p><p>This study examined five distinct deep learning models, each with distinctive architectures designed to enhance performance in cuneiform detection. The models comprised versions of Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), and hybrid models that integrate both methodologies <ref type="bibr" target="#b10">[11]</ref>. The models were designed with varying weights and layers, ranging from shallow networks for rapid computing to deeper, more complicated architectures for capturing the subtle properties of cuneiform characters. The architectural decision was influenced by the necessity to balance accuracy with computing performance, given the complexity of the dataset.</p><p>VGG16 model is ideally suited for this task because of its deep architecture, which captures the delicate nuances of cuneiform symbols.</p><p>• EfficientNetV2M: This model is selected for its remarkable equilibrium of precision and efficiency, utilizing a compound scaling approach to appropriately modify depth, breadth, and resolution. This functionality guarantees peak performance while effectively utilizing computing resources, especially for intricate datasets. • InceptionResNetV2: This hybrid architecture amalgamates the benefits of Inception and ResNet frameworks, allowing the robust recognition of intricate and varied cuneiform characters. Its multi-scale feature extraction using parallel convolutional pathways improves its capacity to represent complex patterns efficiently.</p><p>• MobileNet: This model was incorporated for its computational efficiency, utilizing depthwise separable convolutions to markedly decrease parameters and calculations.</p><p>Although it is lightweight, it retains competitive accuracy, rendering it suitable for mobile or resource-limited applications. • 2D CNN: A customized 2D CNN was created to particularly capture the spatial and artistic attributes inherent to cuneiform symbols. This design is refined for precise feature extraction, highlighting the unique structural components of the script <ref type="bibr" target="#b11">[12]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Model Training and Optimization</head><p>Each model experienced training on the selected dataset for 50 epochs, providing enough opportunity to enhance their ability to detect and classify cuneiform characters appropriately. The training approach employed the Adam optimizer <ref type="bibr" target="#b12">[13]</ref>, which integrates an adjustable learning rate with effective management of sparse gradients, a prevalent issue in character recognition applications. To mitigate overfitting, early stopping was employed to assess the model's performance on the validation set and terminate training if no enhancements were seen over five successive epochs (patience = 5). This method mitigates the danger of overfitting while conserving computing resources by eliminating superfluous repeats.</p><p>Figure <ref type="figure" target="#fig_1">2</ref> depicts the loss values for each model during the training process, emphasizing EfficientNet as the superior model with minimal loss, succeeded by VGG16 <ref type="bibr" target="#b13">[14]</ref>. These findings highlight the appropriateness of EfficientNet and VGG16 for more assessment and experimentation, due to their reliable and strong performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Performance Assessment and Metric Comparison</head><p>The performance of each model was evaluated following training utilizing a supervised learning test set. A thorough assessment of each model's advantages and disadvantages was conducted by calculating essential metrics, including accuracy, precision, recall, and F1 score, as outlined in Equations ( <ref type="formula" target="#formula_0">1</ref>) through <ref type="bibr" target="#b3">(4)</ref>. These equations delineate the mathematical formulations of the assessment metrics, encompassing the following parameters: True Positive (TP), True Negative (TN), False Positive (FP), and False Negative (FN) <ref type="bibr" target="#b14">[15]</ref>.</p><formula xml:id="formula_0">Accuracy = T P + T N T P + T N + F P + F N<label>(1)</label></formula><p>P recision = T P T P + F P</p><p>(2)</p><formula xml:id="formula_1">Recall = T P T P + F N (3) F 1 -score = 2 × (P recision × Recall) (P recision + Recall)<label>(4)</label></formula><p>Table II DEEP LEARNING MODELS PERFORMANCE METRICS COMPARISON Model Accuracy Precision Recall F1 Score VGG16 0.9994 0.9993 0.9995 0.9996 EfficientNet 0.9999 0.9998 0.9998 0.9999 MobileNet 0.9991 0.9993 0.9991 0.9993 Inception-ResNetV2 0.9857 0.9857 0.9855 0.9855 2D CNN 0.9875 0.9934 0.9921 0.9914</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. COMPARATIVE LINGUISTIC INVESTIGATION</head><p>In addition to model training and assessment, a linguistic analysis was performed to examine the relationships between the Akkadian and Arabic languages. The linguistic investigation encompassed the examination of identified cuneiform symbols and their Akkadian interpretations, framed within established language similarities with Arabic <ref type="bibr" target="#b15">[16]</ref>. The aim was to ascertain the potential impacts and shared attributes of language that might enhance the validation of the identified translations via a more profound understanding of the historical and cultural connections between these ancient languages <ref type="bibr" target="#b16">[17]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>V. RESULTS AND DISCUSSION</head><p>This section outlines the results of employing diverse trained models to examine Hammurabi's Law 1 <ref type="bibr" target="#b16">[17]</ref>. The archaic manuscript was supplied as a scanned picture including 35 cuneiform symbols. To enhance model processing, the picture was subjected to a sequence of preprocessing techniques, including scaling, thresholding, dilation, and segmentation to identify distinct characters <ref type="bibr" target="#b13">[14]</ref>. The segmented characteristics were subsequently assessed utilizing five deep learning models: VGG16, EfficientNetV2M, MobileNet, InceptionRes-NetV2, and a bespoke 2D CNN.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Preprocessing and Character Segmentation</head><p>To provide consistency among models, the picture of Hammurabi's Law 1 depicted in Figure <ref type="figure" target="#fig_2">3</ref> was reduced to a width of 1000 pixels while preserving its aspect ratio. Thresholding transformed the picture into a binary representation, improving character discernibility. Dilation was utilized to enhance clarity, succeeded by contour recognition and sorting for accurate line and character segmentation. Each segmented character was enlarged and re-thresholded to conform to the training data format. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Model-Based Character Recognition</head><p>Each character underwent processing via deep learning models to determine its associated cuneiform symbol. The predictions were evaluated against manually chosen ground truth labels for accuracy evaluation. The models' performance was shown and examined to emphasize their prediction potential.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Evaluation and Analysis</head><p>The outcomes derived from the unsupervised testing juxtapose the anticipated symbols with the actual facts. Multiple models, notably VGG16 and EfficientNetV2M, have demonstrated superior performance, exhibiting a greater accuracy percentage (%) in predictions. Characters from Hammurabi Law 1 that are accurately identified are highlighted in green. The findings derive from a comparison of the predicted values (displayed on top) with the ground truth values (displayed on the bottom), as seen in Figure <ref type="figure" target="#fig_4">4</ref>. The VGG16 model had a relative accuracy of 88.87% when evaluated on the characters from Hammurabi Law 1. Nonetheless, the EfficientNetV2M model had a superior accuracy of 98.31%.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Cuneiform Character Translation and Linguistic Insights</head><p>Upon identification, the system correlated the recognized characters with their respective Akkadian and English translations from a predetermined database. The letters were subsequently amalgamated into whole sentences, rebuilding</p><p>(a) VGG16 model (b) EfficientNetV2M model Hammurabi's Law 1. Figure 5 presents a sample of Efficient-NetV2M's predictions, displaying the initial two words of the legislation with their Akkadian and English translations. A comparative linguistic research revealed correlations between Akkadian and Arabic. Table <ref type="table">III</ref> presents cuneiform lexemes with their Arabic transliterations, highlighting parallels in both sound and semantics. These linguistic analogies provide profound insights into the historical history of language and cultural interchange.</p><p>Table III CUNEIFORM WORDS TRANSLATION SAMPLE English Cuneiform Akkadian Arabic Transliteration Arabic if šumma executed iddâk not lā</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Observations</head><p>The results of this assessment indicate that the models are proficient in identifying cuneiform characters <ref type="bibr" target="#b14">[15]</ref>, although issues persist in properly predicting specific characters due to their complexity and the similarities across various signs. The identified faults were examined to uncover potential enhancements in preprocessing, model design, or training approach.</p><p>The unsupervised evaluation of Hammurabi Law 1 illustrates the practical use of the trained models, revealing that the most favorable outcomes are derived from the two superior models: VGG16 and EfficientNetV2M. Enhanced refinement in the preprocessing pipeline and model training might ultimately improve character identification accuracy, hence benefiting cuneiform translation systems.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VI. CONCLUSION</head><p>This study has introduced a comprehensive method for the detection and translation of cuneiform characters via deep learning techniques. We chose five distinct models-VGG16, EfficientNet, MobileNet, InceptionResNetV2, and a 2D CNN-trained on a specialized cuneiform dataset. Subsequently, we selected the two best-performing models, which were evaluated on Hammurabi Law 1, and proceeded to identify the Akkadian symbols and their English translations. The research examined the linguistic connections between Akkadian and Arabic, therefore illuminating the historical and cultural evolution of the Afro-Asiatic language family. The findings highlight the efficacy of deep learning in automated cuneiform recognition, advancing the research of ancient writings and diminishing conventional labor-intensive tasks. In the future, models that attain optimal metrics may be chosen for enhancement via a hybrid methodology. Efforts may also focus on the further refining of these models by employing more sophisticated approaches or including other datasets, as well as applying the methodology to other ancient languages, such as Egyptian Hieroglyphs <ref type="bibr" target="#b17">[18]</ref>. This expansion will facilitate extensive historical and archaeological study, so greatly enhancing the comprehension and preservation of human history.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure 1: Flowchart of the proposed Cuneiform Recognition methodology</figDesc><graphic coords="2,309.95,255.81,255.12,211.65" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 :</head><label>2</label><figDesc>Figure 2: A log-scale comparison of loss values across deep learning models</figDesc><graphic coords="3,312.78,46.96,249.44,139.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: Scanned image of Hammurabi's Law 1<ref type="bibr" target="#b9">[10]</ref> </figDesc><graphic coords="4,345.38,257.68,184.24,177.65" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Prediction results of the best-two performing deep learning models compared with the ground truth data</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Sample of the recognized cuneiform words</figDesc></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>• VGG16 Model: This model utilizes a pre-trained VGG16 architecture, supplemented with extra layers specifically designed for cuneiform symbol identification. The</p></note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The invention of cuneiform: writing in Sumer</title>
+		<author>
+			<persName><forename type="first">J.-J</forename><surname>Glassner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Bahrani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Van De Mieroop</surname></persName>
+		</author>
+		<idno type="DOI">10.5860/choice.41-6691</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Choice Reviews Online</title>
+		<title level="j" type="abbrev">Choice Reviews Online</title>
+		<idno type="ISSN">0009-4978</idno>
+		<idno type="ISSNe">1523-8253</idno>
+		<imprint>
+			<biblScope unit="volume">41</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page">41-6691-41-6691</biblScope>
+			<date type="published" when="2004-07-01">Jul. 2004</date>
+			<publisher>American Library Association</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The Code of Hammurabi -perhaps the first law code</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Mahadevaswamy</surname></persName>
+		</author>
+		<ptr target="https://www.jetir.org/view?paper=JETIR1811B49" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Emerging Technologies and Innovative Research</title>
+		<imprint>
+			<date type="published" when="2018-11">Nov. 2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A Linguistic Analysis of Akkadian</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">E</forename><surname>Knudsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erica</forename><surname>Reiner</surname></persName>
+		</author>
+		<idno type="DOI">10.2307/598174</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of the American Oriental Society</title>
+		<title level="j" type="abbrev">Journal of the American Oriental Society</title>
+		<idno type="ISSN">0003-0279</idno>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">334</biblScope>
+			<date type="published" when="1970-04">Apr. 1970</date>
+			<publisher>JSTOR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">CNN based Cuneiform Sign Detection Learned from Annotated 3D Renderings and Mapped Photographs with Illumination Augmentation</title>
+		<author>
+			<persName><forename type="first">Ernst</forename><surname>Stötzner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Timo</forename><surname>Homburg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hubert</forename><surname>Mara</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccvw60793.2023.00183</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)</title>
+		<meeting><address><addrLine>Paris, France</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-02">2023</date>
+			<biblScope unit="page" from="1672" to="1680" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Fragmented-cuneiform-based convolutional neural network for cuneiform character recognition</title>
+		<author>
+			<persName><forename type="first">Agi</forename><surname>Prasetiadi</surname></persName>
+			<idno type="ORCID">0000-0002-7958-6774</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Julian</forename><surname>Saputra</surname></persName>
+			<idno type="ORCID">0000-0003-0055-7944</idno>
+		</author>
+		<idno type="DOI">10.11591/ijai.v13.i1.pp554-562</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IAES International Journal of Artificial Intelligence (IJ-AI)</title>
+		<title level="j" type="abbrev">IJ-AI</title>
+		<idno type="ISSN">2089-4872</idno>
+		<idno type="ISSNe">2252-8938</idno>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">554</biblScope>
+			<date type="published" when="2024-03-01">Mar. 2024</date>
+			<publisher>Institute of Advanced Engineering and Science</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Automating Transliteration of Cuneiform from Parallel Lines with Sparse Data</title>
+		<author>
+			<persName><forename type="first">Bartosz</forename><surname>Bogacz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maximilian</forename><surname>Klingmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hubert</forename><surname>Mara</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icdar.2017.106</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2017 14th IAPR International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<meeting><address><addrLine>Kyoto, Japan</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2017-11">2017</date>
+			<biblScope unit="page" from="615" to="620" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Unlocking Ancient Secrets: A Deep Learning Approach to Cuneiform Symbols Recognition</title>
+		<author>
+			<persName><forename type="first">Shahad</forename><surname>Elshehaby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mina</forename><surname>Al-Saad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alavikunhu</forename><surname>Panthakkan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hussain</forename><forename type="middle">Al</forename><surname>Ahmad</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/aset60340.2024.10708771</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 Advances in Science and Engineering Technology International Conferences (ASET)</title>
+		<meeting><address><addrLine>Abu Dhabi, United Arab Emirates</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-06-03">2024</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Deep Learning Classification of Large-Scale Point Clouds: A Case Study on Cuneiform Tablets</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hagelskjaer</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icip46576.2022.9898032</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE International Conference on Image Processing (ICIP)</title>
+		<meeting><address><addrLine>Bordeaux, France</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022-10-16">2022</date>
+			<biblScope unit="page" from="826" to="830" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Classifying cuneiform symbols using machine learning algorithms with unigram features on a balanced dataset</title>
+		<author>
+			<persName><forename type="first">Maha</forename><surname>Mahmood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Farah</forename><forename type="middle">Maath</forename><surname>Jasem</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdulrahman</forename><forename type="middle">Abbas</forename><surname>Mukhlif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Belal</forename><surname>Al-Khateeb</surname></persName>
+		</author>
+		<idno type="DOI">10.1515/jisys-2023-0087</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Intelligent Systems</title>
+		<idno type="ISSNe">2191-026X</idno>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2023-01-01">Jan. 2023</date>
+			<publisher>Walter de Gruyter GmbH</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Lipton, Marcus, (29 Oct. 1900–22 Feb. 1978), JP; MP (Lab) Lambeth Central, since 1974 (Lambeth, Brixton, 1945–74)</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Marcus</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/ww/9780199540884.013.u156790</idno>
+		<ptr target="http://ci.nii.ac.jp/ncid/BA03213704" />
+		<imprint>
+			<date type="published" when="1978">1978</date>
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Breaking the Code on Broken Tablets: The Learning Challenge for Annotated Cuneiform Script in Normalized 2D and 3D Datasets</title>
+		<author>
+			<persName><forename type="first">Hubert</forename><surname>Mara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bartosz</forename><surname>Bogacz</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icdar.2019.00032</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<meeting><address><addrLine>Sydney, NSW, Australia</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-09">2019</date>
+			<biblScope unit="page" from="148" to="153" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Evaluation of Tea Leaf Disease Identification Based on Convolutional Neural Networks VGG16, ResNet50, and DenseNet169 Image Recognitions</title>
+		<author>
+			<persName><forename type="first">Xianghong</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chonlatee</forename><surname>Photong</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ieecon60677.2024.10537865</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 12th International Electrical Engineering Congress (iEECON)</title>
+		<meeting><address><addrLine>Pattaya, Thailand</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-03-06">2024</date>
+			<biblScope unit="page" from="01" to="04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Reading Akkadian cuneiform using natural language processing</title>
+		<author>
+			<persName><forename type="first">Shai</forename><surname>Gordin</surname></persName>
+			<idno type="ORCID">0000-0002-8359-382X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Gai</forename><surname>Gutherz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ariel</forename><surname>Elazary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Avital</forename><surname>Romach</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Enrique</forename><surname>Jiménez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Berant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yoram</forename><surname>Cohen</surname></persName>
+		</author>
+		<idno type="DOI">10.1371/journal.pone.0240511</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLOS ONE</title>
+		<title level="j" type="abbrev">PLoS ONE</title>
+		<idno type="ISSNe">1932-6203</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">e0240511</biblScope>
+			<date type="published" when="2020-10-28">Oct. 2020</date>
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+	<note>p. e0240511</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Unlocking Ancient Secrets: A Deep Learning Approach to Cuneiform Symbols Recognition</title>
+		<author>
+			<persName><forename type="first">Shahad</forename><surname>Elshehaby</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mina</forename><surname>Al-Saad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alavikunhu</forename><surname>Panthakkan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hussain</forename><forename type="middle">Al</forename><surname>Ahmad</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/aset60340.2024.10708771</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 Advances in Science and Engineering Technology International Conferences (ASET)</title>
+		<meeting><address><addrLine>Abu Dhabi, United Arab Emirates</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-06-03">2024</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Research and Discussion on Image Recognition and Classification Algorithm Based on Deep Learning</title>
+		<author>
+			<persName><surname>Y. -N</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G. -S</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Liang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/MLBDBI48998.2019.00061</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Machine Learning, Big Data and Business Intelligence (MLBDBI)</title>
+		<meeting><address><addrLine>Taiyuan, China</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="274" to="278" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A survey of modern deep learning based object detection models</title>
+		<author>
+			<persName><forename type="first">Syed</forename><forename type="middle">Sahil Abbas</forename><surname>Zaidi</surname></persName>
+			<idno type="ORCID">0000-0002-9140-6721</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Samar</forename><surname>Ansari</surname></persName>
+			<idno type="ORCID">0000-0002-4368-0478</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Asra</forename><surname>Aslam</surname></persName>
+			<idno type="ORCID">0000-0002-2654-4255</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Nadia</forename><surname>Kanwal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mamoona</forename><surname>Asghar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Brian</forename><surname>Lee</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.dsp.2022.103514</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Digital Signal Processing</title>
+		<title level="j" type="abbrev">Digital Signal Processing</title>
+		<idno type="ISSN">1051-2004</idno>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="page">103514</biblScope>
+			<date type="published" when="2022-03">Mar. 2022</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Translating Akkadian to English with neural machine translation</title>
+		<author>
+			<persName><forename type="first">Gai</forename><surname>Gutherz</surname></persName>
+			<idno type="ORCID">0000-0003-3093-3760</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shai</forename><surname>Gordin</surname></persName>
+			<idno type="ORCID">0000-0002-8359-382X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Luis</forename><surname>Sáenz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omer</forename><surname>Levy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Berant</surname></persName>
+		</author>
+		<idno type="DOI">10.1093/pnasnexus/pgad096</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PNAS Nexus</title>
+		<idno type="ISSNe">2752-6542</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<date type="published" when="2023-05">May 2023</date>
+			<publisher>Oxford University Press (OUP)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">An Approach to Ensemble Simplified ResNet Models-Using Egyptian Hieroglyphs Data Set</title>
+		<author>
+			<persName><forename type="first">Zixiang</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kecheng</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingkun</forename><surname>Hou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pu</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/eiecs59936.2023.10435471</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 3rd International Conference on Electronic Information Engineering and Computer Science (EIECS)</title>
+		<meeting><address><addrLine>Changchun, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-09-22">2023</date>
+			<biblScope unit="page" from="863" to="871" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

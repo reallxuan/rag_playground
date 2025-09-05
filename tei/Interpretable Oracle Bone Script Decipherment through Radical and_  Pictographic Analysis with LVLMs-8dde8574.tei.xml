@@ -1,0 +1,1534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Interpretable Oracle Bone Script Decipherment through Radical and Pictographic Analysis with LVLMs</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2025-08-17">17 Aug 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Kaixin</forename><surname>Peng</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Mengyang</forename><surname>Zhao</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Haiyang</forename><surname>Yu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Teng</forename><surname>Fu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">ByteDance Inc</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Bin</forename><surname>Li</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Fudan University</orgName>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Interpretable Oracle Bone Script Decipherment through Radical and Pictographic Analysis with LVLMs</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-08-17">17 Aug 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">689A54F30D74A4CDB037875EC2D401A1</idno>
+					<idno type="arXiv">arXiv:2508.10113v2[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.2" ident="GROBID" when="2025-09-05T15:50+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">a91ee48</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=1, consolidateHeader=1, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=false, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[true], sentenceSegmentation=false, flavor=null</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>As the oldest mature writing system, Oracle Bone Script (OBS) has long posed significant challenges for archaeological decipherment due to its rarity, abstractness, and pictographic diversity. Current deep learning-based methods have made exciting progress on the OBS decipherment task, but existing approaches often ignore the intricate connections between glyphs and the semantics of OBS. This results in limited generalization and interpretability, especially when addressing zero-shot settings and undeciphered OBS. To this end, we propose an interpretable OBS decipherment method based on Large Vision-Language Models, which synergistically combines radical analysis and pictograph-semantic understanding to bridge the gap between glyphs and meanings of OBS. Specifically, we propose a progressive training strategy that guides the model from radical recognition and analysis to pictographic analysis and mutual analysis, thus enabling reasoning from glyph to meaning. We also design a Radical-Pictographic Dual Matching mechanism informed by the analysis results, significantly enhancing the model's zero-shot decipherment performance. To facilitate model training, we propose the Pictographic Decipherment OBS Dataset, which comprises 47,157 Chinese characters annotated with OBS images and pictographic analysis texts. Experimental results on public benchmarks demonstrate that our approach achieves state-of-the-art Top-10 accuracy and superior zero-shot decipherment capabilities. More importantly, our model delivers logical analysis processes, possibly providing archaeologically valuable reference results for undeciphered OBS, and thus has potential applications in digital humanities and historical research. The dataset and code will be released in <ref type="url" target="https://github.com/PKXX1943/PD-OBS">https://github.com/PKXX1943/PD-OBS</ref>.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Oracle Bone Script (OBS) represents the earliest known mature writing system, primarily used between the 14th and 11th centuries BCE, making it invaluable for archaeology and history. These characters, inscribed on turtle plastrons and animal bones, feature concise, fluid strokes and highly pictographic forms that often resemble the shapes of real-world objects. Traditional decipherment relies on expert knowledge and manual efforts, making it slow and hard to scale for the growing corpus of script. Recently, deep learning methods have drawn attention and shown promising progress in OBS decipherment.</p><p>Nevertheless, deciphering OBS remains a formidable challenge due to the rarity, abstraction, and diversity of its glyphs, as well as the lack of complete contextual information. To date, over 4,500 unique oracle bone characters have been discovered, yet less than one-third have been successfully deciphered. Early classification model-based approaches <ref type="bibr" target="#b9">(Guo et al. 2022;</ref><ref type="bibr" target="#b22">Luo, Sun, and Bi 2023;</ref><ref type="bibr" target="#b35">Zheng et al. 2024;</ref><ref type="bibr" target="#b6">Gan et al. 2023;</ref><ref type="bibr" target="#b21">Lin et al. 2022;</ref><ref type="bibr" target="#b15">Jiang et al. 2023)</ref> primarily relied on CNN or Transformer-based visual backbones to perform closed-set classification of oracle bone characters. Despite their effectiveness, these methods are confined to the closed-set setting, making them inapplicable to zero-shot setting and undeciphered characters and thus significantly limiting their scope of application. In recent years, composition-based methods <ref type="bibr" target="#b27">(Shi et al. 2025;</ref><ref type="bibr">Wang et al. 2024b;</ref><ref type="bibr" target="#b12">Hu et al. 2024</ref><ref type="bibr" target="#b11">Hu et al. , 2025) )</ref> have been proposed to solve deciphering within open-set. These method exhibits a certain degree of zero-shot capability and interpretability, however, it overlooks the rich associations between pictographic forms and semantic information inherent to OBS, which leads to relatively low decipherment accuracy. In addition, diffusion-based methods <ref type="bibr" target="#b7">(Guan et al. 2024;</ref><ref type="bibr" target="#b17">Li et al. 2023)</ref> for OBS decipherment have been proposed, achieving significant advances in both accuracy and zero-shot capability through conditional control and sampling strategies. Unfortunately, the instability of these methods results in low interpretability and reliability of the decipherment outputs, thereby limiting their practicality in real-world applications.</p><p>Multiple studies on OBS <ref type="bibr" target="#b25">(Qiao et al. 2024;</ref><ref type="bibr">Li et al. 2025a</ref>) and Chinese <ref type="bibr" target="#b32">(Yu et al. 2024</ref><ref type="bibr" target="#b33">(Yu et al. , 2023) )</ref> have demonstrated that the semantic information conveyed by radical glyphs often determines the fundamental meaning of a character, and that the pictographs are also highly correlated with semantic contents. Therefore, we consider that leveraging both radical and pictographic information may significantly enhance the model's ability to recognize OBS and interpret the recognition process, which is especially valuable for undeciphered OBS. To this end, we propose to bridge the glyphs and meanings of OBS using the powerful cross-modal reasoning ability of Large Vision-Language Models (LVLMs). Specifically, we leverage LVLMs to analyze the semantic meaning of both the radical and the overall character based on the pictographic features. By combining these two aspects, we motivate the model to obtain comprehensive OBS meanings and find suitable decipherment candidate sets based on the meanings. This allows our model to cope with undeciphered OBS and explain the logical analysis chains from glyphs to the meaning of OBS, enhancing the interpretability and generalization of the decipherment process.</p><p>Although LVLMs have achieved excellent performance on many tasks <ref type="bibr" target="#b31">(Wei et al. 2024;</ref><ref type="bibr" target="#b24">Niu et al. 2025)</ref>, it is still difficult to apply directly to decipherment tasks due to lack of the domain-specific knowledge of OBS. To address this, we introduce a pictographic analysis dataset PD-OBS and a progressive training strategy to specialize LVLMs for OBS decipherment. The PD-OBS dataset contains approximately 50,000 Chinese characters based on the Kangxi Dictionary and deciphered OBS. Each character is associated with oracle bone images, modern and ancient scripts, and is annotated with detailed radical analysis and pictographic meaning labels, providing comprehensive support for the decipherment framework. Regarding the progressive training strategy, we first train the model to perform radical recognition and analyze the semantic information embedded to get the meaning of the underlying characters determined by the radicals. Then, we train the model to perform pictographic analysis on the whole character to grasp the character-level semantic meanings. Finally, we utilize the mutual analysis so that the two levels of analysis complement each other.</p><p>In addition, we propose a novel Radical-pictographic Dual Matching mechanism, which uses the analysis results to find suitable candidate characters in the dictionary and brings better zero-shot performance. Experiments demonstrate that our method achieves more accurate decipherment with excellent zero-shot capability and decipherment interpretation. The main contributions of this work are as follows:</p><p>• We propose an LVLM-based decipherment framework to bridge the pictographic and semantic of OBS, which is the first method to try explaining the decipherment process and handling undeciphered scripts.</p><p>• We designed a progressive training to gradually guide the model in building relationships between glyphs and meanings through radical recognition and analysis, pictogram analysis, and mutual analysis. Based on the intermediate results, we designed a novel Radicalpictographic Dual Matching mechanism to replace directly deciphering, thus achieving better performance, especially at zero shots.</p><p>• We propose the PD-OBS dataset, which is the first largescale resource including both character structure analysis and pictographic analysis annotation. • Our method achieves state-of-the-art Top-10 accuracy and strong zero-shot ability on public decipherment benchmarks and can offer plausible reference results for previously undeciphered oracle characters.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Related Work Oracle Bone Script Datasets</head><p>With the continuous excavation of OBS and the steady expansion of digitized resources, an increasing number of high-quality datasets <ref type="bibr" target="#b16">(Li et al. 2020;</ref><ref type="bibr" target="#b11">Hu et al. 2025;</ref><ref type="bibr" target="#b10">Han et al. 2020;</ref><ref type="bibr" target="#b13">Huang et al. 2019;</ref><ref type="bibr" target="#b34">Yue et al. 2022;</ref><ref type="bibr" target="#b20">Li et al. 2026</ref><ref type="bibr">Li et al. , 2025b;;</ref><ref type="bibr" target="#b3">Diao et al. 2025</ref>) have been curated and released as open-access resources. Since the introduction of the first publicly available OBS dataset Oracle-20K <ref type="bibr" target="#b8">(Guo et al. 2016)</ref>, the volume and quality of data have improved significantly. In particular, the release of two large datasets, HUST-OBC <ref type="bibr">(Wang et al. 2024a</ref>) and EVOBC <ref type="bibr">(Wang et al. 2024c)</ref>, has greatly expanded the pool of available data. These datasets contain a total of more than 70,000 oracle bone character samples covering more than 3,000 different Chinese character categories. Currently, HUST-OBC <ref type="bibr">(Wang et al. 2024a</ref>) and EV-OBC <ref type="bibr">(Wang et al. 2024c</ref>) are the most widely adopted benchmark datasets for OBS research. The HUST-OBC dataset, derived from books, websites, and the collation of previous datasets, collects 77064 sample scanned or handwritten images of a total of 1588 deciphered character classes, as well as 62989 scanned images of undeciphered samples. The EV-OBC dataset contains 229,170 images collected from authoritative literature and websites, containing a total of 13,714 different character classes. These images cover six historical stages of ancient scripts, namely: OBS, Chinese Bronze Inscriptions, Seal Script, Spring and Autumn Period Script, Warring States Period script, and Clerical Script, where OBS account for about one-third.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Oracle Bone Script Decipherment</head><p>Recently, classification model-based approaches <ref type="bibr" target="#b23">(Meng 2017;</ref><ref type="bibr" target="#b36">Zhou, Hua, and Li 1995;</ref><ref type="bibr" target="#b35">Zheng et al. 2024;</ref><ref type="bibr" target="#b21">Lin et al. 2022;</ref><ref type="bibr" target="#b15">Jiang et al. 2023;</ref><ref type="bibr" target="#b5">Fujikawa et al. 2021;</ref><ref type="bibr" target="#b4">Dosovitskiy et al. 2021;</ref><ref type="bibr" target="#b20">Li et al. 2026</ref><ref type="bibr">Li et al. , 2025b;;</ref><ref type="bibr" target="#b3">Diao et al. 2025)</ref> for OBS decipherment have emerged, achieving performance on closed-set tasks that matches or even surpasses that of human archaeological experts. For example, Enhanced Inception-V3 <ref type="bibr" target="#b9">(Guo et al. 2022)</ref>  In the open-set scenario, Wang et al. <ref type="bibr">(Wang et al. 2024b</ref>) attempted to decompose the structural components of OBS using segmentation models, followed by clustering methods to align these components with the radicals of modern Chinese characters. Although this method facilitates interpretability and archaeological validation, it fails to account for the significant differences in glyph structure between OBS and modern Chinese, resulting in limited decipherment accuracy. In addition, the OBSD <ref type="bibr" target="#b7">(Guan et al. 2024</ref>) method, which is based on diffusion models, combines local structure sampling with style adaptation to establish effective correspondences between OBS and modern Chinese characters, using OBS as a conditional input to guide Chinese character generation and achieving impressive accuracy. However, this method suffers from instability, unpredictable output, and a lack of interpretability. Oraclesage <ref type="bibr" target="#b14">(Jiang et al. 2024)</ref> is the first to employ LVLM for the description and analysis of OBS, but its accuracy remains suboptimal, primarily due to the insufficient exploitation of glyph features and existing dictionary resources. Therefore, we propose to bridge the glyphs and meaning based on LVLMs and propose a large pictographic decipherment dataset to adapt LVLMs to OBS, with the aim of enhancing the accuracy, generalization, and interpretability of OBS decipherment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pictographic Decipherment OBS Dataset</head><p>As mentioned above, existing LVLMs are still difficult to apply to the OBS deciphering task despite their excellent performance on multiple general tasks. To address this challenge, we introduce the Pictographic Decipherment OBS (PD-OBS) dataset to train LVLMs with the capability for pictographic analysis of OBS, which is of great significance for the OBS decipherment task. The PD-OBS dataset comprises a total of 47,157 Chinese characters. Among these, 3,173 characters are associated with OBS images collected from the public HUST-OBC and EVOBC datasets; 10,968 </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dictionary Definition</head><p>The radical "木" (wood) typically represents things related to trees or woods. In the current character form, it represents wood being chopped or split, indicating that the character's definition is related to timber.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Radical</head><p>Analysis (a) Visual data &amp; Reference Information (b) Character Label Ancient Form Oracle Bone Script GPT-4.1</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Analysing &amp; Summarizing Self-checking &amp; Manual correcting</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Chinese Character Radical</head><p>The character form pictographically depicts the action of splitting wood with an axe, representing the meaning of splitting or breaking apart.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Pictographic Analysis</head><p>Figure <ref type="figure">2</ref>: The demonstration of our data engine.</p><p>characters are provided with ancient Clerical Script images from glyph repositories; and all characters are accompanied by modern regular script images from Han Dian. In addition to image data, each character is annotated with radical analysis and pictographic analysis using text, both of which are closely related to the semantic meaning of the character. The annotation process is conducted in three stages, as illustrated in Figure <ref type="figure">2</ref>. First, we retrieve radical tags, definitions, and explanations for each character from Shuowen Jiezi (an ancient Chinese dictionary) via Han Dian. Second, we associate the radical tags obtained and their explanations with modern, ancient clerical, and oracle bone script images of each character. We further utilize GPT-4.1 to enrich the radical tags based on the referenced glyph images and to summarize the analytical content. Finally, both automated self-checking with GPT-4.1 and manual review are performed to correct any labels that are non-standard or deviate from the actual character meanings.</p><p>This dataset plays a foundational role in the proposed pictographic decipherment framework and is utilized in two key stages of our method: We construct multi-modal, multi-turn dialogue training samples by pairing OBS images with corresponding modern character labels, enhancing the LVLM's basic capacity to understand OBS glyphs. We group all characters by their radical tags and use a BERT model <ref type="bibr" target="#b2">(Devlin et al. 2019)</ref> to encode the character label text into feature vectors, forming a Chinese character-pictograph analysis dictionary D that serves as a reference for matching and verifying LVLM-generated decipherment outputs. In summary,</p><p>Vision Encoder Spatial Patch Merger Classifier LLM Decoder Weights Oracle Bone Script Deciphered Character Ⅰ Ⅱ Trainable Frozen Embeddings Data Flow Vision Encoder PD-OBS Dictionary Ⅲ BERTScore Match LoRA 𝜙 !"# Radical Label Radical Analysis Pictographic Analysis Radical-informed Pictographic Analysis LoRA 𝜙 $%&amp; the PD-OBS dataset serves as a cornerstone for realizing our LVLM-based pictographic decipherment framework.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Method Framework</head><p>Our framework is built upon Qwen2.5-VL-7B <ref type="bibr" target="#b0">(Bai et al. 2025)</ref>, sharing the same vision encoder and LLM. As illustrated in Figure <ref type="figure" target="#fig_4">3</ref>, we introduce a spatial patch merger as the visual adapter and a classifier to predict the radical label. We also propose a radical LoRA module ϕ rad and a pictographic LoRA module ϕ pic <ref type="bibr" target="#b11">(Hu et al. 2021</ref>) to analyze the corresponding information. Furthermore, we design a progressive training-starting from radical recognition, followed by radical and pictographic analysis, and culminating in mutual analysis-to gradually lead the model to OBS decipherment task. In addition, we propose a novel radical-pictographic dual matching mechanism to select the most appropriate character from the database.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Radical Recognition</head><p>In this stage, we aim to adapt the vision encoder to the unique visual style of OBS and to predict radical labels that will serve as critical cues for downstream reasoning. For this purpose, we designed a spatial patch merger as a visual adapter, which compresses and aggregates high-dimensional visual features into a fixed-dimensional feature vector at a predetermined scale, which serves as an abstract representation of the OBS. In addition, we design a triplet loss <ref type="bibr" target="#b26">(Schroff, Kalenichenko, and Philbin 2015)</ref> based on the Euclidean distance to explicitly improve the differentiation of feature vectors with different radicals.</p><p>Specifically, we implement a sampling strategy to ensure that each batch contains at least two samples for each radical class. During training, for each sample in the batch, we designate its feature vector V n as an anchor, then select a positive sample V + n (i.e., a sample with the same radical label ) and a negative sample V - n (i.e., a sample with a different radical label). The triplet loss is as follows:</p><formula xml:id="formula_0">L trip = - 1 N N n=1 max ∥V n -V + n ∥ 2 -∥V n -V - n ∥ 2 + α, 0</formula><p>(1) Regarding the classifier, we use the cross-entropy loss L ce to optimize it. Therefore, the whole loss function L stage1 of this stage can be shown as follows:</p><formula xml:id="formula_1">L stage1 = γL trip + L ce , (<label>2</label></formula><formula xml:id="formula_2">)</formula><p>where γ is a hyperparameter used to balance the two losses. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Radical-Pictographic Mutual Analysis</head><p>To bridge glyphs and meaning in OBS, we design a progressive glyph analysis process to facilitate the decipherment task. Specifically, we introduce a progressive training procedure, beginning with radical analysis, where the radical is predicted in the first stage. In both OBS and ancient Chinese characters, radicals often determine the basic semantic class of a character, as illustrated by the Q1&amp;A1 in Figure <ref type="figure">4</ref>. Therefore, we train the model's radical analysis capability with a large number of radical-analysis Q&amp;A pairs constructed from the PD-OBS dataset. Next, we guide the model to perform a pictographic analysis of the entire character to predict the meaning embedded in the full character glyph, as shown by the Q2&amp;A2 in Figure <ref type="figure">4</ref>.</p><p>Finally, we design a mutual analysis step to address cases where pictographic analysis alone may not predict the correct corresponding modern character directly. This step informs the pictographic analysis with insights from radical analysis, resulting in more accurate character meanings, as shown by Q3&amp;A3 in Figure <ref type="figure">4</ref>.</p><p>During training, we initialize the model with pretrained visual encoder weights of the previous stage, freezing the shallow layers to retain low-level features while fine-tuning the deeper layers for high-level semantic adaptation. In addition, we introduce a radical LoRA module ϕ rad and a pictographic LoRA module ϕ pic <ref type="bibr" target="#b11">(Hu et al. 2021)</ref>, the former for radical analysis while the latter for pictographic and mutual analysis. The training data consists of Q&amp;A pairs from the PD-OBS dataset, as illustrated in Figure <ref type="figure">4</ref>, and the loss function employed is the cross-entropy loss commonly used in LVLM training.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Radical-Pictographic Dual Matching</head><p>Following the first two stages, we obtain four intermediate results for each test character: predicted radical label r, radical analysis ârad , pictographic analysis âpic , and radical-informed pictographic analysis âjoint . We propose a dictionary-based dual matching mechanism for decipherment. Given the candidate dictionary D = {(r i , a rad,i , a pic,i , a joint,i , y i )} N i=1 from the PD-OBS dataset, the mechanism works as follows: First, we filter candidates by the predicted radical label r, then select the top-k entries by the semantic similarity S(a pic,i , âpic ) (BERT-Score) <ref type="bibr" target="#b2">(Devlin et al. 2019</ref>) between the pictographic analysis. Second, we concatenate the radical analysis and radical-informed pictographic analysis, and select another top-k entries by similarity S((a rad,i ⊕ a joint,i ), (â rad ⊕ âjoint )). Finally, we merge and rerank these candidate sets to obtain the top-k modern Chinese characters as decipherment results. All steps and notations are detailed in Algorithm 1.</p><p>Notably, we employ the matching mechanism instead of directly outputting decipherment results, which helps mitigate the limited generalization of the model for zero-shot settings and undeciphered OBS caused by the absence of such OBS in the training data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Experiments Implementation Details</head><p>All training and evaluation experiments are conducted on 8 NVIDIA RTX 4090 GPUs. We initialize our model with the pretrained weights of Qwen2.5-VL-7B. During the radical recognition stage, we set the learning rate to 5e-4, batch size to 8, and train for 5 epochs. For the pictographic decipherment stage, we use a learning rate of 5e-5, batch size of 4, and train for 4,000 steps. AdamW <ref type="bibr" target="#b22">(Loshchilov and Hutter 2019)</ref> is used as the optimizer. The radical LoRA ϕ rad and pictographic LoRA ϕ pic are configured with a dropout rate of 0.05 and 0.25 respectively, and both use rank and alpha values of 32.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DataSets and Evaluation Metrics</head><p>We perform quantitative evaluations on the HUST-OBC <ref type="bibr">(Wang et al. 2024a</ref>) and EV-OBC <ref type="bibr">(Wang et</ref> al. 2024c) Method HUST-OBC EVOBC Valid. ZS Valid. ZS Qwen2.5-VL-7B 69.4 65.1 68.3 67.9 Qwen-VL-Max 70.5 65.6 69.8 68.2 GPT-4.1 73.7 67.5 71.4 70.9 Ours 94.6 79.4 93.7 84.9 Table 2: The Valid. and ZS indicate validation and zero-shot settings, respectively. The Bert-Score (in %) achieved by different methods. datasets, selecting 200 character classes from each as zeroshot test sets. The remaining data are randomly split into training and validation sets in a 9:1 ratio to assess the OBS recognition capabilities of our framework and baselines. We use Top-k accuracy as evaluation metrics as in previous work (Guan et al. 2024; Gan et al. 2023; Jiang et al. 2024; Chen et al. 2025), which is usually used in diverse classification tasks (Dosovitskiy et al. 2021; Luo, Sun, and Bi 2023; Lin et al. 2022; Fujikawa et al. 2021; Zheng et al. 2024; Li et al. 2026, 2025b; Diao et al. 2025).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Main Results</head><p>To evaluate the effectiveness of our approach on OBS decipherment, we conduct comprehensive comparisons on two benchmark datasets, HUST-OBC <ref type="bibr">(Wang et</ref>  Table 4: Top-1 and Top-10 accuracy ( in %) of our model and its variants on HUST-OBS dataset.</p><p>pictographic analysis produced by our method, we employ BERT-Score <ref type="bibr" target="#b2">(Devlin et al. 2019)</ref> to measure the similarity between the top-1 outputs and the ground-truth labels from the dictionary D. We also evaluate other LVLMs, including GPT-4.1, Qwen-VL-Max, and Qwen2.5-VL-7B, and compare their average BERT-Score on both the validation and zero-shot settings of the HUST-OBC <ref type="bibr">(Wang et al. 2024a)</ref> and EVOBC <ref type="bibr">(Wang et al. 2024c</ref>) datasets. As shown in Table 2, our method significantly outperforms the state-of-theart LVLM GPT-4.1 21.60% and 12.95%, averaged over the two datasets, under validation and zero-shot settings, respectively. This result indicates that the analysis generated by our framework are more reliable and informative.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Ablation Study</head><p>To evaluate the effectiveness of the proposed radical recognition stage, we use the original vision encoder of Qwen2.5-VL-7B <ref type="bibr" target="#b0">(Bai et al. 2025)</ref> as the baseline, and incorporate our radical recognition module or a LoRA-based recognition method. Their recognition accuracy is reported on the HUST-OBS dataset <ref type="bibr">(Wang et al. 2024a</ref>) with validation and zero-shot settings. Our method introduces a spatial patch merger and the loss function L trip on top of the baseline vision encoder, resulting in improvements of 0.9% and 1.2% accuracy on the validation and zero-shot settings, respectively. The LoRA-based recognition method merges the recognition stage with the radical analysis process and training with LoRA-based fine-tuning. The results demonstrate that this method leads to a significant drop in radical recognition accuracy and introduces substantial errors in radical analysis, thus we retain radical recognition as an independent stage in our framework.</p><p>To validate the effectiveness of our proposed modules and strategies, we take Qwen2.5-VL-7B <ref type="bibr" target="#b0">(Bai et al. 2025)</ref>  #Undeciphered</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[聲] [磐] [聽]</head><p>Radical "耳" is related to sound and hearing, in the current character form it represents the image of an ear A suspended bell chime, representing the resonating sound of bells #Undeciphered</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[㶷] [ ] [炘]</head><p>Radical "火" is related to burning scenes, in the current character form it symbolizes fiercely burning flames A scene of flames burning fiercely, representing vigorous fire</p><formula xml:id="formula_3">#Undeciphered [異] [畏] [畐]</formula><p>Radical "田" is related to fields/farmland, unrelated to the current character's pictographic meaning</p><p>A complete human figure with both hands raised high, representing a bizarre form that inspires fear #Undeciphered</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[妝] [妆] [娤]</head><p>Radical "女" is related to feminine qualities, in the current character form it manifests as a kneeling woman</p><p>A woman arranging her appearance beside a bed, expressing the meaning of grooming and dressing up validation and zero-shot settings are shown in Table <ref type="table">4</ref>. The results demonstrate that LoRA fine-tuning (+LoRA) enables initial decipherment ability on the validation set but still lacks generalization in zero-shot scenarios. With the introduction of Radical-Pictographic Mutual Analysis and Radical Recognition, the model's accuracy continues to improve on the validation set, but the increase in zero-shot ability is still very limited. The primary cause lies in the insufficient generalization capability of the model trained via LoRAbased supervised fine-tuning, which often fails to generate rare characters-a common challenge in zero-shot scenarios. To mitigate this, we introduce the Radical-Pictographic Dual Matching mechanism as a replacement for direct prediction. This strategy not only significantly improves the model's zero-shot performance but also enhances the robustness of the OBS whose radicals are not related to semantics, ensuring reliable and verifiable decipherment results.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Qualitative Results</head><p>Figure <ref type="figure" target="#fig_8">5</ref> presents qualitative results of our method and OBSD <ref type="bibr" target="#b7">(Guan et al. 2024</ref>) under three settings: validation, zero-shot, and undeciphered OBS. As shown, our model demonstrates strong recognition capabilities on the validation set and also generalizes well to unseen OBS in zeroshot settings. More notably, for characters that remain undeciphered by human experts, the model is able to produce semantically plausible predictions, accompanied by interpretable analysis. Our design of Radical-Pictographic Mutual Analysis plays a key role: The radical analysis com-ponent traces the structural origins of radicals and explains their symbolic function in the current character form. Meanwhile, the pictographic form analysis provides a holistic visual-semantic mapping based on the character's overall shape and implied meaning. Together, these complementary analysis form a dual reasoning path that enhances the model's ability to generate semantically grounded and interpretable outputs, even for previously untranscribed scripts.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>We propose an interpretable OBS decipherment framework through radical and pictographic analysis. The framework bridges glyph to meaning through three stages: radical recognition and analysis, pictographic analysis, and mutual analysis. With the proposed radical-pictographic dual matching, our model can filter the appropriate deciphering candidate set from the dictionary based on analysis results, replacing direct output of deciphering results to achieve better zero-shot performance. Moreover, the generated textual analysis serve as interpretable content, offering references for undeciphered OBS characters, thus holding great potential for archaeological applications. To support training, we construct the PD-OBS dataset, comprising 47,157 Chinese characters annotated with OBS images and pictographic analysis texts, providing a valuable resource for future research. Experimental results demonstrate that our method achieves strong performance in decipherment accuracy, generalization, and interpretability.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Materials</head><p>Limitations and Future Work</p><p>The primary limitations of our proposed decipherment framework are manifested in insufficient generalization capability and degraded fundamental reasoning ability resulting from the LoRA training approach. We observe that the oracle bone script dataset contains numerous characters with similar glyphs or semantics, leading the model to rely on similar character information from training labels in zeroshot testing scenarios rather than conducting thorough radical and pictographic analysis, consequently causing deviations in results. For example, when the training set involves the Chinese character "pin" composed of three "kou" radicals, and the zero-shot test contains the Chinese character "ji" composed of four "kou" radicals, the model sometimes skips the pictographic analysis process and directly outputs the label of the Chinese character "pin", because these two characters have highly similar glyphs and meanings.</p><p>To address these limitations, future improvements will consider applying state-of-the-art reinforcement learning frameworks and targeted reward function to further overcome the model's generalization constraints. Additionally, we will attempt to integrate composition-based methods to enhance the model's robustness for semantically complex yet structurally well-defined characters.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Parameter Analysis in RDM Top-k Parameter Analysis</head><p>As shown in Table <ref type="table" target="#tab_6">5</ref>, with the increase of Top-k, the zeroshot accuracy of our method rises significantly, achieving considerable accuracy within Top-10. This result demonstrates that Radical-pictographic Dual Matching (RDM) mechanism can accurately locate the deciphered character sets, overcome the confusion problem of Chinese characters with similar structures or meanings, and effectively improve the generalization. A small-scale increase in Top-k has minimal impact on the difficulty of textual research, while bringing significant accuracy improvements, which demonstrates the application value of our decipherment framework in practical archaeological decipherment scenarios, providing concise and reliable decipherment analysis references.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Dictionary Scale Study</head><p>In practice, only a limited subset of over 100,000 Chinese characters has achieved widespread circulation and possesses well-defined meanings, thus, selecting an appropriate candidate set for oracle bone script decipherment is crucial. Under the PD-OBS dataset setting, the matching dictionary comprises 47,157 Chinese characters documented in the Kangxi Dictionary (a Chinese dictionary).</p><p>We constructed four additional subset dictionaries: 7,000 commonly used Chinese characters, 10,000 commonly used characters including known oracle bone script decipherment results, 20,902 Unicode-supported characters, and 27,928 Table 6: Decipherment top-10 accuracy (in %) under different dictionary scales.The Valid. and ZS indicate validation and zero-shot settings, respectively.</p><p>characters encompassing known oracle bone script decipherment results and Unicode Extension A characters. We evaluated the top-10 accuracy of our decipherment framework under different dictionary scales.</p><p>As demonstrated in Table <ref type="table">6</ref>, larger candidate dictionaries do not necessarily yield superior results; instead, candidate dictionaries with scales ranging from 20,000 to 30,000 characters prove more suitable. This indicates a trade-off relationship between decipherment accuracy and potential recall rate. To ensure the reliability and authority of decipherment results, we employ all characters documented in the Kangxi Dictionary as the PD-OBS dictionary for comparative experiments in both Main Results and Ablation Studies.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Extended Qualitative Results</head><p>Figure <ref type="figure">7</ref>, Figure <ref type="figure">8</ref> and Figure <ref type="figure">6</ref> visualize additional results and deciphering processes from our proposed framework and OBSD. Moving forward, we will publicly release decipherment results for all undeciphered oracle bone characters, along with the PD-OBS dataset, model weights, and complete codes. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :</head><label>1</label><figDesc>Figure1: Illustrations of the three existing paradigms and our proposed framework. Our method is able to take account of classification accuracy, zero-shot decipherment, and interpretability and achieving better performance in all of them.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><figDesc>employs convolutional attention modules instead of standard convolutional layers to improve decipherment performance based on a CNN backbone. Building on Transformer architectures, the Pyramid Graph Transformer(Gan et al. 2023) integrates a pyramidstructured Vision Transformer (ViT) with skeleton graph representations, attaining state-of-the-art results in closedset OBS decipherment.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>[</head><figDesc>Shuowen Jiezi] To break wood. The character "si" below means "to split." The character "po" below states "one meaning is to split." The Book of Songs frequently mentions splitting firewood … (Ideographic character. Composed of "wood" and "axe." Using an axe to split wood. Original meaning: to split, to chop wood.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 :</head><label>3</label><figDesc>Figure 3: The framework of the proposed method. I is used to indicate the Radical Recognition stage, and II is used to indicate the Radical-Pictographic Mutual Analysis stage, while III is used to indicate Radical-Pictographic Dual Matching.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Q2:</head><figDesc>Figure 4: The workflow of proposed radical-pictographic mutual analysis.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Algorithm 1 :</head><label>1</label><figDesc>Radical-Pictographic Dual MatchingRequire: Dictionary D = {(ri, a rad,i , apic,i, ajoint,i, yi)} N i=1 Require: Model output (r, ârad , âpic, âjoint) Require: Parameter k (top-k) Require: S(•, •): semantic similarity between text sequences computed by BERT-Score (Devlin et al. 2019) 1: // Filtered Matching 2: D rad ← {i | ri = r} 3: C1 ← top-k indices in D rad by S(apic,i, âpic) 4: // Joint Matching 5: C2 ← top-k indices in {1, . . . , N } by S((a rad,i ⊕ ajoint,i), (â rad ⊕ âjoint)) 6: // Merge and Rerank 7: C ← C1 ∪ C2 8: R ← top-k in C by their similarity scores 9: return {yi | i ∈ R}</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><figDesc>as the baseline and incrementally add each component to form our final model. The Top-1 and Top-10 performance under both is related to the mouth or openings; in the current character form it symbolizes an open mouth A person opening their mouth and forcefully exhaling air, representing the action of blowing is related to walking or running; in the current character form it represents the footsteps of a person running A pig running with another person chasing behind it, representing the meaning of pursuit and is related to crops and agricultural plants; in the current character form it symbolizes ripe rice grains A mature grain plant, representing the meaning of a bountiful harvest #Zero-shot [司] * [司] [后] [ ] Radical "口" is related to the mouth or openings; in the character form it symbolizes a person speaking An ancient official reading a proclamation, expressing the meaning of management and execution #Zero-shot [叟] * [叜] [𠬝] [叟] Radical "又" indicates hands; in the current character form it appears as the image of a hand grabbing something A hand holding a staff, representing the meaning of an</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Visualization of the deciphering process and results, under the settings of validation, zero-shot, and undeciphered characters.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><figDesc>Figure 6: Visualization of the results and deciphering processes of undeciphered characters.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 1 :</head><label>1</label><figDesc>Each cell reports Top-1 (left) and Top-10 (right) accuracy (in %). The best and second-best results are respectively marked in bold and underlined. Improvement represents the improvement achieved by our method compared to the existing best method.</figDesc><table><row><cell></cell><cell cols="2">Validation</cell><cell cols="2">Zero-shot</cell></row><row><cell>Method</cell><cell>HUST-OBC</cell><cell>EV-OBC</cell><cell>HUST-OBC</cell><cell>EV-OBC</cell></row><row><cell cols="2">classification model-based</cell><cell></cell><cell></cell><cell></cell></row><row><cell cols="3">InceptionV3 74.4, 76.9 62.4, 64.5</cell><cell>-</cell><cell>-</cell></row><row><cell>ViT</cell><cell cols="2">79.2, 81.7 72.7, 74.2</cell><cell>-</cell><cell>-</cell></row><row><cell>PyGT</cell><cell cols="2">84.3, 87.6 78.1, 81.2</cell><cell>-</cell><cell>-</cell></row><row><cell cols="2">Commercial LVLM</cell><cell></cell><cell></cell><cell></cell></row><row><cell>GPT-4.1</cell><cell>6.0, 6.0</cell><cell>4.5, 4.5</cell><cell>5.3, 5.3</cell><cell>4.3, 4.3</cell></row><row><cell cols="2">QwenVLMax 4.8, 4.8</cell><cell>4.1, 4.1</cell><cell>2.0, 2.0</cell><cell>4.0, 4.0</cell></row><row><cell cols="2">Diffusion-based</cell><cell></cell><cell></cell><cell></cell></row><row><cell>OBSD</cell><cell cols="4">66.8, 72.9 71.2, 77.9 18.3, 27.5 30.4, 50.5</cell></row><row><cell>BBDM</cell><cell cols="3">55.8, 59.5 60.3, 62.1 8.0, 14.1</cell><cell>19.5, 29.5</cell></row><row><cell>Ours</cell><cell cols="4">80.6, 87.8 76.3, 81.7 16.8, 53.7 33.3, 64.1</cell></row><row><cell cols="5">Improvement -3.7, +0.2 -1.8, +0.5 -1.5, +26.2 +2.9, +13.6</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 3 :</head><label>3</label><figDesc>The performance of radical recognition accuracy (in %) of the variants of our model.</figDesc><table><row><cell>al. 2024a) and</cell></row><row><cell>EV-OBC (Wang et al. 2024c), under both validation and</cell></row><row><cell>zero-shot settings, as shown in Table 1. We adopt Incep-</cell></row><row><cell>tionV3 (Guo et al. 2022), ViT (Dosovitskiy et al. 2021), and</cell></row><row><cell>PyGT (Gan et al. 2023) as classification model-based base-</cell></row><row><cell>lines, and OBSD (Guan et al. 2024) and BBDM (Li et al.</cell></row><row><cell>2023) as diffusion-based methods. Due to the lack of open-</cell></row><row><cell>source implementations and dataset inconsistency, existing</cell></row><row><cell>composition-based methods (Wang et al. 2024b; Hu et al.</cell></row><row><cell>2024, 2025) are not considered for inclusion in the compar-</cell></row><row><cell>ison methods for the time being. Instead, we include strong</cell></row><row><cell>commercial LVLMs, GPT-4.1 and QwenVLMax, for com-</cell></row><row><cell>parison. In contrast, commercial LVLMs perform poorly in</cell></row><row><cell>both settings, with Top-1 accuracy consistently below 6%,</cell></row><row><cell>highlighting their limited capability to understand the vi-</cell></row><row><cell>sual structure of ancient scripts. On the validation set, al-</cell></row><row><cell>though our method yields slightly lower Top-1 accuracy than</cell></row><row><cell>the best classification model-based baseline (e.g., PyGT), it</cell></row><row><cell>achieves the highest Top-10 accuracy, demonstrating supe-</cell></row><row><cell>rior capability in generating high-quality candidates and of-</cell></row><row><cell>fering greater practical utility. In the more challenging zero-</cell></row><row><cell>shot scenario, our method exhibits notably strong perfor-</cell></row><row><cell>mance: It remains competitive in Top-1 accuracy and signifi-</cell></row><row><cell>cantly outperforms all methods in Top-10 accuracy, surpass-</cell></row><row><cell>ing the second-best method by 26.2% on HUST-OBC and</cell></row><row><cell>13.6% on EV-OBC. These results confirm the strong gener-</cell></row><row><cell>alization and transferability of our method to unseen OBS,</cell></row><row><cell>highlighting its potential value in assisting the recognition</cell></row><row><cell>of undeciphered OBS in archaeological research.</cell></row><row><cell>To quantitatively evaluate the precision of radical and</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 5 :</head><label>5</label><figDesc>Decipherment accuracy (in %) under different Topk settings.The Valid. and ZS indicate validation and zeroshot settings, respectively.</figDesc><table><row><cell>@Top-k</cell><cell cols="2">HUST-OBC</cell><cell cols="2">EVOBC</cell></row><row><cell></cell><cell>Valid.</cell><cell>ZS</cell><cell>Valid.</cell><cell>ZS</cell></row><row><cell>Top-1</cell><cell>80.6</cell><cell>16.8</cell><cell>76.3</cell><cell>33.3</cell></row><row><cell>Top-5</cell><cell>86.0</cell><cell>39.3</cell><cell>79.8</cell><cell>56.0</cell></row><row><cell>Top-10</cell><cell>87.8</cell><cell>53.7</cell><cell>81.7</cell><cell>64.1</cell></row><row><cell>Top-50</cell><cell>92.1</cell><cell>74.2</cell><cell>88.0</cell><cell>80.2</cell></row><row><cell>Top-100</cell><cell>94.4</cell><cell>82.5</cell><cell>91.2</cell><cell>89.7</cell></row><row><cell>@Dict. Scale</cell><cell cols="2">HUST-OBC</cell><cell cols="2">EVOBC</cell></row><row><cell></cell><cell>Valid.</cell><cell>ZS</cell><cell>Valid.</cell><cell>ZS</cell></row><row><cell>7000</cell><cell>59.6</cell><cell>31.9</cell><cell>65.7</cell><cell>48.2</cell></row><row><cell>10000</cell><cell>73.7</cell><cell>39.3</cell><cell>79.5</cell><cell>59.8</cell></row><row><cell>20902</cell><cell>86.5</cell><cell>51.8</cell><cell>83.9</cell><cell>66.4</cell></row><row><cell>27928</cell><cell>88.3</cell><cell>54.1</cell><cell>82.2</cell><cell>64.5</cell></row><row><cell>47157</cell><cell>87.8</cell><cell>53.7</cell><cell>81.7</cell><cell>64.1</cell></row></table></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[雀] [隼] [鸠]</head><p>Radical "隹" indicates birds, directly related to the character's meaning A tiny bird standing on a branch tip, symbolizing sparrow family birds</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[刈] [割] [劐]</head><p>Radical "刂" is related to blade cutting, in the current character form it represents a farm sickle</p><p>A farmer harvesting wheat with a sickle, representing the meaning of crop harvesting</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[鑄] [铸] [銚]</head><p>Radical "金" is related to metallic objects, in the current character form it symbolizes metallurgy engineering  [</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>姀] [媃] [嫀]</head><p>Radical "女" is related to feminine qualities, in the current character form it represents a working woman A woman working in wheat fields, representing the virtuous qualities of women being diligent and thrifty in managing households.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[剛] [刚] [ ]</head><p>Radical "刂" is related to blade cutting, in the current character form it represents a sharp knife</p><p>A scene of cutting through the interwoven network of rope fibers with a blade, representing the qualities of rigidity and resilience</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[巡] [冘] [六]</head><p>Radical " 巛" is related to rivers, unrelated to the current character's pictographic meaning Radical "水" is related to water flow, in the current character form it symbolizes branches of water flow Rivers flowing into a lake water system, indicating river inlet to the lake</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[昏] [昔] [晞]</head><p>Radical "日" indicates the sun, in the current character form it represents sunshine A scene of meat and food under the scorching sun, representing the meaning of dried meat</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[盡] [濜] [盆]</head><p>Radical "皿" is related to containers, in the current character form it represents a water jar</p><p>A hand holding a brush to clean vessels, expressing the meaning of emptiness within containers</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>[紤] [絕] [絶]</head><p>Radical "糹" is related to silk threads, in the current character form it represents a bundle of ropes</p><p>A scene of cutting hemp rope with a knife, indicating a clean cut, symbolizing the meaning of termination and severance </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Dang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lin</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2502.13923</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">Technical Report</note>
+	<note>Qwen2.5-VL</note>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">OBI-Bench: Can LMMs Aid in Study of Ancient Script on Oracle Bones?</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Tingzhu Chen; Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zhai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">The Thirteenth International Conference on Learning Representations</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers)</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Devlin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M.-W</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Toutanova</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/n18-2</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</title>
+		<title level="s">Long and Short Papers</title>
+		<editor>
+			<persName><forename type="first">J</forename><surname>Burstein</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">C</forename><surname>Doran</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">T</forename><surname>Solorio</surname></persName>
+		</editor>
+		<meeting>the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies<address><addrLine>Minneapolis, Minnesota</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="4171" to="4186" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<author>
+			<persName><forename type="first">X</forename><surname>Diao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Bo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Poesio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Shi</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2506.19208</idno>
+		<title level="m">Ancient Script Image Recognition and Processing: A Review</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<author>
+			<persName><forename type="first">A</forename><surname>Dosovitskiy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Beyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kolesnikov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Weissenborn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Unterthiner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dehghani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Minderer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Heigold</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Gelly</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Houlsby</surname></persName>
+		</author>
+		<title level="m">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. In 9th International Conference on Learning Representations, ICLR 2021, Virtual Event, Austria</title>
+		<imprint>
+			<publisher>OpenReview</publisher>
+			<date type="published" when="2021-05-03">2021. May 3-7, 2021</date>
+		</imprint>
+	</monogr>
+	<note>net</note>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Fujikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename></persName>
+		</author>
+		<idno type="arXiv">arXiv:2105.00777</idno>
+		<title level="m">Recognition of Oracle Bone Inscriptions by using Two Deep Learning Models</title>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Characters as graphs: Interpretable handwritten Chinese character recognition via Pyramid Graph Transformer</title>
+		<author>
+			<persName><forename type="first">Ji</forename><surname>Gan</surname></persName>
+			<idno type="ORCID">0000-0001-6041-588X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yuyan</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaxu</forename><surname>Leng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiqiang</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinbo</forename><surname>Gao</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patcog.2023.109317</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition</title>
+		<title level="j" type="abbrev">Pattern Recognition</title>
+		<idno type="ISSN">0031-3203</idno>
+		<imprint>
+			<biblScope unit="volume">137</biblScope>
+			<biblScope unit="page">109317</biblScope>
+			<date type="published" when="2023-05">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Deciphering Oracle Bone Language with Diffusion Models</title>
+		<author>
+			<persName><forename type="first">Haisu</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huanxin</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shengwei</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliang</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2024.acl-long.831</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</title>
+		<editor>
+			<persName><forename type="first">L.-W</forename><surname>Ku</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">A</forename><surname>Martins</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">V</forename><surname>Srikumar</surname></persName>
+		</editor>
+		<meeting>the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)<address><addrLine>Bangkok, Thailand</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="15554" to="15567" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Building Hierarchical Representations for Oracle Character and Sketch Recognition</title>
+		<author>
+			<persName><forename type="first">Jun</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Changhu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Edgar</forename><surname>Roman-Rangel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hongyang</forename><surname>Chao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Rui</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tip.2015.2500019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Image Processing</title>
+		<title level="j" type="abbrev">IEEE Trans. on Image Process.</title>
+		<idno type="ISSN">1057-7149</idno>
+		<idno type="ISSNe">1941-0042</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="104" to="118" />
+			<date type="published" when="2016-01">2016</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">An Improved Neural Network Model Based on Inception-v3 for Oracle Bone Inscription Character Recognition</title>
+		<author>
+			<persName><forename type="first">Ziyi</forename><surname>Guo</surname></persName>
+			<idno type="ORCID">0000-0002-0811-5086</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Zihan</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bingshuai</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-3630-7499</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Longquan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qingju</forename><surname>Jiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenxi</forename><surname>Huang</surname></persName>
+			<idno type="ORCID">0000-0002-2100-0259</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Jianwei</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-8015-9091</idno>
+		</author>
+		<idno type="DOI">10.1155/2022/7490363</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Programming</title>
+		<title level="j" type="abbrev">Scientific Programming</title>
+		<idno type="ISSN">1058-9244</idno>
+		<idno type="ISSNe">1875-919X</idno>
+		<imprint>
+			<biblScope unit="volume">2022</biblScope>
+			<biblScope unit="page" from="1" to="8" />
+			<date type="published" when="2022-05-05">2022. 2022</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Self-supervised Learning of Orc-Bert Augmentor for Recognizing Few-Shot Oracle Characters</title>
+		<author>
+			<persName><forename type="first">Wenhui</forename><surname>Han</surname></persName>
+			<idno type="ORCID">0000-0001-5896-3692</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xinlin</forename><surname>Ren</surname></persName>
+			<idno type="ORCID">0000-0002-8175-7392</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hangyu</forename><surname>Lin</surname></persName>
+			<idno type="ORCID">0000-0002-0538-7692</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yanwei</forename><surname>Fu</surname></persName>
+			<idno type="ORCID">0000-0002-6595-6893</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyang</forename><surname>Xue</surname></persName>
+			<idno type="ORCID">0000-0002-4897-9209</idno>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-69544-6_39</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="652" to="668" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Component-Level Segmentation for Oracle Bone Inscription Decipherment</title>
+		<author>
+			<persName><forename type="first">Zhikai</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiu-Ming</forename><surname>Cheung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yonggang</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhang</forename><surname>Peiying</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tang</forename><forename type="middle">Pui</forename><surname>Ling</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v39i27.35030</idno>
+		<idno type="arXiv">arXiv:2106.09685</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">39</biblScope>
+			<biblScope unit="issue">27</biblScope>
+			<biblScope unit="page" from="28116" to="28124" />
+			<date type="published" when="2021">2021. 2025</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+	<note>LoRA: Low-Rank Adaptation of Large Language Models</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Component-Level Oracle Bone Inscription Retrieval</title>
+		<author>
+			<persName><forename type="first">Zhikai</forename><surname>Hu</surname></persName>
+			<idno type="ORCID">0000-0001-7278-9977</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yiu-Ming</forename><surname>Cheung</surname></persName>
+			<idno type="ORCID">0000-0001-7629-4648</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yonggang</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0000-0002-4080-7592</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Peiying</forename><surname>Zhang</surname></persName>
+			<idno type="ORCID">0009-0001-7906-7763</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Pui-Ling</forename><surname>Tang</surname></persName>
+			<idno type="ORCID">0000-0002-8441-6657</idno>
+		</author>
+		<idno type="DOI">10.1145/3652583.3658116</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2024 International Conference on Multimedia Retrieval</title>
+		<meeting>the 2024 International Conference on Multimedia Retrieval<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2024-05-30">2024</date>
+			<biblScope unit="page" from="647" to="656" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">OBC306: A Large-Scale Oracle Bone Character Recognition Dataset</title>
+		<author>
+			<persName><forename type="first">Shuangping</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haobin</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaosong</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icdar.2019.00114</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 International Conference on Document Analysis and Recognition (ICDAR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-09">2019</date>
+			<biblScope unit="volume">306</biblScope>
+			<biblScope unit="page" from="681" to="688" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Shu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mihm</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">C</forename><surname>Howe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2411.17837</idno>
+		<title level="m">Ora-cleSage: Towards Unified Visual-Linguistic Understanding of Oracle Bone Scripts through Cross-Modal Knowledge Fusion</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">OraclePoints: A Hybrid Neural Representation for Oracle Character</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Han</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 31st ACM International Conference on Multimedia, MM &apos;23</title>
+		<meeting>the 31st ACM International Conference on Multimedia, MM &apos;23<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computing Machinery</publisher>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="7901" to="7911" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">HWOBC-A Handwriting Oracle Bone Character Recognition Database</title>
+		<author>
+			<persName><forename type="first">Bang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qianwen</forename><surname>Dai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Feng</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weiye</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiang</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1742-6596/1651/1/012050</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Physics: Conference Series</title>
+		<title level="j" type="abbrev">J. Phys.: Conf. Ser.</title>
+		<idno type="ISSN">1742-6588</idno>
+		<idno type="ISSNe">1742-6596</idno>
+		<imprint>
+			<biblScope unit="volume">1651</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">012050</biblScope>
+			<date type="published" when="2020-11-01">2020</date>
+			<publisher>IOP Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">BBDM: Image-to-Image Translation with Brownian Bridge Diffusion Models</title>
+		<author>
+			<persName><forename type="first">Bo</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaitao</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu-Kun</forename><surname>Lai</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52729.2023.00194</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-06">2023</date>
+			<biblScope unit="page" from="1952" to="1961" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<monogr>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sevenshu; Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Ji</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2506.21101</idno>
+		<title level="m">OracleFusion: Assisting the Decipherment of Oracle Bone Script with Structurally Constrained Semantic Typography</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Zhai</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2504.09555</idno>
+		<title level="m">Mitigating Long-tail Distribution in Oracle Bone Inscriptions: Dataset, Model, and Benchmark</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">A comprehensive survey of oracle character recognition: Challenges, datasets, methodology, and beyond</title>
+		<author>
+			<persName><forename type="first">Jing</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xueke</forename><surname>Chi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qiufeng</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-0918-4606</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Kaizhu</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Da-Han</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cheng-Lin</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patcog.2025.111824</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition</title>
+		<title level="j" type="abbrev">Pattern Recognition</title>
+		<idno type="ISSN">0031-3203</idno>
+		<imprint>
+			<biblScope unit="volume">169</biblScope>
+			<biblScope unit="page">111824</biblScope>
+			<date type="published" when="2026-01">2026</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Radical-based extract and recognition networks for Oracle character recognition</title>
+		<author>
+			<persName><forename type="first">Xiaoyu</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shanxiong</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fujia</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaogang</forename><surname>Qiu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10032-021-00392-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal on Document Analysis and Recognition (IJDAR)</title>
+		<title level="j" type="abbrev">IJDAR</title>
+		<idno type="ISSN">1433-2833</idno>
+		<idno type="ISSNe">1433-2825</idno>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="219" to="235" />
+			<date type="published" when="2022-04-13">2022</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Multiple attentional aggregation network for handwritten Dongba character recognition</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Loshchilov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Hutter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Bi</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1711.05101</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Decoupled Weight Decay Regularization</title>
+		<imprint>
+			<date type="published" when="2019">2019. 2023</date>
+			<biblScope unit="volume">213</biblScope>
+			<biblScope unit="page">118865</biblScope>
+		</imprint>
+	</monogr>
+	<note>Part</note>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Recognition of Oracle Bone Inscriptions by Extracting Line Features on Image Processing</title>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Meng</surname></persName>
+		</author>
+		<idno type="DOI">10.5220/0006225706060611</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 6th International Conference on Pattern Recognition Applications and Methods</title>
+		<meeting>the 6th International Conference on Pattern Recognition Applications and Methods</meeting>
+		<imprint>
+			<publisher>SCITEPRESS - Science and Technology Publications</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="606" to="611" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Synthesizing efficient data with diffusion models for person re-identification pre-training</title>
+		<author>
+			<persName><forename type="first">Ke</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haiyang</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuelin</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Teng</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyang</forename><surname>Xue</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10994-024-06663-3</idno>
+		<idno>CoRR, abs/2502</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning</title>
+		<title level="j" type="abbrev">Mach Learn</title>
+		<idno type="ISSN">0885-6125</idno>
+		<idno type="ISSNe">1573-0565</idno>
+		<imprint>
+			<biblScope unit="volume">114</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2025-02-06">2025. 19958</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Making Visual Sense of Oracle Bones for You and Me</title>
+		<author>
+			<persName><forename type="first">Runqi</forename><surname>Qiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lan</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaiyue</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Honggang</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52733.2024.01203</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-06-16">2024</date>
+			<biblScope unit="page" from="12656" to="12665" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">FaceNet: A unified embedding for face recognition and clustering</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Schroff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kalenichenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Philbin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="815" to="823" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<author>
+			<persName><forename type="first">F</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Xue</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2506.03798</idno>
+		<title level="m">CoLa: Chinese Character Decomposition with Compositional Latent Components</title>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">An open dataset for oracle bone character recognition and decipherment</title>
+		<author>
+			<persName><forename type="first">Pengjie</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaile</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-9082-094X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shengwei</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinpeng</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haisu</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhebin</forename><surname>Kuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliang</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-3037-173X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41597-024-03807-x</idno>
+		<idno>CoRR, abs/2401.15365</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2024-09-06" />
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Puzzle Pieces Picker: Deciphering Ancient Chinese Characters with Radical Reconstruction</title>
+		<author>
+			<persName><forename type="first">Pengjie</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaile</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shengwei</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliang</forename><surname>Liu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-031-70533-5_11</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<editor>
+			<persName><forename type="first">Barney</forename><surname>Smith</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">E</forename><forename type="middle">H</forename><surname>Liwicki</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">M</forename><surname>Peng</surname></persName>
+		</editor>
+		<editor>
+			<persName><forename type="first">L</forename></persName>
+		</editor>
+		<meeting><address><addrLine>Cham</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer Nature Switzerland</publisher>
+			<date type="published" when="2024">2024</date>
+			<biblScope unit="page" from="169" to="187" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">An open dataset for oracle bone character recognition and decipherment</title>
+		<author>
+			<persName><forename type="first">Pengjie</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Kaile</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xinyu</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0001-9082-094X</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Shengwei</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yongge</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinpeng</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haisu</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhebin</forename><surname>Kuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lianwen</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiang</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuliang</forename><surname>Liu</surname></persName>
+			<idno type="ORCID">0000-0002-3037-173X</idno>
+		</author>
+		<idno type="DOI">10.1038/s41597-024-03807-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Scientific Data</title>
+		<title level="j" type="abbrev">Sci Data</title>
+		<idno type="ISSNe">2052-4463</idno>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">11</biblScope>
+			<date type="published" when="2024-09-06">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno>CoRR, abs/2409.01704</idno>
+		<title level="m">General OCR Theory: Towards OCR-2.0 via a Unified Endto-end Model</title>
+		<imprint>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Chinese character recognition with radical-structured stroke trees</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Xue</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Mach. Learn</title>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="3807" to="3827" />
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Chinese Text Recognition with A Pre-Trained CLIP-Like Model Through Image-IDS Aligning</title>
+		<author>
+			<persName><forename type="first">Haiyang</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaocong</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bin</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyang</forename><surname>Xue</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccv51070.2023.01097</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF International Conference on Computer Vision (ICCV)</title>
+		<meeting><address><addrLine>Paris, France</addrLine></address></meeting>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-01">2023. October 1-6, 2023</date>
+			<biblScope unit="page" from="11909" to="11918" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Dynamic Dataset Augmentation for Deep Learning-based Oracle Bone Inscriptions Recognition</title>
+		<author>
+			<persName><forename type="first">Xuebin</forename><surname>Yue</surname></persName>
+			<idno type="ORCID">0000-0002-4356-9243</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Hengyi</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0003-4112-7297</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Yoshiyuki</forename><surname>Fujikawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lin</forename><surname>Meng</surname></persName>
+			<idno type="ORCID">0000-0003-4351-6923</idno>
+		</author>
+		<idno type="DOI">10.1145/3532868</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal on Computing and Cultural Heritage</title>
+		<title level="j" type="abbrev">J. Comput. Cult. Herit.</title>
+		<idno type="ISSN">1556-4673</idno>
+		<idno type="ISSNe">1556-4711</idno>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1" to="20" />
+			<date type="published" when="2022-12-06">2022</date>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Ancient Chinese Character Recognition with Improved Swin-Transformer and Flexible Data Enhancement Strategies</title>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Chen</surname></persName>
+			<idno type="ORCID">0000-0001-5919-6413</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xianbo</forename><surname>Wang</surname></persName>
+			<idno type="ORCID">0000-0002-0463-2983</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Donglian</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunfeng</forename><surname>Yan</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/s24072182</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sensors</title>
+		<title level="j" type="abbrev">Sensors</title>
+		<idno type="ISSNe">1424-8220</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page">2182</biblScope>
+			<date type="published" when="2024-03-28">2024</date>
+			<publisher>MDPI AG</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">A method of Jia Gu Wen recognition based on a two-level classification</title>
+		<author>
+			<persName><forename type="first">X.-L</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-C</forename><surname>Hua</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of 3rd International Conference on Document Analysis and Recognition</title>
+		<meeting>3rd International Conference on Document Analysis and Recognition</meeting>
+		<imprint>
+			<date type="published" when="1995">1995</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="833" to="836" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

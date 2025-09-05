@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">ReassembleNet: Learnable Keypoints and Diffusion for 2D Fresco Reconstruction</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2025-05-29">29 May 2025</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Adeela</forename><surname>Islam</surname></persName>
+							<email>adeela.islam@iit.it</email>
+							<affiliation key="aff0">
+								<orgName type="institution">University of Genova</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Stefano</forename><surname>Fiorini</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Stuart</forename><surname>James</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Durham University</orgName>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Pietro</forename><surname>Morerio</surname></persName>
+							<email>pietro.morerio@iit.it</email>
+						</author>
+						<author>
+							<persName><forename type="first">Alessio</forename><forename type="middle">Del</forename><surname>Bue</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Fondazione</forename><forename type="middle">Istituto</forename><surname>Italiano</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Di</forename><surname>Tecnologia</surname></persName>
+						</author>
+						<title level="a" type="main">ReassembleNet: Learnable Keypoints and Diffusion for 2D Fresco Reconstruction</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2025-05-29">29 May 2025</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">5E171460FA74E980E47C40E0FCF26830</idno>
+					<idno type="arXiv">arXiv:2505.21117v2[cs.CV]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-09-05T15:26+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The task of reassembly is a significant challenge across multiple domains, including archaeology, genomics, and molecular docking, requiring the precise placement and orientation of elements to reconstruct an original structure. In this work, we address key limitations in state-of-the-art Deep Learning methods for reassembly, namely i) scalability; ii) multimodality; and iii) real-world applicability: beyond square or simple geometric shapes, realistic and complex erosion, or other real-world problems. We propose ReassembleNet, a method that reduces complexity by representing each input piece as a set of contour keypoints and learning to select the most informative ones by Graph Neural Networks pooling inspired techniques. Reassem-bleNet effectively lowers computational complexity while enabling the integration of features from multiple modalities, including both geometric and texture data. Further enhanced through pretraining on a semi-synthetic dataset. We then apply diffusion-based pose estimation to recover the original structure. We improve on prior methods by 55% and 86% for RMSE Rotation and Translation, respectively.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<facsimile>
+		<surface n="1" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="2" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="3" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="4" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="5" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="6" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="7" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="8" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="9" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="10" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="11" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="12" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+		<surface n="13" ulx="0.0" uly="0.0" lrx="612.0" lry="792.0"/>
+	</facsimile>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Reassembly requires placing each element in its correct position and orientation to form the original shape as a whole -whether it be a 2D or 3D object. This ability is a form of spatial intelligence, which refers to the capacity to accurately perceive the visual-spatial environment and manipulate that perceived space <ref type="bibr" target="#b8">[9]</ref>. This skill is typically evaluated through reassembly tasks, where individual components must be arranged and connected to form a coherent, functional whole-such as solving 2D jigsaw puzzles or assembling 3D structures with LEGO blocks.</p><p>Since the advent of the first puzzle solver <ref type="bibr" target="#b4">[5]</ref>, reassembly tasks have posed a significant challenge to the machine learning community due to their inherent combinatorial complexity. These challenges are further underscored by Figure <ref type="figure">1</ref>. We introduce ReassembleNet as a method for fresco reassembly. Our ReassembleNet addresses key challenges that have been ignored by traditional methods, including complex geometry, texture and erosion, missing pieces, often in a data-scarcity scenario.</p><p>their wide range of applications, including genomics <ref type="bibr" target="#b20">[21]</ref>, assistive technologies <ref type="bibr" target="#b39">[39]</ref>, and molecular docking <ref type="bibr" target="#b2">[3]</ref>.</p><p>In recent years, AI techniques for reassembling objects have gained increasing traction in the heritage field, particularly in fresco reconstruction <ref type="bibr" target="#b38">[38]</ref>. This growing application of AI is driven by the fundamental challenge archaeologists face in reconstructing the past. After extensive and painstaking work involving site surveys and excavations, they are often confronted with the daunting task of reassembling countless fragments of varying sizes, shapes, and appearances to recreate ancient artifacts or artworks. Depending on the complexity of the artifact, this reassembly process can span months, years, or even decades. In cases involving a vast number of pieces, the task may become nearly insurmountable, regardless of the skill of the experts. Despite recent advances, state-of-the-art methods for solving this task remain far from achieving a satisfactory accuracy <ref type="bibr" target="#b36">[36]</ref>. The challenges persist not only in the 3D domain but also in the 2D space, where the reduced degrees of freedom do not significantly alleviate the complexity of the problem. Reduction to 2D has been used for a long time to aid in finding the solutions as many heritage objects, e.g. frescos, are planar on the dominant surface <ref type="bibr" target="#b5">[6]</ref>. Traditional approaches use keypoints or patches <ref type="bibr" target="#b3">[4,</ref><ref type="bibr" target="#b21">22,</ref><ref type="bibr" target="#b24">25,</ref><ref type="bibr" target="#b35">35]</ref> benefiting from optimization strategy allowing them to scale to complex irregular shapes, in contrast to deep learning approaches. Three primary factors contribute to the difficulty of fresco reassembly for deep learning approaches. First, the inherent complexity of irregular pieces and the diverse textures present in the fragments (Figure <ref type="figure">1</ref>). Secondly, as a byproduct of the first, complex polygonal shapes are difficult to model in deep learning approaches, where comparisons need to be made across the points of one fragment edge to another fragment. Finally, deep learning methods typically require large-scale datasets to effectively learn meaningful patterns <ref type="bibr" target="#b32">[32]</ref>, a requirement that is difficult to meet in most applications domains of reassembly.</p><p>To address these challenges, we propose ReassembleNet, a scalable deep learning method that integrates a diffusion process with multi-modal feature fusion. Our approach enables scalability on irregular 2D shapes through keypoint selection, a crucial capability for highly fragmented structures that existing methods struggle to process <ref type="bibr" target="#b17">[18]</ref>. We introduce a semi-synthetic dataset specifically designed to highlight the characteristics of fresco pieces. Through finetuning, we demonstrate that pre-training on a semi-synthetic dataset significantly enhances model performance on realworld frescos. We combine the keypoint selection with geometry and texture representation to constrain the matching problem modeled through an inter and intra-piece attention block. Finally, we wrap this model in a diffusion process to iteratively denoise the pose of pieces into the final locations.</p><p>The main contributions of this work are: i) We propose a scalable end-to-end deep learning method designed to solve reassembly tasks with 2D irregular input shapes. ii) We introduce a 2D learnable keypoint selector that identifies the most significant keypoints along the borders of 2D irregular shapes. This approach reduces complexity, enhances scalability, and overcomes the computational limitations of SOTA models that struggle when using all points of the contours. iii) We use multimodal features that incorporate geometric features, local and global texture features, to provide a richer representation and aid solving the task. iv) We address the limitation of scarce training data by introducing a novel pipeline with a reduced sym-to-real gap that generates a semi-synthetic dataset for pre-training. This strategy enhances overall performance when solving real puzzles.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Related Works</head><p>We review key literature on reassembly tasks for both square and irregular shape puzzles.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Reassembly of Square-based puzzles</head><p>Square-based jigsaws have been extensively studied in the literature, with early approaches using greedy methods. For instance, <ref type="bibr" target="#b23">[24]</ref> introduced a three-phase greedy approach involving placement, segmentation, and shifting, relying on compatibility functions and estimation metrics. While effective for large puzzles, it requires predefined orientations and does not handle missing pieces. Similarly, <ref type="bibr" target="#b6">[7]</ref> proposed a tree-based algorithm for puzzles with unknown orientations and locations, using Mahalanobis Gradient Compatibility (MGC) for boundary analysis. However, it struggles with color-based similarity and missing pieces. <ref type="bibr" target="#b22">[23]</ref> presented a greedy strategy for puzzles without prior information on piece sizes or orientations, refining the initial configuration. It works with mixed or missing pieces but struggles with noisy images. Other methods, such as <ref type="bibr" target="#b18">[19]</ref>, combine edge and content similarity using MGC, but face challenges with large-scale puzzles. <ref type="bibr" target="#b28">[29]</ref> used a genetic algorithm based on color similarity to solve puzzles with unknown locations and orientations.</p><p>In recent years, several deep learning approaches have been developed for puzzle reconstruction. One prominent direction leverages generative models to reconstruct a complete image from an unordered set of puzzle pieces <ref type="bibr" target="#b33">[33,</ref><ref type="bibr" target="#b34">34]</ref>. These methods aim to infer the global structure of the puzzle, effectively generating missing spatial relationships. However, they are not applicable when the input pieces are rotated, as they assume a fixed orientation. Another line of research explores diffusion-based processes to iteratively refine the placement of puzzle pieces step by step <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b25">26]</ref>. These approaches have demonstrated effectiveness in solving the oriented puzzle problem, where piece orientations are known. However, they are restricted to regular puzzle settings, where pieces conform to a structured grid. For real-world applications, square-based approaches are often impractical, as broken objects typically have irregular shapes, noisy visual content, and eroded or missing edges between pieces. A naive solution is to create a regular patch that encloses the broken object; however, this drastically hinders the effectiveness.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Reassembly of irregular pieces</head><p>To overcome the limitations of approaches restricted to square-based shapes, several recent studies have introduced methods designed explicitly for irregular-shaped object pieces.</p><p>Before the adoption of deep learning, various techniques were developed to address this problem. For instance, <ref type="bibr" target="#b24">[25]</ref> proposed an artifact reassembly method using inpainting, texture synthesis, and FFT-based image registration. Their approach aligns fragments by maximizing correlation through FFT shift theory, effectively handling damaged edges. Similarly, <ref type="bibr" target="#b21">[22]</ref> uses a divide-and-conquer strategy, grouping pieces based on texture and color similarity. The method utilizes RGB and HIS color spaces for color matching and employs co-occurrence matrices to extract texture features. In <ref type="bibr" target="#b35">[35]</ref>, the authors introduced a computer-aided method consisting of four key steps. Their approach reconstructs fragmented images by identifying adjacent pieces, matching contours using a Smith-Waterman-based method with color similarity, refining alignment through Iterative Closest Point, and assembling the final image based on optimized alignment angles. More recently, <ref type="bibr" target="#b3">[4]</ref> proposed a patch-based optimization method for artifact reconstruction, leveraging color, gradients, and geometric transformations to match fragments.</p><p>In recent years, significant progress has been made in applying deep learning to handle irregular input shapes. The first work in this area is <ref type="bibr" target="#b29">[30]</ref>, which introduced DNN-Buddies, a deep neural network model for evaluating piece compatibility. In <ref type="bibr" target="#b19">[20]</ref>, the authors enhanced puzzle piece matching using CNNs and adaptive boosting. They proposed a multi-graph search algorithm to replace greedy strategies, enabling the handling of missing pieces and lowtexture areas. <ref type="bibr" target="#b0">[1]</ref> developed a classification network for evaluating the compatibility of fragment pairs and matching irregular puzzle pieces. However, their approach requires square-shaped pieces and cannot accommodate irregular outputs. PuzzleFusion <ref type="bibr" target="#b16">[17]</ref> is based on a diffusion model and treats puzzle pieces as simple polygons with a limited number of vertices. This method is designed to work only on toy problems, as it processes all keypoints of the input polygons. As a result, it becomes impractical for realworld datasets, where a large number of keypoints lead to exponential memory consumption. Finally, PairingNet <ref type="bibr" target="#b40">[40]</ref> is a learning-based image fragment pair-searching andmatching approach. Their method employs a graph-based network for feature extraction, a linear transformer-based module for fragment pair-searching, and a weighted fusion module for pair-matching. By formulating a similarity matrix to infer adjacent segments.</p><p>Unlike previous works, which have several limitations for real-world applications, our solution is designed for practical scenarios and is capable of handling irregular inputs without scalability issues, thanks to the keypoint selection module. It also distinctively leverages multi-modal features by including both geometry and texture during training and inference.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">ReassembleNet Pipeline</head><p>In this paper, we focus on reassembling fragmented 2D objects where our method input is a set of images representing the fragments with irregular shapes. Following <ref type="bibr" target="#b17">[18]</ref>, our method takes as input m images of unordered pieces. We extract keypoints from the images by applying Harris Corner Detector <ref type="bibr" target="#b12">[13]</ref>. Points act as a helpful cue in the arrange-ment of the pieces as subsets of the points on each piece can be aligned to recover the overall piece pose.</p><p>For each of the m pieces, let the set of keypoints be defined as</p><formula xml:id="formula_0">K m = {k m i } d m i=1</formula><p>, where d m is the number of keypoints in each piece m. As this results in a significant number of points, direct comparison between all pieces is infeasible; therefore, our method applies an end-to-end learnable keypoint selector, which is trained to identify the most informative keypoints from the fragments. These keypoints are crucial for guiding the reassembly process.</p><p>Next, we aim at extracting a multi-modal keypoint feature designed to capture both the geometric and textural properties of each fragment. This allows us to fully embed the shape and visual characteristics of the pieces, which are essential for proper alignment. Finally, we utilize a combination of attention blocks to model the relationships between the fragments. This solution helps the method to better fit the pieces together by analyzing their spatial and contextual connections, ensuring they are aligned in the correct configuration. The model is wrapped within a diffusion process to progressively learn the correct alignment in terms of translation s m i ∈ R 2 and rotation</p><formula xml:id="formula_1">r m i = [cos(θ m i ), sin(θ m i )] ⊤ [41].</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">KeyPoint Feature Representation</head><p>Each keypoint k m i is represented by a feature vector h m i that combines several components. In challenging reassembly tasks, extracting meaningful characteristics is crucial for providing the network with valuable prior knowledge and improving its performance. Therefore, we focus on extracting multi-modal features from the input -specifically, geometric and texture attributes. Geometric Features. We focus on two specific geometric features: Curvature, which measures the curvature of the boundary at the keypoint. Curvature indicates whether a corner is a sharp bend or a more gentle curve, and it can be approximated by fitting a curve (e.g., a circle or spline) around the keypoint and estimating its curvature. It is analyzed by second-order derivatives and is represented as a single scalar value per keypoint. Edge Angles involve calculating the angle of the tangent to the edge at each boundary keypoint. It is a 1D feature (one angle per keypoint) and is measured in degrees. This angle helps distinguish between different types of boundary segments, such as straight edges versus curved ones. Texture Features. We have also focused on extracting features specifically related to the textures of the pieces. In particular, we extracted global texture features that summarize the general characteristics of the element, as well as local texture features that capture more detailed, localized information. For global texture features, we leveraged a pre-trained ResNet18 <ref type="bibr" target="#b14">[15]</ref> to capture high-level texture representations across the entire element. For local texture Figure <ref type="figure">2</ref>. Framework of our proposed ReassembleNet. We begin by extracting keypoints from the input pieces, followed by computing global and local texture features alongside geometric features. Using the geometric features and keypoint coordinates, we then select the most relevant k keypoints. To model the reassembly process, we employ a Diffusion Probabilistic Model, formulating a Markov chain that gradually injects noise into the keypoints' positions and orientations. At timestep t = 0, the pieces are correctly aligned, whereas at timestep t = T , their keypoints are randomly translated and rotated (note that for visualization purpose, we compute the average translation and rotation of keypoints within each piece at every step in the chain). At each timestep t, our attention module processes the keypoints-incorporating their coordinates, orientations, and extracted features-to predict a less noisy version of their positions and orientations, { Xm t-1 } M m=1 , iteratively refining them toward the correct configuration.</p><p>features, we adopted a similar approach using the same pretrained ResNet18. Specifically, we extract 32×32 patches centered on each selected keypoint. These localized patches are processed through ResNet18, where we remove the final classification layer and utilize the penultimate layer for feature extraction. This combination of global and local texture features allows our model to capture both the overall texture characteristics of the element as well as more detailed texture variations, which are crucial for accurately solving reassembly tasks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Keypoint Selector Module</head><p>A key component of our pipeline is the selection of k ∈ R keypoints, which act as anchors to ensure scalability. To maintain consistency and simplicity, we select the same number of k keypoints for all pieces (ablated on in Sec. 5).</p><p>Identifying the most relevant keypoints is essential for handling irregular shapes with an arbitrary number of points.</p><p>To achieve this, we explore two strategies: i) a nonlearnable pre-selection method and ii) a learnable approach.</p><p>Non-Learnable Algorithm. For the non-learnable strategy, we employ the heuristic Farthest Point Sampling (FPS) <ref type="bibr" target="#b10">[11]</ref> to perform an initial pre-selection of the k-points. FPS is a well-established technique in the field of 3D point cloud processing and geometric sampling. It iteratively selects the point that is furthest from the current set, ensuring maximum dispersion throughout the entire data space. This ap-proach guarantees that the selected keypoints are evenly distributed, capturing the underlying structure and geometry of the input data effectively. By leveraging FPS, our method can robustly cover the entire image or spatial domain with a fixed number of representative points. Learnable Algorithm. We frame the keypoint selection task as a graph sparsification problem <ref type="bibr" target="#b13">[14]</ref>. In our formulation, the set of keypoints K m corresponds to the set of vertices V m of a complete graph G m (i.e. fully connected).</p><p>Graph sparsification is then defined as the process of selecting a subset of nodes-i.e., keypoints-or edges from G m to produce a sparser graph Ĝm . In other words, the elements of Ĝm are a subset of those in G m .</p><p>To address this problem, we designed an architecture that learns to extract k keypoints in a data-driven manner. As illustrated in Figure <ref type="figure" target="#fig_0">3</ref>, the architecture comprises three main components: Projection Layer. The input features-comprising the coordinates and geometric attributes -are first projected into a higher-dimensional space. We rely solely on coordinates and geometric features, excluding texture information, as the pre-training is specifically designed to focus on the input shape (see Equation ( <ref type="formula" target="#formula_3">2</ref>)). Graph Transformer. The projected features are then processed by a Graph Transformer <ref type="bibr" target="#b27">[28]</ref> to aggregate and refine the input information. Pooling Layer. Finally, we apply a pooling layer <ref type="bibr" target="#b7">[8]</ref>, where we select k nodes from the original graph. The selection of nodes to drop is guided by a projection score computed against a learnable vector p. To ensure that gradients propagate into p, these projection scores also serve as gating values, allowing nodes with lower scores to retain fewer features. Defined as:</p><formula xml:id="formula_2">y = Dp ∥p∥ j = top-k(y, k) D = (D ⊙ tanh(y)) j Â = A j,j<label>(1)</label></formula><p>where D represents the feature matrix of the input graph G m , D denotes the output feature matrix of the subset graph Ĝm , ∥ • ∥ denotes the L2 norm, top-k selects the top k indices from a given input vector, ⊙ represents element-wise multiplication, and . j is an indexing operation that extracts slices at the indices specified by j. This operation involves only a point-wise projection and slicing of the original feature and adjacency matrices, thereby preserving sparsity.</p><p>The algorithm benefits from a pre-training phase to enable the model to identify, based on a general criterion, which keypoints to retain and which to discard in an unsupervised manner. This is helpful because we have no prior knowledge of the most relevant keypoints and aim for a starting point that is not task-specific. Therefore, we train the model to select k nodes while maximizing the preservation of both the perimeter and the area. The keypoints are chosen to best maintain the overall shape of the object. For this reason, we employ the following two losses:</p><formula xml:id="formula_3">L area = A total -A sel A total 2 ; L per = P total -P sel P total 2 ,<label>(2)</label></formula><p>where A total , A sel , P total , and P sel represent the area and perimeter measurements. Specifically, A total and P total correspond to the area and perimeter computed using all initial keypoints, while A sel and P sel refer to the area and perimeter computed using only the selected k keypoints. The final loss function is defined as:</p><formula xml:id="formula_4">L = λ area L area + λ per L per ,<label>(3)</label></formula><p>where λ area and λ per are the regularizing parameters. This architecture allows us to effectively select representative keypoints by leveraging both the geometric information and the relational structure captured by the graph.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Estimating position and rotation with diffusion</head><p>We adopt Diffusion Probabilistic Models as defined in Denoising Diffusion Implicit Models (DDIM) <ref type="bibr" target="#b31">[31]</ref>. For each piece m, we apply an initial transformation, consisting of a translation s m and a rotation r m , that is replicated identical for all its keypoints. To represent this initial transformation compactly, we define a concatenated vector for each</p><formula xml:id="formula_5">keypoint x m i0 = [s m ⊤ i0 , r m ⊤ i0 ] ⊤</formula><p>, where s m i0 and r m i0 denote the initial translation and rotation applied to all keypoints of the piece. Since this transformation is applied globally, all keypoints within the same piece share these initial transformation parameters.</p><p>At training time, we iteratively add noise sampled from a Gaussian distribution N (0, I) to the poses of each keypoints (Forward Process). Following that, for the denoising process, we train ReassembleNet to reverse the noising process (Reverse Process) and predict the initial poses of all keypoints for every piece. We denote the initial poses of all the keypoints as X 0 = {X m 0 } M m=1 , where for each piece, X m 0 = {x m i0 } K i=1 , represents the set of initial keypoint poses. Additionally, we denote the predicted keypoint poses at timestep t-1 as Xt-1 = { Xm t-1 } M m=1 . For the final result at time t = 0, we take the average polygon Euclidean center position and the polygon rotation. Further details on the diffusion process we use can be found in Supplementary Material C. The Architecture. To process the task, we aim to capture both intra-piece information and inter-piece (i.e. global information between pieces). The key idea is to handle these two types of information separately but in parallel.</p><p>To achieve this, we employ a combination of attention layers. Intra-piece information is processed using a sparse selfattention block <ref type="bibr" target="#b1">[2]</ref>, which helps the network focus on obtaining consistent positions and rotations, across different keypoints within the same piece. While, inter-piece information is handled using a standard self-attention block <ref type="bibr" target="#b37">[37]</ref> between pieces. Losses. Following <ref type="bibr" target="#b15">[16]</ref> and standard practice in Diffusion Models, we train ReassembleNet to directly predict X0 rather than Xt-1 . We employ two loss functions to reconstruct the initial pose of each piece's keypoints.</p><p>Translation Loss. This loss measures the average discrepancy between the ground truth translation vectors and the predicted translations ŝm i0 :</p><formula xml:id="formula_6">L tr = 1 M 1 K M m=1 K i=1 ∥s m -ŝm i0 ∥ 2 2 ,</formula><p>where ∥ • ∥ 2 2 denotes the squared L2 norm. Rotation Loss. This loss quantifies the average discrepancy between the ground truth rotation and the predicted rotations rm i0 :</p><formula xml:id="formula_7">L rt = 1 M 1 K M m=1 K i=1 ∥r m -rm i0 ∥ 2 2 .</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Semi-Synthetic Dataset creation and Fine-Tuning</head><p>To increase training data while reducing the sym-toreal gap of the synthetic data we introduce a large-scale semi-synthetic dataset based on RePAIR <ref type="bibr" target="#b36">[36]</ref>. We build from <ref type="bibr" target="#b40">[40]</ref>, where frescoes are divided into fragments with varied break patterns. The segmentation begins by selecting two points on the fresco's circumscribed circle. The segmentation line is then randomly divided into straight or curved segments, with curves created using Fourier bases for realistic edges. The generated pieces of this algorithm are not capable of emulating the complexity of fresco datasets. To overcome this limitation, we enhance the approach by incorporating two additional features: applying erosion operation on the piece and applying a slight random rotations and translations. Rather than introducing noise, these adjustments are essential for accurately modeling realistic fragmentation (see Section 5 and Supp. Mat. H for more details).</p><p>Based on this new semi-synthetic dataset, we pre-train our model on it and fine-tune the method to a real-world dataset with fewer samples. This approach leverages the knowledge acquired from a large-scale dataset to reduce the need for extensive supervised training, thereby enhancing sample efficiency and accelerating convergence, while reducing overfitting and enhancing generalization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Evaluation</head><p>We evaluate our method on the RePAIR benchmark dataset <ref type="bibr" target="#b36">[36]</ref>, following the same experimental protocol. The dataset evaluation procedures are detailed in Section 4.1, while the performance of all methods is assessed in Section 4.2. In Section 5, we present an ablation study on the scalability, the selection of the number of keypoints and the semi-synthetic dataset creation. Additional ablation studies on ReassembleNet's configuration options Supp. Mat. G and results on the semi-synthetic dataset Supp. Mat. H.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Dataset, Metrics and Baseline Methods</head><p>RePAIR Dataset. The dataset serves as a challenging benchmark for testing modern computational and datadriven puzzle-solving methods. It features realistic 2D and 3D fragments of frescos that, due to natural and humanmade impacts undergone over time, exhibit erosion, missing pieces, and irregular shapes. The dataset is multi-modal, in-cluding high-resolution images and archaeologist-annotated ground truth and metadata. The RePAIR 2D dataset consists of 100 puzzle samples, with 79 for training and 21 for testing. The total number of fragments in RePAIR is 809, with an average of 8.09 fragments per puzzle. Semi-Synthetic Dataset The semi-synthetic dataset has 5000 samples with a total of 45200 pieces, resulting in an average of around 9 pieces per puzzle. Following the Re-PAIR 2D train-test split (80:20 ratio), we divided the semisynthetic dataset into 4000 training samples and 1000 testing samples. Evaluation Metrics. Following <ref type="bibr" target="#b9">[10]</ref>, we evaluated the methods using the Root Mean Square Error (RMSE) for both translation (in millimeters) and rotation (in degrees), computed with respect to the ground truth. Specifically, we predict the final pose of each keypoint and compute the average polygon translation and rotation as</p><formula xml:id="formula_8">µ m t = 1 K K i=1 ŝm i0 and µ m r = 1 K K i=1</formula><p>rm i0 , respectively. We also evaluated the performance of the methods using the Q pos metric <ref type="bibr" target="#b36">[36]</ref>, which quantifies the overlap between the ground truth fragment poses (translation and rotation) and the reconstructed solution. More details about these metrics can be found in the Supplementary Material E. Baseline Methods. We compare ReassembleNet against both non-learnable and learnable SOTA approaches. Non-learnable approaches: i) the Archaeological Puzzle Solver <ref type="bibr" target="#b3">[4]</ref>, which applies a greedy "next best piece" algorithm based on texture. However, they use an outdated extrapolation process, which was replaced by <ref type="bibr" target="#b11">[12]</ref> with the stable-diffusion extrapolation method. ii) The Genetic Algorithm reconstruction uses a fitness function based on geometry, specifically the area of the puzzle's bounding rectangle and the intersection area of overlapping pieces. While perfect solutions minimize both values, this does not guarantee an optimal solution. iii) Greedy geometric matching, which, starting from a random seed fragment, iteratively extends the fragment pose in a greedy fashion based on geometry, in contrast to <ref type="bibr" target="#b3">[4]</ref>, which relies on texture compatibility. Learnable approaches: i) DiffAssemble <ref type="bibr" target="#b25">[26]</ref> is a GNNbased architecture designed to tackle reassembly tasks using a diffusion model formulation. In this approach, pieces are treated as elements within a set, represented as nodes in a spatial graph. In the 2D scenario, these pieces are modeled as regular patches. ii) PairingNet <ref type="bibr" target="#b40">[40]</ref> is a learning-based approach for fragment pair-searching and matching. It uses a graph-based network to extract features, integrates them via a linear transformer module, and employs contrastive loss for global encoding. A weighted fusion module then computes similarity scores to infer adjacent segments.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">RePAIR Dataset Evaluation</head><p>Details. We compare ReassembleNet with both nonlearnable and learnable methods. We train our model with Adafactor as the optimization algorithm <ref type="bibr" target="#b26">[27]</ref> and initialize the learning rate with 0.001. We set a batch size of 4. Our method involves selecting k keypoints (sec. 3.2, which is set to k = 20. For the learnable keypoint selection module, we pre-train to enhance its performance. Further details on the pre-training process are provided in the Supp. Mat. F. We assess the performance of ReassembleNet in the three different configurations for keypoint selection: (i) a strategy based on the no-learnable keypoint selection, (ii) a frozen learnable module, and (iii) a trainable keypoint selection module optimized for the given task. Results. Table <ref type="table" target="#tab_0">1</ref> presents the results on the RePAIR dataset. ReassembleNet with learnable keypoint selection and finetuning outperforms the other methods. This result emphasizes that representing irregular pieces as points, while selecting the best keypoints as done by ReassembleNet, is effective. It leads to improvements over the second best performing method, Greedy Geom Match <ref type="bibr" target="#b36">[36]</ref>, by 55% and 86% for RMSE rotation and translation, respectively.</p><p>Regarding the keypoint selection comparison, as shown in the table, ReassembleNet with the learnable keypoint selector achieves the best performance. These results demonstrate the benefits of using a learnable module instead of a non-learnable one (i.e. Furthest Point Sampling), as it can adapt to extract the most significant keypoints.</p><p>Additionally, when comparing the performance of the learnable models with and without fine-tuning, we observe a clear benefit from applying fine-tuning. All methods show improved performance in rotation and translation, while their performance in Q pos decreases. These results emphasize the effectiveness of our dataset construction, as it successfully preserves the patterns from the original dataset.</p><p>Regarding the results of other methods, DiffAssemble approximates irregular shapes as squared pieces, making it challenging to accurately identify the correct matches. Furthermore, in the original 2D configuration reported in <ref type="bibr" target="#b25">[26]</ref>, the method relies on a regular grid to arrange the pieces in the output. Since no such grid is present in our case, this introduces additional limitations. PairingNet performs poorly because it employs a pair-matching loss to align contour points, which is unsuitable for puzzle pieces with erosion or gaps between them. Non-learnable approaches, as also stated in <ref type="bibr" target="#b36">[36]</ref>, achieve low performance, reinforcing the advantages of learned strategies.</p><p>Figure <ref type="figure" target="#fig_1">4</ref> reports qualitative results of ReassembleNet on four example frescos. More quantitative are presented in Supplementary Material I.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Ablation Study</head><p>Scalability. In this experiment, we aim to demonstrate the scalability of ReassembleNet. To achieve this, we generate n different datasets, where the number of pieces grows exponentially, i.e., 2 n . We set n = 7 and evaluate both models. In Figure <ref type="figure" target="#fig_2">5</ref>, we present the memory consumption trends of ReassembleNet as the number of puzzle pieces increases. As shown, ReassembleNet successfully scales with larger puzzle sizes. This highlights the robustness and efficiency of our method in handling more complex puzzle configurations, making it suitable for larger-scale realistic problems. The Number of Keypoints. We evaluate the impact of the number of keypoints by conducting experiments with Re-assembleNet, using learnable keypoint selection on the Re-PAIR dataset without fine-tuning.  <ref type="bibr" target="#b36">[36]</ref> using Qpos from <ref type="bibr" target="#b36">[36]</ref> for groundtruth overlap, Root Mean Square Area (RMSE), in terms of, rotation (R • ) and translation (Tmm). Comparing against non-learnable optimization methods <ref type="bibr" target="#b3">[4,</ref><ref type="bibr" target="#b36">36]</ref> and learning (i.e., deep learning) methods <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b40">40]</ref>. We do not include PuzzleFusion <ref type="bibr" target="#b17">[18]</ref> because it runs out-of-memory due to highly irregular shape.  Table <ref type="table" target="#tab_2">2</ref> reports the results of the keypoint number evaluation. It is clear that setting k = 20 yields the best performance while efficiently maximizing the available resources (40 GB of GPU memory).</p><p>Semi-Synthetic Dataset Creation Process. As discussed in Section 3.4, we modify the algorithm proposed by <ref type="bibr" target="#b40">[40]</ref>. In this experiment, we compare our semi-synthetic dataset creation method with the original algorithm introduced by <ref type="bibr" target="#b40">[40]</ref>.  <ref type="table">3</ref>. Results on the impact of the Semi-Synthetic Dataset Creation process in contrast to <ref type="bibr" target="#b40">[40]</ref>.</p><formula xml:id="formula_9">Strategy Q pos ↑ RMSE (R • ) ↓ RMSE (T mm ) ↓ [<label>40</label></formula><p>Table <ref type="table">3</ref> reports the results, showing that ReassembleNet trained on our semi-synthetic dataset outperforms Reassem-bleNet trained on the dataset generated using <ref type="bibr" target="#b40">[40]</ref>. This validates the effectiveness of the modifications we introduced to the original algorithm.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusion</head><p>In this work, we introduce ReassembleNet, a scalable deep learning approach for reassembly tasks. We propose the first 2D keypoint selector module designed to identify the most relevant keypoints that represent the pieces contour. Additionally, we integrate multimodal features, including both geometric and texture-based information, to better capture the characteristics of the pieces. We demonstrate that pre-training and fine-tuning on a semi-synthetic dataset, specifically created for this study, enhance Re-assembleNet's ability to generalize to real-world fresco datasets, such as RePAIR.</p><p>Our experiments show that ReassembleNet outperforms existing methods in the fresco domain and is suitable for real-world applications. Through an extensive ablation study, we highlight the benefits of using ReassembleNet in terms of memory consumption, as well as the importance of incorporating a learnable keypoint selector. This integration allows the network to adapt its selection based on the task and input dataset, improving overall performance.</p><p>The limitations of ReassembleNet include the use of a fixed number of keypoints, whereas the selection should ideally vary depending on the complexity of the pieces, as well as the use of a non-rotation equivariant backbone for extracting texture features.</p><p>Our ReassembleNet demonstrates a move towards usable reassembly for real-world problems, enabling the possibility for archaeologists and other application domains to integrate automatic assembly into workflows. rotation. To compute Q pos , we first define the area of a fragment, denoted as A(m). In 2D, the shared area can be determined in two different ways: i) by comparing the nontransparent pixels of two large canvases containing all fragments, or ii) by computing the area intersection of the registered 2D point clouds. Additionally, fragments are weighted based on their area, emphasizing the impact of errors on larger fragments. The metric is formally defined as:</p><formula xml:id="formula_10">Q pos = M m=1 w m • |A(m ∩ m)| |A( m)| ,<label>(8)</label></formula><p>where w m = |A(m)| M k=1 |A(k)| represents the weight of each fragment, and A( m) denotes the area of the fragments with predicted rotation and translation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>F. Keypoints Selector</head><p>As detailed in Section 3.2, our approach involves selecting k keypoints. To achieve this, we employ our learnable keypoint selection module, which is pre-trained to improve its effectiveness. During the pre-training phase, we utilize the RePAIR dataset, treating each piece independently. This dataset enables the model to learn to identify salient keypoints in a diverse and representative context.</p><p>We then optimize the module using the two loss functions defined in Equation ( <ref type="formula" target="#formula_3">2</ref>), with λ area = 1 and λ per = 1. These losses work together to enforce geometric precision and structural consistency, while also mitigating selection bias toward task-specific nodes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>G. Ablation Study on Multimodal Features</head><p>Table <ref type="table" target="#tab_4">5</ref> presents a comprehensive ablation study assessing the impact of the final configuration used for Reassem-bleNet. The results clearly demonstrate that incorporating all features and leveraging transfer learning are crucial for tackling this challenging task. By utilizing the full set of features, our model gains both geometric awareness of the object and semantic understanding through local and global image representations. This injected bias enhances the network's ability to learn effectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H. Qualitative comparison on Semi-Synthetic Dataset Creation Process</head><p>In this section, we are reporting a visual representation of the semi-synthetic dataset created following <ref type="bibr" target="#b40">[40]</ref> and the final results of the semi-synthetic dataset we were able to create by adding the random erosion of the borders with a slight random rotations and translation.</p><p>Figure <ref type="figure" target="#fig_3">6</ref> shows the visual differences in the creation of the semi-synthetic dataset. As can be seen, our proposed algorithm (Figure <ref type="figure" target="#fig_3">6c</ref>) exhibits a certain similarity to Figure <ref type="figure" target="#fig_3">6a</ref>, which is taken from the real-world dataset RePAIR. In contrast, Figure <ref type="figure" target="#fig_3">6b</ref> clearly shows that the puzzle generated using the algorithm in <ref type="bibr" target="#b40">[40]</ref> deviates significantly from the characteristics present in RePAIR: the pieces are assembled to align perfectly without gaps, ensuring a seamless matching between the pieces.  We report some more qualitative results on the RePAIR dataset. In particular, we report with Figure <ref type="figure" target="#fig_4">7</ref> some failure cases where it can be seen that the model is learning the complexity of groundtruth data.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. An illustration of the Learnable KeyPoint Selector Module where keypoints are projected into a high dimensional space, then use a graph transformer to predict scores which is then used to identify the top-k and pooled to identify the most important keypoints.</figDesc><graphic coords="6,58.50,72.00,495.00,89.17" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Qualitative results on RePAIR, showing the reassembly outcomes on four frescoes.</figDesc><graphic coords="7,317.25,72.00,236.25,123.88" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. GPU memory consumption as a function of the number of puzzle pieces on RePAIR dataset.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. An illustration of (a) an example of a RePAIR fresco, (b) a synthetic fresco generated using the algorithm proposed by<ref type="bibr" target="#b40">[40]</ref>, and (c) a synthetic fresco generated using our modified algorithm. The black contour is intentionally added to highlight the borders of the pieces in b and c.</figDesc><graphic coords="13,73.35,72.00,118.80,170.07" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 7 .</head><label>7</label><figDesc>Figure 7. Qualitative results</figDesc><graphic coords="13,58.50,360.30,236.25,209.54" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head></head><label></label><figDesc></figDesc><graphic coords="4,58.52,72.00,494.97,198.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 .</head><label>1</label><figDesc>Results on RePAIR dataset</figDesc><table><row><cell>Category</cell><cell>Method</cell><cell cols="3">Qpos ↑ RMSE (R • ) ↓ RMSE (Tmm) ↓</cell></row><row><cell></cell><cell>Derech et al. [4]</cell><cell>0.04</cell><cell>80.96</cell><cell>139.49</cell></row><row><cell>Non-learnable</cell><cell>Genetic Optimization [36]</cell><cell>0.05</cell><cell>85.63</cell><cell>151.71</cell></row><row><cell></cell><cell>Greedy Geom Match [36]</cell><cell>0.02</cell><cell>76.99</cell><cell>135.95</cell></row><row><cell></cell><cell>DiffAssemble [26]</cell><cell>0.10</cell><cell>131.36</cell><cell>283.55</cell></row><row><cell></cell><cell>PairingNet [40]</cell><cell>0.16</cell><cell>98.45</cell><cell>390.43</cell></row><row><cell>Learnable &amp; No Fine-Tuning</cell><cell>ReassembleNet w/ no Learnable KP selection ReassembleNet w/ Frozen Learnable KP selection</cell><cell>0.34 0.38</cell><cell>57.11 55.72</cell><cell>16.58 27.01</cell></row><row><cell></cell><cell>ReassembleNet w/ Learnable KP selection</cell><cell>0.22</cell><cell>49.42</cell><cell>21.79</cell></row><row><cell></cell><cell>DiffAssemble [26]</cell><cell>0.10</cell><cell>123.42</cell><cell>280.76</cell></row><row><cell></cell><cell>PairingNet [40]</cell><cell>0.13</cell><cell>91.54</cell><cell>364.62</cell></row><row><cell>Learnable &amp; Fine-Tuning</cell><cell>ReassembleNet w/ no Learnable KP selection ReassembleNet w/ Frozen Learnable KP selection</cell><cell>0.19 0.16</cell><cell>43.51 40.60</cell><cell>18.82 18.39</cell></row><row><cell></cell><cell>ReassembleNet w/ Learnable KP selection</cell><cell>0.19</cell><cell>34.28</cell><cell>17.90</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>Comparison of the parameter k for the number of Keypoints selected by the Keypoint selector (sec.3.2)    </figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 5 .</head><label>5</label><figDesc>Ablation on ReassembleNet settings.</figDesc><table /></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Supplementary Material</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Introduction</head><p>In this supplementary martial, we present details on: the experimental details (sec. B; a detailed description of the diffusion process (sec. C); the evaluation over the semisynthetic dataset (sec. D), metric formulation (sec. E); the keypoint selector (sec. F); an ablation study on the features (sec. G); and qualitative results for synthetic (sec. H) and RePAIR (sec. I) datasets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Experiment Details</head><p>Hardware. The experiments were conducted on four machines, each equipped with an NVIDIA A100 GPU (40GB), 380GB of RAM, and two Intel(R) Xeon(R) Silver 4210 CPUs (2.20GHz, Sky Lake architecture).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. The Diffusion Process</head><p>Forward Process. We define the forward process as a fixed Markov chain that adds noise following a Gaussian distribution to each input, i.e., each keypoints, x m i0 to obtain a noisy version, x m it , at timestep t. Following <ref type="bibr" target="#b15">[16]</ref>, we adopt the variance β t according to a cosine scheduler and define q(x m it |x m i0 ) as:</p><p>where α t = t c=1 (1 -β c ) and I is the identity matrix.</p><p>Reverse Process. The reverse process iteratively recovers the initial poses for the set of elements Xt-1 using the current (noisy) poses X t = {X m t } M m=1 and the features</p><p>is the set of features for the keypoints in each piece. The recovered poses Xt-1 are computed as:</p><p>where α t = 1 -β t , and ϵ θ (X t , H, t) is the estimated noise output by ReassembleNet that has to be removed from Xt at timestep t to recover Xt-1 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Semi-Synthetic Dataset Evaluation</head><p>We compare ReassembleNet on this dataset with learnable methods. We train ReassembleNet using geometric, local, and global features in three different configurations: (i) Results. Table <ref type="table">4</ref> presents the results on the Semi-Synthetic Dataset. As shown, ReassembleNet outperforms the second-best method across all the metrics. This result demonstrates that representing irregular objects as 2D points, as done by ReassembleNet, is more effective than treating them as squared images with padding, as done by DiffAssemble, to achieve a regular shape.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Metrics Explanation</head><p>To evaluate the performance of the methods, we use three different metrics: RMSE for translation, RMSE for rotation and the Q pos .</p><p>The RMSE for translation and rotation are defined as:</p><p>where µ m t denotes the mean ground truth translations, and µ m R denotes the corresponding mean ground truth rotations for the m-th piece.</p><p>We also evaluate the performance of the methods using the Q pos metric <ref type="bibr" target="#b36">[36]</ref>, which quantifies the overlap between the ground truth fragment poses (translation and rotation) and the reconstructed solution. To ensure that the metric is invariant to rigid motions-preventing good solutions from being penalized due to differing global rotations-we first apply a rigid transformation to align the largest reconstructed fragment (referred to as the anchor) with its corresponding ground truth fragment in both translation and </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">2d irregular fragment reassembly with deep learning assistance</title>
+		<author>
+			<persName><forename type="first">Yangjie</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zheng</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ronghan</forename><surname>Wei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Access</title>
+		<imprint>
+			<biblScope unit="issue">3</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Generating long sequences with sparse transformers</title>
+		<author>
+			<persName><forename type="first">Rewon</forename><surname>Child</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Scott</forename><surname>Gray</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alec</forename><surname>Radford</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilya</forename><surname>Sutskever</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:1904.10509</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Diffdock: Diffusion steps, twists, and turns for molecular docking</title>
+		<author>
+			<persName><forename type="first">Gabriele</forename><surname>Corso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hannes</forename><surname>Stärk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Jing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Regina</forename><surname>Barzilay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tommi</forename><surname>Jaakkola</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Learning Representations (ICLR)</title>
+		<imprint>
+			<biblScope unit="page" from="2023" to="2024" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Solving archaeological puzzles</title>
+		<author>
+			<persName><forename type="first">Niv</forename><surname>Derech</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayellet</forename><surname>Tal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ilan</forename><surname>Shimshoni</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patcog.2021.108065</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition</title>
+		<title level="j" type="abbrev">Pattern Recognition</title>
+		<idno type="ISSN">0031-3203</idno>
+		<imprint>
+			<biblScope unit="volume">119</biblScope>
+			<biblScope unit="page">108065</biblScope>
+			<date type="published" when="2008">108065, 2021. 2, 3, 6, 8</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Apictorial Jigsaw Puzzles: The Computer Solution of a Problem in Pattern Recognition</title>
+		<author>
+			<persName><forename type="first">Herbert</forename><surname>Freeman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Garder</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/pgec.1964.263781</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Electronic Computers</title>
+		<title level="j" type="abbrev">IEEE Trans. Electron. Comput.</title>
+		<idno type="ISSN">0367-7508</idno>
+		<imprint>
+			<biblScope unit="volume">EC-13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="118" to="127" />
+			<date type="published" when="1964-04">1964</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Learning how to match fresco fragments</title>
+		<author>
+			<persName><forename type="first">Thomas</forename><surname>Funkhouser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hijung</forename><surname>Shin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Corey</forename><surname>Toler-Franklin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antonio</forename><surname>García Castañeda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Benedict</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><surname>Dobkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Szymon</forename><surname>Rusinkiewicz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tim</forename><surname>Weyrich</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal on Computing and Cultural Heritage (JOCCH)</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Jigsaw puzzles with pieces of unknown orientation</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Andrew</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Gallagher</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2012 IEEE Conference on computer vision and pattern recognition</title>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="382" to="389" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Graph U-Nets</title>
+		<author>
+			<persName><forename type="first">Hongyang</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuiwang</forename><surname>Ji</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tpami.2021.3081010</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<title level="j" type="abbrev">IEEE Trans. Pattern Anal. Mach. Intell.</title>
+		<idno type="ISSN">0162-8828</idno>
+		<idno type="ISSNe">1939-3539</idno>
+		<imprint>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1" to="1" />
+			<date type="published" when="2019">2019</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Frames of mind: The theory of multiple intelligences, by Howard Gardner. New York: Basic Books, 1983, 440 pp. Price: $23.00 cloth</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Howard</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Gardner</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/pam.4050030422</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Policy Analysis and Management</title>
+		<title level="j" type="abbrev">J Policy Anal Manage</title>
+		<idno type="ISSN">0276-8739</idno>
+		<idno type="ISSNe">1520-6688</idno>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="627" to="628" />
+			<date type="published" when="2011">2011</date>
+			<publisher>Wiley</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Positional diffusion: Graph-based diffusion models for set ordering</title>
+		<author>
+			<persName><forename type="first">Francesco</forename><surname>Giuliari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gianluca</forename><surname>Scarpellini</surname></persName>
+			<idno type="ORCID">0000-0002-3468-8902</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Fiorini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pietro</forename><surname>Morerio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiming</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessio</forename><surname>Del Bue</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.patrec.2024.10.010</idno>
+		<idno type="arXiv">arXiv:2303.11120</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<title level="j" type="abbrev">Pattern Recognition Letters</title>
+		<idno type="ISSN">0167-8655</idno>
+		<imprint>
+			<biblScope unit="volume">186</biblScope>
+			<biblScope unit="page" from="272" to="278" />
+			<date type="published" when="2023">2023</date>
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Clustering to minimize the maximum intercluster distance</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Teofilo</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Gonzalez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Theoretical Computer Science</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="293" to="306" />
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Pictorial and Apictorial Polygonal Jigsaw Puzzles from Arbitrary Number of Crossing Cuts</title>
+		<author>
+			<persName><forename type="first">Peleg</forename><surname>Harel</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ofir</forename><forename type="middle">Itzhak</forename><surname>Shahar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Ben-Shahar</surname></persName>
+			<idno type="ORCID">0000-0001-5346-152X</idno>
+		</author>
+		<idno type="DOI">10.1007/s11263-024-02033-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computer Vision</title>
+		<title level="j" type="abbrev">Int J Comput Vis</title>
+		<idno type="ISSN">0920-5691</idno>
+		<idno type="ISSNe">1573-1405</idno>
+		<imprint>
+			<biblScope unit="volume">132</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="3428" to="3462" />
+			<date type="published" when="2024-03-22">2024</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A Combined Corner and Edge Detector</title>
+		<author>
+			<persName><forename type="first">Chris</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mike</forename><surname>Stephens</surname></persName>
+		</author>
+		<idno type="DOI">10.5244/c.2.23</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Procedings of the Alvey Vision Conference 1988</title>
+		<meeting>edings of the Alvey Vision Conference 1988</meeting>
+		<imprint>
+			<publisher>Alvey Vision Club</publisher>
+			<date type="published" when="1988">1988</date>
+			<biblScope unit="page" from="23.1" to="23.6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A comprehensive survey on graph reduction: Sparsification, coarsening, and condensation</title>
+		<author>
+			<persName><forename type="first">Mohammad</forename><surname>Hashemi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shengbo</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Juntong</forename><surname>Ni</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">Aditya</forename><surname>Wenqi Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei</forename><surname>Prakash</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Jin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence, IJCAI-24</title>
+		<meeting>the Thirty-Third International Joint Conference on Artificial Intelligence, IJCAI-24</meeting>
+		<imprint>
+			<biblScope unit="page">4</biblScope>
+		</imprint>
+	</monogr>
+	<note>International Joint Conferences on Artificial Intelligence Organization, 2024. Survey Track</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Deep Residual Learning for Image Recognition</title>
+		<author>
+			<persName><forename type="first">Kaiming</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiangyu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shaoqing</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jian</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2016.90</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2016-06">2016</date>
+			<biblScope unit="page" from="770" to="778" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Denoising diffusion probabilistic models</title>
+		<author>
+			<persName><forename type="first">Jonathan</forename><surname>Ho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ajay</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pieter</forename><surname>Abbeel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page">1</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Puzzlefusion: Unleashing the power of diffusion models for spatial puzzle solving</title>
+		<author>
+			<persName><forename type="first">Sepidehsadat</forename><surname>Hosseini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Amin</forename><surname>Shabani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saghar</forename><surname>Irandoust</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasutaka</forename><surname>Furukawa</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Puzzlefusion: Unleashing the power of diffusion models for spatial puzzle solving</title>
+		<author>
+			<persName><forename type="first">Sepidehsadat</forename><surname>Hosseini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammad</forename><forename type="middle">Amin</forename><surname>Shabani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saghar</forename><surname>Irandoust</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yasutaka</forename><surname>Furukawa</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008">2023. 2, 3, 8</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Jigsaw puzzle image retrieval via pairwise compatibility measurement</title>
+		<author>
+			<persName><forename type="first">Sou-Young</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Suwon</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nur</forename><surname>Aziza Azis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ho-Jin</forename><surname>Choi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2014 International Conference on Big Data and Smart Computing (BIGCOMP)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2014">2014</date>
+			<biblScope unit="page" from="123" to="127" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">JigsawNet: Shredded Image Reassembly Using Convolutional Neural Network and Loop-Based Composition</title>
+		<author>
+			<persName><forename type="first">Canyu</forename><surname>Le</surname></persName>
+			<idno type="ORCID">0000-0002-2190-9761</idno>
+		</author>
+		<author>
+			<persName><forename type="first">Xin</forename><surname>Li</surname></persName>
+			<idno type="ORCID">0000-0002-0144-9489</idno>
+		</author>
+		<idno type="DOI">10.1109/tip.2019.2903298</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Image Processing</title>
+		<title level="j" type="abbrev">IEEE Trans. on Image Process.</title>
+		<idno type="ISSN">1057-7149</idno>
+		<idno type="ISSNe">1941-0042</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="4000" to="4015" />
+			<date type="published" when="2019-08">2019</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Mitochondrial dna as a genomic jigsaw puzzle</title>
+		<author>
+			<persName><forename type="first">William</forename><surname>Marande</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gertraud</forename><surname>Burger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">318</biblScope>
+			<biblScope unit="issue">5849</biblScope>
+			<biblScope unit="page" from="415" to="415" />
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Solving jigsaw puzzles using image features</title>
+		<author>
+			<persName><forename type="first">Peter</forename><surname>Ture R Nielsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Klaus</forename><surname>Drewsen</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Hansen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">14</biblScope>
+			<biblScope unit="page" from="1924" to="1933" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Solving multiple square jigsaw puzzles with missing pieces</title>
+		<author>
+			<persName><forename type="first">Genady</forename><surname>Paikin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ayellet</forename><surname>Tal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE conference on computer vision and pattern recognition</title>
+		<meeting>the IEEE conference on computer vision and pattern recognition</meeting>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<biblScope unit="page" from="4832" to="4839" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">A fully automated greedy square jigsaw puzzle solver</title>
+		<author>
+			<persName><forename type="first">Dolev</forename><surname>Pomeranz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michal</forename><surname>Shemesh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ohad</forename><surname>Ben-Shahar</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2011.5995331</idno>
+	</analytic>
+	<monogr>
+		<title level="m">CVPR 2011</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2011-06">2011</date>
+			<biblScope unit="page" from="9" to="16" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">A Texture Based Matching Approach for Automated Assembly of Puzzles</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Sagiroglu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ercil</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/icpr.2006.184</idno>
+	</analytic>
+	<monogr>
+		<title level="m">18th International Conference on Pattern Recognition (ICPR&apos;06)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2006">2006</date>
+			<biblScope unit="page" from="1036" to="1041" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">DiffAssemble: A Unified Graph-Diffusion Model for 2D and 3D Reassembly</title>
+		<author>
+			<persName><forename type="first">Gianluca</forename><surname>Scarpellini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Fiorini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Francesco</forename><surname>Giuliari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pietro</forename><surname>Morerio</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessio</forename><forename type="middle">Del</forename><surname>Bue</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr52733.2024.02654</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2024-06-16">2024. 2, 6, 7, 8, 1</date>
+			<biblScope unit="page" from="28098" to="28108" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Adafactor: Adaptive learning rates with sublinear memory cost</title>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mitchell</forename><surname>Stern</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="4596" to="4604" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Masked Label Prediction: Unified Message Passing Model for Semi-Supervised Classification</title>
+		<author>
+			<persName><forename type="first">Yunsheng</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhengjie</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shikun</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjing</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.24963/ijcai.2021/214</idno>
+		<idno type="arXiv">arXiv:2009.03509</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence</title>
+		<meeting>the Thirtieth International Joint Conference on Artificial Intelligence</meeting>
+		<imprint>
+			<publisher>International Joint Conferences on Artificial Intelligence Organization</publisher>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="1548" to="1554" />
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">A Generalized Genetic Algorithm-Based Solver for Very Large Jigsaw Puzzles of Complex Types</title>
+		<author>
+			<persName><forename type="first">Dror</forename><surname>Sholomon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omid</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathan</forename><surname>Netanyahu</surname></persName>
+		</author>
+		<idno type="DOI">10.1609/aaai.v28i1.9148</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proceedings of the AAAI Conference on Artificial Intelligence</title>
+		<title level="j" type="abbrev">AAAI</title>
+		<idno type="ISSN">2159-5399</idno>
+		<idno type="ISSNe">2374-3468</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2014-06-21">2014</date>
+			<publisher>Association for the Advancement of Artificial Intelligence (AAAI)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">DNN-Buddies: A Deep Neural Network-Based Estimation Metric for the Jigsaw Puzzle Problem</title>
+		<author>
+			<persName><forename type="first">Dror</forename><surname>Sholomon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Omid</forename><forename type="middle">E</forename><surname>David</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nathan</forename><forename type="middle">S</forename><surname>Netanyahu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-44781-0_21</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Lecture Notes in Computer Science</title>
+		<meeting><address><addrLine>Barcelona, Spain</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2016-09">September 6-9, 2016</date>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="170" to="178" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Springer Best of Pflege 2016</title>
+		<author>
+			<persName><surname>Springer</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s00058-016-2022-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Heilberufe</title>
+		<title level="j" type="abbrev">Heilberufe</title>
+		<idno type="ISSN">0017-9604</idno>
+		<idno type="ISSNe">1867-1535</idno>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="7" to="7" />
+			<date type="published" when="2016-03">2016. 3</date>
+			<publisher>Springer Science and Business Media LLC</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<author>
+			<persName><forename type="first">Jiaming</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chenlin</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Ermon</surname></persName>
+		</author>
+		<idno type="arXiv">arXiv:2010.02502</idno>
+		<title level="m">Denoising diffusion implicit models</title>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Revisiting unreasonable effectiveness of data in deep learning era</title>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhinav</forename><surname>Shrivastava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Saurabh</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abhinav</forename><surname>Gupta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE international conference on computer vision</title>
+		<meeting>the IEEE international conference on computer vision</meeting>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="843" to="852" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Ganzzle: Reframing jigsaw puzzle solving as a retrieval task using a generative mental image</title>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Talon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessio</forename><surname>Del Bue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><surname>James</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2022 IEEE International Conference on Image Processing (ICIP)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2022">2022</date>
+			<biblScope unit="page" from="4083" to="4087" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Ganz-zle++: Generative approaches for jigsaw puzzle solving as local to global assignment in latent spatial representations</title>
+		<author>
+			<persName><forename type="first">Davide</forename><surname>Talon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alessio</forename><surname>Del Bue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stuart</forename><surname>James</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition Letters</title>
+		<imprint>
+			<biblScope unit="volume">187</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="35" to="41" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Automatic Color Based Reassembly of Fragmented Images and Paintings</title>
+		<author>
+			<persName><forename type="first">Efthymia</forename><surname>Tsamoura</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ioannis</forename><surname>Pitas</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/tip.2009.2035840</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Image Processing</title>
+		<title level="j" type="abbrev">IEEE Trans. on Image Process.</title>
+		<idno type="ISSN">1057-7149</idno>
+		<idno type="ISSNe">1941-0042</idno>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="680" to="690" />
+			<date type="published" when="2009">2009</date>
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Reassembling the past: The repair dataset and benchmark for real world 2d and 3d puzzle solving</title>
+		<author>
+			<persName><forename type="first">Theodore</forename><surname>Tsesmelis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Luca</forename><surname>Palmieri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Marina</forename><surname>Khoroshiltseva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Adeela</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gur</forename><surname>Elkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Ofir</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gianluca</forename><surname>Shahar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefano</forename><surname>Scarpellini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yaniv</forename><surname>Fiorini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Nadav</forename><surname>Ohayon</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Alali</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems</title>
+		<imprint>
+			<date type="published" when="2008">2025. 1, 6, 7, 8</date>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="30076" to="30105" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Attention is all you need</title>
+		<author>
+			<persName><forename type="first">Ashish</forename><surname>Vaswani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Noam</forename><surname>Shazeer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niki</forename><surname>Parmar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jakob</forename><surname>Uszkoreit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Llion</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aidan</forename><forename type="middle">N</forename><surname>Gomez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Łukasz</forename><surname>Kaiser</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Illia</forename><surname>Polosukhin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Advances in neural information processing systems</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">MatchMakerNet: Enabling Fragment Matching for Cultural Heritage Analysis</title>
+		<author>
+			<persName><forename type="first">Ariana</forename><forename type="middle">M</forename><surname>Villegas-Suarez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cristian</forename><surname>Lopez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ivan</forename><surname>Sipiran</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/iccvw60793.2023.00178</idno>
+		<idno>retrieval. 1</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2023-10-02" />
+			<biblScope unit="page" from="1624" to="1633" />
+		</imprint>
+	</monogr>
+	<note type="report_type">Preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">OBSTACLE MAPS</title>
+		<author>
+			<persName><forename type="first">Emine</forename><surname>Yurteri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sabri</forename><surname>Derin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fatma</forename><surname>Polat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Murat</forename><surname>Canpolat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zekiye</forename><surname>Barman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Cahit</forename><surname>Polat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emel</forename><surname>Kaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Selim</forename><surname>Güllü</surname></persName>
+		</author>
+		<idno type="DOI">10.46291/newera.162</idno>
+	</analytic>
+	<monogr>
+		<title level="j">NEW ERA JOURNAL OF INTERDISCIPLINARY SOCIAL STUDIES</title>
+		<title level="j" type="abbrev">NEW ERA JOURNAL</title>
+		<idno type="ISSNe">2757-5608</idno>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="111" to="123" />
+			<date type="published" when="2022-03-25">2022</date>
+			<publisher>Iktisadi Kalkinma ve Sosyal Arastirmalar Dernegi</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Pairingnet: A learning-based pair-searching and-matching network for image fragments</title>
+		<author>
+			<persName><forename type="first">Rixin</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ding</forename><surname>Xia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Honglin</forename><surname>Pang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuntao</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">European Conference on Computer Vision</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2024">2024. 3, 6, 7, 8, 1, 2</date>
+			<biblScope unit="page" from="234" to="251" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">On the Continuity of Rotation Representations in Neural Networks</title>
+		<author>
+			<persName><forename type="first">Yi</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Connelly</forename><surname>Barnes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jingwan</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jimei</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/cvpr.2019.00589</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2019-06">2019</date>
+			<biblScope unit="page" from="5738" to="5746" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
